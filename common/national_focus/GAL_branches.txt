@@ -1,0 +1,35 @@
+focus_tree = {
+	id = Gallia
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GAL
+		}
+	}
+	default = no
+
+	shared_focus = GAL_1936elections
+	shared_focus = GAL_jointdeveloptech
+
+}
+
+focus_tree = {
+	id = Gallia_TheCause
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GAL
+		}
+	}
+	default = no
+	
+	shared_focus = GAL_1936elections
+	shared_focus = GAL_jointdeveloptech
+
+}

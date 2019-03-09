@@ -1,0 +1,805 @@
+focus_tree = {
+	id = Baltland
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			original_tag = BAL
+		} 
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	
+############ BALTLAND POLITICS ##############	
+	
+	
+	focus = {
+		id = BAL_politics
+		icon = GFX_goal_generic_demand_territory
+		x = 19
+		y = 0
+		cost = 1
+
+		available = {
+			OR = {
+				has_country_flag = BAL_bapvictory
+				has_country_flag = BAL_venstrevictory
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = BAL_BAPcrisis
+		icon = GFX_socdem_econ
+		prerequisite = { focus = BAL_politics }
+		available = { has_country_flag = BAL_bapvictory }
+		x = -1
+		y = 1
+		relative_position_id = BAL_politics
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				date > 1937.01.01
+			}
+		}
+
+		completion_reward = {
+			add_ideas = BAL_BAPcrisis_focus
+		}
+	}
+
+	focus = {
+		id = BAL_BAPsurvives
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = BAL_BAPcrisis }
+		mutually_exclusive = { focus = BAL_unitymovementcoup }
+		x = -2
+		y = 1
+		relative_position_id = BAL_BAPcrisis
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_country_flag =  KAR_fascist_ai_influence
+			}
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = liberal_monarchism
+				popularity = 0.07
+			}
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = BAL_unitymovementcoup
+		icon = GFX_kar_neighborhood
+		prerequisite = { focus = BAL_BAPcrisis }
+		mutually_exclusive = { focus = BAL_BAPsurvives }
+		x = 0
+		y = 1
+		relative_position_id = BAL_BAPcrisis
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 100
+				has_country_flag =  KAR_fascist_ai_influence
+			}
+		}
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				
+				parties = {
+					fascism = {
+						popularity = 35
+					}
+					
+					ultra-nationalism = {
+						popularity = 5
+					}
+					
+					progressivism = {
+						popularity = 35
+					}
+					
+					socialism = {
+						popularity = 10
+					}
+					
+					communism = {
+						popularity = 3
+					}
+					
+					liberal = {
+						popularity = 12
+					}
+				}
+			}
+			set_stability = 0.25
+		}
+	}	
+
+	focus = {
+		id = BAL_venstrecrisis
+		icon = GFX_liberal_econ
+		prerequisite = { focus = BAL_politics }
+		available = { has_country_flag = BAL_venstrevictory }
+		x = 1
+		y = 1
+		relative_position_id = BAL_politics
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+				date > 1937.01.01
+			}
+		}
+
+		completion_reward = {
+			add_ideas = BAL_venstrecrisis_focus
+		}
+	}
+
+	focus = {
+		id = BAL_defense
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = BAL_BAPsurvives }
+		x = 0
+		y = 1
+		relative_position_id = nationalism_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = deterrence
+			99 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = BAL_integratingparamilitants
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = BAL_unitymovementcoup }
+		x = 0
+		y = 1
+		relative_position_id = internationalism_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			add_political_power = 100
+			hidden_effect = {
+				add_popularity = {
+					ideology = fascism 
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = liberal
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = ultra-nationalism 
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = socialism 
+					popularity = 0.1
+				}
+				create_country_leader = {
+					name = "Petra Engdahl"
+					desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+					picture = "Petra Engdahl.dds"
+					expire = "1965.1.1"
+					ideology = paternalistic_conservatism
+					traits = {
+						#
+					}
+				}
+				set_party_name = { 
+					ideology = socialism
+					long_name = "Nordisk Enhetsrörelse (Socialistisk)"
+					name = "Nordisk Enhetsrörelse (Socialistisk)"
+				}
+			}
+			add_ideas = militarism_focus
+			set_rule = { can_send_volunteers = yes }
+			custom_effect_tooltip = BAL_militants
+		}
+	}
+
+	focus = {
+		id = BAL_NAPRevolution
+		icon = GFX_focus_ger_great_red_menace
+		prerequisite = { focus = BAL_venstrecrisis }
+		mutually_exclusive = { focus = BAL_Venstre_survives }
+		x = 0
+		y = 1
+		relative_position_id = BAL_venstrecrisis
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				
+				parties = {
+					communism = {
+						popularity = 35
+					}
+					
+					
+					liberal = {
+						popularity = 35
+					}
+					
+					socialism = {
+						popularity = 15
+					}
+					
+					fascism = {
+						popularity = 3
+					}
+					
+					progressivism = {
+						popularity = 12
+					}
+				}
+			}
+			set_stability = 0.25
+		}
+	}
+
+	focus = {
+		id = BAL_Venstre_survives
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = BAL_venstrecrisis }
+		mutually_exclusive = { focus = BAL_NAPRevolution }
+		x = 2
+		y = 1
+		relative_position_id = BAL_venstrecrisis
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_idea = neutrality_idea
+			}
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = liberal_monarchism
+				popularity = 0.07
+			}
+			add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = BAL_socialprograms
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = BAL_defense }
+		x = 0
+		y = 1
+		relative_position_id = militarism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEN_socdem_econ 
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = BAL_securingtherevolution
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = BAL_NAPRevolution }
+		x = 0
+		y = 1
+		relative_position_id = BAL_NAPRevolution
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism 
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = liberal
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = liberal_monarchism
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology =  progressivism
+					popularity = 0.1
+				}
+				create_country_leader = {
+					name = "Nilsa Flyg"
+					desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+					picture = "Nilsa Flyg.dds"
+					expire = "1965.1.1"
+					ideology = social_democracy
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Nilsa Flyg"
+					desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+					picture = "Nilsa Flyg.dds"
+					expire = "1965.1.1"
+					ideology = liberal_socialism
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Nilsa Flyg"
+					desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+					picture = "Nilsa Flyg.dds"
+					expire = "1965.1.1"
+					ideology = marxist-leninism
+					traits = {
+						#
+					}
+				}
+				set_party_name = { 
+					ideology = socialism
+					long_name = "Norska Arbetarnas Parti"
+					name = "NAP"
+				}
+				set_party_name = { 
+					ideology = authoritarian-socialism
+					long_name = "Norska Arbetarnas Parti"
+					name = "NAP"
+				}
+			}
+			add_stability = 0.15
+			custom_effect_tooltip = BAL_militants
+		}
+	}
+	
+	
+	focus = {
+		id = BAL_Defendingtherevolution
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = BAL_securingtherevolution }
+		x = 0
+		y = 1
+		relative_position_id = BAL_securingtherevolution
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = deterrence
+		}
+	}
+	
+	focus = {
+		id = BAL_exportingtherevolution
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAL_Defendingtherevolution }
+		x = 0
+		y = 1
+		relative_position_id = BAL_Defendingtherevolution
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = foreign_expeditions_focus
+			37 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			141 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BAL_supportingdemocracy
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = BAL_Venstre_survives }
+		x = 0
+		y = 1
+		relative_position_id = interventionism_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = volunteer_corps_focus
+		}
+	}
+
+	focus = {
+		id = BAL_schools
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = BAL_socialprograms }
+		x = 0
+		y = 1
+		relative_position_id = BAL_socialprograms
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEN_demo_research
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = BAL_rallyingthenation
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = BAL_integratingparamilitants }
+		x = 0
+		y = 1
+		relative_position_id = political_correctness
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEN_rallying
+		}
+	}
+
+	focus = {
+		id = BAL_baltlandicbusiness
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = BAL_supportingdemocracy }
+		x = 0
+		y = 1
+		relative_position_id = volunteer_corps
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEN_liberalecon
+		}
+	}
+	
+	focus = {
+		id = BAL_privateuniversities
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = BAL_baltlandicbusiness }
+		x = 0
+		y = 1
+		relative_position_id = BAL_baltlandicbusiness
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GEN_liberalecon
+		}
+	}
+
+
+	focus = {
+		id = BAL_dillutingtheidentities
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = BAL_rallyingthenation }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = indoctrination_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support	= 0.1
+			add_political_power = -100
+		}
+	}
+
+	focus = {
+		id = BAL_joiningbritannia
+		icon = GFX_entetediplo
+		prerequisite = { focus = BAL_schools focus = BAL_dillutingtheidentities focus = BAL_exportingtherevolution focus = BAL_privateuniversities }
+		x = 1
+		y = 1
+		relative_position_id = paramilitarism
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		available = {
+			AND = {
+				OR = {
+					has_government = socialism
+					has_government = progressivism
+					has_government = liberal
+					has_government = liberal_monarchism
+					has_government = monarchism
+				}
+				is_in_faction = no
+				is_puppet = no
+			}
+		}
+
+		completion_reward = {
+			country_event = {
+				id = baltland.2
+			}
+		}
+	}
+	
+	focus = {
+		id = BAL_findingourbrothers
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = BAL_schools focus = BAL_dillutingtheidentities focus = BAL_exportingtherevolution focus = BAL_privateuniversities }
+		x = 5
+		y = 1
+		relative_position_id = paramilitarism
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		available = {
+			AND = {
+				OR = {
+					has_government = authoritarian-socialism
+					has_government = communism
+					has_government = socialism
+					has_government = fascism
+					has_government = ultra-nationalism
+					has_government = fanatical-paganism
+				}
+				is_in_faction = no
+				is_puppet = no
+				any_country = {
+					AND = { 
+						OR = {
+							has_government = authoritarian-socialism
+							has_government = communism
+							has_government = socialism
+							has_government = fascism
+							has_government = ultra-nationalism
+							has_government = fanatical-paganism
+						}
+						is_faction_leader = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					if = { 
+						limit = {
+							AND = {
+								ROOT = { 
+									OR = { 
+										has_government = fascism 
+										has_government = fanatical-paganism 
+										has_government = ultra-nationalism 
+									} 
+								}
+								OR = { 
+									has_government = fascism 
+									has_government = fanatical-paganism 
+									has_government = ultra-nationalism 
+								}
+							}
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = 200
+						}
+					}
+					if = { 
+						limit = {
+							AND = {
+								ROOT = { 
+									OR = { 
+										has_government = socialism
+										has_government = communism
+										has_government = authoritarian-socialism
+									} 
+								}
+								OR = { 
+									has_government = socialism
+									has_government = communism
+									has_government = authoritarian-socialism
+								}
+							}
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = 200
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = GEN_findingourbrothers
+		}
+	}
+
+	
+	focus = {
+		id = technology_sharing
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = BAL_joiningbritannia focus = BAL_findingourbrothers }
+		available = {
+			has_war = yes
+			is_in_faction = yes
+			OR = {
+				num_of_factories > 50
+				any_other_country = {
+					is_in_faction_with = ROOT
+					num_of_factories > 50
+				}
+			}
+		}		
+		x = 2
+		y = 1
+		relative_position_id = ideological_fanaticism
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					original_research_slots < 3
+				}
+				add_research_slot = 1
+			}
+			if = {
+				limit = {
+					original_research_slots > 2
+				}
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}	
+				add_tech_bonus = {
+					name = infantry_artillery_bonus #@#
+					bonus = 0.5
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}				
+			}			
+		}
+	}	
+
+}

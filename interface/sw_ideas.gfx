@@ -1,0 +1,17 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_GAL_airforce"
+		texturefile = "gfx/interface/ideas/GAL_airforce.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_KAR_debuffeco"
+		texturefile = "gfx/interface/ideas/kar_debuffeco.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_GAL_socialismstar"
+		texturefile = 'gfx/interface/ideas/GAL_socialismstar"
+	}
+}

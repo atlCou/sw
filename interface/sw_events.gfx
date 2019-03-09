@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_generic_backpackedunits"
+		texturefile = "gfx/swevents/backpackunits.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_fuso_sea_incident"
+		texturefile = "gfx/swevents/news_event_fusosea.dds"
+	}
+}

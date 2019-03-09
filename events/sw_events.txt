@@ -1,0 +1,2027 @@
+################ ideology opinion setting
+
+
+add_namespace = ideology
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+add_namespace = neuroi
+
+################ Neuroi
+country_event = {
+	id = neuroi.1
+	title = neuroi.1.t
+	desc = neuroi.1.d
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+
+	trigger = {
+			date > 1936.07.01
+		}
+
+	mean_time_to_happen = {
+		days = 1
+		}
+		
+	
+	
+	option = {
+		name = neuroi.1.a
+		
+		ai_chance = { factor = 1 }
+		
+		hidden_effect = { 
+		NRO = { 
+		transfer_state = 41 
+		add_state_core = 41
+		add_ideas = neuroi_and_witches
+		load_oob = "NRO_spawn"
+		declare_war_on = { target = HIS type = annex_everything }
+		set_cosmetic_tag = NRO
+		}
+	}
+	}
+}
+
+country_event = {
+	id = neuroi.2
+	title = neuroi.2.t
+	desc = neuroi.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+
+	trigger = {
+			date > 1937.07.01
+			tag = FUS
+		}
+		
+	mean_time_to_happen = {
+		days = 10
+	}
+		
+	option = { 
+		name = neuroi.2.a
+		ai_chance = { base = 100 }
+		hidden_effect = { 
+			news_event = {
+				id = canonevents.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = neuroi.3
+	title = neuroi.2.t
+	desc = neuroi.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+
+
+	option = { 
+		name = neuroi.2.a
+		ai_chance = { base = 100 }
+		every_state = {
+				add_state_modifier = {
+					modifier = { attrition = - }
+				}
+		}
+	}
+}
+
+
+######## Karlsland Witches #######
+add_namespace = kwitches
+
+
+
+country_event = {
+	id = kwitches.1
+	title = kwitches.1.t
+	desc = kwitches.1.d
+	picture = GFX_generic_backpackedunits
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	
+	
+	option = {
+		name = kwitches.1.a
+
+		hidden_effect = { 
+		add_ideas = KAR_firstunits
+		}
+	}
+}
+
+country_event = {
+	id = kwitches.10
+	title = kwitches.10.t
+	desc = kwitches.10.d
+	picture = GFX_generic_backpackedunits
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	
+	
+	option = {
+		name = kwitches.10.a
+		add_to_variable = {
+    var = KAR.witches_manpower
+    value = 10
+	}
+	}
+}
+
+
+
+
+############# Ostmark Gen ############
+add_namespace = ostmark
+
+
+country_event = {
+	id = ostmark.20
+	title = ostmark.20.t
+	desc = ostmark.20.d
+	picture = GFX_report_event_hungary_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	
+	
+	option = {
+		name = ostmark.20.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -100
+				OR = {			
+						has_government = ultra-nationalism 
+						has_government = fanatical-paganism
+						has_government = authoritarian-socialism }
+		}
+		}
+		KAR = { country_event = {
+		days = 7
+		id = ostmark.21
+		}
+	}
+	}
+	
+	option = {
+		name = ostmark.20.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {			
+					has_government = ultra-nationalism 
+					has_government = fanatical-paganism
+					has_government = authoritarian-socialism 
+				}
+			}
+		}
+		KAR = { country_event = {
+		days = 7
+		id = ostmark.22
+		}
+	}
+	}
+}
+
+country_event = {
+	id = ostmark.21
+	title = ostmark.21.t
+	desc = ostmark.21.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	
+	
+	option = {
+		name = ostmark.21.a
+		
+		OST = {
+			country_event = {
+				days = 7
+				id = ostmark.23
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ostmark.22
+	title = ostmark.22.t
+	desc = ostmark.22.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	
+	
+	option = {
+		name = ostmark.22.a
+	}
+}
+
+country_event = {
+	id = ostmark.23
+	title = ostmark.23.t
+	desc = ostmark.23.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	
+	
+	option = {
+		name = ostmark.23.a
+		
+		KAR = {
+			create_faction = "Central Powers"
+		}
+		KAR = {
+			add_to_faction = OST
+		}
+		OST = { 
+			add_ai_strategy = {
+				type = alliance
+				id = KAR
+				value = 200
+			}
+		}
+		KAR = { 
+			add_ai_strategy = {
+				type = alliance
+				id = OST
+				value = 200
+			}
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = ostmark.100
+	title = ostmark.100.t
+	desc = ostmark.100.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.100.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -100
+				OR = {			
+					has_government = ultra-nationalism 
+					has_government = fanatical-paganism
+					has_government = authoritarian-socialism 
+				}
+			}
+		}
+		add_popularity = { ideology = monarchism popularity = 0.1 }
+		add_stability = -0.1
+		KAR = { country_event = { id = ostmark.101 } }
+	}
+	
+	option = {
+		name = ostmark.100.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 90
+				OR = {			
+					has_government = ultra-nationalism 
+					has_government = fanatical-paganism
+					has_government = authoritarian-socialism 
+				}
+			}
+		}
+		add_popularity = { ideology = monarchism popularity = 0.02 }
+		add_stability = -0.05
+		KAR = { country_event = { id = ostmark.102 } }
+	}
+}
+
+country_event = {
+	id = ostmark.101
+	title = ostmark.101.t
+	desc = ostmark.101.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.101.a
+		add_popularity = { ideology = monarchism popularity = 0.05 } 
+	}
+}
+
+
+country_event = {
+	id = ostmark.102
+	title = ostmark.102.t
+	desc = ostmark.102.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.102.a
+		add_popularity = { ideology = monarchism popularity = -0.07 }
+	}
+}
+
+country_event = {
+	id = ostmark.109
+	title = ostmark.109.t
+	desc = ostmark.109.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				is_historical_focus_on = yes
+			}
+		}
+		name = ostmark.109.a
+		OST = {
+			country_event = {
+				id = ostmark.110
+				days = 1
+			}
+		}
+	}
+	option = {
+	ai_chance = {
+		base = 100
+	} 
+		name = ostmark.109.b
+	}
+}
+
+
+country_event = {
+	id = ostmark.110
+	title = ostmark.110.t
+	desc = ostmark.110.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 50
+		}
+		
+		name = ostmark.110.a
+		KAR = {
+			country_event = {
+				id = ostmark.112
+				days = 365
+			}
+		}
+		OST = { 
+			set_variable = {
+				var = ostmarkFactories
+				value = num_of_military_factories
+			}
+			multiply_variable = {
+				var = ostmarkFactories
+				value = 2
+			}
+			subtract_from_variable = {
+				var = ostmarkFactories
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			base = 50
+		}
+		name = ostmark.110.b
+		KAR = {
+			country_event = {
+				id = ostmark.111
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ostmark.111
+	title = ostmark.111.t
+	desc = ostmark.111.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ostmark.111.a
+		KAR = {
+			puppet = OST
+		}
+		hidden_effect = {
+		set_autonomy = {
+			target = OST
+			autonomy_state = autonomy_dominion
+		} }
+		OST = { set_cosmetic_tag = OST_dominion }
+		4 = { 
+			add_core_of = KAR 
+			remove_core_of = OST
+		}
+		152 = { 
+			add_core_of = KAR 
+			remove_core_of = OST
+		}
+		102 = { 
+			add_core_of = KAR 
+			remove_core_of = OST
+		}
+		transfer_state = 4
+		transfer_state = 152
+		transfer_state = 102
+		hidden_effect = {
+			OST = {
+				country_event = {
+					id = ostmark.114
+				}
+			}
+			news_event = {
+				id = politicalnews.200
+				days = 1
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = ostmark.112
+	title = ostmark.112.t
+	desc = ostmark.112.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ostmark.112.a
+		set_variable = { 
+			var = ostmarkFactories2 
+			value = num_of_military_factories
+		}
+		if = {
+			limit = {
+				OST = {
+					AND = { 
+						has_army_manpower = { size > 200000 }
+						check_variable = { ostmarkFactories < num_of_military_factories }
+					}
+				}
+			}
+			OST = {
+				country_event = {
+					id = ostmark.113
+				}
+			}
+		}
+		else = {
+			country_event = {
+				id = ostmark.111
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ostmark.113
+	title = ostmark.113.t
+	desc = ostmark.113.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ostmark.113.a
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = ostmark.114
+	title = ostmark.114.t
+	desc = ostmark.114.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ostmark.114.a
+		add_stability = -0.1
+	}
+}
+
+
+############ Karlsland temp ##############
+
+
+
+
+add_namespace = karlsland
+
+country_event = {
+	id = karlsland.10
+	title = karlsland.10.t
+	desc = karlsland.10.d
+	picture = GFX_report_event_generic_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = karlsland.10.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.05
+		hidden_effect = { set_country_flag = statusquo }
+	}
+	option = {
+		name = karlsland.10.b
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		hidden_effect = { set_country_flag = wentliberal }
+	}	
+	
+}
+
+
+
+country_event = {
+	id = karlsland.20
+	title = karlsland.20.t
+	desc = karlsland.20.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = karlsland.20.a
+	}
+}
+
+country_event = {
+	id = karlsland.21
+	title = karlsland.21.t
+	desc = karlsland.21.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = karlsland.21.a
+	}
+}
+
+country_event = {
+	id = karlsland.22
+	title = karlsland.22.t
+	desc = karlsland.22.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = karlsland.22.a
+	}
+}
+
+country_event = {
+	id = karlsland.23
+	title = karlsland.23.t
+	desc = karlsland.23.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = karlsland.23.a
+	}
+}
+
+country_event = {
+	id = karlsland.30
+	title = karlsland.30.t
+	desc = karlsland.30.d
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = karlsland.30.a
+		ai_chance = {
+			base = 50
+
+		}
+		KAR = {
+			add_to_faction = ROOT
+		}
+		ROOT = { 
+			add_ai_strategy = { 
+				type = alliance
+				id = KAR		
+				value = 200
+			} 
+		}		
+	}
+	
+	option = {
+		name = karlsland.30.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				AND = {
+					tag = OST 
+					NOT = { 
+						OR = {
+							has_government = monarchism
+							has_government = liberal_monarchism
+						}
+					}
+				}
+				add = 200000
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = karlsland.50
+	title = karlsland.50.t
+	desc = karlsland.50.d
+	picture = GFX_report_event_german_reichstag_gathering
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.50.a
+		add_war_support = 0.1
+		add_stability = -0.05
+		add_manpower = 150000
+	}
+	
+	option = {
+		name = karlsland.50.b
+		add_stability = 0.1
+		add_war_support = 0.05
+		add_popularity = {
+		ideology = fanatical-paganism
+		popularity = -0.05
+		}
+	}
+}
+	
+country_event = {
+	id = karlsland.98
+	title = karlsland.98.t
+	desc = karlsland.98.d
+	picture = GFX_report_event_fascists_posing
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+
+	option = {
+		name = karlsland.98.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.05
+		hidden_effect = { set_country_flag = KAR_supportedpagans }
+		add_popularity = { ideology = fanatical-paganism popularity = 0.05 }
+	}	
+
+	
+}
+
+country_event = {
+	id = karlsland.99
+	title = karlsland.99.t
+	desc = karlsland.99.d
+	picture = GFX_report_event_fascist_militia
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = karlsland.99.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		hidden_effect = { set_country_flag = KAR_ultnatmonarchy }
+		add_popularity = { ideology = ultra-nationalism popularity = 0.3 }
+		add_popularity = { ideology = monarchism popularity = -0.25 }
+		hidden_effect =  { load_focus_tree = Karlsland_ultnat }
+	}
+}
+
+
+country_event = {
+	id = karlsland.100
+	title = karlsland.100.t
+	desc = karlsland.100.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.100.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = 0.05
+		add_popularity = { 
+		ideology = liberal
+		popularity = 0.05
+		}
+		add_popularity = { 
+		ideology = progressivism
+		popularity = 0.05
+		}
+		add_popularity = { 
+		ideology = liberal_monarchism
+		popularity = 0.10
+		}
+		add_popularity = { 
+		ideology = fascism
+		popularity = -0.02
+		}
+		add_popularity = { 
+		ideology = fanatical-paganism
+		popularity = -0.02
+		}
+		set_country_flag = KAR_aconservativedemocracy
+	}
+	option = {
+		name = karlsland.100.b
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.15
+		add_popularity = { 
+		ideology = liberal
+		popularity = 0.10
+		}
+		add_popularity = { 
+		ideology = progressivism
+		popularity = 0.08
+		}
+		add_popularity = { 
+		ideology = liberal_monarchism
+		popularity = 0.07
+		}
+		add_popularity = { 
+		ideology = fascism
+		popularity = 0.02
+		}
+		add_popularity = { 
+		ideology = fanatical-paganism
+		popularity = 0.03
+		}
+		add_popularity = { 
+		ideology = ultra-nationalism
+		popularity = 0.02
+		}
+		hidden_effect = { country_event = { days = 14 id = karlsland.101 }
+	}	
+}
+}
+
+country_event = {
+	id = karlsland.101
+	title = karlsland.101.t
+	desc = karlsland.101.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.101.a
+		add_stability = -0.05
+		add_popularity = { 
+		ideology = fascism
+		popularity = 0.02
+		}
+		add_popularity = { 
+		ideology = fanatical-paganism
+		popularity = 0.04
+		}
+		add_popularity = { 
+		ideology = ultra-nationalism
+		popularity = 0.08
+		}
+		country_event = {
+			days = 7
+			id = karlsland.102
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.102
+	title = karlsland.102.t
+	desc = karlsland.102.d
+	picture = GFX_report_event_fascist_militia
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.102.a
+		hidden_effect = { add_stability = -0.1
+		add_popularity = { 
+		ideology = fascism
+		popularity = 0.1
+		}
+		add_popularity = { 
+		ideology = fanatical-paganism
+		popularity = 0.15
+		}
+		 country_event = {
+			days = 14
+			id = karlsland.103
+		} }
+	}
+	
+	option = {
+		name = karlsland.102.b
+		hidden_effect = { add_stability = -0.1
+		add_popularity = { 
+		ideology = fascism
+		popularity = 0.02
+		}
+		add_popularity = { 
+		ideology = fanatical-paganism
+		popularity = 0.04
+		}
+		 country_event = {
+			days = 14
+			id = karlsland.110
+		} }
+	}	
+	option = {
+		name = karlsland.102.c
+		hidden_effect = { 
+		add_stability = 0.1
+		add_popularity = { 
+		ideology = fanatical-paganism
+		popularity = 0.15
+		}
+		add_popularity = { 
+		ideology = liberal
+		popularity = -0.15
+		}
+		add_popularity = { 
+		ideology = progressivism
+		popularity = -0.08
+		}	
+		add_popularity = { 
+		ideology = monarchism
+		popularity = 0.08
+		}
+		country_event = {
+			days = 14
+			id = karlsland.120
+		} }
+	}
+}
+
+country_event = {
+	id = karlsland.103
+	title = karlsland.103.t
+	desc = karlsland.103.d
+	picture = GFX_report_event_fascist_militia
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.103.a
+		hidden_effect = { country_event = {
+		days = 7
+		id = karlsland.104
+		} }
+	}
+}
+
+country_event = {
+	id = karlsland.104
+	title = karlsland.104.t
+	desc = karlsland.104.d
+	
+	is_triggered_only = yes
+	
+	option = {    
+		name = karlsland.104.a
+		hidden_effect = {
+			start_civil_war = {
+				ruling_party = liberal
+				ideology = fanatical-paganism
+				size = 0.6
+				capital = 52
+				states = { 153 39 52 50 53 54 55 42 51 56 297 57 }
+			}
+			set_politics = {
+			ruling_party = liberal
+			elections_allowed = no
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.45
+			}
+			add_popularity = {
+				ideology = liberal_monarchism
+				popularity = 0.25
+			}	
+			add_popularity = {
+				ideology = progressivism
+				popularity = 0.3
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = ultra-nationalism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = fanatical-paganism
+				popularity = -1
+			}
+			}
+		random_other_country = {
+			limit = {
+				original_tag = KAR
+				has_government = fanatical-paganism
+			}
+			set_cosmetic_tag = KAR_pagan
+			set_politics = { parties = { 
+					ultra-nationalism = { popularity = 26 }
+				
+					fascism = { popularity = 17 }
+				
+					fanatical-paganism = { popularity = 57 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.110
+	title = karlsland.110.t
+	desc = karlsland.110.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.110.a
+		hidden_effect = { country_event = {
+		days = 7
+		id = karlsland.111
+		} }
+	}
+}
+
+country_event = {
+	id = karlsland.111
+	title = karlsland.111.t
+	desc = karlsland.111.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.111.a
+		hidden_effect = { country_event = {
+		days = 1
+		id = karlsland.112
+		} }
+	}
+}
+
+country_event = {
+	id = karlsland.112
+	title = karlsland.112.t
+	desc = karlsland.112.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.112.a
+		hidden_effect = { country_event = {
+		days = 1
+		id = karlsland.118
+		add_popularity = { ideology = fanatical-paganism popularity = 0.05 }
+		} }
+	}
+	
+	option = {
+	name = karlsland.112.b
+	hidden_effect = { country_event = {
+	days = 1
+	id = karlsland.113
+	add_popularity = { ideology fanatical-paganism popularity = -0.01 }
+	add_popularity = { ideology = liberal popularity = 0.02 }
+	add_popularity = { ideology = progressivism popularity = 0.03 }
+	} }
+	}
+}
+
+country_event = {
+	id = karlsland.113
+	title = karlsland.113.t
+	desc = karlsland.113.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.113.a
+		hidden_effect = { country_event = {
+		days = 1
+		id = karlsland.118
+		add_popularity = { ideology = liberal popularity = 0.05 }
+		} }
+	}
+	
+	option = {
+	name = karlsland.113.b
+	hidden_effect = { country_event = {
+	days = 1
+	id = karlsland.114 }
+	add_popularity = { ideology = liberal popularity = 0.02 } }
+	}
+	
+	option = {
+		name = karlsland.113.c
+		hidden_effect = { country_event = {
+		days = 1
+		id = karlsland.118
+		add_popularity = { ideology = fanatical-paganism popularity = 0.1 }
+		} }
+	}
+}	
+
+country_event = {
+	id = karlsland.114
+	title = karlsland.114.t
+	desc = karlsland.114.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = karlsland.114.a
+		hidden_effect = { country_event = {
+		days = 1
+		id = karlsland.115
+		add_popularity = { ideology = fanatical-paganism popularity = 0.03 }
+		add_popularity = { ideology = liberal popularity = 0.02 }
+		add_popularity = { ideology = progressivism popularity = -0.03 }
+		}
+	} 
+}
+	
+	option = {
+		name = karlsland.114.b
+		hidden_effect = { country_event = {
+		days = 1
+		id = karlsland.118
+		add_popularity = { ideology = fanatical-paganism popularity = 0.05 }
+		} }
+	}
+	
+
+}
+
+
+########## Secular Nationalists Interrupt Negotiations! - Final
+country_event = {
+	id = karlsland.115
+	title = karlsland.115.t
+	desc = karlsland.115.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.115.a
+		hidden_effect = { country_event = {
+		days = 1
+		id = karlsland.117
+		} }
+	}
+	
+	option = {
+	name = karlsland.115.b
+	hidden_effect = { country_event = {
+	days = 1
+	id = karlsland.116
+	add_stability = -0.05
+	} }
+	}
+}
+
+########## Secular Nationalists Interrupt Negotiations! - fk up
+country_event = {
+	id = karlsland.118
+	title = karlsland.118.t
+	desc = karlsland.118.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = karlsland.118.a
+	hidden_effect = { country_event = {
+	days = 1
+	id = karlsland.116
+	add_stability = -0.05
+	} }
+	}
+}
+
+
+country_event = {
+	id = karlsland.117
+	title = karlsland.117.t
+	desc = karlsland.117.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.117.a
+
+		add_popularity = { ideology = fanatical-paganism popularity = -0.1 }
+		add_popularity = { ideology = fascism popularity = -0.04 }
+		add_popularity = { ideology = ultra-nationalism popularity = -0.07 }
+		add_popularity = { ideology = liberal popularity = 0.1 }
+		add_popularity = { ideology = progressivism popularity = 0.09 }
+		add_popularity = { ideology = liberal_monarchism popularity = 0.02 }
+
+	}
+}
+
+country_event = {
+	id = karlsland.116
+	title = karlsland.116.t
+	desc = karlsland.116.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.116.a
+		hidden_effect = { country_event = {
+		days = 7
+		id = karlsland.122
+		} }
+	}
+	
+	option = {
+		name = karlsland.116.b
+		hidden_effect = { country_event = {
+		days = 7
+		id = karlsland.104
+		} }
+	}	
+}
+
+country_event = {
+	id = karlsland.120
+	title = karlsland.120.t
+	desc = karlsland.120.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.120.a
+		hidden_effect = { country_event = {
+		days = 3
+		id = karlsland.121
+		} }
+	}
+}
+
+country_event = {
+	id = karlsland.121
+	title = karlsland.121.t
+	desc = karlsland.121.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.121.a
+		hidden_effect = { country_event = {
+		days = 7
+		id = karlsland.122
+		} }
+	}
+}
+
+country_event = {
+	id = karlsland.122
+	title = karlsland.122.t
+	desc = karlsland.122.d
+	picture = GFX_report_event_generic_conference
+	
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.122.a
+		hidden_effect = { 
+			set_cosmetic_tag = KAR_pagan
+			set_politics = { parties = { 
+					ultra-nationalism = { popularity = 26 }
+				
+					fascism = { popularity = 17 }
+				
+					fanatical-paganism = { popularity = 57 }
+					
+					liberal = { popularity = 0 }
+					liberal_monarchism = { popularity = 0 }
+					progressivism = { popularity = 0 }
+					communism = { popularity = 0 }
+				}	
+				ruling_party = fanatical-paganism
+		}
+	news_event = { id = politicalnews.100 days = 1 }
+	}
+}
+}
+
+country_event = {
+	id = karlsland.150
+	title = karlsland.150.t
+	desc = karlsland.150.d
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.150.a
+		country_event = {
+			id = karlsland.151
+			days = 1
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = -0.05
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.151
+	title = karlsland.151.t
+	desc = karlsland.151.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.151.a
+		set_country_flag = KAR_socialprograms
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.05
+		}
+	}
+	
+	option = {
+		name = karlsland.151.b
+		set_country_flag = KAR_businessstimulation
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+	}
+	
+	option = {
+		name = karlsland.151.c
+		set_country_flag = KAR_businessstimulation
+		set_country_flag = KAR_socialprograms
+		if = {
+			limit = { has_country_flag = KAR_noofficial }
+		}
+		else_if = {
+			limit = { has_country_flag = KAR_aconservativedemocracy }
+		add_popularity = {
+			ideology = monarchism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.05
+		}
+		}
+		else_if = { 
+			limit = { has_country_flag = KAR_lutheranofficial }
+		add_popularity = {
+			ideology = liberal_monarchism
+			popularity = 0.06
+		}
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.152
+	title = karlsland.152.t
+	desc = karlsland.152.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.152.a
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.05
+		}
+	}
+	
+	option = {
+		name = karlsland.152.b
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+	}
+	
+	option = {
+		name = karlsland.152.c
+		if = {
+			limit = { has_country_flag = KAR_noofficial }
+		}
+		else_if = {
+			limit = { has_country_flag = KAR_aconservativedemocracy }
+		add_popularity = {
+			ideology = monarchism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.05
+		}
+		}
+		else_if = { 
+			limit = { has_country_flag = KAR_lutheranofficial }
+		add_popularity = {
+			ideology = liberal_monarchism
+			popularity = 0.06
+		}
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.153
+	title = karlsland.153.t
+	desc = karlsland.153.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.153.f
+		if = {
+			limit = { 
+				AND = {
+					check_variable = { party_popularity@progressivism > party_popularity@liberal_monarchism }
+					check_variable = { party_popularity@progressivism > party_popularity@liberal }
+					check_variable = { party_popularity@progressivism > party_popularity@fanatical-paganism }
+				}
+			}
+			hidden_effect = { set_politics = {
+				ruling_party = progressivism
+				add_stability = 0.1
+			} }
+			custom_effect_tooltip = karlsland.153.a
+		}
+		if = {
+			limit = { 
+				AND = {
+					check_variable = { party_popularity@liberal > party_popularity@liberal_monarchism }
+					check_variable = { party_popularity@liberal > party_popularity@progressivism }
+					check_variable = { party_popularity@liberal > party_popularity@fanatical-paganism }
+				}
+			}
+			hidden_effect = { set_politics = {
+				ruling_party = liberal
+				add_stability = 0.1
+			} }
+			custom_effect_tooltip = karlsland.153.b
+		}
+		if = {
+			limit = { 
+				AND = {
+					NOT = { has_country_flag = KAR_lutheranofficial }
+					check_variable = { party_popularity@liberal_monarchism > party_popularity@liberal }
+					check_variable = { party_popularity@liberal_monarchism > party_popularity@progressivism }
+					check_variable = { party_popularity@liberal_monarchism > party_popularity@fanatical-paganism }
+				}
+			}
+			hidden_effect = { set_politics = {
+				ruling_party = liberal_monarchism
+				add_stability = 0.1
+			} }
+			custom_effect_tooltip = karlsland.153.c
+		}
+		if = {
+			limit = { 
+				AND = {
+					has_country_flag = KAR_lutheranofficial 
+					check_variable = { party_popularity@liberal_monarchism > party_popularity@liberal }
+					check_variable = { party_popularity@liberal_monarchism > party_popularity@progressivism }
+					check_variable = { party_popularity@liberal_monarchism > party_popularity@fanatical-paganism }
+				}
+			}
+			hidden_effect = { set_party_name = {
+				ideology = liberal_monarchism
+				long_name = KAR_nationallutheran_long
+				name = KAR_nationallutheran
+			}
+			create_country_leader = {
+				name = "Huberta von Bonin"
+				desc = "HHHH"
+				picture = "Huberta von Bonin.dds"
+				expire = "1965.1.1"
+				ideology = constitutional_monarchism
+				traits = {
+					}
+			}
+			set_politics = {
+				add_stability = 0.1
+				ruling_party = liberal_monarchism
+			}
+			set_cosmetic_tag = KAR_lutheranlol }
+			custom_effect_tooltip = karlsland.153.e
+		}
+	}
+}	
+
+
+country_event = {
+	id = karlsland.200
+	title = karlsland.200.t
+	desc = karlsland.200.d
+	picture = GFX_report_event_generic_conference
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.200.a
+		set_country_flag = KAR_noofficial
+		add_popularity = {
+			ideology = fanatical-paganism
+			popularity = -0.7
+		}
+	}
+	option = {
+		name = karlsland.200.b
+		set_country_flag = KAR_lutheranofficial
+		add_popularity = {
+			ideology = fanatical-paganism
+			popularity = 0.075
+		}
+	}
+}	
+
+country_event = {
+	id = karlsland.300
+	title = karlsland.300.t
+	desc = karlsland.300.d
+	picture = GFX_report_event_generic_riot
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.300.a
+		ai_chance = { factor = 2 }
+		add_popularity = {
+			ideology = fascism
+			popularity = .15
+		}
+		country_event = {
+			id = karlsland.302
+			days = 7
+		}
+	}
+	
+	option = {
+		name = karlsland.300.b
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 100
+				has_government = fascism
+			}
+		}
+		KAR = { 
+			annex_country = {
+				target = ROOT
+				transfer_troops = no
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = karlsland.304
+	title = karlsland.304.t
+	desc = karlsland.304.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.304.a
+		KAR = { add_to_faction = FUS }
+		add_ai_strategy = {
+			type = alliance
+			id = KAR
+			value = 200
+		}
+	}
+	
+	option = {
+		name = karlsland.304.b
+		KAR = { add_opinion_modifier = { target = FUS modifier = betrayed_alliance } }
+	}
+}
+
+country_event = {
+	id = karlsland.320
+	title = karlsland.320.t
+	desc = karlsland.320.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.320.a
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_ideas = KAR_orthodoxguild
+		set_country_flag = KAR_fashyguildwon
+		hidden_effect = { 
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			} 
+			set_cosmetic_tag = KAR_temporaryjunta
+		}
+	}
+	option = {
+		name = karlsland.320.b
+		set_politics = {
+			ruling_party = ultra-nationalism
+		}
+		add_ideas = KAR_pankarlsguild
+		set_country_flag = KAR_panguildwon
+		hidden_effect = { 
+			add_popularity = {
+				ideology = ultra-nationalism
+				popularity = 0.2
+			} 
+			set_cosmetic_tag = KAR_temporaryjunta
+		}
+	}
+	option = {
+		name = karlsland.320.c
+		set_politics = {
+			ruling_party = fanatical-paganism
+		}
+		add_ideas = KAR_paganguild
+		set_country_flag = KAR_paganguildwon
+		hidden_effect = { 
+			add_popularity = {
+				ideology = fanatical-paganism
+				popularity = 0.1
+			} 
+			drop_cosmetic_tag = yes
+		}
+	}
+}
+
+
+
+country_event = {
+	id = karlsland.310
+	title = karlsland.310.t
+	desc = karlsland.310.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.310.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		set_country_flag = KAR_fascist_ai_influence
+	}
+}
+
+
+
+
+############# NEWS EVENTS ##############
+add_namespace = politicalnews
+
+news_event = {
+	id = politicalnews.100
+	title = politicalnews.100.t
+	desc = politicalnews.100.d
+	picture = GFX_news_event_german_reichstag_graffiti_ruins
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = politicalnews.100.a
+	}
+}
+
+news_event = {
+	id = politicalnews.200
+	title = politicalnews.200.t
+	desc = politicalnews.200.d
+	
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes 
+	
+	option = {
+		name = politicalnews.200.a
+	}
+}
+
+
+add_namespace = canonevents
+
+
+## Fuso Sea Incident 
+news_event = {
+	id = canonevents.1
+	title = canonevents.1.t
+	desc = canonevents.1.d
+	picture = GFX_fuso_sea_incident
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ALL_1937fuso_sea_incident
+	}
+
+	option = { 
+		name = canonevents.1.a
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+########### TEMP SHIT
+add_namespace = britannia
+
+
+country_event = {
+	id = britannia.20
+	title = britannia.20.t
+	desc = britannia.20.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britannia.20.a
+		
+		ai_chance = { 
+			factor = 100
+		}
+		
+		BRI = { 
+			add_to_faction = KAR
+		}
+		
+		add_ai_strategy = {
+			type = alliance
+			id = KAR
+			value = 200
+		}
+		hidden_effect = {
+			KAR = {
+				country_event = {
+					id = karlsland.20
+					days = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = britannia.20.b
+		
+		ai_chance = { 
+			factor = 0
+		}
+		
+		hidden_effect = {
+			KAR = {
+				country_event = {
+					id = karlsland.21
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = britannia.21
+	title = britannia.21.t
+	desc = britannia.21.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britannia.21.a
+		
+		ai_chance = { 
+			factor = 100
+		}
+		
+		BRI = { 
+			give_guarantee = KAR
+		}
+		
+		KAR = { 
+			give_guarantee = BRI
+		}
+		
+		add_ai_strategy = {
+			type = alliance
+			id = KAR
+			value = 50
+		}
+		hidden_effect = {
+			KAR = {
+				country_event = {
+					id = karlsland.22
+					days = 1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = britannia.21.b
+		
+		ai_chance = { 
+			factor = 0
+		}
+		
+		hidden_effect = {
+			KAR = {
+				country_event = {
+					id = karlsland.23
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+############
+
+add_namespace = baltland
+
+country_event = {
+	id = baltland.1
+	title = baltland.1.t
+	desc = baltland.1.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+			date > 1936.09.01
+		}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = baltland.1.a
+		
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.02
+		}
+		set_country_flag = BAL_bapvictory
+		add_stability = -0.1
+		hidden_effect = {
+			complete_national_focus = BAL_politics
+		}
+	}
+	
+	option = {
+		name = baltland.1.b
+		
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberal_monarchism
+			popularity = 0.02
+		}
+		set_politics = {
+			ruling_party = liberal
+			last_election = "1936.9.1"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		set_country_flag = BAL_venstrevictory
+		add_stability = -0.1
+		hidden_effect = {
+			complete_national_focus = BAL_politics
+		}
+	}
+}
+
+
+
+
+
+

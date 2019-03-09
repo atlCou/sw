@@ -1,0 +1,93 @@
+bookmarks = {
+	bookmark = {
+		name = "PREPARING_NAME"
+		desc = "PREPARING_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "KAR"
+		default = yes
+		
+		"GAL"={
+			history = "GAL_PREPARING_DESC"
+
+			ideas = {
+
+			}
+		}
+		"LIN"={
+			history = "LIN_PREPARING_DESC"
+
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+		}
+		"BRI"={
+			history = "BRI_PREPARING_DESC"
+
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+		}
+		"KAR"={
+			history = "KAR_PREPARING_DESC"
+
+			ideas = {
+				KAR_stagnantkarlsland
+				KAR_recoveringfromww1
+				KAR_thedeathofmonarchy
+			}	
+		}
+		"RMA"={
+			history = "RMA_PREPARING_DESC"
+
+			ideas={
+				vittoria_mutilata
+				victor_emmanuel
+			}			
+		}
+		"FUS"={
+			history = "FUS_PREPARING_DESC"
+
+			ideas={
+				state_shintoism
+			}			
+		}
+		"ORU"={
+			history = "ORU_PREPARING_DESC"
+
+			ideas = {
+				trotskyite_plot
+				home_of_revolution
+			}
+		}
+
+		"OST"={
+			history = "OST_PREPARING_DESC"
+
+			ideas = {
+
+			}
+		}
+		
+		"SUO"={
+			history = "SUO_PREPARING_DESC"
+
+			ideas = {
+
+			}
+		}
+		
+		"---"={
+			history = "OTHER_PREPARING_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

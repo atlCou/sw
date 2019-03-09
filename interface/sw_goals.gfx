@@ -1,0 +1,97 @@
+spriteTypes = {
+
+
+
+	
+	SpriteType = {
+		name = "GFX_ostmarkdiplo"
+		texturefile = "gfx/interface/goals/ostmarkdiplo.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_entetediplo"
+		texturefile = "gfx/interface/goals/ententediplo.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_1936_gallian_elections"
+		texturefile = "gfx/interface/goals/1936_gallian_elections.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_natsynwitches"
+		texturefile = "gfx/interface/goals/natsynwitches.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_thecause"
+		texturefile = "gfx/interface/goals/thecause.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_THECAUSE_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/THECAUSE_goal_generic_major_war.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_habsburgmemes"
+		texturefile = "gfx/interface/goals/habsburgmemes.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_helma_economy"
+		texturefile = "gfx/interface/goals/helma_economy.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_trude_economy"
+		texturefile = "gfx/interface/goals/trude_economy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_kar_neighborhood"
+		texturefile = "gfx/interface/goals/karneighborhood.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_kar_economyfocus"
+		texturefile = "gfx/interface/goals/KAR_economyfocus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_socdem_econ"
+		texturefile = "gfx/interface/goals/socdem_econ.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_liberal_econ"
+		texturefile = "gfx/interface/goals/liberal_econ.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_kar_reaffirm"
+		texturefile = "gfx/interface/goals/KAR_reaffirm.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_METitaly"
+		texturefile = "gfx/interface/goals/METitaly.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_METhispania"
+		texturefile = "gfx/interface/goals/METhispania.dds"
+	}
+	SpriteType = {
+		name = "GFX_METostmark"
+		texturefile = "gfx/interface/goals/METostmark.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_pagantrihorn"
+		texturefile = "gfx/interface/goals/pagantrihorn.dds"
+	}
+}
+
+
+

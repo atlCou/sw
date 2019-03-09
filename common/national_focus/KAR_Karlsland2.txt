@@ -1,0 +1,41 @@
+focus_tree = { 
+	id = Karlsland
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			original_tag = KAR 
+			default = no
+		} 
+	} 
+continuous_focus_position = { x = 50 y = 3000 }
+
+	shared_focus = KAR_jointdeveloptech
+	shared_focus = KAR_politicaltides
+	shared_focus = KAR_strikeunitresearch
+	shared_focus = KAR_glorytokarlsland
+	shared_focus = KAR_karlslandermarkets
+	shared_focus = KAR_theeconomy
+	
+	
+}
+
+focus_tree = { 
+	id = Karlsland_paganism
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10
+			original_tag = KAR 
+			default = no
+		} 
+	} 
+continuous_focus_position = { x = 50 y = 2000 }
+
+	shared_focus = KAR_jointdeveloptech
+	shared_focus = KAR_politicaltides
+	shared_focus = KAR_strikeunitresearch
+	shared_focus = KAR_karlslandermarkets
+	shared_focus = KAR_glorytokarlsland
+	
+}

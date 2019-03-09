@@ -1,0 +1,6 @@
+assigning_witches = {
+	icon = decision_category_generic
+	availabe = {
+		check_variable = { witches_manpower > 0 }
+	}
+}

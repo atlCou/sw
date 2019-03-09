@@ -1,0 +1,23 @@
+technologies = {
+
+	neuroi_units = {
+
+		enable_equipments = {
+			neuroi_heavy_equipment_1
+		}
+
+		categories = {
+			neuroi_armor
+		}
+	}
+
+	strike_units = {
+		enable_equipments = {
+			strike_units_1
+		}
+
+		categories = {
+			strike_units
+		}
+	}	
+}

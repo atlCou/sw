@@ -1,0 +1,117 @@
+﻿capital = 107
+
+set_research_slots = 3
+
+set_technology = {
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+}
+
+set_convoys = 0
+set_politics = {
+
+	parties = {
+		socialism = {
+			popularity = 71
+		}
+		communism = {
+			popularity = 23
+		}
+		progressivism = {
+			popularity = 6
+		}
+	}
+
+	ruling_party = socialism
+	last_election = "1935.5.3"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_national_unity = 0.7
+
+create_country_leader = {
+	name = "Josipa Bencetic"
+	picture = "Josipa Bencetic.dds"
+	expire = "1965.1.1"
+	ideology = marxist-leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Josipa Bencetic"
+	picture = "Josipa Bencetic.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Josipa Bencetic"
+	picture = "Josipa Bencetic.dds"
+	expire = "1965.1.1"
+	ideology = liberal_socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Josipa Bencetic"
+	picture = "Josipa Bencetic.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Josipa Bencetic"
+	picture = "Josipa Bencetic.dds"
+	expire = "1965.1.1"
+	ideology = parlimentary_republicanism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Josipa Bencetic"
+	picture = "Josipa Bencetic.dds"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Vladimir Cukavac"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = { trickster  }
+	skill = 3
+
+}
+
+create_corps_commander = {
+	name = "Ivan Gosnjak"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = { urban_assault_specialist }
+	skill = 3
+
+}

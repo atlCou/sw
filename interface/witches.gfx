@@ -1,0 +1,7 @@
+spriteTypes = {
+
+spriteType = {
+	name = "witches_icon"
+	texturefile = "gfx//interface//manpowerwitches.dds"
+	}
+}

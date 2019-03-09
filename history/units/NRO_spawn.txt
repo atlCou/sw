@@ -1,0 +1,165 @@
+﻿division_template = {
+	name = "Medium Neuroi"			# Infantry Division
+	# Note: also represents Guards, Fortress divisions
+	regiments = {
+		neuroi_heavy = { x = 0 y = 0 }
+		neuroi_heavy = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Small Neuroi"				# Mountain Brigade
+	regiments = {
+		neuroi_heavy = { x = 0 y = 0 }
+	}
+}
+units = {
+	######## LAND UNITS ########
+	##### Fortele Terestre Române #####
+	# Corp 1 Armata
+	division = {
+		name = "Divizia 2 Infanterie"
+		location = 858
+		division_template = "Medium Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Divizia 3 Infanterie"
+		location = 858
+		division_template = "Medium Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Divizia 11 Infanterie"
+		location = 858
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	# Corp 2 Armata
+	division = {
+		name = "Divizia 1 Infanterie de Garda"
+		location = 9785
+		division_template = "Small Neuroi"			# Guards division: elite, latest equipment
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Divizia 9 Infanterie"
+		location = 9785
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Divizia 10 Infanterie"
+		location = 9785
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	# Corp 3 Armata
+	division = {
+		name = "Divizia 12 Infanterie"
+		location = 977
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Divizia 15 Infanterie"
+		location = 977
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Divizia 21 Infanterie"
+		location = 977
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# Corp 7 Armata
+	division = {
+		name = "Divizia 1 Infanterie"
+		location = 6914
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Divizia 4 Infanterie"
+		location = 3938
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Divizia 19 Infanterie"
+		location = 3938
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# Corp Alpinisti
+	division = {
+		name = "1 Small Neuroi"
+		location = 3938
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "2 Small Neuroi"
+		location = 9767
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "3 Small Neuroi"
+		location = 896
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "4 Small Neuroi"
+		location = 896
+		division_template = "Small Neuroi"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = heavy_neuroi_equipment_1
+			creator = "NEU"
+		}
+		requested_factories = 2
+		progress = 0.87
+		efficiency = 100
+	}
+
+}

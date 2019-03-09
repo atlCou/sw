@@ -1,0 +1,23 @@
+state=
+{
+	id=163
+	name="STATE_163"
+	manpower = 18000
+
+	state_category = rural
+
+	history={
+		owner = VNE
+		add_core_of = VNE
+		buildings = {
+			infrastructure = 5
+			3943 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		3943
+	}
+}

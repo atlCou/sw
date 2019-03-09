@@ -1,0 +1,49 @@
+annexation_decisions = {
+
+	# Afghanistan
+	annexation_AFG_CONQ = {
+		icon = generic_flags
+		allowed = {
+			NOT = {
+				tag = AFG
+				tag = DEH
+				tag = PER
+			}
+		}
+		activation = {
+			owns_state = 267 #Afghanistan
+			267 = {
+				is_not_claim_or_core_of_ROOT = yes
+			}
+			is_subject = no
+			NOT = {
+				has_country_flag = AFG_CONQ
+				country_exists = AFG
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = freedec?0
+		fire_only_once = no
+		cancel_trigger = {
+			NOT = {
+				owns_state = 267
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annexation_AFG_CONQ"
+			country_event = annex.116
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout annexation_AFG_CONQ"
+			set_country_flag = AFG_CONQ
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

@@ -1,0 +1,185 @@
+﻿l_english:
+
+
+
+ neuroi.1:0 "Neuroi Resurgance in Hispania!"
+ neuroi.1.d:0 "Neuroi Resurgance in Hispania!"
+ neuroi.1.a:0 "Somebody is going to help us... Right?"
+
+
+
+
+
+
+
+
+
+
+
+ news.237.t:0 "Neuroi are back"
+ news.237.d:0 "..."
+ news.237.a:0 "We shall watch these developments carefully"
+
+ generic.20.t:0 "National Reform"
+ 
+ 
+ galw.1.t:0 "Gallian Researchers Finish Experimental Designs"
+ galw.1.d:0 "Gallian researchers have spent the years since the last neuroi war designing and testing new concepts for a weapon developed specifically for witches. As a final culmination of their research, they have produced multiple backpack styled designs which allow witches to fly much in the style of our airplanes. They're new and rudimentary, but at least now we have a specialized defense mechanism for when they inevitably attack again.\n\nAlthough we have a small number of witches already in our air force who can be assigned these units, we have just barely a reasonable amount of witches within Gallia available for military purposes. Perhaps improving our numbers should be the next step in preparing our neuroi defense."
+ galw.1.a:0 "Excellent!"
+ 
+ galw.100.t:0 "Department of the Witch"
+ galw.100.d:0 "As the third department of the Gallian Socialists, the Department of the Witch will be specifically focused for developing technology and promoting the equality of Gallian witches. The department has already seen handfulls of witches direclty apply - and a couple have already been accepted for enlistment."
+ galw.100.a:0 "Great!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ########## OSTMARK TEMP ###########
+ 
+ ostmark.20.t:0 "The Karlsland Kaiser Visits Ostmark"
+ ostmark.20.d:0 "The former absolute ruler of Karlsland and Karlsland's diplomatic figures approached our foreign ministry last night to discuss an alliance between our nations. It would not be established immedietely, but it's clear that this is our greatest opportunity to formalize our friendly relationship. However, his cabinet made it clear that we can refuse with no repercussions."
+ ostmark.20.a:0 "We would love to open up this opportunity!"
+ ostmark.20.b:0 "We'd prefer not to."
+ 
+ 
+ ostmark.100.t:0 "Karlsland's Kaiser reaches to the House of Habsburg"
+ ostmark.100.d:0 "The Kaiser of Karlsland has reached out to our royal family to reestablish our weathered ties. Since the last neuroi war, we've slipped from our monarchist roots to appeal to the many minority groups in our nation. Karlsland sees us as a strong ally still, however, and sees the House of Habsburg as their primary form of connection."
+ ostmark.100.a:0 "We would love to reestablish relations!"
+ ostmark.100.b:0 "The House of Habsburg is not the future of Ostmark."
+ 
+ ostmark.101.t:0 "Ostmark Accepts Our Request"
+ ostmark.101.d:0 "Ostmark has accepted our request to rejoin two of the great European monarchies."
+ ostmark.101.a:0 "Great!"
+ 
+ ostmark.102.t:0 "Ostmark Denies Our Request"
+ ostmark.102.d:0 "Ostmark has denied our request to rejoin two of the great European monarchies, but we can still exert our influence through their existing loyalists."
+ ostmark.102.a:0 "Shame."
+ 
+ ostmark.109.t:0 "Our Ultimatum to Ostmark"
+ ostmark.109.d:0 "Ostmark, our historical ally, has not been holding itself up to any military standards since the Great Neuroi War. We're aware this is due to internal problems involving the nationalistic tendencies of internal groups, but it's much too dangerous of a geopolitical situation for our Empire.\n\nThus, we'll issue an ultimatum - increase your military capacity in the next year to our standards, or else be subjegated."
+ ostmark.109.a:0 "Do it."
+ ostmark.109.b:0 "Wait - we're all having problems right now. Let them cope."
+ 
+ ostmark.110.t:0 "Karlsland Issues an Ultimatum"
+ ostmark.110.d:0 "Karlsland, in fear of our military weakness, has sent us an ultimatum - increase our standing army to 200k men and double our industrial output. Our refusal means war or subjecation."
+ ostmark.110.a:0 "We accept the ultimatum - we need that anyways."
+ ostmark.110.b:0 "Shame before bloodshed."
+ 
+ ostmark.111.t:0 "Subjegation of Ostmark"
+ ostmark.111.d:0 "Ostmark has succumbed to the ultimatum and have been forcefully subjegated under our nation due to the inevitably of their defeat in armed conflict. Their subjegated status will not bode well with the populace, but it's necessary seeing the Neuroi's destructive powers.\n\nFurthermore, the original Ostmarker lands will be annexed fully into our empire, removing the Ostmarker Emperor from his most important landed title and returning a culturally important area back to Karlsland."
+ ostmark.111.a:0 "An event that will mark Central Europe forever."
+ 
+ ostmark.112.t:0 "The End of the Ultimatum"
+ ostmark.112.d:0 "A year has passed since we sent the ultimatum to the Ostmarkian government. We will analyze their militant progress - if they're not up to requirements, then Ostmark will be subjegated."
+ ostmark.112.a:0 "Understood."
+ 
+ ostmark.113.t:0 "Ostmark Meets the Ultimatum"
+ ostmark.113.d:0 "We have met the requirements sent to us a year ago by Karlsland, and nothing will happen to our empire. Furthermore, we can take solace in the increased strength of our military."
+ ostmark.113.a:0 "Excellent!"
+ 
+ ostmark.114.t:0 "Ostmark Succumbs to the Ultimatum"
+ ostmark.114.d:0 "We have succumbed to the ultimatum sent to us by Karlsland. Our subjegated status will certainly not bode well with our populace.\n\nFurthermore, the original Ostmarker lands will be annexed fully into the Karlsland Empire, removing the Ostmarker Emperor from his most important landed title and returning a culturally important area back to Karlsland."
+ ostmark.114.a:0 "One of our darkest days."
+ 
+ ############ GALLIA TEMP ############
+ 
+ gallia.1.t:0 "The 1936 Elections"
+ gallia.1.d:0 "As the elections approach, Gallia sees itself in internal political distraught. The recent inability of the Gallian republic to respond to growing calls from laborers to implement legal worker protections has caused not only the social democrat Royalistes to gain tremendous popularity, but the Nouveau socialists to find itself with unprecedented levels of popularity; even in face of major national scandals. Although Gallia may be far from its end, the historic democratic nation may soon see a new regime."
+ gallia.1.a:0 "Liberté, égalité, fraternité"
+ 
+ gallia.2.t:0 "Socialists Ramp-Up Rallies"
+ gallia.2.d:0 "As the Gallian elections quickly approach, the many socialist parties and factions have begun to ramp up peaceful demonstrations accross Gallia. They demand greater rights for workers and a democratization of the economic system, but very faintly a faction can be heard advocating for national protection against the ever persistent Neuroi."
+ gallia.2.a:0 "Just the democratic process."
+ gallia.2.b:0 "Publicly condemn the left wing radicals."
+ gallia.2.c:0 "What about national protection from Neuroi?"
+ 
+ gallia.3.t:0 "Moderates Ramp-Up Rallies"
+ gallia.3.d:0 "As the Gallian elections quickly approach, the right-wing democratic party and moderate wing of the PS have also began to increase their public advocation. Although their rhetoric and their ideology is the same as always, many find comfort in the large presence of anti-revolutionary sentiment."
+ gallia.3.a:0 "Support the moderate right."
+ gallia.3.b:0 "Support the moderate left."
+ gallia.3.c:0 "Forgetting Neuroi and the workers for peace?"
+ 
+ gallia.4.t:0 "Perrine Announces the Administration's Support"
+ gallia.4.d:0 "With a short amount of time until the Gallian elections begin, Perrine H. Clostermann; the spokesperson for the Third Republic of Gallia, has announced her adminstriation supports..."
+ gallia.4.a:0 "The Status Quo, of course."
+ gallia.4.b:0 "Their opposition, for a compromise."
+ gallia.4.c:0 "No one, she never announced anything."
+ 
+ gallia.5.t:0 "The Socialists in Crisis"
+ gallia.5.d:0 "Essentially minutes before the Gallian elections, the socialist factions has found themselves in a crisis they had never imagined. In only a few months and in a string of only a couple very unlikely decisions from the Gallian administration, a freakish and extremely militant group of socialists has gained tremendous popularity among the Gallian people. We are on the brink of bringing change to Gallia, but we must first consider the issue of these radicals."
+ gallia.5.a:0 "Hold with the Royalistes."
+ gallia.5.b:0 "Every revolutionary is welcome."
+ 
+ gallia.6.t:0 "The Gallian Socialists Rise"
+ gallia.6.d:0 "As expected by the worried Gallian moderates, the Gallian socialists who welcomed their militant factions have been ursurped nearly instantaneously in the national discourse. The future of a democratic Gallia is threatened now by a peaceful revolution very much unlike the Gallian Revolution."
+ gallia.6.a:0 "For the Gallian worker (and witch)!"
+ 
+ gallia.10.t:0 "The Elections Begin"
+ gallia.10.d:0 "It's time: the Gallian elections have begun!"
+ gallia.10.a:0 "Liberté, égalité, fraternité!"
+ 
+ gallia.11.t:0 "1936 Gallian Election Results"
+ gallia.11.d:0 "As the polls close, the winner of the Gallian elections appear to be..."
+ gallia.11.a:0 "The Moderate Right!"
+ gallia.11.b:0 "The Moderate Left!"
+ gallia.11.c:0 "The Socialists!"
+ gallia.11.e:0 "...Silence"
+ 
+ 
+ 
+ 
+ 
+ gallia.200.t:0 "Gallia Leaves Our Sphere"
+ gallia.200.d:0 "After Gallia's descent into a bizarre and totalitarian regime, it seemed inevitable that the country would soon wish to leave our faction. It now appears that that time has come, and we stand without a major ally on the European mainland. Hopefully, in the case of a greater war, we will find allies in Gallia or other nations again."
+ gallia.200.a:0 "A sad day for our sphere."
+ 
+ ################################
+ 
+ britannia.20.t:0 "The Karlslander Republic wishes to join the United Nations"
+ britannia.20.d:0 "The newly established democratic government of Karlsland has been in search of an ally since their new inception, and has turned away from their former partner Ostmark in favor of our sphere. To say our two nations have not been friendly in the past would be an understatement, but Karlsland's new government will render this context useless. They would make an amazing addition to the Allies, but we always have the authority to deny them entry."
+ britannia.20.a:0 "Of course!"
+ britannia.20.b:0 "...We could never ally with the Karlslanders."
+ 
+ britannia.21.t:0 "The Karlsland Empire's Anti-Neuroi Pact"
+ britannia.21.d:0 "The Karlsland Empire has approached us with a new proposal - a pact against the Neuroi or any other aggressor. They aren't asking to join the United Nations, but for us and Gallia to gurantee that we'll support them in case of military conflict. They have also proposed, alongside the alliance, the potential for sharing specifically Strike Witches between nations in joint units; so that the inevitable event of another Neuroi attack can be mutually defended for the benefit of all."
+ britannia.21.a:0 "Of course!"
+ britannia.21.b:0 "...We could never ally with the Karlslanders."
+ 
+ ############# Baltland
+ 
+ 
+ baltland.1.t:0 "Baltland Elections"
+ baltland.1.d:0 "Every four years, the northern nation of Baltland holds parliamentary elections like so many other nations across the globe. Baltland's two largest parties are the center-right Venstre party and the social democrats of the BAP, both of which seem neck and neck in the coming election.\n\nHowever, the growing influence of the revolutionary parties to both extremes have sacked the unity of our nation in very recent times, and pose a potential threat depending on the victory of either party."
+ baltland.1.a:0 "A BAP victory!"
+ baltland.1.b:0 "A Venstre victory!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ############ NEWS ##############
+ 
+ politicalnews.100.t:0 "The Karlsland Monarchy Falls"
+ politicalnews.100.d:0 "In an event shocking to all but Karlslanders themselves, the long monarchy of Karlsland has been ursurped by the nation's pagan-nationalist party. The new regime immedietely proclaimed ambition to not only spread their historic religious nationalism to the rest of Europe, but to maintain Karlsland's position as a military giant in defense against the ever persistent Neuroi. Hanna Rudel, spokesperson and face for the Heidnische Einheitsfront, has publically declared that the new regime will utilize the Karlsland witch population to a militant extent never seen before. Their neighbors, anticipating the rise of democracy in the large nation, are dissapointed."
+ politicalnews.100.a:0 "A giant falls."
+ 
+ politicalnews.200.t:0 "The Subjugation of Ostmark"
+ politicalnews.200.d:0 "The failure of Ostmark to meet the demands of an ultimatum sent to their nation has resulted in a massive change in the political landscape of Central Europe. On the notification of Ostmark's failure to meet the demands of the ultimatum, Karlsland sent in officials directly to Vienna to lay out the plans for the subsequent treaty. The original Ostmarker lands have been given to Karlsland, and the rest of the Empire has been subjegated."
+ politicalnews.200.a:0 "Europe will not soon forget this."
+ 
+ canonevents.1.t:0 "The Fuso Sea Incident"
+ canonevents.1.d:0 ":("
+ canonevents.1.a:0 "They're mechanical now?"
+ 
+ ALL_1937fuso_sea_incident:0 " The 1937 Fuso Sea Incident has occurred." 
