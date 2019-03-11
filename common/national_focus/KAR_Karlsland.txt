@@ -66,29 +66,31 @@ country_event = {
  } 
 
 #Focus for Disavow the Degenerate Monarchy
-shared_focus = { 
-id = KAR_disavowthedegeneratemonarchy
-icon = GFX_goal_generic_propaganda
-x = -3
-y = 1
-relative_position_id = KAR_politicaltides
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_politicaltides } 
-mutually_exclusive = { focus = KAR_reaffirmthemonarchy focus = KAR_theegalitarianoption focus = KAR_remembertheenlightenment focus = KAR_ }ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_popularity = { 
-ideology = monarchism
-popularity = -0.05
-}add_popularity = { 
-ideology = liberal
-popularity = -0.05
-}
- } 
 
- } 
+
+#shared_focus = { 
+#id = KAR_disavowthedegeneratemonarchy
+#icon = GFX_goal_generic_propaganda
+#x = -3
+#y = 1
+#relative_position_id = KAR_politicaltides
+#cost = 10
+#available_if_capitulated = yes 
+#prerequisite = { focus = KAR_politicaltides } 
+#mutually_exclusive = { focus = KAR_reaffirmthemonarchy focus = KAR_theegalitarianoption focus = KAR_remembertheenlightenment focus = KAR_ }ai_will_do = { 
+# factor = 1
+# } 
+#completion_reward = { 
+#add_popularity = { 
+#ideology = monarchism
+#popularity = -0.05
+#}add_popularity = { 
+#ideology = liberal
+#popularity = -0.05
+#}
+# } 
+
+# } 
  
 
 #Focus for Disavow the Degenerate Monarchy
@@ -2378,7 +2380,7 @@ shared_focus = {
 	prerequisite = { focus = KAR_isastableneighborhood }
 	relative_position_id = KAR_afriendlyneighborhood
 	mutually_exclusive = { focus = KAR_expandingthestate }
-	x = 3
+	x = 2
 	y = 4
 	cost = 10
 	available_if_capitulated = yes 
@@ -2397,7 +2399,7 @@ shared_focus = {
 	prerequisite = { focus = KAR_guildmanager }
 	mutually_exclusive = { focus = KAR_defendingthestate }
 	relative_position_id = KAR_afriendlyneighborhood
-	x = -3
+	x = -2
 	y = 4
 	cost = 10
 	available_if_capitulated = yes 
@@ -2410,6 +2412,51 @@ shared_focus = {
 }
 
 
+
+
+shared_focus = { 
+	id = KAR_east
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = KAR_expandingthestate }
+	relative_position_id = KAR_afriendlyneighborhood
+	x = -3
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 25
+	} 
+	completion_reward = { 
+		OST = {
+			add_opinion_modifier = {
+				target = KAR
+				modifier = kar_southmod
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_west
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = KAR_expandingthestate }
+	relative_position_id = KAR_afriendlyneighborhood
+	x = -3
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 25
+	} 
+	completion_reward = { 
+		GAL = {
+			add_opinion_modifier = {
+				target = KAR
+				modifier = kar_westmod
+			}
+		}
+	}
+}
 
 
 ####### PAGAN ECON #########
@@ -2594,7 +2641,7 @@ add_ideas = KAR_milproductioncorp
  #Focus for Convert Churches
 shared_focus = { 
 id = KAR_bringthemin
-icon = GFX_pagantrihorn
+icon = GFX_KAR_seizeecon
 prerequisite = { focus = KAR_socialistpurges }
 relative_position_id = KAR_glorytokarlsland
 mutually_exclusive = { focus = KAR_karlslandercorporatism }
@@ -2863,15 +2910,14 @@ shared_focus = {
 	 factor = 1
 	} 
 	completion_reward = { 
-	add_country_leader_trait = nationalist_symbol
-	add_country_leader_trait = dictator
-
+		add_country_leader_trait = nationalist_symbol
+		add_country_leader_trait = dictator
 	} 
 } 
 
 shared_focus = { 
 	id = KAR_naturalizationandcitizenshipact
-	icon = GFX_focus_rom_parties_end
+	icon = GFX_NSKAPeagle
 	x = 0
 	y = 1
 	relative_position_id = KAR_guildmanager
@@ -2883,13 +2929,18 @@ shared_focus = {
 	 factor = 1
 	} 
 	completion_reward = { 
-
+		add_stability = -0.2
+		add_ideas = KAR_naturalizationandcitizenshipact_idea
+		add_timed_idea = {
+			idea = KAR_naturalizationandcitizenshipact_idea_timed
+			days = 365
+		}
 	} 
 } 
 
 shared_focus = { 
 	id = KAR_nationalrevitilization
-	icon = GFX_goal_generic_demand_territory
+	icon = GFX_KAR_natrevive
 	x = -2
 	y = 1
 	relative_position_id = KAR_guildmanager
@@ -2901,7 +2952,9 @@ shared_focus = {
 	 factor = 1
 	} 
 	completion_reward = { 
-
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_ideas = KAR_nationalrevitilization_idea
 	} 
 } 
  

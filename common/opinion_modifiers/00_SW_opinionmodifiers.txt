@@ -1,0 +1,11 @@
+opinion_modifiers = {
+
+
+	kar_westmod = {
+		value = -100
+	}
+	
+	kar_southmod = {
+		value = -100
+	}
+}

@@ -323,7 +323,9 @@ KAR_paganguildwon:0 " The Clerical Authoritarian faction won the power struggle.
 KAR_fashyguildwon:0 " The Fascist faction won the power struggle."
 
 
-
+KAR_nationalrevitilization_idea:0 "National Revitilization"
+KAR_naturalizationandcitizenshipact_idea:0 "Citizenship Act"
+KAR_naturalizationandcitizenshipact_idea_timed:0 "Naturalization Act"
 
 
 
@@ -588,7 +590,8 @@ GAL_noalliaces:0 " Gallia has rejected all witch related alliances."
  karlsland.320.t:0 "Ideological Struggle in the Junta"
  karlsland.320.d:0 "The economic consolidation of Karlsland has lead the three factions to realize their incompability moving forward, seeing that they cannot even agree on the first internal issue of the new state. The three factions, stepping over eachother on every issue, have now seen their conflict come to a head. All three factions have the capability to become popular with the nation's populace, but which faction wins will determine much of the state's future position in the world.\n\nThe NSKAP, secular and focused on national revitalization, would likely see the Karlsland nation turn to notions of greater revanchism.\n\nThe Hyper-Nationalist wing of the NSKAP advocates not only for national revitalization, but a complete integration of the military within the Karlsland state; leading the other factions to consider them unrestricted expansionists.\n\nThe HE advocates for a peaceful consolidation of regional power and a cultural revival at home, but it can sometimes be hard to ignore their outburts of jingoism in reference to the liberal states."
  karlsland.320.a:0 "The NSKAP!"
- karlsland.320.b:0 "The 
+ karlsland.320.b:0 "The military's NSKAP!"
+ karlsland.320.c:0 "The HE!"
 
 
 

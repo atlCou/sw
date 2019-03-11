@@ -91,6 +91,18 @@ spriteTypes = {
 		name = "GFX_pagantrihorn"
 		texturefile = "gfx/interface/goals/pagantrihorn.dds"
 	}
+	SpriteType = {
+		name = "GFX_NSKAPeagle"
+		texturefile = "gfx/interface/goals/NSKAPeagle.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_seizeecon"
+		texturefile = "gfx/interface/goals/KAR_seizeecon.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_natrevive"
+		texturefile = "gfx/interface/goals/KAR_natrevive.dds"
+	}
 }
 
 

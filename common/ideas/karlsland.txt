@@ -345,7 +345,39 @@ ideas = {
 		}
 	}
 	
-
+	
+	KAR_naturalizationandcitizenshipact_idea = {
+		
+		picture = german_advisors
+		
+		modifier = {
+			conscription_factor	= 0.2
+		}
+	}
+	
+	KAR_naturalizationandcitizenshipact_idea_timed = {
+		
+		picture = FRA_scw_intervention_republicans_focus
+		
+		modifier = {
+			stability_weekly = 0.005
+			war_support_weekly = 0.001
+		}
+	}
+	
+	KAR_nationalrevitilization_idea = {
+	
+		picture = hun_secret_rearmament
+		
+		modifier = {
+			production_speed_arms_factory_factor = 0.05
+			production_speed_industrial_complex_factor = 0.05
+		}
+	}
+	
+	
+	
+	
 	political_advisor = {
 		todt = {
 
