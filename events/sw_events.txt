@@ -1767,8 +1767,101 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = karlsland.400
+	title = karlsland.400.t
+	desc = karlsland.400.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.400.a
+		GAL = {
+			country_event = {
+				id = karlsland.401
+				days = 1
+			}
+		}
+		add_state_claim = 28
+	}
+}
+
+country_event = {
+	id = karlsland.401
+	title = karlsland.401.t
+	desc = karlsland.401.d
+	picture = GFX_report_event_soldiers_marching
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.401.a
+		KAR = {
+			transfer_state = 28
+		}
+		hidden_effect = {
+			country_event = {
+				id = karlsland.403
+				days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.401.b
+		country_event = {
+			id = karlsland.402
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.402
+	title = karlsland.402.t
+	desc = karlsland.402.d
+	picture = GFX_report_event_generic_panzer_attack
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.402.a
+		KAR = {
+			declare_war_on = {
+				target = GAL
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
 
 
+country_event = {
+	id = karlsland.403
+	title = karlsland.403.t
+	desc = karlsland.403.d
+	picture = GFX_report_event_generic_panzer_attack
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.403.a
+		declare_war_on = {
+			target = GAL
+			type = puppet_wargoal_focus
+		}
+	}
+}
+	
 
 ############# NEWS EVENTS ##############
 add_namespace = politicalnews

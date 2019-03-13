@@ -132,6 +132,18 @@ KAR_expandingthepakt:0 "Expanding the Pact"
 KAR_expandingthepakt_desc:0 "Those movements we supported earlier have marched in our footsteps and overthrown their degenerate rulers. To secure them against foreign threats, we can invite them to our new pact with Fuso."
 KAR_expandingthepakt_tooltip:0 "§WWill send an event to §YBaltland§W, §YHelvetia§W, and/or §YVenezia§W as long as they have a far-right government - otherwise it won't do anything."
 
+KAR_expandingthestate:0 "Expanding the State"
+KAR_defendingthestate:0 "Defending the State"
+KAR_west:0 "West"
+KAR_south:0 "South"
+KAR_ideologicalwar:0 "An Ideological War"
+KAR_revanchism:0 "Karlslander Revanchism"
+KAR_al-lor_incident:0 "Alcase-Lorraine Incident"
+KAR_vienna_incident:0 "Vienna Incident"
+
+
+
+
 ###### Fascist Econ Tree
 KAR_karlslandercorporatism:0 "Corporate Guilds"
 KAR_karlslandercorporatism_desc:0 "A tremendously interesting idea has reached us from Romagna. Although we had not planned to tamper with the social-welfare and basic economic structure of the monarchy, we should not ignore Corporatism for its great potential benefits to the wealth of the Karlslander people."

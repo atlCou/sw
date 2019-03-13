@@ -2415,13 +2415,14 @@ shared_focus = {
 
 
 shared_focus = { 
-	id = KAR_east
-	icon = GFX_focus_generic_military_mission
+	id = KAR_south
+	icon = GFX_KAR_gosouth
 	prerequisite = { focus = KAR_expandingthestate }
+	mutually_exclusive = { focus = KAR_west }
 	relative_position_id = KAR_afriendlyneighborhood
-	x = -3
-	y = 4
-	cost = 10
+	x = -1
+	y = 5
+	cost = 5
 	available_if_capitulated = yes 
 	ai_will_do = { 
 		factor = 25
@@ -2436,14 +2437,54 @@ shared_focus = {
 	}
 }
 
+
+shared_focus = { 
+	id = KAR_revanchism
+	icon = GFX_goal_generic_more_territorial_claims
+	prerequisite = { focus = KAR_south }
+	relative_position_id = KAR_afriendlyneighborhood
+	x = -1
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 25
+	} 
+	completion_reward = { 
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = { 
+	id = KAR_vienna_incident
+	icon = GFX_focus_generic_strike_at_democracy2
+	prerequisite = { focus = KAR_revanchism }
+	relative_position_id = KAR_afriendlyneighborhood
+	x = -1
+	y = 7
+	cost = 5
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 25
+	} 
+	completion_reward = { 
+		country_event = {
+			id = karlsland.400
+		}
+	}
+}
+
+
+
 shared_focus = { 
 	id = KAR_west
-	icon = GFX_focus_generic_military_mission
+	icon = GFX_KAR_gowest
 	prerequisite = { focus = KAR_expandingthestate }
+	mutually_exclusive = { focus = KAR_south }
 	relative_position_id = KAR_afriendlyneighborhood
 	x = -3
-	y = 4
-	cost = 10
+	y = 5
+	cost = 5
 	available_if_capitulated = yes 
 	ai_will_do = { 
 		factor = 25
@@ -2457,6 +2498,43 @@ shared_focus = {
 		}
 	}
 }
+
+shared_focus = { 
+	id = KAR_ideologicalwar
+	icon = GFX_focus_ger_reichskommisariats
+	prerequisite = { focus = KAR_west }
+	relative_position_id = KAR_afriendlyneighborhood
+	x = -3
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 25
+	} 
+	completion_reward = { 
+		add_stability = 0.1
+	}
+}
+
+shared_focus = { 
+	id = KAR_al-lor_incident
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = KAR_ideologicalwar }
+	relative_position_id = KAR_afriendlyneighborhood
+	x = -3
+	y = 7
+	cost = 5
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 25
+	} 
+	completion_reward = { 
+		country_event = {
+			id = karlsland.425
+		}
+	}
+}
+
 
 
 ####### PAGAN ECON #########

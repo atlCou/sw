@@ -103,6 +103,14 @@ spriteTypes = {
 		name = "GFX_KAR_natrevive"
 		texturefile = "gfx/interface/goals/KAR_natrevive.dds"
 	}
+	SpriteType = {
+		name = "GFX_KAR_gowest"
+		texturefile = "gfx/interface/goals/KAR_gowest.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_gosouth"
+		texturefile = "gfx/interface/goals/KAR_gosouth.dds"
+	}
 }
 
 
