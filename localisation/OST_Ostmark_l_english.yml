@@ -1,0 +1,110 @@
+﻿l_english: 
+ 
+ 
+####### ideas
+
+ OST_ontotheworld_idea:0 "Ostmark Unto the World"
+ OST_arts:0 "Arts Funding"
+ 
+ 
+#PARTIES
+
+ 
+ 
+ OST_communism_party:0 "KPÖ"
+ OST_communism_party_long:0 "Kommunistische Partei Ostmark"
+ OST_authoritarian-socialism_party:0 "KPÖ"
+ OST_authoritarian-socialism_party_long:0 "Kommunistische Partei Ostmark"
+ OST_socialism:0 "KPÖ"
+ OST_socialism_long:0 "Kommunistische Partei Ostmark"
+ OST_progressivism_long:0 "Sozialdemokratische Partei Ostmark"
+ OST_progressivism:0 "SPO"
+ OST_liberal_party:0 "OMB"
+ OST_liberal_party_long:0 "Ostmarkian-Magyarian-Bohemian Grand Coalition (Left)"
+ OST_liberal_monarchism_party:0 "OMB"
+ OST_liberal_monarchism_party_long:0 "Ostmarkian-Magyarian-Bohemian Grand Coalition (Right)"
+ OST_monarchism_party:0 "Heimatblock"
+ OST_fascism_party:0 "Heimatblock"
+ OST_ultra-nationalism_party:0 "DL"
+ OST_ultra-nationalism_party_long:0 "Danubian Legionnaires"
+ OST_fanatical-paganism_party:0 "HE"
+ OST_fanatical-paganism_party_long:0 "Heidnische Einheitsfront"
+ OST_monarchism_party_habsburg:0 "Habsburg Loyalists"
+ OST_monarchism_party_habsburg_long:0 "Habsburg Loyalists"
+ 
+ ############# EVENTS
+ 
+ ostmark.200.t:0 "Regaining our Support"
+ ostmark.200.d:0 "The Ostmarker empire has been thrown into disarray. The many territories that our monarchs have ruled over for centuries have risen in revolt and, in the complete incompetence of our military, successfully established their own nations. All we have left are the territories with a Karlslander majority, who themselves lack the national identity to revolt against us. The stability once afforded to them is now gone - what do we do to regain their trust?"
+ ostmark.200.a:0 "Ensure them that we will lead the nation in a direction beneficial to our people."
+ ostmark.200.b:0 "Crush the disenters, so that we can ensure our rule over our Karlslander people will continue."
+ 
+ 
+ ########### FOCII
+ 
+OST_bunkerdown:0 "Bunkering Down"
+OST_reclaimingtheempire:0 "Reclaiming the Empire"
+OST_consolodatingthenation:0 "Consolodating the Nation"
+OST_joiningkarlsland:0 "Joining Karlsland"
+OST_beatingbackthebalts:0 "Beating Back the Balts"
+OST_tyrol:0 "§YUnser Heimatland!§!"
+OST_ontotheworld:0 "Ostmark Unto the World"
+
+
+
+
+####### BOHEMIA FOCII
+
+
+BHE_thebohemianstate:0 "Bohemian State"
+BHE_indiscriminatory_conscription:0 "Indiscriminatory Conscription"
+BHE_puttingdowntheprotestors:0 "Putting Down the Protestors"
+BHE_emergency_war_effort:0 "Emergency War Effort"
+BHE_more:0 "More Guns!"
+BHE_more_twice:0 "More Industry for Our State"
+BHE_zaolzie_is_ours:0 "Zaolzie is Bohemia's"
+BHE_bohemian_not_moravian:0 "'Bohemian' \n Not: 'Moravian'"
+BHE_ideological_hacks:0 "§YClawing Moravia Back!§!"
+BHE_a_bohemia_to_challenge_karlsland:0 "A Bohemia To Challenge Karlsland"
+
+bohemian_revanchism:0 "Bohemian Revanchism"
+BHE_claiming_orussian_bohemia:0 "Claim Orrusian Bohemia"
+BHE_integrating_orussian_bohemia:0 "Integrating Orussian Bohemia"
+
+BHE_monarchism_party_military:0 "Vysoká Vojenská Rada"
+BHE_greater_monarchism:0 "Great Bohemia-Moravia"
+BHE_greater_monarchism_ADJ:0 "Bohemian"
+BHE_greater_monarchism_DEF:0 "The Military State of Bohemia-Moravia"
+
+BHE_conscription:0 "Mass Conscription"
+BHE_peace_conscription:0 "A Military With a Nation"
+
+
+
+########## MOVARIA FOCII
+
+
+MRV_conscription:0 "Faithful Army"
+MRV_peace_conscription:0 "Army of Rod"
+MRV_consumerfacs:0 "Church Labor"
+
+MRV_greater_fanatical-paganism:0 "Nation of Rod"
+MRV_greater_fanatical-paganism_DEF:0 "The Nation of Rod"
+MRV_greater_fanatical-paganism_ADJ:0 "Rodish Pagan"
+
+MRV_ultra-nationalism_finished:0 "Legioniści Roda"
+MRV_ultra-nationalism_finished_long:0 "Legioniści Roda"
+
+
+MRV_themoraviansacrednation:0 "The Nation of Rod"
+MRV_purging_secularites:0 "Purging Secularites"
+MRV_recruiting_the_faithful:0 "Recruiting the Faithful"
+MRV_coming_home: "Coming Home"
+MRV_rodish_propaganda:0 "Rodish Propaganda"
+MRV_pushing_out_the_despots:0 "§gPushing Out the Despots!§!"
+MRV_anti_romagnian_crusade:0 "An Anti-Romagnian Crusade"
+MRV_directing_industry:0 "Directing Industry"
+MRV_nationalization:0 "Nationalization!"
+MRV_rodish_church_drives:0 "Rodish Church Drives"
+
+

@@ -1,0 +1,178 @@
+focus_tree = { 
+	id = Bohemia
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			original_tag = PNE
+			default = no
+		} 
+	} 
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	
+	focus = { 
+		id = PNE_concentrating_control
+		icon = GFX_Star_Boot
+		x = 10
+		y = 0
+		cost = 3
+		available_if_capitulated = yes 
+		available = {
+			has_global_flag = Ostmark_global_breakup
+		}
+		mutually_exclusive = { focus = PNE_autonomous_republic }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			add_to_variable = { auth = 2 }
+		}
+	}
+	
+	focus = { 
+		id = PNE_autonomous_republic
+		icon = GFX_Star_Politics
+		x = 6
+		y = 0
+		cost = 3
+		available_if_capitulated = yes 
+		available = {
+			has_global_flag = Ostmark_global_breakup
+		}
+		mutually_exclusive = { focus = PNE_concentrating_control }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			set_country_flag = PNE_autonflag
+		}
+	}
+	
+	
+	focus = { 
+		id = PNE_isolationism
+		icon = GFX_Star_Shield
+		x = 6
+		y = 1
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_autonomous_republic focus = PNE_concentrating_control }
+		mutually_exclusive = { focus = PNE_nationalism focus = PNE_internationalism }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			add_ideas = PNE_isolationism_idea
+		}
+	}
+	
+	focus = { 
+		id = PNE_nationalism
+		icon = GFX_Star_Sword
+		x = 8
+		y = 1
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_autonomous_republic focus = PNE_concentrating_control }
+		mutually_exclusive = { focus = PNE_internationalism }
+		mutually_exclusive = { focus = PNE_isolationism }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			add_ideas = PNE_nationalism_idea
+			add_to_variable = { auth = 2 }
+		}
+	}
+	
+	focus = { 
+		id = PNE_internationalism
+		icon = GFX_Star_Rifle
+		x = 10
+		y = 1
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_autonomous_republic focus = PNE_concentrating_control }
+		mutually_exclusive = { focus = PNE_nationalism }
+		mutually_exclusive = { focus = PNE_isolationism }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			add_to_variable = { auth = 1 }
+		}
+	}
+	
+	####### econ
+	
+	focus = { 
+		id = PNE_unions
+		icon = GFX_Star_Unions
+		x = 6
+		y = 2
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_isolationism focus = PNE_internationalism focus = PNE_nationalism }
+		mutually_exclusive = { focus = PNE_control focus = PNE_communes }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			
+		}
+	}
+	
+	focus = { 
+		id = PNE_control
+		icon = GFX_Star_Control
+		x = 8
+		y = 2
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_isolationism focus = PNE_internationalism focus = PNE_nationalism }
+		mutually_exclusive = { focus = PNE_unions }
+		mutually_exclusive = { focus = PNE_communes }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			add_to_variable = { auth = 2 }
+		}
+	}
+	
+	focus = { 
+		id = PNE_communes
+		icon = GFX_Star_SEIZE
+		x = 10
+		y = 2
+		cost = 3
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_isolationism focus = PNE_internationalism focus = PNE_nationalism }
+		mutually_exclusive = { focus = PNE_control }
+		mutually_exclusive = { focus = PNE_unions }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			add_to_variable = { auth = 1 }
+		}
+	}
+	
+	focus = { 
+		id = PNE_elections
+		icon = GFX_Star_Hands
+		x = 8
+		y = 3
+		cost = 1
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_unions focus = PNE_control focus = PNE_communes }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+
+		}
+	}
+	
+}

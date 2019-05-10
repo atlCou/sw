@@ -1,0 +1,82 @@
+focus_tree = { 
+	id = Ostmark
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			original_tag = OST
+			default = no
+		} 
+	} 
+	continuous_focus_position = { x = 50 y = 3000 }
+
+
+}
+
+focus_tree = { 
+	id = Ostmark_crumbled
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 20
+			has_country_flag = OST_crumbledflag
+			default = no
+		} 
+	} 
+	
+	
+	
+	
+	
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	
+	shared_focus = OST_bunkerdown
+	shared_focus = OST_reclaimingtheempire
+	
+}
+
+
+
+focus_tree = {
+	id = Ostmark_crumbled_heimat
+	country = { 
+		factor = 0
+		modifier = {
+			add = 200
+			has_country_flag = OST_heimatblock
+			has_country_flag = OST_crumbledflag
+			default = no
+		}
+	} 
+	
+
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	shared_focus = OST_bunkerdown
+	shared_focus = OST_reclaimingtheempire
+	shared_focus = OST_joiningkarlsland
+	
+}
+
+
+focus_tree = {
+	id = Ostmark_crumbled_heimat
+	country = { 
+		factor = 0
+		modifier = {
+			add = 200
+			has_country_flag = OST_thedynastystays
+			has_country_flag = OST_crumbledflag
+			default = no
+		}
+	} 
+	
+
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	shared_focus = OST_bunkerdown
+	shared_focus = OST_reclaimingtheempire
+	shared_focus = OST_vienneseeffort
+	
+}

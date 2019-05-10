@@ -1,0 +1,39 @@
+﻿capital = 9
+
+oob = "BHE_spawn"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+
+set_convoys = 0
+
+set_stability = 0.05
+
+set_politics = {
+
+	parties = {
+        liberal = { popularity = 11 }
+        progressivism = { popularity = 3 }
+        liberal_monarchism = { popularity = 0 }
+        socialism = { popularity = 15 }
+        communism = { popularity = 0 }
+        authoritarian-socialism = { popularity = 0 }
+        monarchism = { popularity = 35 }
+        fascism = { popularity = 23 }
+        ultra-nationalism = { popularity = 0 }
+        fanatical-paganism = { popularity = 0 }
+
+	}
+	
+	ruling_party = monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+

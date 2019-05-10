@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+		PNE_isolationism_idea = {
+		
+			picture = generic_closed_economy
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				justify_war_goal_time = 5	
+			}
+		}
+		
+		PNE_nationalism_idea = {
+		
+			picture = mex_politicised_army_2
+			
+			modifier = {
+				army_morale_factor = 0.1
+				conscription_factor = -0.1
+			}
+		}
+
+
+	}
+}

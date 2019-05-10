@@ -1,0 +1,906 @@
+
+
+############# Ostmark Gen ############
+add_namespace = ostmark
+
+
+
+
+country_event = {
+	id = ostmark.10
+	title = ostmark.10.t
+	desc = ostmark.10.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.10.a
+		hidden_effect = {
+			OST = { 
+				set_cosmetic_tag = OST_crumbled
+				set_country_flag = OST_crumbledflag
+				every_state = {
+					if = {
+						limit = { 
+							NOT = {
+								state = 152
+								state = 4
+								state = 102
+							}
+						}
+						remove_core_of = OST
+					}
+				}
+				load_focus_tree = Ostmark_crumbled
+			}
+			BHE = {
+				transfer_state = 69
+				add_state_core = 69
+				transfer_state = 9
+				add_state_core = 9
+				transfer_state = 75
+				add_state_core = 75
+				transfer_state = 74
+				add_state_core = 74
+				hidden_effect = {
+					create_country_leader = {
+							name = "Vesna Mikovic"
+							desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+							picture = "vesna_mikovic.dds"
+							expire = "1965.1.1"
+							ideology = military_junta
+					}
+				}
+				
+			}
+			PNE = {
+				transfer_state = 155
+				add_state_core = 155
+				transfer_state = 43
+				add_state_core = 43
+				transfer_state = 154
+				add_state_core = 154
+				transfer_state = 76
+				add_state_core = 76
+				transfer_state = 84
+				add_state_core = 84
+				transfer_state = 664
+				add_state_core = 664
+				transfer_state = 109
+				transfer_state = 45
+				transfer_state = 82
+				transfer_state = 764
+				transfer_state = 83
+				add_state_core = 83
+				hidden_effect = {
+					create_country_leader = {
+							name = "Laura Toth"
+							desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+							picture = "Laura_Toth.dds"
+							expire = "1965.1.1"
+							ideology = revolutionary_nationalistic_socialism
+					}
+				}
+			}
+			SER = {
+				transfer_state = 108
+				add_state_core = 108
+				transfer_state = 107
+				add_state_core = 107
+				add_state_claim = 109
+				add_state_claim = 45
+				add_state_claim = 82
+				add_state_claim = 764
+				hidden_effect = {
+					set_politics = {
+						parties = {
+							liberal = { popularity = 38 }
+							progressivism = { popularity = 16 }
+							liberal_monarchism = { popularity = 30 }
+							socialism = { popularity = 3 }
+							communism = { popularity = 0 }
+							authoritarian-socialism = { popularity = 0 }
+							monarchism = { popularity = 10 }
+							fascism = { popularity = 3 }
+							ultra-nationalism = { popularity = 0 }
+							fanatical-paganism = { popularity = 0 }
+
+						}
+						
+						ruling_party = liberal
+						last_election = "1936.1.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					create_country_leader = {
+						name = "Petra Milosevic"
+						desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+						picture = "Petra Milosevic.dds"
+						expire = "1965.1.1"
+						ideology = parlimentary_republicanism
+					}
+				}
+			}
+			MRV = {
+				transfer_state = 94
+				add_state_core = 94
+				transfer_state = 93
+				add_state_core = 93
+				transfer_state = 91
+				add_state_core = 91
+				transfer_state = 92
+				add_state_core = 92
+				transfer_state = 88
+				add_state_core = 88
+				transfer_state = 89
+				add_state_core = 89
+				transfer_state = 80
+				add_state_core = 80
+				transfer_state = 71
+				add_state_core = 71
+				transfer_state = 70
+				add_state_core = 70
+				transfer_state = 72
+				add_state_core = 72
+				transfer_state = 73
+				add_state_core = 73
+				hidden_effect = {
+					create_country_leader = {
+							name = "Wiktoria Urbanowicz"
+							desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+							picture = "wiktoria_urbanowicz.dds"
+							expire = "1965.1.1"
+							ideology = fanatical_paganism
+					}
+				}
+				
+			}
+		}
+		country_event = {
+			id = ostmark.11
+			days = 0
+		}
+	}
+}
+
+country_event = {
+	id = ostmark.11
+	title = ostmark.11.t
+	desc = ostmark.11.d
+	picture = GFX_report_event_hungary_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		hidden_effect = {
+			MRV = {
+				delete_unit_template_and_units = {
+					division_template = "Infanterie Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Alpenjäger Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Schnelle Division" 
+				}
+				load_oob = MRV_spawn
+			}
+			BHE = {
+				load_oob = BHE_spawn
+				delete_unit_template_and_units = {
+					division_template = "Infanterie Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Alpenjäger Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Schnelle Division" 
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ostmark.11.a
+		BHE = { change_tag_from = OST }
+		set_global_flag = Ostmark_global_breakup
+	}
+	
+	option = {
+		name = ostmark.11.a
+		MRV = { change_tag_from = OST }
+		set_global_flag = Ostmark_global_breakup
+	}
+	
+	option = {
+		name = ostmark.11.a
+		PNE = { change_tag_from = OST }
+		set_global_flag = Ostmark_global_breakup
+	}
+	
+	option = {
+		name = ostmark.11.a
+		SER = { change_tag_from = OST }
+		set_global_flag = Ostmark_global_breakup
+	}
+	
+	option = {
+		name = ostmark.11.a
+		set_global_flag = Ostmark_global_breakup
+	}
+}
+
+
+country_event = {
+	id = ostmark.20
+	title = ostmark.20.t
+	desc = ostmark.20.d
+	picture = GFX_report_event_hungary_parliament
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	
+	
+	option = {
+		name = ostmark.20.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -100
+				OR = {			
+						has_government = ultra-nationalism 
+						has_government = fanatical-paganism
+						has_government = authoritarian-socialism }
+		}
+		}
+		KAR = { country_event = {
+		days = 7
+		id = ostmark.21
+		}
+	}
+	}
+	
+	option = {
+		name = ostmark.20.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {			
+					has_government = ultra-nationalism 
+					has_government = fanatical-paganism
+					has_government = authoritarian-socialism 
+				}
+			}
+		}
+		KAR = { country_event = {
+		days = 7
+		id = ostmark.22
+		}
+	}
+	}
+}
+
+country_event = {
+	id = ostmark.21
+	title = ostmark.21.t
+	desc = ostmark.21.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	
+	
+	option = {
+		name = ostmark.21.a
+		
+		OST = {
+			country_event = {
+				days = 7
+				id = ostmark.23
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ostmark.22
+	title = ostmark.22.t
+	desc = ostmark.22.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	
+	
+	option = {
+		name = ostmark.22.a
+	}
+}
+
+country_event = {
+	id = ostmark.23
+	title = ostmark.23.t
+	desc = ostmark.23.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	
+	
+	option = {
+		name = ostmark.23.a
+		
+		KAR = {
+			create_faction = "Central Powers"
+		}
+		KAR = {
+			add_to_faction = OST
+		}
+		OST = { 
+			add_ai_strategy = {
+				type = alliance
+				id = KAR
+				value = 200
+			}
+		}
+		KAR = { 
+			add_ai_strategy = {
+				type = alliance
+				id = OST
+				value = 200
+			}
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = ostmark.100
+	title = ostmark.100.t
+	desc = ostmark.100.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.100.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -100
+				OR = {			
+					has_government = ultra-nationalism 
+					has_government = fanatical-paganism
+					has_government = authoritarian-socialism 
+				}
+			}
+		}
+		add_popularity = { ideology = monarchism popularity = 0.1 }
+		add_stability = -0.1
+		KAR = { country_event = { id = ostmark.101 } }
+	}
+	
+	option = {
+		name = ostmark.100.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 90
+				OR = {			
+					has_government = ultra-nationalism 
+					has_government = fanatical-paganism
+					has_government = authoritarian-socialism 
+				}
+			}
+		}
+		add_popularity = { ideology = monarchism popularity = 0.02 }
+		add_stability = -0.05
+		KAR = { country_event = { id = ostmark.102 } }
+	}
+}
+
+country_event = {
+	id = ostmark.101
+	title = ostmark.101.t
+	desc = ostmark.101.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.101.a
+		add_popularity = { ideology = monarchism popularity = 0.05 } 
+	}
+}
+
+
+country_event = {
+	id = ostmark.102
+	title = ostmark.102.t
+	desc = ostmark.102.d
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.102.a
+		add_popularity = { ideology = monarchism popularity = -0.07 }
+	}
+}
+
+country_event = {
+	id = ostmark.109
+	title = ostmark.109.t
+	desc = ostmark.109.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				is_historical_focus_on = yes
+			}
+		}
+		name = ostmark.109.a
+		OST = {
+			country_event = {
+				id = ostmark.110
+				days = 1
+			}
+		}
+	}
+	option = {
+	ai_chance = {
+		base = 100
+	} 
+		name = ostmark.109.b
+	}
+}
+
+
+country_event = {
+	id = ostmark.110
+	title = ostmark.110.t
+	desc = ostmark.110.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 50
+		}
+		
+		name = ostmark.110.a
+		KAR = {
+			country_event = {
+				id = ostmark.112
+				days = 365
+			}
+		}
+		OST = { 
+			set_variable = {
+				var = ostmarkFactories
+				value = num_of_military_factories
+			}
+			multiply_variable = {
+				var = ostmarkFactories
+				value = 2
+			}
+			subtract_from_variable = {
+				var = ostmarkFactories
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			base = 50
+		}
+		name = ostmark.110.b
+		KAR = {
+			country_event = {
+				id = ostmark.111
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ostmark.111
+	title = ostmark.111.t
+	desc = ostmark.111.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ostmark.111.a
+		KAR = {
+			puppet = OST
+		}
+		hidden_effect = {
+		set_autonomy = {
+			target = OST
+			autonomy_state = autonomy_dominion
+		} }
+		OST = { set_cosmetic_tag = OST_dominion }
+		4 = { 
+			add_core_of = KAR 
+			remove_core_of = OST
+		}
+		152 = { 
+			add_core_of = KAR 
+			remove_core_of = OST
+		}
+		102 = { 
+			add_core_of = KAR 
+			remove_core_of = OST
+		}
+		transfer_state = 4
+		transfer_state = 152
+		transfer_state = 102
+		hidden_effect = {
+			OST = {
+				country_event = {
+					id = ostmark.114
+				}
+			}
+			news_event = {
+				id = politicalnews.200
+				days = 1
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = ostmark.112
+	title = ostmark.112.t
+	desc = ostmark.112.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ostmark.112.a
+		set_variable = { 
+			var = ostmarkFactories2 
+			value = num_of_military_factories
+		}
+		if = {
+			limit = {
+				OST = {
+					AND = { 
+						has_army_manpower = { size > 200000 }
+						check_variable = { ostmarkFactories < num_of_military_factories }
+					}
+				}
+			}
+			OST = {
+				country_event = {
+					id = ostmark.113
+				}
+			}
+		}
+		else = {
+			country_event = {
+				id = ostmark.111
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ostmark.113
+	title = ostmark.113.t
+	desc = ostmark.113.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ostmark.113.a
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = ostmark.114
+	title = ostmark.114.t
+	desc = ostmark.114.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ostmark.114.a
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = ostmark.200
+	title = ostmark.200.t
+	desc = ostmark.200.d
+	picture = GFX_report_event_generic_military_parade
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.200.a
+		ai_chance = {
+			base = 75
+		}
+		hidden_effect = {
+			set_country_flag = OST_heimatblock
+			add_stability = 0.1
+			country_event = {
+				id = ostmark.201
+				days = 7
+			}
+		}
+	}
+	
+	option = {
+		name = ostmark.200.b
+		ai_chance = {
+			base = 25
+		}
+		hidden_effect = {
+			set_country_flag = OST_thedynastystays
+			add_stability = -0.1
+			country_event = {
+				id = ostmark.202
+				days = 7
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = ostmark.201
+	title = ostmark.201.t
+	desc = ostmark.201.d
+	picture = GFX_report_event_fascist_militia
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.201.a
+		add_stability = -0.05
+		create_country_leader = {
+			name = "Grete Gollob"
+			desc = "POLITICS_KARL_RENNER_DESC"
+			picture = "Grete.dds"
+			expire = "1965.1.1"
+			ideology = fascist
+			traits = {
+				dictator
+			}
+		}
+		set_politics = {
+			ruling_party = fascism
+			parties = {
+				liberal = { popularity = 9 }
+				progressivism = { popularity = 0 }
+				liberal_monarchism = { popularity = 11 }
+				socialism = { popularity = 0 }
+				communism = { popularity = 0 }
+				authoritarian-socialism = { popularity = 0 }
+				monarchism = { popularity = 36 }
+				fascism = { popularity = 44 }
+				ultra-nationalism = { popularity = 0 }
+				fanatical-paganism = { popularity = 0 }
+			}
+		}
+		load_focus_tree = Ostmark_crumbled_heimat
+	}
+}
+
+country_event = {
+	id = ostmark.210
+	title = ostmark.210.t
+	desc = ostmark.210.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.210.a
+		KAR = { 
+			country_event = ostmark.211
+			puppet = OST
+			remove_state_core = 153
+			remove_state_core = 39
+			
+		}
+		OST = {
+			transfer_state = 153
+			transfer_state = 39
+			add_state_core = 153
+			add_state_core = 39
+			set_politics = {
+				ruling_party = fascism
+				parties = {
+					liberal = { popularity = 9 }
+					progressivism = { popularity = 0 }
+					liberal_monarchism = { popularity = 11 }
+					socialism = { popularity = 0 }
+					communism = { popularity = 0 }
+					authoritarian-socialism = { popularity = 0 }
+					monarchism = { popularity = 36 }
+					fascism = { popularity = 44 }
+					ultra-nationalism = { popularity = 0 }
+					fanatical-paganism = { popularity = 0 }
+				}
+			}
+			set_cosmetic_tag = OST_karlslander_puppet
+		}
+	}
+}
+
+country_event = {
+	id = ostmark.220
+	title = ostmark.220.t
+	desc = ostmark.220.d
+	picture = GFX_report_event_generic_army
+
+	fire_only_once = yes
+	
+	trigger = {
+		OST = {
+			has_full_control_of_state = 153
+			has_full_control_of_state = 4
+			has_war_with = KAR
+		}
+		tag = OST
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = ostmark.220.a
+		KAR = {
+			country_event = {
+				id = ostmark.221
+			}
+		}
+	}
+}	
+
+country_event = {
+	id = ostmark.221
+	title = ostmark.221.t
+	desc = ostmark.221.d
+	picture = GFX_report_event_generic_military_parade
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.221.a
+		OST = {
+			transfer_state = 153
+			transfer_state = 39
+		}
+		KAR = {
+			remove_state_core = 153
+			remove_state_core = 39
+		}
+		white_peace = OST
+	}
+}
+
+country_event = {
+	id = ostmark.230
+	title = ostmark.230.t
+	desc = ostmark.230.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.230.a
+		ai_chance = {
+			base = 5
+		}
+		OST = { country_event = { id = ostmark.231 } }
+	}
+	
+	option = {
+		name = ostmark.231.b
+		ai_chance = {
+			base = 1
+		}
+		OST = { country_event = { id = ostmark.232 } }
+	}
+}
+
+country_event = {
+	id = ostmark.231
+	title = ostmark.231.t
+	desc = ostmark.231.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.231.a
+		create_faction = "Nationalen Rückforderungspakt"
+		add_to_faction = SER
+		set_country_flag = OST_recpactsigned
+		SER = {
+			add_ai_strategy = {
+				type = alliance
+				id = OST
+				value = 200
+			}
+		}		
+	}
+
+}
+
+country_event = {
+	id = ostmark.230
+	title = ostmark.230.t
+	desc = ostmark.230.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.231.a
+		add_stability = -0.01
+	}
+
+}
+
+

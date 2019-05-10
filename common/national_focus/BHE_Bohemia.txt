@@ -1,0 +1,252 @@
+focus_tree = { 
+	id = Bohemia
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			original_tag = BHE
+			default = no
+		} 
+	} 
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	
+	focus = { 
+		id = BHE_thebohemianstate
+		icon = GFX_BHE_thestate
+		x = 8
+		y = 0
+		cost = 5
+		available_if_capitulated = yes 
+		available = {
+			has_global_flag = Ostmark_global_breakup
+		}
+		ai_will_do = { 
+			factor = 1000
+		} 
+		completion_reward = { 
+			add_political_power = 150
+			add_stability = 0.2
+		}
+	}
+	
+	
+	focus = { 
+		id = BHE_indiscriminatory_conscription
+		icon = GFX_goal_rhineland
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = BHE_thebohemianstate
+		prerequisite = { focus = BHE_thebohemianstate }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 1000
+		} 
+		completion_reward = { 
+			add_ideas = BHE_conscription
+		}
+	}
+	
+	focus = { 
+		id = BHE_puttingdowntheprotestors
+		icon = GFX_ballot_suppression
+		x = 0
+		y = 2
+		cost = 2
+		relative_position_id = BHE_thebohemianstate
+		prerequisite = { focus = BHE_indiscriminatory_conscription }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 1000
+		} 
+		completion_reward = { 
+			add_stability = 0.1
+			add_political_power = -50
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+	}
+	
+	focus = { 
+		id = BHE_emergency_war_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = BHE_puttingdowntheprotestors
+		prerequisite = { focus = BHE_puttingdowntheprotestors }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = { 
+			9 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = BHE_more
+		icon = GFX_focus_generic_industry_1
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = BHE_puttingdowntheprotestors
+		prerequisite = { focus = BHE_emergency_war_effort }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 30
+		} 
+		completion_reward = { 
+			9 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = BHE_more_twice
+		icon = GFX_focus_generic_industry_3
+		x = 2
+		y = 3
+		cost = 10
+		relative_position_id = BHE_puttingdowntheprotestors
+		prerequisite = { focus = BHE_more }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 20
+		} 
+		completion_reward = { 
+			9 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = BHE_zaolzie_is_ours
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = BHE_puttingdowntheprotestors
+		prerequisite = { focus = BHE_puttingdowntheprotestors }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 20
+		} 
+		completion_reward = { 
+			add_state_claim = 72	
+		}
+	}
+	
+	focus = { 
+		id = BHE_bohemian_not_moravian
+		icon = GFX_goal_generic_political_pressure
+		x = -2
+		y = 2
+		cost = 5
+		relative_position_id = BHE_puttingdowntheprotestors
+		prerequisite = { focus = BHE_zaolzie_is_ours }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 20
+		} 
+		completion_reward = { 
+			add_stability = 0.1
+			add_ai_strategy = {
+				type = invade
+				id = MRV
+				value = 100
+			}
+			add_ai_strategy = {
+				type = declare_war
+				id = MRV
+				value = 100
+			}
+		}
+	}
+	
+	
+	
+	focus = { 
+		id = BHE_ideological_hacks
+		icon = GFX_slovakia
+		x = -2
+		y = 3
+		cost = 10
+		relative_position_id = BHE_puttingdowntheprotestors
+		prerequisite = { focus = BHE_bohemian_not_moravian }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 20
+		} 
+		completion_reward = { 
+			create_wargoal = {
+				target = MRV
+				type = annex_everything
+			}
+			MRV = {
+				every_owned_state = {
+					if = {
+						limit = { is_core_of = MRV }
+						add_core_of = BHE
+					}
+				}
+			}
+		}
+	}
+
+	focus = { 
+		id = BHE_a_bohemia_to_challenge_karlsland
+		icon = GFX_BHE_final
+		x = 0
+		y = 4
+		cost = 10
+		relative_position_id = BHE_puttingdowntheprotestors
+		prerequisite = { focus = BHE_ideological_hacks }
+		prerequisite = { focus = BHE_more_twice }
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 20
+		} 
+		completion_reward = { 
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = BHE_conscription
+				add_idea = BHE_peace_conscription
+			}
+			set_party_name = {
+				ideology = monarchism
+				name = BHE_monarchism_party_military
+				long_name = BHE_monarchism_party_military
+			}
+			set_country_flag = BHE_revanchism_decisions
+			set_cosmetic_tag = BHE_greater
+		}
+	}
+	
+}
