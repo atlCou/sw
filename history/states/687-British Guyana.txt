@@ -10,7 +10,8 @@ state={
 	}
 
 	history={
-		owner = BRA
+		owner = CUB
+		add_core_of = CUB
 		buildings = {
 			infrastructure = 2
 			4982 = {

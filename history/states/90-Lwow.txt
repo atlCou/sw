@@ -6,7 +6,9 @@ state={
 		steel=12.000
 	}
 
-	history={
+	victory_points = {
+			9427 10 
+		} history={
 		owner = ORU
 		buildings = {
 			infrastructure = 6
@@ -17,7 +19,7 @@ state={
 	}
 
 	provinces={
-		562 3458 3497 3586 6416 11430 11532 
+		562 3458 3497 3586 6416 11430 9427 11532 
 	}
 	manpower=2135700
 	buildings_max_level_factor=1.000

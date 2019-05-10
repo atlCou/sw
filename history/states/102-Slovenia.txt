@@ -3,20 +3,28 @@ state=
 	id=102
 	name="STATE_102"
 	manpower = 1144300
-
+	
 	state_category = large_town
-
+	
 	history =
 	{
 		owner = OST
 		buildings = {
 			infrastructure = 6
+			dockyard = 3
+			11564 = {
+				naval_base = 3
+			}
 		}
 		victory_points = {
-			9627 3
+			9627 3 
 		}
+		victory_points = {
+			11564 1 
+		}
+		add_core_of = VNE
 		add_core_of = OST
 	}
 	provinces={
-		596 665 3631 3654 6650 6672 9596 9627 11612 	}
+		596 665 3631 3654 6650 6672 9596 9627 11564 11612}
 	}

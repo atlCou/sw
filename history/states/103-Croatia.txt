@@ -9,9 +9,8 @@ state={
 
 	history={
 		owner = VNE
-		add_core_of = VNE
 		victory_points = {
-			3924 1
+			3924 3
 		}
 		buildings = {
 			infrastructure = 5
@@ -24,10 +23,11 @@ state={
 				naval_base = 1
 			}
 		}
-
+		add_core_of = VNE
+		add_core_of = OST
 	}
 
 	provinces={
-		591 984 3601 3868 3924 3974 6611 6889 11564 11816 11901
+		591 984 3601 3868 3924 3974 6611 6889 11816 11901 
 	}
 }

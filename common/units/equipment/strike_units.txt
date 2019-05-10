@@ -8,10 +8,9 @@ equipments = {
 		group_by = archetype
 		interface_category = interface_category_land
 		
-		max_speed = 10
+		maximum_speed = 10
 		reliability = 1
 		weight = 0.1
-		max_organization = 100
 		
 		#Defensive Abilities
 		defense = 700

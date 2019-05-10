@@ -13,8 +13,7 @@ state={
 	}
 
 	history={
-		owner = ASI
-		victory_points = {
+		owner = SIR  add_core_of = SIR victory_points = {
 			12299 10
 		}
 		victory_points = {
