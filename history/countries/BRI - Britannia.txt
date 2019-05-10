@@ -101,6 +101,7 @@ puppet = RAJ
 puppet = BUR
 puppet = EGY
 puppet = SAF
+puppet = FAR
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
 
