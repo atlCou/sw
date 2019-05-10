@@ -37,8 +37,8 @@ BAL = {
 	color_ui = rgb { 47 112 145 }
 }
 EGY = {
-	color = rgb { 230 30 30 }
-	color_ui = rgb { 230 30 30 }
+	color = rgb { 260 20 20 }
+	color_ui = rgb { 260 20 20 }
 }
 GAL = {
 	color = rgb { 86 0 99 }
@@ -87,16 +87,44 @@ PAN = {
 	color_ui = rgb { 11 14 224 }
 }
 TUN = {
-	color = rgb { (142 86 7 }
-	color_ui = rgb { (142 86 7 }
+	color = rgb { 145 8 24 }
+	color_ui = rgb { 145 8 24 }
+}
+NUM = {
+	color = rgb { 14 109 2 }
+	color_ui = rgb { 14 109 2 }
 }
 SAF = {
-	color = rgb { (20 109 2}
-	color_ui = rgb { (20 109 2 }
+	color = rgb { 20 109 2}
+	color_ui = rgb { 20 109 2 }
+}
+SIR = {
+	color = rgb { 235 158 247 }
+	color_ui = rgb { 235 158 247 }
+}
+BUR = {
+	color = rgb { 211 130 0}
+	color_ui = rgb { 211 130 0 }
+}
+IND = {
+	color = rgb { 42 119 19 }
+	color_ui = rgb { 42 119 19 }
+}
+FUS = {
+	color = rgb { 244 0 14}
+	color_ui = rgb { 244 0 14 }
 }
 MOR = {
 	color = rgb { 183 9 9 }
 	color_ui = rgb { 183 9 9 }
+}
+ASI = {
+	color = rgb { 252 224 10 }
+	color_ui = rgb { 252 224 10 }
+}
+MOE = {
+	color = rgb { 181 35 16 }
+	color_ui = rgb { 181 35 16 }
 }
 TUR = {
 	color = rgb { 237 222 11 }
@@ -166,42 +194,6 @@ CHL = {
 	color = rgb { 155 101 107 }
 	color_ui = rgb { 202 131 139 }
 }
-COL = {
-	color = rgb { 222 187 91 }
-	color_ui = rgb { 255 243 118 }
-}
-COS = {
-	color = rgb { 152 128 43 }
-	color_ui = rgb { 152 128 43 }
-}
-ECU = {
-	color = rgb { 249 146 98 }
-	color_ui = rgb { 255 190 127 }
-}
-ELS = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
-}
-ETH = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
-}
-GUA = {
-	color = rgb { 72 49 112 }
-	color_ui = rgb { 72 49 112 }
-}
-HON = {
-	color = rgb { 128 145 65 }
-	color_ui = rgb { 128 145 65 }
-}
-IRQ = {
-	color = rgb { 178 114 99 }
-	color_ui = rgb { 231 148 129 }
-}
-FUS = {
-	color = rgb { 244 0 44}
-	color_ui = rgb { 244 0 44 }
-}
 LIB = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
@@ -233,10 +225,6 @@ PHI = {
 PRU = {
 	color = rgb { 196 189 204 }
 	color_ui = rgb { 255 246 255 }
-}
-SAF = {
-	color = rgb { 43 178 1 }
-	color_ui = rgb { 43 178 1 }
 }
 SAU = {
 	color = rgb { 171 190 152 }
