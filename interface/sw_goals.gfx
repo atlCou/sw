@@ -111,6 +111,86 @@ spriteTypes = {
 		name = "GFX_KAR_gosouth"
 		texturefile = "gfx/interface/goals/KAR_gosouth.dds"
 	}
+	SpriteType = {
+		name = "GFX_ballot_suppression"
+		texturefile = "gfx/interface/goals/ballot_suppression.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_compromise"
+		texturefile = "gfx/interface/goals/KAR_compromise.dds"
+	}
+	SpriteType = {
+		name = "GFX_tyrol"
+		texturefile = "gfx/interface/goals/tyrol.dds"
+	}
+	SpriteType = {
+		name = "GFX_BHE_thestate"
+		texturefile = "gfx/interface/goals/BHE_thestate.dds"
+	}
+	SpriteType = {
+		name = "GFX_slovakia"
+		texturefile = "gfx/interface/goals/slovakia.dds"
+	}
+	SpriteType = {
+		name = "GFX_BHE_final"
+		texturefile = "gfx/interface/goals/BHE_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_Pagan_rod"
+		texturefile = "gfx/interface/goals/Pagan_rod.dds"
+	}
+	SpriteType = {
+		name = "GFX_MRV_purge"
+		texturefile = "gfx/interface/goals/MRV_purge.dds"
+	}
+	SpriteType = {
+		name = "GFX_MRV_recruitment"
+		texturefile = "gfx/interface/goals/MRV_recruitment.dds"
+	}
+	SpriteType = {
+		name = "GFX_moravia"
+		texturefile = "gfx/interface/goals/moravia.dds"
+	}
+	SpriteType = {
+		name = "GFX_MRV_final"
+		texturefile = "gfx/interface/goals/MRV_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Boot"
+		texturefile = "gfx/interface/goals/Star_Boot.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Politics"
+		texturefile = "gfx/interface/goals/Star_Politics.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Shield"
+		texturefile = "gfx/interface/goals/Star_Shield.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Sword"
+		texturefile = "gfx/interface/goals/Star_Sword.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Rifle"
+		texturefile = "gfx/interface/goals/Star_Rifle.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Unions"
+		texturefile = "gfx/interface/goals/Star_Unions.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_SEIZE"
+		texturefile = "gfx/interface/goals/Star_SEIZE.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Control"
+		texturefile = "gfx/interface/goals/Star_Control.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Hands"
+		texturefile = "gfx/interface/goals/Star_Hands.dds"
+	}
 }
 
 

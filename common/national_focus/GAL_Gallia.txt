@@ -1081,79 +1081,206 @@ icon = GFX_focus_prc_agrarian_socialism
 x = 1
 y = 6
 relative_position_id = GAL_workersgallia
-available = {
-	AND = {
-		OR = {
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = GAL_consolidationofitaly_tooltip_effect
 			AND = {
-				VNE = {
-					is_puppet_of = ROOT
-				}
-				RMA = {
-					is_puppet_of = ROOT
-				}
-			}
-			OR = {
-				AND = {
-					GAL = {
-						owns_state = 161
-						owns_state = 157
-						owns_state = 160
-						owns_state = 736
-						owns_state = 103
-						owns_state = 163
-						owns_state = 104
-						owns_state = 105
-						owns_state = 44
-					}
-					RMA = {
-						is_puppet_of = ROOT
+				NOT = {
+					OR = {
+						has_completed_focus = GAL_romagnianoverextension
+						has_completed_focus = GAL_venezianoverextension
 					}
 				}
-				AND = {
-					GAL = {
-						owns_state = 158
-						owns_state = 159
-						owns_state = 162
-						owns_state = 2
-						owns_state = 117
-						owns_state = 156
-						owns_state = 115
-						owns_state = 114
-					}
-					VNE = {
-						is_puppet_of = ROOT
+				158 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
 					}
 				}
-				GAL = {
-					owns_state = 158
-					owns_state = 159
-					owns_state = 162
-					owns_state = 2
-					owns_state = 117
-					owns_state = 156
-					owns_state = 115
-					owns_state = 114
-					owns_state = 161
-					owns_state = 157
-					owns_state = 160
-					owns_state = 736
-					owns_state = 103
-					owns_state = 163
-					owns_state = 104
-					owns_state = 105
-					owns_state = 44
+				159 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
 				}
-				
-			}
-		}
-		NOT = {
-			OR = {
-				has_completed_focus = GAL_romagnianoverextension
-				has_completed_focus = GAL_venezianoverextension
+				162 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				2 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				117 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				156 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				115 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				114 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				161 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				157 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				160 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				736 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				103 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				163 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				104 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				105 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
+				44 = {
+					OR = { 
+						is_owned_by = GAL
+						AND = {
+							ANY = {
+								is_puppet_of = GAL
+								owns_state = PREV
+							}
+						}
+					}
+				}
 			}
 		}
 	}
-}
 prerequisite = { focus = GAL_italianrevolution focus = GAL_romagnianfascists }
 cost = 10
 available_if_capitulated = yes

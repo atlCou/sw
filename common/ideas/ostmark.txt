@@ -1,5 +1,26 @@
 ideas = {
-
+	country = {
+		OST_ontotheworld_idea = {
+		
+			picture = OST_eagle
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+				
+			}
+		}
+		
+		OST_arts = {
+		
+			picture = OST_eagle
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+	}
 	political_advisor = {
 
 		OST_arthur_seyss-inquart = {

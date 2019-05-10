@@ -4,3 +4,10 @@ assigning_witches = {
 		check_variable = { witches_manpower > 0 }
 	}
 }
+
+bohemian_revanchism = {
+	icon = generic_propaganda
+	availabe = {
+		has_country_flag = BHE_revanchism_decisions
+	}
+}

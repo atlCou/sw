@@ -12,6 +12,11 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_idea_GAL_socialismstar"
-		texturefile = 'gfx/interface/ideas/GAL_socialismstar"
+		texturefile = "gfx/interface/ideas/GAL_socialismstar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_OST_eagle"
+		texturefile = "gfx/interface/ideas/OST_eagle.dds"
 	}
 }

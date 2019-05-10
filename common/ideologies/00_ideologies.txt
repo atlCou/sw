@@ -98,6 +98,9 @@ ideologies = {
 			liberal_socialism = {
 			}
 			
+			revolutionary_nationalistic_socialism = {
+			}
+			
 		}
 		
 		dynamic_faction_names = {
@@ -277,6 +280,9 @@ ideologies = {
 			}
 			
 			absolute_monarchism  = {
+			}
+			
+			military_junta = {
 			}
 			
 		}

@@ -137,6 +137,29 @@
  gallia.200.d:0 "After Gallia's descent into a bizarre and totalitarian regime, it seemed inevitable that the country would soon wish to leave our faction. It now appears that that time has come, and we stand without a major ally on the European mainland. Hopefully, in the case of a greater war, we will find allies in Gallia or other nations again."
  gallia.200.a:0 "A sad day for our sphere."
  
+ 
+ gallia.1000.t:0 "Interests in Venice"
+ gallia.1000.d:0 "The once maritime republic of Venezia, now a small federated republic, holds an extremely powerful socialist opposition party. However, due to the lingering influence of the aristocracy, that party has never had a government for long enough to accomplish socialist reforms. As a dominant power with similar interests, Venezia could be of great use."
+ gallia.1000.a:0 "Send guns - if the party can't win in the elections, they'll have to win through force!"
+ gallia.1000.b:0 "Announce our support for the party."
+ 
+ 
+ gallia.1010.t:0 "Gallia Sends Arms to Militant Socialists!"
+ gallia.1010.d:0 "Gallia, under a [GAL.GetRulingIdeology] government, has sent arms to our militant factions; and further word reveals with the full intent of overthrowing our liberal republic. It's a clear move to strengthen themselves geopolitically, but the vast popularity of the party prevents us from effectively cracking down on the militants."
+ gallia.1010.a:0 "Damn!"
+ gallia.1011.t:0 "Gallia Supports Partitio Socialista"
+ gallia.1011.d:0 "Gallia has announced their public support for our socialist party, increasing their political strength. We hold clear geopolitical importance for the nation, but thankfully this seems to be the maximum extent to which they wish to exert their influence."
+ gallia.1011.a:0 "Still very objectionable!"
+ gallia.1012.t:0 "Nationwide Socialist Campaigns"
+ gallia.1012.d:0 "The last few weeks have been characterized by an immense amount of political demonstrations - especially many small, violent protests - that have shook the nation. Our holdings outside of Italy have been especially active."
+ gallia.1012.a:0 "We should prepare..."
+ gallia.1013.t:0 "Establishment of the Venetian Socialist Republic!"
+ gallia.1013.d:0 "After weeks of extensive protest - and foreign aid, it should be added - our holdings in the western Balkans have risen up under the banner of a 'Venetian Socialist Republic'. Gallia is expected to take responsibility for the nation and take them under their wing."
+ gallia.1013.a:0 "Civil war seems inevitable..."
+ gallia.1014.t:0 "Consolidating Control of the VSR"
+ gallia.1014.d:0 "The VSR, a socialist state which exists because of our support, recognizes such. Josipa Bencetic, the de facto leader of the nation, has agreed to let us control their foreign affiars for our support against the old Venezian republic."
+ gallia.1014.a:0 "Venezia is soon ours!"
+ 
  ################################
  
  britannia.20.t:0 "The Karlslander Republic wishes to join the United Nations"
@@ -145,7 +168,7 @@
  britannia.20.b:0 "...We could never ally with the Karlslanders."
  
  britannia.21.t:0 "The Karlsland Empire's Anti-Neuroi Pact"
- britannia.21.d:0 "The Karlsland Empire has approached us with a new proposal - a pact against the Neuroi or any other aggressor. They aren't asking to join the United Nations, but for us and Gallia to gurantee that we'll support them in case of military conflict. They have also proposed, alongside the alliance, the potential for sharing specifically Strike Witches between nations in joint units; so that the inevitable event of another Neuroi attack can be mutually defended for the benefit of all."
+ britannia.21.d:0 "The Karlsland Empire has approached us with a new proposal - a pact against the Neuroi or any other aggressor. They aren't asking to join the United Nations, but for us and Gallia to gurantee that we'll support them in case of military conflict. They have also proposed, alongside the alliance, the potential for sharing specifically Strike Witches between nations in joint units; so that the inevitable event of another Neuroi attack can be mutually defended against for the benefit of all."
  britannia.21.a:0 "Of course!"
  britannia.21.b:0 "...We could never ally with the Karlslanders."
  

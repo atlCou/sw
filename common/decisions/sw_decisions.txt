@@ -1,49 +1,194 @@
-annexation_decisions = {
+bohemian_revanchism = {
 
-	# Afghanistan
-	annexation_AFG_CONQ = {
-		icon = generic_flags
+	BHE_claiming_orussian_bohemia = {
+		icon = eng_propaganda_campaigns
+
 		allowed = {
-			NOT = {
-				tag = AFG
-				tag = DEH
-				tag = PER
-			}
+			has_country_flag = BHE_revanchism_decisions
 		}
-		activation = {
-			owns_state = 267 #Afghanistan
-			267 = {
-				is_not_claim_or_core_of_ROOT = yes
+
+		available = {
+			NOT = { 
+				BHE = {
+					AND = {
+						has_full_control_of_state = 762
+						has_full_control_of_state = 90
+						has_full_control_of_state = 10
+						has_full_control_of_state = 98
+						has_full_control_of_state = 97
+					}
+				}
 			}
-			is_subject = no
-			NOT = {
-				has_country_flag = AFG_CONQ
-				country_exists = AFG
-			}
+			BHE = { is_puppet = no }
 		}
-		selectable_mission = yes
-		days_mission_timeout = 60
-		is_good = no
-		cost = freedec?0
-		fire_only_once = no
-		cancel_trigger = {
-			NOT = {
-				owns_state = 267
-			}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = BHE
+			has_country_flag = BHE_revanchism_decisions
 		}
+
+		cancel_if_not_visible = yes
+
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision annexation_AFG_CONQ"
-			country_event = annex.116
+			add_state_claim = 762
+			add_state_claim = 90
+			add_state_claim = 10
+			add_state_claim = 98
+			add_state_claim = 97
 		}
-		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout annexation_AFG_CONQ"
-			set_country_flag = AFG_CONQ
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
+
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 	}
+	
+	
+	BHE_integrating_orussian_bohemia = {
+		icon = oppression
+
+		allowed = {
+			has_country_flag = BHE_revanchism_decisions
+		}
+
+		available = {
+			BHE = {
+				AND = {
+					has_full_control_of_state = 762
+					has_full_control_of_state = 90
+					has_full_control_of_state = 10
+					has_full_control_of_state = 98
+					has_full_control_of_state = 97
+					
+				}
+				is_puppet = no
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = BHE
+			has_country_flag = BHE_revanchism_decisions
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			add_state_core = 762
+			add_state_core = 90
+			add_state_core = 10
+			add_state_core = 98
+			add_state_core = 97
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	BHE_claiming_karlslander_bohemia = {
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			has_country_flag = BHE_revanchism_decisions
+		}
+
+		available = {
+			NOT = { 
+				BHE = {
+					AND = {
+						has_full_control_of_state = 66
+						has_full_control_of_state = 67
+						has_full_control_of_state = 87
+						has_full_control_of_state = 86
+						has_full_control_of_state = 85
+						has_full_control_of_state = 5
+						has_full_control_of_state = 763
+						has_full_control_of_state = 188
+					}
+				}
+			}
+			BHE = { is_puppet = no }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = BHE
+			has_country_flag = BHE_revanchism_decisions
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			add_state_claim = 66
+			add_state_claim = 67
+			add_state_claim = 87
+			add_state_claim = 86
+			add_state_claim = 85
+			add_state_claim = 5
+			add_state_claim = 763
+			add_state_claim = 188
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	BHE_integrating_karlslander_bohemia = {
+		icon = oppression
+
+		allowed = {
+			has_country_flag = BHE_revanchism_decisions
+		}
+
+		available = {
+			BHE = {
+				AND = {
+					has_full_control_of_state = 762
+					has_full_control_of_state = 66
+					has_full_control_of_state = 67
+					has_full_control_of_state = 87
+					has_full_control_of_state = 86
+				}
+				is_puppet = no
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = BHE
+			has_country_flag = BHE_revanchism_decisions
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			add_state_core = 762
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 87
+			add_state_core = 86
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+
 }

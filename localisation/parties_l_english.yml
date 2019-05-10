@@ -6,8 +6,8 @@
  liberal:0 "Social Liberal"
  liberal_noun:0 "Social Liberalism"
  
- fascism:0 "Fascist"
- fascism_noun:0 "Fascism"
+ fascism:0 "Nationalist"
+ fascism_noun:0 "Nationalism"
  fascism_desc:0 "Authoritarian Regime"
  
  
@@ -39,7 +39,7 @@
  fanatical-paganism_noun:0 "Clerical Authoritarianism"
  fanatical_paganism:0 "Clerical Authoritarianism"
  fanatical-paganism:0 "Clerical Authoritarian"
- fanatical-paganism_desc:0 "Rooted in ultra-nationalism, fanatical paganism is a broad term for a variety of authoritarian, European ideologies that are rooted in ancient religions and an extreme attachment to ancestry."
+ fanatical_paganism_desc:0 "Rooted in ultra-nationalism, fanatical paganism is a broad term for a variety of authoritarian, European ideologies that are rooted in ancient religions and an extreme attachment to ancestry. They base their power in a distaste towards the millenia old Romagna centric culture, and draw heavily on nationalistic sentiment."
  
  fascist:0 "Fascism"
  fascist_desc:0 "Encompassing a variety of far-right movements, fascism typically venerates devotion to the state and uniting the people under a strong leader."
@@ -71,6 +71,7 @@
  absolute_monarchism_desc:0 "Absolute monarchism is a form of monarchy where the monarch has absolute rule and say over their subjects."
  
  marxist-leninism:0 "Marxist-Leninism"
+ 
  
  democratic_socialism:0 "Democratic Socialism"
  
@@ -106,7 +107,7 @@
  
  authoritarian-socialism_drift:0 "Daily support for Authoritarian Socialism"
  
- 
+ military_junta_desc:0 "A military junta, or military dictatorship, is a government ran by a council of military leaders or a single military official. They generally have the nation's interests in mind, but are dictatorial in their nature and may not concede their position without civil action."
  
  
  
@@ -595,17 +596,7 @@
  KAR_ultra-nationalism_party_long:0 "Nationalsozialistische Karlslander Arbeiterpartei (Militärisch)"
  KAR_liberal_monarchism_party_long:0 "Karlslanderkonservative Partei"
  KAR_liberal_monarchism_party:0 "KKP"
- OST_ultra-nationalism_party:0 "VF"
- OST_ultra-nationalism_party_long:0 "Vaterländische Front"
- OST_liberal_monarchism_party:0 "OMB"
- OST_liberal_monarchism_party_long:0 "Ostmarkian-Magyarian-Bohemian Monarchy"
- OST_communism_party:0 "KPÖ"
- OST_communism_party_long:0 "Kommunistische Partei Österreichs"
- OST_monarchism_party:0 "Habsburg-Lorraine"
- OST_monarchism_party_long:0 "House of Habsburg-Lorraine"
- OST_fascism_party:0 "Ostmark Front"
- OST_fanatical-paganism_party:0 "HE"
- OST_fanatical-paganism_party_long:0 "Heidnische Einheitsfront"
+
  LIN_liberal_party_long:0 "People's Party"
  LIN_liberal_party:0 "Populists"
  LIN_liberal_monarchism_party:0 "Democratic Party"
@@ -721,3 +712,38 @@
  VSR_fanatical-paganism_party_long:0 "Partito Veneziano di Unificazione (Roma)"
  VSR_fanatical-paganism_party:0 "PVdU"
  VSR_monarchism_party:0 "Royalists"
+ 
+ 
+ 
+ 
+ BHE_monarchism_party:0 "Military Junta"
+ BHE_fascism_party:0 "NOF"
+ BHE_fascism_party_long:0 "Národní obec fašistická"
+ BHE_liberal_party:0 "ODS"
+ BHE_lberal_party_long:0 "Občanská demokratická strana"
+ BHE_progressivism_party:0 "CSSD"
+ BHE_progressivism_party_long:0 "Čechy strana sociálně demokratická"
+ BHE_socialism_party:0 "CSSD"
+ BHE_socialism_party_long:0 "Čechy strana sociálně demokratická""
+ 
+ 
+ PNE_authoritarian-socialism_party_long:0 "Kommunisták Pannoniaországi Pártja"
+ PNE_authoritarian-socialism_party:0 "KPP"
+ PNE_communism_party_long:0 "Kommunisták Pannoniaországi Pártja"
+ PNE_communism_party:0 "KKP"
+ PNE_socialism_party_long:0 "Kommunisták Pannoniaországi Pártja"
+ PNE_socialism_party:0 "KKP"
+ PNE_progressivism_party:0 "KKP"
+ PNE_progressivism_party_long:0 "Kommunisták Pannoniaországi Pártja"
+ PNE_liberal_party:0 "Pannonian Liberal Opposition"
+ 
+ 
+ MRV_fanatical-paganism_party:0 "Legioniści Roda"
+ MRV_ultra-nationalism_party:0 "Morawska Opozycja"
+ MRV_fascism_party:0 "Morawska Opozycja"
+ MRV_monarchism_party:0 "Habsburg Loyalists"
+ MRV_liberal_monarchism_party:0 "Grand Coalition Loyalists"
+ MRV_socialism_long_party:0 "Morawska Partia Socjalistyczna"
+ MRV_socialism_party:0 "MPS"
+ 
+ 

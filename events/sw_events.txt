@@ -157,425 +157,6 @@ country_event = {
 
 
 
-
-############# Ostmark Gen ############
-add_namespace = ostmark
-
-
-country_event = {
-	id = ostmark.20
-	title = ostmark.20.t
-	desc = ostmark.20.d
-	picture = GFX_report_event_hungary_parliament
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	
-	
-	option = {
-		name = ostmark.20.a
-		ai_chance = {
-			base = 100
-			modifier = {
-				add = -100
-				OR = {			
-						has_government = ultra-nationalism 
-						has_government = fanatical-paganism
-						has_government = authoritarian-socialism }
-		}
-		}
-		KAR = { country_event = {
-		days = 7
-		id = ostmark.21
-		}
-	}
-	}
-	
-	option = {
-		name = ostmark.20.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 100
-				OR = {			
-					has_government = ultra-nationalism 
-					has_government = fanatical-paganism
-					has_government = authoritarian-socialism 
-				}
-			}
-		}
-		KAR = { country_event = {
-		days = 7
-		id = ostmark.22
-		}
-	}
-	}
-}
-
-country_event = {
-	id = ostmark.21
-	title = ostmark.21.t
-	desc = ostmark.21.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-		
-	
-	
-	option = {
-		name = ostmark.21.a
-		
-		OST = {
-			country_event = {
-				days = 7
-				id = ostmark.23
-			}
-		}
-	}
-}
-
-country_event = {
-	id = ostmark.22
-	title = ostmark.22.t
-	desc = ostmark.22.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-		
-	
-	
-	option = {
-		name = ostmark.22.a
-	}
-}
-
-country_event = {
-	id = ostmark.23
-	title = ostmark.23.t
-	desc = ostmark.23.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-		
-	
-	
-	option = {
-		name = ostmark.23.a
-		
-		KAR = {
-			create_faction = "Central Powers"
-		}
-		KAR = {
-			add_to_faction = OST
-		}
-		OST = { 
-			add_ai_strategy = {
-				type = alliance
-				id = KAR
-				value = 200
-			}
-		}
-		KAR = { 
-			add_ai_strategy = {
-				type = alliance
-				id = OST
-				value = 200
-			}
-		}
-	}
-}
-
-
-
-
-country_event = {
-	id = ostmark.100
-	title = ostmark.100.t
-	desc = ostmark.100.d
-	picture = GFX_report_event_german_reichstag_gathering
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = {
-		name = ostmark.100.a
-		ai_chance = {
-			base = 100
-			modifier = {
-				add = -100
-				OR = {			
-					has_government = ultra-nationalism 
-					has_government = fanatical-paganism
-					has_government = authoritarian-socialism 
-				}
-			}
-		}
-		add_popularity = { ideology = monarchism popularity = 0.1 }
-		add_stability = -0.1
-		KAR = { country_event = { id = ostmark.101 } }
-	}
-	
-	option = {
-		name = ostmark.100.b
-		ai_chance = {
-			base = 10
-			modifier = {
-				add = 90
-				OR = {			
-					has_government = ultra-nationalism 
-					has_government = fanatical-paganism
-					has_government = authoritarian-socialism 
-				}
-			}
-		}
-		add_popularity = { ideology = monarchism popularity = 0.02 }
-		add_stability = -0.05
-		KAR = { country_event = { id = ostmark.102 } }
-	}
-}
-
-country_event = {
-	id = ostmark.101
-	title = ostmark.101.t
-	desc = ostmark.101.d
-	picture = GFX_report_event_german_reichstag_gathering
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = {
-		name = ostmark.101.a
-		add_popularity = { ideology = monarchism popularity = 0.05 } 
-	}
-}
-
-
-country_event = {
-	id = ostmark.102
-	title = ostmark.102.t
-	desc = ostmark.102.d
-	picture = GFX_report_event_german_reichstag_gathering
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = {
-		name = ostmark.102.a
-		add_popularity = { ideology = monarchism popularity = -0.07 }
-	}
-}
-
-country_event = {
-	id = ostmark.109
-	title = ostmark.109.t
-	desc = ostmark.109.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = {
-		ai_chance = {
-			base = 50
-			modifier = {
-				add = -50
-				is_historical_focus_on = yes
-			}
-		}
-		name = ostmark.109.a
-		OST = {
-			country_event = {
-				id = ostmark.110
-				days = 1
-			}
-		}
-	}
-	option = {
-	ai_chance = {
-		base = 100
-	} 
-		name = ostmark.109.b
-	}
-}
-
-
-country_event = {
-	id = ostmark.110
-	title = ostmark.110.t
-	desc = ostmark.110.d
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = {
-		ai_chance = {
-			base = 50
-		}
-		
-		name = ostmark.110.a
-		KAR = {
-			country_event = {
-				id = ostmark.112
-				days = 365
-			}
-		}
-		OST = { 
-			set_variable = {
-				var = ostmarkFactories
-				value = num_of_military_factories
-			}
-			multiply_variable = {
-				var = ostmarkFactories
-				value = 2
-			}
-			subtract_from_variable = {
-				var = ostmarkFactories
-				value = 1
-			}
-		}
-	}
-	
-	option = {
-		ai_chance = {
-			base = 50
-		}
-		name = ostmark.110.b
-		KAR = {
-			country_event = {
-				id = ostmark.111
-				days = 1
-			}
-		}
-	}
-}
-
-country_event = {
-	id = ostmark.111
-	title = ostmark.111.t
-	desc = ostmark.111.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = ostmark.111.a
-		KAR = {
-			puppet = OST
-		}
-		hidden_effect = {
-		set_autonomy = {
-			target = OST
-			autonomy_state = autonomy_dominion
-		} }
-		OST = { set_cosmetic_tag = OST_dominion }
-		4 = { 
-			add_core_of = KAR 
-			remove_core_of = OST
-		}
-		152 = { 
-			add_core_of = KAR 
-			remove_core_of = OST
-		}
-		102 = { 
-			add_core_of = KAR 
-			remove_core_of = OST
-		}
-		transfer_state = 4
-		transfer_state = 152
-		transfer_state = 102
-		hidden_effect = {
-			OST = {
-				country_event = {
-					id = ostmark.114
-				}
-			}
-			news_event = {
-				id = politicalnews.200
-				days = 1
-			}
-		}		
-	}
-}
-
-country_event = {
-	id = ostmark.112
-	title = ostmark.112.t
-	desc = ostmark.112.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = ostmark.112.a
-		set_variable = { 
-			var = ostmarkFactories2 
-			value = num_of_military_factories
-		}
-		if = {
-			limit = {
-				OST = {
-					AND = { 
-						has_army_manpower = { size > 200000 }
-						check_variable = { ostmarkFactories < num_of_military_factories }
-					}
-				}
-			}
-			OST = {
-				country_event = {
-					id = ostmark.113
-				}
-			}
-		}
-		else = {
-			country_event = {
-				id = ostmark.111
-			}
-		}
-	}
-}
-
-country_event = {
-	id = ostmark.113
-	title = ostmark.113.t
-	desc = ostmark.113.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = ostmark.113.a
-		add_stability = 0.1
-	}
-}
-
-country_event = {
-	id = ostmark.114
-	title = ostmark.114.t
-	desc = ostmark.114.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = ostmark.114.a
-		add_stability = -0.1
-	}
-}
-
-
 ############ Karlsland temp ##############
 
 
@@ -743,6 +324,94 @@ country_event = {
 		popularity = -0.05
 		}
 	}
+}
+
+country_event = {
+	id = karlsland.60
+	title = karlsland.60.t
+	desc = karlsland.60.d
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.60.a
+		add_stability = 0.1
+		add_popularity = {
+			ideology = liberal_monarchism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.1
+		}
+	}
+
+}
+
+
+country_event = {
+	id = karlsland.61
+	title = karlsland.61.t
+	desc = karlsland.61.d
+	picture = GFX_report_event_german_speech
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.61.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+	}
+
+}
+
+country_event = {
+	id = karlsland.62
+	title = karlsland.62.t
+	desc = karlsland.62.d
+	picture = GFX_report_event_german_reichstag_gathering
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.62.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = liberal_monarchism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.12
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.04
+		}
+	}
+
 }
 	
 country_event = {
@@ -1801,22 +1470,32 @@ country_event = {
 	
 	option = {
 		name = karlsland.401.a
+		ai_chance = {
+			factor = 25
+		}
 		KAR = {
 			transfer_state = 28
 		}
 		hidden_effect = {
-			country_event = {
-				id = karlsland.403
-				days = 3
+			KAR = { 
+				country_event = {
+					id = karlsland.403
+					days = 3
+				}
 			}
 		}
 	}
 	
 	option = {
 		name = karlsland.401.b
-		country_event = {
-			id = karlsland.402
-			days = 1
+		ai_chance = {
+			factor = 75
+		}
+		KAR = { 
+			country_event = {
+				id = karlsland.402
+				days = 1
+			}
 		}
 	}
 }
@@ -1859,6 +1538,12 @@ country_event = {
 			target = GAL
 			type = puppet_wargoal_focus
 		}
+		add_stability = -0.075
+	}
+	
+	option = {
+		name = karlsland.403.b
+		add_stability = 0.025
 	}
 }
 	
@@ -2114,7 +1799,64 @@ country_event = {
 }
 
 
+#########
+add_namespace = soumus
 
+country_event = {
+	id = soumus.1
+	title = soumus.1.t
+	desc = soumus.1.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soumus.1.a
+		ai_chance = { factor = 100 }
+		KAR = {
+			country_event = {
+				id = soumus.2
+			}
+		}
+	}
+	option = {
+		name = soumus.1.b
+		ai_chance = { factor = 2 }
+		KAR = {
+			country_event = {
+				id = soumus.3
+			}
+		}
+	}
+}
+	
+country_event = {
+	id = soumus.2
+	title = soumus.2.t
+	desc = soumus.2.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soumus.2.a
+		create_faction = "Berlin-Helsinki Defense Pakt"
+		add_to_faction = SOU
+	}
+}
 
-
-
+country_event = {
+	id = soumus.3
+	title = soumus.3.t
+	desc = soumus.3.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soumus.3.a
+	}
+}

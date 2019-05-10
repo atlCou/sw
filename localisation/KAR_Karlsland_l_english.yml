@@ -417,7 +417,15 @@ GAL_emergencyconstruction:0 "Emergency Construction"
 
 GAL_socialistcountrysides:0 "Socialist Countrysides"
 
+
+
+GAL_italianrevolution_tooltip:0 "§WPuppets §Ythe Venezian Socialist Republic§W, gains a §Ywargoal§W against §YVenezia§W. If the revolution §Gsuceeds§W, you will also gain a §Ywargoal§W against §YRomagna§W."
+
+GAL_consolidationofitaly_tooltip_effect:0 " §WOwns all Italian states owned by §YRomagna§W and §YVenezia§W, and/or your puppets own them. Hasn't taken §YRomagnian Overextension§W or §YVenezian Overextension§W."
+
+
 GAL_noalliaces:0 " Gallia has rejected all witch related alliances."
+
 
 
 
@@ -426,7 +434,6 @@ GAL_noalliaces:0 " Gallia has rejected all witch related alliances."
 ############# EVENTS ##########
 ###############################
 
- 
  
  kwitches.1.t:0 "The First 'Strike Units'"
  kwitches.1.d:0 "Karlslander researches have been hard at work designing new tools to harness the possibilities of our witch population. As a final culmination of their research, they have produced multiple backpack styled and leg mounted designs which allow witches to fly much in the style of our airplanes. Many of our researches already see great promise in the leg mounted designs.\n\nDespite our great traditions, we have very little witches available to assign these units to. Perhaps expanding our numbers should be the next step in preparing our neuroi defense, we have one of the largest populations in the world."
@@ -605,25 +612,25 @@ GAL_noalliaces:0 " Gallia has rejected all witch related alliances."
  karlsland.320.b:0 "The military's NSKAP!"
  karlsland.320.c:0 "The HE!"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ karlsland.400.t:0 "The Alcase-Lorraine Incident"
+ karlsland.400.d:0 "The city of Strasbourg, once part of Karlsland that has now been long settled as a formal and cultural part of Gallia, faced numerous violent attacks yesterday. It's clearly a sign that those Gallian citizens wish to return to their fatherland, and we must demand Gallia hands over the old Karlslander state to us. Even more so, it would be an excellent excuse to get them off our backs..."
+ karlsland.400.a:0 "It's time!"
+ 
+ karlsland.401.t:0 "The Alcase-Lorraine Incident"
+ karlsland.401.d:0 "The city of Strasbourg, once part of Karlsland that has now been long settled as a formal and cultural part of Gallia, faced numerous violent attacks yesterday. Clearly a staged incident by the dictatorial government, we should decide how to respond carefully. Regardless, we should now expect the war that they've been preparing for."
+ karlsland.401.a:0 "Give them the state, it may subdue them."
+ karlsland.401.b:0 "Put down the protests and hold strong."
+ karlsland.402.t:0 "Gallia Holds"
+ karlsland.402.d:0 "[GAL.GetNameDef] has held strong in their hold on Alcase-Lorraine. This provides the perfect incident for us to demand it with force - and crush the degenerate regime to our west!"
+ karlsland.402.a:0 "Karlsland marches on!"
+ karlsland.403.t:0 "Gallia Folds"
+ karlsland.403.d:0 "Gallia has decided to give us the historic state! Though a great victory for Karlsland, we might be able to salvage Gallia's weakness and attack them while they're prone - though without completely legitimate reason..."
+ karlsland.403.a:0 "Our rival is weak - strike them!"
+ karlsland.403.b:0 "Alcase-Lorraine is ours - that's all that matters."
+ 
+ news.400.d:0 "The city of Strasbourg, once part of Karlsland that has now been long settled as a formal and cultural part of Gallia, faced numerous violent attacks yesterday. Karlsland's government claims that its a sign that their citizens are finally ready to return to their old nation, but [GAL.GetNameDef] claims the attacks were orchestrated."
+ 
+ 
 ########### Baltland tree ########
 GEN_rallying:0 "Rallying the Nation"
 GEN_socdem_econ:0 "Social Programs"
@@ -663,7 +670,7 @@ BAL_Defendingtherevolution:0 "Defending the Revolution"
 BAL_exportingtherevolution:0 "Exporting the Revolution"
 BAL_Venstre_survives:0 "Venstre Survives"
 BAL_supportingdemocracy:0 "Supporting Democracy"
-BAL_baltlandicbusiness:0 "Balt  landic Business"
+BAL_baltlandicbusiness:0 "Baltlandic Business"
 BAL_privateuniversities:0 "Private Universities"
 
 BAL_joiningbritannia:0 "Joining Britannia"
@@ -673,8 +680,20 @@ BAL_militants:0 "§MThe completion of this focus means a large change in the pol
 
 
 
+##########
 
 
+
+soumus.1.t:0 "[KAR.GetNameDef] Proposes Mutual Entry into United Nations"
+soumus.1.d:0 "[KAR.GetNameDef] has proposed that we enter into a more formal alliance with them as they prepare to enter the United Nations. This would strengthen our own defensive position immensely, but would mean joining an even larger group of allied nations and thus relinquishing some of our sovereignty."
+soumus.1.a:0 "A safer world would come from this."
+soumus.1.b:0 "We're better off alone."
+soumus.2.t:0 "[SOU.GetNameDef] Accepts"
+soumus.2.d:0 "[SOU.GetNameDef] has accepted our proposal to join the United Nations together! A temporary formal alliance will be signed by the Kaiser and the representative of Soumus as we wait negotiatie our enterance into the United Nations."
+soumus.2.a:0 "Excellent!"
+soumus.3.t:0 "[SOU.GetNameDef] Denies"
+soumus.3.d:0 "[SOU.GetNameDef] has denied our proposal to join the United Nations together. Regardless, we can still enter on our own. This will also not affect our existing defensive alliance."
+soumus.3.a:0 "Oh well, not much different anyways."
 
 
 

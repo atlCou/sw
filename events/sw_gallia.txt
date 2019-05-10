@@ -881,13 +881,32 @@ country_event = {
 					}
 				}
 			}
+			GAL = {
+				AND = { 
+						owns_state = 736
+						owns_state = 160
+						owns_state = 161
+						owns_state = 157
+					}
+			}
 		}
 		GAL = { has_country_flag = GAL_italianrevolution_flag }
 		tag = GAL
 	}
 	
 	immediate = {
-		VSR = { annex_country = { target = VNE  transfer_troops = no } }
+		hidden_effect = {
+			VSR = { 
+				annex_country = { 
+					target = VNE  
+					transfer_troops = no 
+				} 
+				transfer_state = 736
+				transfer_state = 160
+				transfer_state = 161
+				transfer_state = 157
+			}
+		}
 	}
 	
 	option = {
@@ -914,29 +933,37 @@ country_event = {
 	option = {
 		name = gallia.1020.a
 		ITA = { 
-			annex_country = { 
-				target = RMA 
-				transfer_troops = yes 
-			}
-			
 			transfer_state = 736
 			transfer_state = 160
 			transfer_state = 161
 			transfer_state = 157
+			transfer_state = 159
+			transfer_state = 158
+			transfer_state = 162
+			transfer_state = 2
+			transfer_state = 117
+			transfer_state = 156
+			transfer_state = 115
+			transfer_state = 114
 
-			add_state_core = 736
-			add_state_core = 160
-			add_state_core = 161
-			add_state_core = 157
-			add_state_core = 159
-			add_state_core = 158
-			add_state_core = 162
-			add_state_core = 2
-			add_state_core = 117
-			add_state_core = 156
-			add_state_core = 115
-			add_state_core = 114
-			
+			hidden_effect = {
+				add_state_core = 736
+				add_state_core = 160
+				add_state_core = 161
+				add_state_core = 157
+				add_state_core = 159
+				add_state_core = 158
+				add_state_core = 162
+				add_state_core = 2
+				add_state_core = 117
+				add_state_core = 156
+				add_state_core = 115
+				add_state_core = 114
+				annex_country = { 
+					target = RMA 
+					transfer_troops = yes 
+				}
+			}
 			
 			create_country_leader = {
 				name = "Fernandia Malvezzi"
