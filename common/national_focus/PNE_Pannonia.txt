@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 50
 		} 
 		completion_reward = { 
-			add_to_variable = { auth = 2 }
+			PNE = { add_to_variable = { auth = 2 } }
 		}
 	}
 	
@@ -82,7 +82,7 @@ focus_tree = {
 		} 
 		completion_reward = { 
 			add_ideas = PNE_nationalism_idea
-			add_to_variable = { auth = 2 }
+			PNE = { add_to_variable = { auth = 2 } }
 		}
 	}
 	
@@ -100,7 +100,8 @@ focus_tree = {
 			factor = 50
 		} 
 		completion_reward = { 
-			add_to_variable = { auth = 1 }
+			add_ideas = PNE_internationalism_idea
+			PNE = { add_to_variable = { auth = 1 } }
 		}
 	}
 	
@@ -137,7 +138,7 @@ focus_tree = {
 			factor = 50
 		} 
 		completion_reward = { 
-			add_to_variable = { auth = 2 }
+			PNE = { add_to_variable = { auth = 2 } }
 		}
 	}
 	
@@ -155,7 +156,7 @@ focus_tree = {
 			factor = 50
 		} 
 		completion_reward = { 
-			add_to_variable = { auth = 1 }
+			PNE = { add_to_variable = { auth = 1 } }
 		}
 	}
 	
@@ -167,12 +168,189 @@ focus_tree = {
 		cost = 1
 		available_if_capitulated = yes 
 		prerequisite = { focus = PNE_unions focus = PNE_control focus = PNE_communes }
+		available = {
+			PNE = { is_puppet = no }
+		}
 		ai_will_do = { 
 			factor = 50
 		} 
-		completion_reward = { 
-
+		completion_reward = {
+			if = {
+				limit = {
+					PNE = { check_variable = { auth < 1 } }
+				}
+				set_politics = {
+					ruling_party = socialism
+					
+					parties = {
+						progressivism = {
+							popularity = 21
+						}
+						socialism = {
+							popularity = 38
+						}
+						liberal = {
+							popularity = 21
+						}
+						communism = {
+							popularity = 20
+						}
+						authoritarian-socialism = {
+							popularity = 0
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = { 
+						PNE = { 
+							check_variable = { auth > 0 } 
+							check_variable = { auth < 2 } 
+						} 
+					}
+				}
+				set_politics = {
+					ruling_party = socialism
+					
+					parties = {
+						progressivism = {
+							popularity = 25
+						}
+						socialism = {
+							popularity = 38
+						}
+						liberal = {
+							popularity = 5
+						}
+						communism = {
+							popularity = 32
+						}
+						authoritarian-socialism = {
+							popularity = 0
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = { 
+						PNE = { 
+							check_variable = { auth > 1 } 
+							check_variable = { auth < 5 } 
+						} 
+					}
+				}
+				set_politics = {
+					ruling_party = communism
+					
+					parties = {
+						progressivism = {
+							popularity = 9
+						}
+						socialism = {
+							popularity = 23
+						}
+						liberal = {
+							popularity = 5
+						}
+						communism = {
+							popularity = 39
+						}
+						authoritarian-socialism = {
+							popularity = 24
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = { 
+						PNE = { 
+							check_variable = { auth > 5 } 
+							check_variable = { auth < 7 } 
+						} 
+					}
+				}
+				set_politics = {
+					ruling_party = authoritarian-socialism
+					
+					parties = {
+						progressivism = {
+							popularity = 5
+						}
+						socialism = {
+							popularity = 23
+						}
+						liberal = {
+							popularity = 0
+						}
+						communism = {
+							popularity = 33
+						}
+						authoritarian-socialism = {
+							popularity = 39
+						}
+					}
+				}
+			}
 		}
 	}
+	
+	focus = { 
+		id = PNE_domestic_policy
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = PNE_elections
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_elections }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = {  
+			if = {
+				limit = { PNE = { has_completed_focus = PNE_concentrating_control } }
+				add_ideas = PNE_crush_idea
+				109 = {
+					add_core_of = PREV
+				}
+				764 = {
+					add_core_of = PREV
+				}
+				add_state_core = 45
+				add_state_core = 82
+				add_state_core = 84
+				add_state_core = 76
+				add_political_power = 100
+			}
+			else_if = {
+				limit = { PNE = { has_completed_focus = PNE_autonomous_republic } }
+				add_ideas = PNE_autorepub_idea
+				109 = {
+					add_extra_state_shared_building_slots = 1
+					add_core_of = PREV
+				}
+				764 = {
+					add_extra_state_shared_building_slots = 1
+					add_core_of = PREV
+				}
+				add_state_core = 45
+				
+				add_state_core = 82
+				add_state_core = 84
+				add_state_core = 76
+				add_stability = 0.05
+			}
+			else = {
+				custom_effect_tooltip = PNE_domestic_policy_tooltip
+			}
+		}
+	}
+	
+	
+	
+	
 	
 }
