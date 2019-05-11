@@ -55,7 +55,7 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Schnelle Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {	
@@ -63,7 +63,7 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	
@@ -71,7 +71,7 @@ units = {
 		location = 11666  # Vienna
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {	
@@ -79,7 +79,7 @@ units = {
 		location = 11651 # St Poelten
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 
@@ -89,7 +89,7 @@ units = {
 		location = 9665 # Linz
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {	
@@ -97,7 +97,7 @@ units = {
 		location = 9648  # Graz
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {	
@@ -105,7 +105,7 @@ units = {
 		location = 673  # Innsbruck
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {	
@@ -113,7 +113,7 @@ units = {
 		location = 688  # Salzburg
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 
@@ -125,7 +125,6 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-}
 
 air_wings = {
 	### Luftstreitkräfte -- Vienna (full air force, consolidated), CR.32 aircraft
@@ -135,6 +134,23 @@ air_wings = {
 			amount = 42
 		}
 	}
+}
+	navy = {
+			name = "Első Flotta"
+			location = 11564 
+			ship = { name = "SMS Kaiserin Elisabeth" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = OST version_name = "Deutschland Class" } } }
+			ship = { name = "SMS Kaiser Franz Joseph I" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = OST version_name = "Deutschland Class" } } }			
+			# 2. Torpedobootflottille
+			ship = { name = "Lika" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = OST version_name = "Type 24 Class" } } }
+			ship = { name = "Tátra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = OST version_name = "Type 24 Class" } } }
+			ship = { name = "Balaton" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = OST version_name = "Type 24 Class" } } }
+			ship = { name = "Csepel" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = OST version_name = "Type 24 Class" } } }
+			# 3. Torpedobootflottille
+			ship = { name = "Orjen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = OST version_name = "Type 24 Class" } } }
+			ship = { name = "Kondor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = OST version_name = "Type 24 Class" } } }
+			ship = { name = "Wolf" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = OST version_name = "Type 24 Class" } } }
+			ship = { name = "Iltis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = OST version_name = "Type 24 Class" } } }
+		}
 }
 
 ### Starting Production ###

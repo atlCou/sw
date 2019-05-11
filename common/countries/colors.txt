@@ -27,8 +27,8 @@ MEX = {
 	color_ui = rgb { 45 180 14 }
 }
 SOU = {
-	color = rgb { 186 207 255 }
-	color_ui = rgb { 186 207 255 }
+	color = rgb { 166 167 255 }
+	color_ui = rgb { 166 167 255 }
 }
 ARG = {
 	color = rgb { 17 160 221 }
@@ -39,8 +39,8 @@ CUB = {
 	color_ui = rgb { 220 224 13 }
 }
 BAL = {
-	color = rgb { 36 132 247 }
-	color_ui = rgb { 36 132 247 }
+	color = rgb { 36 32 147 }
+	color_ui = rgb { 36 32 147 }
 }
 EGY = {
 	color = rgb { 260 20 20 }
