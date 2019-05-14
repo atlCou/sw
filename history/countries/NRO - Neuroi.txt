@@ -31,7 +31,16 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
+create_country_leader = {
+	name = "Hive Mind"
+	desc = "POLITICS_HIVE_MIND_DESC"
+	picture = "neuroi15.dds"
+	expire = "1965.1.1"
+	ideology = federal_monarchism
+	traits = {
+		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+	}
+}
 set_convoys = 5
 
 

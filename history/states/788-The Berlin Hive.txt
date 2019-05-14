@@ -1,6 +1,13 @@
 state={
 	id=788
 	name="STATE_788"
+	history={
+		owner = NUB
+		add_core_of = KAR
+		buildings = {
+			infrastructure = 3
+		}
+	}
 	provinces={
 		375 
 	}

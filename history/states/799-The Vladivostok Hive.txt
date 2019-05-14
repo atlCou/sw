@@ -1,6 +1,13 @@
 state={
 	id=799
 	name="STATE_799"
+	history={
+		owner = NUV
+		add_core_of = ORU
+		buildings = {
+			infrastructure = 3
+		}
+	}
 	provinces={
 		9895 
 	}

@@ -1,6 +1,13 @@
 state={
 	id=796
 	name="STATE_796"
+	history={
+		owner = NMA
+		add_core_of = SIR
+		buildings = {
+			infrastructure = 3
+		}
+	}
 	provinces={
 		4211 
 	}

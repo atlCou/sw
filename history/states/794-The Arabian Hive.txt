@@ -1,6 +1,13 @@
 state={
 	id=794
 	name="STATE_794"
+	history={
+		owner = NUA
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 3
+		}
+	}
 	provinces={
 		8073 
 	}

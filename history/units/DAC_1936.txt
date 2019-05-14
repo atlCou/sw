@@ -325,10 +325,10 @@ units = {
 		name = "Flota Romania de Mare"			
 		base = 657 
 		location = 657 # Constanta
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
-		ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
-		ship = { name = "NMS Regina Maria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1  } } }
+		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1  } } }
+		ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { destroyer_1 = { amount = 1  version_name = "Regele Ferdinand Class" } } }
+		ship = { name = "NMS Regina Maria" definition = destroyer equipment = { destroyer_1 = { amount = 1  version_name = "Regele Ferdinand Class" } } }
 	}				
 }
 
@@ -338,14 +338,14 @@ air_wings = {
 	46 = {
 		# Grup 1 Avion de Vanatoare -- PZL P.11 fighters
 		fighter_equipment_0 = {
-			owner = "ROM" 
+			 
 			amount = 48
 		}
 	}
 	79 = {
 		# Grup 2 Avion de Vanatoare -- IAR 14, 15 fighters
 		fighter_equipment_0 = {
-			owner = "ROM" 
+			 
 			amount = 24
 		}
 	}

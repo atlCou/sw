@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		neuroi_tier_3 = {
+			picture = ger_revive_the_kaiserreich
+			allowed = {
+				original_tag = NUV
+				original_tag = NUB
+				original_tag = NOS
+			}
+			removal_cost = -1	
+			modifier = {
+				weekly_manpower = 30000
+			}
+		}
+	}
+		country = {
+		neuroi_tier_2 = {
+			picture = ger_revive_the_kaiserreich
+			allowed = {
+				original_tag = NUW
+				original_tag = NUN
+				original_tag = NMA
+				original_tag = NMO
+				original_tag = NUS
+				original_tag = NUU
+				original_tag = NBZ				
+			}
+			removal_cost = -1	
+			modifier = {
+				weekly_manpower = 20000
+			}
+		}
+	}
+	country = {
+		neuroi_tier_1 = {
+			picture = ger_revive_the_kaiserreich
+			allowed = {
+				original_tag = NBO
+				original_tag = NUA
+				original_tag = NUD
+				original_tag = NUK
+				original_tag = NUP
+				original_tag = NUO
+				original_tag = NUT				
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 10000
+			}
+		}
+	}	
+}

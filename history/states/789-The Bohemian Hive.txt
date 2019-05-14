@@ -1,6 +1,13 @@
 state={
 	id=789
 	name="STATE_789"
+	history={
+		owner = NBO
+		add_core_of = OST
+		buildings = {
+			infrastructure = 3
+		}
+	}
 	provinces={
 		11556 
 	}

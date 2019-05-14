@@ -155,7 +155,7 @@ units = {
 		name = "Force Publique du Congo Belge"
 		location = 10968  # Leopoldville
 		division_template = "Division Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "BEL" } }
+		force_equipment_variants = { infantry_equipment_0 = {  } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -169,7 +169,7 @@ air_wings = {
 		# Consisted of 50 operational Gladiator Is, Hurricanes, CR.42s in 1940
 		# Only had Fairey Fox recon/l bombers that were also used as fighters in 1936, along with trainers
 		fighter_equipment_0 =  {
-			owner = "BEL" 
+			 
 			amount = 20
 		}
 	}

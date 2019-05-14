@@ -1,6 +1,13 @@
 state={
 	id=798
 	name="STATE_798"
+	history={
+		owner = NUK
+		add_core_of = ASI
+		buildings = {
+			infrastructure = 3
+		}
+	}
 	provinces={
 		7652 
 	}
