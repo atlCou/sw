@@ -11,11 +11,11 @@ state={
 	}
 
 	history={
-		owner = TUR
+		owner = OSO
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = TUR
+		add_core_of = OSO
 	}
 
 	provinces={

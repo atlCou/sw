@@ -6,9 +6,9 @@ state={
 	state_category = enclave
 	
 	history={
-		#owner = 
+		owner = GXC
 		add_core_of = ASI
-		add_core_of = ASI
+		add_core_of = GXC
 		buildings = {
 			infrastructure = 3
 			11981 = {

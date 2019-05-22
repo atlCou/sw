@@ -1,0 +1,44 @@
+﻿capital = 789
+
+#OOB = ""
+set_research_slots = 1
+
+add_ideas = {
+	free_witches
+	lawless_nation
+	micronation
+}
+set_country_flag = pirate
+set_politics = {
+	parties = {
+        liberal = { popularity = 40 }
+        communism = { popularity = 0 }
+        fascism = { popularity = 0 }
+        authoritarian-socialism = { popularity = 2 }
+        socialism = { popularity = 4 }
+        liberal_monarchism = { popularity = 30 }
+        ultra-nationalism = { popularity = 5 }
+        fanatical-paganism = { popularity = 11 }
+        monarchism = { popularity = 140 }
+	}
+	ruling_party = monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Kelly Sun"
+	desc = "POLITICS_HIVE_MIND_DESC"
+	picture = "neuroi2.dds"
+	expire = "1965.1.1"
+	ideology = federal_monarchism
+	traits = {
+		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+	}
+}
+#set_convoys = 5
+#create_field_marshal = {
+#	name = "NEUROI"
+#	picture = "Portrait_Europe_Generic_land_3.dds"
+#	skill = 1
+#}

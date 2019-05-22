@@ -1,6 +1,36 @@
 ideas = {
-	# MILITARY
-
+	country = {
+		tryannical_noblity = {
+			picture = ROM_king_carol_ii_hedonist
+			allowed = {
+				original_tag = BLG
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		witch_mass_conscription = {
+			picture = chi_army_corruption2
+			allowed = {
+				original_tag = BLG
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		mercenary_based_army = {
+			picture = mex_callistas
+			allowed = {
+				original_tag = BLG
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 10000
+			}
+		}
+	}
+	
+	
 
 	political_advisor = {
 

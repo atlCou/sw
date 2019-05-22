@@ -6,8 +6,8 @@ state={
 	
 	history=
 	{
-		#owner = 
-		buildings = {
+		owner = 
+BRI		buildings = {
 			infrastructure = 3
 			13019 = {
 				naval_base = 1

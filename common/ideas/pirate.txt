@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		free_witches = {
+			picture = chi_war_of_resistance3
+			allowed = {
+				original_tag = THP
+				original_tag = TSP
+				original_tag = TSO
+				original_tag = TEO
+			}
+		removal_cost = -1
+		modifier = {
+			}
+		}
+		
+		lawless_nation = {
+			picture = chi_army_corruption2
+			allowed = {
+				original_tag = THP
+				original_tag = TSP
+				original_tag = TSO
+				original_tag = TEO
+			}
+		removal_cost = -1
+		modifier = {
+			}
+		}
+		
+		micronation = {
+			picture = generic_agrarian_reform
+			allowed = {
+				original_tag = THP
+				original_tag = TSP
+				original_tag = TSO
+				original_tag = TEO
+			}
+		removal_cost = -1
+		modifier = {
+			}
+		}
+	}
+}
