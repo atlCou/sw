@@ -9,7 +9,42 @@ KAR = {
 	color = rgb { 180 0 10 }
 	color_ui = rgb { 180 0 10 }
 }
-
+KAN = {
+	color = rgb { 180 110 110 }
+	color_ui = rgb { 180 110 110 }
+}
+MBU = {
+	color = rgb { 80 0 10 }
+	color_ui = rgb { 80 0 10 }
+}
+TSP = {
+	color = rgb { 80 0 10 }
+	color_ui = rgb { 80 0 10 }
+}
+TEO = {
+	color = rgb { 80 0 10 }
+	color_ui = rgb { 80 0 10 }
+}
+THP = {
+	color = rgb { 80 0 10 }
+	color_ui = rgb { 80 0 10 }
+}
+TSO = {
+	color = rgb { 80 0 10 }
+	color_ui = rgb { 80 0 10 }
+}
+KHM = {
+	color = rgb { 80 0 10 }
+	color_ui = rgb { 80 0 10 }
+}
+KON = {
+	color = rgb { 180 150 150 }
+	color_ui = rgb { 180 150 150 }
+}
+GAO = {
+	color = rgb { 180 110 10 }
+	color_ui = rgb { 180 110 10 }
+}
 BRI = {
 	color = rgb { 34 193 0 }
 	color_ui = rgb { 34 193 0 }
@@ -17,6 +52,10 @@ BRI = {
 ORU = {
 	color = rgb { 21 25 132 }
 	color_ui = rgb { 21 25 132 }
+}
+MER = {
+	color = rgb { 242 173 36 }
+	color_ui = rgb { 242 173 36 }
 }
 LUS = {
 	color = rgb { 168 240 255 }
@@ -77,6 +116,14 @@ DAC = {
 VNE = {
 	color = rgb { 253 175 26 }
 	color_ui = rgb { 253 175 26 }
+}
+OSO = {
+	color = rgb { 226 186 22 }
+	color_ui = rgb { 226 186 22 }
+}
+SAS = {
+	color = rgb { 129 8 165}
+	color_ui = rgb { 129 8 165 }
 }
 HEL = {
 	color = rgb { 0 127 14 }

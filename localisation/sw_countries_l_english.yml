@@ -1,4 +1,4 @@
-﻿	l_english:
+﻿l_english:
 
  AIS_liberal:0 "Australis"
  AIS_liberal_DEF:0 "The Commonwealth of Australis"
@@ -989,3 +989,37 @@
  NUD_monarchism:0 "Desert Hive"
  
  NUS_monarchism:0 "Sinai Hive"
+
+ OSO_monarchism:0 "The Ostomen Empire"
+ 
+ OSO_monarchism:0 "The Zulu Empire"
+ 
+ SAS_monarchism:0 "The Sassanid Empire"
+ 
+ MER_monarchism:0 "The Merina Federation"
+ 
+ KON_monarchism:0 "The Empire of the Bantu"
+ 
+ MBU_monarchism:0 "Mbunda"
+ 
+ KAN_monarchism:0 "Kingdom of Kanem"
+ 
+ GAO_monarchism:0 "The Gao Republic"
+ 
+ MAR_monarchism:0 "Maravi"
+ 
+ TSP_monarchism:0 "The Seychelles Pirates"
+ 
+ TEO_monarchism:0 "The Exiled Witches"
+ 
+ THP_monarchism:0 "The Hawaiian Pirates"
+ 
+ TSO_monarchism:0 "The Socotra Pirates"
+ 
+ TUN_monarchism:0 "The Republic of the Berbers"
+ 
+ KHM_monarchism:0 "The Kingdom of Khmer"
+ 
+ EGY_monarchism:0 "The Kingdom of Egypt"
+ 
+ SAF_monarchism:0 "Cape Good-Hope Commonwealth"

@@ -4,7 +4,9 @@ state={
 	name="STATE_660"
 
 	history={
-		owner = WED add_core_of = WED buildings = {
+		owner = KAN
+		add_core_of = KAN
+		buildings = {
 			infrastructure = 2
 
 		}
@@ -12,7 +14,7 @@ state={
 	}
 
 	provinces={
-		1974 3165 5084 8078 11108 12719 12830 
+		1974 2034 3165 5084 8078 11108 11934 12719 12830 
 	}
 	manpower=2572456
 	buildings_max_level_factor=1.000

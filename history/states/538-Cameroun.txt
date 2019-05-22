@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		#owner = 
+		owner = KON		add_core_of = KON 
 		buildings = {
 			infrastructure = 1
 		}

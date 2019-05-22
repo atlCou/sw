@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = TUR
+		owner = OSO
+		add_core_of = OSO
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -23,7 +24,6 @@ state={
 		victory_points = {
 			10760 3
 		}
-		add_core_of = TUR
 	}
 
 	provinces={

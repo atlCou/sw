@@ -4,7 +4,7 @@ state={
 	name="STATE_747"
 
 	history={
-		owner = YUN add_core_of = YUN victory_points = {
+		owner = GXC add_core_of = GXC victory_points = {
 			7965 3 
 		}
 		buildings = {

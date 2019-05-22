@@ -7,7 +7,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = TUR
+		owner = OSO
+		add_core_of = OSO
 		victory_points = {
 			5074 1
 		}
@@ -21,7 +22,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = TUR
 	}
 
 	provinces={

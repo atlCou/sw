@@ -8,7 +8,7 @@ state=
 
 	history=
 	{
-		#owner = 
+		owner = BRI		add_core_of = KON
 		buildings = {
 			infrastructure = 2
 			1903 = {

@@ -7,7 +7,7 @@ state={
 	state_category = rural
 	
 	history={
-		#owner = 
+		owner = GAO		add_core_of = GAO 
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0

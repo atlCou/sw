@@ -7,8 +7,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = RAJ
-		buildings = {
+		owner = TSO		add_core_off = TSO		buildings = {
 			infrastructure = 3
 			4967 = {
 				naval_base = 1

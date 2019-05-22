@@ -13,8 +13,9 @@ state={
 
 
 	history={
-		#owner = 
-		victory_points = {
+
+		owner = KHM
+		add_core_of = KHM		victory_points = {
 			4075 1 
 		}
 		buildings = {

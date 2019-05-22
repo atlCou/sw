@@ -8,8 +8,7 @@ state=
 	
 	history=
 	{
-		owner = BAL
-		buildings = {
+		owner = TEO		add_core_of = TEO		buildings = {
 			infrastructure = 4
 			13003 = {
 				naval_base = 1

@@ -1,4 +1,3 @@
-
 state={
 	id=341
 	name="STATE_341"
@@ -6,10 +5,8 @@ state={
 		chromium=84.000
 		steel=20.000
 	}
-
 	history={
-		add_core_of = GRE
-		owner = TUR
+		owner = OSO
 		victory_points = {
 			9833 20 
 		}
@@ -21,12 +18,9 @@ state={
 			air_base = 4
 			9833 = {
 				naval_base = 8
-
 			}
-
 		}
-		add_core_of = TUR
-
+		add_core_of = OSO
 	}
 
 	provinces={

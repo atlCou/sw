@@ -8,7 +8,8 @@ state=
 
 	history=
 	{
-		owner = GRE
+		owner = OSO
+		add_core_of = OSO
 		victory_points = {
 			10007 1
 		}
@@ -22,7 +23,6 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = GRE
 	}
 	provinces=
 	{
