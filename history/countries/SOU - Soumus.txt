@@ -31,28 +31,25 @@ set_politics = {
 
 	parties = {
 		liberal = {
-			popularity = 49
+			popularity = 35
 		}
-
+		
+		monarchism = {
+			popularity = 14
+			banned = no
+		}
+		
 		communism = {
-			popularity = 2
+			popularity = 5
 			banned = no
 		}
 		
 		fanatical-paganism = {
-			popularity = 13
-		}
-		
-		progressivism = {
-			popularity = 18
+			popularity = 31
 		}
 		
 		socialism = {
 			popularity = 15
-		}
-		
-		authoritarian-socialism = {
-			popularity = 3
 		}
 		
 		
@@ -87,16 +84,7 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Nikka Edvardine Katajainen"
-	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-	picture = "Nikka Edvardine Katajainen.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy
-	traits = {
-		#
-	}
-}
+
 
 create_country_leader = {
 	name = "Elma Leivonen"
@@ -104,17 +92,6 @@ create_country_leader = {
 	picture = "Elma.dds"
 	expire = "1965.1.1"
 	ideology = paternalistic_conservatism
-	traits = {
-		#
-	}	
-}
-
-create_country_leader = {
-	name = "Eini Luukkanen"
-	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-	picture = "Eini Luukkanen.dds"
-	expire = "1965.1.1"
-	ideology = marxism
 	traits = {
 		#
 	}	

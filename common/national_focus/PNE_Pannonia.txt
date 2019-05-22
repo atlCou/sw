@@ -183,20 +183,14 @@ focus_tree = {
 					ruling_party = socialism
 					
 					parties = {
-						progressivism = {
-							popularity = 21
-						}
 						socialism = {
-							popularity = 38
+							popularity = 44
 						}
 						liberal = {
-							popularity = 21
+							popularity = 31
 						}
 						communism = {
-							popularity = 20
-						}
-						authoritarian-socialism = {
-							popularity = 0
+							popularity = 25
 						}
 					}
 				}
@@ -214,20 +208,14 @@ focus_tree = {
 					ruling_party = socialism
 					
 					parties = {
-						progressivism = {
-							popularity = 25
-						}
 						socialism = {
-							popularity = 38
+							popularity = 48
 						}
 						liberal = {
-							popularity = 5
+							popularity = 15
 						}
 						communism = {
-							popularity = 32
-						}
-						authoritarian-socialism = {
-							popularity = 0
+							popularity = 37
 						}
 					}
 				}
@@ -245,20 +233,14 @@ focus_tree = {
 					ruling_party = communism
 					
 					parties = {
-						progressivism = {
-							popularity = 9
-						}
 						socialism = {
-							popularity = 23
+							popularity = 35
 						}
 						liberal = {
-							popularity = 5
+							popularity = 14
 						}
 						communism = {
-							popularity = 39
-						}
-						authoritarian-socialism = {
-							popularity = 24
+							popularity = 51
 						}
 					}
 				}
@@ -273,23 +255,17 @@ focus_tree = {
 					}
 				}
 				set_politics = {
-					ruling_party = authoritarian-socialism
+					ruling_party = communism
 					
 					parties = {
-						progressivism = {
-							popularity = 5
-						}
 						socialism = {
-							popularity = 23
+							popularity = 32
 						}
 						liberal = {
-							popularity = 0
+							popularity = 5
 						}
 						communism = {
-							popularity = 33
-						}
-						authoritarian-socialism = {
-							popularity = 39
+							popularity = 63
 						}
 					}
 				}

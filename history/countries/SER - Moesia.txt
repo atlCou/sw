@@ -64,15 +64,11 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-        liberal = { popularity = 38 }
-        progressivism = { popularity = 16 }
-        liberal_monarchism = { popularity = 30 }
+        liberal = { popularity = 69 }
         socialism = { popularity = 3 }
         communism = { popularity = 0 }
-        authoritarian-socialism = { popularity = 0 }
-        monarchism = { popularity = 10 }
+        monarchism = { popularity = 25 }
         fascism = { popularity = 3 }
-        ultra-nationalism = { popularity = 0 }
         fanatical-paganism = { popularity = 0 }
 
 	}

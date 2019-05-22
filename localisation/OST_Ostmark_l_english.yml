@@ -5,9 +5,52 @@
 
  OST_ontotheworld_idea:0 "Ostmark Unto the World"
  OST_arts:0 "Arts Funding"
+ OST_upset_elites:0 "Upset Elites"
+ OST_upset_elites_desc:0 "The results of the recent snap election has not fared well with high ranking officers and large businessmen. Though their concerns are not generally ours, they become them when it hurts the efficiency of our government."
+ OST_every_man_works_idea:0 "Nationwide Forced Labor"
+ OST_state_work_idea:0 "State Assigned Employment"
+ OST_specialized_work:0 "State Managed Employment"
+ OST_homogenous_thought_idea:0 "Crushed Dissent"
+ OST_propaganda_institutions_idea:0 "All-Prevalent Propaganda"
+ gollob_reign:0 "Gollob's Rising Totalitarian Reign"
+ OST_seize_the_industry:0 "Seizing the Indusry"
+ OST_secret_police:0 "Entrenched Secret Police"
+ OST_propaganda_institutions:0 "All-Pervasive Propaganda"
+ OST_seizing_tooltip:0 "The great §YDL-OFP§! coalition, under §YGrete Gollob§!, will attempt to seize §Gcomplete control§! over the entirety of §YOstmark§!, and §Gradically reform §!it. If §YGrete Gollob§! doesn't have enough §MTyranny§!, the revolution will §Rfail§!!"
+ OST_street_patrols:0 "Heimatblock Street Gangs"
  
  
-#PARTIES
+ 
+#PARTIES AND NAMES
+
+ OST_liberal:0 "Ostmark"
+ OST_liberal_DEF:0 "Ostmark"
+ OST_liberal_ADJ:0 "Ostmarker"
+ OST_communism:0 "Ostmarker Republic"
+ OST_communism_DEF:0 "Ostmarker Republic"
+ OST_communism_ADJ:0 "Ostmarker"
+ OST_fascism:0 "Ostmark"
+ OST_fascism_DEF:0 "Ostmark"
+ OST_fascism_ADJ:0 "Ostmarker"
+ OST_monarchism:0 "Ostmark"
+ OST_monarchism_DEF:0 "Ostmark"
+ OST_monarchism_ADJ:0 "Ostmarker"
+ OST_fanatical-paganism:0 "United Pagan Nations"
+ OST_fanatical-paganism_DEF:0 "United Pagan Nations"
+ OST_fanatical-paganism_ADJ:0 "Ostmarker"
+ OST_socialism:0 "United Republics of Ostmark"
+ OST_socialism_DEF:0 "United Republics of Ostmark"
+ OST_socialism_ADJ:0 "Ostmarker"
+
+
+
+
+
+
+
+
+
+
 
  
  
@@ -15,15 +58,16 @@
  OST_communism_party_long:0 "Kommunistische Partei Ostmark"
  OST_authoritarian-socialism_party:0 "KPÖ"
  OST_authoritarian-socialism_party_long:0 "Kommunistische Partei Ostmark"
- OST_socialism:0 "KPÖ"
- OST_socialism_long:0 "Kommunistische Partei Ostmark"
- OST_progressivism_long:0 "Sozialdemokratische Partei Ostmark"
- OST_progressivism:0 "SPO"
+ OST_socialism_party:0 "KPÖ"
+ OST_socialism_party_long:0 "Kommunistische Partei Ostmark"
+ OST_progressivism_party_long:0 "Sozialdemokratische Partei Ostmark"
+ OST_progressivism_party:0 "SPO"
  OST_liberal_party:0 "OMB"
- OST_liberal_party_long:0 "Ostmarkian-Magyarian-Bohemian Grand Coalition (Left)"
+ OST_liberal_party_long:0 "Grand Coalition (Left)"
  OST_liberal_monarchism_party:0 "OMB"
- OST_liberal_monarchism_party_long:0 "Ostmarkian-Magyarian-Bohemian Grand Coalition (Right)"
- OST_monarchism_party:0 "Heimatblock"
+ OST_liberal_monarchism_party_long:0 "Grand Coalition (Right)"
+ OST_monarchism_party:0 "OMB"
+ OST_monarchism_party_long:0 "Grand Coalition (Right)"
  OST_fascism_party:0 "Heimatblock"
  OST_ultra-nationalism_party:0 "DL"
  OST_ultra-nationalism_party_long:0 "Danubian Legionnaires"
@@ -32,12 +76,37 @@
  OST_monarchism_party_habsburg:0 "Habsburg Loyalists"
  OST_monarchism_party_habsburg_long:0 "Habsburg Loyalists"
  
+ OST_liberal_party_HB_coalition_long:0 "Republican Land and Peasant Party"
+ OST_liberal_party_HB_coalition:0 "Republican Party"
+ OST_liberal_monarchism_party_HB_coalition_long:0 "Heimatblock-Volkspartei Coalition (Conservative)"
+ OST_liberal_monarchism_party_HB_coalition:0 "H-V Coalition"
+ OST_monarchism_party_HB_coalition_long:0 "Heimatblock-Volkspartei Coalition (HB)"
+ OST_monarchism_party_HB_coalition:0 "H-V Coalition"
+ OST_fascism_party_HB_coalition_long:0 "Heimatblock-Volkspartei Coalition (HB)"
+ OST_fascism_party_HB_coalition:0 "H-V Coalition"
+ 
+ OST_Gollob_party_long:0 "Danubian Legionnaires - Ostmarker Freedom Party"
+ OST_Gollob_party:0 "DL-OFP"
+ 
+
+ 
  ############# EVENTS
  
  ostmark.200.t:0 "Regaining our Support"
  ostmark.200.d:0 "The Ostmarker empire has been thrown into disarray. The many territories that our monarchs have ruled over for centuries have risen in revolt and, in the complete incompetence of our military, successfully established their own nations. All we have left are the territories with a Karlslander majority, who themselves lack the national identity to revolt against us. The stability once afforded to them is now gone - what do we do to regain their trust?"
  ostmark.200.a:0 "Ensure them that we will lead the nation in a direction beneficial to our people."
  ostmark.200.b:0 "Crush the disenters, so that we can ensure our rule over our Karlslander people will continue."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ost.1000.t:0 "Ostmark's Engelbert Dollfuss Goes Missing!"
  
  
  ########### FOCII
@@ -51,6 +120,13 @@ OST_tyrol:0 "§YUnser Heimatland!§!"
 OST_ontotheworld:0 "Ostmark Unto the World"
 
 
+
+OST_gollob_start_tooltip:0 "Will start Gollob's reign of tyranny, §Ra potentially dangerous process.§!"
+OST_tyranny_increase:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y1§!."
+OST_tyranny_increase_massive:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y5§!."
+OST_tyranny_increase_moderate:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y2§!."
+OST_tyranny_decrease:0 "Will §Rdecrease§! Gollob's §MTyranny§! by §Y1§!."
+OST_gollob_reign_begins_tooltip:0 "Unlocks §YGollob's Reign§! decisions, allowing you to seize complete control and §Gradically reform §!§YOstmark§! - as long as the time is right."
 
 
 ####### BOHEMIA FOCII

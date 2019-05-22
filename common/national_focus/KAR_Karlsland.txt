@@ -116,11 +116,7 @@ popularity = 0.02
 }
 add_popularity = { 
 ideology = fascism
-popularity = 0.04
-}
-add_popularity = { 
-ideology = ultra-nationalism
-popularity = 0.01
+popularity = 0.05
 }
 add_stability = -0.02
  } 
@@ -145,12 +141,9 @@ popularity = 0.03
 }
 add_popularity = { 
 ideology = fascism
-popularity = +0.05
+popularity = +0.07
 }
-add_popularity = { 
-ideology = ultra-nationalism
-popularity = +0.02
-}
+
 add_stability = -0.05
  } 
  
@@ -189,21 +182,13 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-set_politics = {
- ruling_party = anarchy 
-elections_allowed = no 
-}
 add_popularity = { 
 ideology = fanatical-paganism
 popularity = 0.07
 }
 add_popularity = { 
 ideology = fascism
-popularity = -0.04
-}
-add_popularity = { 
-ideology = ultra-nationalism
-popularity = -0.02
+popularity = -0.06
 }
 add_stability = -0.1
 add_popularity = { 
@@ -583,23 +568,11 @@ shared_focus = {
 			}
 			add_popularity = {
 				ideology = fascism
-				popularity = -0.15
-			}
-			add_popularity = {
-				ideology = ultra-nationalism
-				popularity = -0.15
-			}
-			add_popularity = {
-				ideology = progressivism
-				popularity = 0.05
+				popularity = -0.3
 			}
 			add_popularity = {
 				ideology = liberal
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = liberal_monarchism
-				popularity = 0.05
+				popularity = 0.15
 			}
 		}
 		remove_ideas = KAR_thedeathofmonarchy
@@ -648,11 +621,9 @@ shared_focus = {
 			is_in_faction = no 
 			NOT = {
 				OR = {
-					has_government = authoritarian-socialism
 					has_government = communism
 					has_government = socialism
 					has_government = fanatical-paganism
-					has_government = ultra-nationalism
 				}
 			}
 		}
@@ -749,15 +720,7 @@ shared_focus = {
 				limit = { KAR = { has_completed_focus = KAR_hartmanneconomy } }
 			add_popularity = {
 				ideology = liberal
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = liberal_monarchism
-				popularity = 0.03
-			}
-			add_popularity = {
-				ideology = progressivism
-				popularity = 0.02
+				popularity = 0.1
 			}
 		} 
 	}
@@ -861,16 +824,8 @@ ai_will_do = {
 completion_reward = { 
 		add_stability = 0.05
 		add_popularity = {
-			ideology = monarchism
-			popularity = 0.05
-		}
-		add_popularity = {
 			ideology = liberal
-			popularity = 0.05
-		}
-		add_popularity = {
-			ideology = progressivism
-			popularity = 0.05
+			popularity = 0.10
 		}
 		set_country_flag = KAR_thekarlslanddeal_flag
 	}
@@ -898,7 +853,7 @@ completion_reward = {
 			popularity = 0.05
 		}
 		add_popularity = {
-			ideology = liberal_monarchism
+			ideology = liberal
 			popularity = 0.1
 		}
 		set_country_flag = KAR_trudeeconomy_flag
@@ -926,16 +881,12 @@ ai_will_do = {
 completion_reward = { 
 add_stability = -0.05
 add_popularity = { 
-ideology = liberal_monarchism
+ideology = monarchism
 popularity = 0.05
 }
 add_popularity = { 
 ideology = liberal
-popularity = 0.025
-}
-add_popularity = { 
-ideology = progressivism
-popularity = 0.02
+popularity = 0.05
 }
  } 
 
@@ -957,17 +908,14 @@ ai_will_do = {
 completion_reward = { 
 add_stability = 0.025
 add_popularity = { 
-ideology = liberal_monarchism
-popularity = 0.06
+ideology = monarchism
+popularity = 0.02
 }
 add_popularity = { 
 ideology = liberal
-popularity = 0.03
+popularity = 0.05
 }
-add_popularity = { 
-ideology = progressivism
-popularity = 0.03
-}
+
 country_event = {
 	days = 1
 	id = karlsland.100
@@ -990,24 +938,15 @@ shared_focus = {
 		factor = 1
 	}	 
 	completion_reward = {
-	if = {
-		limit = {
-			has_country_flag = KAR_aconservativedemocracy
-		}
-	set_politics = {
-		ruling_party = liberal_monarchism
-	}
-	}
-	else = {
 		set_politics = {
-		ruling_party = liberal
-	}
+			ruling_party = liberal
+		}
 	}
 	add_timed_idea = { idea = KAR_estatesblowback  days = 274 }
 	set_country_flag = KAR_econready
 	custom_effect_tooltip = KAR_hartmanneconomy_tooltip
 }
-}	
+	
  
 
 shared_focus = { 
@@ -1027,11 +966,7 @@ shared_focus = {
 	completion_reward = {
 	add_popularity = { 
 		ideology = liberal
-		popularity = 0.03
-	}
-	add_popularity = { 
-		ideology = progressivism
-		popularity = 0.06
+		popularity = 0.1
 	}
 	add_stability = 0.05
 	add_political_power = 50
@@ -1155,8 +1090,8 @@ shared_focus = {
 		popularity = 0.03
 	}
 	add_popularity = { 
-		ideology = liberal_monarchism
-		popularity = 0.06
+		ideology = monarchism
+		popularity = 0.02
 	}
 	add_stability = -0.05
 	add_political_power = 100
@@ -1215,8 +1150,8 @@ ai_will_do = {
  } 
 completion_reward = {
 add_popularity = { 
-ideology = progressivism
-popularity = 0.07
+ideology = monarchism
+popularity = -0.03
 }  
 	swap_ideas = { 
 		remove_idea = KAR_recoveringlib
@@ -2099,9 +2034,6 @@ icon = GFX_goal_tfv_generic_tech_sharing
 x = -2
 y = 6
 relative_position_id = KAR_jointdeveloptech
-available = { NOT = {
-has_government = ultra-nationalism }
-}
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = KAR_addressthenewthreat } 
@@ -2162,10 +2094,8 @@ bypass = {
 								OR = { 
 									ruling_party = socialism 
 									ruling_party = communism 
-									ruling_party = authoritarian-socialism 
 									ruling_party = fascism 
 									ruling_party = fanatical-paganism
-									ruling_party = ultra-nationalism 
 								} 
 							} 
 						}
@@ -2376,32 +2306,20 @@ ai_will_do = {
 		hidden_effect = {
 			set_politics = {
 				parties = {
-					authoritarian-socialism = {
-						popularity = 0
-					}
 					socialism = {
 						popularity = 0
 					}
 					communism = {
 						popularity = 0
 					}
-					progressivism = {
-						popularity = 0
-					}
 					liberal = {
-						popularity = 0
-					}
-					liberal_monarchism = {
 						popularity = 13
 					}
 					monarchism = {
 						popularity = 0
 					}
 					fascism = {
-						popularity = 35
-					}
-					ultra-nationalism = {
-						popularity = 17
+						popularity = 52
 					}
 					fanatical-paganism = {
 						popularity = 45
@@ -2529,7 +2447,6 @@ completion_reward = {
 			limit = { 
 				OR = {
 					has_government = fascism
-					has_government = ultra-nationalism
 					has_government = fanatical-paganism
 				}
 			}
@@ -2543,7 +2460,6 @@ completion_reward = {
 			limit = { 
 				OR = {
 					has_government = fascism
-					has_government = ultra-nationalism
 					has_government = fanatical-paganism
 				}
 			}
@@ -2557,7 +2473,6 @@ completion_reward = {
 			limit = { 
 				OR = {
 					has_government = fascism
-					has_government = ultra-nationalism
 					has_government = fanatical-paganism
 				}
 			}
@@ -3285,133 +3200,6 @@ shared_focus = {
 } 
  
 
-################### Ultra-Nationalist Tree ###############
-
-#Focus for Greater Karlsland
-shared_focus = { 
-id = KAR_greaterkarlsland
-icon = GFX_goal_rhineland
-x = 9
-y = 9
-cost = 10
-available_if_capitulated = yes 
-available = { has_government = ultra-nationalism }
-#allow_branch = { has_country_flag = KAR_ultnatmonarchy }
-ai_will_do = { 
- factor = 1
- } 
-
-completion_reward = { 
-add_stability = 0.15
-add_ideas = GEN_ultra-nationalism
- } 
- }  
- 
-#Focus for Declare Ambitions
-shared_focus = { 
-id = KAR_declareambitions
-icon = GFX_goal_generic_political_pressure
-prerequisite = { focus = KAR_greaterkarlsland }
-relative_position_id = KAR_greaterkarlsland
-x = -2
-y = 1
-cost = 5
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-
-completion_reward = { 
-hidden = { every_neighbor_country = { 
-add_ai_strategy = { 
-   type = contain
-   id = KAR		
-   value = 50
-}
-add_ai_strategy = { 
-   type = antagonize
-   id = KAR	
-   value = 50
-}
-}
-add_ai_strategy = { 
-   type = conquer
-   id = ALL
-   value = 100
-} }
-custom_effect_tooltip = KAR_ultranatambitions
-}}
-
-#Focus for Expand Military Research
-shared_focus = { 
-id = KAR_ultnatresearch
-icon = GFX_focus_research
-prerequisite = { focus = KAR_greaterkarlsland}
-relative_position_id = KAR_greaterkarlsland
-x = 2
-y = 1
-cost = 5
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-
-completion_reward = { 
-add_ideas = KAR_ultnatscience
- } 
- }    
- 
-#Focus for First Strides
-shared_focus = { 
-id = KAR_firststrides
-icon = GFX_goal_generic_territory_or_war
-prerequisite = { focus = KAR_declareambitions }
-relative_position_id = KAR_greaterkarlsland
-x = -2
-y = 2
-cost = 10
-available_if_capitulated = yes 
-available = { has_government = fanatical-paganism }
-ai_will_do = { 
- factor = 1
- } 
-
-completion_reward = { 
-hidden = { NET = { country_event = { days = 7 id = karlsland.30 } }
-BLG = { country_event = { days = 7 id = karlsland.30 } }
-LUX = { country_event = { days = 7 id = karlsland.30 } } }
-custom_effect_tooltip = KAR_firststridesdesc
- } 
- }   
-  
-#Focus for Preaching Teiwaz
-shared_focus = { 
-id = KAR_ultnatproduction
-icon = GFX_goal_generic_construct_mil_factory
-prerequisite = { focus = KAR_ultnatresearch}
-relative_position_id = KAR_greaterkarlsland
-x = 2
-y = 2
-cost = 5
-available_if_capitulated = yes 
-available = { has_government = fanatical-paganism }
-ai_will_do = { 
- factor = 1
- } 
-
-completion_reward = { 
-random_owned_state = {
-add_extra_state_shared_building_slots = 2
-add_building_construction = {
-	type = arms_factory
-	level = 2
-	instant_build = yes
-} }
-
- } 
- }     
- 
- 
  
  
 ################### WITCHES TREE ###################

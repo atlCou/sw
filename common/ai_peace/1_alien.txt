@@ -5,7 +5,7 @@
 civilwar_peace = {
 	# ROOT = Taker, FROM = Giver
 	enable = {
-		has_government = ultra-nationalist
+		has_government = fascism
 	}
 
 	annex_randomness = 0

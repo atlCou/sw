@@ -60,35 +60,22 @@ set_politics = {
 
 	parties = {
 		liberal = { 
-			popularity = 15
+			popularity = 28
 		}
 		
-		progressivism = {
-			popularity = 6
-		}
-		
-		liberal_monarchism = {
-			popularity = 21
-		}
-
 		fascism = {
-			popularity = 3
+			popularity = 5
 			banned = no
 		}
 		
-		
 		monarchism = {
-			popularity = 35
+			popularity = 49
 		}
 		
 		fanatical-paganism = {
 			popularity = 18
 		}
 		
-		ultra-nationalism = {
-			popularity = 2 
-			
-		}
 	}
 	
 	ruling_party = monarchism

@@ -55,16 +55,8 @@ set_politics = {
 
 	parties = {
 		liberal = { 
-			popularity = 12
+			popularity = 56
 			
-		}
-		
-		liberal_monarchism = {
-			popularity = 38
-		}
-		
-		progressivism = {
-			popularity = 30
 		}
 
 		fascism = {
@@ -77,13 +69,12 @@ set_politics = {
 			banned = no
 		}
 		
-		
 		monarchism = {
-			popularity = 5
+			popularity = 29
 		}
 	}
 	
-	ruling_party = liberal_monarchism
+	ruling_party = liberal
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no ##suspended through duration of war, which is handled via event
@@ -137,15 +128,15 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Patricia Schade"
-	desc = "POLITICS_PALME_DUTT_DESC"
-	picture = "Patricia.dds"
-	expire = "1965.1.1"
-	ideology = parlimentary_republicanism
-	traits = {
-	}
-}
+# create_country_leader = {
+	# name = "Patricia Schade"
+	# desc = "POLITICS_PALME_DUTT_DESC"
+	# picture = "Patricia.dds"
+	# expire = "1965.1.1"
+	# ideology = parlimentary_republicanism
+	# traits = {
+	# }
+# }
 
 
 create_field_marshal = {

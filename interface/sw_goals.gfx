@@ -191,6 +191,14 @@ spriteTypes = {
 		name = "GFX_Star_Hands"
 		texturefile = "gfx/interface/goals/Star_Hands.dds"
 	}
+	SpriteType = {
+		name = "GFX_DL-OFP"
+		texturefile = "gfx/interface/goals/DL-OFP.dds"
+	}
+	SpriteType = {
+		name = "GFX_DL-OFP_Focus"
+		texturefile = "gfx/interface/goals/DL-OFP_Focus.dds"
+	}
 }
 
 

@@ -192,3 +192,212 @@ bohemian_revanchism = {
 
 
 }
+
+gollob_reign = {
+
+
+	OST_seize_the_nation = {
+		icon = oppression
+		
+		allowed = {
+			has_country_flag = OST_gollob_reign_begins
+		}
+		
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = Gollob_suppression
+					value = 8
+					compare = less_than
+				}
+			}
+		}
+		
+		cost = 250
+		
+		fire_only_once = yes
+		
+		visible = {
+			tag = OST
+			has_country_flag = OST_gollob_reign_begins
+			NOT = {
+				has_country_flag = OST_crumbledflag
+			}
+		}
+		
+		days_remove = 70
+		
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+			if = {
+				limit = { check_variable = { Gollob_suppression < 8 } }
+				country_event = {
+					id = ostmark.8
+					days = 15
+				}
+			}
+			set_cosmetic_tag = OST_Gollob
+			custom_effect_tooltip = OST_seizing_tooltip
+		}
+		
+		remove_effect = {
+			set_cosmetic_tag = OST_Gollob
+		
+		}
+	}
+	
+	
+
+	OST_seize_the_industry = {
+		icon = oppression
+		
+		allowed = {
+			has_country_flag = OST_gollob_reign_begins
+		}
+		
+		ai_will_do = {
+			factor = 33
+		}
+		
+		cost = 75
+		
+		fire_only_once = yes
+		
+		visible = {
+			tag = OST
+			has_country_flag = OST_gollob_reign_begins
+			NOT = {
+				has_country_flag = OST_crumbledflag
+			}
+		}
+		
+		days_remove = 35
+		
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+			add_to_variable = {
+				var = Gollob_suppression
+				value = 2
+			}
+			custom_effect_tooltip = OST_tyranny_increase_moderate
+		}
+		
+		remove_effect = {
+			4 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			107 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			43 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+		}
+		
+	}
+	
+	OST_secret_police = {
+		icon = oppression
+		
+		allowed = {
+			has_country_flag = OST_gollob_reign_begins
+		}
+		
+		ai_will_do = {
+			factor = 55
+		}
+		
+		cost = 50
+		
+		fire_only_once = yes
+		
+		visible = {
+			tag = OST
+			has_country_flag = OST_gollob_reign_begins
+			NOT = {
+				has_country_flag = OST_crumbledflag
+			}
+		}
+		
+		days_remove = 35
+		
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+			add_to_variable = {
+				var = Gollob_suppression
+				value = 2
+			}
+			custom_effect_tooltip = OST_tyranny_increase_moderate
+		}
+		
+		remove_effect = {
+			add_stability = 0.15
+		}
+	}
+	
+	OST_propaganda_institutions = {
+		icon = oppression
+		
+		allowed = {
+			has_country_flag = OST_gollob_reign_begins
+		}
+		
+		ai_will_do = {
+			factor = 55
+		}
+		
+		cost = 50
+		
+		fire_only_once = yes
+		
+		visible = {
+			tag = OST
+			has_country_flag = OST_gollob_reign_begins
+			NOT = {
+				has_country_flag = OST_crumbledflag
+			}
+		}
+		
+		days_remove = 35
+		
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+			add_to_variable = {
+				var = Gollob_suppression
+				value = 1
+			}
+			custom_effect_tooltip = OST_tyranny_increase
+		}
+		
+		remove_effect = {
+			add_stability = 0.10
+			add_timed_idea = {
+				idea = OST_propaganda_institutions_idea
+				days = 175
+			}
+		}
+	}
+	
+
+
+
+}

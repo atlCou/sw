@@ -1,17 +1,4 @@
-focus_tree = { 
-	id = Ostmark
-	country = { 
-		factor = 0 
-		modifier = { 
-			add = 10 
-			original_tag = OST
-			default = no
-		} 
-	} 
-	continuous_focus_position = { x = 50 y = 3000 }
-
-
-}
+############## CRUMBLED SHARED TREES #############
 
 focus_tree = { 
 	id = Ostmark_crumbled
@@ -20,6 +7,12 @@ focus_tree = {
 		modifier = { 
 			add = 20
 			has_country_flag = OST_crumbledflag
+			NOT = {
+				OR = {
+					has_country_flag = OST_heimatblock 
+					has_country_flag = OST_thedynastystays
+				}
+			}
 			default = no
 		} 
 	} 
@@ -46,6 +39,7 @@ focus_tree = {
 			add = 200
 			has_country_flag = OST_heimatblock
 			has_country_flag = OST_crumbledflag
+			NOT = { has_country_flag = OST_thedynastystays}
 			default = no
 		}
 	} 
@@ -68,6 +62,7 @@ focus_tree = {
 			add = 200
 			has_country_flag = OST_thedynastystays
 			has_country_flag = OST_crumbledflag
+			NOT = { has_country_flag = OST_heimatblock }
 			default = no
 		}
 	} 
@@ -78,5 +73,516 @@ focus_tree = {
 	shared_focus = OST_bunkerdown
 	shared_focus = OST_reclaimingtheempire
 	shared_focus = OST_vienneseeffort
+	
+}
+
+
+###############################
+
+###############################
+
+###############################
+
+###############################
+
+###############################
+
+
+focus_tree = { 
+	id = Ostmark
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			original_tag = OST
+			default = no
+			NOT = { has_country_flag = OST_crumbledflag }
+		} 
+	} 
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	
+	
+	focus = {
+		id = OST_heimatblock_start
+		icon = GFX_ballot_suppression
+		x = 0
+		y = 0
+		cost = 1
+
+		available = {
+			has_country_flag = OST_heimatblock_won_fair_and_square
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = OST_patrolling_the_streets
+		icon = GFX_NSKAPeagle
+		x = 0
+		y = 1
+		cost = 5
+
+		relative_position_id = OST_heimatblock_start
+		
+		available = {
+			is_puppet = no
+		}
+		
+		prerequisite = { focus = OST_heimatblock_start }
+		
+		ai_will_do = {
+			factor = 100 
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = OST_street_patrols
+		}
+	}
+	
+	focus = {
+		id = OST_defending_national_identities
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 2
+		cost = 5
+
+		relative_position_id = OST_heimatblock_start
+		
+		available = {
+			is_puppet = no
+		}
+		
+		prerequisite = { focus = OST_patrolling_the_streets }
+		
+		ai_will_do = {
+			factor = 100 
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = monarchism
+			}
+			create_country_leader = {
+						name = "Vesna Mikovic"
+						desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+						picture = "vesna_mikovic.dds"
+						expire = "1965.1.1"
+						ideology = military_junta
+			}
+		}
+	}
+	
+	focus = {
+		id = OST_accepting_the_inevitable
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 3
+		cost = 5
+
+		relative_position_id = OST_heimatblock_start
+		
+		available = {
+			is_puppet = no
+		}
+		
+		prerequisite = { focus = OST_defending_national_identities }
+		
+		ai_will_do = {
+			factor = 100 
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = ostmark.10
+			}
+		}
+	}
+	
+
+	
+	######## CANON START
+	
+	
+	focus = {
+		id = OST_canon_start
+		icon = GFX_habsburgmemes
+		x = 10
+		y = 0
+		cost = 1
+
+		available = {
+			has_country_flag = OST_status_quo_win
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	
+	
+	######## GOLLOB START
+	
+	
+	focus = {
+		id = OST_gollob_start
+		icon = GFX_DL-OFP_Focus
+		x = 20
+		y = 0
+		cost = 1
+
+		available = {
+			has_country_flag = OST_Gollob_victory
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			set_variable = {
+				var = Gollob_suppression
+				value = 1
+			}
+			custom_effect_tooltip = OST_gollob_start_tooltip
+		}
+	}
+	
+	
+	focus = {
+		id = OST_purge
+		icon = GFX_Star_Boot
+		x = -1
+		y = 1
+		cost = 5
+		
+		relative_position_id = OST_gollob_start
+
+		mutually_exclusive = { focus = OST_consolidating_parliament }
+		
+		available = {
+			is_puppet = no
+		}
+		
+		ai_will_do = {
+			factor = 75
+		}
+		
+		prerequisite = { focus = OST_gollob_start }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -50
+			add_to_variable = {
+				var = Gollob_suppression
+				value = 1
+			}
+			add_stability = 0.15
+			custom_effect_tooltip = OST_tyranny_increase
+		}
+	}
+	
+	focus = {
+		id = OST_consolidating_parliament
+		icon = GFX_Star_Politics
+		x = 1
+		y = 1
+		cost = 5
+		
+		relative_position_id = OST_gollob_start
+
+		mutually_exclusive = { focus = OST_purge }
+		
+		available = {
+			is_puppet = no
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_gollob_start }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.10
+		}
+	}
+	
+	focus = {
+		id = OST_attack_our_enemies
+		icon = GFX_Star_Politics
+		x = -1
+		y = 2
+		cost = 5
+		
+		relative_position_id = OST_gollob_start
+
+		mutually_exclusive = { focus = OST_silence_our_enemies }
+		
+		available = {
+			has_country_flag = OST_Gollob_victory
+		}
+		
+		ai_will_do = {
+			is_puppet = no
+		}
+		
+		prerequisite = { focus = OST_purge focus = OST_consolidating_parliament }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				add_popularity = {
+					ideology = liberal
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = OST_silence_our_enemies
+		icon = GFX_Star_Politics
+		x = 1
+		y = 2
+		cost = 5
+		
+		relative_position_id = OST_gollob_start
+
+		mutually_exclusive = { focus = OST_monitor_our_enemies }
+		
+		available = {
+			is_puppet = no
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_purge focus = OST_consolidating_parliament }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = {
+				var = Gollob_suppression
+				value = 1
+			}
+			hidden_effect = {
+				add_popularity = {
+					ideology = liberal
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -1
+				}
+			}
+			add_stability = 0.10
+			custom_effect_tooltip = OST_tyranny_increase
+		}
+	}
+	
+
+	focus = {
+		id = OST_the_time_is_right
+		icon = GFX_Star_Politics
+		x = 0
+		y = 3
+		cost = 5
+		
+		relative_position_id = OST_gollob_start
+		
+		available = {
+			is_puppet = no
+		}
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_attack_our_enemies focus = OST_silence_our_enemies }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = OST_gollob_reign_begins_tooltip
+			set_country_flag = OST_gollob_reign_begins
+		}
+	}
+	
+	focus = {
+		id = OST_every_man_works
+		icon = GFX_Star_Politics
+		x = -2
+		y = 1
+		cost = 9
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		mutually_exclusive = { focus = OST_work_for_the_state focus = OST_some_men_work }
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_the_time_is_right }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = OST_every_man_works_idea
+			add_to_variable = {
+				var = Gollob_suppression
+				value = 5
+			}
+			custom_effect_tooltip = OST_tyranny_increase_massive
+		}
+	}
+	
+	focus = {
+		id = OST_work_for_the_state
+		icon = GFX_Star_Politics
+		x = 0
+		y = 1
+		cost = 9
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		mutually_exclusive = { focus = OST_every_man_works focus = OST_some_men_work }
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_the_time_is_right }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = OST_state_work_idea
+			add_to_variable = {
+				var = Gollob_suppression
+				value = 1
+			}
+			custom_effect_tooltip = OST_tyranny_increase
+		}
+	}
+	
+	focus = {
+		id = OST_some_men_work
+		icon = GFX_Star_Politics
+		x = 2
+		y = 1
+		cost = 9
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		mutually_exclusive = { focus = OST_every_man_works focus = OST_work_for_the_state }
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_the_time_is_right }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = OST_specialized_work
+			add_to_variable = {
+				var = Gollob_suppression
+				value = -1
+			}
+			custom_effect_tooltip = OST_tyranny_decrease
+		}
+	}
+	
+	focus = {
+		id = OST_homogenous_thought
+		icon = GFX_Star_Politics
+		x = 0
+		y = 2
+		cost = 9
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_every_man_works focus = OST_work_for_the_state focus = OST_some_men_work }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = -150
+			add_popularity = {
+				ideology = fanatical-paganism
+				popularity = -0.1
+			}
+			add_to_variable = {
+				var = Gollob_suppression
+				value = 5
+			}
+			add_ideas = OST_homogenous_thought_idea
+			custom_effect_tooltip = OST_tyranny_increase_massive
+		}
+	}
+	
 	
 }

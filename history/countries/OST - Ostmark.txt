@@ -30,30 +30,22 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		ultra-nationalism = {
-			popularity = 15
-			banned = no
-		}
 
-		liberal_monarchism = {
-			popularity = 30
-		}
-		
 		liberal = {
-			popularity = 20
+			popularity = 35
 		}
 		
-		authoritarian_communism = {
+		communism = {
 			popularity = 9
 			banned = yes
 		}
 		
 		monarchism = {
-			popularity = 15
+			popularity = 30
 		}
 		
 		fascism = {
-			popularity = 5
+			popularity = 20
 		}
 		
 		fanatical-paganism = {
@@ -61,7 +53,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = liberal_monarchism
+	ruling_party = liberal
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no

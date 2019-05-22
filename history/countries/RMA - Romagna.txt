@@ -143,11 +143,7 @@ set_politics = {
 
 	parties = {
 		liberal = {
-			popularity = 25
-		}
-		
-		progressivism = {
-			popularity = 10
+			popularity = 35
 		}
 
 		fascism = {
@@ -164,11 +160,7 @@ set_politics = {
 			popularity = 7
 			banned = no
 		}
-		
-		ultra-nationalism = {
-			popularity = 0
-		}
-		
+
 		monarchism = {
 			popularity = 33
 		}

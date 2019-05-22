@@ -69,10 +69,9 @@ set_politics = {
         fascism = { popularity = 0 }
         authoritarian-socialism = { popularity = 2 }
         socialism = { popularity = 4 }
-        liberal_monarchism = { popularity = 30 }
         ultra-nationalism = { popularity = 5 }
         fanatical-paganism = { popularity = 11 }
-        monarchism = { popularity = 140 }
+        monarchism = { popularity = 44 }
 
 	}
 	

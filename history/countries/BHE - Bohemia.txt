@@ -18,15 +18,11 @@ set_stability = 0.05
 set_politics = {
 
 	parties = {
-        liberal = { popularity = 11 }
-        progressivism = { popularity = 3 }
-        liberal_monarchism = { popularity = 0 }
+        liberal = { popularity = 14 }
         socialism = { popularity = 15 }
         communism = { popularity = 0 }
-        authoritarian-socialism = { popularity = 0 }
-        monarchism = { popularity = 35 }
+        monarchism = { popularity = 36 }
         fascism = { popularity = 23 }
-        ultra-nationalism = { popularity = 0 }
         fanatical-paganism = { popularity = 0 }
 
 	}

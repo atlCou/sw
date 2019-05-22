@@ -4,6 +4,47 @@
 add_namespace = ostmark
 
 
+country_event = {
+	id = ostmark.8
+	title = ostmark.8.t
+	desc = ostmark.8.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = ostmark.8.a
+		add_stability = -0.15
+		country_event = {
+			id = ostmark.9
+			days = 15
+		}
+	}
+
+}
+
+country_event = {
+	id = ostmark.9
+	title = ostmark.9.t
+	desc = ostmark.9.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = ostmark.9.a
+		add_stability = -0.25
+		country_event = {
+			id = ostmark.10
+			days = 35
+		}
+	}
+}
+
 
 
 country_event = {
@@ -34,6 +75,10 @@ country_event = {
 					}
 				}
 				load_focus_tree = Ostmark_crumbled
+				set_stability = 0.5
+				set_politics = {
+					ruling_party = liberal
+				}
 			}
 			BHE = {
 				transfer_state = 69
@@ -96,15 +141,11 @@ country_event = {
 				hidden_effect = {
 					set_politics = {
 						parties = {
-							liberal = { popularity = 38 }
-							progressivism = { popularity = 16 }
-							liberal_monarchism = { popularity = 30 }
+							liberal = { popularity = 62 }
 							socialism = { popularity = 3 }
 							communism = { popularity = 0 }
-							authoritarian-socialism = { popularity = 0 }
-							monarchism = { popularity = 10 }
-							fascism = { popularity = 3 }
-							ultra-nationalism = { popularity = 0 }
+							monarchism = { popularity = 30 }
+							fascism = { popularity = 5 }
 							fanatical-paganism = { popularity = 0 }
 
 						}
@@ -251,10 +292,11 @@ country_event = {
 			modifier = {
 				add = -100
 				OR = {			
-						has_government = ultra-nationalism 
+						has_government = fascism
 						has_government = fanatical-paganism
-						has_government = authoritarian-socialism }
-		}
+						has_government = communism
+				}
+			}
 		}
 		KAR = { country_event = {
 		days = 7
@@ -270,9 +312,9 @@ country_event = {
 			modifier = {
 				add = 100
 				OR = {			
-					has_government = ultra-nationalism 
+					has_government = fascism
 					has_government = fanatical-paganism
-					has_government = authoritarian-socialism 
+					has_government = communism
 				}
 			}
 		}
@@ -380,9 +422,9 @@ country_event = {
 			modifier = {
 				add = -100
 				OR = {			
-					has_government = ultra-nationalism 
+					has_government = fascism
 					has_government = fanatical-paganism
-					has_government = authoritarian-socialism 
+					has_government = communism
 				}
 			}
 		}
@@ -398,9 +440,9 @@ country_event = {
 			modifier = {
 				add = 90
 				OR = {			
-					has_government = ultra-nationalism 
+					has_government = fascism
 					has_government = fanatical-paganism
-					has_government = authoritarian-socialism 
+					has_government = communism
 				}
 			}
 		}
@@ -713,15 +755,11 @@ country_event = {
 		set_politics = {
 			ruling_party = fascism
 			parties = {
-				liberal = { popularity = 9 }
-				progressivism = { popularity = 0 }
-				liberal_monarchism = { popularity = 11 }
+				liberal = { popularity = 20 }
 				socialism = { popularity = 0 }
 				communism = { popularity = 0 }
-				authoritarian-socialism = { popularity = 0 }
 				monarchism = { popularity = 36 }
 				fascism = { popularity = 44 }
-				ultra-nationalism = { popularity = 0 }
 				fanatical-paganism = { popularity = 0 }
 			}
 		}
@@ -775,15 +813,11 @@ country_event = {
 			set_politics = {
 				ruling_party = fascism
 				parties = {
-					liberal = { popularity = 9 }
-					progressivism = { popularity = 0 }
-					liberal_monarchism = { popularity = 11 }
+					liberal = { popularity = 20 }
 					socialism = { popularity = 0 }
 					communism = { popularity = 0 }
-					authoritarian-socialism = { popularity = 0 }
 					monarchism = { popularity = 36 }
 					fascism = { popularity = 44 }
-					ultra-nationalism = { popularity = 0 }
 					fanatical-paganism = { popularity = 0 }
 				}
 			}
@@ -939,4 +973,522 @@ country_event = {
 
 }
 
+############ 
+### Unified Ostmark Politics
+############
 
+add_namespace = ost
+
+country_event = {
+	id = ost.1
+	title = ost.1.t
+	desc = ost.1.d
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1936.01.01
+		tag = OST
+	}
+
+	mean_time_to_happen = {
+		days = 31
+	}
+
+	option = {
+		name = ost.1.a
+		country_event = {
+			id = ost.2
+			days = 4
+		}
+		news_event = {
+			id = ost.1000
+			days = 1
+		}
+	}
+
+}
+
+country_event = {
+	id = ost.2
+	title = ost.2.t
+	desc = ost.2.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.2.a
+		country_event = {
+			id = ost.3
+			days = 10
+		}
+	}
+
+}
+
+
+country_event = {
+	id = ost.3
+	title = ost.3.t
+	desc = ost.3.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.3.a
+		country_event = {
+			id = ost.4
+			days = 10
+		}
+	}
+
+}
+
+
+country_event = {  #### COALITION PARTY FORMING
+	id = ost.4
+	title = ost.4.t
+	desc = ost.4.d
+	
+	is_triggered_only = yes
+
+	option = {   #### Broaden Left
+		name = ost.4.a
+		trigger = {
+			NOT = {
+				has_country_flag = OST_broadened_left
+			}
+		}
+		country_event = {
+			id = ost.5
+			days = 7
+		}
+	}	
+	
+	option = {    #### Broaden Right
+		name = ost.4.b
+		trigger = {
+			NOT = {
+				has_country_flag = OST_broadened_right
+			}
+		}
+		country_event = {
+			id = ost.6
+			days = 7
+		}
+	}
+	
+	option = {    #### Status Quo
+		name = ost.4.c
+		trigger = {
+			NOT = {
+				has_country_flag = OST_broadened_status_quo
+			}
+		}
+		country_event = {
+			id = ost.7
+			days = 14
+		}
+	}
+	
+	option = {    #### Dissolve
+		name = ost.4.e
+		country_event = {
+			id = ost.15
+			days = 14
+		}
+	}
+
+}
+
+
+country_event = {  #### LEFT COALITION
+	id = ost.5
+	title = ost.5.t
+	desc = ost.5.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.5.a ### fails
+		country_event = {
+			id = ost.4
+		}
+		set_country_flag = OST_broadened_left
+	}
+	
+	option = {
+		name = ost.5.b ### succeeds
+		country_event = {
+			id = ost.10
+			days = 7
+		}
+		set_country_flag = OST_broadened_left
+	}
+}
+
+country_event = {  #### RIGHT COALITION
+	id = ost.6
+	title = ost.6.t
+	desc = ost.6.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.6.a ### fails
+		country_event = {
+			id = ost.4
+		}
+		set_country_flag = OST_broadened_right
+	}
+	
+	option = {
+		name = ost.6.b ### succeeds
+		country_event = {
+			id = ost.11
+			days = 7
+		}
+		set_country_flag = OST_broadened_right
+	}
+}
+
+
+country_event = {  #### STANDARD COALITION
+	id = ost.7
+	title = ost.7.t
+	desc = ost.7.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.7.a ### fails
+		country_event = {
+			id = ost.4
+		}
+		set_country_flag = OST_broadened_status_quo
+	}
+	
+	option = {
+		name = ost.7.b ### succeeds
+		country_event = {
+			id = ost.14
+			days = 14
+		}
+		set_country_flag = OST_broadened_status_quo
+	}
+}
+
+
+country_event = {  #### SPO Clashes with HB
+	id = ost.10
+	title = ost.10.t
+	desc = ost.10.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.10.a
+		country_event = {
+			id = ost.11
+			days = 6
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {  #### HB Organizations hold up polls
+	id = ost.11
+	title = ost.11.t
+	desc = ost.11.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.11.a
+		country_event = {
+			id = ost.12
+			days = 1
+		}
+		add_stability = -0.15
+	}
+}
+
+country_event = {  #### Landslide HB victory!
+	id = ost.12
+	title = ost.12.t
+	desc = ost.12.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.12.a
+		add_stability = -0.25
+		hidden_effect = {
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+			set_party_name = {
+				ideology = liberal
+				long_name = OST_liberal_monarchism_party_HB_coalition_long
+				name = OST_liberal_monarchism_party_HB_coalition
+			}
+			set_party_name = {
+				ideology = monarchism
+				long_name = OST_monarchism_party_HB_coalition_long
+				name = OST_monarchism_party_HB_coalition
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = OST_fascism_party_HB_coalition_long
+				name = OST_fascism_party_HB_coalition
+			}
+			country_event = {
+				id = ost.13
+				days = 35
+			}
+			news_event = {
+				id = ost.1001
+				days = 1
+			}
+			set_country_flag = OST_heimatblock_won_fair_and_square   ###jk
+		}
+	}
+}
+
+country_event = {
+	id = ost.14
+	title = ost.14.t
+	desc = ost.14.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.14.a 
+		set_country_flag = OST_status_quo_win
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = fanatical-paganism
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.2
+			}
+		}
+		add_stability = -0.1
+		add_ideas = OST_upset_elites
+	}
+}
+
+
+country_event = {
+	id = ost.15
+	title = ost.15.t
+	desc = ost.15.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.15.a 
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			country_event = {
+				id = ost.16
+				days = 7
+			}
+		}
+		add_stability = -0.15
+	}
+}
+
+country_event = {
+	id = ost.16
+	title = ost.16.t
+	desc = ost.16.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.16.a 
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = OST_Gollob_party_long
+				name = OST_Gollob_party
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = OST_Gollob_party_long
+				name = OST_Gollob_party
+			}
+			country_event = {
+				id = ost.17
+				days = 14
+			}
+		}
+		add_stability = -0.1
+	}
+}
+
+
+
+country_event = {
+	id = ost.17
+	title = ost.17.t
+	desc = ost.17.d
+	
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ost.17.a 
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			set_country_flag = OST_Gollob_victory
+			set_cosmetic_tag = OST_Gollob_transition
+			news_event = {
+				id = ost.1002
+				days = 1
+			}
+		}
+		add_stability = -0.1
+	}
+}
+
+
+
+
+news_event = {
+	id = ost.1000
+	title = ost.1000.t
+	desc = ost.1000.d
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = ost.1000.a
+	}
+
+}
+
+news_event = {
+	id = ost.1001
+	title = ost.1001.t
+	desc = ost.1001.d
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = ost.1001.a
+		trigger = {
+			NOT = {
+				tag = OST
+			}
+		}
+	}
+	
+	option = {
+		name = ost.1001.b
+		trigger = {
+			tag = OST
+		}
+	}
+
+}
+
+
+news_event = {
+	id = ost.1002
+	title = ost.1002.t
+	desc = ost.1002.d
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = ost.1002.a
+		trigger = {
+			NOT = {
+				tag = OST
+			}
+		}
+	}
+	
+	option = {
+		name = ost.1002.b
+		trigger = {
+			tag = OST
+		}
+	}
+
+}

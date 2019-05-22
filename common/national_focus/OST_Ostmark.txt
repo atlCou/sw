@@ -138,15 +138,11 @@ shared_focus = {
 		set_politics = {
 			ruling_party = monarchism
 			parties = {
-				liberal = { popularity = 24 }
-				progressivism = { popularity = 0 }
-				liberal_monarchism = { popularity = 26 }
+				liberal = { popularity = 37 }
 				socialism = { popularity = 0 }
 				communism = { popularity = 0 }
-				authoritarian-socialism = { popularity = 0 }
-				monarchism = { popularity = 35 }
-				fascism = { popularity = 4 }
-				ultra-nationalism = { popularity = 6 }
+				monarchism = { popularity = 48 }
+				fascism = { popularity = 10 }
 				fanatical-paganism = { popularity = 5 }
 			}
 		}

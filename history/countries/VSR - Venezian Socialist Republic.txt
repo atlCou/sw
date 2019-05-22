@@ -26,7 +26,7 @@ set_politics = {
 		communism = {
 			popularity = 23
 		}
-		progressivism = {
+		liberal = {
 			popularity = 6
 		}
 	}

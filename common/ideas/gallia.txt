@@ -15,7 +15,7 @@ ideas = {
 	
 	GAL_departmentofsolidaritypop = {
 		picture = generic_reserve_divisions
-		modifier = { authoritarian-socialism_drift = 0.1 
+		modifier = { communism_drift = 0.1 
 			stability_weekly = 0.005 }
 	}
 	

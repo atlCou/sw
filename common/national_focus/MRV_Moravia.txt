@@ -49,12 +49,8 @@ continuous_focus_position = { x = 50 y = 3000 }
 		completion_reward = { 
 			add_war_support = 0.1
 			add_popularity = {
-				ideology = ultra-nationalism
-				popularity = -0.2
-			}
-			add_popularity = {
 				ideology = fascism
-				popularity = -0.1
+				popularity = -0.3
 			}
 			add_popularity = {
 				ideology = socialism
@@ -254,11 +250,6 @@ continuous_focus_position = { x = 50 y = 3000 }
 			swap_ideas = {
 				remove_idea = MRV_conscription
 				add_idea = MRV_peace_conscription
-			}
-			set_party_name = {
-				ideology = ultra-nationalism
-				name = MRV_ultra-nationalism_finished
-				long_name = MRV_ultra-nationalism_finished
 			}
 			set_country_flag = MRV_revanchism_decisions
 			set_cosmetic_tag = MRV_greater

@@ -286,7 +286,6 @@ country_event = {
 					NOT = { 
 						OR = {
 							has_government = monarchism
-							has_government = liberal_monarchism
 						}
 					}
 				}
@@ -340,16 +339,8 @@ country_event = {
 		name = karlsland.60.a
 		add_stability = 0.1
 		add_popularity = {
-			ideology = liberal_monarchism
-			popularity = 0.05
-		}
-		add_popularity = {
 			ideology = liberal
-			popularity = 0.05
-		}
-		add_popularity = {
-			ideology = progressivism
-			popularity = 0.1
+			popularity = 0.15
 		}
 	}
 
@@ -399,12 +390,8 @@ country_event = {
 		name = karlsland.62.a
 		add_stability = 0.05
 		add_popularity = {
-			ideology = liberal_monarchism
-			popularity = 0.05
-		}
-		add_popularity = {
 			ideology = monarchism
-			popularity = 0.12
+			popularity = 0.15
 		}
 		add_popularity = {
 			ideology = fascism
@@ -455,7 +442,7 @@ country_event = {
 		}
 		add_stability = -0.1
 		hidden_effect = { set_country_flag = KAR_ultnatmonarchy }
-		add_popularity = { ideology = ultra-nationalism popularity = 0.3 }
+		add_popularity = { ideology = fascism popularity = 0.3 }
 		add_popularity = { ideology = monarchism popularity = -0.25 }
 		hidden_effect =  { load_focus_tree = Karlsland_ultnat }
 	}
@@ -480,14 +467,10 @@ country_event = {
 		add_stability = 0.05
 		add_popularity = { 
 		ideology = liberal
-		popularity = 0.05
+		popularity = 0.1
 		}
 		add_popularity = { 
-		ideology = progressivism
-		popularity = 0.05
-		}
-		add_popularity = { 
-		ideology = liberal_monarchism
+		ideology = monarchism
 		popularity = 0.10
 		}
 		add_popularity = { 
@@ -508,27 +491,15 @@ country_event = {
 		add_stability = -0.15
 		add_popularity = { 
 		ideology = liberal
-		popularity = 0.10
-		}
-		add_popularity = { 
-		ideology = progressivism
-		popularity = 0.08
-		}
-		add_popularity = { 
-		ideology = liberal_monarchism
-		popularity = 0.07
+		popularity = 0.15
 		}
 		add_popularity = { 
 		ideology = fascism
-		popularity = 0.02
+		popularity = 0.04
 		}
 		add_popularity = { 
 		ideology = fanatical-paganism
 		popularity = 0.03
-		}
-		add_popularity = { 
-		ideology = ultra-nationalism
-		popularity = 0.02
 		}
 		hidden_effect = { country_event = { days = 14 id = karlsland.101 }
 	}	
@@ -550,15 +521,11 @@ country_event = {
 		add_stability = -0.05
 		add_popularity = { 
 		ideology = fascism
-		popularity = 0.02
+		popularity = 0.1
 		}
 		add_popularity = { 
 		ideology = fanatical-paganism
 		popularity = 0.04
-		}
-		add_popularity = { 
-		ideology = ultra-nationalism
-		popularity = 0.08
 		}
 		country_event = {
 			days = 7
@@ -620,12 +587,8 @@ country_event = {
 		}
 		add_popularity = { 
 		ideology = liberal
-		popularity = -0.15
+		popularity = -0.23
 		}
-		add_popularity = { 
-		ideology = progressivism
-		popularity = -0.08
-		}	
 		add_popularity = { 
 		ideology = monarchism
 		popularity = 0.08
@@ -679,22 +642,14 @@ country_event = {
 			}
 			add_popularity = {
 				ideology = liberal
-				popularity = 0.45
+				popularity = 0.7
 			}
 			add_popularity = {
-				ideology = liberal_monarchism
+				ideology = monarchism
 				popularity = 0.25
 			}	
 			add_popularity = {
-				ideology = progressivism
-				popularity = 0.3
-			}
-			add_popularity = {
 				ideology = fascism
-				popularity = -1
-			}
-			add_popularity = {
-				ideology = ultra-nationalism
 				popularity = -1
 			}
 			add_popularity = {
@@ -709,11 +664,10 @@ country_event = {
 			}
 			set_cosmetic_tag = KAR_pagan
 			set_politics = { parties = { 
-					ultra-nationalism = { popularity = 26 }
 				
-					fascism = { popularity = 17 }
+					fascism = { popularity = 30 }
 				
-					fanatical-paganism = { popularity = 57 }
+					fanatical-paganism = { popularity = 70 }
 				}
 			}
 		}
@@ -783,8 +737,7 @@ country_event = {
 	days = 1
 	id = karlsland.113
 	add_popularity = { ideology fanatical-paganism popularity = -0.01 }
-	add_popularity = { ideology = liberal popularity = 0.02 }
-	add_popularity = { ideology = progressivism popularity = 0.03 }
+	add_popularity = { ideology = liberal popularity = 0.05 }
 	} }
 	}
 }
@@ -842,8 +795,6 @@ country_event = {
 		days = 1
 		id = karlsland.115
 		add_popularity = { ideology = fanatical-paganism popularity = 0.03 }
-		add_popularity = { ideology = liberal popularity = 0.02 }
-		add_popularity = { ideology = progressivism popularity = -0.03 }
 		}
 	} 
 }
@@ -927,11 +878,8 @@ country_event = {
 		name = karlsland.117.a
 
 		add_popularity = { ideology = fanatical-paganism popularity = -0.1 }
-		add_popularity = { ideology = fascism popularity = -0.04 }
-		add_popularity = { ideology = ultra-nationalism popularity = -0.07 }
-		add_popularity = { ideology = liberal popularity = 0.1 }
-		add_popularity = { ideology = progressivism popularity = 0.09 }
-		add_popularity = { ideology = liberal_monarchism popularity = 0.02 }
+		add_popularity = { ideology = fascism popularity = -0.11 }
+		add_popularity = { ideology = liberal popularity = 0.2 }
 
 	}
 }
@@ -1017,16 +965,11 @@ country_event = {
 		name = karlsland.122.a
 		hidden_effect = { 
 			set_cosmetic_tag = KAR_pagan
-			set_politics = { parties = { 
-					ultra-nationalism = { popularity = 26 }
-				
-					fascism = { popularity = 17 }
-				
+			set_politics = { 
+				parties = { 
+					fascism = { popularity = 43 }
 					fanatical-paganism = { popularity = 57 }
-					
 					liberal = { popularity = 0 }
-					liberal_monarchism = { popularity = 0 }
-					progressivism = { popularity = 0 }
 					communism = { popularity = 0 }
 				}	
 				ruling_party = fanatical-paganism
@@ -1059,206 +1002,206 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = karlsland.151
-	title = karlsland.151.t
-	desc = karlsland.151.d
+# country_event = {
+	# id = karlsland.151
+	# title = karlsland.151.t
+	# desc = karlsland.151.d
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = karlsland.151.a
-		set_country_flag = KAR_socialprograms
-		add_popularity = {
-			ideology = progressivism
-			popularity = 0.05
-		}
-	}
+	# option = {
+		# name = karlsland.151.a
+		# set_country_flag = KAR_socialprograms
+		# add_popularity = {
+			# ideology = progressivism
+			# popularity = 0.05
+		# }
+	# }
 	
-	option = {
-		name = karlsland.151.b
-		set_country_flag = KAR_businessstimulation
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.05
-		}
-	}
+	# option = {
+		# name = karlsland.151.b
+		# set_country_flag = KAR_businessstimulation
+		# add_popularity = {
+			# ideology = liberal
+			# popularity = 0.05
+		# }
+	# }
 	
-	option = {
-		name = karlsland.151.c
-		set_country_flag = KAR_businessstimulation
-		set_country_flag = KAR_socialprograms
-		if = {
-			limit = { has_country_flag = KAR_noofficial }
-		}
-		else_if = {
-			limit = { has_country_flag = KAR_aconservativedemocracy }
-		add_popularity = {
-			ideology = monarchism
-			popularity = -0.05
-		}
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.05
-		}
-		add_popularity = {
-			ideology = progressivism
-			popularity = 0.05
-		}
-		}
-		else_if = { 
-			limit = { has_country_flag = KAR_lutheranofficial }
-		add_popularity = {
-			ideology = liberal_monarchism
-			popularity = 0.06
-		}
-		}
-	}
-}
+	# option = {
+		# name = karlsland.151.c
+		# set_country_flag = KAR_businessstimulation
+		# set_country_flag = KAR_socialprograms
+		# if = {
+			# limit = { has_country_flag = KAR_noofficial }
+		# }
+		# else_if = {
+			# limit = { has_country_flag = KAR_aconservativedemocracy }
+		# add_popularity = {
+			# ideology = monarchism
+			# popularity = -0.05
+		# }
+		# add_popularity = {
+			# ideology = liberal
+			# popularity = 0.05
+		# }
+		# add_popularity = {
+			# ideology = progressivism
+			# popularity = 0.05
+		# }
+		# }
+		# else_if = { 
+			# limit = { has_country_flag = KAR_lutheranofficial }
+		# add_popularity = {
+			# ideology = liberal_monarchism
+			# popularity = 0.06
+		# }
+		# }
+	# }
+# }
 
-country_event = {
-	id = karlsland.152
-	title = karlsland.152.t
-	desc = karlsland.152.d
+# country_event = {
+	# id = karlsland.152
+	# title = karlsland.152.t
+	# desc = karlsland.152.d
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = karlsland.152.a
-		add_popularity = {
-			ideology = progressivism
-			popularity = 0.05
-		}
-	}
+	# option = {
+		# name = karlsland.152.a
+		# add_popularity = {
+			# ideology = progressivism
+			# popularity = 0.05
+		# }
+	# }
 	
-	option = {
-		name = karlsland.152.b
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.05
-		}
-	}
+	# option = {
+		# name = karlsland.152.b
+		# add_popularity = {
+			# ideology = liberal
+			# popularity = 0.05
+		# }
+	# }
 	
-	option = {
-		name = karlsland.152.c
-		if = {
-			limit = { has_country_flag = KAR_noofficial }
-		}
-		else_if = {
-			limit = { has_country_flag = KAR_aconservativedemocracy }
-		add_popularity = {
-			ideology = monarchism
-			popularity = -0.05
-		}
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.05
-		}
-		add_popularity = {
-			ideology = progressivism
-			popularity = 0.05
-		}
-		}
-		else_if = { 
-			limit = { has_country_flag = KAR_lutheranofficial }
-		add_popularity = {
-			ideology = liberal_monarchism
-			popularity = 0.06
-		}
-		}
-	}
-}
+	# option = {
+		# name = karlsland.152.c
+		# if = {
+			# limit = { has_country_flag = KAR_noofficial }
+		# }
+		# else_if = {
+			# limit = { has_country_flag = KAR_aconservativedemocracy }
+		# add_popularity = {
+			# ideology = monarchism
+			# popularity = -0.05
+		# }
+		# add_popularity = {
+			# ideology = liberal
+			# popularity = 0.05
+		# }
+		# add_popularity = {
+			# ideology = progressivism
+			# popularity = 0.05
+		# }
+		# }
+		# else_if = { 
+			# limit = { has_country_flag = KAR_lutheranofficial }
+		# add_popularity = {
+			# ideology = liberal_monarchism
+			# popularity = 0.06
+		# }
+		# }
+	# }
+# }
 
-country_event = {
-	id = karlsland.153
-	title = karlsland.153.t
-	desc = karlsland.153.d
+# country_event = {
+	# id = karlsland.153
+	# title = karlsland.153.t
+	# desc = karlsland.153.d
 	
-	fire_only_once = yes
+	# fire_only_once = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = karlsland.153.f
-		if = {
-			limit = { 
-				AND = {
-					check_variable = { party_popularity@progressivism > party_popularity@liberal_monarchism }
-					check_variable = { party_popularity@progressivism > party_popularity@liberal }
-					check_variable = { party_popularity@progressivism > party_popularity@fanatical-paganism }
-				}
-			}
-			hidden_effect = { set_politics = {
-				ruling_party = progressivism
-				add_stability = 0.1
-			} }
-			custom_effect_tooltip = karlsland.153.a
-		}
-		if = {
-			limit = { 
-				AND = {
-					check_variable = { party_popularity@liberal > party_popularity@liberal_monarchism }
-					check_variable = { party_popularity@liberal > party_popularity@progressivism }
-					check_variable = { party_popularity@liberal > party_popularity@fanatical-paganism }
-				}
-			}
-			hidden_effect = { set_politics = {
-				ruling_party = liberal
-				add_stability = 0.1
-			} }
-			custom_effect_tooltip = karlsland.153.b
-		}
-		if = {
-			limit = { 
-				AND = {
-					NOT = { has_country_flag = KAR_lutheranofficial }
-					check_variable = { party_popularity@liberal_monarchism > party_popularity@liberal }
-					check_variable = { party_popularity@liberal_monarchism > party_popularity@progressivism }
-					check_variable = { party_popularity@liberal_monarchism > party_popularity@fanatical-paganism }
-				}
-			}
-			hidden_effect = { set_politics = {
-				ruling_party = liberal_monarchism
-				add_stability = 0.1
-			} }
-			custom_effect_tooltip = karlsland.153.c
-		}
-		if = {
-			limit = { 
-				AND = {
-					has_country_flag = KAR_lutheranofficial 
-					check_variable = { party_popularity@liberal_monarchism > party_popularity@liberal }
-					check_variable = { party_popularity@liberal_monarchism > party_popularity@progressivism }
-					check_variable = { party_popularity@liberal_monarchism > party_popularity@fanatical-paganism }
-				}
-			}
-			hidden_effect = { set_party_name = {
-				ideology = liberal_monarchism
-				long_name = KAR_nationallutheran_long
-				name = KAR_nationallutheran
-			}
-			create_country_leader = {
-				name = "Huberta von Bonin"
-				desc = "HHHH"
-				picture = "Huberta von Bonin.dds"
-				expire = "1965.1.1"
-				ideology = constitutional_monarchism
-				traits = {
-					}
-			}
-			set_politics = {
-				add_stability = 0.1
-				ruling_party = liberal_monarchism
-			}
-			set_cosmetic_tag = KAR_lutheranlol }
-			custom_effect_tooltip = karlsland.153.e
-		}
-	}
-}	
+	# option = {
+		# name = karlsland.153.f
+		# if = {
+			# limit = { 
+				# AND = {
+					# check_variable = { party_popularity@progressivism > party_popularity@liberal_monarchism }
+					# check_variable = { party_popularity@progressivism > party_popularity@liberal }
+					# check_variable = { party_popularity@progressivism > party_popularity@fanatical-paganism }
+				# }
+			# }
+			# hidden_effect = { set_politics = {
+				# ruling_party = progressivism
+				# add_stability = 0.1
+			# } }
+			# custom_effect_tooltip = karlsland.153.a
+		# }
+		# if = {
+			# limit = { 
+				# AND = {
+					# check_variable = { party_popularity@liberal > party_popularity@liberal_monarchism }
+					# check_variable = { party_popularity@liberal > party_popularity@progressivism }
+					# check_variable = { party_popularity@liberal > party_popularity@fanatical-paganism }
+				# }
+			# }
+			# hidden_effect = { set_politics = {
+				# ruling_party = liberal
+				# add_stability = 0.1
+			# } }
+			# custom_effect_tooltip = karlsland.153.b
+		# }
+		# if = {
+			# limit = { 
+				# AND = {
+					# NOT = { has_country_flag = KAR_lutheranofficial }
+					# check_variable = { party_popularity@liberal_monarchism > party_popularity@liberal }
+					# check_variable = { party_popularity@liberal_monarchism > party_popularity@progressivism }
+					# check_variable = { party_popularity@liberal_monarchism > party_popularity@fanatical-paganism }
+				# }
+			# }
+			# hidden_effect = { set_politics = {
+				# ruling_party = liberal_monarchism
+				# add_stability = 0.1
+			# } }
+			# custom_effect_tooltip = karlsland.153.c
+		# }
+		# if = {
+			# limit = { 
+				# AND = {
+					# has_country_flag = KAR_lutheranofficial 
+					# check_variable = { party_popularity@liberal_monarchism > party_popularity@liberal }
+					# check_variable = { party_popularity@liberal_monarchism > party_popularity@progressivism }
+					# check_variable = { party_popularity@liberal_monarchism > party_popularity@fanatical-paganism }
+				# }
+			# }
+			# hidden_effect = { set_party_name = {
+				# ideology = liberal_monarchism
+				# long_name = KAR_nationallutheran_long
+				# name = KAR_nationallutheran
+			# }
+			# create_country_leader = {
+				# name = "Huberta von Bonin"
+				# desc = "HHHH"
+				# picture = "Huberta von Bonin.dds"
+				# expire = "1965.1.1"
+				# ideology = constitutional_monarchism
+				# traits = {
+					# }
+			# }
+			# set_politics = {
+				# add_stability = 0.1
+				# ruling_party = liberal_monarchism
+			# }
+			# set_cosmetic_tag = KAR_lutheranlol }
+			# custom_effect_tooltip = karlsland.153.e
+		# }
+	# }
+# }	
 
 
 country_event = {
@@ -1385,13 +1328,13 @@ country_event = {
 	option = {
 		name = karlsland.320.b
 		set_politics = {
-			ruling_party = ultra-nationalism
+			ruling_party = fascism
 		}
 		add_ideas = KAR_pankarlsguild
 		set_country_flag = KAR_panguildwon
 		hidden_effect = { 
 			add_popularity = {
-				ideology = ultra-nationalism
+				ideology = fascism
 				popularity = 0.2
 			} 
 			set_cosmetic_tag = KAR_temporaryjunta
@@ -1759,7 +1702,7 @@ country_event = {
 		name = baltland.1.a
 		
 		add_popularity = {
-			ideology = progressivism
+			ideology = liberal
 			popularity = 0.05
 		}
 		add_popularity = {
@@ -1778,11 +1721,7 @@ country_event = {
 		
 		add_popularity = {
 			ideology = liberal
-			popularity = 0.05
-		}
-		add_popularity = {
-			ideology = liberal_monarchism
-			popularity = 0.02
+			popularity = 0.07
 		}
 		set_politics = {
 			ruling_party = liberal

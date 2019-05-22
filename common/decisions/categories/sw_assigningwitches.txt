@@ -11,3 +11,13 @@ bohemian_revanchism = {
 		has_country_flag = BHE_revanchism_decisions
 	}
 }
+
+gollob_reign = {
+	icon = generic_propaganda
+	availabe = {
+		has_country_flag = OST_gollob_reign_begins
+		NOT = {
+			has_country_flag = OST_crumbledflag
+		}
+	}
+}

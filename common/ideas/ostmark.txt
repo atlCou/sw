@@ -20,6 +20,82 @@ ideas = {
 			}
 		}
 		
+		
+		OST_upset_elites = {
+		
+			picture = OST_eagle
+			
+			modifier = {
+				training_time_army_factor = 0.25
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.15
+			}
+			
+		}
+		
+		OST_every_man_works_idea = {
+		
+			picture = GAL_socialismstar
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				conscription_factor = -0.25
+				production_speed_buildings_factor = 0.15
+			}
+		
+		
+		}
+		
+		OST_state_work_idea = {
+		
+			picture = GAL_socialismstar
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		
+		}
+		
+		OST_specialized_work = {
+		
+			picture = GAL_socialismstar
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		
+		}
+		
+		OST_homogenous_thought_idea = {
+		
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+				fascism_drift = 0.1
+			}
+		
+		}
+		
+		OST_propaganda_institutions_idea = {
+		
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		
+		OST_street_patrols = {
+		
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = -0.05
+			}
+		}	
+		
 	}
 	political_advisor = {
 
@@ -55,6 +131,8 @@ ideas = {
 
 			traits = { captain_of_industry }
 		}
+		
+		
 	}
 
 

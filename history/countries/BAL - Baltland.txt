@@ -93,18 +93,11 @@ set_politics = {
 
 	parties = {
 		liberal = {
-			popularity = 33
-		}
-		liberal = {
-			popularity = 33
-		}
-
-		progressivism = {
-			popularity = 35
+			popularity = 66
 		}
 		
 		socialism = {
-			popularity = 9
+			popularity = 11
 		}
 			
 		communism = {
@@ -119,7 +112,7 @@ set_politics = {
 
 	}
 
-	ruling_party = progressivism
+	ruling_party = liberal
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
@@ -149,27 +142,27 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Alice Kristersson"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Alice Kristersson.dds"
-	expire = "1965.1.1"
-	ideology = parlimentary_republicanism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+	# name = "Alice Kristersson"
+	# desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	# picture = "Alice Kristersson.dds"
+	# expire = "1965.1.1"
+	# ideology = parlimentary_republicanism
+	# traits = {
+		
+	# }
+# }
 
-create_country_leader = {
-	name = "Alice Kristersson"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Alice Kristersson.dds"
-	expire = "1965.1.1"
-	ideology = social_conservatism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+	# name = "Alice Kristersson"
+	# desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	# picture = "Alice Kristersson.dds"
+	# expire = "1965.1.1"
+	# ideology = social_conservatism
+	# traits = {
+		
+	# }
+# }
 
 create_country_leader = {
 	name = "Nilsa Flyg"

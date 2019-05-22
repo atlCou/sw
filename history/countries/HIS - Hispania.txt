@@ -28,28 +28,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		liberal_monarchism = { 
+		monarchism = { 
 			popularity = 35
 		}
 
 		liberal = {
-			popularity = 33
+			popularity = 44
 			banned = no
 		}
 		
 		fascism = {
-			popularity = 7
+			popularity = 10
 			banned = no
 		}
 		
-		progressivism = {
-		popularity = 11
-		banned = no
-		}
-		ultra-nationalism = {
-		popularity = 3
-		banned = no
-		}
 		socialism = {
 		popularity = 9
 		banned = no
@@ -60,7 +52,7 @@ set_politics = {
 		}				
 	}
 	
-	ruling_party = liberal_monarchism
+	ruling_party = liberal
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no

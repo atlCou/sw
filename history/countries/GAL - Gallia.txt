@@ -51,36 +51,20 @@ set_politics = {
 
 	parties = {
 		liberal = { 
-			popularity = 38
+			popularity = 53
 		}
 
 		
 		socialism = {
-			popularity = 16
+			popularity = 31
 		}
 		
 		communism = {
-			popularity = 4
-		}
-		
-		authoritarian-socialism = {
-			popularity = 2
-		}
-		
-		liberal_monarchism = {
-			popularity = 10
-		}
-		
-		progressivism = {
-			popularity = 30
-		}
-		
-		anarchy = {
-			popularity = 0
+			popularity = 6
 		}
 		
 		monarchism = {
-			popularity = 0
+			popularity = 10
 		}
 	}
 	

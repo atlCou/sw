@@ -86,19 +86,11 @@ set_politics = {
 
 	parties = {
 		liberal = {
-			popularity = 38
-		}
-
-		progressivism = {
-			popularity = 5
-		}
-		
-		liberal_monarchism = {
-			popularity = 6
+			popularity = 43
 		}
 		
 		fascism = {
-			popularity = 3
+			popularity = 4
 		}
 		
 		communism = {
@@ -106,7 +98,7 @@ set_politics = {
 		}
 
 		socialism = {
-			popularity = 35
+			popularity = 40
 			banned = no
 		}
 	}

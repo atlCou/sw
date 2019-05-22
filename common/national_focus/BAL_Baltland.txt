@@ -102,7 +102,7 @@ focus_tree = {
 				popularity = -0.15
 			}
 			add_popularity = {
-				ideology = liberal_monarchism
+				ideology = liberal
 				popularity = 0.07
 			}
 			add_stability = 0.15
@@ -136,19 +136,11 @@ focus_tree = {
 				
 				parties = {
 					fascism = {
-						popularity = 35
-					}
-					
-					ultra-nationalism = {
-						popularity = 5
-					}
-					
-					progressivism = {
-						popularity = 35
+						popularity = 40
 					}
 					
 					socialism = {
-						popularity = 10
+						popularity = 31
 					}
 					
 					communism = {
@@ -156,7 +148,7 @@ focus_tree = {
 					}
 					
 					liberal = {
-						popularity = 12
+						popularity = 31
 					}
 				}
 			}
@@ -234,11 +226,7 @@ focus_tree = {
 			hidden_effect = {
 				add_popularity = {
 					ideology = fascism 
-					popularity = 0.1
-				}
-				add_popularity = {
-					ideology = progressivism
-					popularity = -1
+					popularity = 0.3
 				}
 				add_popularity = {
 					ideology = liberal
@@ -247,10 +235,6 @@ focus_tree = {
 				add_popularity = {
 					ideology = communism
 					popularity = -1
-				}
-				add_popularity = {
-					ideology = ultra-nationalism 
-					popularity = 0.2
 				}
 				add_popularity = {
 					ideology = socialism 
@@ -307,9 +291,8 @@ focus_tree = {
 						popularity = 35
 					}
 					
-					
 					liberal = {
-						popularity = 35
+						popularity = 47
 					}
 					
 					socialism = {
@@ -318,10 +301,6 @@ focus_tree = {
 					
 					fascism = {
 						popularity = 3
-					}
-					
-					progressivism = {
-						popularity = 12
 					}
 				}
 			}
@@ -360,7 +339,7 @@ focus_tree = {
 				popularity = -0.15
 			}
 			add_popularity = {
-				ideology = liberal_monarchism
+				ideology = liberal
 				popularity = 0.07
 			}
 			add_stability = 0.15
@@ -407,20 +386,12 @@ focus_tree = {
 					popularity = -1
 				}
 				add_popularity = {
-					ideology = liberal_monarchism
-					popularity = -1
-				}
-				add_popularity = {
 					ideology = fascism
 					popularity = -1
 				}
 				add_popularity = {
 					ideology = socialism
 					popularity = 0.2
-				}
-				add_popularity = {
-					ideology =  progressivism
-					popularity = 0.1
 				}
 				create_country_leader = {
 					name = "Nilsa Flyg"
@@ -454,11 +425,6 @@ focus_tree = {
 				}
 				set_party_name = { 
 					ideology = socialism
-					long_name = "Norska Arbetarnas Parti"
-					name = "NAP"
-				}
-				set_party_name = { 
-					ideology = authoritarian-socialism
 					long_name = "Norska Arbetarnas Parti"
 					name = "NAP"
 				}
@@ -634,9 +600,7 @@ focus_tree = {
 			AND = {
 				OR = {
 					has_government = socialism
-					has_government = progressivism
 					has_government = liberal
-					has_government = liberal_monarchism
 					has_government = monarchism
 				}
 				is_in_faction = no
@@ -665,11 +629,9 @@ focus_tree = {
 		available = {
 			AND = {
 				OR = {
-					has_government = authoritarian-socialism
 					has_government = communism
 					has_government = socialism
 					has_government = fascism
-					has_government = ultra-nationalism
 					has_government = fanatical-paganism
 				}
 				is_in_faction = no
@@ -677,11 +639,9 @@ focus_tree = {
 				any_country = {
 					AND = { 
 						OR = {
-							has_government = authoritarian-socialism
 							has_government = communism
 							has_government = socialism
 							has_government = fascism
-							has_government = ultra-nationalism
 							has_government = fanatical-paganism
 						}
 						is_faction_leader = yes
@@ -700,13 +660,11 @@ focus_tree = {
 									OR = { 
 										has_government = fascism 
 										has_government = fanatical-paganism 
-										has_government = ultra-nationalism 
 									} 
 								}
 								OR = { 
 									has_government = fascism 
 									has_government = fanatical-paganism 
-									has_government = ultra-nationalism 
 								}
 							}
 						}
@@ -723,13 +681,11 @@ focus_tree = {
 									OR = { 
 										has_government = socialism
 										has_government = communism
-										has_government = authoritarian-socialism
 									} 
 								}
 								OR = { 
 									has_government = socialism
 									has_government = communism
-									has_government = authoritarian-socialism
 								}
 							}
 						}

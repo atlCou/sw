@@ -45,39 +45,25 @@ rising_jingoism
 set_politics = {
 
 	parties = {
-		liberal_monarchism = { 
-			popularity = 10
-		}
-		
 		liberal = {
-			popularity = 5
+			popularity = 15
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 15
 			banned = no
 		}
 		
-		authoritarian-socialism = {
-			popularity = 10
-			banned = no
-		}
-		
+
 		fanatical-paganism = {
 			popularity = 0
-		}
-		
-		ultra-nationalism = {
-			popularity = 15
 		}
 		
 		monarchism = {
 			popularity = 60
 		}
 		
-		anarchy = {
-			popularity = 0
-		}
+	
 	}
 	
 	ruling_party = monarchism
