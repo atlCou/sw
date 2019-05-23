@@ -42,6 +42,9 @@ add_ideas = {
 the_umbra_council
 rising_jingoism
 }
+
+give_guarantee = SOU
+
 set_politics = {
 
 	parties = {

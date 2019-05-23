@@ -280,7 +280,7 @@ focus_tree = {
 		icon = GFX_Star_Boot
 		x = -1
 		y = 1
-		cost = 5
+		cost = 4
 		
 		relative_position_id = OST_gollob_start
 
@@ -304,7 +304,7 @@ focus_tree = {
 				var = Gollob_suppression
 				value = 1
 			}
-			add_stability = 0.15
+			add_stability = 0.10
 			custom_effect_tooltip = OST_tyranny_increase
 		}
 	}
@@ -314,7 +314,7 @@ focus_tree = {
 		icon = GFX_Star_Politics
 		x = 1
 		y = 1
-		cost = 5
+		cost = 4
 		
 		relative_position_id = OST_gollob_start
 
@@ -334,7 +334,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = -100
-			add_stability = 0.10
+			add_stability = 0.05
 		}
 	}
 	
@@ -372,7 +372,7 @@ focus_tree = {
 					popularity = -0.1
 				}
 			}
-			add_stability = 0.05
+			add_stability = 0.03
 		}
 	}
 	
@@ -414,7 +414,7 @@ focus_tree = {
 					popularity = -1
 				}
 			}
-			add_stability = 0.10
+			add_stability = 0.06
 			custom_effect_tooltip = OST_tyranny_increase
 		}
 	}
@@ -472,6 +472,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = OST_every_man_works_idea
+			hidden_effect = {
+				if = {
+					limit = { 
+						OST = {
+							check_variable = {
+								var = Gollob_suppression
+								value = 4
+								compare = greater_than
+							}
+						}
+					}
+					country_event = { id = ostmark.7 }
+				}
+			}
 			add_to_variable = {
 				var = Gollob_suppression
 				value = 5
@@ -505,6 +519,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = OST_state_work_idea
+			hidden_effect = {
+				if = {
+					limit = { 
+						OST = {
+							check_variable = {
+								var = Gollob_suppression
+								value = 8
+								compare = greater_than
+							}
+						}
+					}
+					country_event = { id = ostmark.7 }
+				}
+			}
 			add_to_variable = {
 				var = Gollob_suppression
 				value = 1
@@ -538,6 +566,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = OST_specialized_work
+			hidden_effect = {
+				if = {
+					limit = { 
+						OST = {
+							check_variable = {
+								var = Gollob_suppression
+								value = 10
+								compare = greater_than
+							}
+						}
+					}
+					country_event = { id = ostmark.7 }
+				}
+			}
 			add_to_variable = {
 				var = Gollob_suppression
 				value = -1
@@ -551,12 +593,13 @@ focus_tree = {
 		icon = GFX_Star_Politics
 		x = 0
 		y = 2
-		cost = 9
+		cost = 10
 		
 		relative_position_id = OST_the_time_is_right
 		
 		available = {
 			is_puppet = no
+			has_country_flag = OST_Gollob_Success
 		}
 		
 		
@@ -575,14 +618,223 @@ focus_tree = {
 				ideology = fanatical-paganism
 				popularity = -0.1
 			}
-			add_to_variable = {
-				var = Gollob_suppression
-				value = 5
-			}
 			add_ideas = OST_homogenous_thought_idea
-			custom_effect_tooltip = OST_tyranny_increase_massive
 		}
 	}
 	
+	focus = {
+		id = OST_destroying_national_symbols
+		icon = GFX_Star_Politics
+		x = 0
+		y = 1
+		cost = 5
+		
+		relative_position_id = OST_homogenous_thought
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_homogenous_thought }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = OST_economic_identites
+		icon = GFX_Star_Politics
+		x = 0
+		y = 2
+		cost = 5
+		
+		relative_position_id = OST_homogenous_thought
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_destroying_national_symbols }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.3
+			add_timed_idea = {
+				idea = OST_economic_identites_idea
+				days = 560
+			}
+		}
+	}
+	
+	focus = {
+		id = OST_value_from_service
+		icon = GFX_Star_Politics
+		x = 0
+		y = 3
+		cost = 5
+		
+		relative_position_id = OST_homogenous_thought
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_economic_identites }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_ideas = OST_value_from_service_idea  
+		}
+	}
+	
+	
+	
+	
+	
+	focus = {
+		id = OST_closing_the_borders
+		icon = GFX_Star_Politics
+		x = -4
+		y = 2
+		cost = 10
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+			has_country_flag = OST_Gollob_Success
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_every_man_works focus = OST_work_for_the_state focus = OST_some_men_work }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = closed_economy
+				}
+				add_political_power = 150
+			}
+			else = {
+				add_ideas = closed_economy
+			}
+		}
+	}
+	
+	focus = {
+		id = OST_no_one_in
+		icon = GFX_Star_Politics
+		x = -1
+		y = 1
+		cost = 10
+		
+		relative_position_id = OST_closing_the_borders
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_closing_the_borders }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = OST_abolutely_no_immigration
+		}
+	}
+	
+	focus = {
+		id = OST_no_one_out
+		icon = GFX_Star_Politics
+		x = 1
+		y = 1
+		cost = 10
+		
+		relative_position_id = OST_closing_the_borders
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_closing_the_borders }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = OST_abolutely_no_emmigration
+			add_stability = -0.05
+			add_political_power = -150
+		}
+	}
+	
+	
+	
+	
+	focus = {
+		id = OST_expand_state_media
+		icon = GFX_Star_Politics
+		x = 4
+		y = 2
+		cost = 5
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+			has_country_flag = OST_Gollob_Success
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_every_man_works focus = OST_work_for_the_state focus = OST_some_men_work }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+
 	
 }

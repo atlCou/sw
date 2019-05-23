@@ -1,8 +1,10 @@
 ideas = {
 
 	country = {
-		sisu = {
-
+		SOU_sisu = {
+			
+			picture = sisu
+			
 			allowed = {
 				always = no
 			}
@@ -22,6 +24,55 @@ ideas = {
 				army_core_defence_factor = 0.2
 			}
 		}
+		
+		SOU_political_instability = {
+		
+			picture = MEX_revolutionary_army
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.35
+				stability_weekly = -0.01
+				stability_factor = -0.05
+			}
+		}
+		
+		SOU_eila_recovering = {
+		
+			picture = MEX_revolutionary_army
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.03
+				political_power_factor = -0.1
+			}
+		}
+		
+		SOU_nikka_recovering = {
+		
+			picture = MEX_revolutionary_army
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+			}
+		}
+		
 	}
 
 	political_advisor = {

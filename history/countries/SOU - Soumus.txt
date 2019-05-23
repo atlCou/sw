@@ -21,11 +21,7 @@ set_technology = {
 
 set_convoys = 5
 
-add_ideas = {
-	limited_conscription
-}
-
-
+set_stability = 0.2
 
 set_politics = {
 
@@ -109,8 +105,11 @@ create_country_leader = {
 }
 
 add_ideas = {
-	sisu
+	SOU_sisu
+	SOU_political_instability
 }
+
+give_guarantee = ORU
 
 create_corps_commander = {
 	name = "Erik Heinrichs"

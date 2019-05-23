@@ -13,12 +13,19 @@
  OST_homogenous_thought_idea:0 "Crushed Dissent"
  OST_propaganda_institutions_idea:0 "All-Prevalent Propaganda"
  gollob_reign:0 "Gollob's Rising Totalitarian Reign"
+ gollob_reign_desc:0 "The grand §YDL-OFP§! coalition is attempting to seize complete control of §YOstmark§! and reform nearly every aspect of it in order to keep its borders intact. With their coalition leading the government, they have the opportuntiy to extend their power and completely shred the existing institutions to create an entirely new one - and a new nation with it.\n \n§MTyranny§!: [?OST.gollob_suppression|0+] \n \nIf §YGrete Gollob§! doesn't have enough §MTyranny§!, the revolution will §Rfail§! and Ostmark will certainly crumble with it! \nBe careful of getting too much §MTyranny§! as well, as the §YDL-OFP§! government is not yet unopposed.\n"
  OST_seize_the_industry:0 "Seizing the Indusry"
  OST_secret_police:0 "Entrenched Secret Police"
  OST_propaganda_institutions:0 "All-Pervasive Propaganda"
- OST_seizing_tooltip:0 "The great §YDL-OFP§! coalition, under §YGrete Gollob§!, will attempt to seize §Gcomplete control§! over the entirety of §YOstmark§!, and §Gradically reform §!it. If §YGrete Gollob§! doesn't have enough §MTyranny§!, the revolution will §Rfail§!!"
+ OST_seizing_tooltip:0 "\nThe great §YDL-OFP§! coalition, under §YGrete Gollob§!, will attempt to seize §Gcomplete control§! over the entirety of §YOstmark§!, and §Gradically reform §!it.\n"
+ OST_seize_the_nation:0 "§GSeize the Nation!§!"
  OST_street_patrols:0 "Heimatblock Street Gangs"
- 
+ OST_abolutely_no_emmigration:0 "Absolutely no Emmigration"
+ OST_abolutely_no_immigration:0 "Absolutely no Immigration" 
+ OST_economic_identites_idea:0 "Forced Reidentification"
+ OST_economic_identites_idea_desc:0 "The new Ostmarker regime has implimented a state directed policy to reclass every citizen socially, politically, and economically based on the subject and grit of their work."
+ OST_value_from_service_idea:0 "Value from Service"
+ OST_value_from_service_idea_desc:0 "Alongside the new Ostmarker regime's policy of economic identities, the regime is spreading the notion through state media that a citizen's value is based upon the importance of their work to the Danubian State. Engineers, scientists, and soldiers gain utmost priority."
  
  
 #PARTIES AND NAMES
@@ -127,6 +134,24 @@ OST_tyranny_increase_massive:0 "Will §Gincrease§! Gollob's §MTyranny§! by §
 OST_tyranny_increase_moderate:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y2§!."
 OST_tyranny_decrease:0 "Will §Rdecrease§! Gollob's §MTyranny§! by §Y1§!."
 OST_gollob_reign_begins_tooltip:0 "Unlocks §YGollob's Reign§! decisions, allowing you to seize complete control and §Gradically reform §!§YOstmark§! - as long as the time is right."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ OST_economic_identites_desc:0 "The identities of the old Ostmarker democracy and the Habsburgian empire plagued it from the very beginning. To gurantee the survival of our state, we must do away with the notions of different peoples and cultures. Force upon them one language, and their identity will be derived from the work that they do and from which that they need - nothing more."
+ OST_value_from_service_desc:0 "A citizen's value is the same as the importance of their work to the Danubian State. Engineers, scientists, and soldiers gain utmost priority, as they are what will push our nation into the future and allow it to survive."
+
+
 
 
 ####### BOHEMIA FOCII

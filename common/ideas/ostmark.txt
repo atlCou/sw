@@ -94,7 +94,49 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.05
 			}
+		}
+
+		
+		OST_abolutely_no_immigration = {
+		
+			picture = generic_oppression
+			
+			modifier = {
+				MONTHLY_POPULATION = -0.1
+			}
 		}	
+
+		OST_abolutely_no_emmigration = {
+		
+			picture = generic_oppression
+			
+			modifier = {
+				political_power_gain = 0.05
+				MONTHLY_POPULATION = 0.1
+			}
+		}
+
+		OST_economic_identites_idea	= {
+
+			picture = prc_low_popular_support3
+		
+			modifier = {
+				stability_weekly = 0.006
+			}
+		
+		}
+		
+		
+		OST_value_from_service_idea  = {
+		
+			picture = jap_supremacy_of_technology
+		
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		
+		
+		}
 		
 	}
 	political_advisor = {
