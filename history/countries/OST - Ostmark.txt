@@ -27,6 +27,13 @@ set_technology = {
 
 }
 
+add_ideas = {
+	
+	OST_multicultural
+	OST_recent_republicanization
+
+}
+
 set_politics = {
 
 	parties = {

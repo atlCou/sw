@@ -1,5 +1,58 @@
 ideas = {
 	country = {
+	
+		OST_multicultural = {
+		
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_weekly = -0.01
+				political_power_gain = -0.1
+				army_org_factor = -0.15
+				conscription_factor = -0.1
+			}
+		
+		}
+		
+		
+		OST_multicultural_2 = {
+		
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				political_power_gain = -0.1
+				army_org_factor = -0.1
+				conscription_factor = -0.05
+			}
+		
+		}
+		
+		OST_multicultural_3 = {
+		
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				political_power_gain = -0.05
+				conscription_factor = -0.05
+			}
+		
+		}
+		
+		
+		
+		OST_recent_republicanization = {
+		
+			picture = generic_king_handled
+		
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		
+		}
+	
+	
+	
 		OST_ontotheworld_idea = {
 		
 			picture = OST_eagle
@@ -137,6 +190,31 @@ ideas = {
 		
 		
 		}
+		
+		OST_bureau_of_information_idea = {
+		
+			picture = idea_generic_secret_police
+		
+			modifier = {
+				conscription_factor = 0.1
+				enemy_partisan_effect = -0.25
+			}
+		
+		
+		}
+		
+		OST_bureau_of_youth_idea = {
+		
+			picture = idea_generic_secret_police
+		
+			modifier = {
+				army_org_factor = 0.1
+				partisan_effect = 0.1
+			}
+		
+		
+		}
+		
 		
 	}
 	political_advisor = {

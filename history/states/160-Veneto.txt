@@ -17,32 +17,24 @@ state={
 			11584 10
 		}
 		buildings = {
-			infrastructure = 6
-			arms_factory = 2
-			industrial_complex = 4
-			dockyard = 1
-			air_base = 3
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 5
+			dockyard = 4
+			air_base = 2
 			11584 = {
-				naval_base = 6
-
+				naval_base = 8
 			}
 
 		}
 		add_core_of = VNE
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				industrial_complex = 5
 
-			}
-
-		}
 
 	}
 
 	provinces={
 		603 628 3604 3657 6656 9582 9613 11584
 	}
-	manpower=3963151
+	manpower=4353938
 	buildings_max_level_factor=1.000
 }

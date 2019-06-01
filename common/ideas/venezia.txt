@@ -1,0 +1,38 @@
+ideas = {
+	country = {
+	
+		VNE_traditions_of_the_republic = {
+			
+			picture = ROM_king_carol_ii_hedonist
+			
+			modifier = {
+			
+				political_power_gain = 0.1
+				mobilization_laws_cost_factor = 0.25
+				justify_war_goal_time = 0.25
+				trade_opinion_factor = 0.5
+	
+			}
+			
+		}
+		
+	
+		VNE_traditions_of_the_navy = {
+		
+			picture = generic_sea_focused_navy
+	
+	
+			modifier = {
+
+				convoy_escort_efficiency = 0.2
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.1
+	
+			}
+			
+		}
+
+	
+	
+	}
+}

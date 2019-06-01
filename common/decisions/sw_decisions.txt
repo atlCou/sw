@@ -261,7 +261,8 @@ gollob_reign = {
 		remove_effect = {
 			set_cosmetic_tag = OST_Gollob
 			set_country_flag = OST_Gollob_Success
-			add_ideas = OST_Gollob_Success_idea
+			add_ideas = { OST_Gollob_Success_idea }
+			remove_ideas = { OST_recent_republicanization }
 		}
 	}
 	

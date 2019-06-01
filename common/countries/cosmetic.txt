@@ -190,3 +190,8 @@ GAL_1984memes = {
 	color = rgb { 225 225 225 }
 	color_ui = rgb { 25 25 25 }
 }
+
+OST_Gollob = {
+	color = rgb { 95 95 95 }
+	color_ui = rgb { 95 95 95 }
+}

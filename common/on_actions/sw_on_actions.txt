@@ -1,0 +1,51 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					any_country = {
+						AND = {
+							OR = {
+								has_idea = neuroi_tier_1
+								has_idea = neuroi_tier_2
+								has_idea = neuroi_tier_3
+							}
+							is_ai = no
+						}
+					}
+				}
+			}
+			else = {
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = neuroi_tier_1
+								has_idea = neuroi_tier_2
+								has_idea = neuroi_tier_3
+							}		
+						}	
+						every_state = {
+							if = {
+								limit = {
+										AND = {
+											NOT = { is_core_of = PREV }
+											is_owned_by = PREV
+										}
+								}
+								every_country = {
+									if = {
+										limit = {
+											PREV = { is_core_of = PREV }
+										}
+										transfer_state = PREV
+									}		
+								}	
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+}

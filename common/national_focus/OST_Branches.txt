@@ -122,6 +122,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
+			
+			swap_ideas = {
+				remove_idea = OST_multicultural
+				add_idea = OST_multicultural_2
+			}
+			
+			
 		}
 	}
 	
@@ -149,6 +156,13 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_ideas = OST_street_patrols
+			
+			swap_ideas = {
+				remove_idea = OST_multicultural_2
+				add_idea = OST_multicultural_3
+			}
+			
+			
 		}
 	}
 	
@@ -177,6 +191,10 @@ focus_tree = {
 			set_politics = {
 				ruling_party = monarchism
 			}
+			
+			remove_ideas = { OST_multicultural_3 OST_recent_republicanization  }
+			
+			
 			create_country_leader = {
 						name = "Vesna Mikovic"
 						desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
@@ -239,6 +257,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+			
+			swap_ideas = {
+				remove_idea = OST_multicultural
+				add_idea = OST_multicultural_2
+			}
+			
 		}
 	}
 	
@@ -265,12 +289,21 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		
 			add_political_power = 100
+			
+			swap_ideas = {
+				remove_idea = OST_multicultural
+				add_idea = OST_multicultural_2
+			}
+			
 			set_variable = {
 				var = Gollob_suppression
 				value = 1
 			}
+			
 			custom_effect_tooltip = OST_gollob_start_tooltip
+			
 		}
 	}
 	
@@ -618,6 +651,13 @@ focus_tree = {
 				ideology = fanatical-paganism
 				popularity = -0.1
 			}
+			swap_ideas = {
+				remove_idea = OST_multicultural_2
+				add_idea = OST_multicultural_3
+			}
+			
+			
+			
 			add_ideas = OST_homogenous_thought_idea
 		}
 	}
@@ -645,7 +685,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.15
+			add_stability = 0.05
+			
+			remove_ideas = { OST_multicultural_3 }
+			
 		}
 	}
 	
@@ -834,6 +877,88 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
+	
+	focus = {
+		id = OST_nationalizing_information
+		icon = GFX_Star_Politics
+		x = 4
+		y = 3
+		cost = 5
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_expand_state_media }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = OST_bureau_of_information
+		icon = GFX_Star_Politics
+		x = 5
+		y = 4
+		cost = 5
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_nationalizing_information }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { OST_bureau_of_information_idea }
+		}
+	}
+	
+	focus = {
+		id = OST_bureau_of_youth
+		icon = GFX_Star_Politics
+		x = 3
+		y = 4
+		cost = 5
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_nationalizing_information }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { OST_bureau_of_youth_idea }
+		}
+	}
+	
 	
 
 	
