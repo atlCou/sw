@@ -1,99 +1,33 @@
 ideas = {
 	country = {
-		victor_emmanuel = {
 
+		RMA_cultural_center = {
 
-			allowed = {
-				original_tag = "RMA"
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-				NOT = {
-					any_country = {
-						original_tag = RMA
-						NOT = {
-							tag = ROOT
-						}
-						has_government = fascism
-					}
-				}
-			}
-
+			picture = vittoria_mutilata
+		
 			removal_cost = -1
 
 			modifier = {
-				unity_factor = 0.05
+				political_power_gain = 0.25
+				stability_factor = 0.1
+				fanatical-paganism_acceptance = -50
+				foreign_subversive_activites = -0.5
 			}
 		}
-		vittoria_mutilata = {
 
-			allowed = {
-				original_tag = "RMA"
-			}
+		RMA_unification = {
 
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = democratic
-					}
-				}
-			}
-
+			picture = vittoria_mutilata
+		
 			removal_cost = -1
 
 			modifier = {
-				communism_acceptance = -10
-				democratic_acceptance = -10
-				fascism_acceptance = 10
-				ai_focus_aggressive_factor = 0.5
-				justify_war_goal_time = -0.05
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				war_support_factor = 0.10
 			}
 		}
-
-		RMA_german_millitary_cooperation_focus = {
-
-			picture = german_advisors
-
-			allowed = {
-				original_tag = RMA
-			}
-
-			allowed_civil_war = {
-				OR = {
-					AND = {
-						has_government = fascism
-						GER = {
-							has_government = fascism
-						}
-					}
-					AND = {
-						has_government = communsim
-						GER = {
-							has_government = communsim
-						}
-					}
-					AND = {
-						has_government = democratic
-						GER = {
-							has_government = democratic
-						}
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			research_bonus = {
-				land_doctrine = 0.05
-			}
-			research_bonus = {
-				air_doctrine = 0.05
-			}
-		}
+		
 	}
 
 	political_advisor = {

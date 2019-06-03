@@ -115,6 +115,39 @@ country_event = {
 				set_politics = {
 					ruling_party = liberal
 				}
+				remove_ideas = {
+					OST_recent_republicanization
+				}
+				if = {
+					limit = {
+						has_idea = OST_multicultural
+					}
+					remove_ideas = OST_multicultural
+				}
+				if = {
+					limit = {
+						has_idea = OST_multicultural_2
+					}
+					remove_ideas = OST_multicultural_2
+				}
+				if = {
+					limit = {
+						has_idea = OST_multicultural_3
+					}
+					remove_ideas = OST_multicultural_3
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = fanatical-paganism
+					popularity = -1
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -1
+				}
 			}
 			BHE = {
 				transfer_state = 69
@@ -125,6 +158,13 @@ country_event = {
 				add_state_core = 75
 				transfer_state = 74
 				add_state_core = 74
+				if = {
+					limit = {
+						has_global_flag = No_Player_Neuroi
+					}
+					transfer_state = 789
+					add_state_core = 789
+				}
 				hidden_effect = {
 					create_country_leader = {
 							name = "Vesna Mikovic"
@@ -155,6 +195,13 @@ country_event = {
 				transfer_state = 764
 				transfer_state = 83
 				add_state_core = 83
+				if = {
+					limit = {
+						has_global_flag = No_Player_Neuroi
+					}
+					transfer_state = 790
+					add_state_core = 790
+				}
 				hidden_effect = {
 					create_country_leader = {
 							name = "Laura Toth"

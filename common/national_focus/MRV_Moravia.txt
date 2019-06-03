@@ -218,7 +218,7 @@ continuous_focus_position = { x = 50 y = 3000 }
 		} 
 		completion_reward = { 
 			create_wargoal = {
-				target = MRV
+				target = BHE
 				type = annex_everything
 			}
 			BHE = {

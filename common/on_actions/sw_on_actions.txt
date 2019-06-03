@@ -45,6 +45,7 @@ on_actions = {
 						}
 					}
 				}
+				set_global_flag = No_Player_Neuroi
 			}
 		}	
 	}
