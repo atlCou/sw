@@ -1,0 +1,645 @@
+focus_tree = { 
+	id = Soumus
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 20
+			original_tag = SOU
+			default = no
+		} 
+	} 
+	
+	
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	
+	
+	focus = {
+		id = SOU_an_issue_of_defense
+		icon = GFX_focus_generic_little_entente
+		x = 8
+		y = 0
+		cost = 5
+
+
+		
+		ai_will_do = {
+			factor = 25
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.1
+			}
+		}
+	
+	}
+
+	
+	focus = {
+		id = SOU_the_left
+		icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 1
+		cost = 4
+
+		relative_position_id = SOU_an_issue_of_defense
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_an_issue_of_defense }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.2
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_the_right
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 1
+		cost = 4
+
+		relative_position_id = SOU_an_issue_of_defense
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_an_issue_of_defense }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.3
+			}
+		}
+	}
+	
+	focus = {
+		id = SOU_a_night_in_helsinki
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 2
+		cost = 6
+
+		relative_position_id = SOU_an_issue_of_defense
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_the_left }
+		prerequisite = { focus = SOU_the_right }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.4
+			}
+		}
+	}
+	
+	##### WITCHES COUP
+	
+	focus = {
+		id = SOU_a_witches_coup
+		icon = GFX_focus_generic_little_entente
+		x = 8
+		y = 1
+		cost = 5
+
+		relative_position_id = SOU_an_issue_of_defense
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		available = {
+			has_country_flag = SOU_coup_flag
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.10
+			}
+		}
+	
+	}
+	
+	
+	#### Eila
+	
+	focus = {
+		id = SOU_eila_supremacy
+		icon = GFX_focus_generic_little_entente
+		x = -4
+		y = 1
+		cost = 5
+
+		relative_position_id = SOU_a_witches_coup
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		available = {
+			has_country_flag = SOU_eila_supremacy_flag
+		}
+		
+		prerequisite = { focus = SOU_a_witches_coup }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = SOU_political_instability
+				add_idea = SOU_eila_recovering
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_domestic_mending
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 2
+		cost = 5
+
+		relative_position_id = SOU_eila_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_eila_supremacy }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.20
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_attracting_right
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 3
+		cost = 5
+
+		relative_position_id = SOU_eila_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_domestic_mending }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.21
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_meeting_nikka
+		icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 6
+		cost = 5
+
+		relative_position_id = SOU_eila_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_attracting_right }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_revolutionized_military
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 4
+		cost = 5
+
+		relative_position_id = SOU_eila_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_attracting_right }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_utilizing_witches
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 5
+		cost = 5
+
+		relative_position_id = SOU_eila_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_revolutionized_military }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_quality_over_quantity
+		icon = GFX_focus_generic_little_entente
+		x = 3
+		y = 5
+		cost = 5
+
+		relative_position_id = SOU_eila_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_revolutionized_military }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_seeing_the_future
+		icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 6
+		cost = 5
+
+		relative_position_id = SOU_eila_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_quality_over_quantity focus = SOU_utilizing_witches }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	
+	
+	#### Nikka
+	
+	
+	focus = {
+		id = SOU_nikka_supremacy
+		icon = GFX_focus_generic_little_entente
+		x = 4
+		y = 1
+		cost = 5
+
+		relative_position_id = SOU_a_witches_coup
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		available = {
+			has_country_flag = SOU_nikka_supremacy_flag
+		}
+		
+		prerequisite = { focus = SOU_a_witches_coup }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = SOU_political_instability
+				add_idea = SOU_nikka_recovering
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_what_really_matters
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 2
+		cost = 5
+
+		relative_position_id = SOU_nikka_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_nikka_supremacy }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.30
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_attracting_socialists
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 3
+		cost = 5
+
+		relative_position_id = SOU_nikka_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_what_really_matters }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.31
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_meeting_eila
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 6
+		cost = 5
+
+		relative_position_id = SOU_nikka_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_attracting_socialists }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_reformed_military
+		icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 4
+		cost = 5
+
+		relative_position_id = SOU_nikka_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_attracting_socialists }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_soumi_heritage
+		icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 5
+		cost = 5
+
+		relative_position_id = SOU_nikka_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_reformed_military }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_defensive_tactics
+		icon = GFX_focus_generic_little_entente
+		x = -3
+		y = 5
+		cost = 5
+
+		relative_position_id = SOU_nikka_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_reformed_military }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_quickly_recovering
+		icon = GFX_focus_generic_little_entente
+		x = -2
+		y = 6
+		cost = 5
+
+		relative_position_id = SOU_nikka_supremacy
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_defensive_tactics focus = SOU_soumi_heritage }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+
+	
+	#### Shared witches
+	
+	focus = {
+		id = SOU_soumi_liberalism
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 2
+		cost = 5
+
+		relative_position_id = SOU_a_witches_coup
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_eila_supremacy focus = SOU_nikka_supremacy }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.40
+			}
+			hidden_effect = {
+				country_event = {
+					id = sou.50
+				}
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = SOU_the_allies
+		icon = GFX_entetediplo
+		x = 0
+		y = 4
+		cost = 5
+
+		relative_position_id = SOU_a_witches_coup
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_soumi_liberalism }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+
+	
+	focus = {
+		id = SOU_holding_elections
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 8
+		cost = 5
+
+		relative_position_id = SOU_a_witches_coup
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = SOU_meeting_eila focus = SOU_meeting_nikka }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	
+	}
+	
+	
+	##### ORDER RESTORED, CANON (OR AS CLOSE AS POSSIBLE WITH THE AMOUNT OF INFORMATION WE CAN GET)
+	
+	
+	focus = {
+		id = SOU_order_restored
+		icon = GFX_focus_generic_little_entente
+		x = -6
+		y = 1
+		cost = 5
+
+		relative_position_id = SOU_an_issue_of_defense
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		available = {
+			has_country_flag = SOU_canon_flag
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = sou.1
+			}
+		}
+	
+	}
+	
+	
+	
+}
