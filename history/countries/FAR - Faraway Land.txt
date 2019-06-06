@@ -91,25 +91,20 @@ set_technology = {
 	}
 }
 
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 100
-		}
 
-		fascism = {
-			popularity = 0
-			banned = no
-		}
+	set_popularities = {
+		liberal = 100
+		
 
-		communism = {
-			popularity = 0
-			banned = no
-		}
+		fascism = 0
+					
+
+		communism = 0
+					
 	}
 
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = yes
@@ -163,24 +158,21 @@ set_convoys = 100
 set_national_unity = 0.9
 
 1939.1.1 = {
-	set_politics = {
+	
 
-		parties = {
-			liberal = {
-				popularity = 98
-			}
+		set_popularities = {
+			liberal = 98
+			
 
-			fascism = {
-				popularity = 1
-			}
+			fascism = 1
+			
 
-			communism = {
-				popularity = 1
-				#banned = no #default is no
-			}
+			communism = 1
+				##default is no
+			
 		}
 
-		ruling_party = liberal
+		set_politics = { ruling_party = liberal
 		last_election = "1935.10.14"
 		election_frequency = 60
 		elections_allowed = yes

@@ -157,29 +157,23 @@ give_guarantee = URG
 set_convoys = 400
 set_national_unity = 0.6
 
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 72
-		}
-		
-		monarchism = {
-			popularity = 8
-		}
-		
-		fascism = {
-			popularity = 15
-			banned = no
-		}
 
-		socialism = {
-			popularity = 5
-			banned = no
-		}
+	set_popularities = {
+		liberal = 72
+		
+		
+		monarchism = 8
+		
+		
+		fascism = 15
+					
+
+		socialism = 5
+					
 	}
 
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -200,24 +194,21 @@ puppet = PHI
 1939.1.1 = {
 	set_national_unity = 0.7
 
-	set_politics = {
+	
 
-		parties = {
-			liberal = {
-				popularity = 99
-			}
+		set_popularities = {
+			liberal = 99
+			
 
-			fascism = {
-				popularity = 0
-			}
+			fascism = 0
+			
 
-			communism = {
-				popularity = 1
-				#banned = no #default is no
-			}
+			communism = 1
+				##default is no
+			
 		}
 
-		ruling_party = liberal
+		set_politics = { ruling_party = liberal
 		last_election = "1936.11.3"
 		election_frequency = 48
 		elections_allowed = no

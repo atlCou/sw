@@ -4,20 +4,20 @@ set_convoys = 5
 
 set_research_slots = 2
 
-set_politics = {
 
-	parties = {
-        liberal = { popularity = 40 }
-        communism = { popularity = 0 }
-        fascism = { popularity = 0 }
-        authoritarian-socialism = { popularity = 2 }
-        socialism = { popularity = 4 }
-        liberal_monarchism = { popularity = 30 }
+
+	set_popularities = {
+        liberal = 40 
+        communism = 0 
+        fascism = 0 
+        authoritarian-socialism = 2 
+        socialism = 4 
+        liberal_monarchism = 30 
         ultra-nationalism = { popularity = 5 }
-        fanatical-paganism = { popularity = 11 }
-        monarchism = { popularity = 140 }
+        fanatical-paganism = 11 
+        monarchism = 140 
 	}
-	ruling_party = monarchism
+	set_politics = { ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no

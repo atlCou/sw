@@ -45,31 +45,18 @@ rising_jingoism
 
 give_guarantee = SOU
 
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 15
-		}
 
-		fascism = {
-			popularity = 15
-			banned = no
-		}
-		
+	set_popularities = {
+		liberal = 20	
 
-		fanatical-paganism = {
-			popularity = 0
-		}
+		fascism = 20
 		
-		monarchism = {
-			popularity = 60
-		}
-		
-	
+		monarchism = 60
+
 	}
 	
-	ruling_party = monarchism
+	set_politics = { ruling_party = monarchism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no

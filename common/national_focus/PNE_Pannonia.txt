@@ -1,4 +1,4 @@
-focus_tree = { 
+﻿focus_tree = { 
 	id = Bohemia
 	country = { 
 		factor = 0 
@@ -180,20 +180,13 @@ focus_tree = {
 					PNE = { check_variable = { auth < 1 } }
 				}
 				set_politics = {
-					ruling_party = socialism
-					
-					parties = {
-						socialism = {
-							popularity = 44
-						}
-						liberal = {
-							popularity = 31
-						}
-						communism = {
-							popularity = 25
-						}
-					}
-				}
+					ruling_party = socialism            }
+
+                set_popularities = {
+                    socialism = 44
+                    liberal = 31
+                    communism = 25
+                }
 			}
 			else_if = {
 				limit = {
@@ -205,20 +198,13 @@ focus_tree = {
 					}
 				}
 				set_politics = {
-					ruling_party = socialism
-					
-					parties = {
-						socialism = {
-							popularity = 48
-						}
-						liberal = {
-							popularity = 15
-						}
-						communism = {
-							popularity = 37
-						}
-					}
-				}
+					ruling_party = socialism            }
+
+                set_popularities = {
+                    socialism = 48
+                    liberal = 15
+                    communism = 37
+                }
 			}
 			else_if = {
 				limit = {
@@ -230,20 +216,13 @@ focus_tree = {
 					}
 				}
 				set_politics = {
-					ruling_party = communism
-					
-					parties = {
-						socialism = {
-							popularity = 35
-						}
-						liberal = {
-							popularity = 14
-						}
-						communism = {
-							popularity = 51
-						}
-					}
-				}
+					ruling_party = communism            }
+
+                set_popularities = {
+                    socialism = 35
+                    liberal = 14
+                    communism = 51
+                }
 			}
 			else_if = {
 				limit = {
@@ -255,20 +234,13 @@ focus_tree = {
 					}
 				}
 				set_politics = {
-					ruling_party = communism
-					
-					parties = {
-						socialism = {
-							popularity = 32
-						}
-						liberal = {
-							popularity = 5
-						}
-						communism = {
-							popularity = 63
-						}
-					}
-				}
+					ruling_party = communism            }
+
+                set_popularities = {
+                    socialism = 32
+                    liberal = 5
+                    communism = 63
+                }
 			}
 		}
 	}

@@ -61,19 +61,19 @@ set_technology = {
 
 set_convoys = 10
 
-set_politics = {
 
-	parties = {
-        liberal = { popularity = 5 }
-        socialism = { popularity = 18 }
-        communism = { popularity = 0 }
-        monarchism = { popularity = 5 }
-        fascism = { popularity = 35 }
-        fanatical-paganism = { popularity = 37 }
+
+	set_popularities = {
+        liberal = 5 
+        socialism = 18 
+        communism = 0 
+        monarchism = 5 
+        fascism = 35 
+        fanatical-paganism = 37 
 
 	}
 	
-	ruling_party = fanatical-paganism
+	set_politics = { ruling_party = fanatical-paganism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no

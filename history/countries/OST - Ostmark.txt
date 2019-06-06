@@ -34,33 +34,28 @@ add_ideas = {
 
 }
 
-set_politics = {
 
-	parties = {
 
-		liberal = {
-			popularity = 35
-		}
+	set_popularities = {
+
+		liberal = 35
 		
-		communism = {
-			popularity = 9
-			banned = yes
-		}
 		
-		monarchism = {
-			popularity = 30
-		}
+		communism = 9
+			
 		
-		fascism = {
-			popularity = 20
-		}
 		
-		fanatical-paganism = {
-			popularity = 6
-		}
+		monarchism = 30
+		
+		
+		fascism = 20
+		
+		
+		fanatical-paganism = 6
+		
 	}
 	
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no

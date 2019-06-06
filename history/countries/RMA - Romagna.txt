@@ -48,35 +48,27 @@ set_convoys = 200
 set_stability = 0.6
 set_war_support = 0.2
 
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 35
-		}
 
-		fascism = {
-			popularity = 20
-			banned = no
-		}
-
-		communism = {
-			popularity = 5
-			banned = no
-		}
+	set_popularities = {
+		liberal = 35
 		
-		socialism = {
-			popularity = 7
-			banned = no
-		}
 
-		monarchism = {
-			popularity = 33
-		}
+		fascism = 20
+					
+
+		communism = 5
+					
+		
+		socialism = 7
+					
+
+		monarchism = 33
+		
 		
 	}
 
-	ruling_party = monarchism
+	set_politics = { ruling_party = monarchism
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no

@@ -23,35 +23,28 @@ set_convoys = 5
 
 set_stability = 0.2
 
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 35
-		}
+
+	set_popularities = {
+		liberal = 35
 		
-		monarchism = {
-			popularity = 14
-			banned = no
-		}
 		
-		communism = {
-			popularity = 5
-			banned = no
-		}
+		monarchism = 14
+					
 		
-		fanatical-paganism = {
-			popularity = 31
-		}
+		communism = 5
+					
 		
-		socialism = {
-			popularity = 15
-		}
+		fanatical-paganism = 31
+		
+		
+		socialism = 15
+		
 		
 		
 	}
 
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = no

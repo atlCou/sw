@@ -15,21 +15,19 @@ set_convoys = 0
 
 set_stability = 0.05
 
-set_politics = {
-
-	parties = {
-        liberal = { popularity = 14 }
-        socialism = { popularity = 15 }
-        communism = { popularity = 0 }
-        monarchism = { popularity = 36 }
-        fascism = { popularity = 23 }
-        fanatical-paganism = { popularity = 0 }
-
-	}
-	
+set_politics = {	
 	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberal = 14
+    socialism = 15
+    communism = 0
+    monarchism = 36
+    fascism = 23
+    fanatical-paganism = 0
 }
 

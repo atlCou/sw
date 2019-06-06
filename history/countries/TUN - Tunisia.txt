@@ -8,30 +8,24 @@ set_technology = {
 
 set_convoys = 5
 
-set_politics = {
 
-	parties = {
-		liberal = { 
-			popularity = 0
-		}
 
-		fascism = {
-			popularity = 0
-			banned = no
-		}
+	set_popularities = {
+		liberal = 0
 		
-		communism = {
-			popularity = 0
-			banned = no
-			#banned = no #default is no
-		}
+
+		fascism = 0
+					
 		
-		monarchism = { 
-			popularity = 100
-		}
+		communism = 0
+						##default is no
+		
+		
+		monarchism = 100
+		
 	}
 	
-	ruling_party = monarchism
+	set_politics = { ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes

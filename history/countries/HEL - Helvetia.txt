@@ -67,52 +67,43 @@ set_technology = {
 	}
 }
 
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 0
-		}
 
-		fascism = {
-			popularity = 0
-			banned = no
-		}
+	set_popularities = {
+		liberal = 0
+		
 
-		communism = {
-			popularity = 0
-			banned = no
-		}
+		fascism = 0
+					
 
-		monarchism = {
-			popularity = 100
-		}
+		communism = 0
+					
+
+		monarchism = 100
+		
 	}
 
-	ruling_party = monarchism
+	set_politics = { ruling_party = monarchism
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 1939.1.1 = {#next election october 39
-	set_politics = {
+	
 
-		parties = {
-			liberal = {
-				popularity = 95
-			}
+		set_popularities = {
+			liberal = 95
+			
 
-			fascism = {
-				popularity = 2
-			}
+			fascism = 2
+			
 
-			communism = {
-				popularity = 3
-			}
+			communism = 3
+			
 		}
 
-		ruling_party = liberal
+		set_politics = { ruling_party = liberal
 		last_election = "1935.10.27"
 		election_frequency = 48
 		elections_allowed = yes

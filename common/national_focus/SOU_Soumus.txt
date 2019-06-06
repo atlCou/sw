@@ -265,6 +265,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				add_idea = SOU_revol_mil
+				remove_idea = SOU_sisu
+			}
 		}
 	
 	}
@@ -287,6 +291,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOU_revol_mil
+				add_idea = SOU_utilizing_witches_idea
+			}
 		}
 	
 	}
@@ -309,6 +317,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			
+			add_ideas = SOU_quality_over_quantity_idea
+			
 		}
 	
 	}
@@ -331,6 +342,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = SOU_seeing_the_future_idea
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	
 	}

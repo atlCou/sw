@@ -27,28 +27,23 @@ set_technology = {
 
 
 set_convoys = 75
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 43
-		}
-		
-		fascism = {
-			popularity = 4
-		}
-		
-		communism = {
-			popularity = 3
-		}
 
-		socialism = {
-			popularity = 40
-			banned = no
-		}
+	set_popularities = {
+		liberal = 47
+		
+		
+		fascism = 5
+		
+		
+		communism = 4
+		
+
+		socialism = 44
+					
 	}
 
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = no

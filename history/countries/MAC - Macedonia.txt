@@ -82,57 +82,47 @@ set_technology = {
 }
 
 set_convoys = 10
-set_politics = {
 
-	parties = {
-		liberal = { 
-			popularity = 0
-		}
 
-		fascism = {
-			popularity = 0
-			banned = no
-		}
+	set_popularities = {
+		liberal = 0
 		
-		communism = {
-			popularity = 0
-			banned = no
-		}
+
+		fascism = 0
+					
 		
-		monarchism = { 
-			popularity = 100
-		}
+		communism = 0
+					
+		
+		monarchism = 100
+		
 	}
 	
-	ruling_party = monarchism
+	set_politics = { ruling_party = monarchism
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = no
 }
 
 1939.1.1 = {
-	set_politics = {
+	
 
-		parties = {
-			liberal = { 
-				popularity = 5
-			}
+		set_popularities = {
+			liberal = 5
+			
 
-			fascism = {
-				popularity = 20
-			}
+			fascism = 20
 			
-			communism = {
-				popularity = 5
-				#banned = no #default is no
-			}
 			
-			monarchism = { 
-				popularity = 60
-			}
+			communism = 5
+				##default is no
+			
+			
+			monarchism = 60
+			
 		}
 		
-		ruling_party = monarchism
+		set_politics = { ruling_party = monarchism
 		last_election = "1938.12.1"
 		election_frequency = 36
 		elections_allowed = yes

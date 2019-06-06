@@ -27,38 +27,32 @@ add_ideas = {
 
 
 
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 49
-		}
 
-		communism = {
-			popularity = 2
-			banned = no
-		}
+	set_popularities = {
+		liberal = 49
 		
-		fanatical-paganism = {
-			popularity = 13
-		}
+
+		communism = 2
+					
+		
+		fanatical-paganism = 13
+		
 		
 		progressivism = {
 			popularity = 18
 		}
 		
-		socialism = {
-			popularity = 15
-		}
+		socialism = 15
 		
-		authoritarian_socialism = {
-			popularity = 3
-		}
+		
+		authoritarian_socialism = 3
+		
 		
 		
 	}
 
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = no

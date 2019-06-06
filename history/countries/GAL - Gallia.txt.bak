@@ -47,32 +47,26 @@ set_technology = {
 set_convoys = 300
 set_national_unity = 0.8
 
-set_politics = {
 
-	parties = {
-		liberal = { 
-			popularity = 38
-		}
 
-		fascism = {
-			popularity = 2
-		}
+	set_popularities = {
+		liberal = 38
 		
-		socialism = {
-			popularity = 16
-		}
+
+		fascism = 2
 		
-		communism = {
-			popularity = 8
-		}
 		
-		authoritarian_socialism = {
-			popularity = 2
-		}
+		socialism = 16
 		
-		fanatical-paganism = {
-			popularity = 4
-		}
+		
+		communism = 8
+		
+		
+		authoritarian_socialism = 2
+		
+		
+		fanatical-paganism = 4
+		
 		
 		progressivism = {
 			popularity = 30
@@ -82,12 +76,11 @@ set_politics = {
 			popularity = 0
 		}
 		
-		monarchism = {
-			popularity = 0
-		}
+		monarchism = 0
+		
 	}
 	
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no

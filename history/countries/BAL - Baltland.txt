@@ -90,32 +90,17 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		liberal = {
-			popularity = 66
-		}
-		
-		socialism = {
-			popularity = 11
-		}
-			
-		communism = {
-			popularity = 11
-			banned = no
-		}
-
-		fascism = {
-			popularity = 12
-			banned = no
-		}
-
-	}
-
 	ruling_party = liberal
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberal = 66
+    socialism = 11
+    communism = 11
+    fascism = 12
 }
 
 

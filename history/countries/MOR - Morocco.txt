@@ -46,29 +46,23 @@ set_convoys = 5
 		dispersed_industry2 = 1
 	}
 }
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 0
-		}
 
-		fascism = {
-			popularity = 0
-			banned = no
-		}
+	set_popularities = {
+		liberal = 0
+		
 
-		communism = {
-			popularity = 0
-			banned = no
-		}
+		fascism = 0
+					
 
-		monarchism = {
-			popularity = 100
-		}
+		communism = 0
+					
+
+		monarchism = 100
+		
 	}
 
-	ruling_party = monarchism
+	set_politics = { ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -99,28 +93,24 @@ create_country_leader = {
 
 #Now a colony of Italy  However, if independent it would have
 1939.1.1 = {
-	set_politics = {
+	
 
-		parties = {
-		liberal = {
-			popularity = 0
-		}
+		set_popularities = {
+		liberal = 0
+		
 
-		fascism = {
-			popularity = 0
-		}
+		fascism = 0
+		
 
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
+		communism = 0
+			##default is no
+		
 
-		monarchism = {
-			popularity = 100
-		}
+		monarchism = 100
+		
 	}
 
-		ruling_party = monarchism
+		set_politics = { ruling_party = monarchism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

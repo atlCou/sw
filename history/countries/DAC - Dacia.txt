@@ -51,32 +51,25 @@ add_ideas = {
 
 set_convoys = 10
 
-set_politics = {
 
-	parties = {
-		liberal = {
-			popularity = 12
-		}
 
-		fascism = {
-			popularity = 33
-			banned = no
-		}
-		
-		fanatical-paganism = {
-			popularity = 15
-			banned = 20
-		}
+	set_popularities = {
+		liberal = 12
 		
 
-		monarchism = {
-			popularity = 40
-			banned = no
-		}
+		fascism = 33
+					
+		
+		fanatical-paganism = 15
+					
+		
+
+		monarchism = 40
+					
 
 	}
 
-	ruling_party = monarchism
+	set_politics = { ruling_party = monarchism
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes

@@ -51,34 +51,22 @@ add_ideas = {
 
 set_convoys = 800
 
-set_politics = {
+set_popularities = {
+    liberal = 56
+    fascism = 4
+    socialism = 11
+    monarchism = 29
+}	
 
-	parties = {
-		liberal = { 
-			popularity = 56
-			
-		}
 
-		fascism = {
-			popularity = 3
-			banned = no
-		}
-		
-		socialism = {
-			popularity = 11
-			banned = no
-		}
-		
-		monarchism = {
-			popularity = 29
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no ##suspended through duration of war, which is handled via event
 }
+
+
 
 
 

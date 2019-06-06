@@ -157,46 +157,43 @@ create_import = {
 set_convoys = 400
 
 
-set_politics = {
 
-	parties = {
 
-		fascism = {
-			popularity = 19
-			banned = no
-		}
+	set_popularities = {
+
+		fascism = 19
+					
 		
-		socialism = {
-			popularity = 8
-		}
+		socialism = 8
 		
-		monarchism = {
-			popularity = 39
-		}
 		
-		liberal = {
-			popularity = 34
-		}
+		monarchism = 39
+		
+		
+		liberal = 34
+		
 
 	}
 
-	ruling_party = monarchism
+	set_politics = { 
+	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 
-
 create_country_leader = {
-	name = "Miyafuji Yoshika"
+	name = "Karibuchi Hikari"
 	desc = "POLITICS_Hirohito_DESC"
-	picture = "miyafuji.dds"
+	picture = "Hikari.dds"
 	expire = "1989.1.1"
-	ideology = constitutional_monarchism
+	ideology = absolute_monarchism
 	traits = {
 	}
 }
+
+
 
 create_country_leader = {
 	name = "Hattori Shizuka"
@@ -250,14 +247,16 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Karibuchi Hikari"
+	name = "Miyafuji Yoshika"
 	desc = "POLITICS_Hirohito_DESC"
-	picture = "Hikari.dds"
+	picture = "miyafuji.dds"
 	expire = "1989.1.1"
-	ideology = absolute_monarchism
+	ideology = constitutional_monarchism
 	traits = {
 	}
 }
+
+
 
 create_corps_commander = {
 	name = "Tomoyuki Yamashita"

@@ -11,7 +11,7 @@ focus_tree = {
 				OR = {
 					has_country_flag = OST_heimatblock 
 					has_country_flag = OST_thedynastystays
-				}
+				}	
 			}
 			default = no
 		} 

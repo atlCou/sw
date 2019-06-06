@@ -17,21 +17,18 @@ set_technology = {
 }
 
 set_convoys = 0
-set_politics = {
 
-	parties = {
-		socialism = {
-			popularity = 71
-		}
-		communism = {
-			popularity = 23
-		}
-		liberal = {
-			popularity = 6
-		}
+
+	set_popularities = {
+		socialism = 71
+		
+		communism = 23
+		
+		liberal = 6
+		
 	}
 
-	ruling_party = socialism
+	set_politics = { ruling_party = socialism
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = no

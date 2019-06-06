@@ -47,28 +47,24 @@ set_technology = {
 set_convoys = 300
 set_national_unity = 0.8
 
-set_politics = {
 
-	parties = {
-		liberal = { 
-			popularity = 53
-		}
+
+	set_popularities = {
+		liberal = 53
+		
 
 		
-		socialism = {
-			popularity = 31
-		}
+		socialism = 31
 		
-		communism = {
-			popularity = 6
-		}
 		
-		monarchism = {
-			popularity = 10
-		}
+		communism = 6
+		
+		
+		monarchism = 10
+		
 	}
 	
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no

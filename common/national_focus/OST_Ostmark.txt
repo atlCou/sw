@@ -137,14 +137,13 @@ shared_focus = {
 	completion_reward = {
 		set_politics = {
 			ruling_party = monarchism
-			parties = {
-				liberal = { popularity = 37 }
-				socialism = { popularity = 0 }
-				communism = { popularity = 0 }
-				monarchism = { popularity = 48 }
-				fascism = { popularity = 10 }
-				fanatical-paganism = { popularity = 5 }
-			}
+			
+		}
+		set_popularities = {
+			liberal = 37
+			monarchism = 48
+			fascism = 10
+			fanatical-paganism = 5
 		}
 		set_party_name = { 
 			ideology = monarchism 

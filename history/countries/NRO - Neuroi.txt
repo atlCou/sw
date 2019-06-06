@@ -8,25 +8,23 @@ set_technology = {
 
 
 
-set_politics = {
 
-	parties = {
+
+	set_popularities = {
 		ultra-nationalism = {
 			popularity = 100
 		}
 
-		fascism = {
-			popularity = 0
-		}
+		fascism = 0
+		
 
-		communism = {
-			popularity = 0
-		}
+		communism = 0
+		
 
 		}
 	}
 
-	ruling_party = ultra-nationalism
+	set_politics = { ruling_party = ultra-nationalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no

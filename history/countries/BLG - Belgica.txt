@@ -81,51 +81,31 @@ set_technology = {
 
 
 set_politics = {
-
-	parties = {
-		liberal = {
-			popularity = 100
-		}
-
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-
-		communism = {
-			popularity = 0
-			banned = no
-		}
-	}
-
 	ruling_party = liberal
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+set_popularities = {
+    liberal = 100
+    fascism = 0
+    communism = 0
+}
+
 1939.1.1 = {
 	set_politics = {
-
-		parties = {
-			liberal = {
-				popularity = 87
-			}
-
-			fascism = {
-				popularity = 8
-			}
-
-			communism = {
-				popularity = 5
-			}
-		}
-
 		ruling_party = liberal
 		last_election = "1939.4.2"
 		election_frequency = 48
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        liberal = 87
+        fascism = 8
+        communism = 5
+    }
 }
 
 set_convoys = 80

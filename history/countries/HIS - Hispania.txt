@@ -25,34 +25,25 @@ set_technology = {
 	transport = 1
 }
 
-set_politics = {
 
-	parties = {
-		monarchism = { 
-			popularity = 35
-		}
 
-		liberal = {
-			popularity = 44
-			banned = no
-		}
+	set_popularities = {
+		monarchism = 35
 		
-		fascism = {
-			popularity = 10
-			banned = no
-		}
+
+		liberal = 44
+					
 		
-		socialism = {
-		popularity = 9
-		banned = no
-		}	
-		communism = {
-		popularity = 2
-		banned = no
-		}				
+		fascism = 10
+					
+		
+		socialism = 9
+					
+		communism = 2
+								
 	}
 	
-	ruling_party = liberal
+	set_politics = { ruling_party = liberal
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
