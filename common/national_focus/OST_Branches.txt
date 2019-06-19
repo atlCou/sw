@@ -796,7 +796,7 @@ focus_tree = {
 		icon = GFX_Star_Politics
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		
 		relative_position_id = OST_closing_the_borders
 		
@@ -844,6 +844,72 @@ focus_tree = {
 			add_ideas = OST_abolutely_no_emmigration
 			add_stability = -0.05
 			add_political_power = -150
+		}
+	}
+	
+	focus = {
+		id = OST_conscription_for_the_sake_of_nation
+		icon = GFX_Star_Politics
+		x = 0
+		y = 2
+		cost = 10
+		
+		relative_position_id = OST_closing_the_borders
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_no_one_in  }
+		prerequisite = { focus = OST_no_one_out }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					ROOT = { NOT = { OR = { has_idea = extensive_conscription has_idea = service_by_requirement has_idea = all_adults_serve has_idea = scraping_the_barrel } } }
+				}
+				add_ideas = extensive_conscription
+			}
+			else = {
+				add_political_power = 150
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = OST_no_special_witches
+		icon = GFX_Star_Politics
+		x = 0
+		y = 3
+		cost = 10
+		
+		relative_position_id = OST_closing_the_borders
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_conscription_for_the_sake_of_nation  }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = OST_no_special_witches_flag
+			add_manpower = -1000
+			custom_effect_tooltip = OST_no_special_witches_tooltip
 		}
 	}
 	
@@ -951,6 +1017,34 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = OST_nationalizing_information }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { OST_bureau_of_youth_idea }
+		}
+	}
+	
+	focus = {
+		id = OST_a_new_bureau_of_intelligence
+		icon = GFX_Star_Politics
+		x = 4
+		y = 5
+		cost = 5
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_bureau_of_youth }
+		prerequisite = { focus = OST_bureau_of_information }
 		
 		available_if_capitulated = yes
 

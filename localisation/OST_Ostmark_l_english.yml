@@ -134,7 +134,7 @@ OST_tyranny_increase_massive:0 "Will §Gincrease§! Gollob's §MTyranny§! by §
 OST_tyranny_increase_moderate:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y2§!."
 OST_tyranny_decrease:0 "Will §Rdecrease§! Gollob's §MTyranny§! by §Y1§!."
 OST_gollob_reign_begins_tooltip:0 "Unlocks §YGollob's Reign§! decisions, allowing you to seize complete control and §Gradically reform §!§YOstmark§! - as long as the time is right."
-
+OST_no_special_witches_tooltip:0 "§RWill remove the ability to use witches for the sake of §Y[OST.GetNameDef]§R!§! "
 
 
 
