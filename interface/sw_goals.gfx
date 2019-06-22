@@ -199,6 +199,10 @@ spriteTypes = {
 		name = "GFX_DL-OFP_Focus"
 		texturefile = "gfx/interface/goals/DL-OFP_Focus.dds"
 	}
+	SpriteType = {
+		name = "GFX_RMA_maria"
+		texturefile = "gfx/interface/goals/RMA_maria.dds"
+	}
 }
 
 

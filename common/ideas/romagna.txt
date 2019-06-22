@@ -28,6 +28,58 @@ ideas = {
 			}
 		}
 		
+		
+		RMA_building_grants_idea = {
+		
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		
+		}
+		
+		RMA_trade_partners_idea = {
+		
+			picture = generic_flexible_foreign_policy
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		
+		RMA_defending_our_position_idea = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.30
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				fanatical-paganism_acceptance = -100
+				foreign_subversive_activites = -0.25
+			}
+		}
+		
+		RMA_not_just_the_pagans_idea = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				fanatical-paganism_acceptance = -100
+				communism_acceptance = -50
+				fascism_acceptance = -50
+			}
+		}
+		
 	}
 
 	political_advisor = {

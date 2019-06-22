@@ -1,0 +1,193 @@
+add_namespace = romagna
+
+
+country_event = {
+	id = romagna.1
+	title = romagna.1.t
+	desc = romagna.1.d
+	picture = GFX_generic_backpackedunits
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = romagna.1.a
+		set_country_flag = romagna_canon
+	}
+	
+	option = {
+		name = romagna.1.b
+		set_country_flag = romagna_irridentist
+	}
+	
+	option = {
+		name = romagna.1.c
+		set_country_flag = romagna_olympian
+	}
+	
+}
+
+
+
+
+
+
+country_event = {
+	id = romagna.90
+	title = romagna.90.t
+	desc = romagna.90.d
+	picture = GFX_generic_backpackedunits
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = romagna.90.a
+		ai_chance = {
+			factor = 75
+		}
+		add_opinion_modifier = {
+			target = RMA
+			modifier = rma_mission_bri
+		}
+		RMA = {
+			add_opinion_modifier = {
+				target = BRI
+				modifier = rma_mission_bri
+			}
+			set_country_flag = RMA_bri_accept
+			hidden_effect = {
+				country_event = { 
+					id = romagna.95
+					days = 1
+				}
+			}
+		}
+	}
+	
+	
+	option = {
+		name = romagna.90.b
+		set_country_flag = RMA_bri_denied
+		hidden_effect = {
+			RMA = {
+				country_event = { 
+					id = romagna.96
+					days = 1
+				}
+			}
+		}
+	}
+	
+}
+
+
+country_event = {
+	id = romagna.91
+	title = romagna.91.t
+	desc = romagna.91.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = romagna.91.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				RMA = {
+					has_country_flag = RMA_bri_denied
+				}
+				factor = 0
+			}
+		}
+		BRI = { 
+			add_to_faction = RMA 
+			add_ai_strategy = {
+				type = alliance
+				id = RMA
+				value = 100
+			}
+		}
+		RMA = {
+			add_ai_strategy = {
+				type = alliance
+				id = BRI
+				value = 100
+			}
+			hidden_effect = {
+				country_event = {
+					id = romagna.97
+					days = 1
+				}
+			}
+		}
+	}
+	
+	
+	option = {
+		name = romagna.91.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				RMA = {
+					has_country_flag = RMA_bri_accept
+				}
+				factor = 0
+			}
+		}
+		hidden_effect = {
+			RMA = {
+				country_event = { 
+					id = romagna.98
+					days = 1
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+country_event = {
+	id = romagna.100
+	title = romagna.100.t
+	desc = romagna.100.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = romagna.100.a
+		ai_chance ={
+			factor = 100
+		}
+		RMA = { 
+			transfer_state = 161
+			transfer_state = 804
+			give_guarantee = VNE
+		}
+		VNE = {
+			give_guarantee = RMA
+		}
+	}
+	
+	
+	option = {
+		name = romagna.100.b
+		ai_chance ={
+			factor = 0
+		}
+	}
+	
+}
+

@@ -8,4 +8,9 @@ opinion_modifiers = {
 	kar_southmod = {
 		value = -100
 	}
+	
+	rma_mission_bri = {
+		value = 30
+	}
+	
 }
