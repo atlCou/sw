@@ -16,6 +16,7 @@ continuous_focus_position = { x = 50 y = 3000 }
 	shared_focus = KAR_glorytokarlsland
 	shared_focus = KAR_karlslandermarkets
 	shared_focus = KAR_theeconomy
+	shared_focus = KAR_karlsland_military_tradition
 	
 	
 }

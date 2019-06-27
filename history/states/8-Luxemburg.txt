@@ -12,15 +12,17 @@ state=
 
 	history=
 	{
-		owner = BLG buildings = {
+		owner = KAR
+		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 3
 		}
 		victory_points = { 6583 5 }
-		add_core_of = BLG}
+		add_core_of =LAR
+	}
 
-	provinces=
-	{
-6583 	}
+	provinces = {
+		6583 	
+	}
 }

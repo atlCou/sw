@@ -55,7 +55,7 @@ ideas = {
 		picture = GAL_socialismstar
 		
 		modifier = {
-			consumer_goods_factor = -0.01
+			consumer_goods_factor = -0.05
 		}
 	}
 	
@@ -69,6 +69,32 @@ ideas = {
 			production_speed_arms_factory_factor = 0.1
 		}
 	}
+	
+	
+	GAL_nationalservices = {
+		
+		picture = man_five_year_plan_industry
+		
+		modifier = {
+			consumer_goods_factor = -0.03
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+		}
+	}
+	
+	
+	GAL_welfare_programs_idea = {
+		
+		picture = generic_goods_red_bonus
+		
+		modifier = {
+			political_power_gain = 0.2
+			MONTHLY_POPULATION = 0.05
+		}
+	
+	
+	
+	
 }
 
 	# POLITICAL

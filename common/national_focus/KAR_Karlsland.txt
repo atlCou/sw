@@ -2275,7 +2275,7 @@ shared_focus = {
 id = KAR_glorytokarlsland
 icon = GFX_goal_generic_neutrality_focus
 x = 15
-y = 10
+y = 13
 cost = 5
 available_if_capitulated = yes 
 ai_will_do = { 
@@ -3200,19 +3200,123 @@ shared_focus = {
 } 
  
 
+
+
+
+########## military tree
+
+
+shared_focus = { 
+	id = KAR_karlsland_military_tradition
+	icon = GFX_goal_tfv_generic_tech_sharing
+	x = 50
+	y = 0
+	cost = 3
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 1
+		modifier = {
+			factor = 100
+			date > 1937.6.1
+		}
+	}
+
+	completion_reward = { 
+		army_experience = 25
+		navy_experience = 25
+		air_experience = 25
+	}
+}
+
+
+
+shared_focus = { 
+	id = KAR_karlslander_heer
+	icon = GFX_goal_tfv_generic_tech_sharing
+	x = -3
+	y = 1
+	cost = 1
+	available_if_capitulated = yes 
+	prerequisite = {
+		focus = KAR_karlsland_military_tradition
+	}
+	relative_position_id = KAR_karlsland_military_tradition
+	ai_will_do = { 
+		factor = 10
+		modifier = {
+			factor = 100
+			date > 1938.1.1
+		}
+	}
+
+	completion_reward = { 
+		army_experience = 25
+		air_experience = 50
+	}
+}
+
+
+shared_focus = { 
+	id = KAR_the_new_domain
+	icon = GFX_goal_tfv_generic_tech_sharing
+	x = 2
+	y = 1
+	cost = 1
+	available_if_capitulated = yes 
+	prerequisite = {
+		focus = KAR_karlslander_heer
+	}
+	relative_position_id = KAR_karlslander_heer
+	ai_will_do = { 
+		factor = 25
+	}
+
+	completion_reward = { 
+	}
+}
+
+
+
+
+shared_focus = { 
+	id = KAR_kaiserliche_marine
+	icon = GFX_goal_tfv_generic_tech_sharing
+	x = 3
+	y = 1
+	cost = 1
+	available_if_capitulated = yes 
+	prerequisite = {
+		focus = KAR_karlsland_military_tradition
+	}
+	relative_position_id = KAR_karlsland_military_tradition
+	ai_will_do = { 
+		factor = 10
+		modifier = {
+			factor = 100
+			date > 1938.1.1
+		}
+	}
+
+	completion_reward = { 
+		navy_experience = 25
+	}
+}
+
  
  
-################### WITCHES TREE ###################
+################### WITCHES sub TREE ###################
  
 #Focus for Witches Research
 shared_focus = { 
 id = KAR_strikeunitresearch
 icon = GFX_goal_tfv_generic_tech_sharing
-x = 50
-y = 0
+x = 0
+y = 2
 cost = 5
 available_if_capitulated = yes 
 available = { date > 1938.1.1 }
+relative_position_id = KAR_the_new_domain
+prerequisite = { focus = KAR_the_new_domain }
 bypass = { has_completed_focus = KAR_strikeunits }
 ai_will_do = { 
  factor = 100
@@ -3319,4 +3423,6 @@ id = kwitches.10
 custom_effect_tooltip = KAR_kwitches.10
 }
 }
+
+
 

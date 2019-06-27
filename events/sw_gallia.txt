@@ -40,33 +40,6 @@ country_event = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ########################### GALLIA ###################
 add_namespace = gallia
 
@@ -595,6 +568,31 @@ country_event = {
 		}
 	}
 }	
+	
+	
+	
+	
+	
+	
+	
+country_event = {
+	id = gallia.500
+	title = gallia.500.t
+	desc = gallia.500.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.500.a
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = -10
+		add_stability = -0.05
+	}
+}		
 	
 
 
