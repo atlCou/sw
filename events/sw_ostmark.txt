@@ -832,14 +832,14 @@ country_event = {
 		}
 		set_politics = {
 			ruling_party = fascism
-			parties = {
-				liberal = { popularity = 20 }
-				socialism = { popularity = 0 }
-				communism = { popularity = 0 }
-				monarchism = { popularity = 36 }
-				fascism = { popularity = 44 }
-				fanatical-paganism = { popularity = 0 }
-			}
+		}
+		set_popularities = {
+			liberal = { popularity = 20 }
+			socialism = { popularity = 0 }
+			communism = { popularity = 0 }
+			monarchism = { popularity = 36 }
+			fascism = { popularity = 44 }
+			fanatical-paganism = { popularity = 0 }
 		}
 		load_focus_tree = Ostmark_crumbled_heimat
 	}

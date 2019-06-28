@@ -418,6 +418,7 @@ shared_focus = {
 	cost = 5
 	relative_position_id = OST_beatingbackthebalts
 	prerequisite = { focus = OST_beatingbackthebalts }
+	will_lead_to_war_with = KAR
 	available_if_capitulated = yes 
 	available = {
 		KAR = {
