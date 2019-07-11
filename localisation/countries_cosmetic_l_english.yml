@@ -34,3 +34,22 @@
  OST_Gollob_communism:0 "Donaustaat"
  OST_Gollob_communism_DEF:0 "The Danubian State"
  OST_Gollob_communism_ADJ:0 "Danubian"
+ 
+ CYR_puppet_monarchism:0 "Romagnian Cyrenaica"
+ CYR_puppet_monarchism_DEF:0 "Romagnian Cyrenaica"
+ CYR_puppet_monarchism_ADJ:0 "Cyrenaican"
+ CYR_puppet_liberal:0 "Romagnian Cyrenaica"
+ CYR_puppet_liberal_DEF:0 "Romagnian Cyrenaica"
+ CYR_puppet_liberal_ADJ:0 "Cyrenaican"
+ CYR_puppet_fascism:0 "Romagnian Cyrenaica"
+ CYR_puppet_fascism_DEF:0 "Romagnian Cyrenaica"
+ CYR_puppet_fascism_ADJ:0 "Cyrenaican" 
+ CYR_puppet_fanatical-paganism:0 "Romagnian Cyrenaica"
+ CYR_puppet_fanatical-paganism_DEF:0 "Romagnian Cyrenaica"
+ CYR_puppet_fanatical-paganism_ADJ:0 "Cyrenaican"
+ 
+
+ CYR_africa_fascism:0 "Africa Proconsularis"
+ CYR_africa_fascism_DEF:0 "Africa Proconsularis"
+ CYR_africa_fascism_ADJ:0 "Romagnian"
+ 

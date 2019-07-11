@@ -195,3 +195,13 @@ OST_Gollob = {
 	color = rgb { 95 95 95 }
 	color_ui = rgb { 95 95 95 }
 }
+
+CYR_puppet = {
+	color = rgb { 143 86 119 }
+	color_ui = rgb { 143 86 119 }
+}
+
+CYR_africa = {
+	color = rgb { 120 8 73 }
+	color_ui = rgb { 120 8 73 }
+}

@@ -191,3 +191,166 @@ country_event = {
 	
 }
 
+
+add_namespace = romagna.colonial
+
+country_event = {
+	id = romagna.colonial.1
+	title = romagna.colonial.1.t
+	desc = romagna.colonial.1.d
+	picture = GFX_report_event_destroyers
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = romagna.colonial.1.a
+		ai_chance = {
+			factor = 100
+		}
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_offsite_building = { type = industrial_complex level = 1 }
+		RMA = {
+			country_event = {
+				id = romagna.colonial.2
+				days = 1
+			}
+		}
+		hidden_effect = {
+			CYR = {
+				set_country_flag = CYR_puppet_1
+			}
+		}
+	}
+	
+	option = {
+		name = romagna.colonial.1.b
+		ai_chance = {
+			factor = 0
+		}
+		RMA = {
+			country_event = {
+				id = romagna.colonial.3
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = romagna.colonial.2
+	title = romagna.colonial.2.t
+	desc = romagna.colonial.2.d
+	picture = GFX_report_event_destroyers
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = romagna.colonial.1.a
+		ai_chance = {
+			factor = 100
+		}
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+}
+
+country_event = {
+	id = romagna.colonial.3
+	title = romagna.colonial.3.t
+	desc = romagna.colonial.3.d
+	picture = GFX_report_event_destroyers
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = romagna.colonial.3.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = romagna.colonial.4
+	title = romagna.colonial.4.t
+	desc = romagna.colonial.4.d
+
+	fire_only_once = yes
+
+	trigger = {
+		CYR = { has_country_flag = CYR_puppet_1 }
+		tag = RMA
+	}
+	
+	mean_time_to_happen = {
+		days = 140
+	}
+	
+	
+	option = {
+		name = romagna.colonial.4.a
+		ai_chance = {
+			factor = 100
+		}
+		CYR = { 
+			set_country_flag = CYR_puppet_2 
+			country_event = {
+				id = romagna.colonial.5
+				days = 3
+			}
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = romagna.colonial.5
+	title = romagna.colonial.5.t
+	desc = romagna.colonial.5.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = romagna.colonial.5.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = romagna.colonial.15
+	title = romagna.colonial.15.t
+	desc = romagna.colonial.15.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = romagna.colonial.15.a
+		ai_chance = {
+			factor = 100
+		}
+		RMA = {
+			puppet = PREV
+		}
+		set_cosmetic_tag = CYR_puppet
+	}
+}

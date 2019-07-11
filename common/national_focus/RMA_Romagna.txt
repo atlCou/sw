@@ -48,6 +48,238 @@ focus_tree = {
 		} 
 		completion_reward = { 
 			add_political_power = 50
+			set_country_flag = RMA_finished_leader_choice
+		}
+	}
+	
+	
+	############# Econ Tree
+	
+	focus = { 
+		id = RMA_finishing_rebuild
+		icon = GFX_focus_usa_voter_registration_act
+		x = 26
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 100
+			modifier = {
+				date < 1937.1.1
+				factor = 0
+			}
+		} 
+		available = { has_country_flag = RMA_finished_leader_choice }
+		completion_reward = {
+			2 = {
+				add_extra_state_shared_building_slots = 1 
+			}
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+	}
+	
+	
+	focus = { 
+		id = RMA_civilian_industry
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RMA_finishing_rebuild
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_finishing_rebuild }
+		completion_reward = {
+			2 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = RMA_opening_business
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = RMA_finishing_rebuild
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_civilian_industry }
+		completion_reward = {
+			add_ideas = RMA_opening_business_idea
+		}
+	}
+	
+	
+	
+	
+	focus = { 
+		id = RMA_ties_with_cyrenaica
+		icon = GFX_focus_usa_voter_registration_act
+		x = -3
+		y = 1
+		cost = 5
+		relative_position_id = RMA_finishing_rebuild
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_finishing_rebuild }
+		available = { is_puppet = no }
+		completion_reward = {
+			CYR = {
+				country_event = {
+					id = romagna.colonial.1
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = RMA_coastal_traditions
+		icon = GFX_focus_usa_voter_registration_act
+		x = -3
+		y = 2
+		cost = 5
+		relative_position_id = RMA_finishing_rebuild
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_ties_with_cyrenaica }
+		completion_reward = {
+			115 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					province = {
+						limit_to_naval_base = yes
+					}
+				}
+			}
+			114 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					province = {
+						limit_to_naval_base = yes
+					}
+				}
+			}
+			156 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					province = {
+						limit_to_naval_base = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = RMA_military_industry
+		icon = GFX_focus_usa_voter_registration_act
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = RMA_finishing_rebuild
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_finishing_rebuild }
+		completion_reward = {
+			158 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = RMA_naval_industry
+		icon = GFX_focus_usa_voter_registration_act
+		x = 3
+		y = 2
+		cost = 5
+		relative_position_id = RMA_finishing_rebuild
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_military_industry }
+		completion_reward = {
+			156 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = RMA_rome_institute
+		icon = GFX_focus_usa_voter_registration_act
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = RMA_naval_industry
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_naval_industry }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = { 
+		id = RMA_venezian_institute
+		icon = GFX_focus_usa_voter_registration_act
+		x = 3
+		y = 2
+		cost = 5
+		relative_position_id = RMA_naval_industry
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_rome_institute }
+		available = { RMA = { owns_state = 160 } }
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	
@@ -56,6 +288,28 @@ focus_tree = {
 	
 	
 	
+	focus = { 
+		id = RMA_cyrenaican_debt
+		icon = GFX_focus_usa_voter_registration_act
+		x = -3
+		y = 5
+		cost = 5
+		relative_position_id = RMA_finishing_rebuild
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 10
+			
+		} 
+		prerequisite = { focus = RMA_finishing_rebuild }
+		available = { is_puppet = no }
+		completion_reward = {
+			CYR = {
+				country_event = {
+					id = romagna.colonial.15
+				}
+			}
+		}
+	}
 	
 	
 	
@@ -585,6 +839,59 @@ focus_tree = {
 	
 	
 	
+	
+	
+	
+	
+	focus = { 
+		id = RMA_a_rome_for_now
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0	
+		y = 10
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_old_glories }
+		available = { 
+		CYR = { is_subject_of = RMA }
+		MOR = {is_subject_of = RMA }
+		NUM = {is_subject_of = RMA }
+		TUN = {is_subject_of = RMA }
+		}
+		completion_reward = { 
+			set_cosmetic_tag = RMA_rome
+			add_stability = -0.1
+			add_war_support = 0.1
+			CYR = {
+				annex_country = {
+					target = MOR
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = TUN
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = NUM
+					transfer_troops = yes
+				}
+				every_state = {
+					if = {
+						limit = {
+							OR = {
+								is_core_of = MOR
+								is_core_of = NUM
+								is_core_of = TUN
+							}
+						}
+						add_core_of = CYR
+					}
+				}
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CYR_africa
+			}
+		}
+	}
 	
 	
 	
