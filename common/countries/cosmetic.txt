@@ -186,7 +186,12 @@ KAR_pagan = {
 	color_ui = rgb { 184 216 182 }
 }
 
-GAL_1984memes = {
+GAL_gallia_coup = {
+	color = rgb { 225 225 225 }
+	color_ui = rgb { 25 25 25 }
+}
+
+GAL_gallia_coup_post = {
 	color = rgb { 225 225 225 }
 	color_ui = rgb { 25 25 25 }
 }

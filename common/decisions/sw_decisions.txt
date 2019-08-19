@@ -460,3 +460,10 @@ gollob_reign = {
 
 
 }
+
+
+GAL_funding_art_decisions = {
+
+
+}
+

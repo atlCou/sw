@@ -203,6 +203,54 @@ spriteTypes = {
 		name = "GFX_RMA_maria"
 		texturefile = "gfx/interface/goals/RMA_maria.dds"
 	}
+	SpriteType = {
+		name = "GFX_GAL_joy"
+		texturefile = "gfx/interface/goals/GAL_joy.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_gallia"
+		texturefile = "gfx/interface/goals/GAL_gallia.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_republic"
+		texturefile = "gfx/interface/goals/GAL_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_monarchie"
+		texturefile = "gfx/interface/goals/GAL_monarchie.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_liberte"
+		texturefile = "gfx/interface/goals/GAL_liberte.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_mon_mil"
+		texturefile = "gfx/interface/goals/GAL_mon_mil.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_burn_docs"
+		texturefile = "gfx/interface/goals/GAL_burn_docs.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_crack_down"
+		texturefile = "gfx/interface/goals/GAL_crack_down.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_econ_re"
+		texturefile = "gfx/interface/goals/GAL_econ_re.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_sekrit_pol"
+		texturefile = "gfx/interface/goals/GAL_sekrit_pol.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_art"
+		texturefile = "gfx/interface/goals/GAL_art.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_new_witch"
+		texturefile = "gfx/interface/goals/GAL_new_witch.dds"
+	}
 }
 
 

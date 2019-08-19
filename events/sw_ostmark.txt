@@ -294,28 +294,10 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			MRV = {
-				delete_unit_template_and_units = {
-					division_template = "Infanterie Division"
-				}
-				delete_unit_template_and_units = {
-					division_template = "Alpenjäger Division"
-				}
-				delete_unit_template_and_units = {
-					division_template = "Schnelle Division" 
-				}
 				load_oob = MRV_spawn
 			}
 			BHE = {
 				load_oob = BHE_spawn
-				delete_unit_template_and_units = {
-					division_template = "Infanterie Division"
-				}
-				delete_unit_template_and_units = {
-					division_template = "Alpenjäger Division"
-				}
-				delete_unit_template_and_units = {
-					division_template = "Schnelle Division" 
-				}
 			}
 		}
 	}

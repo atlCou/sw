@@ -1,0 +1,141 @@
+﻿l_english:
+
+
+ GAL_fanatical-paganism_party_long:0 "Gallia hellénistique"
+ GAL_fanatical-paganism_party:0 "FRH"
+ GAL_fascism_party_long:0 "Parti Populaire Gallia"
+ GAL_fascism_party:0 "PPG"
+ GAL_communism_party_long:0 "Parti Communiste Gallia"
+ GAL_communism_party:0 "PCG"
+ GAL_socialism_party_long:0 "Parti socialiste [Nouveau]"
+ GAL_socialism_party:0 "PS"
+ GAL_liberal_party_long:0 "Parti socialiste [Royalistes]"
+ GAL_liberal_party:0 "PS"
+ GAL_monarchism_party_long:0 "Gallian Loyalists"
+ GAL_monarchism_party:0 "Loyalistes galliens"
+ GAL_ultra-nationalism_party_long:0 "Parti Impérial Gallia"
+ GAL_ultra-nationalism_party:0 "PIG"
+ GAL_authoritarian-socialism_party:0 "Gallian Socialistes"
+
+ 
+ GAL_liberal:0 "Gallia"
+ GAL_liberal_DEF:0 "Gallia"
+ GAL_liberal_ADJ:0 "Gallian"
+ GAL_communism:0 "Gallian Commune"
+ GAL_communism_DEF:0 "The Gallian Commune"
+ GAL_communism_ADJ:0 "Gallian"
+ GAL_fascism:0 "Gallian State"
+ GAL_fascism_DEF:0 "The Gallian State"
+ GAL_fascism_ADJ:0 "Gallian"
+ GAL_liberal_monarchism:0 "Gallia"
+ GAL_liberal_monarchism_DEF:0 "Gallia"
+ GAL_liberal_monarchism_ADJ:0 "Gallian"
+ GAL_progressivism:0 "Gallia"
+ GAL_progressivism_DEF:0 "Gallia"
+ GAL_progressivism_ADJ:0 "Gallian"
+ GAL_monarchism:0 "Kingdom of Gallia"
+ GAL_monarchism_DEF:0 "The Kingdom of Gallia"
+ GAL_monarchism_ADJ:0 "Gallian"
+ GAL_fanatical-paganism:0 "Allfadirian Gallia"
+ GAL_fanatical-paganism_DEF:0 "Allfadirian Gallia"
+ GAL_fanatical-paganism_ADJ:0 "Gallian"
+ GAL_socialism:0 "Gallia"
+ GAL_socialism_DEF:0 "Gallia"
+ GAL_socialism_ADJ:0 "Gallian"
+ 
+
+
+ GAL_gallia_coup_monarchism:0 "Gallian State"
+ GAL_gallia_coup_monarchism_ADJ:0 "Gallian"
+ GAL_gallia_coup_monarchism_DEF:0 "The Gallian State"
+ GAL_gallia_coup_fascism:0 "Gallian State"
+ GAL_gallia_coup_fascism_ADJ:0 "Gallian"
+ GAL_gallia_coup_fascism_DEF:0 "The Gallian State"
+
+
+ neuroi.1:0 "Neuroi Resurgance in Hispania!"
+ neuroi.1.d:0 "Neuroi Resurgance in Hispania!"
+ neuroi.1.a:0 "Somebody is going to help us... Right?"
+
+
+
+
+
+
+
+
+
+
+
+ news.237.t:0 "Neuroi are back"
+ news.237.d:0 "..."
+ news.237.a:0 "We shall watch these developments carefully"
+
+ generic.20.t:0 "National Reform"
+ 
+ 
+ galw.1.t:0 "Gallian Researchers Finish Experimental Designs"
+ galw.1.d:0 "Gallian researchers have spent the years since the last neuroi war designing and testing new concepts for a weapon developed specifically for witches. As a final culmination of their research, they have produced multiple backpack styled designs which allow witches to fly much in the style of our airplanes. They're new and rudimentary, but at least now we have a specialized defense mechanism for when they inevitably attack again.\n\nAlthough we have a small number of witches already in our air force who can be assigned these units, we have just barely a reasonable amount of witches within Gallia available for military purposes. Perhaps improving our numbers should be the next step in preparing our neuroi defense."
+ galw.1.a:0 "Excellent!"
+ 
+ galw.100.t:0 "Department of the Witch"
+ galw.100.d:0 "As the third department of the Gallian Socialists, the Department of the Witch will be specifically focused for developing technology and promoting the equality of Gallian witches. The department has already seen handfulls of witches direclty apply - and a couple have already been accepted for enlistment."
+ galw.100.a:0 "Great!"
+ 
+ 
+ gallia.600.t:0 "Our Pride"
+ gallia.601.t:0 "'My Joy'"
+ gallia.602.t:0 "Gallia's Fate"
+
+ 
+ 
+############# TEMP GAL ############
+
+GAL_1936elections:0 "1936 Elections"
+GAL_1936elections_desc:0 "Gallian elections are held every four years, and have generally remain split between left wing and moderate right wing parties. 1936 is rumored to be a potentially special year for Gallia, with socialist parties and factions having a stronger edge than ever before, even within the broad left-wing Parti socialiste."
+GAL_unitedgallia:0 "United Gallia"
+GAL_unitedgallia_desc:0 "The Gallian future is one of both prosperity for every Gallian worker, and a state of perpetual war with the Neuroi. The ultimate meaning of being Gallian, from the time of the Romans to the Bonapartes, has been to find freedom in warfare. The Neuroi will come to know Gallia, and our entire populace will be free from the degeneracies of capitalism that we have wrongfull embraced for years."
+GAL_workersgallia:0 "Worker's Gallia"
+GAL_workersgallia_desc:0 "The Third Gallian Republic has been an excellent step for the people of both Gallia and the world, but in order to progress into the future we must leave behind one of the most important fascets of our century old ideals - that of capitalistic markets. A more democratic economic system, one in which economic structures are socially owned, will put Gallia again at the head of social progress."
+GAL_statusquo:0 "Centrist Victory"
+GAL_statusquo_desc:0 "The Third Gallian Republic has been an excellent step for the people of both Gallia and the world, and we see little need to change that. The socialist reformists fail to see the capability of our current structure to solve their economic concerns, but we believe genuinely that the democratic and a regulated market-based system is unlike any other in the past or future."
+GAL_socdem_victory:0 "Parti socialiste Victory"
+GAL_socdem_victory_desc:0 "The Third Gallian Republic has been an excellent rallying point for democratic ideals throughout its history, and this election proved no different. The moderates in the leading center-left Gallian party have won the majority of the French vote, surpassing the right in the vote and the socialists in the public opinion."
+
+
+
+GAL_1936gallianelections:0 " The 1936 Gallian elections have occurred."
+GAL_wentauthsoc:0 " The Gallian National-Syndicalists won the 1936 elections."
+GAL_stayedstatusquo:0 " The Democrats won the 1936 elections."
+GAL_wentsocdem:0 " The left-wing moderates won the 1936 elections."
+GAL_wentsoc:0 " The Gallian Socialists won the 1936 elections."
+
+GAL_departmentofsolidaritypop:0 "Department of Individuality"
+GAL_departmentoftheworker1:0 "Department of the Worker"
+GAL_bagunits:0 "Gallian Bag Units"
+GAL_DOSmilitary:0 "Department of Individuality: Recruitment"
+GAL_emergencyconstruction:0 "Emergency Construction"
+
+GAL_socialistcountrysides:0 "Socialist Countrysides"
+
+
+
+GAL_italianrevolution_tooltip:0 "§WPuppets §Ythe Venezian Socialist Republic§W, gains a §Ywargoal§W against §YVenezia§W. If the revolution §Gsuceeds§W, you will also gain a §Ywargoal§W against §YRomagna§W."
+
+GAL_consolidationofitaly_tooltip_effect:0 " §WOwns all Italian states owned by §YRomagna§W and §YVenezia§W, and/or your puppets own them. Hasn't taken §YRomagnian Overextension§W or §YVenezian Overextension§W."
+
+
+GAL_noalliaces:0 " Gallia has rejected all witch related alliances."
+
+
+
+GAL_my_pride:0 "My Pride..."
+GAL_my_joy:0 "My Joy..."
+GAL_gallia:0 "Gallia!"
+GAL_republique:0 "République"
+GAL_monarchie:0 "Monarchie"
+GAL_liberte:0 "Liberté"
+GAL_liberte_desc:0 "Liberty; a value so espoused by the liberal regime before us. But what of our fellow Gallians under the [KAR.GetAdjective] yolk? Alsace is Gallian, it was and it always will be - and soon we will show them that. Our Gallians will be free."
+
+GAL_rallying_people:0 "Rallying the People"
+GAL_rallying_people_tooltip:0 "Effect changes based on the ruling party."

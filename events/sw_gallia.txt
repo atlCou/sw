@@ -367,7 +367,7 @@ country_event = {
 			base = 50
 		}
 		add_to_variable = { GAL_authsoc = 1000 }
-		hidden_effect = { country_event = { id = gallia.6 days = 1 } }
+		hidden_effect = { country_event = { id = gallia.6 days = 4 } }
 	}	
 }
 
@@ -504,14 +504,42 @@ country_event = {
 		add_popularity = { ideology = socialism popularity = 0.15 }
 		add_popularity = { ideology = liberal popularity = -0.03 }
 		add_popularity = { ideology = monarchism popularity = -0.07 }
-		add_stability = -0.1
+		add_stability = -0.2
 		set_country_flag = GAL_wentauthsoc
 		set_country_flag = GAL_1936gallianelections
 		set_politics = {
-			ruling_party = socialism
+			ruling_party = communism
 			elections_allowed = no
 		}
+		hidden_effect = {
+			country_event = {
+				id = gallia.12
+				days = 7
+			}
+		}
 	}
+}
+
+
+
+
+
+country_event = {
+	id = gallia.12
+	title = gallia.12.t
+	desc = gallia.12.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.12.a
+		load_focus_tree = Gallia_pride
+		add_stability = -0.3
+	}
+	
 }
 	
 	
@@ -594,7 +622,129 @@ country_event = {
 	}
 }		
 	
+	
+	
+	
+####### Gallian Loyalist Events	
+	
+country_event = {
+	id = gallia.600
+	title = gallia.600.t
+	desc = gallia.600.d
 
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.500.a
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = 50
+		add_war_support = 0.05
+		set_country_flag = GAL_natvictory
+		add_opinion_modifier = {
+			target = KAR
+			modifier = gal_nationalist_victory
+		}
+		set_popularities = {
+			liberal = 4
+			communism = 16
+			monarchism = 37
+			fascism = 23
+			socialism = 20
+		}
+		set_politics = {
+			ruling_party = monarchism
+		}
+		set_cosmetic_tag = GAL_gallia_coup
+	}
+}
+
+
+country_event = {
+	id = gallia.601
+	title = gallia.601.t
+	desc = gallia.601.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.500.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.05
+		every_owned_state = {
+			add_manpower = -1500
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.1
+		}
+	}
+}
+
+
+country_event = {
+	id = gallia.602
+	title = gallia.602.t
+	desc = gallia.602.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.602.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = -0.1
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_country_flag = GAL_republic_flag
+		set_cosmetic_tag = GAL_gallia_coup_post
+	}
+	
+	option = {
+		name = gallia.602.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		set_country_flag = GAL_monarch_flag
+		set_cosmetic_tag = GAL_gallia_coup_post
+	}
+}
+	
+	
+	
+	
 
 
 ####### SOCIALIST EVENTS

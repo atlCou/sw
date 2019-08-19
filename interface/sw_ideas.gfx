@@ -19,4 +19,9 @@ spriteTypes = {
 		name = "GFX_idea_OST_eagle"
 		texturefile = "gfx/interface/ideas/OST_eagle.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_mon_prop"
+		texturefile = "gfx/interface/ideas/GAL_mon_prop.dds"
+	}
 }

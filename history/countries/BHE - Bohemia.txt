@@ -23,11 +23,9 @@ set_politics = {
 }
 
 set_popularities = {
-    liberal = 14
-    socialism = 15
-    communism = 0
-    monarchism = 36
-    fascism = 23
-    fanatical-paganism = 0
+    liberal = 16
+    socialism = 17
+    monarchism = 38
+    fascism = 29
 }
 

@@ -21,3 +21,10 @@ gollob_reign = {
 		}
 	}
 }
+
+GAL_funding_art_decisions = {
+	icon = generic_propaganda
+	availabe = {
+		has_country_flag = GAL_funding_art_decisions_flag
+	}
+}

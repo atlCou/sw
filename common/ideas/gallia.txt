@@ -91,8 +91,84 @@ ideas = {
 			political_power_gain = 0.2
 			MONTHLY_POPULATION = 0.05
 		}
+	}
 	
+	GAL_monarchie_idea = {
+		picture = ROM_king_carol_ii_hedonist
+		
+		modifier = {
+			political_power_gain = 0.1
+			stability_factor = -0.1
+			liberal_drift = 0.025
+			socialism_drift = 0.025
+		}
+	}
 	
+	GAL_monarchie_idea_2 = {
+		picture = ROM_king_carol_ii_hedonist
+		
+		modifier = {
+			political_power_gain = 0.1
+			stability_factor = -0.05
+			liberal_drift = 0.01
+			socialism_drift = 0.01
+		}
+	}
+	
+	GAL_monarchie_idea_3 = {
+		picture = ROM_king_carol_ii_hedonist
+		
+		modifier = {
+			political_power_gain = 0.1
+			stability_factor = 0.05
+		}
+	}
+	
+	GAL_mon_mil = {
+		picture = MEX_politicised_army_2
+	
+		modifier = {
+			army_morale_factor = -0.1
+			mobilization_speed = 0.25
+			mobilization_laws_cost_factor = -0.25
+			army_core_defence_factor = 0.1
+		}
+	}
+	
+	GAL_mon_prop = {
+		picture = GAL_mon_prop
+	
+		modifier = {
+			conscription = 0.02
+		}
+	}
+	
+	GAL_mon_econ = {
+		picture = generic_flexible_foreign_policy
+	
+		modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+		}
+	}
+	
+	GAL_mon_econ_2 = {
+		picture = generic_flexible_foreign_policy
+	
+		modifier = {
+			political_power_gain = 0.1
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+		}
+	}
+	
+	GAL_mon_unions = {
+		picture = generic_production_bonus
+	
+		modifier = {
+			industrial_capacity_factory = 0.05
+		}
+	}
 	
 	
 }

@@ -33,3 +33,22 @@ focus_tree = {
 	shared_focus = GAL_jointdeveloptech
 
 }
+
+
+
+focus_tree = {
+	id = Gallia_pride
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = GAL
+		}
+	}
+	default = no
+	
+	shared_focus = GAL_my_pride
+
+}

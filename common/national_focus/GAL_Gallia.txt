@@ -1050,8 +1050,384 @@ shared_focus = {
 	}
 }
 
-
-
-
-# End
+shared_focus = {
+	id = GAL_my_pride
+	icon = GFX_ballot_suppression
+	x = 16
+	y = 0
+	cost = 2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		country_event = {
+			id = gallia.600
+		}
+	}
 }
+
+
+shared_focus = {
+	id = GAL_my_joy
+	icon = GFX_GAL_joy
+	x = 0
+	y = 1
+	cost = 3
+	relative_position_id = GAL_my_pride
+	prerequisite = { focus = GAL_my_pride }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		country_event = {
+			id = gallia.601
+		}
+	}
+}
+
+
+shared_focus = {
+	id = GAL_gallia
+	icon = GFX_GAL_gallia
+	x = 0
+	y = 2
+	cost = 5
+	relative_position_id = GAL_my_pride
+	prerequisite = { focus = GAL_my_joy }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		country_event = {
+			id = gallia.602
+		}
+	}
+}
+
+
+
+shared_focus = {
+	id = GAL_monarchie
+	icon = GFX_GAL_monarchie
+	x = 8
+	y = 1
+	cost = 5
+	relative_position_id = GAL_gallia
+	prerequisite = { focus = GAL_gallia }
+	mutually_exclusive = { focus = GAL_republique }
+	available_if_capitulated = yes
+	available = {
+		has_country_flag = GAL_monarch_flag
+	}
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		add_ideas = GAL_monarchie_idea
+		add_stability = 0.25
+	}
+}
+
+
+
+shared_focus = {
+	id = GAL_burn_the_docs
+	icon = GFX_GAL_burn_docs
+	x = -2
+	y = 1
+	cost = 5
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_monarchie }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		add_political_power = -50
+		add_popularity = {
+			ideology = socialism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+	}
+}
+
+
+shared_focus = {
+	id = GAL_no_socialist_unions
+	icon = GFX_GAL_monarchie
+	x = -2
+	y = 2
+	cost = 5
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_burn_the_docs	 }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = socialism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		add_ideas = GAL_mon_unions
+	}
+}
+
+
+shared_focus = {
+	id = GAL_mon_witch
+	icon = GFX_GAL_new_witch
+	x = -2
+	y = 3
+	cost = 5
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_no_socialist_unions }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+	}
+}
+
+
+
+shared_focus = {
+	id = GAL_suporting_service
+	icon = GFX_GAL_sekrit_pol
+	x = 2
+	y = 1
+	cost = 5
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_monarchie }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GAL_monarchie_idea
+			add_idea = GAL_monarchie_idea_2
+		}
+	}
+}
+
+
+shared_focus = {
+	id = GAL_cracking_down
+	icon = GFX_GAL_crack_down
+	x = 2
+	y = 2
+	cost = 5
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_suporting_service }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GAL_monarchie_idea_2
+			add_idea = GAL_monarchie_idea_3
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_propaganda
+	icon = GFX_GAL_monarchie
+	x = 2
+	y = 3
+	cost = 5
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_cracking_down }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.05
+		}
+		add_stability = 0.05
+		add_ideas = GAL_mon_prop
+	}
+}
+
+
+shared_focus = {
+	id = GAL_centralize_military
+	icon = GFX_GAL_mon_mil
+	x = 0
+	y = 1
+	cost = 8
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_monarchie }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		add_ideas = GAL_mon_mil
+	}
+}
+
+
+shared_focus = {
+	id = GAL_economic_reactionism
+	icon = GFX_GAL_econ_re
+	x = 0
+	y = 2
+	cost = 8
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_centralize_military }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		add_ideas = GAL_mon_econ
+	}
+}
+
+shared_focus = {
+	id = GAL_funding_the_arts
+	icon = GFX_GAL_art
+	x = 0
+	y = 3
+	cost = 8
+	relative_position_id = GAL_monarchie
+	prerequisite = { focus = GAL_economic_reactionism }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GAL_mon_econ
+			add_idea = GAL_mon_econ_2
+		}
+		unlock_decision_category_tooltip = GAL_funding_art_decisions
+		set_country_flag = GAL_funding_art_decisions_flag
+	}
+}
+
+
+
+
+
+#################
+
+
+shared_focus = {
+	id = GAL_republique
+	icon = GFX_GAL_republic
+	x = -8
+	y = 1
+	cost = 5
+	relative_position_id = GAL_gallia
+	prerequisite = { focus = GAL_gallia }
+	mutually_exclusive = { focus = GAL_monarchie }
+	available = {
+		has_country_flag = GAL_republic_flag
+	}
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+##############
+
+
+shared_focus = {
+	id = GAL_liberte
+	icon = GFX_liberte
+	x = 0
+	y = 2
+	cost = 8
+	dynamic = yes
+	relative_position_id = GAL_gallia
+	prerequisite = { focus = GAL_republique focus = GAL_monarchie }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		KAR = { 
+			add_opinion_modifier = {
+				target = GAL
+				modifier = gal_revanchism_mod
+			}
+		}
+		add_opinion_modifier = {
+				target = KAR
+				modifier = gal_revanchism_mod
+		}
+		add_state_claim = 28
+	}
+}
+
+shared_focus = {
+	id = GAL_rallying_people
+	icon = GFX_liberte
+	x = 0
+	y = 3
+	cost = 8
+	relative_position_id = GAL_gallia
+	prerequisite = { focus = GAL_liberte }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		if = {
+			limit = { has_government = fascism }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_political_power = 50
+		}
+		else_if = {
+			limit = { has_government = monarchism }
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.05
+			}
+			add_stability = 0.05
+		}
+		custom_effect_tooltip = GAL_rallying_people_tooltip
+	}
+}
+
+

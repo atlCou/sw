@@ -87,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Georgette Lemare.dds"
 	expire = "1965.1.1"
-	ideology = marxist-leninism
+	ideology = fascist
 	traits = {
 	}
 }
@@ -118,6 +118,16 @@ create_country_leader = {
 	picture = "Bastina Faure.dds"
 	expire = "1965.1.1"
 	ideology = anarchist_socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chris Keera"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "chris.dds"
+	expire = "1965.1.1"
+	ideology = absolute_monarchism
 	traits = {
 	}
 }
