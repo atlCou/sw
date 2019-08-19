@@ -132,10 +132,43 @@ GAL_noalliaces:0 " Gallia has rejected all witch related alliances."
 GAL_my_pride:0 "My Pride..."
 GAL_my_joy:0 "My Joy..."
 GAL_gallia:0 "Gallia!"
+
 GAL_republique:0 "République"
+GAL_aux_armes:0 "Aux armes!"
+GAL_la_patrie_renaitra:0 "La Patrie Renaîtra"
+GAL_marechal:0 "Maréchal, Maréchal"
+GAL_nous_voila:0 "Nous Voilà!"
+GAL_no_socialists:0 "No Socialists!"
+GAL_no_liberals:0 "No Liberals!"
+GAL_no_monarchists:0 "And No Monarchists!"
+GAL_ost_and_kar:0 "'Que veut cette horde de rois conjurés?'"
+
 GAL_monarchie:0 "Monarchie"
+GAL_burn_the_docs:0 "Burn the Documents"
+GAL_no_socialist_unions:0 "Ban Socialist Unions"
+GAL_mon_witch:0 "A New Witch"
+GAL_centralize_military:0 "Centralize the Military"
+GAL_economic_reactionism:0 "Economic Reactionism"
+GAL_funding_the_arts:0 "Funding the Arts"
+GAL_supporting_service:0 "Our Loyal Secret Forces"
+GAL_cracking_down:0 "Cracking Down Again"
+GAL_propaganda:0 "Propaganda for the King"
+
+
 GAL_liberte:0 "Liberté"
 GAL_liberte_desc:0 "Liberty; a value so espoused by the liberal regime before us. But what of our fellow Gallians under the [KAR.GetAdjective] yolk? Alsace is Gallian, it was and it always will be - and soon we will show them that. Our Gallians will be free."
 
+
+
+
 GAL_rallying_people:0 "Rallying the People"
 GAL_rallying_people_tooltip:0 "Effect changes based on the ruling party."
+
+
+
+GAL_funding_art_decisions:0 "Funding the Arts"
+GAL_mon_unions:0 "Banned Socialist Unions"
+GAL_monarchie_idea:0 "La Monarchie"
+GAL_monarchie_idea_2:0 "La Monarchie"
+GAL_monarchie_idea_3:0 "La Monarchie"
+GAL_mon_prop:0 "Loyalist Revanchist Propaganda"

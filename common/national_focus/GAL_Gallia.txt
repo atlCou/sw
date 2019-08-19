@@ -1112,7 +1112,7 @@ shared_focus = {
 shared_focus = {
 	id = GAL_monarchie
 	icon = GFX_GAL_monarchie
-	x = 8
+	x = 5
 	y = 1
 	cost = 5
 	relative_position_id = GAL_gallia
@@ -1208,7 +1208,7 @@ shared_focus = {
 
 
 shared_focus = {
-	id = GAL_suporting_service
+	id = GAL_supporting_service
 	icon = GFX_GAL_sekrit_pol
 	x = 2
 	y = 1
@@ -1235,7 +1235,7 @@ shared_focus = {
 	y = 2
 	cost = 5
 	relative_position_id = GAL_monarchie
-	prerequisite = { focus = GAL_suporting_service }
+	prerequisite = { focus = GAL_supporting_service }
 	available_if_capitulated = yes
 	ai_will_do = {
 		factor = 50
@@ -1338,7 +1338,7 @@ shared_focus = {
 shared_focus = {
 	id = GAL_republique
 	icon = GFX_GAL_republic
-	x = -8
+	x = -5
 	y = 1
 	cost = 5
 	relative_position_id = GAL_gallia
@@ -1355,6 +1355,167 @@ shared_focus = {
 	}
 }
 
+
+shared_focus = {
+	id = GAL_la_patrie_renaitra
+	icon = GFX_GAL_republic
+	x = 0
+	y = 1
+	cost = 8
+	relative_position_id = GAL_republique
+	prerequisite = { focus = GAL_republique }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		add_stability = 0.1
+	}
+}
+
+
+shared_focus = {
+	id = GAL_marechal
+	icon = GFX_GAL_republic
+	x = 0
+	y = 2
+	cost = 8
+	relative_position_id = GAL_republique
+	prerequisite = { focus = GAL_la_patrie_renaitra }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_nous_voila
+	icon = GFX_GAL_republic
+	x = 0
+	y = 3
+	cost = 8
+	relative_position_id = GAL_republique
+	prerequisite = { focus = GAL_marechal }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		add_war_support = 0.1
+	
+	}
+}
+
+
+shared_focus = {
+	id = GAL_aux_armes
+	icon = GFX_GAL_republic
+	x = -2
+	y = 1
+	cost = 8
+	relative_position_id = GAL_republique
+	prerequisite = { focus = GAL_republique }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+	}
+}
+
+
+shared_focus = {
+	id = GAL_ost_and_kar #Que veut cette horde d'esclaves, De traîtres, de rois conjurés ?
+	icon = GFX_GAL_republic
+	x = -2
+	y = 2
+	cost = 8
+	relative_position_id = GAL_republique
+	prerequisite = { focus = GAL_aux_armes }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+	}
+}
+
+
+
+
+
+
+shared_focus = {
+	id = GAL_no_socialists
+	icon = GFX_GAL_republic
+	x = 2
+	y = 1
+	cost = 8
+	relative_position_id = GAL_republique
+	prerequisite = { focus = GAL_republique }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		add_popularity = {
+			ideology = socialism
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.15
+		}
+		add_political_power = -50
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = GAL_no_liberals
+	icon = GFX_GAL_republic
+	x = 2
+	y = 2
+	cost = 8
+	relative_position_id = GAL_republique
+	prerequisite = { focus = GAL_no_socialists }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.1
+		}
+		add_political_power = -50
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = GAL_no_monarchists
+	icon = GFX_GAL_republic
+	x = 2
+	y = 3
+	cost = 8
+	relative_position_id = GAL_republique
+	prerequisite = { focus = GAL_no_liberals }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 50
+		}
+	completion_reward = {
+		add_popularity = {
+			ideology = monarchism
+			popularity = -0.15
+		}
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
 
 
 
