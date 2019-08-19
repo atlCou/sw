@@ -1165,7 +1165,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_no_socialist_unions
-	icon = GFX_GAL_monarchie
+	icon = GFX_GAL_no_strikes
 	x = -2
 	y = 2
 	cost = 5
@@ -1250,7 +1250,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_propaganda
-	icon = GFX_GAL_monarchie
+	icon = GFX_GAL_mon_prop
 	x = 2
 	y = 3
 	cost = 5
@@ -1397,8 +1397,8 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = GAL_rallying_people
-	icon = GFX_liberte
+	id = GAL_rallying_the_people
+	icon = GFX_focus_secret_rearmament
 	x = 0
 	y = 3
 	cost = 8

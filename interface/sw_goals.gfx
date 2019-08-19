@@ -251,6 +251,14 @@ spriteTypes = {
 		name = "GFX_GAL_new_witch"
 		texturefile = "gfx/interface/goals/GAL_new_witch.dds"
 	}
+	SpriteType = {
+		name = "GFX_GAL_no_strikes"
+		texturefile = "gfx/interface/goals/GAL_no_strikes.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_mon_prop"
+		texturefile = "gfx/interface/goals/GAL_mon_prop.dds"
+	}
 }
 
 

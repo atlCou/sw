@@ -1692,7 +1692,8 @@ country_event = {
 	
 	trigger = {
 			date > 1936.09.01
-		}
+			tag = BAL
+	}
 
 	mean_time_to_happen = {
 		days = 1
