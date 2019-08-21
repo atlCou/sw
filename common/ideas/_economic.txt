@@ -30,7 +30,7 @@ ideas = {
 				OR = {
 					has_war_support > 0.5
 					has_war = yes
-					has_completed_focus = USA_limited_intervention
+					has_completed_focus = LIN_limited_intervention
 				}
 			}
 			
@@ -64,7 +64,7 @@ ideas = {
 				OR = {
 					has_war_support > 0.75
 					has_war = yes
-					has_completed_focus = USA_limited_intervention					
+					has_completed_focus = LIN_limited_intervention					
 				}
 			}
 			
@@ -105,7 +105,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = LIN_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.3
@@ -115,11 +115,11 @@ ideas = {
 			on_add = {
 				if = {
 					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
+						tag = LIN
+						has_completed_focus = LIN_limited_intervention
 						has_defensive_war = no
 					}
-					USA_congress_large_opposition = yes
+					LIN_congress_large_opposition = yes
 				}
 			}
 			
@@ -148,7 +148,7 @@ ideas = {
 					factor = 0 #don't even look at it if you could be taking partial mob
 				}
 				modifier = {
-					tag = ENG
+					tag = BRI
 					has_war = no
 					date < 1937.6.1
 					factor = 0
@@ -173,7 +173,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = LIN_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.5
@@ -196,11 +196,11 @@ ideas = {
 			on_add = {
 				if = {
 					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
+						tag = LIN
+						has_completed_focus = LIN_limited_intervention
 						has_defensive_war = no
 					}
-					USA_congress_large_opposition = yes
+					LIN_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {
@@ -243,7 +243,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = LIN_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.75
@@ -265,11 +265,11 @@ ideas = {
 			on_add = {
 				if = {
 					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
+						tag = LIN
+						has_completed_focus = LIN_limited_intervention
 						has_defensive_war = no
 					}
-					USA_congress_large_opposition = yes
+					LIN_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {
@@ -305,7 +305,7 @@ ideas = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
+						has_completed_focus = LIN_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.9
@@ -315,11 +315,11 @@ ideas = {
 			on_add = {
 				if = {
 					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
+						tag = LIN
+						has_completed_focus = LIN_limited_intervention
 						has_defensive_war = no
 					}
-					USA_congress_large_opposition = yes
+					LIN_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {
@@ -351,7 +351,7 @@ ideas = {
 				modifier = {
 					factor = 0
 
-					tag = GER
+					tag = KAR
 					NOT = { has_tech = volkssturm }
 					has_war = yes
 					date < 1944.01.01
@@ -359,7 +359,7 @@ ideas = {
 				modifier = {
 					factor = 0
 
-					tag = SOV
+					tag = ORU
 					has_war = yes
 					OR = {
 						has_manpower < 2000000
@@ -430,7 +430,7 @@ ideas = {
 				modifier = {
 					factor = 600
 					tag = ROM
-					is_in_faction_with = GER
+					is_in_faction_with = KAR
 				}
    			}
 		}
@@ -569,7 +569,7 @@ ideas = {
 					has_idea = tot_economic_mobilisation
 				}
 				OR = {
-					NOT = {	tag = SOV }
+					NOT = {	tag = ORU }
 					NOT = { has_opinion_modifier = MR_pact }
 				}
 

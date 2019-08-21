@@ -1,5 +1,5 @@
-﻿GER = {
-	fleet_names_template = FLEET_NAME_GER
+﻿KAR = {
+	fleet_names_template = FLEET_NAME_KAR
 	submarine = {
 		prefix = ""
 		generic = { "Unterseeboot" }
@@ -123,36 +123,36 @@
 	infantry = {
 		prefix = ""
 		generic = { "Infanterie-Division" }
-		generic_pattern = "UNIT_GENERIC_NAME_GER"
+		generic_pattern = "UNIT_GENERIC_NAME_KAR"
 	}
 	#motorized = {
 	#	prefix = ""
 	#	generic = { "" }
-	#	generic_pattern = "UNIT_GENERIC_NAME_GER"
+	#	generic_pattern = "UNIT_GENERIC_NAME_KAR"
 	#	unique = {}
 	#}
 	mountaineers = {
 		prefix = ""
 		generic = { "Gebirgsbrigade" }
-		generic_pattern = "UNIT_GENERIC_NAME_GER"
+		generic_pattern = "UNIT_GENERIC_NAME_KAR"
 		unique = {}
 	}
 	cavalry = {
 		prefix = ""
 		generic = { "Kavallerie-Kommando" }
-		generic_pattern = "UNIT_GENERIC_NAME_GER"
+		generic_pattern = "UNIT_GENERIC_NAME_KAR"
 		unique = {}
 	}
 	light_armor = {
 		prefix = ""
 		generic = { "Panzer-Division" }
-		generic_pattern = "UNIT_GENERIC_NAME_GER"
+		generic_pattern = "UNIT_GENERIC_NAME_KAR"
 		unique = {}
 	}
 	medium_armor = {
 		prefix = ""
 		generic = { "Panzer-Division" }
-		generic_pattern = "UNIT_GENERIC_NAME_GER"
+		generic_pattern = "UNIT_GENERIC_NAME_KAR"
 		unique = {}
 	}
 }

@@ -268,7 +268,7 @@ ideas = {
 		}
 	}
 
-	# MILITARY
+	# MILRMARY
 	army_chief = {
 
 		kanin_kotohito = {

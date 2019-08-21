@@ -1089,7 +1089,7 @@ country_event = {
 	
 	option = {
 		name = gallia.1020.a
-		ITA = { 
+		RMA = { 
 			transfer_state = 736
 			transfer_state = 160
 			transfer_state = 161
@@ -1182,7 +1182,7 @@ country_event = {
 				}
 			}
 		}
-		GAL = { puppet = ITA }
+		GAL = { puppet = RMA }
 		
 	}
 	

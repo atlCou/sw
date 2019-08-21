@@ -1105,7 +1105,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "JAP"
+			creator = "FUS"
 		}
 		requested_factories = 3
 		progress = 0.1
@@ -1115,7 +1115,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "JAP" 
+			creator = "FUS" 
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -1125,7 +1125,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "JAP" 
+			creator = "FUS" 
 		}
 		requested_factories = 1
 		progress = 0.4
@@ -1135,7 +1135,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
-			creator = "JAP" 
+			creator = "FUS" 
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -1145,7 +1145,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = cv_nav_bomber_equipment_1
-			creator = "JAP" 
+			creator = "FUS" 
 		}
 		requested_factories = 1
 		progress = 0.2
@@ -1157,7 +1157,7 @@ instant_effect =
 		add_equipment_production = {				# "Hiei"
 			equipment = {
 				type = battleship_2
-				creator = "JAP"
+				creator = "FUS"
 			}
 			requested_factories = 1
 			progress = 0.2
@@ -1167,7 +1167,7 @@ instant_effect =
 			equipment = {
 				type = carrier_2
 
-				creator = "JAP" 
+				creator = "FUS" 
 			}
 			requested_factories = 1
 			progress = 0.66
@@ -1178,7 +1178,7 @@ instant_effect =
 			equipment = {
 				type = heavy_cruiser_2
 
-				creator = "JAP" 
+				creator = "FUS" 
 			}
 			requested_factories = 1
 			progress = 0.2
@@ -1187,7 +1187,7 @@ instant_effect =
 		add_equipment_production = {				# "Shiratsuyu" "Shigure" "Murasame" "Harusame" "Samidare"
 			equipment = {
 				type = destroyer_1
-				creator = "JAP" 
+				creator = "FUS" 
 				version_name = "Fubuki Class"
 			}
 			requested_factories = 3
@@ -1197,7 +1197,7 @@ instant_effect =
 		add_equipment_production = {				# "I-172" "I-73" "I-174" "I-175"
 			equipment = {
 				type = submarine_2
-				creator = "JAP" 
+				creator = "FUS" 
 			}
 			requested_factories = 2
 			progress = 0.7
@@ -1207,7 +1207,7 @@ instant_effect =
 		add_equipment_production = {				# "I-7" "I-8"
 			equipment = {
 				type = submarine_1
-				creator = "JAP" 
+				creator = "FUS" 
 				version_name = "Kaidai III Class"
 			}
 			requested_factories = 1
@@ -1217,7 +1217,7 @@ instant_effect =
 		add_equipment_production = {				# "Ro-34"
 			equipment = {
 				type = submarine_1
-				creator = "JAP" 
+				creator = "FUS" 
 			}
 			requested_factories = 1
 			progress = 0.8

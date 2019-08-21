@@ -1,4 +1,4 @@
-﻿FRA = {
+﻿GAL = {
 	submarine = {
 		prefix = ""
 		generic = { "Sous-Marin" }
@@ -85,37 +85,37 @@
 	infantry = {
 		prefix = ""
 		generic = { "Division d'Infanterie" }
-		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		generic_pattern = "UNIT_GENERIC_NAME_GAL"
 		unique = {}
 	}
 	motorized = {
 		prefix = ""
 		generic = { "Div. d'Infanterie Motorisée" }
-		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		generic_pattern = "UNIT_GENERIC_NAME_GAL"
 		unique = {}
 	}
 	mountaineers = {
 		prefix = ""
 		generic = { "Division d'Infanterie Alpine" }
-		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		generic_pattern = "UNIT_GENERIC_NAME_GAL"
 		unique = {}
 	}
 	cavalry = {
 		prefix = ""
 		generic = { "Division de Cavalerie" }
-		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		generic_pattern = "UNIT_GENERIC_NAME_GAL"
 		unique = {}
 	}
 	light_armor = {
 		prefix = ""
 		generic = { "Brigade de Chars de Combat" }
-		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		generic_pattern = "UNIT_GENERIC_NAME_GAL"
 		unique = {}
 	}
 	medium_armor = {
 		prefix = ""
 		generic = { "Brigade de Chars de Combat" }
-		generic_pattern = "UNIT_GENERIC_NAME_FRA"
+		generic_pattern = "UNIT_GENERIC_NAME_GAL"
 		unique = {}
 	}
 }

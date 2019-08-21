@@ -21,7 +21,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_mon_prop"
+		name = "GFX_idea_mon_prop"
 		texturefile = "gfx/interface/ideas/GAL_mon_prop.dds"
 	}
 }

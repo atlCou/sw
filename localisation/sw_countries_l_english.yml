@@ -502,12 +502,12 @@
  NRO_authoritarian-socialism_ADJ:0 "Neuroian"
  
  
- ITA_socialism:0 "Italian Socialist Republic"
- ITA_socialism_DEF:0 "the Italian Socialist Republic"
- ITA_socialism_ADJ:0 "Italian"
- ITA_communism:0 "Italian Socialist Republic"
- ITA_communism_DEF:0 "the Italian Socialist Republic"
- ITA_communism_ADJ:0 "Italian"
+ RMA_socialism:0 "Italian Socialist Republic"
+ RMA_socialism_DEF:0 "the Italian Socialist Republic"
+ RMA_socialism_ADJ:0 "Italian"
+ RMA_communism:0 "Italian Socialist Republic"
+ RMA_communism_DEF:0 "the Italian Socialist Republic"
+ RMA_communism_ADJ:0 "Italian"
  
  
  

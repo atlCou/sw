@@ -99,11 +99,11 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = ENG
+						original_tag = BRI
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
+						has_completed_focus = BRI_concessions_to_the_trade_unions
 					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+					NOT = { has_country_flag = BRI_cannot_increase_conscription_law }
 				}
 			}
 
@@ -119,7 +119,7 @@ ideas = {
 					manpower_per_military_factory <  1000
 				}
 				modifier = {
-					tag = ENG
+					tag = BRI
 					has_idea_with_trait = military_theorist
 					factor = 20
 				}
@@ -181,11 +181,11 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = ENG
+						original_tag = BRI
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
+						has_completed_focus = BRI_concessions_to_the_trade_unions
 					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+					NOT = { has_country_flag = BRI_cannot_increase_conscription_law }
 				}
 			}
 
@@ -280,11 +280,11 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = ENG
+						original_tag = BRI
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
+						has_completed_focus = BRI_concessions_to_the_trade_unions
 					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+					NOT = { has_country_flag = BRI_cannot_increase_conscription_law }
 				}
 			}
 
@@ -304,7 +304,7 @@ ideas = {
 					#Block has plenty manpower
 					factor = 0
 					NOT = { tag = CHI }
-					NOT = { tag = SOV }
+					NOT = { tag = ORU }
 					manpower_per_military_factory >  3000
 				}
 
@@ -318,12 +318,12 @@ ideas = {
 				modifier = { # germany needs this before russia, badly
 					factor = 10
 
-					original_tag = GER
+					original_tag = KAR
 					has_manpower < 2000000
 				}
 				modifier = {
 					factor = 1000
-					original_tag = SOV
+					original_tag = ORU
 					check_variable = { manpower_k < 3000 }
 				}
 
@@ -398,11 +398,11 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = ENG
+						original_tag = BRI
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
+						has_completed_focus = BRI_concessions_to_the_trade_unions
 					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+					NOT = { has_country_flag = BRI_cannot_increase_conscription_law }
 				}
 			}
 
@@ -433,7 +433,7 @@ ideas = {
 				}
 				modifier = {
 					factor = 10
-					original_tag = SOV
+					original_tag = ORU
 					date > 1943.1.1
 					has_manpower < 2000000	
 				}
@@ -508,11 +508,11 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = ENG
+						original_tag = BRI
 						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
+						has_completed_focus = BRI_concessions_to_the_trade_unions
 					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+					NOT = { has_country_flag = BRI_cannot_increase_conscription_law }
 				}
 			}
 

@@ -3,7 +3,7 @@ ideas = {
 	
 		OST_multicultural = {
 		
-			picture = FRA_scw_intervention_republicans_focus
+			picture = GAL_scw_intervention_republicans_focus
 			
 			modifier = {
 				stability_weekly = -0.01
@@ -17,7 +17,7 @@ ideas = {
 		
 		OST_multicultural_2 = {
 		
-			picture = FRA_scw_intervention_republicans_focus
+			picture = GAL_scw_intervention_republicans_focus
 			
 			modifier = {
 				political_power_gain = -0.1
@@ -29,7 +29,7 @@ ideas = {
 		
 		OST_multicultural_3 = {
 		
-			picture = FRA_scw_intervention_republicans_focus
+			picture = GAL_scw_intervention_republicans_focus
 			
 			modifier = {
 				political_power_gain = -0.05
@@ -133,7 +133,7 @@ ideas = {
 		
 		OST_propaganda_institutions_idea = {
 		
-			picture = FRA_national_mobilization_focus
+			picture = GAL_national_mobilization_focus
 			
 			modifier = {
 				stability_weekly = 0.01

@@ -134,22 +134,22 @@ SPR_civil_war = {
 	color_ui = rgb { 245 123 38 }
 }
 
-GER_civil_war = {
+KAR_civil_war = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
 }
 
-GER_provisional_gvt = {
+KAR_provisional_gvt = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 115 115 115 }
 }
 
-GER_german_empire = {
+KAR_german_empire = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 115 115 115 }
 }
 
-GER_german_monarchy = {
+KAR_german_monarchy = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 115 115 115 }
 }
@@ -162,11 +162,11 @@ MAN_restored = {
 	color = rgb { 237 152 18 }
 	color_ui = rgb { 224 139 5 }
 }
-JAP_showa_restoration = {
+FUS_showa_restoration = {
 	color = rgb { 230 230 230 }
 }
 
-GER_greater_german_reich = {
+KAR_greater_german_reich = {
 	color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
 }
@@ -187,13 +187,13 @@ KAR_pagan = {
 }
 
 GAL_gallia_coup = {
-	color = rgb { 225 225 225 }
-	color_ui = rgb { 25 25 25 }
+	color = rgb { 19 44 100 }
+	color_ui = rgb { 19 44 100 }
 }
 
 GAL_gallia_coup_post = {
-	color = rgb { 225 225 225 }
-	color_ui = rgb { 25 25 25 }
+	color = rgb { 19 44 100 }
+	color_ui = rgb { 19 44 100 }
 }
 
 OST_Gollob = {

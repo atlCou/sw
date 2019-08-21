@@ -247,7 +247,7 @@ ideas = {
 			traits = { naval_theorist }
 		}
 	}
-	# MILITARY
+	# MILRMARY
 	army_chief = {
 
 

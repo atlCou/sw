@@ -1,4 +1,4 @@
-﻿ENG = {
+﻿BRI = {
 	submarine = {
 		prefix = "HMS"
 		generic = { "Submarine" }

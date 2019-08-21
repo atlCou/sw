@@ -1,5 +1,5 @@
-﻿SOV = {
-	fleet_names_template = FLEET_NAME_SOV
+﻿ORU = {
+	fleet_names_template = FLEET_NAME_ORU
 	submarine = {
 		prefix = ""
 		generic = { "Submarina" }
@@ -98,31 +98,31 @@
 	infantry = {
 		prefix = ""
 		generic = { "Strelkovaya Diviziya" }
-		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		generic_pattern = "UNIT_GENERIC_NAME_ORU"
 		unique = {}
 	}
 	motorized = {
 		prefix = ""
 		generic = { "Motostrelkovaya Diviziya" }
-		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		generic_pattern = "UNIT_GENERIC_NAME_ORU"
 		unique = {}
 	}
 	mountaineers = {
 		prefix = ""
 		generic = { "Gornostrelkovaya Diviziya" }
-		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		generic_pattern = "UNIT_GENERIC_NAME_ORU"
 		unique = {}
 	}
 	cavalry = {
 		prefix = ""
 		generic = { "Kavaleriyskaya Diviziya" }
-		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		generic_pattern = "UNIT_GENERIC_NAME_ORU"
 		unique = {}
 	}
 	light_armor = {
 		prefix = ""
 		generic = { "Mekhanizirovanaya Korpus" }
-		generic_pattern = "UNIT_GENERIC_NAME_SOV"
+		generic_pattern = "UNIT_GENERIC_NAME_ORU"
 		unique = {}
 	}
 }

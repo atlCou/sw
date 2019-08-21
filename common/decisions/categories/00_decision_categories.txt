@@ -71,9 +71,9 @@ fascism_on_the_rise = {
 			AND = {
 				has_dlc = "Man the Guns"
 				OR = {
-					original_tag = USA
+					original_tag = LIN
 					original_tag = MEX
-					original_tag = ENG
+					original_tag = BRI
 				}
 			}
 		}
@@ -106,9 +106,9 @@ communism_on_the_rise = {
 			AND = {
 				has_dlc = "Man the Guns"
 				OR = {
-					original_tag = USA
+					original_tag = LIN
 					original_tag = MEX
-					original_tag = ENG
+					original_tag = BRI
 				}
 			}
 		}

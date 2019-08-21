@@ -1,5 +1,5 @@
-﻿USA = {
-	fleet_names_template = FLEET_NAME_USA
+﻿LIN = {
+	fleet_names_template = FLEET_NAME_LIN
 	submarine = {
 		prefix = "USS"
 		generic = { "Submarine" }

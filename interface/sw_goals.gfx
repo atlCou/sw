@@ -259,6 +259,26 @@ spriteTypes = {
 		name = "GFX_GAL_mon_prop"
 		texturefile = "gfx/interface/goals/GAL_mon_prop.dds"
 	}
+	SpriteType = {
+		name = "GFX_GAL_territ_prop"
+		texturefile = "gfx/interface/goals/GAL_territ_prop.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_mil_econ_right"
+		texturefile = "gfx/interface/goals/GAL_mil_econ_right.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_marechal_focus"
+		texturefile = "gfx/interface/goals/GAL_marechal_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_nous_voila_focus"
+		texturefile = "gfx/interface/goals/GAL_nous_voila_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_homeland"
+		texturefile = "gfx/interface/goals/GAL_homeland.dds"
+	}
 }
 
 

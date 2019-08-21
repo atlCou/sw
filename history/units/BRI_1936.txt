@@ -925,7 +925,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "ENG"
+			creator = "BRI"
 		}
 		requested_factories = 3
 		progress = 0.1
@@ -935,7 +935,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "ENG" 
+			creator = "BRI" 
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -945,7 +945,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_1
-			creator = "ENG" 
+			creator = "BRI" 
 		}
 		requested_factories = 1
 		progress = 0.4
@@ -955,7 +955,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
-			creator = "ENG" 
+			creator = "BRI" 
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -965,7 +965,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = tac_bomber_equipment_0
-			creator = "ENG" 
+			creator = "BRI" 
 		}
 		requested_factories = 1
 		progress = 0.1
@@ -977,7 +977,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = destroyer_2
-			creator = "ENG" 
+			creator = "BRI" 
 		}
 		requested_factories = 3
 		progress = 0.33
@@ -986,7 +986,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = destroyer_2
-			creator = "ENG" 
+			creator = "BRI" 
 		}
 		requested_factories = 3
 		progress = 0.33
@@ -995,7 +995,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = destroyer_2
-			creator = "ENG" 
+			creator = "BRI" 
 		}
 		requested_factories = 3
 		progress = 0.33
@@ -1005,7 +1005,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = submarine_1
-			creator = "ENG" 
+			creator = "BRI" 
 			version_name = "S Class"
 		}
 		requested_factories = 2
@@ -1016,7 +1016,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_cruiser_1
-			creator = "ENG" 
+			creator = "BRI" 
 			version_name = "Amphion Class"
 		}
 		requested_factories = 1
@@ -1026,7 +1026,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_cruiser_1
-			creator = "ENG" 
+			creator = "BRI" 
 			version_name = "Amphion Class"
 		}
 		requested_factories = 1
@@ -1036,7 +1036,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_cruiser_1
-			creator = "ENG" 
+			creator = "BRI" 
 			version_name = "Amphion Class"
 		}
 		requested_factories = 1

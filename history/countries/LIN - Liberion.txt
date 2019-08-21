@@ -65,13 +65,13 @@ give_guarantee = URG
 
 	#adding ministers
 	add_ideas = {
-		USA_robert_taft
+		LIN_robert_taft
 		carl_spaatz
 		jimmy_doolittle
 		army_ordnance_department
 		general_electric
 		robert_goddard
-		USA_prepare_intervention
+		LIN_prepare_intervention
 
 		#laws
 		isolation
@@ -81,21 +81,21 @@ give_guarantee = URG
 	}
 
 	#focuses
-	unlock_national_focus = USA_wpa
-	unlock_national_focus = USA_war_propaganda
-	unlock_national_focus = USA_prepare_intervention
-	complete_national_focus = USA_military_construction
-	complete_national_focus = USA_air_war_plans_division
-	complete_national_focus = USA_reinforce_monroe_doctrine
-	complete_national_focus = USA_bureau_of_ships
-	complete_national_focus = USA_escort_effort
-	complete_national_focus = USA_amphibious_operations
-	complete_national_focus = USA_expand_the_USMC
-	complete_national_focus = USA_convoy_tactics
-	complete_national_focus = USA_fund_the_navy
+	unlock_national_focus = LIN_wpa
+	unlock_national_focus = LIN_war_propaganda
+	unlock_national_focus = LIN_prepare_intervention
+	complete_national_focus = LIN_military_construction
+	complete_national_focus = LIN_air_war_plans_division
+	complete_national_focus = LIN_reinforce_monroe_doctrine
+	complete_national_focus = LIN_bureau_of_ships
+	complete_national_focus = LIN_escort_effort
+	complete_national_focus = LIN_amphibious_operations
+	complete_national_focus = LIN_expand_the_USMC
+	complete_national_focus = LIN_convoy_tactics
+	complete_national_focus = LIN_fund_the_navy
 
 	set_global_flag = earhart_disappeared
-	oob = "USA_1939"
+	oob = "LIN_1939"
 	set_technology = {
 		fighter1 = 1
 		cv_fighter1 = 1
@@ -227,7 +227,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "George S. Patton"
-		picture = "Portrait_USA_George_S_Patton.dds"
+		picture = "Portrait_LIN_George_S_Patton.dds"
 	traits = {  trickster panzer_leader }
 	skill = 5
 
@@ -235,7 +235,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Omar Bradley"
-		picture = "Portrait_USA_Omar_Bradley.dds"
+		picture = "Portrait_LIN_Omar_Bradley.dds"
 	traits = {  trait_engineer  }
 	skill = 5
 
@@ -243,7 +243,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
-		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+		picture = "Portrait_LIN_Dwight_D_Eisenhower.dds"
 	traits = { logistics_wizard offensive_doctrine }
 	skill = 5
 
@@ -251,7 +251,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Geoffrey Keyes"
-		picture = "Portrait_USA_Geoffrey_Keyes.dds"
+		picture = "Portrait_LIN_Geoffrey_Keyes.dds"
 	traits = { panzer_leader }
 	skill = 2
 
@@ -259,7 +259,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Lucian Truscott"
-		picture = "Portrait_USA_Lucian_Truscott.dds"
+		picture = "Portrait_LIN_Lucian_Truscott.dds"
 	traits = { trait_engineer  }
 	skill = 3
 
@@ -267,7 +267,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Mark Clark"
-		picture = "Portrait_USA_Mark_W_Clark.dds"
+		picture = "Portrait_LIN_Mark_W_Clark.dds"
 	traits = {  }
 	skill = 4
 
@@ -276,7 +276,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Douglas MacArthur"
 	id = 57
-		picture = "Portrait_USA_Douglas_MacArthur.dds"
+		picture = "Portrait_LIN_Douglas_MacArthur.dds"
 	traits = { defensive_doctrine offensive_doctrine  }
 	skill = 4
 
@@ -284,7 +284,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Walter Krueger"
-		picture = "Portrait_USA_Walter_Krueger.dds"
+		picture = "Portrait_LIN_Walter_Krueger.dds"
 	traits = {  }
 	skill = 3
 
@@ -292,7 +292,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Lloyd Fredendall"
-		picture = "Portrait_USA_Lloyd_Fredendall.dds"
+		picture = "Portrait_LIN_Lloyd_Fredendall.dds"
 	traits = {  }
 	skill = 2
 
@@ -300,7 +300,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Leslie McNair"
-		picture = "Portrait_USA_Lesley_McNair.dds"
+		picture = "Portrait_LIN_Lesley_McNair.dds"
 	traits = {  old_guard }
 	skill = 2
 
@@ -308,14 +308,14 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Jonathan Wainwright"
-		picture = "Portrait_USA_Jonathan_Wainwright.dds"
+		picture = "Portrait_LIN_Jonathan_Wainwright.dds"
 	traits = {  }
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Russell Hartle"
-		picture = "Portrait_USA_Russell_P_Hartle.dds"
+		picture = "Portrait_LIN_Russell_P_Hartle.dds"
 	traits = {  }
 	skill = 1
 	rank = 1
@@ -323,28 +323,28 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Leonard Gerow"
-	picture = "Portrait_USA_Leonard_T_Gerow.dds"
+	picture = "Portrait_LIN_Leonard_T_Gerow.dds"
 	traits = {  }
 	skill = 3
 }
 
 create_corps_commander = {
 	name = "Edward Brooks"
-		picture = "Portrait_USA_Edward_Brooks.dds"
+		picture = "Portrait_LIN_Edward_Brooks.dds"
 	traits = { panzer_leader }
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Clarence Huebner"
-		picture = "Portrait_USA_Clarence_Huebner.dds"
+		picture = "Portrait_LIN_Clarence_Huebner.dds"
 	traits = {  }
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Alexander Patch"
-		picture = "Portrait_USA_Alexander_Patch.dds"
+		picture = "Portrait_LIN_Alexander_Patch.dds"
 	traits = {  commando }
 	skill = 3
 
@@ -352,7 +352,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William Simpson"
-		picture = "Portrait_USA_William_Hood_Simpson.dds"
+		picture = "Portrait_LIN_William_Hood_Simpson.dds"
 	traits = {  }
 	skill = 3
 
@@ -360,7 +360,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "J. Lawton Collins"
-		picture = "Portrait_USA_Lawton_Collins.dds"
+		picture = "Portrait_LIN_Lawton_Collins.dds"
 	traits = {  trickster }
 	skill = 3
 
@@ -368,7 +368,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Courtney Hodges"
-		picture = "Portrait_USA_Cortney_Hodges.dds"
+		picture = "Portrait_LIN_Cortney_Hodges.dds"
 	traits = {  panzer_leader }
 	skill = 4
 
@@ -376,77 +376,77 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Joseph Stilwell"
-		picture = "Portrait_USA_Joseph_Stilwell.dds"
+		picture = "Portrait_LIN_Joseph_Stilwell.dds"
 	traits = {  }
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Oscar Griswold"
-		picture = "Portrait_USA_Oscar_Griswold.dds"
+		picture = "Portrait_LIN_Oscar_Griswold.dds"
 	traits = {   }
 	skill = 2
 }
 
 create_corps_commander = {
 	name = "Maurice Rose"
-		picture = "Portrait_USA_Maurice_Rose.dds"
+		picture = "Portrait_LIN_Maurice_Rose.dds"
 	traits = { panzer_leader  }
 	skill = 3
 }
 
 create_navy_leader = {
 	name = "Ernest King"
-		picture = "Portrait_USA_Earnest_King.dds"
+		picture = "Portrait_LIN_Earnest_King.dds"
 	traits = { blockade_runner superior_tactician }
 	skill = 5
 }
 
 create_navy_leader = {
 	name = "Chester W. Nimitz"
-		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+		picture = "Portrait_LIN_Chester_W_Nimitz.dds"
 	traits = { superior_tactician spotter }
 	skill = 5
 }
 
 create_navy_leader = {
 	name = "William Halsey, Jr."
-		picture = "Portrait_USA_William_Halsey_Jr.dds"
+		picture = "Portrait_LIN_William_Halsey_Jr.dds"
 	traits = { superior_tactician spotter }
 	skill = 4
 }
 
 create_navy_leader = {
 	name = "Frank Jack Fletcher"
-		picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
+		picture = "Portrait_LIN_Frank_Jack_Fletcher.dds"
 	traits = { superior_tactician spotter }
 	skill = 3
 }
 
 create_navy_leader = {
 	name = "Raymond A. Spruance"
-		picture = "Portrait_USA_Raymond_A_Spruance.dds"
+		picture = "Portrait_LIN_Raymond_A_Spruance.dds"
 	traits = { superior_tactician }
 	skill = 4
 }
 
 create_navy_leader = {
 	name = "Harold Rainsford Stark"
-		picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
+		picture = "Portrait_LIN_Harold_Rainsford_Stark.dds"
 	traits = { blockade_runner spotter }
 	skill = 2
 }
 
 create_navy_leader = {
 	name = "Arleigh Burke"
-		picture = "Portrait_USA_Arleigh_Burke.dds"
+		picture = "Portrait_LIN_Arleigh_Burke.dds"
 	traits = { old_guard_navy superior_tactician }
 	skill = 4
 }
 
 create_navy_leader = {
 	name = "Charles M. Cooke, Jr."
-		picture = "Portrait_USA_Charles_M_Cooke.dds"
+		picture = "Portrait_LIN_Charles_M_Cooke.dds"
 	traits = {  }
 	skill = 2
 }

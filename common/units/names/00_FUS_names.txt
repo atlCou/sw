@@ -1,4 +1,4 @@
-﻿JAP = {
+﻿FUS = {
 	submarine = {
 		prefix = ""
 		generic = { "Sensuikan" }
@@ -113,31 +113,31 @@
 	infantry = {
 		prefix = ""
 		generic = { "Hoheishidan" }
-		generic_pattern = "UNIT_GENERIC_NAME_JAP"
+		generic_pattern = "UNIT_GENERIC_NAME_FUS"
 		unique = {}
 	}
 	motorized = {
 		prefix = ""
 		generic = { "Hoheishidan" }
-		generic_pattern = "UNIT_GENERIC_NAME_JAP"
+		generic_pattern = "UNIT_GENERIC_NAME_FUS"
 		unique = {}
 	}
 	cavalry = {
 		prefix = ""
 		generic = { "Kiheishidan" }
-		generic_pattern = "UNIT_GENERIC_NAME_JAP"
+		generic_pattern = "UNIT_GENERIC_NAME_FUS"
 		unique = {}
 	}
 	light_armor = {
 		prefix = ""
 		generic = { "Senshashidan" }
-		generic_pattern = "UNIT_GENERIC_NAME_JAP"
+		generic_pattern = "UNIT_GENERIC_NAME_FUS"
 		unique = {}
 	}
 	medium_armor = {
 		prefix = ""
 		generic = { "Senshashidan" }
-		generic_pattern = "UNIT_GENERIC_NAME_JAP"
+		generic_pattern = "UNIT_GENERIC_NAME_FUS"
 		unique = {}
 	}
 }

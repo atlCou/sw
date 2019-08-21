@@ -744,7 +744,7 @@ units = {
 	}
 
 
-	### METRPOLITAN GALNCE ###
+	### METRPOLRMAN GALNCE ###
 	navy = {				
 		name = "1ère Région Navale"			
 		base = 575
