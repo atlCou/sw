@@ -761,7 +761,7 @@ focus_tree = {
 		icon = GFX_Star_Politics
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		
 		relative_position_id = OST_closing_the_borders
 		
@@ -798,7 +798,7 @@ focus_tree = {
 		icon = GFX_Star_Politics
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 		
 		relative_position_id = OST_closing_the_borders
 		
@@ -961,6 +961,101 @@ focus_tree = {
 			add_ideas = { OST_bureau_of_youth_idea }
 		}
 	}
+	
+	
+	focus = {
+		id = OST_a_new_bureau_of_intelligence
+		icon = GFX_Star_Politics
+		x = 4
+		y = 5
+		cost = 5
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_bureau_of_youth }
+		prerequisite = { focus = OST_bureau_of_information }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { OST_bureau_of_youth_idea }
+			add_stability = 0.2
+		}
+	}
+	
+	
+	
+	focus = {
+		id = OST_coming_together
+		icon = GFX_Star_Politics
+		x = 0
+		y = 6
+		cost = 5
+		
+		relative_position_id = OST_the_time_is_right
+		
+		available = {
+			is_puppet = no
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_a_new_bureau_of_intelligence }
+		prerequisite = { focus = OST_value_from_service }
+		prerequisite = { focus = OST_no_special_witches }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.15
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = OST_dacian_subversion
+		icon = GFX_Star_Politics
+		x = -2
+		y = 1
+		cost = 5
+		
+		relative_position_id = OST_coming_together
+		
+		available = {
+			is_puppet = no
+			DAC = { exists = yes NOT = { is_puppet_of = OST } }
+		}
+		
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		prerequisite = { focus = OST_coming_together }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			DAC = {
+				country_event = {
+					id = ost.300
+				}
+			}
+		}
+	}
+	
 	
 	
 

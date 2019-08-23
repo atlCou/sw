@@ -1,5 +1,44 @@
 ﻿l_english: 
  
+ OST_Gollob_fascism:0 "Donaustaat"
+ OST_Gollob_fascism_DEF:0 "The Danubian State"
+ OST_Gollob_fascism_ADJ:0 "Danubian"
+ OST_Gollob_communism:0 "Donaustaat"
+ OST_Gollob_communism_DEF:0 "The Danubian State"
+ OST_Gollob_communism_ADJ:0 "Danubian"
+ OST_dominion_monarchism:0 "Dominion of Ostmark"
+ OST_dominion_monarchism_DEF:0 "The Dominion of Ostmark"
+ OST_dominion_monarchism_ADJ:0 "Ostmarker"
+ OST_crumbled_liberal:0 "Ostmark"
+ OST_crumbled_liberal_DEF:0 "Ostmark"
+ OST_crumbled_liberal_ADJ:0 "Ostmarker"
+ OST_crumbled_monarchism:0 "Kingdom of Ostmark"
+ OST_crumbled_monarchism_DEF:0 "the Kingdom of Ostmark"
+ OST_crumbled_monarchism_ADJ:0 "Ostmarker"
+ OST_crumbled_fascism:0 "State of Ostmark"
+ OST_crumbled_fascism_DEF:0 "the State of Ostmark"
+ OST_crumbled_fascism_ADJ:0 "Ostmarker"
+ OST_karlslander_puppet_fascism:0 "Karlslander Ostmark"
+ OST_karlslander_puppet_fascism_DEF:0 "Karlslander Ostmark"
+ OST_karlslander_puppet_fascism_ADJ:0 "Ostmarker"
+ OST_Gollob_transition_ultra-nationalism:0 "Empire of Ostmark"
+ OST_Gollob_transition_ultra-nationalism_DEF:0 "The Empire of Ostmark"
+ OST_Gollob_transition_ultra-nationalism_ADJ:0 "Ostmarker"
+ 
+ KA1_communism:0 "Oststaat"
+ KA2_communism:0 "Brandenburgerstaat"
+ KA3_communism:0 "Hamburgerstaat"
+ KA5_communism:0 "Sudstaat"
+ KA4_communism:0 "Rheinstaat"
+ 
+ 
+ DAC_GOLLOB_PUPPET_communism:0 "Dakerstaat"
+ DAC_GOLLOB_PUPPET_communism_DEF:0 "The Dakerstaat"
+ DAC_GOLLOB_PUPPET_communism_ADJ:0 "Dacian"
+ KAR_GOLLOB_PUPPET_communism:0 "Karlslanderstaat"
+ KAR_GOLLOB_PUPPET_communism_DEF:0 "Karlslanderstaat"
+ KAR_GOLLOB_PUPPET_communism_ADJ:0 "Karlslanderstaat"
+ 
  
 ####### ideas
 

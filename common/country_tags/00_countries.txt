@@ -121,3 +121,12 @@ THP = "countries/Hawaiian.txt"
 TSO = "countries/Socotra.txt"
 KHM = "countries/Khmer.txt"
 RMA = "countries/Italy.txt"
+
+
+
+KA1 = "countries/Kar1.txt"
+KA2 = "countries/Kar2.txt"
+KA3 = "countries/Kar3.txt"
+KA4 = "countries/Kar4.txt"
+KA5 = "countries/Kar5.txt"
+

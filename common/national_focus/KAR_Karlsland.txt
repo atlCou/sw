@@ -2272,20 +2272,134 @@ target = NRO
 ############################## FASCIST TREE ##########################
 #Focus for Odin's Karlsland
 shared_focus = { 
-id = KAR_a_new_day_for_karlslanders
-icon = GFX_goal_generic_neutrality_focus
-x = 15
-y = 13
-cost = 5
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
+	id = KAR_a_new_day_for_karlslanders
+	icon = GFX_pagantrihorn
+	x = 9
+	y = 0
+	cost = 5
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 1
+	} 
 
-completion_reward = { 
-add_stability = 0.10
- } 
+	completion_reward = { 
+		add_stability = 0.10
+	} 
 }  
+
+
+shared_focus = { 
+	id = KAR_burn_the_books
+	icon = GFX_pagantrihorn
+	x = -2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_new_day_for_karlslanders	
+	prerequisite = { focus = KAR_a_new_day_for_karlslanders }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		add_stability = 0.10
+	} 
+}  
+
+shared_focus = { 
+	id = KAR_burn_the_churches
+	icon = GFX_pagantrihorn
+	x = -3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_new_day_for_karlslanders	
+	prerequisite = { focus = KAR_burn_the_books }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		add_stability = 0.10
+	} 
+}
+
+
+
+shared_focus = { 
+	id = KAR_disband_parliament
+	icon = GFX_pagantrihorn
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_new_day_for_karlslanders	
+	prerequisite = { focus = KAR_a_new_day_for_karlslanders }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		add_stability = 0.10
+	} 
+}  
+
+shared_focus = { 
+	id = KAR_a_new_police
+	icon = GFX_pagantrihorn
+	x = 3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_new_day_for_karlslanders	
+	prerequisite = { focus = KAR_disband_parliament }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		add_stability = 0.10
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_a_purge
+	icon = GFX_pagantrihorn
+	x = 0
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_new_day_for_karlslanders	
+	prerequisite = { focus = KAR_a_new_police }
+	prerequisite = { focus = KAR_burn_the_churches }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		add_stability = 0.10
+	} 
+}
+
+shared_focus = { 
+	id = KAR_and_propoganda
+	icon = GFX_NSKAPeagle
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_new_day_for_karlslanders	
+	prerequisite = { focus = KAR_a_new_police }
+	prerequisite = { focus = KAR_a_purge }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		add_stability = 0.10
+	} 
+}
  
 
 
