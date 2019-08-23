@@ -24,3 +24,15 @@ set_popularities = {
     monarchism = 100
 }
 
+
+
+
+create_country_leader = {
+	name = "Gertrud Barkhorn"
+	desc = "HHHH"
+	picture = "Gertrud_Barkhorn.dds"
+	expire = "1965.1.1"
+	ideology = national-bolshevism
+	traits = {
+	}
+}

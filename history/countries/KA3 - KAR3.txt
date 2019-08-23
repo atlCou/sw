@@ -24,3 +24,12 @@ set_popularities = {
     monarchism = 100
 }
 
+create_country_leader = {
+	name = "Minna-Dietlinde Wilcke"
+	desc = "HHHH"
+	picture = "Minna.dds"
+	expire = "1965.1.1"
+	ideology = national-bolshevism
+	traits = {
+	}
+}

@@ -24,3 +24,12 @@ set_popularities = {
     monarchism = 100
 }
 
+create_country_leader = {
+	name = "Hanna-Justina Marseille"
+	desc = "HHHH"
+	picture = "Hanna.dds"
+	expire = "1965.1.1"
+	ideology = national-bolshevism
+	traits = {
+	}
+}

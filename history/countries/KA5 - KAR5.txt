@@ -24,3 +24,12 @@ set_popularities = {
     monarchism = 100
 }
 
+create_country_leader = {
+	name = "Helma Lennartz"
+	desc = "HHHH"
+	picture = "Helma_Lennartz.dds"
+	expire = "1965.1.1"
+	ideology = national-bolshevism
+	traits = {
+	}
+}
