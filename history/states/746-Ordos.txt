@@ -4,22 +4,13 @@ state={
 	name="STATE_746"
 
 	history={
-		owner = ASI
+		owner = MON
+		add_core_of = MON
 		add_core_of = ASI
 		buildings = {
 			infrastructure = 2
 
 		}
-		1938.10.25 = {
-			controller = FUS
-
-		}
-		1939.1.1 = {
-			owner = PRC
-			controller = MEN
-
-		}
-
 	}
 
 	provinces={

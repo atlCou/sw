@@ -2,10 +2,14 @@ state={
 	id=796
 	name="STATE_796"
 	history={
-		owner = NMA
+		owner = SIR
 		add_core_of = SIR
 		buildings = {
 			infrastructure = 3
+		}
+		1936.1.2 = {
+			owner = NMA
+			controller = NMA
 		}
 	}
 	provinces={

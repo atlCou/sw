@@ -4,31 +4,13 @@ state={
 	name="STATE_747"
 
 	history={
-		owner = GXC add_core_of = GXC victory_points = {
+		owner = BUR add_core_of = BUR victory_points = {
 			7965 3 
 		}
 		buildings = {
 			infrastructure = 3
 
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = Waking the Tiger
-
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
-
 	}
 
 	provinces={

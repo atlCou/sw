@@ -6,7 +6,7 @@ state=
 	state_category = city
 	history=
 	{
-		owner = ASI
+		owner = FUS
 		add_core_of = ASI
 		add_core_of = ASI
 		

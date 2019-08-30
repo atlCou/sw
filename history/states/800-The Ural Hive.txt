@@ -2,10 +2,14 @@ state={
 	id=800
 	name="STATE_800"
 	history={
-		owner = NUU
+		owner = ORU
 		add_core_of = ORU
 		buildings = {
 			infrastructure = 3
+		}
+		1936.1.2 = {
+			owner = NUU
+			controller = NUU
 		}
 	}
 	provinces={

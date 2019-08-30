@@ -7,12 +7,12 @@ state={
 	
 	history=
 	{
-		owner = OST
+		owner = DAC
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 		}
-		add_core_of = OST
+		add_core_of = DAC
 	}
 	provinces={
 		577 9548

@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = ORU
+		owner = SAS
 		victory_points = {
 			12320 1
 		}
@@ -16,7 +16,7 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = ORU
+		add_core_of = SAS
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 3

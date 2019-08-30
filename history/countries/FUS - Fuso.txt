@@ -12,7 +12,6 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -58,34 +57,19 @@ create_import = {
 }
 
 set_convoys = 400
-
-
-
-
 	set_popularities = {
-
-		fascism = 19
-					
-		
-		socialism = 8
-		
-		
-		monarchism = 39
-		
-		
+		fascism = 19							
+		socialism = 8				
+		monarchism = 39		
 		liberal = 34
-		
-
 	}
-
-	set_politics = { 
+set_politics = { 
 	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
-
+puppet = ASI
 create_country_leader = {
 	name = "Karibuchi Hikari"
 	desc = "POLITICS_Hirohito_DESC"
@@ -95,9 +79,6 @@ create_country_leader = {
 	traits = {
 	}
 }
-
-
-
 create_country_leader = {
 	name = "Hattori Shizuka"
 	desc = "POLITICS_Hirohito_DESC"

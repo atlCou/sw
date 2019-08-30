@@ -1,4 +1,4 @@
-#################### temporary
+﻿#################### temporary
 add_namespace = galw
 
 country_event = {
@@ -207,9 +207,9 @@ country_event = {
 				ideology = monarchism
 				popularity = 0.03
 			}
-		}
 		add_to_variable = { GAL_liberal = 2 }
 		add_to_variable = { GAL_prog = 1 }
+		}
 	#### left-wing #####
 		option = {
 		name = gallia.3.b
@@ -764,7 +764,7 @@ country_event = {
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = -2000
-			producer = ROOT
+			producer = GAL
 		}
 		VNE = {
 			country_event = {

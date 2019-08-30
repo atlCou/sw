@@ -4,7 +4,7 @@ state={
 	name="STATE_699"
 
 	history={
-		owner = WED
+		owner = MOR
 		buildings = {
 			infrastructure = 1
 			8038 = {
@@ -15,16 +15,13 @@ state={
 				naval_base = 1
 
 			}
-
 		}
-		add_core_of = WED
-
+		add_core_of = MOR
 	}
-
 	provinces={
 		4920 5012 7979 8038 8111 10875 
 	}
-	manpower=32000
+	manpower=132000
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 }

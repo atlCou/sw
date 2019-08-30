@@ -2,10 +2,14 @@ state={
 	id=795
 	name="STATE_795"
 	history={
-		owner = NUN
+		owner = BAL
 		add_core_of = BAL
 		buildings = {
 			infrastructure = 3
+		}
+		1936.1.2 = {
+			owner = NUN
+			controller = NUN
 		}
 	}
 	provinces={

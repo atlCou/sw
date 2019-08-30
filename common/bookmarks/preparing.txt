@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "PREPARING_NAME"
 		desc = "PREPARING_DESC"
-		date = 1936.1.1.12
+		date = 1936.1.2.12
 		picture = "GFX_select_date_1936"
 		default_country = "KAR"
 		default = yes
@@ -29,12 +29,6 @@ bookmarks = {
 				KAR_thedeathofmonarchy
 			}	
 		}
-		"RMA"={
-			history = "RMA_PREPARING_DESC"
-
-			ideas={
-			}			
-		}
 		"ORU"={
 			history = "ORU_PREPARING_DESC"
 
@@ -50,15 +44,29 @@ bookmarks = {
 			}
 		}
 		
-		"SOU"={
+		"NUB"={
 			history = "SUO_PREPARING_DESC"
 			ideas = {
-				SOU_sisu
-				SOU_political_instability
 			}
 		}
-		
-		
+		"NUS"={
+			history = "RMA_PREPARING_DESC"
+
+			ideas={
+			}			
+		}
+		"NUO"={
+			history = "RMA_PREPARING_DESC"
+
+			ideas={
+			}			
+		}
+		"NBZ"={
+			history = "RMA_PREPARING_DESC"
+
+			ideas={
+			}			
+		}
 		
 		
 		"---"={

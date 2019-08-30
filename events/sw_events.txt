@@ -1,25 +1,5 @@
 ################ ideology opinion setting
-
-
 add_namespace = ideology
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 add_namespace = neuroi
 
 ################ Neuroi

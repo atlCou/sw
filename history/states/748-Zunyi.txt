@@ -4,23 +4,14 @@ state={
 	name="STATE_748"
 
 	history={
-		owner = ASI
+		owner = GXC
 		add_core_of = ASI
+		add_core_of = GXC
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 
 		}
-		1939.1.1 = {
-			buildings = {
-				infrastructure = 4
-				air_base = 1
-
-			}
-
-		}
-
 	}
-
 	provinces={
 		1010 4141 4325 4431 9939 10763 11972 
 	}

@@ -6,7 +6,7 @@ state={
 	state_category = small_island
 
 	history={
-		owner = NET
+		owner = VEN
 		buildings = {
 			infrastructure = 3
 			153 = {
@@ -16,7 +16,7 @@ state={
 				coastal_bunker = 2
 			}
 		}
-		add_core_of = NET
+		add_core_of = VEN
 	}
 
 	provinces={

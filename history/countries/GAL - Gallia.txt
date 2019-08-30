@@ -71,9 +71,6 @@ set_national_unity = 0.8
 }
 
 add_ideas = {
-	GAL_victors_of_wwi
-	GAL_disjointed_government
-	GAL_protected_by_the_maginot_line
 	limited_conscription
 }
 

@@ -2,10 +2,14 @@ state={
 	id=790
 	name="STATE_790"
 	history={
-		owner = NUT
+		owner = OST
 		add_core_of = OST
 		buildings = {
 			infrastructure = 3
+		}
+		1936.1.2 = {
+			owner = NUT
+			controller = NUT
 		}
 	}
 	provinces={

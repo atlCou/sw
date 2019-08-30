@@ -7,11 +7,11 @@ state={
 	state_category = rural
 
 	history={
-		owner = OSO
+		owner = SAS
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = OSO
+		add_core_of = SAS
 	}
 
 	provinces={

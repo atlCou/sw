@@ -4,7 +4,7 @@ state={
 	name="STATE_539"
 
 	history={
-		owner = KON		add_core_of = KON		victory_points = {
+		owner = GAL		add_core_of = GAL		victory_points = {
 			8193 2 
 		}
 		victory_points = {
@@ -30,3 +30,4 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
+

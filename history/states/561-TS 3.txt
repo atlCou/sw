@@ -10,7 +10,7 @@ state={
 		owner = ORU
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
+			arms_factory = 3
 		}
 		add_core_of = ORU
 	}

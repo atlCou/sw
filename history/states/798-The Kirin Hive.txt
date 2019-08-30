@@ -2,10 +2,14 @@ state={
 	id=798
 	name="STATE_798"
 	history={
-		owner = NUK
+		owner = ASI
 		add_core_of = ASI
 		buildings = {
 			infrastructure = 3
+		}
+		1936.1.2 = {
+			owner = NUK
+			controller = NUK
 		}
 	}
 	provinces={

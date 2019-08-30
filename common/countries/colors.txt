@@ -10,8 +10,8 @@ KAR = {
 	color_ui = rgb { 180 0 10 }
 }
 KAN = {
-	color = rgb { 180 110 110 }
-	color_ui = rgb { 180 110 110 }
+	color = rgb { 180 100 100 }
+	color_ui = rgb { 180 100 100 }
 }
 MBU = {
 	color = rgb { 80 0 10 }
@@ -38,8 +38,8 @@ KHM = {
 	color_ui = rgb { 80 0 10 }
 }
 KON = {
-	color = rgb { 180 150 150 }
-	color_ui = rgb { 180 150 150 }
+	color = rgb { 100 150 150 }
+	color_ui = rgb { 100 150 150 }
 }
 GAO = {
 	color = rgb { 180 110 10 }
@@ -58,12 +58,24 @@ MER = {
 	color_ui = rgb { 242 173 36 }
 }
 LUS = {
-	color = rgb { 168 240 255 }
-	color_ui = rgb { 168 240 255 }
+	color = rgb { 108 100 205 }
+	color_ui = rgb { 108 100 205 }
+}
+LIN = {
+	color = rgb { 88 100 155 }
+	color_ui = rgb { 88 100 155 }
+}
+MAC = {
+	color = rgb { 128 20 155 }
+	color_ui = rgb { 128 20 155 }
+}
+RAJ = {
+	color = rgb { 68 140 55 }
+	color_ui = rgb { 68 140 55 }
 }
 MEX = {
-	color = rgb { 45 180 14 }
-	color_ui = rgb { 45 180 14 }
+	color = rgb { 45 140 14 }
+	color_ui = rgb { 45 140 14 }
 }
 SOU = {
 	color = rgb { 166 167 255 }
@@ -96,6 +108,10 @@ BLG = {
 NET = {	
 	color = rgb { 214 197 47 }
 	color_ui = rgb { 214 197 47 }
+}
+NET = {	
+	color = rgb { 14 57 87 }
+	color_ui = rgb { 14 57 87 }
 }
 OST = {
 	color = rgb { 150 150 150 }
@@ -132,6 +148,10 @@ HEL = {
 CYR = {
 	color = rgb { 224 246 246 }
 	color_ui = rgb { 244 246 246 }
+}
+WED = {
+	color = rgb { 124 146 46 }
+	color_ui = rgb { 144 146 46 }
 }
 AKS = {
 	color = rgb { 17 221 27 }

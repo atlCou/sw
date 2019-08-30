@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = ORU
+		owner = FUS
 		victory_points = {
 			957 15 
 		}
@@ -22,7 +22,7 @@ state={
 			}
 
 		}
-		add_core_of = ORU
+		add_core_of = FUS
 
 	}
 

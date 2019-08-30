@@ -1,0 +1,186 @@
+﻿l_english: 
+ 
+ 
+ 
+####### ideas
+
+#PARTIES AND NAMES
+
+ MON_liberal:0 "RPoM"
+ MON_liberal_DEF:0 "Republican Party of Mongolia"
+ MON_liberal_ADJ:0 "Rebublicans"
+ MON_communism:0 "The Commune of Northern China"
+ MON_communism_DEF:0 "Commuists"
+ MON_fascism:0 "The Great Horde"
+ MON_fascism_DEF:0 "The Great Horde"
+ MON_fascism_ADJ:0 "Mongols"
+ MON_monarchism:0 "The Old Guard"
+ MON_monarchism_DEF:0 "Mongols"
+ MON_monarchism_ADJ:0 "A group of Shamans dedicated to upholding their way of life in preperation of Gengis's return."
+ MON_fanatical-paganism:0 "The Wolf Shamans"
+ MON_fanatical-paganism_DEF:0 "Placeholder"
+ MON_fanatical-paganism_ADJ:0 "Shamans"
+ MON_socialism:0 "United Republics of Mongolia"
+ MON_socialism_DEF:0 "United Republics of Mongolia"
+ MON_socialism_ADJ:0 "Mongols"
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ MON_communism_party:0 "KPÖ"
+ MON_communism_party_long:0 "Kommunistische Partei Ostmark"
+ MON_authoritarian-socialism_party:0 "KPÖ"
+ MON_authoritarian-socialism_party_long:0 "Kommunistische Partei Ostmark"
+ MON_socialism_party:0 "KPÖ"
+ MON_socialism_party_long:0 "Kommunistische Partei Ostmark"
+ MON_progressivism_party_long:0 "Sozialdemokratische Partei Ostmark"
+ MON_progressivism_party:0 "SPO"
+ MON_liberal_party:0 "OMB"
+ MON_liberal_party_long:0 "Grand Coalition (Left)"
+ MON_liberal_monarchism_party:0 "OMB"
+ MON_liberal_monarchism_party_long:0 "Grand Coalition (Right)"
+ MON_monarchism_party:0 "OMB"
+ MON_monarchism_party_long:0 "Grand Coalition (Right)"
+ MON_fascism_party:0 "Heimatblock"
+ MON_ultra-nationalism_party:0 "DL"
+ MON_ultra-nationalism_party_long:0 "Danubian Legionnaires"
+ MON_fanatical-paganism_party:0 "HE"
+ MON_fanatical-paganism_party_long:0 "Heidnische Einheitsfront"
+ MON_monarchism_party_habsburg:0 "Habsburg Loyalists"
+ MON_monarchism_party_habsburg_long:0 "Habsburg Loyalists"
+ 
+ MON_liberal_party_HB_coalition_long:0 "Republican Land and Peasant Party"
+ MON_liberal_party_HB_coalition:0 "Republican Party"
+ MON_liberal_monarchism_party_HB_coalition_long:0 "Heimatblock-Volkspartei Coalition (Conservative)"
+ MON_liberal_monarchism_party_HB_coalition:0 "H-V Coalition"
+ MON_monarchism_party_HB_coalition_long:0 "Heimatblock-Volkspartei Coalition (HB)"
+ MON_monarchism_party_HB_coalition:0 "H-V Coalition"
+ MON_fascism_party_HB_coalition_long:0 "Heimatblock-Volkspartei Coalition (HB)"
+ MON_fascism_party_HB_coalition:0 "H-V Coalition"
+ 
+ MON_Gollob_party_long:0 "Danubian Legionnaires - Ostmarker Freedom Party"
+ MON_Gollob_party:0 "DL-OFP"
+ 
+
+ 
+ ############# EVENTS
+ 
+ ostmark.200.t:0 "Regaining our Support"
+ ostmark.200.d:0 "The Ostmarker empire has been thrown into disarray. The many territories that our monarchs have ruled over for centuries have risen in revolt and, in the complete incompetence of our military, successfully established their own nations. All we have left are the territories with a Karlslander majority, who themselves lack the national identity to revolt against us. The stability once afforded to them is now gone - what do we do to regain their trust?"
+ ostmark.200.a:0 "Ensure them that we will lead the nation in a direction beneficial to our people."
+ ostmark.200.b:0 "Crush the disenters, so that we can ensure our rule over our Karlslander people will continue."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ost.1000.t:0 "Ostmark's Engelbert Dollfuss Goes Missing!"
+ 
+ 
+ ########### FOCII
+ 
+MON_bunkerdown:0 "Bunkering Down"
+MON_reclaimingtheempire:0 "Reclaiming the Empire"
+MON_consolodatingthenation:0 "Consolodating the Nation"
+MON_joiningkarlsland:0 "Joining Karlsland"
+MON_beatingbackthebalts:0 "Beating Back the Balts"
+MON_tyrol:0 "§YUnser Heimatland!§!"
+MON_ontotheworld:0 "Ostmark Unto the World"
+
+
+
+MON_gollob_start_tooltip:0 "Will start Gollob's reign of tyranny, §Ra potentially dangerous process.§!"
+MON_tyranny_increase:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y1§!."
+MON_tyranny_increase_massive:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y5§!."
+MON_tyranny_increase_moderate:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y2§!."
+MON_tyranny_decrease:0 "Will §Rdecrease§! Gollob's §MTyranny§! by §Y1§!."
+MON_gollob_reign_begins_tooltip:0 "Unlocks §YGollob's Reign§! decisions, allowing you to seize complete control and §Gradically reform §!§YOstmark§! - as long as the time is right."
+MON_no_special_witches_tooltip:0 "§RWill remove the ability to use witches for the sake of §Y[OST.GetNameDef]§R!§! "
+
+
+
+
+
+
+
+
+
+
+
+
+
+ MON_economic_identites_desc:0 "The identities of the old Ostmarker democracy and the Habsburgian empire plagued it from the very beginning. To gurantee the survival of our state, we must do away with the notions of different peoples and cultures. Force upon them one language, and their identity will be derived from the work that they do and from which that they need - nothing more."
+ MON_value_from_service_desc:0 "A citizen's value is the same as the importance of their work to the Danubian State. Engineers, scientists, and soldiers gain utmost priority, as they are what will push our nation into the future and allow it to survive."
+
+
+
+
+####### BOHEMIA FOCII
+
+
+BHE_thebohemianstate:0 "Bohemian State"
+BHE_indiscriminatory_conscription:0 "Indiscriminatory Conscription"
+BHE_puttingdowntheprotestors:0 "Putting Down the Protestors"
+BHE_emergency_war_effort:0 "Emergency War Effort"
+BHE_more:0 "More Guns!"
+BHE_more_twice:0 "More Industry for Our State"
+BHE_zaolzie_is_ours:0 "Zaolzie is Bohemia's"
+BHE_bohemian_not_moravian:0 "'Bohemian' \n Not: 'Moravian'"
+BHE_ideological_hacks:0 "§YClawing Moravia Back!§!"
+BHE_a_bohemia_to_challenge_karlsland:0 "A Bohemia To Challenge Karlsland"
+
+bohemian_revanchism:0 "Bohemian Revanchism"
+BHE_claiming_orussian_bohemia:0 "Claim Orrusian Bohemia"
+BHE_integrating_orussian_bohemia:0 "Integrating Orussian Bohemia"
+
+BHE_monarchism_party_military:0 "Vysoká Vojenská Rada"
+BHE_greater_monarchism:0 "Great Bohemia-Moravia"
+BHE_greater_monarchism_ADJ:0 "Bohemian"
+BHE_greater_monarchism_DEF:0 "The Military State of Bohemia-Moravia"
+
+BHE_conscription:0 "Mass Conscription"
+BHE_peace_conscription:0 "A Military With a Nation"
+
+
+
+########## MOVARIA FOCII
+
+
+MRV_conscription:0 "Faithful Army"
+MRV_peace_conscription:0 "Army of Rod"
+MRV_consumerfacs:0 "Church Labor"
+
+MRV_greater_fanatical-paganism:0 "Nation of Rod"
+MRV_greater_fanatical-paganism_DEF:0 "The Nation of Rod"
+MRV_greater_fanatical-paganism_ADJ:0 "Rodish Pagan"
+
+MRV_ultra-nationalism_finished:0 "Legioniści Roda"
+MRV_ultra-nationalism_finished_long:0 "Legioniści Roda"
+
+
+MRV_themoraviansacrednation:0 "The Nation of Rod"
+MRV_purging_secularites:0 "Purging Secularites"
+MRV_recruiting_the_faithful:0 "Recruiting the Faithful"
+MRV_coming_home: "Coming Home"
+MRV_rodish_propaganda:0 "Rodish Propaganda"
+MRV_pushing_out_the_despots:0 "§gPushing Out the Despots!§!"
+MRV_anti_romagnian_crusade:0 "An Anti-Romagnian Crusade"
+MRV_directing_industry:0 "Directing Industry"
+MRV_nationalization:0 "Nationalization!"
+MRV_rodish_church_drives:0 "Rodish Church Drives"
+
+

@@ -3,15 +3,15 @@ state={
 	id=292
 	name="STATE_292"
 	resources={
-		oil=3.000
+		oil=30.000
 	}
 
 	history={
 		owner = OSO
 		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 1
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
 			12702 = {
 				naval_base = 6
 

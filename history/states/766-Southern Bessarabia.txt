@@ -7,10 +7,8 @@ state={
 		victory_points = {
 			6727 1 
 		}
-		add_core_of = MOL
-		add_core_of = UKR
-		add_core_of = ORU
-		owner = ORU
+		add_core_of = DAC
+		owner = DAC
 		buildings = {
 			infrastructure = 4
 			dockyard = 1

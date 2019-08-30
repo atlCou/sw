@@ -2,10 +2,14 @@ state={
 	id=803
 	name="STATE_803"
 	history={
-		owner = NMO
+		owner = MOR
 		add_core_of = MOR
 		buildings = {
 			infrastructure = 3
+		}
+		1936.1.2 = {
+			owner = NMO
+			controller = NMO
 		}
 	}
 	provinces={
