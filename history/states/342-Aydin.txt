@@ -4,13 +4,12 @@ state={
 	name="STATE_342" # Antalya
 	manpower = 362689
 	resources={
-		chromium=46
+		chromium=35 # was: 46
 	}
 	state_category = rural
 
 	history={
 		owner = OSO
-		add_core_of = OSO
 		victory_points = {
 			1005 1 
 		}
@@ -21,6 +20,7 @@ state={
 				naval_base = 4
 			}
 		}
+		add_core_of = OSO
 	}
 
 	provinces={

@@ -3,14 +3,12 @@ state={
 	id=310
 	name="STATE_310"
 	manpower = 47341
-	resources={
-		aluminium=104
-	}
 
 	state_category = pastoral
 
 	history={
-		owner = CUB
+		owner = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 2
 			12885 = {
@@ -18,12 +16,11 @@ state={
 			}
 		}
 		victory_points = {
-			12885 1
+			12885 1 
 		}
-		add_core_of = CUB
 	}
 
 	provinces={
-		4934 12885
+		4934 12885 
 	}
 }

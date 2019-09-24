@@ -4,28 +4,27 @@ state={
 	name="STATE_272"
 	manpower = 1638000
 	resources={
-		steel=4
+		steel=3 # was: 4
 	}
-
+	
 	state_category = pastoral
 
 	history={
-		owner = GAL
+		owner = KAR
+		add_core_of = KAR
 		victory_points = {
-			4948 5
+			4948 5 
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 			air_base = 4
 			4948 = {
 				naval_base = 3
 			}
 		}
-		add_core_of = WED
 	}
 
 	provinces={
-		2100 4948 7972 8015 12710 12834
-	13213}
+		2100 4948 7972 8015 12710 12834 
+	}
 }

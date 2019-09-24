@@ -4,7 +4,7 @@ state={
 	name="STATE_4"
 	manpower = 2595983
 	resources={
-		oil=2
+		oil=1 # was: 2
 	}
 	
 	state_category = large_city
@@ -24,17 +24,6 @@ state={
 			air_base = 6
 		}
 		add_core_of = OST
-
-		1938.3.12 = {
-			owner = KAR
-			controller = KAR
-			add_core_of = KAR
-		}
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-			}
-		}
 	}
 
 	provinces={

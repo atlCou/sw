@@ -5,10 +5,10 @@ state={
 	state_category = town
 
 	history={
-		owner = KHM
-		add_core_of = GXC
-		add_core_of = ASI
-		add_core_of = KHM
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		
 		victory_points = {
 			1070 1 
@@ -24,9 +24,14 @@ state={
 		}
 
 		1938.10.25 = {
-			remove_core_of = GXC
-			owner = ASI
-			controller = ASI
+			if = {
+				limit = {
+					KAR= { has_dlc = "Waking the Tiger" }
+				}
+				remove_core_of = KAR
+				KAR= { transfer_state = PKAR}
+			}
+			controller = KAR
 		}
 	}
 

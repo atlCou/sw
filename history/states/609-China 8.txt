@@ -7,13 +7,16 @@ state={
 	state_category = town
 
 	history={
-		owner = ASI
-		add_core_of = ASI
-		add_core_of = ASI
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 1
+			3900 = {
+				naval_base = 2
+			}
 		}
 
 	}

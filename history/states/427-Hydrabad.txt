@@ -6,11 +6,11 @@ state={
 	state_category = town
 	
 	resources={
-		chromium=8
+		chromium=6 # was: 8
 	}
 
 	history={
-		owner = RAJ
+		owner = KAR
 		victory_points = {
 			8087 1
 		}

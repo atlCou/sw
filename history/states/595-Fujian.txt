@@ -5,8 +5,9 @@ state= {
 	state_category = city
 	history=
 	{
-		owner = FUS
-		add_core_of = ASI
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -29,7 +30,7 @@ state= {
 		}
 
 		1938.10.25 = {		
-			ASI = {
+			KAR= {
 				set_province_controller = 4196
 				set_province_controller = 7071
 			} 			

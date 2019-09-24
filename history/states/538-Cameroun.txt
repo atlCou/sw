@@ -5,13 +5,15 @@ state={
 	manpower = 1693974
 	
 	state_category = wasteland
-
+	resources={
+		rubber=5 # was: 5
+	}
 	history={
-		owner = KON		add_core_of = KON 
+		owner = KAR
 		buildings = {
 			infrastructure = 1
 		}
-
+		add_core_of = KAR
 	}
 
 	provinces={

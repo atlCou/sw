@@ -1,13 +1,12 @@
-
 state={
 	id=287
 	name="STATE_287"
 
 	history={
-		owner = MON
-		add_core_of = MON
-		add_core_of = ASI
-		add_core_of = ASI
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 1
 
@@ -18,7 +17,7 @@ state={
 	provinces={
 		4973 8042 8086 10885 10911 12864 
 	}
-	manpower=478000
+	manpower=408000
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 }

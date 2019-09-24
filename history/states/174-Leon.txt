@@ -3,22 +3,19 @@ state={
 	id=174
 	name="STATE_174"
 	manpower = 1566041
-
+	
 	state_category = large_town
 
 	history={
 		owner = HIS
 		victory_points = {
-			11707 1
+			11707 1 
 		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 1
 			11707 = {
-				naval_base = 1
-			}
-			6749 = {
 				naval_base = 2
 			}
 		}

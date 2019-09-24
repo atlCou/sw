@@ -3,15 +3,15 @@ state= {
 	name="STATE_537"
 	manpower = 295196
 	resources={
-		oil=4
+		oil=3 # was: 4
 	}
-
+	
 	state_category = rural
 
 	history= {
-		owner = FUS
-		add_core_of = FUS
-		#add_claim_by = ORU # Removed because of too much aggression
+		owner = KAR
+		#add_core_of = KAR
+		#add_claim_by = KAR# Removed because of too much aggression
 		buildings = {
 			infrastructure = 3
 			12446 = {

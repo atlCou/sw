@@ -5,16 +5,16 @@ state={
 	state_category = wasteland
 	
 	resources={
-		aluminium=8.000
+		aluminium=7 # was: 8.000
 	}
 
 	history={
-		owner = FAR
+		owner = KAR
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = FAR
+		add_core_of = KAR
 
 	}
 

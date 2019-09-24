@@ -15,10 +15,10 @@ set_country_flag = pirate
         liberal = 40 
         communism = 0 
         fascism = 0 
-        authoritarian-socialism = 2 
+        
         socialism = 4 
         liberal_monarchism = 30 
-        ultra-nationalism = { popularity = 5 }
+        
         fanatical-paganism = 11 
         monarchism = 140 
 

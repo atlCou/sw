@@ -6,9 +6,9 @@ state={
 	state_category = enclave
 	
 	history={
-		owner = GXC
-		add_core_of = ASI
-		add_core_of = GXC
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 3
 			11981 = {

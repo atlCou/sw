@@ -7,7 +7,7 @@ state=
 	
 	manpower = 294748
 	resources={
-		steel=8
+		steel=5 # was: 8
 	}
 
 	history=
@@ -19,10 +19,10 @@ state=
 			industrial_complex = 3
 		}
 		victory_points = { 6583 5 }
-		add_core_of =LAR
+		add_core_of = KAR
 	}
 
-	provinces = {
-		6583 	
-	}
+	provinces=
+	{
+6583 	}
 }

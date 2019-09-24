@@ -4,15 +4,15 @@ state={
 	name="STATE_338"
 	manpower = 1800615
 	resources={
-		steel=16
+		steel=9 # was: 16
 	}
 
 	state_category = city
 
 	history={
-		owner = BRI
+		owner = KAR
 		victory_points = {
-			3369 5
+			3369 5 
 		}
 		buildings = {
 			infrastructure = 7
@@ -23,10 +23,10 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = BRI
+		add_core_of = KAR
 	}
 
 	provinces={
-		3369 6221 6351 6378 9484 11471
+		3369 6221 6351 6378 9484 11471 
 	}
 }

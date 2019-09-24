@@ -5,16 +5,20 @@ state={
 	manpower = 1982940
 	state_category = town
 	resources={
-		steel=8
+		steel=6 # was: 8
 	}
 
 	history={
-		owner = TUN
+		owner = KAR
+		add_core_of = KAR
 		victory_points = {
-			11969 10
+			11969 10 
 		}
 		victory_points = {
-			9994 1
+			9994 1 
+		}
+		victory_points = {
+			11921 1 
 		}
 		buildings = {
 			infrastructure = 4
@@ -27,6 +31,6 @@ state={
 	}
 
 	provinces={
-		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969
+		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969 
 	}
 }

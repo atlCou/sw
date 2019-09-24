@@ -9,6 +9,9 @@ state=
 	
 	history=
 	{
+		victory_points = {
+			3583 5
+		}
 		owner = OST
 		buildings = {
 			infrastructure = 7
@@ -16,10 +19,6 @@ state=
 		}
 		add_core_of = OST
 
-		1938.9.30 = {
-			owner = KAR
-			controller = KAR
-		}
 	}
 	provinces= {
 		421 3414 3583 6485

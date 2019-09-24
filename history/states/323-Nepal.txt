@@ -6,12 +6,10 @@ state={
 	
 	state_category = town
 	resources={
-		
-		chromium=2
-		
+		chromium=2 # was: 2
 	}
 	history={
-		owner = RAJ
+		owner = KAR
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -20,7 +18,7 @@ state={
 		victory_points = {
 			4987 3 
 		}
-		add_core_of = RAJ
+		add_core_of = KAR
 	}
 
 	provinces={

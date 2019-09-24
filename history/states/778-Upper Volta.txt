@@ -1,25 +1,20 @@
 
 state={
 	id=778
-	name="STATE_778"
-
+	name="STATE_778" # Upper Volta
+	manpower = 3186184
+	
+	state_category = pastoral
 	history={
-		owner = WED
-		add_core_of = VOL
-		victory_points = {
-			10836 1 
+		owner = KAR		add_core_of = KAR		victory_points = {
+			10836 1
 		}
 		buildings = {
 			infrastructure = 3
-
 		}
-
 	}
 
 	provinces={
-		2001 7950 7983 8071 10836 12851 
+		2001 7950 7983 8071 10836 12851
 	}
-	manpower=3186184
-	buildings_max_level_factor=1.000
-	state_category=pastoral
 }

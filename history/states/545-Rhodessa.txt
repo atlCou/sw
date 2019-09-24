@@ -1,27 +1,25 @@
-
 state={
 	id=545
+	
+	state_category = pastoral
+	
 	name="STATE_545"
-	resources={
-		chromium=64.000
-		tungsten=16.000
-	}
 
 	history={
-		owner = SAF		add_core_of = SAF		buildings = {
+		owner = KAR
+		buildings = {
 			infrastructure = 3
 
 		}
 		victory_points = {
 			10929 1 
 		}
-
+		add_core_of = KAR
 	}
 
 	provinces={
-		1874 2151 2216 4851 7842 10929 
+		1874 2151 2216 4851 7842 10929
 	}
-	manpower=4155400
+	manpower=1171336
 	buildings_max_level_factor=1.000
-	state_category=rural
 }

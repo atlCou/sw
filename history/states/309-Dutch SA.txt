@@ -5,13 +5,17 @@ state={
 	manpower = 152000
 
 	resources={
-		aluminium=12
-	}
-
+		aluminium=60 # was: 104
+	}	
+	
 	state_category = rural
 
 	history={
-		owner = CUB
+		add_core_of = KAR
+		owner = KAR
+		victory_points = {
+			10906 1
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -19,10 +23,9 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = CUB
 	}
 
 	provinces={
-		1928 10906 12828
+		1928 10906 12828 
 	}
 }

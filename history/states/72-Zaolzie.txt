@@ -13,10 +13,7 @@ state={
 		}
 		add_core_of = OST
 
-		1939.3.14 = {
-			owner = ORU
-			controller = ORU
-		}
+
 	}
 
 	provinces={

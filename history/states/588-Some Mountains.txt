@@ -5,17 +5,20 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=22.000
+		chromium=16 # was: 22.000
 	}
 
 	history={
-		owner = ORU
+		owner = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 4
 
 		}
-		add_core_of = ORU
-
+		add_core_of = KAR
+		victory_points = {
+			12594 1
+		}
 	}
 
 	provinces={

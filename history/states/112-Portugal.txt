@@ -4,7 +4,7 @@ state={
 	name="STATE_112"
 	manpower = 2369100
 	resources={
-		tungsten=76
+		tungsten=48 # was: 76
 	}
 	
 	state_category = city
@@ -12,7 +12,10 @@ state={
 	history={
 		owner = LUS
 		victory_points = {
-			11805 30.0 
+			11805 20
+		}
+		victory_points = {
+			3798 1
 		}
 		buildings = {
 			infrastructure = 6

@@ -5,8 +5,9 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = 
-IND		buildings = {
+		owner = KAR
+		add_core_of = KAR
+		buildings = {
 			infrastructure = 3
 			13038 = {
 				naval_base = 1

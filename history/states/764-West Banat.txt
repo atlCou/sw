@@ -1,23 +1,21 @@
 
 state={
 	id=764
-	name="West Banat"
+	name="STATE_764"
+	manpower = 585579
+	state_category = rural
 
 	history={
 		owner = OST
 		controller = OST
+
 		buildings = {
 			infrastructure = 6
-
 		}
 		add_core_of = OST
-
 	}
 
 	provinces={
-		614 3614 6643 11787 
+		614 3614 6643 11787
 	}
-	manpower=585579
-	buildings_max_level_factor=1.000
-	state_category=town
 }

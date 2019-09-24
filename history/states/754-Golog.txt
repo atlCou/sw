@@ -1,11 +1,17 @@
-
 state={
 	id=754
 	name="STATE_754"
-
+	provinces={
+		1882 4536 4888 7270 10490 10817 11448 12732 12815 
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category = rural
 	history={
-		owner = MON
-		add_core_of = MON
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		victory_points = {
 			12732 3 
 		}
@@ -15,12 +21,19 @@ state={
 			arms_factory = 1
 
 		}
-	}
+		1938.10.25 = {
+			if = {
+				limit = {
+					KAR= {
+						has_dlc = "Waking the Tiger" 
+					}
 
-	provinces={
-		1882 4536 4888 7270 10490 10817 11448 12732 12815 
+				}
+				KAR= {
+					transfer_state = PKAR
+
+				}
+			}
+		}
 	}
-	manpower=400000
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

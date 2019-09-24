@@ -3,7 +3,7 @@ state={
 	name="STATE_739"
 
 	history={
-		owner = FAR
+		owner = KAR
 		buildings = {
 			infrastructure = 1
 
@@ -14,7 +14,7 @@ state={
 
 
 		}
-		add_core_of = FAR
+		add_core_of = KAR
 	}
 
 	provinces={

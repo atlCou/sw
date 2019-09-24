@@ -99,7 +99,7 @@ set_convoys = 40
 }
 
 
-set_national_unity = 0.01
+set_stability = 0.01
 
 set_politics = {
 	ruling_party = anarchy

@@ -3,15 +3,16 @@ state={
 	id=133
 	name="STATE_133" # Lanark
 	manpower = 2257723
-
+	
 	state_category = city
-
+	
 	resources={
-		steel=36
+		steel=21 # was: 36
 	}
 
 	history={
-		owner = BRI
+		add_core_of = KAR
+		owner = KAR
 		victory_points = {
 			3273 15
 		}
@@ -26,7 +27,7 @@ state={
 			}
 
 		}
-		add_core_of = BRI
+		add_core_of = KAR
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5
@@ -36,6 +37,6 @@ state={
 	}
 
 	provinces={
-		3273 6320 6350 6385 6395 9237 9350 11218
+		3273 6320 6350 6385 6395 9237 9350 11218 
 	}
 }

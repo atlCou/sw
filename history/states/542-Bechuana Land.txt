@@ -2,24 +2,27 @@
 state={
 	id=542
 	name="STATE_542"
+	manpower = 234000
+	
+	state_category = wasteland
+	
 	resources={
-		chromium=168.000
+		chromium=90 # was: 168
 	}
 
 	history={
-		owner = SAF
-		add_core_of = SAF
+		owner = KAR
 		buildings = {
 			infrastructure = 1
-
+		}
+		add_core_of = KAR
+		victory_points = {
+			8214 1
 		}
 
 	}
 
 	provinces={
-		1580 8214 10525 12940 12963 13217 
+		1580 8214 10525 12940 12963 
 	}
-	manpower=234000
-	buildings_max_level_factor=1.000
-	state_category=wasteland
 }

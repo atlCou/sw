@@ -6,14 +6,13 @@ state=
 	manpower=75153
 	history=
 	{
-		owner = LIN
+		owner = KAR
 		buildings = {
 			infrastructure = 5
 			12140 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = LIN
 		victory_points = {
 			12140 1
 		 }

@@ -3,18 +3,23 @@ state={
 	id=77
 	name="STATE_77"
 	manpower = 378000
-
+	
 	state_category = rural
 
 	history={
-		owner = MOE buildings = {
+		victory_points = {
+			11597 1
+		}
+		owner = MOE
+		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 		}
 		add_core_of = MOE
+		add_claim_by = DAC
 	}
 
 	provinces={
-		9614 11597
+		9614 11597 
 	}
 }

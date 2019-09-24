@@ -1,0 +1,11 @@
+focus_tree = { 
+	id = default
+	country = { 
+		factor = 0 
+		modifier = { 
+			default = yes
+		} 
+	} 
+	continuous_focus_position = { x = 50 y = 3000 }
+	
+}

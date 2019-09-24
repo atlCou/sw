@@ -1,11 +1,16 @@
-
 state={
 	id=745
 	name="STATE_745"
-
-	history={
-		owner = ASI
-		add_core_of = ASI
+	provinces={
+		1150 6851 
+	}
+	state_category = large_town
+	history=
+	{
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		victory_points = {
 			1150 1 
 		}
@@ -16,17 +21,11 @@ state={
 			1150 = {
 				naval_base = 5
 				coastal_bunker = 1
-
 			}
-
 		}
 
-	}
-
-	provinces={
-		6851 
+	
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
-	state_category=large_town
 }

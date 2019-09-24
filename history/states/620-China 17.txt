@@ -1,16 +1,15 @@
-
 state={
 	id=620
 	name="STATE_620"
 
 	history={
-		owner = ASI
-		add_core_of = ASI
-		add_core_of = ASI
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 1
+			arms_factory = 3
+			industrial_complex = 2
 
 		}
 		victory_points = {
@@ -24,7 +23,7 @@ state={
 				arms_factory = 2
 
 			}
-			ASI = {
+			KAR= {
 				set_province_controller = 1036
 				set_province_controller = 4619
 				set_province_controller = 4631

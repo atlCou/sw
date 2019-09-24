@@ -4,15 +4,13 @@ state={
 	name="STATE_329"
 	manpower = 85000
 	resources={
-
-		chromium=2
-
+		chromium=2 # was: 2
 	}
-
+	
 	state_category = rural
 
 	history={
-		owner = MON
+		owner = KAR
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -21,10 +19,11 @@ state={
 		victory_points = {
 			10627 3
 		}
-		add_core_of = MON
+		add_core_of = KAR
+		add_core_of = KAR
 	}
 
 	provinces={
-		1676 1877 4680 7703 7731 7804 7819 10597 10627 10646 12610 12625
+		1676 1877 4680 7703 7731 7804 7819 10597 10627 10646 12610 12625 
 	}
 }

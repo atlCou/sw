@@ -7,10 +7,10 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = ASI
-		add_core_of = ASI
-		add_core_of = ASI
-		add_core_of = ASI
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

@@ -21,6 +21,7 @@ state={
 			infrastructure = 6
 			industrial_complex = 1
 			dockyard = 2
+			fuel_silo = 1
 			air_base = 10
 			911 = {
 				naval_base = 10
@@ -32,11 +33,6 @@ state={
 			}
 		}
 		add_core_of = GAL
-		1939.1.1 = {
-			buildings = {
-				dockyard = 3
-			}
-		}
 	}
 
 	provinces={

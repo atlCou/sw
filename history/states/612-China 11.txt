@@ -7,13 +7,16 @@ state={
 	state_category = rural
 
 	history={
-		owner = MON add_core_of = ASI
-		add_core_of = MON		buildings = {
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		buildings = {
 			infrastructure = 1
 		}
 	}
 
 	provinces={
-		1551 10499 1608 1796 1811 1871 4222 4555 4655 7578 7648 10363 10372 12348 12448 12554 
+		1551 1608 1796 1811 1871 4222 4555 4655 7578 7648 10363 10372 12348 12448 12554 
 	}
 }

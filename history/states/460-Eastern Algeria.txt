@@ -3,25 +3,27 @@ state={
 	id=460
 	name="STATE_460" # Constantine
 	manpower = 2343837
-	resources={
-		chromium=14.000
-		steel=20.000
-	}
+	
 	state_category = town
 
 	history={
-		owner = GAL
-		add_core_of = NUM
+		owner = KAR
+		add_core_of = KAR
+		victory_points = {
+			7081 1 
+		}
+		victory_points = {
+			12051 3 
+		}
 		buildings = {
 			infrastructure = 4
-		}
-		air_base = 4
 			7081 = {
-				naval_base = 8
+				naval_base = 1
 			}
+		}
 	}
 
 	provinces={
-		1058 1160 4046 7065 7081 7166 9976 10078 11953 12051 13077
+		1058 1160 4046 7065 7081 7166 9976 10078 11953 12051 13077 
 	}
 }

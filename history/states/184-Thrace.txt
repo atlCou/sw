@@ -7,10 +7,13 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=16
+		chromium=11 # was: 16
 	}
 
 	history={
+		victory_points = {
+			11905 1
+		}
 		owner = OSO
 		buildings = {
 			infrastructure = 4

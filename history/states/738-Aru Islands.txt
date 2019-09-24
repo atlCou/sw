@@ -3,8 +3,8 @@ state={
 	name="STATE_738"
 
 	history={
-		owner = IND
-		add_core_of = IND
+		owner = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 1
 
@@ -19,9 +19,9 @@ state={
 	}
 
 	provinces={
-		4579
+		4579 
 	}
 	manpower=36146
-	buildings_max_level_factor=1
+	buildings_max_level_factor=1	
 	state_category="small_island"
 }

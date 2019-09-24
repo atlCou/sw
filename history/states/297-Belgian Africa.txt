@@ -3,12 +3,16 @@ state=
 	id=297
 	name="STATE_297" # Equatorial Guinea
 	manpower = 185000
-
+	
 	state_category = enclave
-
+	
 	history=
 	{
-		owner = BRI		add_core_of = KON
+		owner = KAR
+		add_core_of = KAR
+		victory_points = {
+			1903 1 
+		}
 		buildings = {
 			infrastructure = 2
 			1903 = {
@@ -18,7 +22,6 @@ state=
 				naval_base = 1
 			}
 		}
-		#add_core_of = 
 	}
 	provinces=
 	{

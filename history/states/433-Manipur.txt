@@ -8,11 +8,14 @@ state={
 	
 	
 	resources={
-		tungsten=42
+		tungsten=32 # was: 42
 	}
 
 	history={
-		owner = RAJ
+		victory_points = {
+			2054 1
+		}
+		owner = KAR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

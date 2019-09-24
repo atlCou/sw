@@ -45,7 +45,7 @@ set_technology = {
 
 
 set_convoys = 300
-set_national_unity = 0.8
+set_stability = 0.8
 
 
 

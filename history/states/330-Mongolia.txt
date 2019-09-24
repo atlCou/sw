@@ -4,16 +4,14 @@ state={
 	name="STATE_330"
 	manpower = 772000
 	resources={
-		steel=2
-
-		chromium=3
-
+		steel=2 # was: 2
+		chromium=3 # was: 3
 	}
 	
 	state_category = town
 
 	history={
-		owner = MON
+		owner = KAR
 		victory_points = {
 			4801 5
 		}
@@ -26,7 +24,7 @@ state={
 			industrial_complex = 3
 			air_base = 1
 		}
-		add_core_of = MON
+		add_core_of = KAR
 	}
 
 	provinces={

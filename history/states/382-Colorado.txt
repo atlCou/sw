@@ -4,25 +4,25 @@ state={
 	name="STATE_382"
 	manpower = 1035790
 	resources={
-		oil=20
+		oil=14 # was: 20
 	}
-
+	
 	state_category = town
 
 	history={
-		owner = LIN
+		owner = KAR
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
-		add_core_of = LIN
+		add_core_of = KAR
 		victory_points = {
-			1827 5
+			1827 5 
 		}
 
 	}
 
 	provinces={
-		868 1658 1738 1809 1827 3869 6887 7684 7780 7999 9792 10535 10588 11772 12570 12627 12642
+		868 1658 1738 1809 1827 3869 6887 7684 7780 7999 9792 10535 10588 11772 12570 12627 12642 
 	}
 }

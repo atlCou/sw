@@ -3,23 +3,24 @@ state={
 	id=136
 	name="STATE_136"
 	manpower = 745466
-
+	
 	state_category = town
 	resources={
-		tungsten=6
-		aluminium=4
+		tungsten=4 # was: 6
+		aluminium=3 # was: 4
 	}
 
 	history={
-		owner = BRI
+		add_core_of = KAR
+		owner = KAR
 		buildings = {
 			infrastructure = 6
 			dockyard = 2
 		}
-		add_core_of = BRI
+		add_core_of = KAR
 	}
 
 	provinces={
-		200 3150 9161 11055 11136 11207 11306
+		200 3150 9161 11055 11136 11207 11306 
 	}
 }

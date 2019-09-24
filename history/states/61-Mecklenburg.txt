@@ -9,7 +9,10 @@ state={
 	history={
 		owner = KAR
 		victory_points = {
-			321 1
+			321 5
+		}
+		victory_points = {
+			11305 3
 		}
 		buildings = {
 			infrastructure = 6
@@ -24,6 +27,6 @@ state={
 	}
 
 	provinces={
-		268 293 321 3258 9294 11276 11305 
+		268 293 321 9294 11276 11305 
 	}
 }

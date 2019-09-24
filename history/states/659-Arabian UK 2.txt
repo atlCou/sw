@@ -7,10 +7,9 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = AKS
-		add_core_of = AKS
+		owner = KAR
 		victory_points = {
-			5074 1
+			5074 1 
 		}
 		buildings = {
 			infrastructure = 3
@@ -22,9 +21,10 @@ state={
 				naval_base = 1
 			}
 		}
+		add_core_of = KAR
 	}
 
 	provinces={
-		2029 4976 5074 8000 12821 12894 13079
+		2029 4976 5074 8000 12821 12894 13079 
 	}
 }

@@ -3,18 +3,25 @@ state={
 	id=225
 	name="STATE_225" # Sumy
 	manpower = 1338280
-
+	
 	state_category = town
 
 	history={
-		owner = ORU
+		victory_points = {
+			3520 3
+		}
+		victory_points = {
+			9566 1
+		}
+		owner = KAR
 		buildings = {
 			infrastructure = 5
 		}
-		add_core_of = ORU
+		add_core_of = KAR
+		add_core_of = KAR
 	}
 
 	provinces={
-		463 501 522 3225 3455 3520 6565 9477 9566 11462 11553
+		463 501 522 3225 3455 3520 6565 9477 9566 11462 11553 
 	}
 }

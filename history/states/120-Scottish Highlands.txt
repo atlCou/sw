@@ -2,18 +2,18 @@ state= {
 	id=120
 	name="STATE_120"
 	manpower = 265873
-
+	
 	state_category = rural
 
 	resources={
-		chromium=2
-		tungsten=22
-		aluminium=12
+		chromium=1 # was: 2
+		tungsten=16 # was: 22
+		aluminium=9 # was: 12
 	}
 
-	history=
-	{
-		owner = BRI
+	history= {
+		add_core_of = KAR
+		owner = KAR
 		victory_points = { 11064 1 }
 		buildings = {
 			infrastructure = 4
@@ -21,13 +21,13 @@ state= {
 			industrial_complex = 1
 			air_base = 1
 			11064 = {
-				naval_base = 8
+				naval_base = 8	
 			}
 			6196 = {
-				naval_base = 1
+				naval_base = 1	
 			}
 		}
-		add_core_of = BRI
+		add_core_of = KAR
 	}
 
 	provinces=

@@ -2,9 +2,9 @@
 state={
 	id=51
 	name="STATE_51"
-	manpower = 3072371
+	manpower = 6144743
 	resources={
-		steel=54
+		steel=30 # was: 54
 	}
 
 
@@ -15,11 +15,20 @@ state={
 		victory_points = {
 			6469 10 
 		}
+		victory_points = {
+			587 5 
+		}
+		#victory_points = {
+		#	3444 5
+		#}
+		#victory_points = {
+		#	3547 1
+		#}
 		buildings = {
-			infrastructure = 4
-			arms_factory = 2
-			industrial_complex = 1
-			air_base = 2
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 2
+			air_base = 3
 
 		}
 		add_core_of = KAR
@@ -31,10 +40,16 @@ state={
 			}
 		}
 	
+		set_demilitarized_zone = yes
+	
+	
+		1936.3.7 = {
+			set_demilitarized_zone = no
+		}
 	}
 
 	provinces={
-		529 3512 6469 6570 9482 
+		529 587 3444 3512 3547 6469 6570 9482 9522 
 	}
 	
 }

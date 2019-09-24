@@ -3,21 +3,20 @@ state=
 	id=163
 	name="STATE_163"
 	manpower = 18000
-
-	state_category = rural
-
+	
+	state_category = enclave
+	
 	history={
 		owner = VNE
-		add_core_of = VNE
 		buildings = {
 			infrastructure = 5
 			3943 = {
 				naval_base = 1
 			}
 		}
-	}
-
-	provinces={
-		3943
+		add_state_core = VNE
+	} 
+	provinces={	
+		3943 
 	}
 }

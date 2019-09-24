@@ -3,13 +3,13 @@ state={
 	id=359
 	name="STATE_359"
 	manpower = 4041332
-
+	
 	state_category = large_city
 
 	history={
-		owner = LIN
+		owner = KAR
 		victory_points = {
-			6882 5
+			6882 5 
 		}
 		buildings = {
 			infrastructure = 7
@@ -17,11 +17,11 @@ state={
 			air_base = 4
 
 		}
-		add_core_of = LIN
+		add_core_of = KAR
 	}
 
 	provinces={
-		3693 3863 6882 9801 9864 11740 11782 11900
+		3693 3863 6882 9801 9864 11740 11782 11900 
 	}
-
+	
 }

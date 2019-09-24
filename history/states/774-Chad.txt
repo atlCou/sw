@@ -1,12 +1,10 @@
-
 state={
 	id=774
 	name="STATE_774"
 
 	history={
-		owner = KAN
-		add_core_of = KAN		victory_points = {
-			2081 1 
+		owner = KAR		add_core_of = KAR		victory_points = {
+			2081 1
 		}
 		buildings = {
 			infrastructure = 2

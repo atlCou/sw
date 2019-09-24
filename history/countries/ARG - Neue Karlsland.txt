@@ -72,9 +72,9 @@ set_popularities = {
     liberal = 40
     communism = 0
     fascism = 0
-    authoritarian-socialism = 2
+    
     socialism = 4
-    ultra-nationalism = 5
+    
     fanatical-paganism = 11
     monarchism = 44
 }

@@ -1,21 +1,23 @@
-
 state={
 	id=515
 	name="STATE_515"
-	manpower=1482744
+	
+	state_category = pastoral
+	impassable = yes
 
-	state_category=wasteland
 	history={
-		owner = GAO		
-		add_core_of = GAO		
+		owner = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 1
 
 		}
 
 	}
-	buildings_max_level_factor=1.000
+
 	provinces={
-		1956 4913 7939 8028 8128 10758 10780 10805 10917 
+		1956 4913 7939 8028 8128 10758 10780 10805 10917
 	}
+	manpower=1456356
+	buildings_max_level_factor=1.000
 }

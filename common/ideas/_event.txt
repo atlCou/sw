@@ -219,7 +219,7 @@ ideas = {
 			}
 			removal_cost = -1
 			
-			picture = GAL_scw_intervention_republicans_focus
+			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
 				stability_factor = -0.1

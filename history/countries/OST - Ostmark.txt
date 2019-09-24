@@ -61,7 +61,7 @@ add_ideas = {
 	elections_allowed = no
 }
 
-set_national_unity = 0.7
+set_stability = 0.7
 
 create_country_leader = {
 	name = "Waltraud Nowotny"

@@ -4,17 +4,17 @@ state={
 	manpower = 29299
 	name="STATE_577"
 	resources={
-		oil=14
+		oil=13 # was: 14
 	}
 	
 	state_category = wasteland
 
 	history={
-		owner = ORU
+		owner = KAR
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ORU
+		add_core_of = KAR
 	}
 
 	provinces={

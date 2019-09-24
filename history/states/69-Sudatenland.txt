@@ -6,47 +6,28 @@ state=
 	
 	state_category = town
 	
+	resources={
+		steel=4 # was: 8
+	}
+	
 	history={
+		victory_points = {
+			3585 3
+		}
+		#victory_points = {
+		#	11432 1
+		#}
+		victory_points = {
+			11401 3
+		}
 		owner = OST
 		buildings = {
-			infrastructure = 6
-			anti_air_building = 5
-			424 =
-			{
-				bunker = 6
-			}
-			469 =
-			{
-				bunker = 6
-			}
-			3585 =
-			{
-				bunker = 6
-			}
-			5283 =
-			{
-				bunker = 6
-			}
-			6470 =
-			{
-				bunker = 6
-			}
-			9555 =
-			{
-				bunker = 6
-			}
-			11432 =
-			{
-				bunker = 6
-			}
+			infrastructure = 8
+			industrial_complex = 2
+			anti_air_building = 1
 
 		}
 		add_core_of = OST
-
-		1938.9.30 = {
-			owner = KAR
-			controller = KAR
-		}
 	}
 	provinces=
 	{

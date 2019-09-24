@@ -6,26 +6,25 @@ state={
 	state_category = city
 	
 	resources={
-		tungsten=2
+		tungsten=1 # was: 2
 	}
 
 	history={
 		owner = OST
 		victory_points = {
-			9692 10 
+			9692 10
+		}
+		victory_points = {
+			11539 5
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 3
+			arms_factory = 2
 			air_base = 3
 		}
 		add_core_of = OST
 
-		1939.3.14 = {
-			owner = SLO
-			controller = SLO
-			add_core_of = SLO
-		}
 	}
 
 	provinces={

@@ -6,10 +6,13 @@ state={
 	state_category = town
 
 	history={
-		owner = MAC
+		owner = OSO
 		victory_points = {
 			11818 5 
 		}
+		#victory_points = {
+		#	3844 1
+		#}
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
@@ -21,8 +24,7 @@ state={
 			}
 
 		}
-		add_core_of = MAC
-
+		add_core_of = OSO
 	}
 	
 	provinces={

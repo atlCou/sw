@@ -5,14 +5,13 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = KON
+		owner = KAR
 		buildings = {
 			infrastructure = 2
 			13015 ={
 				naval_base = 1
 			}
 		}
-		add_core_of = LUS
 	}
 
 	provinces={

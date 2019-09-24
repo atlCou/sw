@@ -1,22 +1,39 @@
-
 state={
 	id=747
 	name="STATE_747"
-
+	provinces={
+		4559 4937 5009 7965 7976 8126 10413 10863 12789 12898 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
 	history={
-		owner = BUR add_core_of = BUR victory_points = {
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		add_core_of = KAR
+		victory_points = {
 			7965 3 
 		}
 		buildings = {
 			infrastructure = 3
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					KAR= {
+						has_dlc = "Waking the Tiger" 
+					}
+
+				}
+				KAR= {
+					transfer_state = PKAR
+
+				}
+
+			}
 
 		}
-	}
 
-	provinces={
-		4559 5009 7965 7976 10413 10863 12789 12898 
 	}
-	manpower=1000000
-	buildings_max_level_factor=1.000
-	state_category=pastoral
 }

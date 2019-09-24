@@ -5,9 +5,10 @@ state=
 	manpower = 241621
 	state_category = small_island
 	history= {
-		owner = RMA
+		owner = KAR
+		add_core_of = KAR
 		victory_points = {
-			12003 5
+			12003 5 
 		}
 		buildings = {
 			infrastructure = 3
@@ -17,7 +18,6 @@ state=
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = RMA
 	}
 	provinces= { 12003 }
 }

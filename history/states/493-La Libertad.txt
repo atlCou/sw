@@ -4,13 +4,13 @@ state={
 	name="STATE_493"
 	manpower = 2826781
 	resources={
-		oil=20
+		oil=15 # was: 20
 	}
 	
 	state_category = town
 
 	history={
-		owner = COL
+		owner = KAR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -22,7 +22,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = COL
+		add_core_of = KAR
 		victory_points = {
 			2023 1 
 		}

@@ -4,17 +4,18 @@ state={
 	name="STATE_49" # Ankara
 	manpower = 770758
 	resources={
-		chromium=16
+		chromium=11 # was: 16
 	}
 	
 	state_category = town
 
 	history={
 		owner = OSO
-		add_core_of = OSO
-		
 		victory_points = {
 			11747 10 
+		}
+		victory_points = {
+			3951 1
 		}
 		buildings = {
 			infrastructure = 4
@@ -22,6 +23,7 @@ state={
 			industrial_complex = 2
 			air_base = 3
 		}
+		add_core_of = OSO
 	}
 
 	provinces={

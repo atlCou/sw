@@ -1,15 +1,14 @@
-
 state={
 	id=606
 	name="STATE_606"
 	resources={
-		steel=16.000
+		steel=11.000
 	}
 
 	history={
-		owner = ASI
-		add_core_of = ASI
-		add_core_of = ASI
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = KAR
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -19,13 +18,7 @@ state={
 			7222 1 
 		}
 		1938.10.25 = {
-			controller = ASI
-			ASI = {
-				set_province_controller = 1125
-				set_province_controller = 7104
-				set_province_controller = 12019
-
-			}
+			controller = KAR
 			buildings = {
 				industrial_complex = 3
 				infrastructure = 6
@@ -41,7 +34,7 @@ state={
 	provinces={
 		1083 1146 4079 4158 4203 7035 7094 7222 9937 10008 10017 10040 10064 10079 11916 11994 12036 12061 
 	}
-	manpower=23265400
+	manpower=18265400
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 }

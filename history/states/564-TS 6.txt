@@ -5,22 +5,22 @@ state={
 	manpower = 370893
 	state_category = rural
 	resources={
-		steel=20
-		chromium=34
-		tungsten=28
-		aluminium=8
+		steel=10 # was: 20
+		chromium=12 # was: 34
+		tungsten=10 # was: 28
+		aluminium=4 # was: 8
 	}
 
 	history={
-		owner = MON
+		owner = KAR
 		buildings = {
 			infrastructure = 4
 
 		}
-		add_core_of = MON
+		add_core_of = KAR
 	}
 
 	provinces={
-		1696 4705 4766 4837 7751 7816 7835 7860 10528 10658 12507 12644
+		1696 4705 4766 4837 7751 7816 7835 7860 10528 10658 12507 12644 
 	}
 }

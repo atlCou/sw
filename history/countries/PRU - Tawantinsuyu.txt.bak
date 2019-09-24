@@ -70,7 +70,7 @@ set_convoys = 10
         authoritarian_socialism = 11 
         socialism = 11 
         liberal_monarchism = 11 
-        ultra-nationalism = { popularity = 11 }
+        
         fanatical-paganism = 11 
         monarchism = 70 
 
