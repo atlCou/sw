@@ -9,7 +9,7 @@ state=
 	
 	history=
 	{
-		owner = KAR
+		owner = BAL
 		victory_points = { 12674 1 }
 		buildings = {
 			infrastructure = 2
@@ -17,8 +17,7 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = KAR
-		add_core_of = KAR
+		add_core_of = BAL
 	}
 	provinces=
 	{

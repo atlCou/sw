@@ -1,211 +1,47 @@
 ﻿l_english: 
 
 
+
+
+KAR_liberal:0 "Karlslander Empire"
+KAR_liberal_DEF:0 "The Empire of Karlsland"
+KAR_liberal_ADJ:0 "Karlslander"
+KAR_communism:0 "People's Republic of Karlsland"
+KAR_communism_DEF:0 "The People's Republic of Karlsland"
+KAR_communism_ADJ:0 "Karlslander"
+KAR_fascism:0 "Karlsreich"
+KAR_fascism_DEF:0 "Karlsreich"
+KAR_fascism_ADJ:0 "Karlslander"
+KAR_monarchism:0 "Karlslander Empire"
+KAR_monarchism_DEF:0 "The Empire of Karlsland"
+KAR_monarchism_ADJ:0 "Karlslander"
+KAR_fanatical-paganism:0 "Wuotanrihhi"
+KAR_fanatical-paganism_DEF:0 "Wuotanrihhi"
+KAR_fanatical-paganism_ADJ:0 "Karlslander"
+KAR_socialism:0 "Karlsland"
+KAR_socialism_DEF:0 "Karlsland"
+KAR_socialism_ADJ:0 "Karlslander"
+
+KAR_republic_liberal:0 "Karlsland"
+KAR_republic_liberal_DEF:0 "The Karlslander Republic"
+KAR_republic_liberal_ADJ:0 "Karlslander"
+KAR_republic_monarchism:0 "Karlsland"
+KAR_republic_monarchism_DEF:0 "The Karlslander Republic"
+KAR_republic_monarchism_ADJ:0 "Karlslander"
+
+
+
+
+
+
 KAR_stagnantkarlsland:0 "Stagnant Karlsland"	
 KAR_recoveringfromww1:0 "Recovering from the Neuroi War"		
 KAR_thedeathofmonarchy:0 "The Death of Monarchy"
 
 
-
-KAR_jointdeveloptech:0 "Joint Develop Tech"
-KAR_jointdeveloptech_desc:0 "In an effort to subvert the chances of another Neuroi war, we can joint develop new technologies to further harness the potential of our witch population."
-KAR_politicaltides:0 "Political Tides"
-KAR_politicaltides_desc:0 "The Emperor sees nothing wrong with Karlsland's current political situation. But others may feel differently..."
-KAR_reaffirmthemonarchy:0 "Reaffirm the Populace"
-KAR_reaffirmthemonarchy_desc:0 "The Kaiser is fully aware of the revolutionary tension throughout Karlsland. As they do not hold the majority opinion - yet - a public show of support for a more stable system will be necessary to continue."
-KAR_disavowthedegeneratemonarchy:0 "Disavow the Degenerate Monarchy"
-KAR_disavowthedegeneratemonarchy_desc:0 "The emperor kneels before even the lazy Baltlandians to our north. Karlsland was a great power once before, being feared by civilizations mightier than it and crushing those weaker - it's time to put an end to our stagnation."
-KAR_karlsandernationalism:0 "Karlslander Nationalism"
-KAR_karlsandernationalism_desc:0 "The people have shown great support in our rhetoric against the emperor. It would be great if we could now increase the influence of our own parties, and make sure to snuff out the pagans ruining our optics."
-KAR_embracekarslanderpaganism:0 "Embrace Karlslander Paganism"
-KAR_embracekarslanderpaganism_desc:0 "Our ancestors made Karlsland what it is today. They brought down Rome, ruled central Europe, and lead The Great Neuroi War. The common unifier? A belief in the traditional Karlslander gods from which witches are chosen. Our fellow nationalists don't understand this yet - let's get them to."
-KAR_embracekarslanderpaganism:0 "Embrace Karlslander Paganism"
-KAR_embracekarslanderpaganism_desc:0 "Our ancestors made Karlsland what it is today. They brought down Rome, ruled central Europe, and lead The Great Neuroi War. The common unifier? A belief in the traditional Karlslander gods from which witches are chosen. Our fellow nationalists don't understand this yet - let's get them to."
-KAR_dispossesstheemperor:0 "Dispossess the Emperor"
-KAR_dispossesstheemperor_desc:0 "New threats, foreign and extraterrestrial, threaten the development of our nation. We cannot wait any longer - we must dethrone the emperor and the aristocrats with him."
-KAR_towardsempire:0 "Towards Empire"
-KAR_towardsempire_desc:0 "The pagans are weak and our fellow fascists do not all understand the potential for Karlsland. We will show them might truly does make right, and lead Karlsland to victory in Europe, the world, and beyond."
-KAR_militantkarlsland:0 "A Glorious Karlsland"
-KAR_militantkarlsland_desc:0 "Why should we tolerate the pure expansionists in our midst? They do not want a pure and glorious Karlsland - they want land and money like the capitalists and socialists we have dispossessed. We must make sure to take leadership before their sentiment grows further."
-KAR_odinskarlsland:0 "Karlsland Reborn"
-KAR_odinskarlsland_desc:0 "With the emperor gone, we have only anarchy standing in the way to a glorious state. Our factions alone can assume the empty throne and rule in the name of our ancestors, and lead the new republic of Karlsland."
-
-
-
-
-KAR_revolutionaryequality:0 "Revolutionary Equality"
-KAR_revolutionaryequality_desc:0 "Decades ago, a Karlslander philosopher set the stage for a new political theory very different than the current regime. Nothing came of it, but it's never too late to change that."
-KAR_alignwithliberals:0 "Align with Liberals"
-KAR_alignwithliberals_desc:0 "Although we may disagree with the existing hierarchies of the various liberal beliefs, there's no denying they're a more attractive ally then the revolutionaries further to our left. It would be better to align with them for change."
-KAR_petitionfrederickiv:0 "Petition Frederick IV"
-KAR_petitionfrederickiv_desc:0 "We understand the position of Frederick in relation to his nation and his seat of power, and we do not with for a July Revolution of our own. Instead, we drafted a petition directed to the monarch which does not dethrone him, but limits his power as many other nations already do."
-KAR_demandsagainstfrederickiv:0 "Demands Against Frederick IV"
-KAR_demandsagainstfrederickiv_desc:0 "If we want freedoms, we want complete freedom. Why look to Ostmark or Britannia as examples when, with a newfound Neuroi presence, we could look to Liberion and peaceful revolution?"
-KAR_forprogress:0 "For Progress"
-KAR_forprogress_desc:0 "With the threat continuing, Frederick is weak. If we continue the pressure, his federation will surely fall in the name of progress yet unseen in the world."
-KAR_forliberty:0 "For Liberty"
-KAR_forliberty_desc:0 "With the threat continuing, Frederick is weak. If we continue the pressure, his federation will surely fall in the name of liberty."
-KAR_stepforward:0 "Step Forward"
-KAR_stepforward_desc:0 "Frederick has seen the potential in social democracy and, in fear of revolt, has given us what we wanted peacefully. Rejoice!"
-KAR_tofreedom:0 "To Freedom!"
-KAR_tofreedom_desc:0 "Frederick has seen the potential in republicanism and, in fear of revolt, has given us what we wanted peacefully. He will be remembered positively."
-KAR_forthenation:0 "For the Nation"
-KAR_forthenation_desc:0 "The Right has exactly one thing correct that the Marxists do not - hierarchy is important from the state level to the interpersonal, even inherent level. We should direct our efforts in this direction."
-KAR_fortheproletariate:0 "For the Proletariate"
-KAR_fortheproletariate_desc:0 "The National-Bolsheviks are just a disgusting protrusion of the right, co-opting the much more developed theories of Karlsland's own philosophers. As soon as we throw them out, we can will have enough support for revolution."
-KAR_overthrowfrederick:0 "Overthrow Frederick"
-KAR_overthrowfrederick_desc:0 "Although many would prefer a peaceful option, they know there is none. The rest is self explanatory - and the step to it is moments away."
-KAR_nationalbolshevism:0 "National-Bolshevism"
-KAR_nationalbolshevism_desc:0 "And finally, the time comes to rule the people of Karlsland in the egalitarian and powerful way we always deserved. And specifically just the Karlslanders."
-KAR_ontointernationalism:0 "Onto Internationalism"
-KAR_ontointernationalism_desc:0 "In retrospect, the National-Bolsheviks were correct about one thing - we must spread this ideal to nations beyond our own."
-KAR_appealtoresentment:0 "Appeal to Resentment"
-KAR_appealtoresentment_desc:0 "We are not unaware of the tides of revolution within our nation, but there's no reason we should react to it violently."
-KAR_sponsormonarchistliterature:0 "Sponsor Monarchist Literature"
-KAR_sponsormonarchistliterature_desc:0 "We shouldn't ignore the power of literature in the political sphere. In order to further the stability of Frederick IV's regime, we could publish and sponsor philosophical and political literature that supports our regime."
-KAR_opendiplomaticoptions:0 "Open Diplomatic Options"
-KAR_opendiplomaticoptions_desc:0 "In maintaining our regime, we can open a whole range of diplomatic opportunities for our future. The Empire of Karlsland lives on!"
-KAR_addressthenewthreat:0 "Address the New Threat"
-KAR_addressthenewthreat_desc:0 "In shock to the continent of Europe and beyond, the Neuroi have resurfaced in Hispania. How we chose to handle this threat may determine the fate of our nation."
-KAR_relationswithostmark:0 "Relations with Ostmark"
-KAR_relationswithostmark_desc:0 "In a world of pantless witches, there is little tension between nations in peacetime. It's impossible to appeal to every nation, so let's appeal to our closest neighbor - Ostmark."
-KAR_relationswithfuso:0 "Relations with Fuso"
-KAR_relationswithfuso_desc:0 "After the collaboration of nations in technological development, we noticed great deals of innovation from the nation of Fuso. It would be beneficial for the future to improve relations with them."
-KAR_relationswithitaly:0 "Relations with Italy"
-KAR_relationswithitaly_desc:0 "Along with Ostmark, getting closer to Romagna and Venezia is the next logical step in improving relations with our neighbors."
-KAR_relationswithliberion:0 "Relations with Liberion"
-KAR_relationswithliberion_desc:0 "Rival by nature, the other large foreign nation of Liberion could also be a potentially beneficial ally in the development of newer, better technology."
-KAR_relationswithneighbors:0 "Relations with Neighbors"
-KAR_relationswithneighbors_desc:0 "By improving our relations with the rest of our smaller neighbors, we can form a land based alliance for quick mobilization in a future event."
-KAR_relationswithgallia:0 "Relations with Gallia"
-KAR_relationswithgallia_desc:0 "A past rival, improving relations with Gallia would be beneficial not only in our technological sharing, but in maintaining peace."
-KAR_middleeuropeanconference:0 "Middle European Conference"
-KAR_middleeuropeanconference_desc:0 "In response to the returning Neuroi threat in Hispania, we can decide to host a conference in Berlin to discuss a plan with our many new allies."
-KAR_strikeunits:0 "Strike Units"
-KAR_strikeunits_desc:0 "After collaboration with many other nations, we can start developing concepts for a new military technology for our witches to aid in fighting the Neuroi - Strike Units - based on the Miyafuji Theory."
-KAR_inviteitaly:0 "Inviting Italy"
-KAR_inviteitaly_desc:0 "The nations of the Italian peninsula are sites of cultural importance. More importantly, a pact with them would stretch our alliance across Europe vertically, a wall against again assault from the east or west."
-KAR_invitehispania:0 "Inviting Hispania"
-KAR_invitehispania_desc:0 "Our ties to Hispania are weak - but they're in need of an ally. If the United Nations don't want them, they'd be an excellent ally in Iberia."
-KAR_inviteostmark:0 "Inviting Ostmark"
-KAR_inviteostmark_desc:0 "Ostmark has historically been a very close ally. Our countries have temporarily gone on different paths since the Great Neuroi War, but the Ostmarker federation may be willing to rejoin us in a military pact after their reconstruction efforts."
-
-
-KAR_coupproduction:0 "Secret Coup Production"
-KAR_coupproduction_desc:0 "In advance of our rise, we should infiltrate some manufacturing sites to make arms for specifically us..."
-KAR_faction:0 "Host of the Middle European Conference"
-KAR_finishcoupproduction:0 "Finish Coup Production"
-KAR_finishcoupproduction_desc:0 "... so after five weeks, we will have all the equipment nescassary to move forward. Once we finish the rest of our tasks, we can move ahead to real change."
-KAR_streetgangs:0 "Right Wing Street Advocacy"
-KAR_rightwingadvocacy:0 "Right Wing Advocacy"
-KAR_streetgangs_desc:0 "A paramilitary, to show that even without an official seat in governance we can organize a military force, would be the ideal beginning to our ascent to dominance."
-KAR_streettension:0 "Street Violence"
-KAR_streettension_desc:0 "Nothing has ever been accomplished without revolution - without violence. When we see a monarchist or a liberal, we should not hesitate to show them where they sit on the revolutionary hierachy."
-KAR_apagankarlsland:0 "Odin's Realm"
-KAR_witchesdevelop:0 "§GDevelop Strike Units in earlier than usual, access the unit tree earlier.§W"
-KAR_ultranatambitions: "§RDeclare to our people the ambitions we have for the future of our great nation. Surely no one outside will hear of it."
-KAR_firststrides:0 "First Strides"
-KAR_firststridesdesc:0 "§GThe Benelux nations are sent an ultimatum. Let us hope they decide to join our glorious empire.§W"
-KAR_firststrides_desc:0 "With our ambitions and military ready, we can begin to start our advance for a greater future for the people of Europe."
-KAR_greaterkarlsland:0 "Greater Karlsland"
-KAR_glorytokarlsland:0 "Glorious Karlsland"
-KAR_glorytokarlsland_desc:0 "Karlsland's rejuvination begins here - we'll soon never have to worry about the Neuroi or our neighhbors ever again!"
-KAR_witchesenrollment:0 "Begin Enrollment"
-KAR_pedestalwitches:0 "Pedestal Witches"
-KAR_infiltratemedia:0 "Infiltrate the National Media"
-
-
-KAR_socialistpurges:0 "The Secularist Purge"
-KAR_socialistpurges_desc:0 "The secular parties (especially the liberals) for whatever reason, genuinely believed we'd allow them to continue their rhetoric of blind statehood. Let's fix that."
-KAR_socialistpurges_tooltip:0 "§GWill drastically decrease the popularity of liberal parties.§W"
-KAR_karlslanderscientists:0 "Karlslander Scientists"
-KAR_karlslanderscientists_desc:0 "Karlslander science is the best in the world - let's always remember that."
-KAR_karlslandereducation:0 "Converting Churches"
-KAR_karlslandereducation_desc:0 "The non-official churches in Karlsland can be converted to official Wuotanrihhi churches. Those which are designed too heavily for non-pagan religions can be converted to recruitment and conscription centers - they have no other forseeable purpose."
-KAR_afriendlyneighborhood:0 "A friendly neighborhood..."
-KAR_isastableneighborhood_desc:0 "The Dutch and Belgicans must be made reincorporated into our glorious Karlslander state. We'll give them the options of immediate annexation or conflict that they will inevitably fail to hold off for the betterment for the stability of our diplomatic sphere."
-KAR_isastableneighborhood:0 "...is a stable neighborhood."
-KAR_afriendlyneighborhood_desc:0 "The Balts, Helvetians, and Venezians all have movements like our own. Let's empower them in their nations for the benefit of us both."
-KAR_fuspact:0 "Fuso Pact"
-KAR_fuspact_desc:0 "Fuso, the most developed nation in the East, would make an excellent diplomatic partner. Even further, they share our sentiment for a strong and hierarchical military, which would make an agreement between eachother very powerful."
-KAR_expandingthepakt:0 "Expanding the Pact"
-KAR_expandingthepakt_desc:0 "Those movements we supported earlier have marched in our footsteps and overthrown their degenerate rulers. To secure them against foreign threats, we can invite them to our new pact with Fuso."
-KAR_expandingthepakt_tooltip:0 "§WWill send an event to §YBaltland§W, §YHelvetia§W, and/or §YVenezia§W as long as they have a far-right government - otherwise it won't do anything."
-
-KAR_expandingthestate:0 "Expanding the State"
-KAR_defendingthestate:0 "Defending the State"
-KAR_west:0 "West"
-KAR_south:0 "South"
-KAR_ideologicalwar:0 "An Ideological War"
-KAR_revanchism:0 "Karlslander Revanchism"
-KAR_al-lor_incident:0 "Alcase-Lorraine Incident"
-KAR_vienna_incident:0 "Vienna Incident"
-
-
-
-
-###### Fascist Econ Tree
-KAR_karlslandercorporatism:0 "Corporate Guilds"
-KAR_karlslandercorporatism_desc:0 "A tremendously interesting idea has reached us from Romagna. Although we had not planned to tamper with the social-welfare and basic economic structure of the monarchy, we should not ignore Corporatism for its great potential benefits to the wealth of the Karlslander people."
-KAR_industrialimprovements2_fascist:0 "Seizing Unproductive Factories"
-KAR_infrastructureimprovements_fascist:0 "The Southern Railroad"
-KAR_military_production2_fascist:0 "Karlslander Work Ethic"
-KAR_military_production_fascist:0 "Foreign Arm Makers"
-
-######### COMPLETE NATIONALIZATION TREE
-KAR_bringthemin:0 "Bring Them In"
-KAR_bringthemin_desc:0 "The businesses of the old reich represent the society of the old reich. If we are to progress, we must take complete and utter control of them, and direct them in the needs of our people."
-KAR_bringthemin_tooltip:0 "§RWill only allow §YHE§R and §YNSKAP§R to suceed in the future power struggle!§W"
-KAR_theestates:0 "The Estates"
-KAR_theestates_desc:0 "The rich estates of Karlsland's upper class have been one of the greatest crimes against the good name of our nation. We will seize them, and put them to greater and better uses!"
-KAR_therailroads:0 "The Railroads"
-KAR_therailroads_desc:0 "That capitalists can profit from an industry as inherently monopolistic as railroads is sickening. Seize them for Karlsland, and we'll make them run better than any profit grabber ever has!"
-KAR_thefactories:0 "The Factories"
-KAR_thefactories_desc:0 "Factories that aren't producing efficiently are factories that are producing aimlessly. We will take them and put them to good use instead!"
-KAR_themines:0 "The Mines"
-KAR_themines_desc:0 "Karlsland has great potential to produce more materials than it already does, but our mines have been running very poorly. Let's fix that by taking them over ourselves!"
-
-
-
-KAR_guildmanager:0 "Future of the Karlsreich"
-KAR_nationalrevitilization:0 "National Revitilization"
-KAR_nationalrevitilization_desc:0 "Karlsland has struggled to regain its foothold in the world after the Great Neuroi War. We suffered loss not in territory, but in our reputation, military, and pride. We will reverse this setback, and show the world again that Karlsland is the greatest."
-KAR_naturalizationandcitizenshipact:0 "Naturalization and Citizenship Act"
-KAR_naturalizationandcitizenshipact_desc:0 "The only people who can naturalize to the culture of Karlsland are Karlslanders themselves, and the only Karlslander citizens are those who serve their nation."   
-KAR_fuhrerhanna:0 "Leader Hanna"
-KAR_fuhrerhanna_desc:0 "Until now, Hanna Rudel has been a representation of the ideals of our party, and a popular rallying point for the otherwise apolitical. But with no clear lead figure in the party, Hanna Rudel has offerred to lead the party herself!"
-
-
-
-KAR_declareambitions:0 "The First Speech"
-KAR_ultnatresearch:0 "Steps to Superiority"
-KAR_ultnatproduction:0 "Development to Superiority"
-KAR_convertchurches:0 "Convert Churches"
-KAR_teiwaz:0 "Factories for Teiwaz"
-KAR_changethecurriculum:0 "Reeducate the Secular"
-KAR_paganscience:0 "Norse Science"
 KAR_researchthehispanianeuroi:0 "Research the Hispanian Neuroi"
 KAR_researchthehispanianeuroi_desc:0 "With the Hispanian Neuroi put down, we can begin to advance our understanding of neuroi and progress our military understanding in general."
 KAR_witchesschools:0 "Witches Schools"
-KAR_easterncooperation:0 "Old Friendship"
-KAR_easterncooperation_desc:0 "In a tough decision between attempting relations with the Entente or Ostmark, we have decided to attempt with our old ally: Ostmark. Failure means ties with neither, but we can see little reason for Ostmark denying a reunion of our great nations."
-KAR_withthegreats:0 "With the Greats"
-KAR_withthegreats_desc:0 "In a tough decision between attempting relations with the Entente or Ostmark, we have decided to attempt with the Entente. Failure means ties with neither, but we can see little reason for them denying."
-KAR_munichmarch:0 "March in Munich"
-KAR_munichmarch_desc:0 "At what seemed like the peak of far-right movements within Karlsland, the leading faction is a planning large march in Munich. With the future of the monarchy extraordinarily bleak, the Kaiser and the Reichstag see the end in near sight."
-wentliberal:0 "The Kaiser announced support of a liberal government."
-statusquo:0 "The Kaiser announced active support for the monarchy."
-KAR_supportedfascism:0 " The Kaiser supported the National-Socialists."
-KAR_supportedpaganism:0 " The Kaiser supported the Heidnische Einheitsfront."
-KAR_ultnatmonarchy:0 "The Kaiser and his royalists developed a last minute opposition party."
-KAR_ultnatfinal:0 "Institutionalize the Party"
-KAR_ultnatfinal_desc:0 "As no power will be transferred, instituting the new party will be as simple as choosing a new witch to represent the party and convincing the leaders of our opposition to unite in our similar causes."
-KAR_appealtotheliberals:0 "Appeal to Liberals"
-KAR_appealtotheliberals_desc:0 "To the Karlslander Empire, democracy is not an alien idea. The Reichstag has the potential of becoming an extremely popular among the more liberal tendencies in our populace, and we'll finally rid of the psuedo-democracy we've entertained for so long."
-KAR_establishingaparliament:0 "Establishing a Real Parliament"
-KAR_establishingaparliament_desc:0 "The next step in the development of our liberal government is establishing the Reichstag as a genuine parliament, able to be voted in by any Karlslander citizen. This won't be easy for the authoritarians in our nation to accept, but hopefully they'll come to see the merit of our new system."
-KAR_thekarlslanddeal:0 "The New Economy"
-KAR_thekarlslanddeal_desc:0 "Although we disliked them, the radicals were right about a major issue - we have stagnated in meeting the desires of our population and the requirements of our industry. In order to ensure we stay a leading figure to Europe and the world, we can begin the modernization of our economic system and social welfare."
 KAR_publicprojects:0 "Public Works"
 KAR_publicprojects_desc:0 "To step into the future, we must bring our industry with us."
 KAR_socialprograms_focus:0 "Social Programs"
@@ -219,67 +55,19 @@ KAR_ostmarkborder_liberal_desc:0 "Named after Karlsland's young ace, the Hartman
 KAR_ostmarkborder_market_desc:0 "Named after Karlsland's young ace, the Hartmann line is a proposed fortification concept that would include a massive string of forts across our border with Ostmark. Ideally, we'd do this from support of our markets; but it appears that this will have to be a public effort for the time."
 KAR_industrialimprovements2_liberal:0 "Karlsland Industry Program"
 KAR_industrialimprovements2_liberal_desc:0 "A proposed concept by leading Karlsland officials, we should put effort into directly subsidizing and supporting our industries so that we can further expand our industrial capacities, whatever the need."
-KAR_industrialimprovements3_liberal:0 "Program Subsidies"
-KAR_industrialimprovements3_liberal_desc:0 "Before we get to the specifics of our program, we need to expand on what we already have in order to satisfy our unrelated needs."
 KAR_infrastructureimprovements_liberal:0 "South Karlsland Transport Program"
 KAR_infrastructureimprovements_liberal_desc:0 "Karlsland's central roads are excellent, but investment into further developing highway systems in the south and in the Rhine would increase our capacities immensely."
-KAR_infrastructureimprovements2_liberal:0 "Road Funding"
-KAR_infrastructureimprovements2_liberal_desc:0 "Who will build the roads? We will build the roads!"
 KAR_preparingdefense_liberal:0 "Eastern Infrastructure"
 KAR_preparingdefense_liberal_desc:0 "Eastern Karlsland has always been less developed than the west. A little more investment in the east would help all of us overall."
-KAR_preparingexpansion_liberal:0 "Preparing for Expansion"
-KAR_preparingexpansion_liberal_desc:0 "With or without the Neuroi threat, the fate of Karlsland is to bring itself onto the world as a protector of stability and goodness."
-KAR_karlslandmines_liberal:0 "Mining Subsidies"
-KAR_karlslandmines_liberal_desc:0 "Our mines may be expansive, but for the coming tides we'll need greater and cheaper access to raw material."
-KAR_karlslandnavy_liberal:0 "Kriegsmarine Expansion"
-KAR_karlslandnavy_liberal_desc:0 "Although the Kriegsmarine is large compared to many of our neighbors, it pales in comparison to Liberion and especially Britannia due to the events of the first Neuroi War."
 KAR_military_production_liberal:0 "Expanding the Industry Program"
 KAR_military_production_liberal_desc:0 "By expanding the Karlsland Industry Program to our military manufacturers, we can directly increase our military output."
 KAR_military_production2_liberal:0 "Karlsland Arms"
 KAR_military_production2_liberal_desc:0 "Karlsland arms are the best in the world - as they need to be if we want to win any wars."
-KAR_volunteersfirst:0 "Volunteers First"
-KAR_volunteersfirst_desc:0 "Though we need more than enlistees to support our military, we must never forget those who sign up voluntarily to serve their nation."
-
-KAR_theostmarkhabsburgs:0 "The Ostmark Habsburgs"
-KAR_theostmarkhabsburgs_desc:0 "The Habsburgs of Ostmark have been the figures of the Ostmark kingdom and empire for this half of the millennium. Although we have distanced our close ties after their drift towards liberalism, we can attempt to publicly support the remaining Habsburgs to strengthen the ties of our two nations and the monarchy within our own."
-KAR_entrenching_the_monarchy:0 "Entrenching the Monarchy"
-KAR_entrenching_the_monarchy_desc:0 "Our commitment to our kingdom and empire has allowed us to firmly plant the monarchy in the forefront of the citizenry, weeding out the revolutionary right for the future of Karlsland."
-KAR_entrenching_the_monarchy_tooltip:0 "§GAdjusts party popularity to represent the purge of revolutionary tendencies. \n§WOpens the §YEconomic Debate§W branch for Karlsland."
-
-KAR_hartmanneconomy:0 "'Helma Economy'"
-KAR_hartmanneconomy_desc:0 "A proposal by the Karlsland Kaiser himself to display his acceptance of the social democrats's economic ideals, the dubbed 'Helma Economy' is based on the proposed ideas of Karlsland's center-left factions, the largest of which is headed by Helma Lennartz: the namesake."
-KAR_hartmanneconomy_tooltip:0 "§WOpens the §YEconomic Debate §Wbranch for Karlsland.§W"
+KAR_helmaeconomy:0 "'Helma Economy'"
+KAR_helmaeconomy_desc:0 "A proposal by the Karlsland Kaiser himself to display his acceptance of the social democrats's economic ideals, the dubbed 'Helma Economy' is based on the proposed ideas of Karlsland's center-left factions, the largest of which is headed by Helma Lennartz: the namesake."
+KAR_helmaeconomy_tooltip:0 "§WOpens the §YEconomic Debate §Wbranch for Karlsland.§W"
 KAR_trudeeconomy:0 "'Trude Economy'"
 KAR_trudeeconomy_desc:0 "A proposal by the Karlsland Kaiser himself to display his acceptance of the liberal's economic ideals, the dubbed 'Trude Economy' is based on the proposed ideas of Karlsland's liberal factions."
-KAR_karlslanderpagans:0 "The Karlslander National Pagans"
-KAR_karlslanderpagans_desc:0 "The Karlsland's militant pagans are the primary revolutionary force in Karlsland. Their greatest point of weakness, or our greatest opportunity to convert them, is their attachment to their churches."
-KAR_aquickgreatstep:0 "A Quick, Great Step"
-KAR_aquickgreatstep_desc:0 "With the foundation of the new government in place, the Kaiser has decided it's time to transfer his power peacefully while his children are too young to undersand what they'll be missing. We will also begin outlining provisions for providing all peoples equal ballots, which will no doubt upset the high estates."
-KAR_civilrightsprotections:0 "Social Reconstruction"
-KAR_civilrightsprotections_desc:0 "The Karlslander parliament has decided that with their current economic status, social reform would be a completely viable first goal for the reformed state."
-KAR_fosteringkarlslandindustry:0 "Fostering Karlsland's Industry"
-KAR_banningpagans:0 "Banning Heidnische Einheitsfront"
-KAR_banningpagans_desc:0 "Obviously, ensuring that the pagan's speech would be protected was but a trick so Karlsland did not fall apart. Their diminished popularity after failing to work with secular nationalists and our successes, banning the parties should lead to little upset."  
-KAR_banningpagans_tooltip:0 "§MReplaces the diminished and nearly dead Pagan parties with a more favorable, albeit unpopular and confusing Lutheran one.§W"
-KAR_banningpagans_con:0 "Banning Heidnische Einheitsfront"
-KAR_banningpagans_con_desc:0 "Obviously, ensuring that the pagan's speech would be protected was but a trick so Karlsland did not fall apart. Their diminished popularity after failing to work with secular nationalists and our successes, banning the parties should lead to little upset."  
-KAR_thenationalchurch:0 "The National Religion"
-KAR_thenationalchurch_desc:0 "The fate of religion in Karlsland's new government may be more significant than we had originally thought."
-KAR_thefirstelections:0 "The First Elections"
-KAR_thefirstelections_desc:0 "The first Karlslander elections are being held especially early relative to the establishment of the government so that a dangerous authoritarian presence is established as it was during the monarchy."
-KAR_thefirstelections_tooltip:0 "§MBegins the election process, which will result in one of the surviving movements winning a government."
-KAR_cooperativeindustry:0 "Cooperative Industry"
-KAR_cooperativeindustry_desc:0 "Our democratic deplomacy has landed us investors from other such nations - resulting in an economic boom."
-KAR_ostmarksloth:0 "Ostmark's Sloth"
-KAR_ostmarksloth_desc:0 "Ostmark's recent slugishness in governance has made them a threat to safety in the region. With their military in complete collapse, we cannot leave a neighbor and ally that weak on so much of our border."
-KAR_karlslanderscience:0 "Karlslander Science"
-KAR_karlslanderscience_desc:0 "To help kick-off Ostmark's slugishness, we can invite them to a research circle to get them up to speed.
-KAR_loyalistdivisions:0 "Loyalist Divisions"
-KAR_loyalistdivisions_desc:0 "The Kaiser's army exists to serve his nation. Let's reinforce this sentiment within the military, and begin further development of special divisions with specific devotions to Karlsland."
-KAR_theunitednations:0 "Approaching Britannia"
-KAR_theunitednations_desc:0 "As a common enemy of manking, the Neuroi have become a frightening rallying point for every nation in the world. Perhaps, with the help of Britannia, we can secure both the security of the mainland and an ally in the case of a fatal crisis."
-
-
 KAR_theeconomy:0 "Economic Debate"
 KAR_theeconomy_desc:0 "The stabilaztion of Karlsland's political foundations have resulted in a new debate throughout the nation - the direction of the economy. One faction calls for the path of state direction, similar to those policies of the 1880s. Another calls for a weakened grip on the Karlsland market, putting emphasis on the strength of our economy."
 KAR_markets:0 "Karlslander Markets"
@@ -296,7 +84,6 @@ KAR_infrastructureimprovements_market:0 "Karlsland's Roads"
 KAR_infrastructureimprovements_market_desc:0 "Karlsland's infrastructure is already suberb, but an extension of the highway system can make it even better."
 KAR_infrastructureimprovements2_market:0 "State Resources"
 KAR_infrastructureimprovements2_market_desc:0 "An increase in our the quality of our infrastructure will also help us increase the amount of resources that can be shipped."
-
 KAR_preliminaryeconomy: "Preliminary Economic Reform"
 KAR_preliminaryeconomy_desc:0 "The intermediate parliament has suggested some reforms to the managing of the Karlsland economy, which notably include increased subsidizing of basic industries and reforming trade relations to import more consumer products."
 KAR_neweconomy:0 "The New Economy"
@@ -307,37 +94,21 @@ KAR_socialprograms:0 " The Karlslander people have decided that they are ok with
 KAR_businessstimulation:0 " The Karlslander people have decided that they are ok with a deregulated market economy."
 KAR_miningexpansion:0 "Rhenish Aluminum"
 KAR_miningexpansion_desc:0 "If we're going to continue the development of our air force, we must expand our aluminum business."
+KAR_thekarlslanddeal:0 "The New Economy"
+KAR_thekarlslanddeal_desc:0 "Although we disliked them, the radicals were right about a major issue - we have stagnated in meeting the desires of our population and the requirements of our industry. In order to ensure we stay a leading figure to Europe and the world, we can begin the modernization of our economic system and social welfare."
 
 
-KAR_neuroiinvasion:0 " The Neuroi have begun a push into Karlsland."
 
-KAR_aconservativedemocracy:0 " The Kaiser agreed to a democratic government - as long as he continued to lead the executive."
-
-
-KAR_nationallutheran_long:0 "Nationale Lutherische Partei"
-KAR_nationallutheran:0 "NLP"
+KAR_economic_recovery_act:0 "Economic Recovery Act"
 
 
-kar_research:0 "Karlsland Forschungskreis"
-KAR_loyaldivs:0 "Loyalist Divisions"
-
-KAR_fascisteconomy:0 "Corporatist Nationalization"
-KAR_fascistscience:0 "Karlsland Science"
-
-
-karlsland.faction:0 "Karlsland-Fuso Pakt"
-
-KAR_pagandefense:0 "Defensive Army"
-KAR_paganoffense:0 "Offensive Army"
-
-KAR_panguildwon:0 " The Hyper-Nationalist faction won the power struggle."
-KAR_paganguildwon:0 " The Clerical Authoritarian faction won the power struggle."
-KAR_fashyguildwon:0 " The Fascist faction won the power struggle."
-
-
-KAR_nationalrevitilization_idea:0 "National Revitilization"
-KAR_naturalizationandcitizenshipact_idea:0 "Citizenship Act"
-KAR_naturalizationandcitizenshipact_idea_timed:0 "Naturalization Act"
+KAR_a_new_day_for_karlslanders:0 "A New Day for Karlslanders"
+KAR_burn_the_books:0 "Burn the Books!"
+KAR_burn_the_churches:0 "And Their Churches Too!"
+KAR_disband_parliament:0 "Disband the Reichstag"
+KAR_a_new_police:0 "Odin's Arm"
+KAR_a_purge:0 "A Purge"
+KAR_and_propaganda:0 "And Propaganda"
 
 
 
@@ -349,11 +120,7 @@ KAR_naturalizationandcitizenshipact_idea_timed:0 "Naturalization Act"
 
 
 
-
-
-
-
-
+garbage:0 "move that line down"
 ###############################
 ############# EVENTS ##########
 ###############################
@@ -364,195 +131,20 @@ KAR_naturalizationandcitizenshipact_idea_timed:0 "Naturalization Act"
  kwitches.1.a:0 "Great!"
  KAR_kwitches.10:0 "§YEnroll the first class of 10 witches!"
  
+ karlsland.10.t:0 "The Reichstag's Decision"
+ karlsland.11.t:0 "The Recession Worsens"
+ karlsland.12.t:0 "The Recession Worsens"
+ karlsland.13.t:0 "The Recession Worsens"
+ karlsland.14.t:0 "The Recession Worsens"
+ karlsland.15.t:0 "The Reichstag Debates the Economic Recovery Act"
+ karlsland.19.t:0 "Federal Elections!"
+ karlsland.20.t:0 "Death of the Kaiser"
  
- 
- karlsland.10.t:0 "The Kaiser Makes His Statement"
- karlsland.10.d:0 "Karlsland, being one of the most powerful nations in the continent of Europe, has a tremendous responsibility to all people which inhabit it. In this reasoning, the leader of Karlsland has decided to act early on the rising trend of right-wing sentiment in his nation seen in nations around Karlsland. Thus, he comes out to announce the support of and strenghthening of: "
- karlsland.10.a:0 "The existing monarchy."
- karlsland.10.b:0 "A more liberal approach, as our neighbors have."
- 
- karlsland.20.t:0 "Brittania accepts!"
- karlsland.20.d:0 "Brittania has accepted our request to join the United Nations, expanding our diplomatic outreach extraordinarily."
- karlsland.20.a:0 "Excellent!"
- 
- karlsland.21.t:0 "Brittania denies!"
- karlsland.21.d:0 "Brittania has denies our request to join the United Nations, publicly shaming us in front of Ostmark. It looks like we'll have to stand alone."
- karlsland.21.a:0 "This is a terrible development..."
- 
- karlsland.22.t:0 "Brittania accepts!"
- karlsland.22.d:0 "Brittania has accepted our request for mutual defense, an amazing development for European safety."
- karlsland.22.a:0 "Excellent!"
-
- karlsland.23.t:0 "Brittania denies!"
- karlsland.23.d:0 "Brittania has denied our request for mutual defense, a bizarre choice; but one we will not soon forget."
- karlsland.23.a:0 "The Empire will not be weakened by this!"
- 
- karlsland.30.t:0 "Karsland Invites [Root.GetNameDef] to Their Sphere"
- karlsland.30.d:0 "Karlsland has announced the formation of a new military alliance to sustain stability in peacetime. They have offerred us membership in this alliance, which would mutually strengthen both nations in time of danger." 
- karlsland.30.a:0 "A pact with Karlsland could be immensely useful."
- karlsland.30.b:0 "What business do we have with Karlslanders?"
- 
- 
- karlsland.50.t:0 "The Fate of the Pagans"
- karlsland.50.d:0 "As the pagans continue to be the primary revolutionary force in Karlsland, the Kaiser has to make his decision on what to do with them and their churches. Many factions of the leading reformed pagan church have become extremely militant as of late, and it'd be possible to incorporate them into the Karlsland military - a dangerous move, but one which would greatly increase the public's support for our military endevours. The HE has made it evident, however, that it would be willing to coup the Kaiser had they enough military support. Perhaps it would be wiser to announce official government support of the churches."
- karlsland.50.a:0 "They'd do great on our front lines."
- karlsland.50.b:0 "Support the churches, but nothing more."
- 
- 
- karlsland.98.t:0 "Heidnische Einheitsfront Marches in Munich"
- karlsland.98.d:0 "In one of the largest public demonstrations held by the pagan ultra-nationalist Heidnische Einheitsfront, the group has shown its numbers and strength to be an undeniable match against our own military. The event ended with over four hours of flame ridden speeches about the degeneracies of the Kaiser's royal friends and the need for change back to the far old days of Karlsland. It seems that a coup - or revolution from the inside - is inevitable."
- karlsland.98.a:0 "A day no Karlslander will forget."
-
- karlsland.99.t:0 "The Empire 'Lives On'"
- karlsland.99.d:0 "With the Kaiser announcing support for neither party, a large faction has developed out of the Kaiser's supporters calling for his own extreme movement - taking into consideration both the extreme traditionalism of the Heidnische Einheitsfront and the expansionism of the national-socialists, but under the traditional banner of the Kaiser. It would be a regime more powerful than one ever seen on this continent before, and the support is tremendous seeing the new Neuroi."
- karlsland.99.a:0 "How could I say no?"
- 
- karlsland.100.t:0 "The Establishment of Parliament"
- karlsland.100.d:0 "In the vital step to actually establishing a liberal government, the Kaiser's cabinet has come to an important decision - whether to have the Kaiser maintain his leading position as an unelected, excecutive monarch; or to have an all encompassing electorate with a subsequently elected ruler. The former would help to contain the popularity of extreme movements, but the latter would come much closer to achieving our goal of a completely liberal government."
- karlsland.100.a:0 "The Kaiser continues his rule."
- karlsland.100.b:0 "Commit to the democratic ideal."
- karlsland.101.t:0 "Pagans and Nationalists Hold National Protests"
- karlsland.101.d:0 "After the announcement of the new parliament, hundereds of Karlslanders took to the public to protest what they see as an even further stagnating government."
- karlsland.101.a:0 "Let's hope they come to see the merit of the parliament."
- 
- karlsland.102.t:0 "The Pagans Send An... ultimatum?"
- karlsland.102.d:0 "Only a short time after the wide national rallies, Hanna Rudel, a witch known for speaking on behalf of the Heidnische Einheitsfront, delivered the developing parliament a letter which contained an ultimatum - dissolve the parliament immedietely and replace the Kaiser's cabinet with solely members of the party, or be met with undescribed consenquences."
- karlsland.102.a:0 "Who?"
- karlsland.102.b:0 "Meet them half way and attempt negotiation."
- karlsland.102.c:0 "Fine."
- 
- karlsland.103.t:0 "Pagans Storm the Streets!"
- karlsland.103.d:0 "After the Karlsland intermediate government completely failed to recognize the Heidnische Einheitsfront, thousands of militant party supporters have been reported to flood the many cities of Karlsland. It seems collapse is inevitable for the Karlsland republican government."
- karlsland.103.a:0 "And so it is."
- 
- karlsland.104.t:0 "Heidnische Einheitsfront Declares Wuotanrihhi!"
- karlsland.104.d:0 "Seemingly seconds after party members stormed Karlsland streets, the leading pagan party has declared the official state of the Karlsland nation to be Wuotanrihhi. Finding its support in the western territories of the Karlsland Republic, they declare war on what they see as the heretical and unofficial state of Karlsland now confined to solely the east."
- karlsland.104.a:0 "War it is, then!"
- 
- karlsland.110.t:0 "Heidnische Einheitsfront Accepts Negotiation"
- karlsland.110.d:0 "After receiving the Karlsland's growing administration's request for negotiation, the Heidnische Einheitsfront immedietely accepted. Whether or not the negotiations will be fruitful has yet to manifest."
- karlsland.110.a:0 "Excellent!"
- 
- karlsland.120.t:0 "Heidnische Einheitsfront Holds Victory Rallies"
- karlsland.120.d:0 "Despite their complete control over the Kaiser's cabinet, the extreme Karlsland nationalists have continued rallying - but in announcement of victory. The end of the Karlslander monarchy has never seemed closer."
- karlsland.120.a:0 "It falls gracefully."
- 
- karlsland.121.t:0 "The Kaiser's Cabinent Turns"
- karlsland.121.d:0 "In a move suprising to about no one, the Kaiser's fully pagan-nationalist cabinet has demanded his immediete withdrawl. With the military only partly under his control, and a gun almost literally pointed at his head, the emperor has only one clear choice."
- karlsland.121.a:0 "Give in"
- 
- 
- karlsland.111.t:0 "Hanna Rudel meets with Helma Lennartz"
- karlsland.111.d:0 "The negotiations between the emerging Karlslander parliament and the Heidnische Einheitsfront are in their final preparatory stages as the witch representatives of both parties meet to relay their respective bargains. Expectations are low on both ends, with the Heidnische Einheitsfront clearly not prepared to cede anything."
- karlsland.111.a:0 "Let's hope it goes smoothly."
- 
- karlsland.112.t:0 "Pagans Demand Political Freedom"
- karlsland.112.d:0 "Heidnische Einheitsfront makes their first, rather light demand for complete political freedom. This, of course, is in line with what we were imagining, but they would like specific protections for their party as well as other nationalist parties."
- karlsland.112.a:0 "Give them specific protections."
- karlsland.112.b:0 "Ensure that all speech will be protected."
- 
- karlsland.113.t:0 "Pagans Demand Integration of their Churches"
- karlsland.113.d:0 "Heidnische Einheitsfront makes their second, more significant demand of instituting an official pagan church into the new government. This contradicts entirely our desire for church seperation, but would help maintain national unity."
- karlsland.113.a:0 "Refuse entirely."
- karlsland.113.b:0 "Allow for parliament to declare a state religon."
- karlsland.113.c:0 "Sure!"
- 
- karlsland.114.t:0 "Pagans Demand Permanent Seats in Parliament"
- karlsland.114.d:0 "Heidnische Einheitsfront makes what will likely be their final demand - permanent seats in parliament. Demanding half of parliament, they clearly seek to go around their original goal in closer compliance with our government."
- karlsland.114.a:0 "Offer them an eigth."
- karlsland.114.b:0 "Fine."
- 
- karlsland.115.t:0 "Secular Nationalists Interrupt Negotiations!"
- karlsland.115.d:0 "In what appeared to be the process of oddly easy negotiations between Pagans and the new Karlslander government, a large group of secular Karlslander nationalists have blocked the exit to the negotiation room. Being heavily armed, guards of the building made no attempt to halt the nationalists in their march.\n\nThey demand to be part of the negotiations, claiming they have just the same rights in the negotiations as the non-secular pagans getting such favorable benefits. Combined, they are just as numerous as the pagans with which we are currently discussing."
- karlsland.115.a:0 "Refuse and deal with them later."
- karlsland.115.b:0 "Give them a seat."
- 
- karlsland.118.t:0 "Secular Nationalists Interrupt Negotiations!"
- karlsland.118.d:0 "In what appeared to be the process of oddly easy negotiations between Pagans and the new Karlslander government, a large group of secular Karlslander nationalists have blocked the exit to the negotiation room. Being heavily armed, guards of the building made no attempt to halt the nationalists in their march.\n\nThey demand to be part of the negotiations, claiming they have just the same rights in the negotiations as the non-secular pagans getting such favorable benefits. Combined, they are just as numerous as the pagans with which we are currently discussing; and the pagans are not likely to take our side no matter the situation."
- karlsland.118.a:0 "Give them a seat." 
- 
- karlsland.116.t:0 "Nationalist's Immediete Demand"
- karlsland.116.d:0 "Only a day after the nationalists were let into negotiations, the nationalists demand alongside the pagans complete control of parliament - or negotiations would be immedietely halted. The pagans showing a strong attachment to their secular allies and the nationalists already marching in victory, it seems there are only two appropriate responses."
- karlsland.116.a:0 "Fine."
- karlsland.116.b:0 "Never."
- 
- karlsland.117.t:0 "Conclusion of Negotiations"
- karlsland.117.d:0 "With the nationalists barred from negotiations, the pagans and the liberal administration has finally reached their so desired compromise. The nationalists will no longer have an ally in revolution, and stability is expected to slowly return to the new and great Republic of Karlsland."
- karlsland.117.a:0 "Amazing!"
- 
- karlsland.122.t:0 "The Kaiser Transfers Power"
- karlsland.122.d:0 "After the preceding downfall of Karlsland's parliament and the rise of the nationalists, the Kaiser has fully given in an transferred power to the Heidnische Einheitsfront. With Hanna Rudel as the face of the party, Karlsland heads into the future."
- karlsland.122.a:0 "The end of an era."
- 
- 
- karlsland.200.t:0 "The State Religion"
- karlsland.200.d:0 "Although we had promised the HE in negotiations that parliament could make a religion, it's painfully clear within the parliament that not one supporter of democracy wishes for one to be established. However, we held an unofficial obligation to pagan groups to establish one. Perhaps a Karlslander Lutheran church could suffice; albeit directly against their founding principles it would be our church. And it's not like anyone would care, considering the type of world we live in."
- karlsland.200.a:0 "No state religion. How is this even a question?"
- karlsland.200.b:0 "A Karlslander Lutheran church!"
- 
- 
- karlsland.150.t:0 "The First Karlslander Elections"
- karlsland.150.d:0 "With the newly established democratic government of Karlsland, our ultimate step to becoming a legitimate regime should be the first holding of elections. The existing major parties will all be competing for control of parliament, aiming to establish the starting precedent of Karlsland into the future."
- karlsland.150.a:0 "Into the future!"
- 
- karlsland.151.t:0 "The Helma and Trude Plans"
- karlsland.151.d:0 "Karlsland's step into democracy has split the largely unified liberal faction into factions based firstly on economic grounds. The progressive social democratic party is pushing strongly for a plan dubbed the 'Helma Economy', named after the young witch headlining the liberal party. Meanwhile, the centrist and right wing parties are hoping for a continuation of the economic policies under the monarchist regime with a stronger emphasis on individual economic ownership; dubbed the 'Trude Economy' for the figurehead of the KKP."
- karlsland.151.a:0 "Helma!"
- karlsland.151.b:0 "Trude!"
- karlsland.151.c:0 "Karlslanders are split - we let parliament decide."
- 
- karlsland.152.t:0 "Rhetoric of Diplomacy"
- karlsland.152.d:0 "Karlsland's step into democracy has also raised question about our diplomacy in Europe. The social democrats wish for closer ties with the Entente, seeing their importance to democracy. The liberals continue to wish for closer ties to Ostmark, conservatives wishing instead for continued ties with Ostmark but overall focusing on Karlsland itself."
- karlsland.152.a:0 "Our future is with the Entente."
- karlsland.152.b:0 "We stand with our brothers in the south."
- karlsland.152.c:0 "Ostmark is important - but Karlsland is more."
- 
- karlsland.153.t:0 "The Karlsland Election Results"
- karlsland.153.d:0 "Karlsland's public have cast their ballots and the votes are counted. The winner is clear..."
- karlsland.153.a:0 "§MSPK§W"
- karlsland.153.b:0 "§MRepublikanisch§W"
- karlsland.153.c:0 "§MKKP§W"
- karlsland.153.e:0 "§MNLP - stunningly!§W"
- karlsland.153.f:0 "Exciting!"
- 
- karlsland.300.t:0 "[From.GetNameDef] Calls for our Annexation"
- karlsland.300.d:0 "Karlsland's leader has made a public statement calling for the annexation of our historical nation. Ignoring our vast and extraordinarily unique history, he has called our nation a historical territory of Karlsland and demands its return. We can obviously deny - we have the backing of Brittania - but this will no doubt give our far-right movements much more courage."
- karlsland.300.a:0 "Deny, of course."
- karlsland.300.b:0 "Maybe they have a point?"
- 
- karlsland.304.t:0 "[From.GetNameDef] Requests a Military Alliance"
- karlsland.304.d:0 "Karlsland has approached our diplomats, asking for a formal military alliance. We'd have little reason to deny, especially seeing the overall lack of human-human violence since long before the first Neuroi war; but our combined technological and military efforts would stand powerfully against any enemy."
- karlsland.304.a:0 "That sounds like an excellent idea!"
- karlsland.304.b:0 "Fuso stands alone."
- 
- 
- karlsland.310.t:0 "[From.GetNameDef] Announces Their Support for [Root.GetFascistParty]"
- karlsland.310.d:0 "As if our situation with far-right movements could not get worse, the large power of Karlsland has announced support for [Root.GetFascistParty]. This foreign support can surely not be a good sign for the time to come."
- karlsland.310.a:0 "Let's just hope they don't do anything with it."
- 
- karlsland.320.t:0 "Ideological Struggle in the Junta"
- karlsland.320.d:0 "The economic consolidation of Karlsland has lead the three factions to realize their incompability moving forward, seeing that they cannot even agree on the first internal issue of the new state. The three factions, stepping over eachother on every issue, have now seen their conflict come to a head. All three factions have the capability to become popular with the nation's populace, but which faction wins will determine much of the state's future position in the world.\n\nThe NSKAP, secular and focused on national revitalization, would likely see the Karlsland nation turn to notions of greater revanchism.\n\nThe Hyper-Nationalist wing of the NSKAP advocates not only for national revitalization, but a complete integration of the military within the Karlsland state; leading the other factions to consider them unrestricted expansionists.\n\nThe HE advocates for a peaceful consolidation of regional power and a cultural revival at home, but it can sometimes be hard to ignore their outburts of jingoism in reference to the liberal states."
- karlsland.320.a:0 "The NSKAP!"
- karlsland.320.b:0 "The military's NSKAP!"
- karlsland.320.c:0 "The HE!"
-
- karlsland.400.t:0 "The Alcase-Lorraine Incident"
- karlsland.400.d:0 "The city of Strasbourg, once part of Karlsland that has now been long settled as a formal and cultural part of Gallia, faced numerous violent attacks yesterday. It's clearly a sign that those Gallian citizens wish to return to their fatherland, and we must demand Gallia hands over the old Karlslander state to us. Even more so, it would be an excellent excuse to get them off our backs..."
- karlsland.400.a:0 "It's time!"
- 
- karlsland.401.t:0 "The Alcase-Lorraine Incident"
- karlsland.401.d:0 "The city of Strasbourg, once part of Karlsland that has now been long settled as a formal and cultural part of Gallia, faced numerous violent attacks yesterday. Clearly a staged incident by the dictatorial government, we should decide how to respond carefully. Regardless, we should now expect the war that they've been preparing for."
- karlsland.401.a:0 "Give them the state, it may subdue them."
- karlsland.401.b:0 "Put down the protests and hold strong."
- karlsland.402.t:0 "Gallia Holds"
- karlsland.402.d:0 "[GAL.GetNameDef] has held strong in their hold on Alcase-Lorraine. This provides the perfect incident for us to demand it with force - and crush the degenerate regime to our west!"
- karlsland.402.a:0 "Karlsland marches on!"
- karlsland.403.t:0 "Gallia Folds"
- karlsland.403.d:0 "Gallia has decided to give us the historic state! Though a great victory for Karlsland, we might be able to salvage Gallia's weakness and attack them while they're prone - though without completely legitimate reason..."
- karlsland.403.a:0 "Our rival is weak - strike them!"
- karlsland.403.b:0 "Alcase-Lorraine is ours - that's all that matters."
- 
- news.400.d:0 "The city of Strasbourg, once part of Karlsland that has now been long settled as a formal and cultural part of Gallia, faced numerous violent attacks yesterday. Karlsland's government claims that its a sign that their citizens are finally ready to return to their old nation, but [GAL.GetNameDef] claims the attacks were orchestrated."
+ karlslandnews.100.t:0 "Norse Dawn in Karlsland"
+ karlslandnews.100.d:0 "The churches of Jupiter did not ring their bells in Karlsland today.\n\nThe Reichstag, overrun by HE members and pious members of the outlawed Norse religion, demanded a formal abdication of the monarchy. Seeing no other course of action, with his nation in full (maybe not voluntary) support of the party, the Kaiser's regent had no reasonable choice but to accept. The monarchy's abdication resulted in the immediete implementation of a supreme executive, to be elected only on death, and who would formally head the Norse religion. With power cemented, the first order of the excecutive leader, the brutal witch Hanna Rudel; was to switch the ban on Romagnan religion on its head. Europe trembles with this momentous shift, and what's to come can only be feared."
+ karlslandnews.100.a:0 "Worrying."
+ karlslandnews.100.b:0 "Romagna will fall!"
+ karlslandnews.100.c:0 "We'll see to it that these heretics submit."
  
  
 ########### Baltland tree ########

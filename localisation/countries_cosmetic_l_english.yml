@@ -34,3 +34,8 @@
  RMA_rome_fascism:0 "Romana"
  RMA_rome_fascism_DEF:0 "Romana"
  RMA_rome_fascism_ADJ:0 "Roman" 
+ 
+ 
+ NET_germania_monarchism:0 "Gallian Germania"
+ NET_germania_monarchism_DEF:0 "Germania"
+ NET_germania_monarchism:0 "Germanian"

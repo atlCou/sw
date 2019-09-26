@@ -1,0 +1,473 @@
+﻿add_namespace = karlsland
+
+
+
+
+country_event = {
+	id = karlsland.1
+	title = karlsland.1.t
+	desc = karlsland.1.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = KAR
+	}
+
+	option = {
+		name = karlsland.1.a
+	
+	}
+	
+	
+}
+
+
+
+
+
+country_event = {
+	id = karlsland.10
+	title = karlsland.10.t
+	desc = karlsland.10.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.10.a
+		set_country_flag = KAR_socialprograms
+	}
+	
+	option = {
+		name = karlsland.10.a
+		set_country_flag = KAR_businessstimulation
+	}
+}
+
+country_event = {
+	id = karlsland.11
+	title = karlsland.11.t
+	desc = karlsland.11.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.11.a
+		
+		if = {
+			limit = {
+				has_idea = KAR_recoveringfromww1
+			}
+			swap_ideas = {
+				add_idea = KAR_hurting_econ
+				remove_idea = KAR_recoveringfromww1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = KAR_hurting_econ
+			}
+			swap_ideas = {
+				add_idea = KAR_hurting_econ
+				remove_idea = KAR_really_hurting_econ
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.11.b
+		
+		trigger = { has_political_power > 34 }
+		add_political_power = -35
+	}
+	
+}
+
+country_event = {
+	id = karlsland.12
+	title = karlsland.12.t
+	desc = karlsland.12.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.12.a
+		
+		if = {
+			limit = {
+				has_idea = KAR_recoveringfromww1
+			}
+			swap_ideas = {
+				add_idea = KAR_hurting_econ
+				remove_idea = KAR_recoveringfromww1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = KAR_hurting_econ
+			}
+			swap_ideas = {
+				add_idea = KAR_really_hurting_econ
+				remove_idea = KAR_hurting_econ
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = KAR_really_hurting_econ
+			}
+			add_political_power = -100
+		}
+	}
+	
+	option = {
+		name = karlsland.12.b
+		
+		trigger = { has_political_power > 34 }
+		add_political_power = -35
+	}
+	
+}
+
+country_event = {
+	id = karlsland.13
+	title = karlsland.13.t
+	desc = karlsland.13.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.13.a
+		
+		if = {
+			limit = {
+				has_idea = KAR_recoveringfromww1
+			}
+			swap_ideas = {
+				add_idea = KAR_hurting_econ
+				remove_idea = KAR_recoveringfromww1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = KAR_hurting_econ
+			}
+			swap_ideas = {
+				add_idea = KAR_hurting_econ
+				remove_idea = KAR_really_hurting_econ
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = KAR_really_hurting_econ
+			}
+			add_political_power = -100
+		}
+	}
+	
+	option = {
+		name = karlsland.13.b
+		
+		trigger = { has_political_power > 34 }
+		add_political_power = -35
+	}
+	
+}
+
+
+country_event = {
+	id = karlsland.14
+	title = karlsland.14.t
+	desc = karlsland.14.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.14.a
+		trigger = { NOT = { has_idea = KAR_really_hurting_econ } }
+		if = {
+			limit = {
+				has_idea = KAR_recoveringfromww1
+			}
+			add_political_power = -25
+		}
+		else_if = {
+			limit = {
+				has_idea = KAR_hurting_econ
+			}
+			add_political_power = -50
+		}
+	}
+	
+
+	option = {
+		name = karlsland.14.b
+		
+		trigger = { has_idea = KAR_really_hurting_econ }
+		add_political_power = -100
+		set_country_flag = KAR_can_go_pagan
+	}
+}
+
+
+country_event = {
+	id = karlsland.15
+	title = karlsland.15.t
+	desc = karlsland.15.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.15.a
+		trigger = { NOT = { has_idea = KAR_really_hurting_econ } }
+		add_political_power = -25
+		remove_ideas = KAR_recoveringfromww1
+		remove_ideas = KAR_hurting_econ
+		
+		set_country_flag = KAR_act_passed
+	}
+	
+	option = {
+		name = karlsland.15.b
+		add_political_power = 100
+		remove_ideas = KAR_recoveringfromww1
+		remove_ideas = KAR_hurting_econ
+		remove_ideas = KAR_really_hurting_econ
+		add_timed_idea = {
+			idea = KAR_better_econ
+			days = 365
+		}
+		
+		set_country_flag = KAR_act_compromise
+	}
+
+	option = {
+		name = karlsland.15.c
+		trigger = { has_country_flag = KAR_can_go_pagan }
+		add_political_power = -150
+		remove_ideas = KAR_really_hurting_econ
+		
+		set_country_flag = KAR_act_failed
+	}
+
+}
+
+country_event = {
+	id = karlsland.19
+	title = karlsland.19.t
+	desc = karlsland.19.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.19.a
+		trigger = { NOT = { has_country_flag = KAR_can_go_pagan } }
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = monarchism			
+			popularity = -0.1
+		}
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism			
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = fanatical-paganism			
+				popularity = -0.1
+			}
+		}
+		set_politics = {
+			ruling_party = liberal
+		}
+		add_stability = 0.05
+	}
+	
+	option = {
+		name = karlsland.19.b
+		trigger = { NOT = { has_country_flag = KAR_can_go_pagan } }
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.05
+		}
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism			
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = fanatical-paganism			
+				popularity = -0.1
+			}
+		}
+		add_stability = 0.07
+	}
+	
+	option = {
+		name = karlsland.19.c
+		trigger = { has_country_flag = KAR_can_go_pagan }
+		add_popularity = {
+			ideology = fanatical-paganism
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = monarchism			
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = liberal			
+			popularity = -0.1
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Hanna Rudel"
+			desc = "HHHH"
+			picture = "Hanna_Rudel.dds"
+			expire = "1965.1.1"
+			ideology = federal_monarchism
+			traits = {
+			}
+		}
+		add_timed_idea = {
+			idea = KAR_pagan_victory
+			days = 10
+		}
+	}
+	
+}
+
+
+
+country_event = {
+	id = karlsland.20
+	title = karlsland.20.t
+	desc = karlsland.20.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.20.a
+		trigger = { NOT = { has_country_flag = KAR_can_go_pagan } }
+		add_stability = -0.05
+		set_country_flag = KAR_the_kaiser_has_died
+		hidden_effect = {
+			news_event = {
+				id = karlslandnews.90
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.20.b
+		trigger = { has_country_flag = KAR_can_go_pagan }
+		add_stability = -0.2
+		load_focus_tree = KAR_Karlsland_paganism
+		hidden_effect = {
+			news_event = {
+				id = karlslandnews.90
+				days = 1
+			}
+		}
+	}
+	
+	
+}
+
+
+############### 
+### N E W S
+###############
+
+
+
+add_namespace = karlslandnews
+
+
+
+news_event = {
+	id = karlslandnews.90
+	title = karlslandnews.90.t
+	desc = karlslandnews.90.d
+	picture = GFX_news_event_generic_funeral
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlslandnews.90.a
+		trigger = { TAG = KAR }
+	}
+	
+	option = {
+		name = karlslandnews.90.b
+		trigger = { NOT = { TAG = KAR } } 
+	}
+	
+}
+
+
+
+
+news_event = {
+	id = karlslandnews.100
+	title = karlslandnews.100.t
+	desc = karlslandnews.100.d
+	picture = GFX_pagan_victory_news
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = karlslandnews.100.a
+		trigger = {
+			AND = {
+				NOT = {
+					has_government = fanatical-paganism
+				}
+				NOT = {
+					OR = {
+						TAG = RMA
+						is_puppet_of = RMA
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = karlslandnews.100.b
+		trigger = {
+			has_government = fanatical-paganism
+			NOT = { TAG = RMA }
+		}
+	}
+	
+	option = {
+		name = karlslandnews.100.b
+		trigger = {
+			OR = {
+				TAG = RMA
+				is_puppet_of = RMA
+			}
+		}
+	}
+}

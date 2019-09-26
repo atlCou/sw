@@ -50,26 +50,21 @@ set_technology = {
 	synth_oil_experiments = 1
 }
 
-create_import = {
-		resource = oil
-		factories = 2
-		exporter = LIN
-}
 
 set_convoys = 400
-	set_popularities = {
-		fascism = 19							
-		socialism = 8				
-		monarchism = 39		
-		liberal = 34
-	}
+
+set_popularities = {
+	fascism = 19							
+	socialism = 8				
+	monarchism = 39		
+	liberal = 34
+}
 set_politics = { 
 	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-puppet = ASI
 create_country_leader = {
 	name = "Karibuchi Hikari"
 	desc = "POLITICS_Hirohito_DESC"
@@ -84,7 +79,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Hattori Shizuka.dds"
 	expire = "1989.1.1"
-	ideology = fascism
+	ideology = fascist
 	traits = {
 	}
 }
@@ -434,110 +429,4 @@ create_navy_leader = {
 	traits = {  }
 	skill = 3
 }
-
-
-### VARIANTS ###
-	# 1936 Start #
-		### Carrier Variants
-		create_equipment_variant = {
-			name = "Akagi Class"
-			type = carrier_1
-			parent_version = 0
-			upgrades = {
-				ship_deckspace_upgrade = 5
-				carrier_armor_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_reliability_upgrade = 3
-			}
-			obsolete = yes
-		}
-		### Battleship Variants
-		create_equipment_variant = {
-			name = "Ise Class"
-			type = battleship_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_armor_upgrade = 1
-				ship_gun_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Nagato Class"
-			type = battleship_1
-			parent_version = 1
-			upgrades = {
-				ship_reliability_upgrade = 3
-				ship_engine_upgrade = 4
-				ship_armor_upgrade = 3
-				ship_gun_upgrade = 4
-			}
-			obsolete = yes
-		}
-		### Heavy Cruiser Variants
-		create_equipment_variant = {
-			name = "Myoko Class"
-			type = heavy_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_armor_upgrade = 2
-				ship_gun_upgrade = 3
-			}
-			obsolete = yes
-		}
-		### Light Cruiser Variants
-		create_equipment_variant = {
-			name = "Kuma Class"
-			type = light_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Sendai Class"
-			type = light_cruiser_1
-			parent_version = 1
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 2
-			}
-			obsolete = yes
-		}
-		### Destroyer Variants
-		create_equipment_variant = {
-			name = "Fubuki Class"
-			type = destroyer_1
-			parent_version = 0
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				ship_engine_upgrade = 4
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}
-		### Submarine Variants
-		create_equipment_variant = {
-			name = "Kaidai III Class"
-			type = submarine_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 3
-				sub_engine_upgrade = 3
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 2
-			}
-			obsolete = yes
-		}
-
 

@@ -35,365 +35,193 @@ ideas = {
 			}
 	
 		}
+			
+		KAR_firstunits = {
+			
+			picture = GAL_airforce
+			on_add = {
+				set_variable = {
+					var = KAR.witches_manpower
+					value = 20
+				}
+			}
+		}
+		KAR_neweconomy = {
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
 		
-		KAR_recoveringlib = {
+		KAR_socialprograms_idea = {
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				monthly_population = 0.1
+				political_power_gain = -0.05
+			}
+		}
+		
+		
+		
+		KAR_fosteringindustry = {
+			
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+		}
+		
+		KAR_markets = {
+			
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_speed_industrial_complex_factor = 0.05
+			}
+
+		}
+		
+		KAR_marketinfra = {
+			
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+			}
+
+		}
+		
+		KAR_marketinfra2 = {
+			
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+				local_resources_factor = 0.05
+			}
+
+		}
+		
+		KAR_marketboyes = {
+		
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory	= 0.15
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+			
+		}
+		
+		KAR_economicsurge = {
+		
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+			
+		}
+		
+		
+		KAR_burn_the_books_idea = {
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				research_speed_factor = -0.03
+				war_support_weekly = 0.05
+			}
+		}
+	
+		KAR_pagan_police = {
+	
+			picture = german_advisors
+	
+			modifier = {
+				political_power_gain = 0.1
+				enemy_partisan_effect = -0.1
+			}
+	
+		}
+		
+		KAR_pagan_propa = {
+		
+			picture = KAR_pagan_prop
+			
+			
+			modifier = {
+				conscription = 0.05
+				war_support_weekly = 0.01
+				army_morale_factor = 0.1
+				army_defence_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+
+		
+		
+		
+		
+		KAR_hurting_econ = {
 			
 			picture = KAR_debuffeco
 		
 			modifier = { 
-				consumer_goods_factor = 0.05
-				industrial_capacity_factory = -0.10
-				production_factory_max_efficiency_factor = -0.125
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.2
+				production_factory_max_efficiency_factor = -0.3
 			}
 		
 		}
 		
+		KAR_really_hurting_econ = {
+			
+			picture = KAR_debuffeco
 		
-		KAR_faction = {
-			
-			
-			allowed = {
-				always = no
+			modifier = { 
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.3
+				production_factory_max_efficiency_factor = -0.2
 			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-	
-			rule = {
-				can_create_factions = yes
-			}
-	
-			modifier = {
-				trade_opinion_factor = 0.25
-			}
+		
 		}
 		
-		KAR_curriculum = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
+		KAR_better_econ = {
 			
-			removal_cost = -1
-
-			picture = generic_volunteer_expedition_bonus
-	
-	
-			modifier = {
-				conscription = 0.01
-			}
-		}
+			picture = KAR_debuffeco
 		
-		KAR_coupproduction = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-	
-
-	
-			modifier = {
+			modifier = { 
 				consumer_goods_factor = 0.03
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = -0.1
 			}
-		}		
-	
-		KAR_coup = {
+		
+		}
+		
+		KAR_pagan_victory = {
 			
-			
-			allowed = {
-				always = no
+			picture = war_of_resistance
+		
+			modifier = { 
+				fanatical-paganism_drift = 1
 			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-	
-
-	
-			modifier = {
-				consumer_goods_factor = 0.02
-			}
-		}	
 		
-	KAR_firstunits = {
-		
-		picture = GAL_airforce
-		on_add = {
-			set_variable = {
-				var = KAR.witches_manpower
-				value = 20
-			}
-		}
-	}
-	
-	KAR_estatesblowback = {
-		
-		picture = civilian_economy
-		
-		modifier = {
-			consumer_goods_factor = 0.05
-		}
-	}
-	
-	KAR_milproductioncorp = {
-		
-		picture = man_five_year_plan_industry
-		
-		modifier = {
-			production_speed_arms_factory_factor = 0.1
-			industrial_capacity_factory = 0.1
-			consumer_goods_factor = -0.05
-		}
-	}
-		
-	KAR_neweconomy = {
-		
-		picture = man_five_year_plan_industry
-		
-		modifier = {
-			production_speed_industrial_complex_factor = 0.05
-			production_speed_arms_factory_factor = 0.05
-		}
-	}
-	
-	KAR_socialprograms_idea = {
-		
-		picture = man_five_year_plan_industry
-		
-		modifier = {
-			production_speed_industrial_complex_factor = 0.1
-			production_speed_arms_factory_factor = 0.15
-			monthly_population = 0.1
-			political_power_gain = -0.05
-		}
-	}
-	
-	KAR_volunteersfirst = {
-		
-		picture = ast_volunteer_defence_corps
-		
-		modifier = {
-			training_time_army_factor = -0.15
-			army_core_attack_factor = 0.1
-			army_core_defence_factor = 0.1
-		}
-	}
-	
-	KAR_loyaldivs = {
-		
-		picture = ast_volunteer_defence_corps
-		
-		modifier = {
-			training_time_army_factor = -0.05
-			army_core_attack_factor = 0.05
-			army_core_defence_factor = 0.10
-		}
-	}
-	
-	KAR_mitteltrade = {
-		
-		picture = can_wartime_prices_and_trade_board
-		
-		modifier = {
-			consumer_goods_factor = 0.05
-			production_speed_industrial_complex_factor = 0.1
-			production_speed_arms_factory_factor = 0.05
-			research_speed_factor = 0.03
-		}
-	}
-	
-	KAR_civilrights = {
-		
-		picture = generic_goods_red_bonus
-		
-		modifier = {
-			MONTHLY_POPULATION = 0.05
-			consumer_goods_factor = 0.025
-			production_speed_industrial_complex_factor = 0.05
-		}
-
-	}
-
-	
-	
-	KAR_fosteringindustry = {
-		
-		picture = generic_industrial_concern_1
-		
-		modifier = {
-			consumer_goods_factor = -0.01
-		}
-
-	}
-	
-	KAR_markets = {
-		
-		picture = generic_industrial_concern_1
-		
-		modifier = {
-			consumer_goods_factor = -0.02
-			production_speed_industrial_complex_factor = 0.05
-		}
-
-	}
-	
-	KAR_marketinfra = {
-		
-		picture = generic_industrial_concern_1
-		
-		modifier = {
-			production_speed_infrastructure_factor = 0.15
-		}
-
-	}
-	
-	KAR_marketinfra2 = {
-		
-		picture = generic_industrial_concern_1
-		
-		modifier = {
-			production_speed_infrastructure_factor = 0.20
-			local_resources_factor = 0.05
-		}
-
-	}
-	
-	KAR_marketboyes = {
-	
-		picture = generic_industrial_concern_1
-		
-		modifier = {
-			production_speed_arms_factory_factor = 0.10
-			industrial_capacity_factory	= 0.15
-			production_speed_industrial_complex_factor = 0.05
-			consumer_goods_factor = -0.02
 		}
 		
 	}
-	
-	KAR_economicsurge = {
-	
-		picture = generic_industrial_concern_1
-		
-		modifier = {
-			production_speed_industrial_complex_factor = 0.1
-		}
-		
-	}
-	
-	KAR_fascisteconomy = {
-		
-		picture = man_five_year_plan_industry
-		
-		modifier = {
-			production_speed_industrial_complex_factor = 0.15
-			production_speed_arms_factory_factor = 0.10
-			consumer_goods_factor = 0.02
-		}
-	
-	}
-	
-	KAR_fascistscience = {
-		
-		picture = jap_supremacy_of_technology
-		
-		modifier = {
-			research_time_factor = -0.03
-		}
-	}
-	
-	KAR_karlslandereducationidea = {
-		
-		picture = generic_manpower_bonus
-		
-		modifier = {
-			army_attack_factor = 0.05
-			army_defence_factor = 0.05
-			conscription = 0.01
-		}
-	}
-	
-	
-	KAR_pagandefense = {
-		
-		picture = FRA_fortification_focus
-		
-		modifier = {
-			army_defence_factor = 0.05
-			production_speed_arms_factory_factor = 0.1			
-			production_speed_bunker_factor = 0.25
-		}
-	}
-	
-	KAR_paganoffense = {
-		
-		picture = FRA_scw_intervention_nationalists_focus
-		
-		modifier = {
-			army_attack_factor = 0.05
-			justify_war_goal_time = -0.25
-			political_power_factor = -0.05
-		}
-	}
-	
-	
-	KAR_naturalizationandcitizenshipact_idea = {
-		
-		picture = german_advisors
-		
-		modifier = {
-			conscription_factor	= 0.2
-		}
-	}
-	
-	KAR_naturalizationandcitizenshipact_idea_timed = {
-		
-		picture = FRA_scw_intervention_republicans_focus
-		
-		modifier = {
-			stability_weekly = 0.005
-			war_support_weekly = 0.001
-		}
-	}
-	
-	KAR_nationalrevitilization_idea = {
-	
-		picture = hun_secret_rearmament
-		
-		modifier = {
-			production_speed_arms_factory_factor = 0.05
-			production_speed_industrial_complex_factor = 0.05
-		}
-	}
-	
-	
-	
-	
-	
-
-
-
 
 
 }

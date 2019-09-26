@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		owner = KAR
+		owner = OSO
 		victory_points = {
 			10007 1 
 		}
@@ -22,7 +22,7 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = KAR
+		add_core_of = OSO
 	}
 	provinces=
 	{

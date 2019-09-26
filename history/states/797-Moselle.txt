@@ -1,0 +1,21 @@
+state={
+	id=797
+	name="STATE_797"
+	provinces={
+		521 11516 
+	}
+	state_category=city
+	history={
+		owner = GAL
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+		}
+		add_core_of = GAL
+	}
+	manpower=234125
+	buildings_max_level_factor=1.000
+}

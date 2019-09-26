@@ -1,0 +1,15 @@
+state={
+	id=795
+	name="STATE_795"
+	provinces={
+		9498 
+	}
+	history = {
+	
+		owner = NET
+		add_core_of = NET
+		
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

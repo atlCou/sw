@@ -279,6 +279,30 @@ spriteTypes = {
 		name = "GFX_GAL_homeland"
 		texturefile = "gfx/interface/goals/GAL_homeland.dds"
 	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_church_burn"
+		texturefile = "gfx/interface/goals/KAR_pagan_church_burn.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_book_burn"
+		texturefile = "gfx/interface/goals/KAR_pagan_book_burn.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_reichstag_close"
+		texturefile = "gfx/interface/goals/KAR_reichstag_close.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_police"
+		texturefile = "gfx/interface/goals/KAR_pagan_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_purge"
+		texturefile = "gfx/interface/goals/KAR_pagan_purge.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_republic"
+		texturefile = "gfx/interface/goals/KAR_republic.dds"
+	}
 }
 
 

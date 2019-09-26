@@ -9,9 +9,9 @@ state= {
 	state_category = rural
 
 	history= {
-		owner = KAR
-		#add_core_of = KAR
-		#add_claim_by = KAR# Removed because of too much aggression
+		owner = FUS
+		#add_core_of = FUS
+		#add_claim_by = FUS# Removed because of too much aggression
 		buildings = {
 			infrastructure = 3
 			12446 = {

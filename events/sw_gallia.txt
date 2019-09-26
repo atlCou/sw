@@ -743,8 +743,301 @@ country_event = {
 }
 	
 	
+country_event = {
+	id = gallia.610
+	title = gallia.610.t
+	desc = gallia.610.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
 	
+	option = {
+		name = gallia.610.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_government = monarchism
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.611
+			}
+		}
+	}
 	
+	option = {
+		name = gallia.610.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					NOT = { has_government = monarchism }
+					is_puppet = yes
+				}
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.612
+			}
+		}
+	}
+}
+ 
+country_event = {
+	id = gallia.611
+	title = gallia.611.t
+	desc = gallia.611.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.611.a
+		puppet = BLG
+		add_war_support = 0.05
+	}
+}
+
+
+country_event = {
+	id = gallia.612
+	title = gallia.612.t
+	desc = gallia.612.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.612.a
+		create_wargoal = {
+			target = BLG
+			type = puppet_wargoal_focus
+		}
+		add_war_support = 0.1
+	}
+}
+
+
+
+
+
+country_event = {
+	id = gallia.613
+	title = gallia.613.t
+	desc = gallia.613.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.613.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_government = monarchism
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.614
+			}
+		}
+	}
+	
+	option = {
+		name = gallia.613.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					NOT = { has_government = monarchism }
+					is_puppet = yes
+				}
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.615
+			}
+		}
+	}
+}
+ 
+country_event = {
+	id = gallia.614
+	title = gallia.614.t
+	desc = gallia.614.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.614.a
+		puppet = NET
+		add_war_support = 0.05
+	}
+}
+
+
+country_event = {
+	id = gallia.615
+	title = gallia.615.t
+	desc = gallia.615.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.615.a
+		create_wargoal = {
+			target = NET
+			type = puppet_wargoal_focus
+		}
+		add_war_support = 0.1
+	}
+}
+
+
+country_event = {
+	id = gallia.616 ###Invitation to Monarchist Gallia's Faction
+	title = gallia.616.t
+	desc = gallia.616.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.616.a ### Yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_government = fascism
+				add = 100
+			}
+			modifier = {
+				KAR = {
+					has_government = fanatical-paganism
+				}
+				add = 50
+			}
+			modifier = {
+				owns_state = 160
+				add = -10
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.617
+			}
+		}
+	}
+	
+	option = {
+		name = gallia.616.a  ### No
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_government = monarchism				
+				add = 10
+			}
+			modifier = {
+				NOT = {
+					KAR = {
+						has_government = fanatical-paganism
+					}
+				}
+				add = -50
+			}
+			modifier = {
+				owns_state = 160
+				add = 10
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.618
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = gallia.617
+	title = gallia.617.t
+	desc = gallia.617.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.617.a
+		GAL = { add_to_faction = RMA }
+		add_war_support = 0.05
+	}
+}
+
+
+country_event = {
+	id = gallia.618
+	title = gallia.618.t
+	desc = gallia.618.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.618.a
+		ai_chance = {
+			base = 1
+		}
+		add_war_support = -0.05
+	}
+	
+	option = {
+		name = gallia.618.b
+		ai_chance = {
+			base = 0
+		}
+		create_wargoal = {
+			target = RMA
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+country_event = {
+	id = gallia.619
+	title = gallia.619.t
+	desc = gallia.619.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.619.a
+		create_wargoal = {
+			target = RMA
+			type = puppet_wargoal_focus
+		}
+	}
+}
 
 
 ####### SOCIALIST EVENTS

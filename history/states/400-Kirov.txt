@@ -10,11 +10,11 @@ state={
 	state_category = town
 
 	history={
-		owner = KAR
+		owner = ORU
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = KAR
+		add_core_of = ORU
 	}
 
 	provinces={

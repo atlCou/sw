@@ -8,14 +8,14 @@ state=
 	
 	history=
 	{
-		owner = KAR
+		owner = BAL
 		buildings = {
 			infrastructure = 4
 			13003 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = KAR
+		add_core_of = BAL
 	}
 	provinces= { 13003 }
 }

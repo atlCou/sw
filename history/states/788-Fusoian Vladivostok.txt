@@ -1,0 +1,21 @@
+state={
+	id=788
+	name="STATE_788"
+	state_category = city
+	provinces={
+		957 
+	}
+	history={
+		owner = FUS
+		add_core_of = FUS
+		add_core_of = ORU
+		victory_points = {
+			957 15
+		}
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	manpower=264324
+}

@@ -11,14 +11,14 @@ state={
 	}
 
 	history={
-		owner = KAR
+		owner = ORU
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {
 			3672 5 
 		}
-		add_core_of = KAR
+		add_core_of = ORU
 	}
 
 	provinces={

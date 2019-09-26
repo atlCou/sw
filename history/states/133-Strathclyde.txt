@@ -11,8 +11,8 @@ state={
 	}
 
 	history={
-		add_core_of = KAR
-		owner = KAR
+		add_core_of = BRI
+		owner = BRI
 		victory_points = {
 			3273 15
 		}
@@ -27,13 +27,7 @@ state={
 			}
 
 		}
-		add_core_of = KAR
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-				industrial_complex = 2
-			}
-		}
+
 	}
 
 	provinces={

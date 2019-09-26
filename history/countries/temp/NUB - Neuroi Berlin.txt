@@ -1,6 +1,4 @@
-﻿capital = 788
-
-#OOB = ""
+﻿#OOB = ""
 set_research_slots = 1
 
 add_ideas = {

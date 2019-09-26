@@ -14,13 +14,12 @@ state={
 		victory_points = {
 			721 1
 		}
-		owner = KAR
+		owner = ORU
 		buildings = {
 			infrastructure = 5
 			air_base = 3
 		}
-		add_core_of = KAR
-		add_core_of = KAR
+		add_core_of = ORU
 	}
 
 	provinces={

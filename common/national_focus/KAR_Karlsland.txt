@@ -1,804 +1,42 @@
-
-#Focus for Joint Develop Tech
-shared_focus = { 
-id = KAR_jointdeveloptech
-icon = GFX_goal_generic_national_unity
-x = 3
-y = 0
-cost = 10
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 100000000
- } 
-completion_reward = { 
-add_tech_bonus = {
- bonus = 0.5 
-uses = 2
-category = infantry_weapons
-category =	light_air
-category =	medium_air
-category =	heavy_air
-
-}
- } 
-
- } 
-
-#Focus for Political Tides
-shared_focus = { 
-id = KAR_politicaltides
-icon = GFX_goal_generic_demand_territory
-x = 15
-y = 0
-cost = 10
-available = { date > 1936.07.01 }
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 10
- } 
-completion_reward = { 
-add_political_power = 120
- } 
-
- } 
-
-#Focus for Reaffirm the Monarchy
-shared_focus = { 
-id = KAR_reaffirmthemonarchy
-icon = GFX_kar_reaffirm
-x = 0
-y = 1
-relative_position_id = KAR_politicaltides
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_politicaltides } 
-mutually_exclusive = { focus = KAR_disavowthedegeneratemonarchy focus = KAR_remembertheenlightenment focus = KAR_theegalitarianoption focus = KAR_ }
-ai_will_do = { 
- factor = 7
- } 
-completion_reward = { 
-add_stability = 0.05
-country_event = {
-	days = 1
-	id = karlsland.10
- } 
- }
- } 
-
-
- 
-
-#Focus for Disavow the Degenerate Monarchy
-shared_focus = { 
-id = KAR_coupproduction
-icon = GFX_goal_generic_consumer_goods
-x = -2
-y = 2
-relative_position_id = KAR_politicaltides
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_disavowthedegeneratemonarchy } 
-completion_reward = { 
-add_ideas = KAR_coupproduction
- } 
-
- }  
- 
- #Focus for Disavow the Degenerate Monarchy
-shared_focus = { 
-id = KAR_finishcoupproduction
-icon = GFX_goal_generic_consumer_goods
-x = -2
-y = 3
-relative_position_id = KAR_politicaltides
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_coupproduction } 
-completion_reward = { 
-remove_ideas = KAR_coupproduction
- } 
- }  
- 
-  #Focus for Disavow the Degenerate Monarchy
-shared_focus = { 
-id = KAR_streetgangs
-icon = GFX_goal_generic_political_pressure
-x = -1
-y = 1
-relative_position_id = KAR_disavowthedegeneratemonarchy
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_disavowthedegeneratemonarchy } 
-completion_reward = { 
-add_popularity = { 
-ideology = fanatical-paganism
-popularity = 0.02
-}
-add_popularity = { 
-ideology = fascism
-popularity = 0.05
-}
-add_stability = -0.02
- } 
- 
- }  
-
-
-  #Focus for Disavow the Degenerate Monarchy
-shared_focus = { 
-id = KAR_streettension
-icon = GFX_goal_generic_radar
-x = -1
-y = 2
-relative_position_id = KAR_disavowthedegeneratemonarchy
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_streetgangs } 
-completion_reward = { 
-add_popularity = { 
-ideology = fanatical-paganism
-popularity = 0.03
-}
-add_popularity = { 
-ideology = fascism
-popularity = +0.07
-}
-
-add_stability = -0.05
- } 
- 
- }   
-#Focus for March in Munich
-shared_focus = { 
-id = KAR_munichmarch
-icon = GFX_focus_generic_little_entente
-x = 0
-y = 3
-relative_position_id = KAR_disavowthedegeneratemonarchy
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_streettension }
-prerequisite = { focus = KAR_finishcoupproduction }
-mutually_exclusive = { focus = KAR_karlsandernationalism } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-country_event = { id = karlsland.98 }
- } 
-
- }  
-#Focus for Dispossess the Emperor
-shared_focus = { 
-id = KAR_dispossesstheemperor
-icon = GFX_goal_generic_military_sphere
-x = 0
-y = 4
-cost = 4
-relative_position_id = KAR_disavowthedegeneratemonarchy
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_munichmarch } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_popularity = { 
-ideology = fanatical-paganism
-popularity = 0.07
-}
-add_popularity = { 
-ideology = fascism
-popularity = -0.06
-}
-add_stability = -0.1
-add_popularity = { 
-ideology = monarchism 
-popularity = -0.50
-}
- } 
-
- } 
-
-
-
-
-#Focus for Odin's Karlsland
-shared_focus = { 
-id = KAR_odinskarlsland
-icon = GFX_focus_generic_support_the_left_right
-x = 0
-y = 5
-relative_position_id = KAR_disavowthedegeneratemonarchy
-cost = 1
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_dispossesstheemperor } 
- 
-available = { has_country_flag = KAR_supportedpaganism }
-ai_will_do = { 
- factor = 1
- } 
-
-completion_reward = { 
-set_cosmetic_tag = KAR_temporaryjuntaname
-	set_politics = {
-		ruling_party = fanatical-paganism
-		elections_allowed = no 
-	}
-	add_stability = 0.15
-	country_event = {
-		days = 1 
-		id = generic.20
-	}
-	hidden_effect =  { load_focus_tree = Karlsland_paganism }
-	} 
-} 
-
- 
- 
- 
- #Focus for With the Greats
-shared_focus = { 
-id = KAR_withthegreats
-icon = GFX_entetediplo
-x = -1
-y = 1
-relative_position_id = KAR_thefirstelections
-cost = 5
-available_if_capitulated = yes 
-mutually_exclusive = { focus = KAR_easterncooperation }
-available = { NOT = { is_in_faction = yes } }
-prerequisite = { focus = KAR_thefirstelections } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-random_owned_state = {
-add_extra_state_shared_building_slots = 2
-add_building_construction = {
-	type = arms_factory
-	level = 2
-	instant_build = yes
-} }
-BRI = {country_event = {
-days = 1 
-id = britannia.20
-}}
-
- } 
-
- } 
- 
- #Focus for Eastern Cooperation
-shared_focus = { 
-id = KAR_easterncooperation
-icon = GFX_ostmarkdiplo
-x = 1
-y = 1
-relative_position_id = KAR_thefirstelections
-cost = 5
-available_if_capitulated = yes 
-available = { NOT = { is_in_faction = yes } }
-mutually_exclusive = { focus = KAR_withthegreats }
-prerequisite = { focus = KAR_thefirstelections }  
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-random_owned_state = {
-add_extra_state_shared_building_slots = 2
-add_building_construction = {
-	type = arms_factory
-	level = 2
-	instant_build = yes
-} }
-OST = {country_event = {
-days = 1 
-id = ostmark.20
-}}
-
- } 
-
- } 
-
-shared_focus = { 
-id = KAR_cooperativeindustry
-icon = GFX_goal_generic_construct_civ_factory
-x = -2
-y = 2
-relative_position_id = KAR_thefirstelections
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_withthegreats focus = KAR_easterncooperation }
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-
-random_owned_state = {
-add_extra_state_shared_building_slots = 1
-add_building_construction = {
-	type = arms_factory
-	level = 1
-	instant_build = yes
-		} 
-	}
-random_owned_state = {
-add_extra_state_shared_building_slots = 1
-add_building_construction = {
-	type = arms_factory
-	level = 1
-	instant_build = yes
-		} 
-	} 
-random_owned_state = {
-add_extra_state_shared_building_slots = 1
-add_building_construction = {
-	type = industrial_complex
-	level = 1
-	instant_build = yes
-		} 
-	} 	
-}
-}  
-
-############# Mini Status-Quo ###############
-
-#Focus for Appeal to Resentment
-shared_focus = { 
-id = KAR_appealtoresentment
-icon = GFX_goal_tfv_strengthen_commonwealth_ties
-x = -5
-y = 2
-relative_position_id = KAR_politicaltides
-cost = 10
-available_if_capitulated = yes 
-available = { has_country_flag = statusquo }
-prerequisite = { focus = KAR_reaffirmthemonarchy } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_stability = -0.05
-add_popularity = { 
-ideology = monarchism
-popularity = 0.05
-}
- } 
-
- } 
-
-#Focus for Sponsor Monarchist Literature
-shared_focus = { 
-id = KAR_sponsormonarchistliterature
-icon = GFX_goal_generic_propaganda
-x = -1
-y = 1
-relative_position_id = KAR_appealtoresentment
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_appealtoresentment } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_stability = -0.05
-add_popularity = { 
-ideology = monarchism
-popularity = 0.05
-}
- } 
-
- } 
- 
-#Focus for Sponsor Monarchist Literature
-shared_focus = { 
-id = KAR_karlslanderpagans
-icon = GFX_focus_generic_support_the_left_right
-x = -1
-y = 1
-relative_position_id = KAR_sponsormonarchistliterature
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_sponsormonarchistliterature } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_stability = 0.01
-country_event = { id = karlsland.50 }
- } 
-
- } 
- 
-#Focus for Sponsor Monarchist Literature
-shared_focus = { 
-	id = KAR_loyalistdivisions
-	icon = GFX_focus_generic_support_the_left_right
-	x = -1
-	y = 1
-	relative_position_id = KAR_karlslanderpagans
-	cost = 10
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_karlslanderpagans } 
-	ai_will_do = { 
-		factor = 1
-	}	 
-	completion_reward = { 
-		add_ideas = KAR_loyaldivs
-		add_tech_bonus = {
-			name = special_forces_bonus
-			bonus = 0.5
-			uses = 2
-			technology = paratroopers
-			technology = paratroopers2
-			technology = paratroopers3
-			technology = marines
-			technology = marines2
-			technology = marines3
-			technology = tech_mountaineers
-			technology = tech_mountaineers2
-			technology = tech_mountaineers3
-		}
-	} 
-}  
- 
-
-#Focus for Sponsor Monarchist Literature
-shared_focus = { 
-id = KAR_theostmarkhabsburgs
-icon = GFX_habsburgmemes
-x = 1
-y = 1
-relative_position_id = KAR_appealtoresentment
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_appealtoresentment } 
-ai_will_do = { 
- factor = 1
- } 
-available = {
-	OST = {
-		exists = yes
-		is_subject = no
-	}
-}
-bypass = {
-	NOT = {
-		OST = {
-			exists = yes
-			is_subject = no
-		}
-	}
-}
-completion_reward = { 
-	OST = {
-		country_event = {
-			id = ostmark.100
-		}
-	} 
-	}
-} 	
-
-
-#Focus for Sponsor Monarchist Literature
-shared_focus = { 
-id = KAR_ostmarksloth
-icon = GFX_focus_rom_parties_end
-x = 1
-y = 1
-relative_position_id = KAR_theostmarkhabsburgs
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_theostmarkhabsburgs } 
-ai_will_do = { 
- factor = 1
- } 
-available = {
-	OST = {
-		exists = yes
-		is_subject = no
-	}
-}
-bypass = {
-	NOT = {
-		OST = {
-			exists = yes
-			is_subject = no
-		}
-	}
-}
-completion_reward = { 
-	country_event = {
-		id = ostmark.109
-	}
-	}
-}
-
-#Focus for Sponsor Monarchist Literature
-shared_focus = { 
-id = KAR_karlslanderscience
-icon = GFX_goal_tfv_generic_tech_sharing
-x = 1
-y = 1
-relative_position_id = KAR_ostmarksloth
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_ostmarksloth }
-available = {
-	OST = {
-		OR = {
-			is_subject_of = KAR
-			is_in_faction_with = KAR
-		}
-	}
-}
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-	OST = {
-	add_to_tech_sharing_group = kar_research
-	}
-	add_to_tech_sharing_group = kar_research
-	}
-}
-
-
-
-#Focus for Sponsor Monarchist Literature
-shared_focus = { 
-	id = KAR_entrenching_the_monarchy
-	icon = GFX_focus_ger_return_of_the_kaiser
-	x = 0
-	y = 3
-	relative_position_id = KAR_appealtoresentment
-	cost = 10
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_theostmarkhabsburgs } 
-	prerequisite = { focus = KAR_sponsormonarchistliterature }
-	ai_will_do = { 
-	 factor = 1
-	} 
-	completion_reward = { 
-		set_country_flag = KAR_econready
-		hidden_effect = {
-			add_popularity = {
-				ideology = fanatical-paganism
-				popularity = -0.15
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.3
-			}
-			add_popularity = {
-				ideology = liberal
-				popularity = 0.15
-			}
-		}
-		remove_ideas = KAR_thedeathofmonarchy
-		custom_effect_tooltip = KAR_entrenching_the_monarchy_tooltip
-	}
-} 	
-
-
-
-shared_focus = { 
-	id = KAR_theunitednations
-	icon = GFX_entetediplo
-	x = 3
-	y = 4
-	relative_position_id = KAR_appealtoresentment
-	cost = 5
-	available_if_capitulated = yes 
-	available = { NOT = { is_in_faction = yes } }
-	prerequisite = { focus = KAR_entrenching_the_monarchy } 
-	ai_will_do = { 
-		factor = 1
-	} 
-	completion_reward = { 
-		BRI = {
-			country_event = {
-				days = 1 
-				id = britannia.21
-			}
-		}
-	} 
-}
-
-shared_focus = { 
-	id = KAR_inviting_soumus
-	icon = GFX_entetediplo
-	x = 3
-	y = 5
-	relative_position_id = KAR_appealtoresentment
-	cost = 5
-	available_if_capitulated = yes 
-	available = { 
-		NOT = { 
-			is_in_faction = yes 
-		} 
-		SOU = {
-			is_in_faction = no 
-			NOT = {
-				OR = {
-					has_government = communism
-					has_government = socialism
-					has_government = fanatical-paganism
-				}
-			}
-		}
-	}
-	prerequisite = { focus = KAR_theunitednations } 
-	ai_will_do = { 
-		factor = 1
-	} 
-	completion_reward = { 
-		SOU = {
-			country_event = {
-				days = 1 
-				id = soumus.1
-			}
-		}
-	} 
-}
-
-shared_focus = { 
-	id = KAR_theallies
-	icon = GFX_entetediplo
-	x = 0
-	y = 2
-	relative_position_id = KAR_theunitednations
-	cost = 5
-	available_if_capitulated = yes 
-	available = { 
-		SOU = {
-			is_in_faction_with = KAR
-		}
-		BRI = {
-			NOT = {
-				is_in_faction_with = KAR
-			}
-		}
-	}
-	prerequisite = { focus = KAR_inviting_soumus } 
-	ai_will_do = { 
-		factor = 1
-	} 
-	completion_reward = { 
-
-		country_event = {
-			days = 1 
-			id = karlsland.40
-		}
-	} 
-}
-
-#### liberalization
-
-shared_focus = { 
-	id = KAR_liberalization
-	icon = GFX_socdem_econ
-	x = 0
-	y = 3
-	relative_position_id = KAR_theunitednations
-	cost = 5
-	available_if_capitulated = yes 
-	available = { 
-		KAR = { has_government = monarchism }
-	}
-	prerequisite = { focus = KAR_theallies } 
-	mutually_exclusive = { focus = KAR_cooperation focus = KAR_centralization }
-	ai_will_do = { 
-		factor = 1
-	} 
-	completion_reward = { 
-		country_event = {
-			days = 1 
-			id = karlsland.60
-		}
-	} 
-}
-
-shared_focus = { 
-	id = KAR_freeballots
-	icon = GFX_socdem_econ
-	x = 0
-	y = 4
-	relative_position_id = KAR_theunitednations
-	cost = 5
-	available_if_capitulated = yes 
-	available = { 
-		KAR = { OR = { has_completed_focus = KAR_hartmanneconomy     has_completed_focus = KAR_trudeeconomy } }
-	}
-	prerequisite = { focus = KAR_liberalization} 
-	mutually_exclusive = { focus = KAR_cooperation focus = KAR_centralization }
-	ai_will_do = { 
-		factor = 1
-	} 
-	completion_reward = { 
-			if = {
-				limit = { KAR = { has_completed_focus = KAR_hartmanneconomy } }
-			add_popularity = {
-				ideology = liberal
-				popularity = 0.1
-			}
-		} 
-	}
-}
-
-
-#### cooperation
-
-shared_focus = { 
-	id = KAR_cooperation
-	icon = GFX_KAR_compromise
-	x = -3
-	y = 3
-	relative_position_id = KAR_theunitednations
-	cost = 5
-	available_if_capitulated = yes 
-	available = { 
-		KAR = { has_government = monarchism }
-	}
-	mutually_exclusive = { focus = KAR_liberalization focus = KAR_centralization }
-	prerequisite = { focus = KAR_theallies focus = KAR_freetrade } 
-	ai_will_do = { 
-		factor = 1
-	} 
-	completion_reward = { 
-		country_event = {
-			id = karlsland.61
-		}
-	} 
-}
-
-
-##### centralization
-
-shared_focus = { 
-	id = KAR_centralization
-	icon = GFX_ballot_suppression
-	x = -6
-	y = 3
-	relative_position_id = KAR_theunitednations
-	cost = 5
-	available_if_capitulated = yes 
-	available = { 
-		KAR = { has_government = monarchism }
-	}
-	mutually_exclusive = { focus = KAR_liberalization focus = KAR_cooperation }
-	prerequisite = { focus = KAR_freetrade }
-	ai_will_do = { 
-		factor = 1
-	} 
-	completion_reward = { 
-		country_event = {
-			id = karlsland.62
-		}
-	} 
-}
-
-
-
-
-
 ###################
 
 
 shared_focus = { 
 	id = KAR_theeconomy
 	icon = GFX_kar_economyfocus
-	x = 30
+	x = 10
 	y = 0
 	cost = 5	
 	available_if_capitulated = yes 
-	available = { has_country_flag = KAR_econready }
 	ai_will_do = { 
 		factor = 1
 	}
 	completion_reward = {
 		country_event = {
-			id = karlsland.175
+			id = karlsland.10
+		}
+		hidden_effect = {
+			country_event = {
+				id = karlsland.11
+				days = 35
+			}
+			country_event = {
+				id = karlsland.12
+				days = 70
+			}
+			country_event = {
+				id = karlsland.13
+				days = 105
+			}
+			country_event = {
+				id = karlsland.14
+				days = 140
+			}
+			
+			country_event = {
+				id = karlsland.19
+				days = 175
+			}
 		}
 	}
 }
@@ -806,22 +44,22 @@ shared_focus = {
 ###################
 
 
-#Focus for Sponsor Monarchist Literature
+
 shared_focus = { 
-id = KAR_hartmanneconomy
-icon = GFX_helma_economy
-x = -3
-y = 1
-relative_position_id = KAR_theeconomy
-cost = 5
-available_if_capitulated = yes 
-available = { has_country_flag = KAR_socialprograms }
-mutually_exclusive = { focus = KAR_trudeeconomy }
-prerequisite = { focus = KAR_theeconomy }
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
+	id = KAR_helmaeconomy
+	icon = GFX_helma_economy
+	x = -3
+	y = 1
+	relative_position_id = KAR_theeconomy
+	cost = 5
+	available_if_capitulated = yes 
+	available = { has_country_flag = KAR_socialprograms }
+	mutually_exclusive = { focus = KAR_trudeeconomy }
+	prerequisite = { focus = KAR_theeconomy }
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
 		add_stability = 0.05
 		add_popularity = {
 			ideology = liberal
@@ -831,22 +69,22 @@ completion_reward = {
 	}
 } 	
 
-#Focus for Sponsor Monarchist Literature
+
 shared_focus = { 
-id = KAR_trudeeconomy
-icon = GFX_trude_economy
-x = 3
-y = 1
-relative_position_id = KAR_theeconomy
-cost = 5
-available_if_capitulated = yes 
-available = {  has_country_flag = KAR_businessstimulation }
-mutually_exclusive = { focus = KAR_hartmanneconomy }
-prerequisite = { focus = KAR_theeconomy }
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
+	id = KAR_trudeeconomy
+	icon = GFX_trude_economy
+	x = 3
+	y = 1
+	relative_position_id = KAR_theeconomy
+	cost = 5
+	available_if_capitulated = yes 
+	available = {  has_country_flag = KAR_businessstimulation }
+	mutually_exclusive = { focus = KAR_helmaeconomy }
+	prerequisite = { focus = KAR_theeconomy }
+	ai_will_do = { 
+		factor = 1
+	} 
+	completion_reward = { 
 		add_stability = 0.05
 		add_popularity = {
 			ideology = monarchism
@@ -859,305 +97,31 @@ completion_reward = {
 		set_country_flag = KAR_trudeeconomy_flag
 	}
 } 
-
- 
-######### Mini-democratic ########### 
-
- 
-#Focus for Appeal to the Liberals
-shared_focus = { 
-id = KAR_appealtotheliberals
-icon = GFX_goal_support_democracy
-x = 6
-y = 2
-relative_position_id = KAR_politicaltides
-cost = 10
-available_if_capitulated = yes 
-available = { has_country_flag = wentliberal }
-prerequisite = { focus = KAR_reaffirmthemonarchy } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_stability = -0.05
-add_popularity = { 
-ideology = monarchism
-popularity = 0.05
-}
-add_popularity = { 
-ideology = liberal
-popularity = 0.05
-}
- } 
-
- }  
- 
-#Focus for 
-shared_focus = { 
-id = KAR_establishingaparliament
-icon = GFX_goal_generic_neutrality_focus
-x = 0
-y = 1
-relative_position_id = KAR_appealtotheliberals
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_appealtotheliberals } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_stability = 0.025
-add_popularity = { 
-ideology = monarchism
-popularity = 0.02
-}
-add_popularity = { 
-ideology = liberal
-popularity = 0.05
-}
-
-country_event = {
-	days = 1
-	id = karlsland.100
-}
- } 
-
- }  
- 
-shared_focus = { 
-	id = KAR_aquickgreatstep
-	icon = GFX_focus_rom_handle_king
-	x = 0
-	y = 2
-	relative_position_id = KAR_appealtotheliberals
-	mutually_exclusive = { focus = KAR_fosteringkarlslandindustry }
-	cost = 10
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_establishingaparliament } 
-	ai_will_do = { 
-		factor = 1
-	}	 
-	completion_reward = {
-		set_politics = {
-			ruling_party = liberal
-		}
-	}
-	add_timed_idea = { idea = KAR_estatesblowback  days = 274 }
-	set_country_flag = KAR_econready
-	custom_effect_tooltip = KAR_hartmanneconomy_tooltip
-}
-	
- 
-
-shared_focus = { 
-	id = KAR_civilrightsprotections
-	icon = GFX_focus_generic_self_management
-	x = -2
-	y = 3
-	relative_position_id = KAR_appealtotheliberals
-	mutually_exclusive = { focus = KAR_fosteringkarlslandindustry }
-	available = { NOT = { has_country_flag = KAR_aconservativedemocracy } }
-	cost = 5
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_aquickgreatstep } 
-	ai_will_do = { 
-		factor = 1
-	}	 
-	completion_reward = {
-	add_popularity = { 
-		ideology = liberal
-		popularity = 0.1
-	}
-	add_stability = 0.05
-	add_political_power = 50
-	add_ideas = KAR_civilrights
-	}
-}
-
-shared_focus = { 
-	id = KAR_banningpagans
-	icon = GFX_goal_generic_intelligence_exchange
-	x = -2
-	y = 4
-	relative_position_id = KAR_appealtotheliberals
-	available = { NOT = { has_country_flag = KAR_aconservativedemocracy } }
-	cost = 5
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_civilrightsprotections } 
-	ai_will_do = { 
-		factor = 1
-	}	 
-	completion_reward = {
-	hidden_effect = {
-	set_party_name = { 
-		ideology = fanatical-paganism
-		long_name = KAR_nationallutheran_long
-		name = KAR_nationallutheran
-	}
-	create_country_leader = {
-		name = "Huberta von Bonin"
-		desc = "HHHH"
-		picture = "Huberta von Bonin.dds"
-		expire = "1965.1.1"
-		ideology = fanatical_paganism
-			traits = {
-		}
-	}
-	}
-	custom_effect_tooltip = KAR_banningpagans_tooltip
-	}
-}
-
-shared_focus = { 
-	id = KAR_thenationalchurch
-	icon = GFX_goal_tfv_strengthen_commonwealth_ties
-	x = -2
-	y = 5
-	relative_position_id = KAR_appealtotheliberals
-	available = { NOT = { has_country_flag = KAR_aconservativedemocracy } }
-	cost = 5
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_banningpagans } 
-	ai_will_do = { 
-		factor = 1
-	}	 
-	completion_reward = {
-	country_event = {
-		id = karlsland.200
-	}
-	}
-}
-
-shared_focus = { 
-	id = KAR_preliminaryeconomy
-	icon = GFX_focus_generic_industry_2
-	x = 0
-	y = 4
-	relative_position_id = KAR_appealtotheliberals
-	cost = 5
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_aquickgreatstep } 
-	ai_will_do = { 
-		factor = 1
-	}	 
-	completion_reward = {
-	swap_ideas = {
-		remove_idea = KAR_recoveringfromww1
-		add_idea = KAR_recoveringlib
-	}
-}
-}
-
-shared_focus = { 
-	id = KAR_thefirstelections
-	icon = GFX_focus_generic_treaty
-	x = 0
-	y = 5
-	relative_position_id = KAR_appealtotheliberals
-	bypass = { has_country_flag = KAR_electionsfinished }
-	cost = 10
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_preliminaryeconomy }
-	ai_will_do = { 
-		factor = 1
-	}	 
-	select_effect = {
-	hidden_effect = {
-		country_event = {
-			id = karlsland.150
-		}
-	}
-	custom_effect_tooltip = KAR_thefirstelections_tooltip
-	}
-}
-
-shared_focus = { 
-	id = KAR_fosteringkarlslandindustry
-	icon = GFX_goal_generic_construct_civ_factory
-	x = 2
-	y = 3
-	relative_position_id = KAR_appealtotheliberals
-	cost = 5
-	available_if_capitulated = yes 
-	mutually_exclusive = { focus = KAR_civilrightsprotections }
-	prerequisite = { focus = KAR_aquickgreatstep } 
-	ai_will_do = { 
-		factor = 1
-	}	 
-	completion_reward = {
-	add_popularity = { 
-		ideology = liberal
-		popularity = 0.03
-	}
-	add_popularity = { 
-		ideology = monarchism
-		popularity = 0.02
-	}
-	add_stability = -0.05
-	add_political_power = 100
-	add_ideas = KAR_fosteringindustry
-	}
-}
-
-shared_focus = { 
-	id = KAR_banningpagans_con
-	icon = GFX_goal_generic_intelligence_exchange
-	x = 2
-	y = 5
-	relative_position_id = KAR_appealtotheliberals
-	cost = 10
-	available_if_capitulated = yes 
-	prerequisite = { focus = KAR_fosteringkarlslandindustry } 
-	ai_will_do = { 
-		factor = 1
-	}	 
-	completion_reward = {
-	hidden_effect = {
-	set_party_name = { 
-		ideology = fanatical-paganism
-		long_name = KAR_nationallutheran_long
-		name = KAR_nationallutheran
-	}
-	create_country_leader = {
-		name = "Huberta von Bonin"
-		desc = "HHHH"
-		picture = "Huberta von Bonin.dds"
-		expire = "1965.1.1"
-		ideology = fanatical_paganism
-			traits = {
-		}
-	}
-	}
-	custom_effect_tooltip = KAR_banningpagans_tooltip
-	}
-}
- 
- 
  
 ###### karlsland deal ##### 
  
 shared_focus = { 
-id = KAR_thekarlslanddeal
-icon = GFX_socdem_econ
-x = 0
-y = 1
-relative_position_id = KAR_hartmanneconomy
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_hartmanneconomy }
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = {
-add_popularity = { 
-ideology = monarchism
-popularity = -0.03
-}  
-	swap_ideas = { 
-		remove_idea = KAR_recoveringlib
-		add_idea = KAR_neweconomy
-	}
- }   
+	id = KAR_thekarlslanddeal
+	icon = GFX_socdem_econ
+	x = 0
+	y = 1
+	relative_position_id = KAR_helmaeconomy
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_helmaeconomy }
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = {
+		add_popularity = { 
+			ideology = monarchism
+			popularity = -0.03
+		}  
+		#swap_ideas = { 
+		#	remove_idea = KAR_recoveringlib
+		#	add_idea = KAR_neweconomy
+		#}
+	 }   
 }
 
 
@@ -1199,7 +163,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	relative_position_id = KAR_thekarlslanddeal
-	cost = 10
+	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_thekarlslanddeal } 
 	ai_will_do = { 
@@ -1255,7 +219,7 @@ x = 1
 y = 1
 relative_position_id = KAR_publicprojects
 prerequisite = { focus = KAR_publicprojects } 
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
@@ -1468,12 +432,12 @@ custom_effect_tooltip = KAR_ostmarkborder_tooltip
 shared_focus = { 
 id = KAR_military_production_liberal
 icon = GFX_goal_generic_construct_mil_factory
-x = 2
+x = 1
 y = 2
 relative_position_id = KAR_publicprojects
 prerequisite = { focus = KAR_infrastructureimprovements_liberal } 
 prerequisite = { focus = KAR_industrialimprovements2_liberal } 
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
@@ -1495,11 +459,11 @@ add_building_construction = {
 shared_focus = { 
 id = KAR_military_production2_liberal
 icon = GFX_goal_generic_construct_mil_factory
-x = 2
+x = 1
 y = 3
 relative_position_id = KAR_publicprojects
 prerequisite = { focus = KAR_military_production_liberal }
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
@@ -1525,7 +489,7 @@ icon = GFX_liberal_econ
 x = 0
 y = 1
 relative_position_id = KAR_trudeeconomy
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = KAR_trudeeconomy }
 ai_will_do = { 
@@ -1554,7 +518,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	relative_position_id = KAR_karlslandermarkets
-	cost = 10
+	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_karlslandermarkets } 
 	ai_will_do = { 
@@ -1631,24 +595,24 @@ add_ideas = KAR_marketinfra
  
  #Focus for Infrastructure Improvements 2
 shared_focus = { 
-id = KAR_infrastructureimprovements2_market
-icon = GFX_goal_generic_construct_infrastructure
-x = 1
-y = 2
-relative_position_id = KAR_cuttingmonarchistprograms
-prerequisite = { focus = KAR_infrastructureimprovements_market } 
-cost = 5
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-replace_ideas = {
-	add_idea = KAR_marketinfra2
-	remove_idea = KAR_marketinfra
- } 
+	id = KAR_infrastructureimprovements2_market
+	icon = GFX_goal_generic_construct_infrastructure
+	x = 1
+	y = 2
+	relative_position_id = KAR_cuttingmonarchistprograms
+	prerequisite = { focus = KAR_infrastructureimprovements_market } 
+	cost = 5
+	available_if_capitulated = yes 
+	ai_will_do = { 
+	 factor = 1
+	 } 
+	completion_reward = { 
+		swap_ideas = {
+			add_idea = KAR_marketinfra2
+			remove_idea = KAR_marketinfra
+		} 
+	}
 }
- }
  
   #Focus for Infrastructure Improvements 2
 shared_focus = { 
@@ -1678,535 +642,120 @@ completion_reward = {
 } 
  
  
- shared_focus = { 
-id = KAR_ostmarkborder_market
-icon = GFX_goal_generic_fortify_city
-x = 1
-y = 3
-relative_position_id = KAR_cuttingmonarchistprograms
-prerequisite = { focus = KAR_industrialimprovements2_market } 
-cost = 15
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { hidden_effect = {
-153 = { add_building_construction = { 
-type = bunker 
-province = 6673
-level = 4
-instant_build = yes }
- 
- add_building_construction = { 
-type = bunker 
-province = 668
-level = 4
-instant_build = yes }
- 
-add_building_construction = { 
-type = bunker 
-province = 3675
-level = 4
-instant_build = yes } }
-52 = { add_building_construction = { 
-type = bunker 
-province = 707
-level = 4
-instant_build = yes }
-add_building_construction = { 
-type = bunker 
-province = 3688
-level = 4
-instant_build = yes } }
-53 = { add_building_construction = { 
-type = bunker 
-province = 6725
-level = 4
-instant_build = yes }
-add_building_construction = { 
-type = bunker 
-province = 9681
-level = 4
-instant_build = yes } 
-add_building_construction = { 
-type = bunker 
-province = 532
-level = 4
-instant_build = yes }
-add_building_construction = { 
-type = bunker 
-province = 11497
-level = 4 
-instant_build = yes } 
-add_building_construction = { 
-type = bunker 
-province = 3571
-level = 4
-instant_build = yes } 
-add_building_construction = { 
-type = bunker 
-province = 586
-level = 4
-instant_build = yes } }
-
-54 = { add_building_construction = { 
-type = bunker 
-province = 11404
-level = 4
-instant_build = yes } }
-}
-custom_effect_tooltip = KAR_ostmarkborder_tooltip
- } }
- 
- 
-###################
-
-
 shared_focus = { 
-id = KAR_volunteersfirst
-icon = GFX_focus_chi_army_reform
-x = 2
-y = 2
-relative_position_id = KAR_thefirstelections
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_easterncooperation focus = KAR_withthegreats } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = {
-
-add_ideas = KAR_volunteersfirst
- }   
-}
-
-
-	
-
-
-#Focus for Address the New Threat
-shared_focus = { 
-id = KAR_addressthenewthreat
-icon = GFX_goal_generic_forceful_treaty
-x = 0
-y = 5
-relative_position_id = KAR_jointdeveloptech
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_relationswithgallia focus = KAR_relationswithneighbors } 
-ai_will_do = { 
- factor = 1
- } 
-available = { 
-date > 1936.07.01
- } 
-completion_reward = { 
-add_stability = 0.05
- } 
-
- } 
-
-#Focus for Relations with Ostmark
-shared_focus = { 
-id = KAR_relationswithostmark
-icon = GFX_goal_generic_improve_relations
-x = 2
-y = 1	
-relative_position_id = KAR_jointdeveloptech
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_jointdeveloptech } 
-mutually_exclusive = { focus = KAR_relationswithfuso } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-OST = {
-add_opinion_modifier = { target = KAR modifier = medium_increase } }
- } 
-
- } 
-
-#Focus for Relations with Fuso
-shared_focus = { 
-id = KAR_relationswithfuso
-icon = GFX_goal_tripartite_pact
-x = -2
-y = 1
-relative_position_id = KAR_jointdeveloptech
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_jointdeveloptech } 
-mutually_exclusive = { focus = KAR_relationswithostmark } 
-ai_will_do = { 
- factor = 10
- } 
-completion_reward = { 
-FUS = {
-add_opinion_modifier = { target = KAR modifier = medium_increase } }
-FUS = { add_ai_strategy = { 
-   type = alliance
-   id = KAR		
-   value = 70
-} }
- } 
-
- } 
-
-#Focus for Relations with Italy
-shared_focus = { 
-id = KAR_relationswithitaly
-icon = GFX_goal_generic_improve_relations
-x = 2
-y = 3
-relative_position_id = KAR_jointdeveloptech
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_relationswithostmark } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-RMA = {
-add_opinion_modifier = { target = KAR modifier = medium_increase } }
-VNE = {
-add_opinion_modifier = { target = KAR modifier = medium_increase } }
- } 
-
- } 
-
-#Focus for Relations with Liberion
-shared_focus = { 
-id = KAR_relationswithliberion
-icon = GFX_goal_tripartite_pact
-x = -2
-y = 2
-relative_position_id = KAR_jointdeveloptech
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_relationswithfuso } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_tech_bonus = {
- bonus = 0.25
-uses = 1
-category = artillery
-}
-LIN = {
-add_opinion_modifier = { target = KAR modifier = medium_increase } }
-LIN = { add_ai_strategy = { 
-   type = alliance
-   id = KAR		
-   value = 50
-} }
- } 
-
- } 
-
-#Focus for Relations with Neighbors
-shared_focus = { 
-id = KAR_relationswithneighbors
-icon = GFX_goal_generic_improve_relations
-x = 2
-y = 4
-relative_position_id = KAR_jointdeveloptech
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_relationswithitaly } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-HEL = {
-add_opinion_modifier = { target = KAR modifier = small_increase } }
-BLG = {
-add_opinion_modifier = { target = KAR modifier = small_increase } }
-NET = {
-add_opinion_modifier = { target = KAR modifier = small_increase } }
-LUX = {
-add_opinion_modifier = { target = KAR modifier = small_increase } }
-BAL = {
-add_opinion_modifier = { target = KAR modifier = small_increase } }
- } 
-
- } 
-
-#Focus for Relations with Britannia
-shared_focus = { 
-id = KAR_relationswithbritannia
-icon = GFX_goal_tripartite_pact
-x = -2
-y = 3
-relative_position_id = KAR_jointdeveloptech
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_relationswithliberion } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_tech_bonus = {
- bonus = 0.25 
-uses = 1 
-category = air_doctrine
-}
-BRI = { add_opinion_modifier = { target = KAR modifier = small_increase } }
-BRI = { add_ai_strategy = { 
-   type = alliance
-   id = KAR		
-   value = 50
-} }
- } 
-
- }  
- 
-#Focus for Relations with Gallia
-shared_focus = { 
-id = KAR_relationswithgallia
-icon = GFX_goal_tripartite_pact
-x = -2
-y = 4
-relative_position_id = KAR_jointdeveloptech
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_relationswithbritannia } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_tech_bonus = {
- bonus = 0.25 
-uses = 1 
-category = land_doctrine
-}
-GAL = { add_opinion_modifier = { target = KAR modifier = small_increase } }
-
-GAL = { add_ai_strategy = { 
-   type = alliance
-   id = KAR		
-   value = 50
-} }
- } 
-
- } 
-
- #Focus for Middle European Conference
-shared_focus = { 
-id = KAR_middleeuropeanconference
-icon = GFX_goal_generic_dangerous_deal
-x = -3
-y = 1
-relative_position_id = KAR_entrenching_the_monarchy
-cost = 10
-available_if_capitulated = yes 
-mutually_exclusive = { focus = KAR_theunitednations }
-prerequisite = { focus = KAR_entrenching_the_monarchy } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-add_ideas = KAR_faction
-OST = { add_ai_strategy = { 
-   type = alliance
-   id = KAR		
-   value = 50
-} }
-HEL = { add_ai_strategy = { 
-   type = alliance
-   id = KAR		
-   value = 50
-} }
-BAL = { add_ai_strategy = { 
-   type = alliance
-   id = KAR		
-   value = 50
-} }
-create_faction = "Karlslander Sphere"
- } 
-
- } 
- #Focus for Strike Units
-shared_focus = { 
-id = KAR_strikeunits
-icon = GFX_goal_tfv_generic_tech_sharing
-x = -2
-y = 6
-relative_position_id = KAR_jointdeveloptech
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_addressthenewthreat } 
-prerequisite = { focus = KAR_relationswithgallia } 
-ai_will_do = { 
- factor = 1
- } 
- 
-
-completion_reward = { 
-country_event = {
-days = 1 
-id = witches.1 
-}
-custom_effect_tooltip = KAR_witchesdevelop
- } 
-
- } 
- 
-#Focus for Invite Italy
-shared_focus = { 
-id = KAR_inviteitaly
-icon = GFX_METitaly
-x = 0
-y = 1
-relative_position_id = KAR_middleeuropeanconference
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_middleeuropeanconference } 
-ai_will_do = { 
- factor = 1
- } 
-bypass = {
-	OR = {
-		AND = {
-			VNE = { exists = no }
-			RMA = { exists = no }
-		}
-		AND = {
-			VNE = { is_in_faction = yes }
-			RMA = { is_in_faction = yes }
-		}
-	}
-}
+	id = KAR_ostmarkborder_market
+	icon = GFX_goal_generic_fortify_city
+	x = 1
+	y = 3
+	relative_position_id = KAR_cuttingmonarchistprograms
+	prerequisite = { focus = KAR_infrastructureimprovements2_market } 
+	cost = 15
+	available_if_capitulated = yes 
+	ai_will_do = { 
+	 factor = 1
+	 } 
 	completion_reward = { 
-		if = {
-			limit = {
-				AND = {
-					NOT = {
-						OR = {
-							VNE = { exists = no }
-							VNE = { is_in_faction = yes }
-						}
-					}
-					AND = {
-						VNE = { 
-							NOT = { 
-								OR = { 
-									ruling_party = socialism 
-									ruling_party = communism 
-									ruling_party = fascism 
-									ruling_party = fanatical-paganism
-								} 
-							} 
-						}
-						VNE = { has_opinion = { target = KAR value > 99 } }
-					}
-					NOT = { RMA = { exists = yes } }
-				}
-			}
-			VNE = { 
-				country_event = {
-					id = karlsland.30
-					days = 0
-				}
-			}
+		hidden_effect = {
+			153 = { add_building_construction = { 
+			type = bunker 
+			province = 6673
+			level = 4
+			instant_build = yes }
+			 
+			 add_building_construction = { 
+			type = bunker 
+			province = 668
+			level = 4
+			instant_build = yes }
+			 
+			add_building_construction = { 
+			type = bunker 
+			province = 3675
+			level = 4
+			instant_build = yes } }
+			52 = { add_building_construction = { 
+			type = bunker 
+			province = 707
+			level = 4
+			instant_build = yes }
+			add_building_construction = { 
+			type = bunker 
+			province = 3688
+			level = 4
+			instant_build = yes } }
+			53 = { add_building_construction = { 
+			type = bunker 
+			province = 6725
+			level = 4
+			instant_build = yes }
+			add_building_construction = { 
+			type = bunker 
+			province = 9681
+			level = 4
+			instant_build = yes } 
+			add_building_construction = { 
+			type = bunker 
+			province = 532
+			level = 4
+			instant_build = yes }
+			add_building_construction = { 
+			type = bunker 
+			province = 11497
+			level = 4 
+			instant_build = yes } 
+			add_building_construction = { 
+			type = bunker 
+			province = 3571
+			level = 4
+			instant_build = yes } 
+			add_building_construction = { 
+			type = bunker 
+			province = 586
+			level = 4
+			instant_build = yes } }
+
+			54 = { add_building_construction = { 
+			type = bunker 
+			province = 11404
+			level = 4
+			instant_build = yes } }
 		}
-		if = {
-			limit = { 
-				NOT = {
-					AND = {
-						OR = {
-							RMA = { exists = no }
-							RMA = { is_in_faction = yes }
-						}
-						NOT = { RMA = { exists = yes } }
-					}
-				}
-			}
-			RMA = { 
-				country_event = {
-					id = karlsland.30
-					days = 0
-				}
-			}
-		}
-		if = {
-			limit = { 
-				NOT = {
-					AND = {
-						OR = {
-							RMA = { exists = no }
-							RMA = { is_in_faction = yes }
-						}
-					}
-				}
-			}
-			RMA = { 
-				country_event = {
-					id = karlsland.30
-					days = 0
-				}
-			}
-		}
+		custom_effect_tooltip = KAR_ostmarkborder_tooltip
 	} 
 }
- 
- #Focus for Invite Hispania
-shared_focus = { 
-id = KAR_invitehispania
-icon = GFX_METhispania
-x = -2
-y = 1
-relative_position_id = KAR_middleeuropeanconference
-cost = 10
-available_if_capitulated = yes 
-available = { AND = { threat > 0.25 date > 1938.01.01 } }
-prerequisite = { focus = KAR_middleeuropeanconference } 
-ai_will_do = { 
- factor = 10
- } 
-bypass = {
-	OR = {
-		HIS = { is_in_faction = yes }
-		HIS = { exists = no }
-	}
-}
-completion_reward = { 
-	HIS = { 
-		country_event = {
-			id = karlsland.30
-			days = 0
-		}
-	}
- } 
 
- }  
- 
- 
+
+
+
+
+
+
+
+
+###############################
+
+
 shared_focus = { 
-	id = KAR_inviteostmark
-	icon = GFX_METostmark
-	x = 2
+	id = KAR_economic_recovery_act
+	icon = GFX_kar_reaffirm
+	x = -2
 	y = 1
-	relative_position_id = KAR_middleeuropeanconference
-	cost = 10
+	relative_position_id = KAR_miningexpansion
+	prerequisite = { focus = KAR_miningexpansion focus = KAR_military_production2_liberal }
+	cost = 5
 	available_if_capitulated = yes 
-	available = { AND = { threat > 0.75 date > 1940.01.01 } }
-	prerequisite = { focus = KAR_middleeuropeanconference } 
 	ai_will_do = { 
-		factor = 10
+		factor = 1
 	} 
-	bypass = {
-		OR = {
-			OST = { is_in_faction = yes }
-			OST = { exists = no }
-		}
-	}
+
 	completion_reward = { 
-		OST = { 
+		country_event = {
+			id = karlsland.15
+		}
+		hidden_effect = {
 			country_event = {
-				id = karlsland.30
-				days = 0
+				id = karlsland.20
+				days = 56
 			}
 		}
 	} 
@@ -2214,63 +763,62 @@ shared_focus = {
 
 
 shared_focus = { 
-	id = KAR_freetrade
-	icon = GFX_goal_generic_positive_trade_relations
-	x = 0
-	y = 2
-	relative_position_id = KAR_middleeuropeanconference
-	cost = 10
+	id = KAR_a_compromise
+	icon = GFX_KAR_compromise
+	x = -4
+	y = 1
+	relative_position_id = KAR_economic_recovery_act
+	prerequisite = { focus = KAR_economic_recovery_act }
+	cost = 5
 	available_if_capitulated = yes 
-	available = { 
-		KAR = { 
-			AND = { 
-				OR = { 
-					is_in_faction_with = OST 
-					is_in_faction_with = RMA 
-					is_in_faction_with = RMA 
-					is_in_faction_with = HIS 
-					is_in_faction_with = VNE 
-					is_in_faction_with = AUS 
-				}
-				is_subject = no
-			}
+	available = {
+		OR = {
+			has_country_flag = KAR_act_passed
+			has_country_flag = KAR_act_compromise
 		}
 	}
-	prerequisite = { focus = KAR_invitehispania focus = KAR_inviteitaly focus = KAR_inviteostmark  } 
-	ai_will_do = { 
-		factor = 10
-	} 
+	mutually_exclusive = { focus = KAR_another_referendum }
+
+
 	completion_reward = { 
-		add_ideas = KAR_mitteltrade
+		
 	} 
-} 
- 
-
-#Focus for Aid Hispania
-shared_focus = { 
-id = KAR_aidhispania
-icon = GFX_goal_generic_forceful_treaty
-x = -2
-y = 7
-relative_position_id = KAR_jointdeveloptech
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_strikeunits } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-create_wargoal = { 
-type = annex_everything 
-target = NRO
 }
-} 
 
-} 
+
+shared_focus = { 
+	id = KAR_another_referendum
+	icon = GFX_KAR_republic
+	x = 4
+	y = 1
+	relative_position_id = KAR_economic_recovery_act
+	prerequisite = { focus = KAR_economic_recovery_act }
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+		has_country_flag = KAR_act_passed
+	}
+	mutually_exclusive = { focus = KAR_a_compromise }
+
+	completion_reward = { 
+		
+	} 
+}
+
+
+
+
+
+
+
+
+
+
+
 
   
 ############################## FASCIST TREE ##########################
-#Focus for Odin's Karlsland
+
 shared_focus = { 
 	id = KAR_a_new_day_for_karlslanders
 	icon = GFX_pagantrihorn
@@ -2283,14 +831,30 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
-		add_stability = 0.10
+		add_political_power = 150
+		set_politics = {	
+			ruling_party = fanatical-paganism
+		}
+		hidden_effect = {
+			set_popularities = {
+				fanatical-paganism = 51
+				fascism = 14
+				monarchism = 25
+				liberal = 10
+			}
+			news_event = {
+				id = karlslandnews.100
+			}
+			set_cosmetic_tag = KAR_pagan
+		}		
+		remove_ideas = KAR_thedeathofmonarchy
 	} 
 }  
 
 
 shared_focus = { 
 	id = KAR_burn_the_books
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_pagan_book_burn
 	x = -2
 	y = 1
 	cost = 5
@@ -2302,13 +866,17 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
-		add_stability = 0.10
+		add_stability = 0.05
+		add_timed_idea = {
+			idea = KAR_burn_the_books_idea
+			days = 365
+		}
 	} 
 }  
 
 shared_focus = { 
 	id = KAR_burn_the_churches
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_pagan_church_burn
 	x = -3
 	y = 2
 	cost = 5
@@ -2320,15 +888,31 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
-		add_stability = 0.10
-	} 
+		every_owned_state = {
+			limit = {
+				is_core_of = KAR
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_war_support = 0.05
+		add_opinion_modifier = {
+				target = RMA
+				modifier = kar_anti-romagna
+		}
+		RMA = {
+			add_opinion_modifier = {
+				target = KAR
+				modifier = kar_anti-romagna
+			}
+		}
+	}
 }
 
 
 
 shared_focus = { 
 	id = KAR_disband_parliament
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_reichstag_close
 	x = 2
 	y = 1
 	cost = 5
@@ -2340,13 +924,18 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
-		add_stability = 0.10
+		add_stability = 0.05
+		add_political_power = 50
+		add_popularity = {
+			ideology = fanatical-paganism
+			popularity = 0.1
+		}
 	} 
 }  
 
 shared_focus = { 
 	id = KAR_a_new_police
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_pagan_police
 	x = 3
 	y = 2
 	cost = 5
@@ -2358,14 +947,15 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
-		add_stability = 0.10
+		add_stability = 0.05
+		add_ideas = KAR_pagan_police
 	} 
 }
 
 
 shared_focus = { 
 	id = KAR_a_purge
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_pagan_purge
 	x = 0
 	y = 3
 	cost = 5
@@ -2373,17 +963,29 @@ shared_focus = {
 	relative_position_id = KAR_a_new_day_for_karlslanders	
 	prerequisite = { focus = KAR_a_new_police }
 	prerequisite = { focus = KAR_burn_the_churches }
+	available = {
+		has_political_power > 100
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = { 
 		add_stability = 0.10
+		add_popularity = {
+			ideology = monarchism
+			popularity = -0.2
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.2
+		}
+		add_political_power = -100
 	} 
 }
 
 shared_focus = { 
-	id = KAR_and_propoganda
+	id = KAR_and_propaganda
 	icon = GFX_NSKAPeagle
 	x = 0
 	y = 4
@@ -2397,7 +999,7 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
-		add_stability = 0.10
+		add_ideas = KAR_pagan_propa
 	} 
 }
  
@@ -2410,7 +1012,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_karlsland_military_tradition
 	icon = GFX_goal_tfv_generic_tech_sharing
-	x = 50
+	x = 25
 	y = 0
 	cost = 3
 	available_if_capitulated = yes 
@@ -2518,7 +1120,6 @@ available_if_capitulated = yes
 available = { date > 1938.1.1 }
 relative_position_id = KAR_the_new_domain
 prerequisite = { focus = KAR_the_new_domain }
-bypass = { has_completed_focus = KAR_strikeunits }
 ai_will_do = { 
  factor = 100
  } 
@@ -2543,7 +1144,6 @@ cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = KAR_strikeunitresearch }
 relative_position_id = KAR_strikeunitresearch
-bypass = { has_completed_focus = KAR_strikeunits }
 ai_will_do = { 
  factor = 1
  } 
@@ -2583,7 +1183,7 @@ id = KAR_researchthehispanianeuroi
 icon = GFX_goal_generic_army_doctrines
 x = -2
 y = 1
-cost = 10
+cost = 5
 relative_position_id = KAR_strikeunitresearch
 prerequisite = { focus = KAR_strikeunitresearch }
 available_if_capitulated = yes 

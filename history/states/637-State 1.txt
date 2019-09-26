@@ -4,7 +4,7 @@ state={
 	name="STATE_637"
 
 	history={
-		owner = KAR
+		owner = ORU
 		buildings = {
 			infrastructure = 2
 			12207 = {
@@ -13,7 +13,7 @@ state={
 			}
 
 		}
-		add_core_of = KAR
+		add_core_of = ORU
 
 	}
 

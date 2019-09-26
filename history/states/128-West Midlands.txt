@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = KAR
+		owner = BRI
 		buildings = {
 			infrastructure = 8
 			arms_factory = 2
@@ -20,13 +20,8 @@ state={
 		victory_points = {
 			9297 25
 		}
-		add_core_of = KAR
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				industrial_complex = 4
-			}
-		}
+		add_core_of = BRI
+		
 	}
 
 	provinces={

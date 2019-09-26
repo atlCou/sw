@@ -9,6 +9,10 @@ opinion_modifiers = {
 		value = -100
 	}
 	
+	kar_anti-romagna = {
+		value = -50
+	}
+	
 	rma_mission_bri = {
 		value = 30
 	}

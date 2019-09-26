@@ -11,8 +11,8 @@ state={
 	}
 
 	history={
-		owner = KAR
-		add_core_of = KAR
+		owner = FUS
+		add_core_of = FUS
 		buildings = {
 			infrastructure = 8
 			air_base = 6
@@ -27,13 +27,6 @@ state={
 		}
 		victory_points = {
 			1182 50 
-		}
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 4
-				dockyard = 4
-				industrial_complex = 6
-			}
 		}
 
 	}

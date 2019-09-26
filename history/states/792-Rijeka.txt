@@ -1,0 +1,16 @@
+state={
+	id=792
+	name="STATE_792"
+	provinces={
+		11564 
+	}
+
+	history = {
+	
+		owner = OST
+		add_core_of = OST
+		
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

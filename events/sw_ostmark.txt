@@ -1621,59 +1621,119 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		KAR = {
+			every_owned_state = {
+				set_state_flag = KAR_owned_state
+			}
+		}
+	
 		KA1 = {
-			transfer_state = 188
-			transfer_state = 763
-			transfer_state = 5
-			transfer_state = 85
-			transfer_state = 86
-			transfer_state = 63
-			transfer_state = 66
-			transfer_state = 67
-			transfer_state = 762
+			every_state = {
+				limit = {
+					has_state_flag = KAR_owned_state
+					is_controlled_by = KAR
+					OR = {
+						state = 188
+						state = 763
+						state = 5
+						state = 85
+						state = 86
+						state = 63
+						state = 66
+						state = 67
+						state = 762				
+					}
+				}
+				PREV = {
+					transfer_state = PREV
+				}
+			}
 			every_owned_state = {
 				add_core_of = KA1
 				remove_core_of = KAR
 			}
 		}
 		KA2 = {
-			transfer_state = 68
-			transfer_state = 65
-			transfer_state = 64
-			transfer_state = 788
-			transfer_state = 62
-			transfer_state = 61
+			every_state = {
+				limit = {
+					has_state_flag = KAR_owned_state
+					is_controlled_by = KAR
+					OR = {
+						state = 68
+						state = 65
+						state = 64
+						state = 62
+						state = 61			
+					}
+				}
+				PREV = {
+					transfer_state = PREV
+				}
+			}
 			every_owned_state = {
 				add_core_of = KA2
 				remove_core_of = KAR
 			}
 		}
 		KA3 = {
-			transfer_state = 58
-			transfer_state = 59
-			transfer_state = 56
-			transfer_state = 57
+			every_state = {
+				limit = {
+					has_state_flag = KAR_owned_state
+					is_controlled_by = KAR
+					OR = {
+						state = 58
+						state = 59
+						state = 56
+						state = 57		
+					}
+				}
+				PREV = {
+					transfer_state = PREV
+				}
+			}
 			every_owned_state = {
 				add_core_of = KA3
 				remove_core_of = KAR
 			}
 		}
 		KA4 = {
-			transfer_state = 51
-			transfer_state = 805
-			transfer_state = 42
-			transfer_state = 28
-			transfer_state = 8
+			every_state = {
+				limit = {
+					has_state_flag = KAR_owned_state
+					is_controlled_by = KAR
+					OR = {
+						state = 51
+						state = 42
+						state = 28
+						state = 8
+						state = 794
+					}
+				}
+				PREV = {
+					transfer_state = PREV
+				}
+			}
 			every_owned_state = {
 				add_core_of = KA4
 				remove_core_of = KAR
 			}
 		}
 		KA5 = {
-			transfer_state = 50
-			transfer_state = 54
-			transfer_state = 55
-			transfer_state = 60
+			every_state = {
+				limit = {
+					has_state_flag = KAR_owned_state
+					is_controlled_by = KAR
+					OR = {
+						state = 50
+						state = 54
+						state = 55
+						state = 60
+					}
+				}
+				PREV = {
+					transfer_state = PREV
+				}
+			}
 			every_owned_state = {
 				add_core_of = KA5
 				remove_core_of = KAR
@@ -1685,7 +1745,8 @@ country_event = {
 			transfer_state = 53
 			transfer_state = 52
 			transfer_state = 39
-			transfer_state = 153
+			transfer_state = 153	
+			transfer_state = 793
 		}
 	}
 }

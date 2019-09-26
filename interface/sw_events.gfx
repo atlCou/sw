@@ -9,4 +9,10 @@ spriteTypes = {
 		name = "GFX_fuso_sea_incident"
 		texturefile = "gfx/swevents/news_event_fusosea.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_pagan_victory_news"
+		texturefile = "gfx/swevents/pagan_victory.dds"
+	}
+	
 }

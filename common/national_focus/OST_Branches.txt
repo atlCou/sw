@@ -327,7 +327,7 @@ focus_tree = {
 		
 		relative_position_id = OST_gollob_start
 
-		mutually_exclusive = { focus = OST_monitor_our_enemies }
+		mutually_exclusive = { focus = OST_attack_our_enemies }
 		
 		available = {
 			is_puppet = no
@@ -1090,13 +1090,8 @@ focus_tree = {
 		modifier = { 
 			add = 20
 			tag = OST
-			default = no
 		} 
 	} 
-	
-	
-	
-	
 	
 	continuous_focus_position = { x = 50 y = 3000 }
 
@@ -1111,11 +1106,10 @@ focus_tree = {
 focus_tree = {
 	id = Ostmark_crumbled_heimat
 	country = { 
-		factor = 0
+		factor = 0 
 		modifier = { 
 			add = 20
 			tag = OST
-			default = no
 		} 
 	} 
 	
@@ -1132,11 +1126,10 @@ focus_tree = {
 focus_tree = {
 	id = Ostmark_crumbled_monarchy
 	country = { 
-		factor = 0
+		factor = 0 
 		modifier = { 
 			add = 20
 			tag = OST
-			default = no
 		} 
 	} 
 	

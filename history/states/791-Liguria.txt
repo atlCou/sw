@@ -1,0 +1,18 @@
+state={
+	id=791
+	name="STATE_791"
+	provinces={
+		3772 6788 11891 
+	}
+	
+	
+	history = {
+	
+		owner = RMA
+		add_core_of = RMA
+		
+	}
+	
+	manpower=0
+	buildings_max_level_factor=1.000
+}

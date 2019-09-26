@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = KAR
+		owner = ORU
 		victory_points = {
 			3686 20
 		}
@@ -30,12 +30,8 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = KAR
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-			}
-		}
+		add_core_of = ORU
+		
 	}
 
 	provinces={

@@ -269,14 +269,14 @@ shared_focus = {
 	ai_will_do = {
 		factor = 100
 		modifier = {
-			KAR = { has_completed_focus = KAR_appealtotheliberals }
+			KAR = { has_completed_focus = KAR_another_referendum }
 			factor = 0
 		}
 	}
 	available = {
 		KAR = {
 			NOT = {
-				has_completed_focus = KAR_appealtotheliberals
+				has_completed_focus = KAR_another_referendum
 			}
 			is_puppet = no
 			exists = yes
@@ -386,7 +386,7 @@ shared_focus = {
 	ai_will_do = { 
 		factor = 100
 		modifier = {
-			KAR = { NOT = { has_completed_focus = KAR_appealtotheliberals} }
+			KAR = { NOT = { has_completed_focus = KAR_another_referendum } }
 			factor = 0
 		}
 	} 
@@ -429,7 +429,7 @@ shared_focus = {
 	ai_will_do = { 
 		factor = 100
 		modifier = {
-			KAR = { NOT = { has_completed_focus = KAR_appealtotheliberals} }
+			KAR = { NOT = { has_completed_focus = KAR_another_referendum } }
 			factor = 0
 		}
 	} 

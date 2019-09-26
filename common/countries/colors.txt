@@ -66,8 +66,8 @@ LIN = {
 	color_ui = rgb { 88 100 155 }
 }
 MAC = {
-	color = rgb { 128 20 155 }
-	color_ui = rgb { 128 20 155 }
+	color = rgb { 255  255  51 }
+	color_ui = rgb { 255  255  51 }
 }
 RAJ = {
 	color = rgb { 68 140 55 }
@@ -108,10 +108,6 @@ BLG = {
 NET = {	
 	color = rgb { 214 197 47 }
 	color_ui = rgb { 214 197 47 }
-}
-NET = {	
-	color = rgb { 14 57 87 }
-	color_ui = rgb { 14 57 87 }
 }
 OST = {
 	color = rgb { 150 150 150 }
@@ -328,4 +324,9 @@ D14 = {
 D15 = {
 	color = rgb { 194 140 86 }
 	color_ui = rgb { 252 182 112 }
+}
+
+ACH = {
+color = rgb { 189 224 244 }
+color_ui = rgb { 189 224 244 }
 }

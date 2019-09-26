@@ -7,16 +7,16 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = KAR
-		add_core_of = KAR
+		owner = ORU
+		add_core_of = ORU
 		victory_points = {
 			4333 1
 		}
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = KAR
-		#add_core_of = KAR
+		add_core_of = ORU
+		#add_core_of = ORU
 	}
 
 	provinces={
