@@ -1004,6 +1004,300 @@ shared_focus = {
 }
  
 
+ 
+shared_focus = { 
+	id = KAR_ukkos_children
+	icon = GFX_KAR_ukko
+	x = -4
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_and_propaganda
+	prerequisite = { focus = KAR_and_propaganda }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		country_event = {
+			id = karlsland.500
+		}
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_fund_militants
+	icon = GFX_KAR_ukko
+	x = -4
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_and_propaganda
+	prerequisite = { focus = KAR_ukkos_children }
+	ai_will_do = { 
+		factor = 1
+	}
+	available = {
+		SOU = {
+			OR = {
+				has_idea = SOU_ukko_idea
+				has_idea = SOU_ukko_idea_2
+			}
+		}
+	}
+
+	completion_reward = { 
+		SOU = {
+			add_political_power = -20
+			add_popularity = {
+				ideology = fanatical-paganism
+				popularity = 0.1
+			}
+			add_stability = -0.1
+			country_event = {
+				id = karlsland.504
+			}
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_SOU_legacy_of_the_civil_war
+	icon = GFX_KAR_ukko
+	x = -3
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_and_propaganda
+	prerequisite = { focus = KAR_fund_militants }
+	ai_will_do = { 
+		factor = 1
+	}
+	will_lead_to_war_with = SOU
+	available = {
+		SOU = {
+			OR = {
+				has_idea = SOU_ukko_idea
+				has_idea = SOU_ukko_idea_2
+			}
+			fanatical-paganism > 0.5
+		}
+	}
+
+	completion_reward = { 
+		KAR = {
+			puppet = SOU
+			SOU = {
+				set_cosmetic_tag = SOU_KAR_Puppet
+			}
+		}
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_partition_baltland
+	icon = GFX_KAR_ukko
+	x = -4
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_and_propaganda
+	prerequisite = { focus = KAR_SOU_legacy_of_the_civil_war }
+	ai_will_do = { 
+		factor = 1
+	}
+	available = {
+		BAL = {
+			exists = yes
+		}
+		SOU = {
+			is_puppet_of = KAR
+		}
+	}
+	completion_reward = { 
+		BAL = {
+			every_owned_state = {
+				limit = {
+					NOT = {
+						state = 666
+						state = 144
+					}
+				}
+				add_claim_by = KAR
+			}
+			every_owned_state = {
+				limit = {
+					OR = { 
+						state = 666
+						state = 144
+					}
+				}
+				add_claim_by = SOU
+			}
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_pushing_our_claims
+	icon = GFX_KAR_ukko
+	x = -4
+	y = 5
+	cost = 5
+	available_if_capitulated = no
+	relative_position_id = KAR_and_propaganda
+	prerequisite = { focus = KAR_partition_baltland }
+	ai_will_do = { 
+		factor = 1
+	}
+	will_lead_to_war_with = BAL
+	available = {
+		BAL = {
+			exists = yes
+		}
+		SOU = {
+			is_puppet_of = KAR
+		}
+	}
+
+	completion_reward = { 
+		BAL = {
+			country_event = {
+				id = karlsland.505
+			}
+		}
+	} 
+}
+
+
+
+shared_focus = { 
+	id = KAR_baltic_question
+	icon = GFX_KAR_ukko
+	x = -5
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_and_propaganda
+	prerequisite = { focus = KAR_fund_militants }
+	ai_will_do = { 
+		factor = 1
+	}
+	available = {
+		KAR = {
+			is_puppet = no
+			has_government = fanatical-paganism
+		}
+	}
+	completion_reward = { 
+		country_event = {
+			id = karlsland.550
+		}
+	} 
+}
+
+
+
+
+
+
+
+
+ 
+
+shared_focus = { 
+	id = KAR_slavic_brothers
+	icon = GFX_Pagan_rod
+	x = 2
+	y = 1
+	cost = 5
+	available = {
+		MRV = { 
+			exists = yes 
+			has_government = fanatical-paganism
+			is_puppet = no
+		}
+	}
+	available_if_capitulated = yes
+	relative_position_id = KAR_ukkos_children
+	prerequisite = { focus = KAR_ukkos_children }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		MRV = { 
+			country_event = {
+				id = karlsland.570
+			}
+		}
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_polish_plebiscite
+	icon = GFX_Pagan_rod
+	x = 2
+	y = 3
+	cost = 5
+	available = {
+		ORU = {
+			is_puppet = no
+		}
+	}
+	available_if_capitulated = yes
+	relative_position_id = KAR_ukkos_children
+	prerequisite = { focus = KAR_slavic_brothers }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	} 
+}
+
+
+
+
+shared_focus = { 
+	id = KAR_demand_bohemia
+	icon = GFX_KAR_bohemia_pagan
+	x = 3
+	y = 2
+	cost = 5
+	available = {
+		MRV = { 
+			is_in_faction_with = PREV
+			owns_state = 69
+			owns_state = 9
+			owns_state = 74
+			all_owned_state = {
+				is_controlled_by = MRV
+			}
+		}
+	}
+	available_if_capitulated = yes
+	relative_position_id = KAR_ukkos_children
+	prerequisite = { focus = KAR_slavic_brothers }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		MRV = { 
+			country_event = {
+				id = karlsland.573
+			}
+		}
+	} 
+}
+ 
+ 
+ 
 
 
 ########## military tree

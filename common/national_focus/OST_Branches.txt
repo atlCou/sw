@@ -1,4 +1,3 @@
-
 focus_tree = { 
 	id = Ostmark
 	country = { 
@@ -8,6 +7,9 @@ focus_tree = {
 			tag = OST
 		} 
 	} 
+	
+	default = no
+	
 	continuous_focus_position = { x = 50 y = 3000 }
 
 	
@@ -1059,85 +1061,5 @@ focus_tree = {
 	
 	
 
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-############## CRUMBLED SHARED TREES #############
-
-focus_tree = { 
-	id = Ostmark_crumbled
-	country = { 
-		factor = 0 
-		modifier = { 
-			add = 20
-			tag = OST
-		} 
-	} 
-	
-	continuous_focus_position = { x = 50 y = 3000 }
-
-	
-	shared_focus = OST_bunkerdown
-	shared_focus = OST_reclaimingtheempire
-	
-}
-
-
-
-focus_tree = {
-	id = Ostmark_crumbled_heimat
-	country = { 
-		factor = 0 
-		modifier = { 
-			add = 20
-			tag = OST
-		} 
-	} 
-	
-
-	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = OST_bunkerdown
-	shared_focus = OST_reclaimingtheempire
-	shared_focus = OST_joiningkarlsland
-	
-}
-
-
-focus_tree = {
-	id = Ostmark_crumbled_monarchy
-	country = { 
-		factor = 0 
-		modifier = { 
-			add = 20
-			tag = OST
-		} 
-	} 
-	
-
-	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = OST_bunkerdown
-	shared_focus = OST_reclaimingtheempire
-	shared_focus = OST_vienneseeffort
 	
 }

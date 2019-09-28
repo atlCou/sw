@@ -303,6 +303,14 @@ spriteTypes = {
 		name = "GFX_KAR_republic"
 		texturefile = "gfx/interface/goals/KAR_republic.dds"
 	}
+	SpriteType = {
+		name = "GFX_KAR_ukko"
+		texturefile = "gfx/interface/goals/KAR_ukko.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_bohemia_pagan"
+		texturefile = "gfx/interface/goals/KAR_bohemia_pagan.dds"
+	}
 }
 
 

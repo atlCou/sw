@@ -122,7 +122,7 @@ ideas = {
 			}
 		}
 		
-		SOU_quality_over_quantity_idea
+		SOU_quality_over_quantity_idea = {
 			
 			picture = sisu
 			
@@ -149,7 +149,7 @@ ideas = {
 			}
 		}
 		
-		SOU_seeing_the_future_idea
+		SOU_seeing_the_future_idea = {
 			
 			picture = sisu
 			
@@ -170,9 +170,60 @@ ideas = {
 			}
 		}
 		
-	}
+		
+		SOU_seeing_the_future_idea = {
+			
+			picture = sisu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				SOU= {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		
+		SOU_ukko_idea = {
+			
+			
+			picture = SOU_KAR_ukko
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			
+
+		}
+		
+		SOU_ukko_idea_2 = {
+			
+			
+			picture = SOU_KAR_ukko
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			
+
+		}
+		
 		
 	}
-	
-	
+		
 }

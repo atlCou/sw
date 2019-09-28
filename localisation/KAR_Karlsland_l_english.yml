@@ -140,6 +140,11 @@ garbage:0 "move that line down"
  karlsland.19.t:0 "Federal Elections!"
  karlsland.20.t:0 "Death of the Kaiser"
  
+ 
+ #############Pagan Events
+ karlsland.500.t:0 "Ukko's Children: Suomenusko Archeologists"
+ 
+ 
  karlslandnews.100.t:0 "Norse Dawn in Karlsland"
  karlslandnews.100.d:0 "The churches of Jupiter did not ring their bells in Karlsland today.\n\nThe Reichstag, overrun by HE members and pious members of the outlawed Norse religion, demanded a formal abdication of the monarchy. Seeing no other course of action, with his nation in full (maybe not voluntary) support of the party, the Kaiser's regent had no reasonable choice but to accept. The monarchy's abdication resulted in the immediete implementation of a supreme executive, to be elected only on death, and who would formally head the Norse religion. With power cemented, the first order of the excecutive leader, the brutal witch Hanna Rudel; was to switch the ban on Romagnan religion on its head. Europe trembles with this momentous shift, and what's to come can only be feared."
  karlslandnews.100.a:0 "Worrying."

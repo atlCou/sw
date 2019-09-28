@@ -30,4 +30,10 @@ spriteTypes = {
 		name = "GFX_idea_KAR_pagan_prop"
 		texturefile = "gfx/interface/ideas/KAR_pagan_prop.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_SOU_KAR_ukko"
+		texturefile = "gfx/interface/ideas/SOU_KAR_ukko.dds"
+	}
+	
 }

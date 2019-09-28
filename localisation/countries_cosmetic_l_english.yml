@@ -1,18 +1,5 @@
 ﻿l_english:
- GAL_1984memes_authoritarian-socialism:0 "Grand Protectorat Gallian"
- GAL_1984memes_authoritarian-socialism_DEF:0 "Grand Protectorat Gallian"
- GAL_1984memes_authoritarian-socialism_ADJ:0 "Gallian"
- GAL_1984memes_ultra-nationalism:0 "Europa"
- GAL_1984memes_ultra-nationalism_DEF:0 "Europa"
- GAL_1984memes_ultra-nationalism_ADJ:0 "European"
- GAL_1984memes_liberal:0 "aaaaa"
- GAL_1984memes_liberal_DEF:0 "aaaaa"
 
- KAR_temporaryjuntaname_fanatical-paganism:0 "Government of Karlsland"
- KAR_temporaryjuntaname_fanatical-paganism_DEF:0 "the Government of Karlsland"
- KAR_temporaryjuntaname_fanatical-paganism_ADJ:0 "Karlslander"
-
- 
  CYR_puppet_monarchism:0 "Romagnian Cyrenaica"
  CYR_puppet_monarchism_DEF:0 "Romagnian Cyrenaica"
  CYR_puppet_monarchism_ADJ:0 "Cyrenaican"
@@ -39,3 +26,10 @@
  NET_germania_monarchism:0 "Gallian Germania"
  NET_germania_monarchism_DEF:0 "Germania"
  NET_germania_monarchism:0 "Germanian"
+ 
+ 
+ 
+ 
+ SOU_KAR_Puppet_fanatical-paganism:0 "Ukonmaa"
+ SOU_KAR_Puppet_fanatical-paganism_DEF:0 "Ukonmaa"
+ SOU_KAR_Puppet_fanatical-paganism_ADJ:0 "Uralic"

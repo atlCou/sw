@@ -391,6 +391,380 @@ country_event = {
 }
 
 
+
+
+
+
+country_event = {
+	id = karlsland.500   ###Archeologists practicing in Suomus
+	title = karlsland.500.t
+	desc = karlsland.500.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.500.a
+		SOU = {
+			country_event = {
+				id = karlsland.501
+				days = 1
+			}
+		}
+	}
+
+}
+
+
+country_event = {
+	id = karlsland.501
+	title = karlsland.501.t
+	desc = karlsland.501.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = karlsland.501.a  ###Decry them!
+		ai_chance = {
+			base = 5
+		}
+		unlock_decision_category_tooltip = SOU_no_pagans
+		add_ideas = SOU_ukko_idea
+		hidden_effect = {
+			KAR = {
+				country_event = {
+					id = karlsland.502
+					days = 1
+				}
+			}
+		}
+		add_popularity = {
+			ideology = fanatical-paganism
+			popularity = -0.1
+		}
+	}
+	
+	option = {
+		name = karlsland.501.b  ###Ukko is p epic tbh
+		ai_chance = {
+			base = 0
+		}
+		add_ideas = SOU_ukko_idea_2
+		hidden_effect = {
+			KAR = {
+				country_event = {
+					id = karlsland.503
+					days = 1
+				}
+			}
+		}
+		add_popularity = {
+			ideology = fanatical-paganism
+			popularity = 0.1
+		}
+	}
+
+}
+
+
+country_event = {
+	id = karlsland.502
+	title = karlsland.502.t
+	desc = karlsland.502.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.502.a
+	}
+	
+}
+
+country_event = {
+	id = karlsland.503
+	title = karlsland.503.t
+	desc = karlsland.503.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.503.a
+	}
+	
+}
+
+
+country_event = {
+	id = karlsland.504
+	title = karlsland.504.t
+	desc = karlsland.504.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.504.a
+		ai_chance = {
+			base = 1
+		}
+		add_popularity = {
+			ideology = fanatical-paganism
+			popularity = 0.4
+		}
+		add_stability = -0.05
+		add_political_power = 25
+	}
+	
+	option = {
+		name = karlsland.504.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = 25
+		create_wargoal = {
+			target = KAR
+			type = puppet_wargoal_focus
+		}
+	}
+	
+	
+}
+
+country_event = {
+	id = karlsland.550
+	title = karlsland.550.t
+	desc = karlsland.550.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.550.a
+		ai_chance = {
+			base = 10
+		}
+		BLT = {
+			add_state_core = 190
+			add_state_core = 189
+			add_state_core = 11
+			add_state_core = 12
+		}
+		ORU = {
+			country_event = {
+				id = karlsland.505
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.550.b
+		ai_chance = {
+			base = 5
+		}
+		BLT = {
+			add_state_core = 190
+			add_state_core = 189
+			add_state_core = 11
+			add_state_core = 12
+			
+			transfer_state = 5
+			transfer_state = 188
+			transfer_state = 763
+			add_state_core = 5
+			add_state_core = 188
+			add_state_core = 763
+		}
+		puppet = BLT
+		add_offsite_building = { type = industrial_complex level = 4 }
+		ORU = {
+			country_event = {
+				id = karlsland.505
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.550.c
+		ai_chance = {
+			base = 10
+		}
+		BLT = {
+			add_state_claim = 190
+			add_state_claim = 189
+			add_state_claim = 11
+			add_state_claim = 12
+		}
+		add_threat = -5
+		add_stability = 0.05
+		ORU = {
+			country_event = {
+				id = karlsland.505
+				days = 1
+			}
+		}
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+country_event = {
+	id = karlsland.570 ###Invitation to Monarchist Gallia's Faction
+	title = karlsland.570.t
+	desc = karlsland.570.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.570.a ### Yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_government = fascism
+				add = 100
+			}
+			modifier = {
+				KAR = {
+					has_government = fanatical-paganism
+				}
+				add = 50
+			}
+			modifier = {
+				owns_state = 160
+				add = -10
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.617
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.570.a  ### No
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_government = monarchism				
+				add = 10
+			}
+			modifier = {
+				NOT = {
+					KAR = {
+						has_government = fanatical-paganism
+					}
+				}
+				add = -50
+			}
+			modifier = {
+				owns_state = 160
+				add = 10
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.618
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = karlsland.571
+	title = karlsland.571.t
+	desc = karlsland.571.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.571.a
+		KAR = { add_to_faction = MRV }
+		add_war_support = 0.05
+	}
+}
+
+
+country_event = {
+	id = karlsland.572
+	title = karlsland.572.t
+	desc = karlsland.572.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.572.a
+		ai_chance = {
+			base = 1
+		}
+		add_war_support = -0.05
+	}
+}
+
+country_event = {
+	id = karlsland.573
+	title = karlsland.573.t
+	desc = karlsland.573.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.572.a
+		ai_chance = {
+			base = 1
+		}
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+		KAR = {
+			transfer_state = 69
+			transfer_state = 9
+			transfer_state = 74
+			add_state_core = 69
+			add_state_core = 9
+			add_state_core = 74
+		}
+	}
+	
+	option = {
+		name = karlsland.572.b
+		ai_chance = {
+			base = 1
+		}
+		KAR = {
+			country_event = {
+				id = karlsland.574
+				days = 1
+			}
+		}
+	}
+	
+	
+}
+
 ############### 
 ### N E W S
 ###############

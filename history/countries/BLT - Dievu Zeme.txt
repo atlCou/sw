@@ -1,0 +1,40 @@
+﻿capital = 11
+
+oob = "BLT_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = fanatical-paganism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {
+	liberal = 16
+	socialism = 16
+	communism = 16
+	monarchism = 16
+	fascism = 16
+	fanatical-paganism = 76
+}
+
+
+create_country_leader = {
+	name = "Aukštoji Vaidilutės Taryba"
+	desc = "High Council of Vaidilutės (Witch Priests)"
+	picture = "council.dds"
+	expire = "1965.1.1"
+	ideology = fanatical_paganism
+	traits = {
+	}
+}
