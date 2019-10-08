@@ -89,6 +89,16 @@ ideas = {
 			}
 		}
 		
+		RMA_relax_regulations_idea = {
+		
+			picture = generic_political_support
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		
 	}
 
 }

@@ -923,14 +923,15 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = RMA_
+		id = RMA_jupitonian_socialism
 		icon = GFX_focus_usa_voter_registration_act
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = RMA_future_glories
 		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_future_glories }
+		mutually_exclusive = { focus = RMA_conservative_compromise }
 		available = { }
 		completion_reward = { 
 			add_political_power = 50
@@ -938,6 +939,265 @@ focus_tree = {
 	}
 	
 	
+	focus = { 
+		id = RMA_save_failing_businesses
+		icon = GFX_focus_usa_voter_registration_act
+		x = 1
+		y = 1
+		relative_position_id = RMA_jupitonian_socialism
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_jupitonian_socialism }
+		available = { 
+			owns_state = 2
+			owns_state = 791
+		}
+		completion_reward = { 
+			2 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					instant_build = yes
+					type = industrial_complex
+					level = 2
+				}
+			}
+			791 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					instant_build = yes
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	
+	}
+	
+	focus = { 
+		id = RMA_reform_the_church
+		icon = GFX_focus_usa_voter_registration_act
+		x = 2
+		y = 3
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_save_failing_businesses }
+		prerequisite = { focus = RMA_liberal_reforms }
+		available = { }
+		completion_reward = { 
+			every_other_country = {
+				limit = {
+					NOT = { has_government = fanatical-paganism }
+					any_owned_state = {
+						is_capital = yes
+						is_on_continent = europe
+					}
+				}
+				add_popularity = {
+					ideology = socialism 
+					popularity = 0.02
+				}
+				add_stability = 0.05
+			}
+			add_popularity = {
+				ideology = socialism 
+				popularity = 0.1
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = { 
+		id = RMA_conservative_compromise
+		icon = GFX_focus_usa_voter_registration_act
+		x = -2
+		y = 1
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_future_glories }
+		mutually_exclusive = { focus = RMA_jupitonian_socialism }
+		available = { }
+		completion_reward = { 
+			add_political_power = 50
+		}
+	}
+	
+	focus = { 
+		id = RMA_relax_regulations
+		icon = GFX_focus_usa_voter_registration_act
+		x = -1
+		y = 1
+		relative_position_id = RMA_conservative_compromise
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_conservative_compromise }
+		completion_reward = { 
+			add_ideas = RMA_relax_regulations_idea
+			add_political_power = 25
+		}
+	
+	}
+	
+	focus = { 
+		id = RMA_reaffirm_the_church
+		icon = GFX_focus_usa_voter_registration_act
+		x = -2
+		y = 3
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_relax_regulations }
+		prerequisite = { focus = RMA_liberal_reforms }
+		available = { }
+		completion_reward = { 
+			every_other_country = {
+				limit = {
+					NOT = { has_government = fanatical-paganism }
+					any_owned_state = {
+						is_capital = yes
+						is_on_continent = europe
+					}
+				}
+				add_stability = 0.05
+				add_political_power = 10
+			}
+			add_popularity = {
+				ideology = liberal 
+				popularity = 0.1
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	focus = { 
+		id = RMA_liberal_reforms
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 2
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_jupitonian_socialism focus = RMA_conservative_compromise }
+		available = { }
+		completion_reward = { 
+			add_political_power = 25
+			add_stability = 0.1
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	
+	focus = { 
+		id = RMA_southern_development
+		icon = GFX_focus_usa_voter_registration_act
+		x = 1
+		y = 4
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_reaffirm_the_church focus = RMA_reform_the_church }
+		available = { }
+		completion_reward = { 
+			
+		}
+	}
+	
+	focus = { 
+		id = RMA_northern_expansion
+		icon = GFX_focus_usa_voter_registration_act
+		x = -1
+		y = 4
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_reaffirm_the_church focus = RMA_reform_the_church }
+		available = { }
+		completion_reward = { 
+			
+		}
+	}
+	
+	focus = { 
+		id = RMA_the_duchess
+		icon = GFX_RMA_maria
+		x = -1
+		y = 5
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_northern_expansion }
+		prerequisite = { focus = RMA_southern_development }
+		mutually_exclusive = { focus = RMA_liberalization }
+		available = { }
+		completion_reward = { 
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Maria Pier di Romagna"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "maria.dds"
+				expire = "1965.1.1"
+				ideology = social_democracy
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "Maria Pier di Romagna"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "maria.dds"
+				expire = "1965.1.1"
+				ideology = liberal_socialism
+				traits = {
+					
+				}
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = -0.2
+			}	
+		}
+	}
+	
+	focus = { 
+		id = RMA_liberalization
+		icon = GFX_RMA_maria
+		x = 1
+		y = 5
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_northern_expansion }
+		prerequisite = { focus = RMA_southern_development }
+		mutually_exclusive = { focus = RMA_the_duchess }
+		available = { }
+		completion_reward = { 
+			add_stability = 0.1
+			add_political_power = -25
+			add_popularity = {
+				ideology = monarchism
+				popularity = -0.2
+			}	
+		}
+	}
 	
 	
 	
