@@ -1032,10 +1032,14 @@ country_event = {
 	
 	option = {
 		name = gallia.619.a
-		create_wargoal = {
-			target = RMA
-			type = puppet_wargoal_focus
+		give_guarantee = GAL
+		GAL = {
+			give_guarantee = PREV
 		}
+	}
+	
+	option = {
+		name = gallia.619.b
 	}
 }
 

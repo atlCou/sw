@@ -39,7 +39,7 @@ focus_tree = {
 				days = 45
 			}
 			country_event = {
-				id = RMA.1
+				id = romagna.1
 				days = 65
 			}
 		}
@@ -921,6 +921,25 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
+	
+	focus = { 
+		id = RMA_
+		icon = GFX_focus_usa_voter_registration_act
+		x = 1
+		y = 1
+		relative_position_id = RMA_future_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_future_glories }
+		available = { }
+		completion_reward = { 
+			add_political_power = 50
+		}
+	}
+	
+	
+	
+	
 	
 
 

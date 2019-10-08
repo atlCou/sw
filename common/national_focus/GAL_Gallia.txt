@@ -1979,9 +1979,9 @@ shared_focus = {
 	cost = 8
 	relative_position_id = GAL_nous_voila
 	prerequisite = { focus = GAL_nationalist_league }
+	mutually_exclusive = { focus = GAL_secure_low_countries }
 	availabe = {
-	
-	
+		is_puppet = no
 	}
 	available_if_capitulated = yes
 	ai_will_do = {
@@ -1989,11 +1989,90 @@ shared_focus = {
 	}
 	completion_reward = {
 		create_faction = "Nationalist League"
+		every_other_country = {
+			limit = {
+				has_guaranteed = GAL
+			}
+			country_event = {
+				id = gallia.620
+			}
+		}
 	}
 }
 
 
+shared_focus = {
+	id = GAL_secure_low_countries
+	icon = GFX_GAL_territ_prop
+	x = 1
+	y = 2
+	cost = 8
+	relative_position_id = GAL_nous_voila
+	prerequisite = { focus = GAL_nationalist_league }
+	mutually_exclusive = { focus = GAL_formalizing_the_alliance }
+	availabe = {
+		is_puppet = no
+	}
+	available_if_capitulated = yes
+	ai_will_do = {
+		base = 50
+	}
+	completion_reward = {
 
+	}
+}
+
+
+shared_focus = {
+	id = GAL_claim_the_rhine
+	icon = GFX_GAL_territ_prop
+	x = 1
+	y = 3
+	cost = 8
+	relative_position_id = GAL_nous_voila
+	prerequisite = { focus = GAL_secure_low_countries }
+	availabe = {
+		is_puppet = no
+	}
+	available_if_capitulated = yes
+	ai_will_do = {
+		base = 50
+	}
+	completion_reward = {
+		add_state_claim = 794
+		add_state_claim = 42
+		add_state_claim = 8
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = GAL_final_preparations
+	icon = GFX_GAL_territ_prop
+	x = -1
+	y = 3
+	cost = 8
+	relative_position_id = GAL_nous_voila
+	prerequisite = { focus = GAL_formalizing_the_alliance }
+	availabe = {
+		is_puppet = no
+	}
+	available_if_capitulated = yes
+	ai_will_do = {
+		base = 50
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		16 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				instant_build = yes
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+}
 
 
 
@@ -2007,7 +2086,7 @@ shared_focus = {
 	y = 6
 	cost = 8
 	relative_position_id = GAL_liberte
-	prerequisite = { focus = GAL_just_alsace focus = GAL_geopolitical_reorganization }
+	prerequisite = { focus = GAL_just_alsace focus = GAL_geopolitical_reorganization focus = GAL_claim_the_rhine focus = GAL_final_preparations }
 	available_if_capitulated = yes
 	ai_will_do = {
 		base = 0
@@ -2023,7 +2102,7 @@ shared_focus = {
 	completion_reward = {
 		KAR = { 
 			country_event = {
-				id = gallia.620
+				id = gallia.700
 			}
 		}
 	}
