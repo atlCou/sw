@@ -33,7 +33,7 @@ shared_focus = {
 				days = 140
 			}
 			
-			country_event = {
+			country_event = { ####ELECTIONS, DOESN'T AFFECT RESULTS OF ECONOMIC ACT UNLESS PAGAN
 				id = karlsland.19
 				days = 175
 			}
@@ -781,9 +781,17 @@ shared_focus = {
 
 
 	completion_reward = { 
-		
+		country_event = {
+			id = karlsland.100
+		}
 	} 
 }
+
+
+
+
+
+
 
 
 shared_focus = { 
@@ -801,11 +809,28 @@ shared_focus = {
 	mutually_exclusive = { focus = KAR_a_compromise }
 
 	completion_reward = { 
-		
+		country_event = {
+			id = karlsland.200
+		}
 	} 
 }
 
+shared_focus = { 
+	id = KAR_a_new_executive
+	icon = GFX_KAR_republic
+	x = 0
+	y = 1
+	relative_position_id = KAR_another_referendum
+	prerequisite = { focus = KAR_economic_recovery_act }
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+		has_country_flag = KAR_republic_flag
+	}
+	completion_reward = { 
 
+	} 
+}
 
 
 

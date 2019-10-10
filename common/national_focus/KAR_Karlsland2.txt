@@ -27,7 +27,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 11
+			add = 9
 			original_tag = KAR 
 		}
 	

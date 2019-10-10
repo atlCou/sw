@@ -393,6 +393,74 @@ country_event = {
 
 
 
+country_event = {
+	id = karlsland.100
+	title = karlsland.100.t
+	desc = karlsland.100.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.100.a
+		add_stability = 0.05
+		set_country_flag = KAR_compromise
+		remove_ideas = KAR_thedeathofmonarchy
+		add_popularity = {
+			ideology = fanatical-paganism
+			popularity = -1
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -1
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.1
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = karlsland.200
+	title = karlsland.200.t
+	desc = karlsland.200.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.200.a
+		set_cosmetic_tag = KAR_republic
+		add_stability = 0.05
+		set_country_flag = KAR_republic_flag
+		remove_ideas = KAR_thedeathofmonarchy
+	}
+	
+}
+
+
+
+
+
 
 
 country_event = {
