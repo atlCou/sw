@@ -790,6 +790,43 @@ shared_focus = {
 
 
 
+shared_focus = { 
+	id = KAR_karlslander_spirit
+	icon = GFX_KAR_compromise
+	x = -2
+	y = 1
+	relative_position_id = KAR_a_compromise
+	prerequisite = { focus = KAR_a_compromise }
+	cost = 5
+	available_if_capitulated = yes 
+
+	completion_reward = { 
+		add_war_support = 0.05
+		remove_ideas = KAR_stagnantkarlsland
+	} 
+}
+
+shared_focus = { 
+	id = KAR_karlslander_identity
+	icon = GFX_KAR_compromise
+	x = -2
+	y = 2
+	relative_position_id = KAR_a_compromise
+	prerequisite = { focus = KAR_karlslander_spirit }
+	cost = 5
+	available_if_capitulated = yes 
+
+	completion_reward = { 
+		add_war_support = 0.05
+		add_ideas = KAR_karlslander_identity_spirit
+	} 
+}
+
+
+
+
+
+
 
 
 
@@ -839,6 +876,38 @@ shared_focus = {
 
 
 
+shared_focus = { 
+	id = KAR_promoting_witch_education
+	icon = GFX_KAR_compromise
+	x = 0
+	y = 2
+	relative_position_id = KAR_economic_recovery_act
+	prerequisite = { focus = KAR_a_compromise focus = KAR_another_referendum }
+	cost = 5
+	available_if_capitulated = yes 
+
+	completion_reward = { 
+		add_stability = 0.05
+		country_event = {
+			id = karlsland.50
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_national_competitions
+	icon = GFX_KAR_compromise
+	x = 0
+	y = 3
+	relative_position_id = KAR_economic_recovery_act
+	prerequisite = { focus = KAR_promoting_witch_education }
+	cost = 5
+	available_if_capitulated = yes 
+
+	completion_reward = { 
+		
+	} 
+}
 
 
   

@@ -211,6 +211,29 @@ ideas = {
 		
 		}
 		
+		
+		KAR_karlslander_identity_spirit = {
+		
+			picture = war_of_resistance
+			
+			modifier = {
+				political_power_gain = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		KAR_pagan_victory = {
 			
 			picture = war_of_resistance
