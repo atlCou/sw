@@ -377,7 +377,7 @@ country_event = {
 	option = {
 		name = karlsland.20.b
 		trigger = { has_country_flag = KAR_can_go_pagan }
-		add_stability = -0.2
+		add_stability = -0.5
 		load_focus_tree = KAR_Karlsland_paganism
 		hidden_effect = {
 			news_event = {
@@ -603,8 +603,51 @@ country_event = {
 		}
 	}
 	
+}
+
+country_event = {
+	id = karlsland.505
+	title = karlsland.505.t
+	desc = karlsland.505.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {   #### Only one option, realistically they'd never say yes under any situation
+		name = karlsland.505.a
+		ai_chance = {
+			base = 100
+		}
+		KAR = {
+			country_event = {
+				id = karlsland.506
+				days = 1
+			}
+		}
+	}
 	
 }
+
+country_event = {
+	id = karlsland.506
+	title = karlsland.506.t
+	desc = karlsland.506.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.506
+		create_wargoal = {
+			target = BAL
+			type = annex_everything
+		}
+	
+}
+
+
+
+
 
 country_event = {
 	id = karlsland.550
