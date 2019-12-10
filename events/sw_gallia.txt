@@ -1423,7 +1423,7 @@ country_event = {
 				name = "Fernandia Malvezzi"
 				picture = "Fernandia Malvezzi.dds"
 				expire = "1965.1.1"
-				ideology = marxist-leninism
+				ideology = communism_type
 				traits = {
 					#
 				}

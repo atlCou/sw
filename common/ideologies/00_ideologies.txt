@@ -4,10 +4,7 @@ ideologies = {
 		
 		types = {
 		
-			marxism = {
-			}
-			
-			leninism = {
+			communism_type = {
 			}
 			
 			anarchist_communism = {
@@ -17,9 +14,6 @@ ideologies = {
 			}
 			
 			national-bolshevism = {
-			}
-			
-			marxist-leninism = {
 			}
 			
 			

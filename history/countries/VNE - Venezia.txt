@@ -55,7 +55,7 @@ create_country_leader = {
 	name = "Josipa Bencetic"
 	picture = "Josipa Bencetic.dds"
 	expire = "1965.1.1"
-	ideology = marxist-leninism
+	ideology = communism_type
 	traits = {
 		#
 	}

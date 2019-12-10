@@ -108,7 +108,7 @@ create_country_leader = {
 	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
 	picture = "Eini Luukkanen.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = communism_type
 	traits = {
 		#
 	}	

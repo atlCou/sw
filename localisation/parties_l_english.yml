@@ -21,11 +21,11 @@
  parlimentary_republicanism:0 "Parlimentary Republicanism"
  parlimentary_republicanism_desc:0 "A parlimentary republic is one which is ruled by a parliament, and usually values liberal traditions of liberty and self governance."
  
- marxism:0 "Marxism"
- marxism_desc:0 "Encompassing a broad spectrum of economic and historical views, Marxist politics seek to apply the theories of Karl Marx to political practice. Class struggle and the need for transition to a society based on common ownership of the means of production characterize these ideologies."
+ communism_type:0 "Marxism"
+ communism_type_desc:0 "Encompassing a broad spectrum of economic and historical views, Marxist politics seek to apply the theories of Karl Marx to political practice. Class struggle and the need for transition to a society based on common ownership of the means of production characterize these ideologies."
  
- leninism:0 "Leninism"
- leninism_desc:0 "A political ideology based in Marxist thought, Leninism seeks to establish a socialist state by a vanguard party leading a revolution overthrowing capitalist society. Once in power, the party rules through a system whereby policies are open for internal debate until a decision has been made."
+ communism_type:0 "Leninism"
+ communism_type_desc:0 "A political ideology based in Marxist thought, Leninism seeks to establish a socialist state by a vanguard party leading a revolution overthrowing capitalist society. Once in power, the party rules through a system whereby policies are open for internal debate until a decision has been made."
  
  national-bolshevism:0 "National-Bolshevism"
  national-bolshevism_desc:0 "A cross between ultra-nationalism and communism, which uses communist economic principles for both class equality and ethnic homogeneity."
@@ -70,7 +70,7 @@
  absolute_monarchism:0 "Absolute Monarchism"
  absolute_monarchism_desc:0 "Absolute monarchism is a form of monarchy where the monarch has absolute rule and say over their subjects."
  
- marxist-leninism:0 "Marxist-Leninism"
+ communism_type:0 "Marxist-Leninism"
  
  
  democratic_socialism:0 "Democratic Socialism"

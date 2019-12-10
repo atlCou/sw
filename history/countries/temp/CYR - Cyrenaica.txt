@@ -107,7 +107,7 @@ create_country_leader = {
 	name = "Hassan as-Senussi"
 	desc = ""
 	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_communism1.dds"
-	ideology = leninism
+	ideology = communism_type
 	traits = {
 		#
 	}

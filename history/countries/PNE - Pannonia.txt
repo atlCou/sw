@@ -70,7 +70,6 @@ set_convoys = 10
         monarchism = 0 
         fascism = 0 
         fanatical-paganism = 0 
-
 	}
 	
 	set_politics = { ruling_party = socialism

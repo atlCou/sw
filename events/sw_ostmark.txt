@@ -203,15 +203,24 @@ country_event = {
 				}
 				hidden_effect = {
 					create_country_leader = {
-							name = "Laura Toth"
-							desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
-							picture = "Laura_Toth.dds"
-							expire = "1965.1.1"
-							ideology = revolutionary_nationalistic_socialism
+						name = "Laura Toth"
+						desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+						picture = "Laura_Toth.dds"
+						expire = "1965.1.1"
+						ideology = revolutionary_nationalistic_socialism
 					}
-					country_event = {
-						id = ostmark.1000
-						days = 5
+					create_country_leader = {
+						name = "Laura Toth"
+						desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+						picture = "Laura_Toth.dds"
+						expire = "1965.1.1"
+						ideology = communism_type
+					}
+					DAC = {
+						country_event = {
+							id = ostmark.1000
+							days = 5
+						}
 					}
 				}
 			}
@@ -1058,17 +1067,63 @@ country_event = {
 		transfer_state = 83
 		76 = { add_core_of = ROOT }
 		84 = { add_core_of = ROOT }
-		PNE = { country_event = ostmark.1001 }
+		PNE = { country_event = ostmark.1001 days = 2 }
+		SER = { country_event = ostmark.1002 days = 1 }
 	}
 
 	option = {
+		ai_chance = {
+			base = 1
+		}
 		name = ostmark.1001.a
 		add_stability = -0.05
 	}
 	
 }
 
+country_event = {
+	id = ostmark.1001
+	title = ostmark.1001.t
+	desc = ostmark.1001.d
 
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.1001
+		add_opinion_modifier = {
+			target = DAC
+			modifier = pne_revanchism
+		}
+		add_war_support = 0.1
+
+	}
+}
+
+country_event = {
+	id = ostmark.1002
+	title = "March North - Says Dacia"
+	desc = "Dacia marched into Transylvania yesterday, claiming it to be theirs with the fall of Ostmark and it being completely undefended. This provides us with a great opportunity to march north of Belgrade, which our militias did without authorization."
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.1002
+		transfer_state = 82
+		transfer_state = 764
+		764 = { add_core_of = ROOT }
+		82 = { add_core_of = ROOT }
+		PNE = {
+			add_state_claim = 82
+			add_state_claim = 764
+		}
+	}
+
+
+}
 
 
 ############ 

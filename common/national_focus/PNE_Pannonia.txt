@@ -63,7 +63,6 @@ focus_tree = {
 			factor = 50
 		} 
 		completion_reward = { 
-			add_ideas = PNE_isolationism_idea
 		}
 	}
 	
@@ -81,7 +80,6 @@ focus_tree = {
 			factor = 50
 		} 
 		completion_reward = { 
-			add_ideas = PNE_nationalism_idea
 			PNE = { add_to_variable = { auth = 2 } }
 		}
 	}
@@ -100,7 +98,6 @@ focus_tree = {
 			factor = 50
 		} 
 		completion_reward = { 
-			add_ideas = PNE_internationalism_idea
 			PNE = { add_to_variable = { auth = 1 } }
 		}
 	}
@@ -211,13 +208,13 @@ focus_tree = {
 					AND = { 
 						PNE = { 
 							check_variable = { auth > 1 } 
-							check_variable = { auth < 5 } 
+							check_variable = { auth < 6 } 
 						} 
 					}
 				}
 				set_politics = {
-					ruling_party = communism            }
-
+					ruling_party = communism            
+				}
                 set_popularities = {
                     socialism = 35
                     liberal = 14
@@ -248,7 +245,7 @@ focus_tree = {
 	focus = { 
 		id = PNE_domestic_policy
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		relative_position_id = PNE_elections
@@ -297,8 +294,91 @@ focus_tree = {
 		}
 	}
 	
+	focus = { 
+		id = PNE_seize_production
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = PNE_elections
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_elections }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = {  
+			if = {
+				limit = { PNE = { has_completed_focus = PNE_unions } }
+				add_ideas = PNE_unions_idea
+				add_stability = 0.05
+			}
+			else_if = {
+				limit = { PNE = { has_completed_focus = PNE_control } }
+				add_ideas = PNE_control_idea
+				43 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				limit = { PNE = { has_completed_focus = PNE_communes } }
+				every_owned_state = {
+					add_extra_state_shared_building_slots = 1
+				}
+				add_political_power = 50
+				add_stability = 0.05
+			}
+			else = {	
+				custom_effect_tooltip = PNE_domestic_policy_tooltip
+			}
+		}
+	}
 	
-	
-	
+	focus = { 
+		id = PNE_the_world
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = PNE_elections
+		available_if_capitulated = yes 
+		prerequisite = { focus = PNE_domestic_policy }
+		prerequisite = { focus = PNE_seize_production }
+		ai_will_do = { 
+			factor = 50
+		} 
+		completion_reward = {  
+			if = {
+				limit = {
+					has_completed_focus = PNE_isolationism
+				}
+				add_ideas = PNE_isolationism_idea
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = PNE_nationalism
+				}
+				add_ideas = PNE_nationalism_idea
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = PNE_internationalism
+				}
+				add_ideas = PNE_internationalism_idea
+			}
+			else = {
+				custom_effect_tooltip = PNE_domestic_policy_tooltip
+			}
+		}
+	}
 	
 }
