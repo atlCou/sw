@@ -16,23 +16,6 @@ focus_tree = {
 
 }
 
-focus_tree = {
-	id = Gallia_TheCause
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = GAL
-		}
-	}
-	default = no
-	
-	shared_focus = GAL_1936elections
-	shared_focus = GAL_jointdeveloptech
-
-}
 
 
 
@@ -53,5 +36,7 @@ focus_tree = {
 	
 	
 	shared_focus = GAL_my_pride
+	shared_focus = GAL_army_of_speed
+	shared_focus = GAL_army_of_prestige
 
 }

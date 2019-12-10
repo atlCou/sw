@@ -26,4 +26,8 @@ opinion_modifiers = {
 		value = -50
 	}
 	
+	pne_revanchism = {
+		value = -50
+	}
+	
 }

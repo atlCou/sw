@@ -209,6 +209,10 @@ country_event = {
 							expire = "1965.1.1"
 							ideology = revolutionary_nationalistic_socialism
 					}
+					country_event = {
+						id = ostmark.1000
+						days = 5
+					}
 				}
 			}
 			SER = {
@@ -1032,6 +1036,40 @@ country_event = {
 	}
 
 }
+
+
+
+country_event = {
+	id = ostmark.1000
+	title = ostmark.1000.t
+	desc = ostmark.1000.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ostmark.1000.a
+		ai_chance = {
+			base = 50
+		}
+		transfer_state = 76
+		transfer_state = 84
+		transfer_state = 83
+		76 = { add_core_of = ROOT }
+		84 = { add_core_of = ROOT }
+		PNE = { country_event = ostmark.1001 }
+	}
+
+	option = {
+		name = ostmark.1001.a
+		add_stability = -0.05
+	}
+	
+}
+
+
+
 
 ############ 
 ### Unified Ostmark Politics

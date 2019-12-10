@@ -368,24 +368,7 @@
  ORU_authoritarian-socialism_ADJ:0 "Orussian"
 
  
- RMA_liberal:0 "Romagna"
- RMA_liberal_DEF:0 "Romagna"
- RMA_liberal_ADJ:0 "Romagnian"
- RMA_liberal_monarchism:0 "Romagna"
- RMA_liberal_monarchism_DEF:0 "The Duchy of Romagna"
- RMA_liberal_monarchism_ADJ:0 "Romagnian"
- RMA_monarchism:0 "Romagna"
- RMA_monarchism_DEF:0 "the Duchy of Romagna"
- RMA_monarchism_ADJ:0 "Romagnian"
- RMA_communism:0 "People's Romagna"
- RMA_communism_DEF:0 "The United People's of Romagna"
- RMA_communism_ADJ:0 "Romagnian"
- RMA_fascism:0 "Romagna"
- RMA_fascism_DEF:0 "The State of Romagna"
- RMA_fascism_ADJ:0 "Romagnian"
- RMA_socialism:0 "Romagnian Socialist Republic"
- RMA_socialism_DEF:0 "the Romagnian Socialist Republic"
- RMA_socialism_ADJ:0 "Romagnian"
+
 
  SIR_monarchism:0 "Siamro"
  SIR_monarchism_DEF:0 "Siamro"

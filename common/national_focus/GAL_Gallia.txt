@@ -965,27 +965,7 @@ shared_focus = {
 	}
 }
 
-shared_focus = {
-	id = GAL_capitalizing_our_successes
-	icon = GFX_focus_eng_concessions_to_the_trade_unions
-	x = 0
-	y = 2
-	relative_position_id = GAL_socdem_victory
-	prerequisite = { focus = GAL_welfare_programs }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 50
-		}
-	completion_reward = {
-		add_stability = 0.1
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.05
-		}
-		add_political_power = 25
-	}
-}
+
 
 shared_focus = {
 	id = GAL_capitalizing_our_successes
@@ -1980,7 +1960,7 @@ shared_focus = {
 	relative_position_id = GAL_nous_voila
 	prerequisite = { focus = GAL_nationalist_league }
 	mutually_exclusive = { focus = GAL_secure_low_countries }
-	availabe = {
+	available = {
 		is_puppet = no
 	}
 	available_if_capitulated = yes
@@ -2009,16 +1989,27 @@ shared_focus = {
 	cost = 8
 	relative_position_id = GAL_nous_voila
 	prerequisite = { focus = GAL_nationalist_league }
-	mutually_exclusive = { focus = GAL_formalizing_the_alliance }
-	availabe = {
-		is_puppet = no
+	bypass = {
+		AND = {
+			BLG = { OR = { exists = no is_puppet = yes } }
+			NET = { OR = { exists = no is_puppet = yes } }
+		}
 	}
 	available_if_capitulated = yes
 	ai_will_do = {
 		base = 50
 	}
 	completion_reward = {
-
+		BLG = {
+			country_event = {
+				id = gallia.610
+			}
+		}
+		NET = {
+			country_event = {
+				id = gallia.613
+			}
+		}
 	}
 }
 
@@ -2031,7 +2022,7 @@ shared_focus = {
 	cost = 8
 	relative_position_id = GAL_nous_voila
 	prerequisite = { focus = GAL_secure_low_countries }
-	availabe = {
+	available = {
 		is_puppet = no
 	}
 	available_if_capitulated = yes
@@ -2054,7 +2045,7 @@ shared_focus = {
 	cost = 8
 	relative_position_id = GAL_nous_voila
 	prerequisite = { focus = GAL_formalizing_the_alliance }
-	availabe = {
+	available = {
 		is_puppet = no
 	}
 	available_if_capitulated = yes
@@ -2107,3 +2098,427 @@ shared_focus = {
 		}
 	}
 }
+
+
+
+
+
+
+shared_focus = {
+	id = GAL_army_of_speed
+	icon = GFX_focus_generic_tank_production
+	x = 30
+	y = 0
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = fascism
+	}
+	mutually_exclusive = { focus = GAL_army_of_prestige }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_mobile_warfare
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_formalize_the_Volontaires
+	icon = GFX_focus_generic_tank_production
+	x = -3
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = fascism
+	}
+	mutually_exclusive = { focus = GAL_integrate_the_Volontaires }
+	prerequisite = { focus = GAL_army_of_speed }
+	relative_position_id = GAL_army_of_speed
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		
+	}
+}
+
+
+shared_focus = {
+	id = GAL_integrate_the_Volontaires
+	icon = GFX_focus_generic_tank_production
+	x = -1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = fascism
+	}
+	mutually_exclusive = { focus = GAL_formalize_the_Volontaires }
+	prerequisite = { focus = GAL_army_of_speed }
+	relative_position_id = GAL_army_of_speed
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		
+	}
+}
+
+
+shared_focus = {
+	id = GAL_emphasize_speed
+	icon = GFX_focus_generic_tank_production
+	x = 1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = fascism
+	}
+	prerequisite = { focus = GAL_army_of_speed }
+	relative_position_id = GAL_army_of_speed
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = GAL_emphasize_speed_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_hit_harder
+	icon = GFX_focus_generic_tank_production
+	x = -1
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = fascism
+	}
+	prerequisite = { focus = GAL_emphasize_speed }
+	relative_position_id = GAL_army_of_speed
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = GAL_hit_harder_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_agile_boyes
+	icon = GFX_focus_generic_tank_production
+	x = 1
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = fascism
+	}
+	prerequisite = { focus = GAL_emphasize_speed }
+	relative_position_id = GAL_army_of_speed
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			ahead_reduction = 1
+			category = cat_medium_armor
+		}
+	}
+}
+
+
+shared_focus = {
+	id = GAL_army_of_prestige
+	icon = GFX_goal_generic_army_artillery
+	x = 36
+	y = 0
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = monarchism
+	}
+	mutually_exclusive = { focus = GAL_army_of_speed }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_superior_firepower
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_army_glory
+	icon = GFX_focus_generic_tank_production
+	x = 1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	mutually_exclusive = { focus = GAL_army_size }
+	prerequisite = { focus = GAL_army_of_speed }
+	relative_position_id = GAL_army_of_prestige
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = GAL_army_glory_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_army_size
+	icon = GFX_focus_generic_tank_production
+	x = 3
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	mutually_exclusive = { focus = GAL_army_glory }
+	prerequisite = { focus = GAL_army_of_speed }
+	relative_position_id = GAL_army_of_prestige
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = GAL_army_size_idea
+	}
+}
+
+
+
+shared_focus = {
+	id = GAL_from_the_skies
+	icon = GFX_goal_generic_CAS
+	x = -1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_army_of_prestige }
+	relative_position_id = GAL_army_of_prestige
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = GAL_from_the_skies_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_from_afar
+	icon = GFX_goal_generic_CAS
+	x = -1
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_army_of_prestige }
+	relative_position_id = GAL_army_of_prestige
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_royal_officer_academy
+	icon = GFX_goal_generic_CAS
+	x = 1
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_from_the_skies }
+	relative_position_id = GAL_army_of_prestige
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		every_army_leader = {
+			limit = {
+				
+			}
+		}
+	}
+}
+
+
+
+
+
+shared_focus = {
+	id = GAL_the_backbone
+	icon = GFX_goal_generic_army_artillery
+	x = 3
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	relative_position_id = GAL_army_of_speed
+	prerequisite = { focus = GAL_army_of_speed focus = GAL_army_of_prestige }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_military_games
+	icon = GFX_goal_generic_army_artillery
+	x = 0
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	relative_position_id = GAL_the_backbone
+	prerequisite = { focus = GAL_the_backbone }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		army_experience = 50
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+
+
+
+
+
+

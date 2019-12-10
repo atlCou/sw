@@ -221,11 +221,58 @@ ideas = {
 			picture = generic_manpower_bonus
 		
 			modifier = {
-				army_attack_factor = 0.1
+				army_defence_factor = 0.02
 				mobilization_speed = 0.1
 			}
 		}
 	
+	
+		######## Military Nat/Mon
+	
+		GAL_emphasize_speed_idea = {
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				army_speed_factor = 0.1
+			}
+		}
+		
+		GAL_hit_harder_idea = {
+			picture = FRA_army_of_aggression_focus
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = -0.05
+			}
+		}
+		
+		
+		GAL_army_glory_idea = {
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				conscription_factor = 0.1
+				army_org = 5
+			}
+		}
+		
+		GAL_army_size_idea = {
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				conscription = 0.1
+				army_org_factor = -0.1
+			}
+		}
+		
+		GAL_from_the_skies_idea = {
+			picture = air_war_plans_division_focus
+		
+			modifier = {
+				air_close_air_support_attack_factor = 0.05
+				air_close_air_support_defence_factor = 0.05
+			}
+		}
 
 	}
 

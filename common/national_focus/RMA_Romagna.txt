@@ -829,7 +829,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_the_party_leader }
-		available = { has_country_flag = RMA_canon }
+		available = { has_country_flag = RMA_irridentist }
 		completion_reward = { 
 			add_political_power = 50
 		}
@@ -919,6 +919,9 @@ focus_tree = {
 		available = { AND = { has_country_flag = RMA_canon has_country_flag = RMA_liberal_canon } }
 		completion_reward = { 
 			add_political_power = 50
+			hidden_effect = { 
+				set_cosmetic_tag = RMA_lib
+			}
 		}
 	}
 	
@@ -1195,7 +1198,7 @@ focus_tree = {
 			add_popularity = {
 				ideology = monarchism
 				popularity = -0.2
-			}	
+			}
 		}
 	}
 	
