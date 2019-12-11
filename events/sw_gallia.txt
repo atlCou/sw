@@ -1044,6 +1044,154 @@ country_event = {
 }
 
 
+country_event = {
+	id = gallia.700
+	title = gallia.700.t
+	desc = gallia.700.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.700.a
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				GAL = { has_completed_focus = GAL_geopolitical_reorganization }
+			}
+			BLG = {
+				transfer_state = 8
+				transfer_state = 28
+				transfer_state = 42
+				transfer_state = 794
+			}
+			GAL = {
+				country_event = {
+					id = gallia.701
+					days = 1
+				}
+			}
+		}
+		else = {
+			GAL = {
+				transfer_state = 8
+				transfer_state = 28
+				transfer_state = 42
+				transfer_state = 794
+				country_event = {
+					id = gallia.701
+					days = 1
+				}
+			}
+		}
+		add_political_power = -100
+		add_stability = -0.05
+	}
+	
+	option = {
+		name = gallia.700.b
+		ai_chance = {
+			base = 99
+		}
+		GAL = {
+			country_event = {
+				id = gallia.702
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gallia.701
+	title = gallia.701.t
+	desc = gallia.701.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.701.a
+		add_war_support = 0.05
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = gallia.702
+	title = gallia.702.t
+	desc = gallia.702.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.701.a
+		add_war_support = 0.05
+		create_wargoal = {
+			target = KAR
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+
+
+country_event = {
+	id = gallia.703
+	title = gallia.703.t
+	desc = gallia.703.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.703.a
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 50
+				AND = { 
+					has_war = yes
+					NOT = { has_war_with = GAL }
+				}
+			}
+		}
+		GAL = {
+			transfer_state = 28
+			country_event = {
+				id = gallia.701
+				days = 1
+			}
+		}
+		add_political_power = -50
+		add_stability = -0.05
+	}
+	
+	option = {
+		name = gallia.703.b
+		ai_chance = {
+			base = 50
+		}
+		GAL = {
+			country_event = {
+				id = gallia.702
+				days = 1
+			}
+		}
+	}
+}
+
+
+
+
+
 ####### SOCIALIST EVENTS
 
 country_event = {
@@ -1286,19 +1434,12 @@ country_event = {
 				ideology = socialism
 				popularity = 1
 			}
+			set_popularities = {
+				socialism = 65
+				communism = 23
+				liberal = 12
+			}
 			set_politics = {
-				parties = {
-					socialism = {
-						popularity = 65
-					}
-					communism = {
-						popularity = 23
-					}
-					liberal = {
-						popularity = 12
-					}
-				}
-
 				ruling_party = socialism
 				last_election = "1935.5.3"
 				election_frequency = 36

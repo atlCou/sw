@@ -196,6 +196,11 @@ GAL_gallia_coup_post = {
 	color_ui = rgb { 19 44 100 }
 }
 
+BLG_galpuppet = {
+	color = rgb { 19 44 100 }
+	color_ui = rgb { 19 44 100 }
+}
+
 OST_Gollob = {
 	color = rgb { 95 95 95 }
 	color_ui = rgb { 95 95 95 }

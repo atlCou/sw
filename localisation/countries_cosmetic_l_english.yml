@@ -23,8 +23,10 @@
  
  NET_germania_monarchism:0 "Gallian Germania"
  NET_germania_monarchism_DEF:0 "Germania"
- NET_germania_monarchism:0 "Germanian"
- 
+ NET_germania_monarchism_ADJ:0 "Germanian"
+ BLG_galpuppet_monarchism:0 "Gallian Duchy of Belgica"
+ BLG_galpuppet_monarchism_DEF:0 "The Gallian Duchy of Belgica"
+ BGL_galpuppet_monarchism_ADJ:0 "Gallian-Belgican"
  
  
  

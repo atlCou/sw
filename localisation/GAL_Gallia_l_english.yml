@@ -134,8 +134,7 @@ GAL_my_joy:0 "My Joy..."
 GAL_gallia:0 "Gallia!"
 
 GAL_republique:0 "République"
-GAL_aux_armes:0 "Aux armes!"
-GAL_la_patrie_renaitra:0 "La Patrie Renaîtra"
+GAL_la_patrie_renaitra:0 "La Patrie"
 GAL_marechal:0 "Maréchal, Maréchal"
 GAL_marechal_desc:0 "Maréchal Lemare the Beautiful shall be a rallying point for all those in Gallia! The lands that we have lost will be taken back under her guidance, and all the people must know it!"
 GAL_nous_voila:0 "Nous Voilà!"
@@ -143,7 +142,9 @@ GAL_nous_voila_desc:0 "All the able bodied Gallians must fight for their brether
 GAL_no_socialists:0 "No Socialists!"	
 GAL_no_liberals:0 "No Liberals!"
 GAL_no_monarchists:0 "And No Monarchists!"
-GAL_ost_and_kar:0 "'Que veut cette horde de rois conjurés?'"
+GAL_aux_armes:0 "Aux armes!"
+GAL_reorganize_the_unions:0 "State Mediated Bargaining"
+GAL_a_corporatist_state:0 "Conseil National Des Corporations"
 
 GAL_monarchie:0 "Monarchie"
 GAL_burn_the_docs:0 "Burn the Documents"
@@ -160,6 +161,15 @@ GAL_propaganda:0 "Propaganda for the King"
 
 GAL_liberte:0 "Liberté"
 GAL_liberte_desc:0 "Liberty; a value so espoused by the liberal regime before us. But what of our fellow Gallians under the [KAR.GetAdjective] yolk? Alsace is Gallian, it was and it always will be - and soon we will show them that. Our Gallians will be free."
+
+
+GAL_karlslander_demands:0 "Karlslander Demands"
+GAL_karlslander_demands_tooltip:0 "The demands sent to §Y[KAR.GetNameDef]§! will be determined by whether §Y[GAL.GetNameDef]§! have claimed their §Ynatural borders§! or just §YAlsace§!."
+GAL_no_onions_for_ostmarkers:0 "No Onions for Ostmarkers"
+GAL_historic_claims:0 "Historic Claims"
+GAL_karlslander_actually:0 "Finish The Beast"
+GAL_free_the_east:0 "Free The East"
+GAL_free_the_east_desc:0 "We've beaten the Karlslanders and Ostmarkers, but to the east lays the worst offender of them all. The Orussian regime was founded on nothing but lust for power, and its peoples have suffered under that backwards noble rule for too long. We will do what the liberal Gallian emperor of a century ago couldn't do, and cement our Gallia in the permanent stream of human history!"
 
 
 
@@ -180,3 +190,4 @@ GAL_mon_econ_2:0 "Monarchist Market Economy"
 
 
 GAL_marechal_trait:0 "Le Jeune Maréchal"
+

@@ -1857,6 +1857,7 @@ shared_focus = {
 				BLG = { is_puppet_of = GAL }
 			}
 			BLG = {
+				set_cosmetic_tag = BLG_galpuppet
 				transfer_state = 29 
 				if = {
 					limit = {
@@ -2079,6 +2080,9 @@ shared_focus = {
 	relative_position_id = GAL_liberte
 	prerequisite = { focus = GAL_just_alsace focus = GAL_geopolitical_reorganization focus = GAL_claim_the_rhine focus = GAL_final_preparations }
 	available_if_capitulated = yes
+	available = {
+		is_puppet = no
+	}
 	ai_will_do = {
 		base = 0
 		modifier = {
@@ -2091,16 +2095,191 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		KAR = { 
-			country_event = {
-				id = gallia.700
+		if = {
+			limit = {
+				OR = {
+					has_completed_focus = GAL_geopolitical_reorganization
+					has_completed_focus = GAL_claim_the_rhine
+				}
 			}
+			KAR = { 
+				country_event = {
+					id = gallia.700
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_completed_focus = GAL_just_alsace
+					has_completed_focus = GAL_final_preparations
+				}
+			}
+			KAR = { 
+				country_event = {
+					id = gallia.703
+				}
+			}
+		}
+		else = {
+			custom_effect_tooltip = GAL_karlslander_demands_tooltip
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_karlslander_actually
+	icon = GFX_GAL_territ_prop
+	x = 2
+	y = 1
+	cost = 8
+	relative_position_id = GAL_karlslander_demands
+	prerequisite = { focus = GAL_karlslander_demands }
+	available_if_capitulated = yes
+	available = {
+		KAR = { exists = yes }
+		NOT = {
+			KAR = { is_puppet_of = ROOT } 
+		}
+		NOT = {
+			has_wargoal_against = KAR
+		}
+		is_puppet = no
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 200
+			date > 1939.12.01
+		}
+		modifier = {
+			add = 50
+			date > 1939.01.01
+		}
+	}
+	
+	completion_reward = {
+		add_threat = 25
+		create_wargoal = {
+			target = KAR
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_no_onions_for_ostmarkers
+	icon = GFX_GAL_ostmark_war
+	x = -2
+	y = 1
+	cost = 8
+	relative_position_id = GAL_karlslander_demands
+	prerequisite = { focus = GAL_karlslander_demands }
+	available_if_capitulated = yes
+	available = {
+		OST = { exists = yes }
+		NOT = {
+			OST = { is_puppet_of = ROOT } 
+		}
+		NOT = {
+			has_wargoal_against = OST
+		}
+		is_puppet = no
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date > 1939.12.01
+			OR = {
+				KAR = { exists = no }
+				KAR = { is_puppet_of = GAL }
+			}
+		}
+		modifier = {
+			add = 25
+			date > 1939.01.01
+			OR = {
+				KAR = { exists = no }
+				KAR = { is_puppet_of = GAL }
+			}
+		}
+	}
+	
+	completion_reward = {
+		add_threat = 10
+		create_wargoal = {
+			target = OST
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_historic_claims
+	icon = GFX_GAL_territ_prop
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = GAL_karlslander_demands
+	prerequisite = { focus = GAL_karlslander_demands }
+	available_if_capitulated = yes
+	available = {
+		is_puppet = no
+	}
+	completion_reward = {
+		add_state_claim = 165
+		add_state_claim = 791
+		add_state_claim = 158
+	}
+}
+
+
+shared_focus = {
+	id = GAL_free_the_east
+	icon = GFX_GAL_orussia_war
+	x = 0
+	y = 2
+	cost = 10
+	relative_position_id = GAL_karlslander_demands
+	prerequisite = { focus = GAL_karlslander_actually }
+	prerequisite = { focus = GAL_no_onions_for_ostmarkers }
+	prerequisite = { focus = GAL_historic_claims }
+	available_if_capitulated = yes
+	available = {
+		is_puppet = no
+		AND = {
+			OST = {
+				OR = {
+					is_puppet_of = ROOT
+					exists = no
+				}
+			}
+			KAR = {
+				OR = {
+					is_puppet_of = ROOT
+					AND = {
+						exists = no
+						NET = { 
+							is_puppet_of = GAL
+						}
+					}
+				}
+			}
+		}
+	}
+	completion_reward = {
+		add_threat = 15
+		create_wargoal = {
+			target = ORU
+			type = puppet_wargoal_focus
 		}
 	}
 }
 
 
 
+############## MILITARY - MON/FASC
 
 
 
@@ -2445,11 +2624,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		every_army_leader = {
-			limit = {
-				
-			}
-		}
+		add_ideas = GAL_royal_officer_academy_idea
 	}
 }
 
