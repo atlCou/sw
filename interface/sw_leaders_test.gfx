@@ -1,0 +1,10 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_Eila_Ilmatar_Juutilainen_animated"
+		texturefile = "gfx/leaders/SOU/Eila Ilmatar Juutilainen Animated.dds"
+		noOfFrames = 14
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
+}

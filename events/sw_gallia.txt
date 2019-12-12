@@ -637,7 +637,7 @@ country_event = {
 	is_triggered_only = yes
  
 	option = {
-		name = gallia.500.a
+		name = gallia.600.a
 		ai_chance = {
 			base = 50
 		}
@@ -673,7 +673,7 @@ country_event = {
 	is_triggered_only = yes
  
 	option = {
-		name = gallia.500.a
+		name = gallia.601.a
 		ai_chance = {
 			base = 50
 		}
@@ -724,7 +724,7 @@ country_event = {
 	}
 	
 	option = {
-		name = gallia.602.a
+		name = gallia.602.b
 		ai_chance = {
 			base = 50
 		}

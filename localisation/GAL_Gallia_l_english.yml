@@ -84,8 +84,16 @@
  
  
  gallia.600.t:0 "Our Pride"
+ gallia.600.d:0 "The regime knew what was coming. With Gallian intelligence agents standing at the gates of every single national institution in Paris, and a royalist flag hanging from the legislatures, the police-less collectivist regime was left with no choice. In only a few weeks, Gallian reactionaries and nationalists seized peaceful control of the nation.\n\nHow peaceful it will be, however, appears to be another issue."
+ gallia.600.a:0 "My Pride and Joy!"
  gallia.601.t:0 "'My Joy'"
+ gallia.601.d:0 ""It is my greatest joy, to announce to my fellow lovers of the Old Gallia, that today the decadent liberal, non-noble institutions of Gallia will be shaken to their cores with the sheer might of our wills",\nChris Keera announced to an audience of Gallian reactionaries. Paris was a lot quieter those next few weeks."
+ gallia.601.a:0 "Now we can get started!"
  gallia.602.t:0 "Gallia's Fate"
+ gallia.602.d:0 "It seems the unorganized group of Gallian reactionaries has come to a standstill. Members of the Croix de Feu, who technically were not a part of the coup but who had acted as a public police force since its occurance, are claiming ownership of the coup. Though their desires for a nationalistic, traditionalistic, and illiberal republic are not what Chriss Keera and her large cabal had in mind; they undoubtly hold more support with the general public.\nHowever, the Gallian Loyalists have proven to be fully dedicated to their cause.\n\nOnly one group would walk out victorious."
+ gallia.602.a:0 "The Croix de Feu"
+ gallia.602.b:0 "The Loyalists"
+ 
 
  
  
@@ -127,40 +135,69 @@ GAL_consolidationofitaly_tooltip_effect:0 " §WOwns all Italian states owned by 
 
 GAL_noalliaces:0 " Gallia has rejected all witch related alliances."
 
-
+####################
+##### REACTIONARY FOCUSES
+####################
 
 GAL_my_pride:0 "My Pride..."
+GAL_my_pride_desc:0 "Gallia must regain the glory it once held on the European continent. We will be prideful of our Gallia again."
 GAL_my_joy:0 "My Joy..."
+GAL_my_joy_desc:0 "Gallia is full of disgusting socialists, liberals, and trade-unionists. We're unpopular now, but it'll be our absolute joy to show bottom-rank Gallians their places."
 GAL_gallia:0 "Gallia!"
+GAL_gallia_desc:0 "And with this final stroke of power politics, the fate of Gallia will be decided. Will Gallia return to the royal monarchy of old, hard-set on recreating a Gallian dominated Europe, or will Gallia look to its national culture and march into the future?"
 
 GAL_republique:0 "République"
+GAL_republique_desc:0 "Oh, the great Gallian Republic! We may have gone astray with liberalism, but the greatest heights of French culture and patriotism were acheived under our republics. Let Maréchal Lemare lead us into a beautiful, strong, republican future!"
 GAL_la_patrie_renaitra:0 "La Patrie"
+GAL_la_patrie_renaitra_desc:0 "Our homeland is the source of our strength and our pride. Let us develop what we have now to regain what we have lost." 
 GAL_marechal:0 "Maréchal, Maréchal"
 GAL_marechal_desc:0 "Maréchal Lemare the Beautiful shall be a rallying point for all those in Gallia! The lands that we have lost will be taken back under her guidance, and all the people must know it!"
 GAL_nous_voila:0 "Nous Voilà!"
 GAL_nous_voila_desc:0 "All the able bodied Gallians must fight for their bretheren under the Karlslander yoke. Maréchal Lemare calls for their support, and we'll make full sure that they answer that call with joy and enthusiasm."
 GAL_no_socialists:0 "No Socialists!"	
+GAL_no_socialists_desc:0 "The Gallian socialists were a pervasive force, but they above all else threaten our new republican state. The unionists will be placated with our own means of negotation, but the worst of the movements will crumble when we remove their foundations."
 GAL_no_liberals:0 "No Liberals!"
+GAL_no_liberals_desc:0 "The liberals may have created the first republican state, but they could not forsee the decadency and weakness it resulted in. Besides, we're sure Robespierre would stand by our side had he been here 150 years later."
 GAL_no_monarchists:0 "And No Monarchists!"
+GAL_no_monarchists_desc:0 "Chris Keera and her intelligence associates may have lead the coup, but they don't hold any recognition of patriotism or of the future. A republic cannot survive with loyalist thorns in its side."
 GAL_aux_armes:0 "Aux armes!"
+GAL_aux_armes_desc:0 "How the patriotic song calls, and how the citizens must act! To arms, in the figurative and literal; that is."
 GAL_reorganize_the_unions:0 "State Mediated Bargaining"
+GAL_reorganize_the_unions_desc:0 "Trade Unions serve the existence of socialist thought and sabotage the productivity of our factories. Instead, the state shall act as a negotiator of labour disputes. We'll be impartial."
 GAL_a_corporatist_state:0 "Conseil National Des Corporations"
+GAL_a_corporatist_state_desc:0 "The National Council of Corporations shall serve as a great national body, serving as the economic organ of our state's entire body. All negotations will act in accordance with the decisions of the council, and Lemare's desires will be enforced through the council as the mind does to an arm and hand."
 
 GAL_monarchie:0 "Monarchie"
+GAL_monarchie_desc:0 "The Gallian monarchy of old was a force unparalled on European soil. The nobility cultivated beautiful and holy art forms, and we stood as a bulwark of the Romagnan-Jupitonian Church. Karlsland has lost its way since unification, and the geographic blots of that age have grown corrupt and stagnant."
 GAL_burn_the_docs:0 "Burn the Documents"
+GAL_burn_the_docs_desc:0 "The documents, especially the constitution, of the Gallian republic would serve as nothing more than propaganda for republicans. We must burn them as a statement and practicality."
 GAL_no_socialist_unions:0 "Ban Socialist Unions"
+GAL_no_socialist_unions_desc:0 "What purposes to unions serve? Certainly not the interests of Gallia's best. The worst offenders are those which wish to overthrow our birthright. This cannot stand."
 GAL_mon_witch:0 "A New Witch"
 GAL_mon_witch_desc:0 "It's no secret that the public love the air infantry, and it's commonplace for governments around the world to prop up their best aces at symbols of their government. But for too long has Gallia promoted liberal, republican witches that have tainted the essence of Gallia. The monarchy will support only those witches that represent the refined, noble values of the new Kingdom of Gallia."
 GAL_centralize_military:0 "Centralize the Military"
+GAL_centralize_military_desc:0 "The great Gallian absolutists centralized the military under their rule, which made it the most effective fighting force in Europe. In principle, this should still work today. The Karlslanders may assume benefit in the autonomy of their officers, but we will see it in the loyalty of our soldiers."
 GAL_economic_reactionism:0 "Economic Reactionism"
+GAL_economic_reactionism_desc:0 "Though absolutists would organize the economy under themselves, this type of organization simply doesn't work in a world as dynamic as ours. Unfortunately, we must take some inspiration from the liberals and delegate some economic tasks to the non-noble Gallian bourgeois. They will be made subserviant by other means."
 GAL_funding_the_arts:0 "Funding the Arts"
+GAL_funding_the_arts_desc:0 "The arts are one of Gallia's greatest assets. Political theorists since the Renaissance have emphasized how important it is for leaders to be loved by their people - and we can do this by helping one of the most radical factions. That is, as long as those funds aren't used for decadent and dangerous works."
 GAL_supporting_service:0 "Our Loyal Secret Forces"
+GAL_supporting_service_desc:0 "Our intelligence services got us here, and they should be praised for it. We will bolster the remaining royalists' program into the King's own secret police, allowing them to crack down on liberal resistance."
 GAL_cracking_down:0 "Cracking Down Again"
+GAL_cracking_down_desc:0 "With the King's secret police in order, we can begin another vast purge of liberals and socialists. For Gallia, My Pride and Joy!"
 GAL_propaganda:0 "Propaganda for the King"
+GAL_propaganda_desc:0 "The King is the State, and the State requires Alsace! All for the King, all for Alsace!"
 
 
 GAL_liberte:0 "Liberté"
 GAL_liberte_desc:0 "Liberty; a value so espoused by the liberal regime before us. But what of our fellow Gallians under the [KAR.GetAdjective] yolk? Alsace is Gallian, it was and it always will be - and soon we will show them that. Our Gallians will be free."
+GAL_rallying_the_people:0 "Rallying the People"
+GAL_rallying_the_people_desc:0 "The Gallian people will meet the cry of their nation with enthusiasm; whether it be political, military, or economic."
+GAL_rallying_people_tooltip:0 "Effect changes based on the ruling party."
+GAL_war_preparations:0 "War Preparations"
+GAL_war_preparations_desc:0 "Automobile factories and other light industry must be repurposed to serve the needs of the Gallian nation. They can be compensated after; maybe they'll go on to make a nice automobile for our empire."
+GAL_amp_up_prop:0 "Service Propaganda"
+GAL_amp_up_prop_desc:0 "Propaganda might be a good tool to keep Gallians enthusiastic, but we haven't yet ran a military campaign. Doing so may bolster the morale of our forces."
 
 
 GAL_karlslander_demands:0 "Karlslander Demands"
@@ -173,9 +210,6 @@ GAL_free_the_east_desc:0 "We've beaten the Karlslanders and Ostmarkers, but to t
 
 
 
-
-GAL_rallying_people:0 "Rallying the People"
-GAL_rallying_people_tooltip:0 "Effect changes based on the ruling party."
 
 
 

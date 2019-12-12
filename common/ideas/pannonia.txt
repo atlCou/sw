@@ -1,0 +1,92 @@
+ideas = {
+	country = {
+
+		PNE_autorepub_idea = {
+
+			picture = GAL_socialismstar
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				conscription_factor = 0.15	
+				army_morale_factor = 0.1
+			}
+		}
+		
+		PNE_crush_idea = {
+
+			picture = GAL_socialismstar
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				economy_cost_factor = -0.1
+				trade_laws_cost_factor = -0.1
+				army_morale_factor = -0.05
+			}
+		}
+		
+		PNE_unions_idea = {
+		
+			picture = GAL_socialismstar
+			
+			modifier = {
+				political_power_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		
+		}
+		
+		PNE_control_idea = {
+		
+			picture = GAL_socialismstar
+			
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		PNE_isolationism_idea = {
+		
+			picture = GAL_socialismstar
+			
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = 0.10
+				ai_focus_defense_factor = 0.75
+				justify_war_goal_time = 1
+			}
+		}
+		
+		PNE_nationalism_idea = {
+		
+			picture = GAL_socialismstar
+			
+			modifier = {
+				ai_focus_aggressive_factor = 0.5
+				justify_war_goal_time = -0.25
+				army_morale_factor = 0.05
+				non_core_manpower = -0.01
+			}
+		}
+		
+		PNE_internationalism_idea = {
+		
+			picture = GAL_socialismstar
+			
+			modifier = {
+				ai_focus_aggressive_factor = 0.5
+				justify_war_goal_time = -0.5
+				non_core_manpower = 0.02
+			}
+		}
+
+	}
+
+}
