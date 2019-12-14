@@ -794,7 +794,7 @@
  STATE_793:0 "South Tyrol"
  STATE_794:0 "West Rhine"
  STATE_795:0 "South Holland"
- STATE_796:0 "Ostmarker Tyrol"
+ STATE_796:1 "Salzburg"
  STATE_797:0 "Moselle"
  STATE_798:0 "Meuse"
  STATE_799:0 "The Vladivostok Hive"

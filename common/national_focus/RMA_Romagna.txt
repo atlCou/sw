@@ -985,7 +985,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_save_failing_businesses }
-		prerequisite = { focus = RMA_liberal_reforms }
+		prerequisite = { focus = RMA_democratic_reforms }
 		available = { }
 		completion_reward = { 
 			every_other_country = {
@@ -1058,7 +1058,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_relax_regulations }
-		prerequisite = { focus = RMA_liberal_reforms }
+		prerequisite = { focus = RMA_democratic_reforms }
 		available = { }
 		completion_reward = { 
 			every_other_country = {
@@ -1085,7 +1085,7 @@ focus_tree = {
 	
 	
 	focus = { 
-		id = RMA_liberal_reforms
+		id = RMA_democratic_reforms
 		icon = GFX_focus_usa_voter_registration_act
 		x = 0
 		y = 2
@@ -1149,7 +1149,7 @@ focus_tree = {
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_northern_expansion }
 		prerequisite = { focus = RMA_southern_development }
-		mutually_exclusive = { focus = RMA_liberalization }
+		mutually_exclusive = { focus = RMA_republicanization }
 		available = { }
 		completion_reward = { 
 			retire_country_leader = yes
@@ -1181,7 +1181,7 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = RMA_liberalization
+		id = RMA_republicanization
 		icon = GFX_RMA_maria
 		x = 1
 		y = 5

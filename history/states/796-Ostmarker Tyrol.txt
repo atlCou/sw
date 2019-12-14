@@ -1,14 +1,16 @@
+
 state={
 	id=796
 	name="STATE_796"
-	provinces={
-		668 671 3675 6673 
-	}
-	history = {
-	
+
+	history={
 		owner = OST
 		add_core_of = OST
-		
+
+	}
+
+	provinces={
+		668 671 688 3675 6673 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
