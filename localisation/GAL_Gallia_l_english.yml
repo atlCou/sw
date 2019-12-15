@@ -7,10 +7,10 @@
  GAL_fascism_party:0 "PPG"
  GAL_communism_party_long:0 "Parti Communiste Gallia"
  GAL_communism_party:0 "PCG"
- GAL_socialism_party_long:0 "Parti socialiste [Nouveau]"
- GAL_socialism_party:0 "PS"
- GAL_liberal_party_long:0 "Parti socialiste [Royalistes]"
- GAL_liberal_party:0 "PS"
+ GAL_socialism_party_long:0 "Section gallia de l'Internationale ouvrière"
+ GAL_socialism_party:0 "SGIO"
+ GAL_liberal_party_long:0 "Parti radical"
+ GAL_liberal_party:0 "Parti radical"
  GAL_monarchism_party_long:0 "Gallian Loyalists"
  GAL_monarchism_party:0 "Loyalistes galliens"
  GAL_ultra-nationalism_party_long:0 "Parti Impérial Gallia"
@@ -101,13 +101,11 @@
 
 GAL_1936elections:0 "1936 Elections"
 GAL_1936elections_desc:0 "Gallian elections are held every four years, and have generally remain split between left wing and moderate right wing parties. 1936 is rumored to be a potentially special year for Gallia, with socialist parties and factions having a stronger edge than ever before, even within the broad left-wing Parti socialiste."
-GAL_unitedgallia:0 "United Gallia"
-GAL_unitedgallia_desc:0 "The Gallian future is one of both prosperity for every Gallian worker, and a state of perpetual war with the Neuroi. The ultimate meaning of being Gallian, from the time of the Romans to the Bonapartes, has been to find freedom in warfare. The Neuroi will come to know Gallia, and our entire populace will be free from the degeneracies of capitalism that we have wrongfull embraced for years."
 GAL_workersgallia:0 "Worker's Gallia"
 GAL_workersgallia_desc:0 "The Third Gallian Republic has been an excellent step for the people of both Gallia and the world, but in order to progress into the future we must leave behind one of the most important fascets of our century old ideals - that of capitalistic markets. A more democratic economic system, one in which economic structures are socially owned, will put Gallia again at the head of social progress."
-GAL_statusquo:0 "Centrist Victory"
+GAL_statusquo:0 "Radical Victory"
 GAL_statusquo_desc:0 "The Third Gallian Republic has been an excellent step for the people of both Gallia and the world, and we see little need to change that. The socialist reformists fail to see the capability of our current structure to solve their economic concerns, but we believe genuinely that the democratic and a regulated market-based system is unlike any other in the past or future."
-GAL_socdem_victory:0 "Parti socialiste Victory"
+GAL_socdem_victory:0 "Socialist Victory"
 GAL_socdem_victory_desc:0 "The Third Gallian Republic has been an excellent rallying point for democratic ideals throughout its history, and this election proved no different. The moderates in the leading center-left Gallian party have won the majority of the French vote, surpassing the right in the vote and the socialists in the public opinion."
 
 
@@ -224,4 +222,83 @@ GAL_mon_econ_2:0 "Monarchist Market Economy"
 
 
 GAL_marechal_trait:0 "Le Jeune Maréchal"
+
+
+
+
+ ############ EVENTS ############
+ 
+ gallia.1.t:0 "The 1936 Elections"
+ gallia.1.d:0 "As the elections approach, Gallia sees itself in internal political distraught. The liberal Gallian government republic to respond to growing calls from laborers to grant more strength to unions has caused not only SGIO to regain tremendous popularity after decades of Gallian conservatism, but the more revolutionary socialist factions to find themselves with unprecedented levels of popularity.\n\nIn an odd step away from principles, the PCG also plans on running on their standard revolutionary platform, referred to as a "non-violent" revolution in case of their victory. However, many party members fear Gallia's intelligence community, which is known by some to have their own agenda. There is no sentiment that the intelligence community would cooperate with such a government."
+ gallia.1.a:0 "Liberté, égalité, fraternité."
+ 
+ gallia.2.t:0 "Socialists Ramp-Up Rallies"
+ gallia.2.d:0 "As the Gallian elections quickly approach, the many socialist parties and factions have begun to ramp up peaceful demonstrations accross Gallia. They demand greater rights for workers and a democratization of the economic system."
+ gallia.2.a:0 "Are they not part of the Gallian democratic tradition?"
+ gallia.2.b:0 "Publicly condemn the left wing radicals."
+ gallia.2.c:0 "In due time, comrades."
+ 
+ gallia.3.t:0 "Moderates Ramp-Up Rallies"
+ gallia.3.d:0 "As the Gallian elections quickly approach, the center-right democratic party and moderate wing of the PS have also began to increase their public advocation. Although their rhetoric and their ideology is the same as always, many find comfort in the large presence of anti-socialist and pro-liberal rhetoric."
+ gallia.3.a:0 "Support the radicals."
+ gallia.3.b:0 "Support the socialists."
+ gallia.3.c:0 "Servants of the bourgeois..."
+ 
+ gallia.4.t:0 "Perrine Announces the Administration's Support"
+ gallia.4.d:0 "With a short amount of time until the Gallian elections begin, Perrine H. Clostermann; the de-facto representative witch for the Third Republic of Gallia, has announced she supports..."
+ gallia.4.a:0 "The status quo, of course."
+ gallia.4.b:0 "The socialist opposition."
+ gallia.4.c:0 "No one, socialists of all kinds threaten her estate too much."
+ 
+ gallia.5.t:0 "The Socialists in Crisis"
+ gallia.5.d:0 "Though it seemed like the socialists would hold an absolute majority, the PCG has began a last-minute mass radicalization campaign. To many, who had simply been ignorant of the party, the PCG seemed much more attractive. In fear of splitting the vote and letting the liberals form a government again, the two parties met to discuss terms:"
+ gallia.5.a:0 "PS is fine."
+ gallia.5.b:0 "The PCG shall lead Gallia into the future!"
+ 
+ gallia.6.t:0 "PCG Mobilizes!"
+ gallia.6.d:0 "To ensure a victory, and to potentially get in a little bit of revolution-ing in before they win the vote, the PCG had members march through major cities to rally support. For a few hours, it would've been impossible for any Parisian businessman to walk to a cafe on his lunch break."
+ gallia.6.a:0 "Aux armes! Or something."
+ 
+ gallia.10.t:0 "The Elections Begin"
+ gallia.10.d:0 "It's time: the Gallian elections have begun!"
+ gallia.10.a:0 "Liberté, égalité, fraternité!"
+ 
+ gallia.11.t:0 "1936 Gallian Election Results"
+ gallia.11.d:0 "As the polls close, the winner of the Gallian elections appear to be..."
+ gallia.11.a:0 "Parti radical!"
+ gallia.11.b:0 "SGIO!"
+ gallia.11.c:0 "PS!"
+ gallia.11.e:0 "PCG!"
+ 
+ 
+ 
+ 
+ 
+ gallia.200.t:0 "Gallia Leaves Our Sphere"
+ gallia.200.d:0 "After Gallia's descent into a bizarre and totalitarian regime, it seemed inevitable that the country would soon wish to leave our faction. It now appears that that time has come, and we stand without a major ally on the European mainland. Hopefully, in the case of a greater war, we will find allies in Gallia or other nations again."
+ gallia.200.a:0 "A sad day for our sphere."
+ 
+ 
+ gallia.1000.t:0 "Interests in Venice"
+ gallia.1000.d:0 "The once maritime republic of Venezia, now a small federated republic, holds an extremely powerful socialist opposition party. However, due to the lingering influence of the aristocracy, that party has never had a government for long enough to accomplish socialist reforms. As a dominant power with similar interests, Venezia could be of great use."
+ gallia.1000.a:0 "Send guns - if the party can't win in the elections, they'll have to win through force!"
+ gallia.1000.b:0 "Announce our support for the party."
+ 
+ 
+ gallia.1010.t:0 "Gallia Sends Arms to Militant Socialists!"
+ gallia.1010.d:0 "Gallia, under a [GAL.GetRulingIdeology] government, has sent arms to our militant factions; and further word reveals with the full intent of overthrowing our liberal republic. It's a clear move to strengthen themselves geopolitically, but the vast popularity of the party prevents us from effectively cracking down on the militants."
+ gallia.1010.a:0 "Damn!"
+ gallia.1011.t:0 "Gallia Supports Partitio Socialista"
+ gallia.1011.d:0 "Gallia has announced their public support for our socialist party, increasing their political strength. We hold clear geopolitical importance for the nation, but thankfully this seems to be the maximum extent to which they wish to exert their influence."
+ gallia.1011.a:0 "Still very objectionable!"
+ gallia.1012.t:0 "Nationwide Socialist Campaigns"
+ gallia.1012.d:0 "The last few weeks have been characterized by an immense amount of political demonstrations - especially many small, violent protests - that have shook the nation. Our holdings outside of Italy have been especially active."
+ gallia.1012.a:0 "We should prepare..."
+ gallia.1013.t:0 "Establishment of the Venetian Socialist Republic!"
+ gallia.1013.d:0 "After weeks of extensive protest - and foreign aid, it should be added - our holdings in the western Balkans have risen up under the banner of a 'Venetian Socialist Republic'. Gallia is expected to take responsibility for the nation and take them under their wing."
+ gallia.1013.a:0 "Civil war seems inevitable..."
+ gallia.1014.t:0 "Consolidating Control of the VSR"
+ gallia.1014.d:0 "The VSR, a socialist state which exists because of our support, recognizes such. Josipa Bencetic, the de facto leader of the nation, has agreed to let us control their foreign affiars for our support against the old Venezian republic."
+ gallia.1014.a:0 "Venezia is soon ours!"
+ 
 

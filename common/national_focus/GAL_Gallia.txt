@@ -1,207 +1,4 @@
 
-#Focus for Joint Develop Tech
-shared_focus = { 
-id = GAL_jointdeveloptech
-icon = GFX_goal_generic_national_unity
-x = 2
-y = 0
-cost = 5
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 100000000
- } 
-completion_reward = { 
-add_tech_bonus = {
- bonus = 0.5 
-uses = 2
-category = infantry_weapons
-category =	light_air
-category =	medium_air
-category =	heavy_air
-
-}
- } 
-
- } 
-
- 
-#Focus for Relations with Britannia
-shared_focus = { 
-id = GAL_relationswithbrittania
-icon = GFX_goal_tripartite_pact
-x = 0
-y = 1
-relative_position_id = GAL_jointdeveloptech
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = GAL_jointdeveloptech } 
-
-ai_will_do = { 
- factor = 10
- } 
-completion_reward = { 
-BRI = {
-add_opinion_modifier = { target = GAL modifier = medium_increase } }
-BRI = { add_ai_strategy = { 
-   type = alliance
-   id = BRI
-   value = 50
-} }
- } 
-
- } 
-
-
-
- ######## Backpack Units
-shared_focus = {
-id = GAL_backpackunits
-icon = GFX_goal_generic_forceful_treaty
-x = 0
-y = 2
-relative_position_id = GAL_jointdeveloptech
-cost = 10
-available_if_capitulated = yes
-prerequisite = { focus = GAL_relationswithbrittania }
-ai_will_do = {
-	factor = 100
-	}
-completion_reward = {
-	country_event = {
-		days = 1 
-		id = galw.1
-	}
-	set_technology = {
-		strike_units = 1
-	}		
-}
-}
- 
-#### Aid Hispania
-shared_focus = {
-id = GAL_emergencyaidhispania
-icon = GFX_goal_generic_forceful_treaty
-x = 0
-y = 3
-relative_position_id = GAL_jointdeveloptech
-cost = 5
-available_if_capitulated = yes
-prerequisite = { focus = GAL_backpackunits }
-ai_will_do = {
-	factor = 100
-	}
-completion_reward = {
-country_event = { id = gallia.1 }
-}
-}
-
-### Crush the Neuroi
-shared_focus = {
-id = GAL_crushtheneuroi
-icon = GFX_goal_generic_territory_or_war
-x = 0
-y = 4
-relative_position_id = GAL_jointdeveloptech
-cost = 5
-available_if_capitulated = yes
-prerequisite = { focus = GAL_emergencyaidhispania }
-ai_will_do = {
-	factor = 100
-	}
-completion_reward = {
-country_event = {
-days = 1
-id = galw.2
-}
-}
-}
-
-######## Schools for Witches
-shared_focus = {
-id = GAL_witchesschools
-icon = GFX_focus_generic_military_academy
-x = 7
-y = 3
-relative_position_id = GAL_jointdeveloptech
-cost = 10
-available_if_capitulated = yes
-prerequisite = { focus = GAL_emergencyaidhispania }
-available = { has_idea = GAL_bagunits }
-ai_will_do = {
-	factor = 100
-	}
-completion_reward = {
-country_event = {
-days = 1 
-id = witches.10
-}
-}
-}
-
-######## Open the Schools
-shared_focus = {
-id = GAL_opentheschools
-icon = GFX_focus_generic_military_academy
-x = 7
-y = 4
-relative_position_id = GAL_jointdeveloptech
-cost = 10
-available_if_capitulated = yes
-prerequisite = { focus = GAL_witchesschools }
-ai_will_do = {
-	factor = 100
-	}
-completion_reward = {
-country_event = {
-days = 1 
-id = witches.11
-}
-}
-}
-
-######## witches propaganda
-shared_focus = {
-id = GAL_witchespropaganda
-icon = GFX_goal_generic_propaganda
-x = 8
-y = 5
-relative_position_id = GAL_jointdeveloptech
-cost = 10
-available_if_capitulated = yes
-prerequisite = { focus = GAL_opentheschools }
-ai_will_do = {
-	factor = 100
-	}
-completion_reward = {
-country_event = {
-days = 1 
-id = galw.10
-}
-}
-}
-
-######## witches propaganda
-shared_focus = {
-id = GAL_strikeunits
-icon = GFX_goal_tfv_generic_tech_sharing
-x = 6
-y = 5
-relative_position_id = GAL_jointdeveloptech
-cost = 10
-available_if_capitulated = yes
-prerequisite = { focus = GAL_opentheschools }
-ai_will_do = {
-	factor = 100
-	}
-completion_reward = {
-country_event = {
-days = 1 
-id = witches.1
-}
-}
-}
-
-
 
 
 
@@ -212,7 +9,7 @@ id = witches.1
 shared_focus = {
 id = GAL_1936elections
 icon = GFX_1936_gallian_elections
-x = 24
+x = 12
 y = 0
 cost = 1
 available = { always = no }
@@ -471,22 +268,19 @@ shared_focus = {
 
 
 shared_focus = {
-id = GAL_friendsinvenezia
-icon = GFX_focus_prc_agrarian_socialism
-x = 1
-y = 3
-relative_position_id = GAL_workersgallia
-prerequisite = { focus = GAL_southernagriculture }
-cost = 10
-available_if_capitulated = yes
-ai_will_do = {
-	factor = 1
+	id = GAL_friendsinvenezia
+	icon = GFX_focus_prc_agrarian_socialism
+	x = 1
+	y = 3
+	relative_position_id = GAL_workersgallia
+	prerequisite = { focus = GAL_southernagriculture }
+	cost = 10
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
 	}
-completion_reward = {
-	country_event = {
-		id = gallia.1000
+	completion_reward = {
 	}
-}
 }
 
 
@@ -510,28 +304,6 @@ completion_reward = {
 
 
 
-shared_focus = {
-	id = GAL_italianrevolution
-	icon = GFX_focus_prc_agrarian_socialism
-	x = 2
-	y = 5
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_friendsinvenezia }
-	mutually_exclusive = { focus = GAL_romagnianfascists }
-	cost = 10
-	will_lead_to_war_with = VNE
-	will_lead_to_war_with = RMA
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-		country_event = {
-			id = gallia.1014
-		}
-		custom_effect_tooltip = GAL_italianrevolution_tooltip
-	}
-}
 
 shared_focus = {
 	id = GAL_romagnianfascists
@@ -540,7 +312,6 @@ shared_focus = {
 	y = 5
 	relative_position_id = GAL_workersgallia
 	prerequisite = { focus = GAL_friendsinvenezia }
-	mutually_exclusive = { focus = GAL_italianrevolution }
 	cost = 10
 	available_if_capitulated = yes
 	will_lead_to_war_with = RMA
@@ -761,7 +532,7 @@ relative_position_id = GAL_workersgallia
 			}
 		}
 	}
-prerequisite = { focus = GAL_italianrevolution focus = GAL_romagnianfascists }
+prerequisite = { focus = GAL_romagnianfascists }
 cost = 10
 available_if_capitulated = yes
 ai_will_do = {
@@ -777,56 +548,6 @@ ai_will_do = {
 			popularity = 0.1
 		}
 	}
-}
-
-shared_focus = {
-id = GAL_venezianoverextension
-icon = GFX_focus_prc_agrarian_socialism
-x = 2
-y = 7
-relative_position_id = GAL_workersgallia
-available = {
-	VNE = {
-		is_puppet_of = ROOT
-	}
-}
-bypass = {
-	has_completed_focus = GAL_consolidationofitaly
-}
-prerequisite = { focus = GAL_italianrevolution focus = GAL_romagnianfascists }
-cost = 10
-available_if_capitulated = yes
-ai_will_do = {
-	factor = 1
-	}
-completion_reward = {
-	
-}
-}
-
-shared_focus = {
-id = GAL_romagnianoverextension
-icon = GFX_focus_prc_agrarian_socialism
-x = 0
-y = 7
-relative_position_id = GAL_workersgallia
-available = {
-	RMA = {
-		is_puppet_of = ROOT
-	}
-}
-bypass = {
-	has_completed_focus = GAL_consolidationofitaly
-}
-prerequisite = { focus = GAL_italianrevolution focus = GAL_romagnianfascists }
-cost = 10
-available_if_capitulated = yes
-ai_will_do = {
-	factor = 1
-	}
-completion_reward = {
-	
-}
 }
 
 
@@ -995,7 +716,7 @@ shared_focus = {
 	x = 0
 	y = 4
 	relative_position_id = GAL_socdem_victory
-	prerequisite = { focus = GAL_capitalizing_our_successes }
+	prerequisite = { focus = GAL_capitalizing_our_successes focus = GAL_nationalservices }
 	cost = 5
 	available_if_capitulated = yes
 	ai_will_do = {
@@ -2276,6 +1997,306 @@ shared_focus = {
 		}
 	}
 }
+
+
+
+
+###### MILITARY - Democratic
+
+
+shared_focus = {
+	id = GAL_armoured_wheels
+	icon = GFX_focus_generic_tank_production
+	x = 30
+	y = 0
+	cost = 8
+	available_if_capitulated = yes
+	mutually_exclusive = { focus = GAL_army_of_prestige }
+	ai_will_do = {
+		base = 10
+		modifier = {
+			add = 20
+			date > 1938.01.01
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_mobile_warfare
+		}
+	}
+}
+
+
+
+shared_focus = {
+	id = GAL_emphasize_speed_dem
+	icon = GFX_focus_generic_tank_production
+	x = 1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_armoured_wheels }
+	relative_position_id = GAL_armoured_wheels
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = GAL_emphasize_speed_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_temp
+	icon = GFX_focus_generic_tank_production
+	x = -1
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = fascism
+	}
+	prerequisite = { focus = GAL_emphasize_speed_dem }
+	relative_position_id = GAL_armoured_wheels
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_agile_boyes
+	icon = GFX_focus_generic_tank_production
+	x = 1
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		has_government = fascism
+	}
+	prerequisite = { focus = GAL_emphasize_speed_dem }
+	relative_position_id = GAL_armoured_wheels
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			ahead_reduction = 1
+			category = cat_medium_armor
+		}
+	}
+}
+
+
+shared_focus = {
+	id = GAL_remember_the_neuroi_war
+	icon = GFX_goal_generic_army_artillery
+	x = 36
+	y = 0
+	cost = 8
+	available_if_capitulated = yes
+
+	mutually_exclusive = { focus = GAL_army_of_speed }
+	ai_will_do = {
+		base = 10
+		modifier = {
+			add = 20
+			date > 1938.01.01
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_superior_firepower
+		}
+	}
+}
+
+
+shared_focus = {
+	id = GAL_traditional_air
+	icon = GFX_goal_generic_CAS
+	x = -1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_remember_the_neuroi_war }
+	relative_position_id = GAL_remember_the_neuroi_war
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = GAL_from_the_skies_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_artillery
+	icon = GFX_goal_generic_CAS
+	x = -1
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_remember_the_neuroi_war }
+	relative_position_id = GAL_remember_the_neuroi_war
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_royal_officer_academy
+	icon = GFX_goal_generic_CAS
+	x = 1
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_traditional_air }
+	relative_position_id = GAL_remember_the_neuroi_war
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_ideas = GAL_royal_officer_academy_idea
+	}
+}
+
+
+
+
+
+shared_focus = {
+	id = GAL_modernize_infantry
+	icon = GFX_goal_generic_army_artillery
+	x = 3
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	relative_position_id = GAL_army_of_speed
+	prerequisite = { focus = GAL_armoured_wheels focus = GAL_remember_the_neuroi_war }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_incentivize_schools
+	icon = GFX_goal_generic_army_artillery
+	x = 0
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	relative_position_id = GAL_modernize_infantry
+	prerequisite = { focus = GAL_modernize_infantry }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			date < 1939.01.01
+			OR = {
+				has_completed_focus = GAL_nationalist_league
+				has_completed_focus = GAL_securing_the_low_countries
+			}
+		}
+	}
+	completion_reward = {
+		army_experience = 50
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
