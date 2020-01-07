@@ -322,28 +322,95 @@ country_event = {
 	}
 	
 	option = {
-		name = ostmark.11.a
+		name = ostmark.11.b
 		MRV = { change_tag_from = OST }
 		set_global_flag = Ostmark_global_breakup
 	}
 	
 	option = {
-		name = ostmark.11.a
+		name = ostmark.11.c
 		PNE = { change_tag_from = OST }
 		set_global_flag = Ostmark_global_breakup
 	}
 	
 	option = {
-		name = ostmark.11.a
+		name = ostmark.11.e
+		country_event = {
+			id = ostmark.12
+		}
+	}
+	
+}
+
+country_event = {
+	id = ostmark.12
+	title = ostmark.11.t
+	desc = ostmark.11.d
+	picture = GFX_report_event_hungary_parliament
+
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ostmark.12.a
 		SER = { change_tag_from = OST }
 		set_global_flag = Ostmark_global_breakup
 	}
 	
 	option = {
-		name = ostmark.11.a
+		name = ostmark.12.b
 		set_global_flag = Ostmark_global_breakup
 	}
+
+	
+	option = {
+		name = ostmark.12.c
+		country_event = {
+			id = ostmark.13
+		}
+	}
+	
 }
+
+
+country_event = {
+	id = ostmark.13
+	title = ostmark.11.t
+	desc = ostmark.11.d
+	picture = GFX_report_event_hungary_parliament
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ostmark.11.a
+		BHE = { change_tag_from = OST }
+		set_global_flag = Ostmark_global_breakup
+	}
+	
+	option = {
+		name = ostmark.11.b
+		MRV = { change_tag_from = OST }
+		set_global_flag = Ostmark_global_breakup
+	}
+	
+	option = {
+		name = ostmark.11.c
+		PNE = { change_tag_from = OST }
+		set_global_flag = Ostmark_global_breakup
+	}
+	
+	option = {
+		name = ostmark.11.e
+		country_event = {
+			id = ostmark.12
+		}
+	}
+	
+}
+
+
 
 
 country_event = {

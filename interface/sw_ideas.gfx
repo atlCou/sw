@@ -36,4 +36,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOU_KAR_ukko.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_OST_youth"
+		texturefile = "gfx/interface/ideas/OST_youth.dds"
+	}
+	
 }

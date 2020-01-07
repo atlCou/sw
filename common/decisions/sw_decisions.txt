@@ -234,7 +234,7 @@ gollob_reign = {
 		complete_effect = {
 			hidden_effect = {
 				if = {
-					limit = { check_variable = { Gollob_suppression < 8 } }
+					limit = { check_variable = { Gollob_suppression < 7 } }
 					country_event = {
 						id = ostmark.8
 						days = 15
