@@ -1390,7 +1390,45 @@ shared_focus = {
 	} 
 }
  
+
  
+shared_focus = { 
+	id = KAR_establish_council
+	icon = GFX_KAR_bohemia_pagan
+	x = 6
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_and_propaganda
+	prerequisite = { focus = KAR_and_propaganda }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 50
+	}
+}
+ 
+shared_focus = { 
+	id = KAR_council_military
+	icon = GFX_KAR_bohemia_pagan
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_establish_council
+	prerequisite = { focus = KAR_establish_council }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 50
+	}
+}
  
 
 

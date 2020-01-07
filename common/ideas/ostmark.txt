@@ -63,6 +63,41 @@ ideas = {
 			}
 		}
 		
+		OST_new_ostmarker_spirit_idea = {
+		
+			picture = mon_prop
+			
+			modifier = {
+				army_org_factor = 0.15
+				army_morale_factor = 0.1
+			}
+		
+		}
+		
+		OST_heimwehr_idea = {
+		
+			picture = generic_oppression
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				resistance_tick_auto = -2
+			}
+		
+		}
+		
+		OST_home_front_advantage_idea = {
+		
+			picture = FRA_scw_intervention_republicans_focus
+		
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		
+		
+		
 		OST_arts = {
 		
 			picture = OST_eagle

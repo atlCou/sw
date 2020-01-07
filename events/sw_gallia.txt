@@ -448,11 +448,7 @@ country_event = {
 		set_country_flag = GAL_stayedstatusquo
 		set_country_flag = GAL_liberalswon
 		set_country_flag = GAL_1936gallianelections
-		set_party_name = {
-			ideology = liberal
-			name = "UDG"
-			long_name = "Union pour la Démocratie Gallia [Left]"
-		}
+		complete_national_focus = GAL_1936elections
 	}
 	option = {
 		name = gallia.11.b
@@ -463,14 +459,24 @@ country_event = {
 				check_variable = { GAL_prog > GAL_liberal }
 			} 
 		}
-		add_popularity = { ideology = liberal popularity = 0.03 }
+		add_popularity = { ideology = socialism popularity = 0.15 }
 		add_stability = 0.03
 		set_country_flag = GAL_socdem
 		set_country_flag = GAL_wentsocdem
 		set_country_flag = GAL_1936gallianelections
+		complete_national_focus = GAL_1936elections
 		set_politics = {
-			ruling_party = liberal
+			ruling_party = socialism
 			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Perrine H. Clostermann"
+			desc = "POLITICS_MAURICE_THOREZ_DESC"
+			picture = "Perrine H Clostermann.dds"
+			expire = "1965.1.1"
+			ideology = democratic_socialism
+			traits = {
+			}
 		}
 	}
 	option = {
@@ -486,9 +492,15 @@ country_event = {
 		add_stability = -0.06
 		set_country_flag = GAL_wentsoc
 		set_country_flag = GAL_1936gallianelections
+		complete_national_focus = GAL_1936elections
 		set_politics = {
 			ruling_party = socialism
 			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = socialism
+			name = "PS"
+			long_name = "Parti socialiste"
 		}
 	}
 	option = {
@@ -506,7 +518,6 @@ country_event = {
 		add_popularity = { ideology = monarchism popularity = -0.07 }
 		add_stability = -0.2
 		set_country_flag = GAL_wentauthsoc
-		set_country_flag = GAL_1936gallianelections
 		set_politics = {
 			ruling_party = communism
 			elections_allowed = no
@@ -1193,327 +1204,6 @@ country_event = {
 
 
 ####### SOCIALIST EVENTS
-
-country_event = {
-	id = gallia.1000
-	title = gallia.1000.t
-	desc = gallia.1000.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = gallia.1000.a
-		
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -2000
-			producer = GAL
-		}
-		VNE = {
-			country_event = {
-				id = gallia.1010
-				days = 1
-			}
-		}
-	}
-	
-	option = {
-		name = gallia.1000.b
-		VNE = {
-			country_event = {
-				id = gallia.1011
-				days = 1
-			}		
-		}
-	}
-}
-
-country_event = {
-	id = gallia.1010
-	title = gallia.1010.t
-	desc = gallia.1010.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = gallia.1010.a
-		
-		add_popularity = {
-			ideology = socialism
-			popularity = 0.06
-		}
-		
-		add_popularity = {
-			ideology = communism
-			popularity = 0.06
-		}
-		
-		add_stability = -0.1
-		
-		hidden_effect = {
-			country_event = {
-				id = gallia.1012
-				days = 15
-			}
-		}
-	}
-}
-
-country_event = {
-	id = gallia.1011
-	title = gallia.1011.t
-	desc = gallia.1011.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = gallia.1011.a
-		
-		add_popularity = {
-			ideology = socialism
-			popularity = 0.03
-		}
-	}
-}
-
-
-country_event = {
-	id = gallia.1012
-	title = gallia.1012.t
-	desc = gallia.1012.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-
-	option = {
-		name = gallia.1010.a
-		
-		add_popularity = {
-			ideology = socialism
-			popularity = 0.06
-		}
-		
-		add_popularity = {
-			ideology = communism
-			popularity = 0.06
-		}
-		
-		add_stability = -0.1
-		hidden_effect = {
-			country_event = {
-				id = gallia.1013
-				days = 15
-			}
-		}
-	}
-}	
-
-country_event = {
-	id = gallia.1013
-	title = gallia.1013.t
-	desc = gallia.1013.d
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	
-	option = {
-		name = gallia.1013
-		
-		VSR = {
-			add_state_core = 103
-			add_state_core = 104
-			add_state_core = 163
-			add_state_core = 105
-			add_state_core = 44
-			add_state_core = 736
-			add_state_core = 160
-			add_state_core = 161
-			add_state_core = 157
-			
-			transfer_state = 103
-			transfer_state = 104
-			transfer_state = 163
-			transfer_state = 105
-			transfer_state = 44
-			
-			hidden_effect = {
-				load_oob = "VSR"
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 2000
-					producer = GAL
-				}
-			}
-			
-			add_ai_strategy = {
-				type = invade
-				id = VNE
-				value = 200
-			}
-			add_ai_strategy = {
-				type = alliance
-				id = GAL
-				value = 200
-			}
-		}
-		VNE = {
-			hidden_effect = {
-				add_popularity = {
-					ideology = socialism
-					popularity = -1
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -1
-				}
-				add_popularity = {
-					ideology = liberal
-					popularity = -0.03
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.1
-				}
-			}
-		}
-	}	
-}
-
-country_event = {
-	id = gallia.1014
-	title = gallia.1014.t
-	desc = gallia.1014.d
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	
-	option = {
-		name = gallia.1014.a
-		
-		GAL = {
-			puppet = VSR
-			set_country_flag = GAL_italianrevolution_flag
-		}
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = VNE
-		}
-		hidden_effect = {
-			country_event = {
-				id = gallia.1001
-			}
-		}
-	}
-}
-
-country_event = {
-	id = gallia.1001
-	title = gallia.1001.t
-	desc = gallia.1001.d
-	hidden = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = gallia.1001.a
-		VSR = {
-			add_popularity = {
-				ideology = socialism
-				popularity = 1
-			}
-			set_popularities = {
-				socialism = 65
-				communism = 23
-				liberal = 12
-			}
-			set_politics = {
-				ruling_party = socialism
-				last_election = "1935.5.3"
-				election_frequency = 36
-				elections_allowed = no
-			}
-		}
-	}
-}
-
-
-country_event = {
-	id = gallia.1015
-	title = gallia.1015.t
-	desc = gallia.1015.d
-
-	fire_only_once = yes
-	
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	trigger = {
-		OR = {			
-			VNE = { is_puppet_of = GAL } 
-			AND = { 
-				VNE = { exists = no }
-				VSR = { 
-					AND = { 
-						owns_state = 736
-						owns_state = 160
-						owns_state = 161
-						owns_state = 157
-					}
-				}
-			}
-			GAL = {
-				AND = { 
-						owns_state = 736
-						owns_state = 160
-						owns_state = 161
-						owns_state = 157
-					}
-			}
-		}
-		GAL = { has_country_flag = GAL_italianrevolution_flag }
-		tag = GAL
-	}
-	
-	immediate = {
-		hidden_effect = {
-			VSR = { 
-				annex_country = { 
-					target = VNE  
-					transfer_troops = no 
-				} 
-				transfer_state = 736
-				transfer_state = 160
-				transfer_state = 161
-				transfer_state = 157
-			}
-		}
-	}
-	
-	option = {
-		name = gallia.1015.a
-		GAL = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = RMA
-			}
-		}
-	}
-}
 
 
 country_event = {

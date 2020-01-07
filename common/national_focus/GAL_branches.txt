@@ -5,14 +5,15 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 100
 			tag = GAL
 		}
 	}
 	default = no
 
 	shared_focus = GAL_1936elections
-	shared_focus = GAL_jointdeveloptech
+	shared_focus = GAL_remember_the_neuroi_war
+	shared_focus = GAL_armoured_wheels
 
 }
 
@@ -26,7 +27,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 100
+			add = 10
 			tag = GAL
 		}
 	}

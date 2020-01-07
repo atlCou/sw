@@ -28,7 +28,7 @@ focus_tree = {
 	country = { 
 		factor = 0 
 		modifier = { 
-			add = 20
+			add = 200
 			tag = OST
 		} 
 	} 
@@ -40,6 +40,7 @@ focus_tree = {
 	shared_focus = OST_bunkerdown
 	shared_focus = OST_reclaimingtheempire
 	shared_focus = OST_joiningkarlsland
+	shared_focus = OST_National_Army
 	
 }
 
@@ -510,9 +511,10 @@ shared_focus = {
 		create_wargoal = {
 			target = KAR
 			type = take_state_focus
-			generator = { 153 39 }
+			generator = { 153 39 793 }
 		}
 		add_state_core = 153
+		add_state_core = 793
 		add_state_core = 39
 	}
 }
@@ -539,3 +541,157 @@ shared_focus = {
 	}
 }
 
+
+
+
+shared_focus = { 
+	id = OST_National_Army
+	icon = GFX_kar_neighborhood
+	x = 20
+	y = 0
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+
+	}
+	ai_will_do = { 
+		factor = 50
+	} 
+	completion_reward = {
+		army_experience = 25
+	}
+}
+
+shared_focus = { 
+	id = OST_new_mountain_infantry
+	icon = GFX_kar_neighborhood
+	x = -2
+	y = 1
+	relative_position_id = OST_National_Army
+	prerequisite = { focus = OST_National_Army }
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+
+	}
+	ai_will_do = { 
+		factor = 50
+	} 
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			ahead_reduction = 2
+			category = mountaineers_tech
+		}
+	}
+}
+
+shared_focus = { 
+	id = OST_extensive_training
+	icon = GFX_kar_neighborhood
+	x = -2
+	y = 2
+	relative_position_id = OST_National_Army
+	prerequisite = { focus = OST_new_mountain_infantry }
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+
+	}
+	ai_will_do = { 
+		factor = 50
+	} 
+	completion_reward = {
+		set_technology = {
+			OST_mountaineers = 1
+		}
+	}
+}
+
+shared_focus = { 
+	id = OST_what_we_can_muster
+	icon = GFX_kar_neighborhood
+	x = 2
+	y = 1
+	relative_position_id = OST_National_Army
+	prerequisite = { focus = OST_National_Army }
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+
+	}
+	ai_will_do = { 
+		factor = 50
+	} 
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = OST_new_ostmarker_spirit
+	icon = GFX_kar_neighborhood
+	x = 2
+	y = 2
+	relative_position_id = OST_National_Army
+	prerequisite = { focus = OST_what_we_can_muster }
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+
+	}
+	ai_will_do = { 
+		factor = 50
+	} 
+	completion_reward = {
+		add_ideas = OST_new_ostmarker_spirit_idea 
+	}
+}
+
+shared_focus = {
+	id = OST_heimwehr
+	icon = GFX_kar_neighborhood
+	x = 0
+	y = 1
+	relative_position_id = OST_National_Army
+	prerequisite = { focus = OST_National_Army }
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+
+	}
+	ai_will_do = { 
+		factor = 50
+	} 
+	completion_reward = {
+		add_war_support = 0.1
+		add_ideas = OST_heimwehr_idea
+	}
+}
+
+shared_focus = {
+	id = OST_home_front_advantage
+	icon = GFX_kar_neighborhood
+	x = 0
+	y = 3
+	relative_position_id = OST_National_Army
+	prerequisite = { focus = OST_heimwehr }
+	prerequisite = { focus = OST_new_ostmarker_spirit }
+	prerequisite = { focus = OST_extensive_training }
+	cost = 5
+	available_if_capitulated = yes 
+	available = {
+
+	}
+	ai_will_do = { 
+		factor = 50
+	} 
+	completion_reward = {
+		add_ideas = OST_home_front_advantage_idea
+	}
+}
