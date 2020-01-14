@@ -42,6 +42,13 @@
  
 ####### ideas
 
+
+ OST_recent_republicanization:0 "Recent Republicanization"
+ OST_recent_republicanization_desc:0 "Ostmark has just recently transformed itself from the Dual-Monarchy of the Habsburg Empire to a republican federation. Though the worst of errors have been sorted out years ago, and things are running smoothly now, the already sluggish nature of the government hints poorly at its future."
+ OST_multicultural:0 "Multinational Federation"
+ OST_multicultural_2:0 "Multinational Federation"
+ OST_multicultural_3:0 "Multinational Federation"
+ 
  OST_ontotheworld_idea:0 "Ostmark Unto the World"
  OST_arts:0 "Arts Funding"
  OST_upset_elites:0 "Upset Elites"
@@ -62,9 +69,13 @@
  OST_abolutely_no_emmigration:0 "Absolutely no Emmigration"
  OST_abolutely_no_immigration:0 "Absolutely no Immigration" 
  OST_economic_identites_idea:0 "Forced Reidentification"
- OST_economic_identites_idea_desc:0 "The new Ostmarker regime has implimented a state directed policy to reclass every citizen socially, politically, and economically based on the subject and grit of their work."
+ OST_economic_identites_idea_desc:0 "The new Ostmarker regime has implemented a state directed policy to reclass every citizen based on estates."
  OST_value_from_service_idea:0 "Value from Service"
  OST_value_from_service_idea_desc:0 "Alongside the new Ostmarker regime's policy of economic identities, the regime is spreading the notion through state media that a citizen's value is based upon the importance of their work to the Danubian State. Engineers, scientists, and soldiers gain utmost priority."
+ OST_bureau_of_youth_idea:0 "Gollob Youth"
+ OST_bureau_of_information_idea:0 "Bureau of Information"
+ 
+ 
  
  
 #PARTIES AND NAMES
@@ -138,6 +149,77 @@
  
  ############# EVENTS
  
+ 
+ ost.1.t:0 "Chancellor Engelbert Dollfuss Missing!"
+ ost.1.d:0 "In a shocking report given to the Ostmarker parliament, the executive guard has been unable to locate Engelbert Dollfuss, the conservative leader of the Grand Coalition. His charismatic figure being vacant from the building has made the announcement all the more gloomy, as politicans await for news on his finding.\nIn the meantime, it looks as if opposition parties, including the chancellor's former Heimatblock, have been protesting for snap elections. With public support for the coalition already rapidly dropping, this is an option we may have to consider."
+ ost.1.a:0 "Well, then I hope we can find him!"
+ ost.2.t:0 "Snap Election Vote Passes"
+ ost.2.d:0 "The vote to hold a snap election passed in the parliament by a sizeable majority. It will be held in the next ten days. As usual, a ticket coalition will need to be formed, as an Ostmark without a majority government is completely ungovernable."
+ ost.2.a:0 "Sounds like a lot of pressure."
+ ost.3.t:0 "DL Merges with OFP"
+ ost.3.d:0 "The Danubian Legionnaires, an ultra-patriotic group which champions the peoples of the general Danubian basin; and the Ostmarker Freedom Party, a party which split from the KPO for being outwardly "anti-revolutionary" and "reactionary" in nature, have decided to run together on all ballots. DL's party leader, Grete Gollob, is revered for being able to get party members out to vote - and for putting up a good fight against Heimwehr members."
+ ost.3.a:0 "What a bizarre group."
+ ost.4.t:0 "Meeting of the Grand Coalition Organization"
+ ost.4.d:0 "As usual, the Grand Coalition Organization has invited one party group to enter a broad agreement to run on the same ticket. Traditionally, the organization chooses a generally liberal party, to balance the broad range of conservatives, moderate social democrats, and agrarians. However, some members have considered looking to the left or right at socialist and reactionary parties, including the Heimatblock and the KPO."
+ ost.4.a:0 "What if we invited the KPO? They'd grant us the support of many workers."
+ ost.4.b:0 "That would destabilize the coalition, instead invite the Heimatblock for patriotic voters."
+ ost.4.c:0 "Isn't now a terrible time to try anything so radical?"
+ ost.4.e:0 "We can run fine on our own, thank you!"
+ ost.5.t:0 "The KPO!"
+ ost.5.d:0 "We have invited the KPO to discuss forming a coalition. Though they would prefer revolution, many in their party look towards the Ostmarxist period over a decade ago as justification for joining with us. However, many of our right wing members claim including such radicals would destabilize the coalition, and put us at the risk of facing Heimwehr paramilitants."
+ ost.5.a:0 "Maybe we should look elsewhere."
+ ost.5.b:0 "We reach an agreement!"
+ ost.6.t:0 "The Heimatblock!"
+ ost.6.d:0 "The Heimatblock seemed joyful to join our coalition. A little too joyful, in fact. Many of our party members, regardless of affiliation, have expressed concern that doing so would give their paramilitants legal political precedent. However, some of the more extreme agrarians and conservatives have called these concerns foundless and instead cite them as an element of stability."
+ ost.6.a:0 "Aren't their Heimwehr friends kinda violent? Someone else please."
+ ost.6.b:0 "We reach an agreement!"
+ ost.7.t:0 "The Old Coalition!"
+ ost.7.d:0 "The old liberal parties seemed extra happy to be present at our organization's meeting for negotiations today. They, near universally, claim to be the only group able to keep our organization going. However, some conservatives and social democrats claim that Ostmarkers have been wishing for more, and the same-old-same-old will start to look undemocratic if we keep doing the same thing each election."
+ ost.7.a:0 "Yeah, maybe it's time for change."
+ ost.7.b:0 "We reach an agreement!"
+ ost.10.t:0 "KPO Clashes With The Heimwehr!"
+ ost.10.d:0 "Strung throughout the newspapers this morning were many clear pictures of KPO members violently engaging with Heimwehr members on the streets of Vienna - and descriptions of street brawls in just about any city with both parties present. This cannot bode well for the future of our coalition..."
+ ost.10.a:0 "Let's hope it pulls through."
+ ost.11.t:0 "The Heimwehr Blocks Poll Stations"
+ ost.11.d:0 "When Ostmarkers went out to vote last night, there was nowhere for them to go. Local Heimwehr members across the nation held up polling booths all night, frequently with full support of local police forces. Voter turnout is estimated to have been in the single digits, with the Heimatblock winning a majority in the coalition. No other party is expected to have received any votes, except the DL-OFP ticket with an approximate 1000; not enough for a seat in any jurisdiction."
+ ost.11.a:0 "Well..."
+ ost.12.t:0 "Heimatblock Wins A Landslide Victory!"
+ ost.12.d:0 "In a surprise to no one who knew what happened on election night, the Heimatblock has won over 90% of the national vote. Thus, the party has secured an absolute majority in the parliament. A centralized, but otherwise completely baseless group of nationalists, many are unsure if a multi-national federation can even exist under such a bizarre group of politicians."
+ ost.12.a:0 "Let's see what a group of nationalists can do with a multi-national state."
+ ost.14.t:0 "The Grand Coalition Wins A Close Majority!"
+ ost.14.d:0 "Ostmark breathed a collective sigh of relief this morning, when the papers showed that Grand Coalition will continue governing with electoral support of the people. Hopefully, no maps will have to be thrown away any time soon."
+ ost.14.a:0 "Let's fix Ostmark - again."
+ ost.15.t:0 "The Grand Coalition Crumbles!"
+ ost.15.d:0 "Fear. Fear is the word a former Grand Coalition member would use to describe the way it felt to hear that, without another party to invite, the Coalition could not expect to gain a majority in the next election. Already, the DL-OFP has begun increasing vastly in public support for its positivist pan-Ostmarker rhetoric in this incredibly turbulent time."
+ ost.15.a:0 "We really should've known this would happen."
+ ost.16.t:0 "DL-OFP Surpasses KPO And The Heimatblock"
+ ost.16.d:0 "In a poll two weeks before the election, DL-OFP was shown polling higher than both KPO and the Heimatblock - combined. With a completely broken Grand Coalition, this makes them the largest single party in Ostmark by far."
+ ost.16.a:0 "Great."
+ ost.17.t:0 "DL-OFP Wins A Majority!"
+ ost.17.d:0 "Any Ostmarker who's voted before would tell you that the polls were a lot emptier tonight than usual. Though there were some reported incidents of paramilitant groups clashing, most Ostmarkers who voted, voted cheerfully. It was no surprise when the results that DL-OFP had won a clear majority in parliament came in. The surprise would come later."
+ ost.17.a:0 "A Witch, our leader! How exciting."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ostmark.10.t:0 "The Collapse Of The Federation"
+ ostmark.10.d:0 "All at once, nations declared their independance from the Ostmarker Federation. The Heimatblock and military forces in the northwest gripped Bohemia; a pagan paramilitant group in the northeast; members of the KPO, SPO, and others in Pannonia; and national-liberals in the south erected states in what seemed like seconds. Ostmark was left with nothing but its core territory, the smallest it had been on the world map since a time many centuries ago."
+ ostmark.10.a:0 "Perhaps the dream was a false one after all."
+ ostmark.11.t:0 "The New Nations"
+ ostmark.11.d:0 "We now have the option of playing another nation. This is not a fourth wall break, we're shipping you to another location."
+ ostmark.11.a:0 "Bohemia!"
+ ostmark.11.b:0 "The Rodish State!"
+ ostmark.11.c:0 "Pannonia!"
+ ostmark.11.e:0 "Next -->"
+ ostmark.12.a:0 "Moesia (blue)!"
+ ostmark.12.b:0 "National Ostmark!"
+ ostmark.12.c:0 "<-- Back"
+ ostmark.12.e:0 "[Filler, Don't Double Click]"
+ 
  ostmark.200.t:0 "Regaining our Support"
  ostmark.200.d:0 "The Ostmarker empire has been thrown into disarray. The many territories that our monarchs have ruled over for centuries have risen in revolt and, in the complete incompetence of our military, successfully established their own nations. All we have left are the territories with a Karlslander majority, who themselves lack the national identity to revolt against us. The stability once afforded to them is now gone - what do we do to regain their trust?"
  ostmark.200.a:0 "Ensure them that we will lead the nation in a direction beneficial to our people."
@@ -150,16 +232,20 @@
  
  
  
- 
+ ost.300.t:0 "[OST.GetNameDef]'s Ultimatum" 
+ ost.300.d:0 "[OST.GetNameDef] has sent us an extremely short ultimatum. It says, what amounts to, "join or die.""
+ ost.300.a:0 "Their name on the map is pretty big..."
+ ost.300.b:0 " 
  
  ost.1000.t:0 "Ostmark's Engelbert Dollfuss Goes Missing!"
- 
+ ost.1000.d:0 "In a shocking report given to the Ostmarker parliament, the executive guard has been unable to locate Engelbert Dollfuss, the conservative leader of the Grand Coalition. His charismatic figure being vacant from the building has made the announcement all the more gloomy, as politicans await for news on his finding.\nThe multi-national government has been governed by a large coalition of democratic parties since two election cycles ago, which has been criticized as resting on the stability given through the charisma of party leaders."
+ ost.1000.a:0 "What does this mean for the future of the federation?"
  
  ########### FOCII
  
 OST_bunkerdown:0 "Bunkering Down"
 OST_reclaimingtheempire:0 "Reclaiming the Empire"
-OST_consolodatingthenation:0 "Consolodating the Nation"
+OST_consolidatingthenation:0 "Consolidating the Nation"
 OST_joiningkarlsland:0 "Joining Karlsland"
 OST_beatingbackthebalts:0 "Beating Back the Balts"
 OST_tyrol:0 "§YUnser Heimatland!§!"
@@ -167,13 +253,95 @@ OST_ontotheworld:0 "Ostmark Unto the World"
 
 
 
+
+
+
+
+
+##############
+## HEIMATBLOCK
+##############
+OST_heimatblock_start:0 "A Nationalistic Government"
+OST_heimatblock_start_desc:0 "The Heimatblock has no goals, except to bring each of our nations to their full potential."
+OST_patrolling_the_streets:0 "Patrolling The Streets"
+OST_patrolling_the_streets_desc:0 "The Heimwehr is made up of the most ardent supporters of our individual nations. They will replace the police for now, until we give the call."
+OST_defending_national_identities:0 "Defending National Identities"
+OST_defending_national_identities_desc:0 "Our national identities are to be held sacred and sovereign. A Karlslander Ostmarker can never get along with a Slavic Bohemian or a Magyar Pannonian in a close-knit federation. May our futures be brighter as individual states." 
+OST_accepting_the_inevitable:0 "Accepting The Inevitable"
+OST_accepting_the_inevitable_desc:0 "Dollfuss should've done this a long time ago. He was one of us, who understood the uniqueness and beauty of each nationality within Ostmark. Though his disappearance was very unfortunate, we can finally do what he rose to prominence hoping to do." 
+
+
+
+
+############
+### GOLLOB #
+############
+OST_gollob_start:0 "DL-OFP Ascendant"
+OST_gollob_start_desc:0 "With the collapse of the liberal government, DL-OFP takes its place. The old federal ideal has proven itself to be unsatisfactory. Ostmark deserves more."
+OST_purge:0 "Clean The Government"
+OST_purge_desc:0 "We will purge unloyal party members and bureaucrats, making it easier for us to completely reform the federation."
+OST_consolidating_parliament:0 "Consolodating Parliament"
+OST_consolidating_parliament_desc:0 "We can whip our party members strictly, so that they will only vote in the manner we dictate."
+OST_attack_our_enemies:0 "Attacking The Opposition"
+OST_attack_our_enemies_desc:0 "It may seem silly, but the best course of action may be a fierce propaganda campaign against the liberal opposition to gather us support."
+OST_silence_our_enemies:0 "Silence Our Enemies"
+OST_silence_our_enemies_desc:0 "We can use street tactics, like the Heimwehr did, to silence loud opposition voices."
+OST_the_time_is_right:0 "The Time Is Right"
+OST_the_time_is_right_desc:0 "The time's finally come. The populace is happy, our party is loyal, the liberals are silent. In a few swift strokes, we can reorganize the national government with full support, and get started on forming the Danubian State!"
+OST_every_man_works:0 "Every Man Works"
+OST_every_man_works_desc:0 "Every man must work for the glory of the Danubian State. It may be cruel, but so the degeneracy and the poverty of those regimes which surround us is so much worse."
+OST_work_for_the_state:0 "Work From The State"
+OST_work_for_the_state_desc:0 "We must not lose track of the DL-OFP's shared goals. A strong Danubian State supports its people, who raise the state to great heights."
+OST_some_men_work:0 "Some Men Work"
+OST_some_men_work_desc:0 "Perhaps the Danubian State will reach its greatest by providing those with talent the means to carry it out. Danubian greatness will be reached in all measures of strength."
+OST_closing_the_borders:0 "Closing The Borders"
+OST_closing_the_borders_desc:0 "The Danubian State must reach a perfect state of self-reliance and autarky. Reliance on others will lead to weakness."
+OST_no_one_in:0 "No One In"
+OST_no_one_in_desc:0 "Immigration into Ostmark was never a significant problem, but importing the values and ideals of foreigners will be extraordinarily dangerous to our institutions."
+OST_no_one_out:0 "No One Out"
+OST_no_one_out_desc:0 "No one can leave the Danubian State. Not that anyone would want to, but doing so would be traitorous at best." 
+OST_conscription_for_the_sake_of_nation:0 "Conscription For\nThe Nation"
+OST_conscription_for_the_sake_of_nation_desc:0 "Defending the claims of the Danubian State are one of the most paramount issues we will face after our internal revolution. Thus, it's important we always make sure that we have enough men to pull from when our military needs them."
+OST_no_special_witches:0 "No Special Witches"
+OST_no_special_witches_desc:0 "There are no special witches. Gollob's glorious stregnth comes from her birthgiven prowess, not some otherworldly magical force. Witches must prove their worth through strenght like the rest of their citizens, so only the naturally strongest may rise to the heights of service alongside their normal citizens."
+OST_homogenous_thought:0 "Homogenous Thought"
+OST_homogenous_thought_desc:0 "Before we erode cancerous national identities, we must make sure every Danubian thinks the same. DL-OFP holds the answers, the Danubians hold the means."
+OST_destroying_national_symbols:0 "Destroying The Symbols"
+OST_destroying_national_symbols_desc:0 "Great Bohemian palaces? Transylvanian castles? Illyrian and Slovene and Austrian flags and marches and music halls and paintings and films? Destroy them. All of them. They're a threat to our national unity, and the hardest plague for us to rid of."
+OST_economic_identites:0 "Ständestaat"
+OST_economic_identites_desc:0 "German will be made the sole language of the state. With identities eroding away, we will replace them with the socioeconomic classes of old. The "nobility" of the DL-OFP will stand above all, and guide the bureaucrats and the working classes to greatness."
+OST_value_from_service:0 "Value From Service"	
+OST_value_from_service_desc:0 "A worker's value is the same as the importance of their work to the Danubian State. Engineers, scientists, and soldiers gain utmost priority, as they are what will push our nation into the future and allow it to survive under the guidance of the higher estate."
+OST_expand_state_media:0 "Expand State Media"
+OST_expand_state_media_desc:0 "The media forces of the Danubian State are one of the most basic ways in which we can continue to reach the people. While we build the rest of our infrastructure, let's work on an expansion of our media organizations."
+OST_nationalizing_information:0 "Nationalizing Information"
+OST_nationalizing_information_desc:0 "The scientists and their journals? Employees of the state. Schools, textbook manufacturers, publishing companies? All part of the great Danubian State."
+OST_bureau_of_youth:0 "Bureau Of Youth"
+OST_bureau_of_youth_desc:0 "A bureau for the young could be very useful. Like, for a youth group! How quaint! Let's give them adorable Donaustaat uniforms and call them the "Gollob Youth". They'll learn the basic survival, lifestyle, warfare, and political skills necessary from the best Danubian citizens."
+OST_bureau_of_information:0 "Bureau Of Information"
+OST_bureau_of_information_desc:0 "A bureau will be set-up specifically with the task of determining what information to release from our sources, and when. As one of the most important bureaus of our state, it will also be overseen directly by Gollob herself."
+OST_a_new_bureau_of_intelligence:0 "A New Bureau\nOf Intelligence"
+OST_a_new_bureau_of_intelligence_desc:0 "Look at all of these microphones! We could put them everywhere and listen to everything anyone is saying, and maybe have our Gollob Youth members report people they hear say anything suspicious or strategically useful to a local official!"
+OST_coming_together:0 "Danubia Coming Together"
+OST_coming_together_desc:0 "It's all coming together. Let's get started. There's a lot more to do."
+
+OST_dacian_subversion:0 "Dacian Subversion"
+OST_dacian_subversion_desc:0 "The nation-state of Dacia stands weak and alone. Offering them membership into the Danubian State will allow us to control the vast majority of the Danube, and secure one Ostmark's most annoying rivals."
+
+
+
+
+############# Tooltips 
 OST_gollob_start_tooltip:0 "Will start Gollob's reign of tyranny, §Ra potentially dangerous process.§!"
+
+
+
 OST_tyranny_increase:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y1§!."
 OST_tyranny_increase_massive:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y5§!."
 OST_tyranny_increase_moderate:0 "Will §Gincrease§! Gollob's §MTyranny§! by §Y2§!."
 OST_tyranny_decrease:0 "Will §Rdecrease§! Gollob's §MTyranny§! by §Y1§!."
 OST_gollob_reign_begins_tooltip:0 "Unlocks §YGollob's Reign§! decisions, allowing you to seize complete control and §Gradically reform §!§YOstmark§! - as long as the time is right."
-OST_no_special_witches_tooltip:0 "§RWill remove the ability to use witches for the sake of §Y[OST.GetNameDef]§R!§! "
+OST_no_special_witches_tooltip:0 "§RWill remove the ability to use witches for §Y[OST.GetNameDef]§R!§! "
 
 
 
@@ -187,8 +355,6 @@ OST_no_special_witches_tooltip:0 "§RWill remove the ability to use witches for 
 
 
 
- OST_economic_identites_desc:0 "The identities of the old Ostmarker democracy and the Habsburgian empire plagued it from the very beginning. To gurantee the survival of our state, we must do away with the notions of different peoples and cultures. Force upon them one language, and their identity will be derived from the work that they do and from which that they need - nothing more."
- OST_value_from_service_desc:0 "A citizen's value is the same as the importance of their work to the Danubian State. Engineers, scientists, and soldiers gain utmost priority, as they are what will push our nation into the future and allow it to survive."
 
 
 

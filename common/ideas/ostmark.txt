@@ -3,7 +3,7 @@ ideas = {
 	
 		OST_multicultural = {
 		
-			picture = GAL_scw_intervention_republicans_focus
+			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
 				stability_weekly = -0.01
@@ -17,7 +17,7 @@ ideas = {
 		
 		OST_multicultural_2 = {
 		
-			picture = GAL_scw_intervention_republicans_focus
+			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
 				political_power_gain = -0.1
@@ -29,7 +29,7 @@ ideas = {
 		
 		OST_multicultural_3 = {
 		
-			picture = GAL_scw_intervention_republicans_focus
+			picture = FRA_scw_intervention_republicans_focus
 			
 			modifier = {
 				political_power_gain = -0.05
@@ -168,7 +168,7 @@ ideas = {
 		
 		OST_propaganda_institutions_idea = {
 		
-			picture = GAL_national_mobilization_focus
+			picture = FRA_national_mobilization_focus
 			
 			modifier = {
 				stability_weekly = 0.01
@@ -228,7 +228,7 @@ ideas = {
 		
 		OST_bureau_of_information_idea = {
 		
-			picture = idea_generic_secret_police
+			picture = generic_secret_police
 		
 			modifier = {
 				conscription_factor = 0.1
@@ -240,14 +240,24 @@ ideas = {
 		
 		OST_bureau_of_youth_idea = {
 		
-			picture = idea_generic_secret_police
+			picture = OST_youth
 		
 			modifier = {
 				army_org_factor = 0.1
 				partisan_effect = 0.1
 			}
+		}
 		
+		OST_bureau_of_youth_idea_2 = {
 		
+			picture = OST_youth
+		
+			modifier = {
+				army_org_factor = 0.1
+				partisan_effect = 0.1
+				encryption_factor = 0.1
+				decryption_factor = 0.05
+			}
 		}
 		
 		

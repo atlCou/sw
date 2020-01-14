@@ -113,7 +113,7 @@ shared_focus = {
 }
 
 shared_focus = { 
-	id = OST_consolodatingthenation
+	id = OST_consolidatingthenation
 	icon = GFX_goal_generic_political_pressure
 	x = 0
 	y = 1
@@ -138,10 +138,10 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 5
-	relative_position_id = OST_consolodatingthenation
+	relative_position_id = OST_consolidatingthenation
 	available_if_capitulated = yes 
 	allow_branch = { has_country_flag = OST_thedynastystays }
-	prerequisite = { focus = OST_consolodatingthenation } 
+	prerequisite = { focus = OST_consolidatingthenation } 
 	ai_will_do = { 
 		factor = 100
 	} 
@@ -180,7 +180,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 5
-	relative_position_id = OST_consolodatingthenation
+	relative_position_id = OST_consolidatingthenation
 	available_if_capitulated = yes 
 	prerequisite = { focus = OST_vienneseeffort } 
 	ai_will_do = { 
@@ -202,7 +202,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	cost = 5
-	relative_position_id = OST_consolodatingthenation
+	relative_position_id = OST_consolidatingthenation
 	available_if_capitulated = yes 
 	prerequisite = { focus = OST_vienneseeffort } 
 	ai_will_do = { 
@@ -336,8 +336,8 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 2
-	relative_position_id = OST_consolodatingthenation
-	prerequisite = { focus = OST_consolodatingthenation }
+	relative_position_id = OST_consolidatingthenation
+	prerequisite = { focus = OST_consolidatingthenation }
 	mutually_exclusive = { focus = OST_beatingbackthebalts }
 	allow_branch = { has_country_flag = OST_heimatblock }
 	ai_will_do = {
@@ -446,8 +446,8 @@ shared_focus = {
 	x = 4
 	y = 1
 	cost = 5
-	relative_position_id = OST_consolodatingthenation
-	prerequisite = { focus = OST_consolodatingthenation }
+	relative_position_id = OST_consolidatingthenation
+	prerequisite = { focus = OST_consolidatingthenation }
 	mutually_exclusive = { focus = OST_joiningkarlsland }
 	allow_branch = { has_country_flag = OST_heimatblock }
 	available_if_capitulated = yes 

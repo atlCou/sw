@@ -319,6 +319,26 @@ spriteTypes = {
 		name = "GFX_GAL_ostmark_war"
 		texturefile = "gfx/interface/goals/GAL_ostmark_war.dds"
 	}
+	SpriteType = {
+		name = "GFX_OST_every_man_works"
+		texturefile = "gfx/interface/goals/OST_every_man_works.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_work_for_the_state"
+		texturefile = "gfx/interface/goals/OST_work_for_the_state.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_some_men_work"
+		texturefile = "gfx/interface/goals/OST_some_men_work.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_the_time_is_right"
+		texturefile = "gfx/interface/goals/OST_the_time_is_right.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_dacian_subversion"
+		texturefile = "gfx/interface/goals/OST_dacian_subversion.dds"
+	}
 }
 
 
