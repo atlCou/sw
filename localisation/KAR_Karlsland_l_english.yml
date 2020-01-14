@@ -49,7 +49,7 @@ KA3_hamburg_socialism_DEF:0 "The Republic of Hannover"
 KA3_hamburg_socialism_ADJ:0 "Hannover"
 KA3_socialism_party:0 "SPD"
 
-KA2_saxony_liberal:0 "Saxony"
+KA2_saxony_liberal:0 "Magocacy of Saxony"
 KA2_saxony_liberal_DEF:0 "Saxony"
 KA2_saxony_liberal_ADJ:0 "Saxon"
 KA2_liberal_party:0 "Crisis Council"
@@ -61,6 +61,11 @@ KA1_NOBLE_monarchism_ADJ:0 "Eastern Karlslander"
 KA1_monarchism_party_long:0 "Council of Nobles and Junkers"
 KA1_monarchism_party:0 "Noble Council"
 
+
+KAR_comm_breakaway:0 "Rheinish Commune"
+KAR_comm_breakaway_DEF:0 "The Rheinish Commune"
+KAR_comm_breakaway_ADJ:0 "Rheinish"
+    
 #########################################
 
 #########################################
