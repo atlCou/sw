@@ -458,10 +458,11 @@ country_event = {
 }
 
 
-
-
-
-
+######################
+##########
+#PAGAN EVENTS
+###########
+######################
 
 country_event = {
 	id = karlsland.500   ###Archeologists practicing in Suomus
@@ -651,15 +652,15 @@ country_event = {
 
 
 country_event = {
-	id = karlsland.550
-	title = karlsland.550.t
-	desc = karlsland.550.d
+	id = karlsland.520
+	title = karlsland.520.t
+	desc = karlsland.520.d
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = karlsland.550.a
+		name = karlsland.520.a
 		ai_chance = {
 			base = 10
 		}
@@ -671,14 +672,14 @@ country_event = {
 		}
 		ORU = {
 			country_event = {
-				id = karlsland.505
+				id = karlsland.521
 				days = 1
 			}
 		}
 	}
 	
 	option = {
-		name = karlsland.550.b
+		name = karlsland.520.b
 		ai_chance = {
 			base = 5
 		}
@@ -699,14 +700,14 @@ country_event = {
 		add_offsite_building = { type = industrial_complex level = 4 }
 		ORU = {
 			country_event = {
-				id = karlsland.505
+				id = karlsland.521
 				days = 1
 			}
 		}
 	}
 	
 	option = {
-		name = karlsland.550.c
+		name = karlsland.520.c
 		ai_chance = {
 			base = 10
 		}
@@ -720,7 +721,7 @@ country_event = {
 		add_stability = 0.05
 		ORU = {
 			country_event = {
-				id = karlsland.505
+				id = karlsland.521
 				days = 1
 			}
 		}
@@ -732,6 +733,28 @@ country_event = {
 }
 
 
+
+
+country_event = {
+	id = karlsland.550
+	title = karlsland.550.t
+	desc = karlsland.550.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.550.a
+		set_country_flag = KAR_like_old_flag
+	}
+	
+	option = {
+		name = karlsland.550.b
+		set_country_flag = KAR_like_old_flag
+	}
+	
+}
 
 
 
@@ -872,6 +895,501 @@ country_event = {
 				days = 1
 			}
 		}
+	}
+	
+	
+}
+
+
+
+#####
+# SPLIT
+#####
+
+
+
+country_event = {
+	id = karlsland.597
+	title = karlsland.597.t
+	desc = karlsland.597.d
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.597.a
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = KAR_theeconomy
+				}
+			}
+			country_event = karlsland.598
+		}
+	}
+	
+}
+
+country_event = {
+	id = karlsland.598
+	title = karlsland.598.t
+	desc = karlsland.598.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.598.a
+		set_politics = {
+			ruling_party = communism
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.3
+		}
+		add_stability = -0.4
+		hidden_effect = {
+			country_event = {
+				id = karlsland.600
+				days = 7
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+country_event = {
+	id = karlsland.600
+	title = karlsland.600.t
+	desc = karlsland.600.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		country_event = {
+			id = karlsland.601
+			hours = 1
+		}
+		country_event = {
+			id = karlsland.602
+			hours = 2
+		}
+		country_event = {
+			id = karlsland.603
+			hours = 3
+		}
+		country_event = {
+			id = karlsland.604
+			hours = 4
+		}
+		country_event = {
+			id = karlsland.605
+			hours = 5
+		}
+		country_event = {
+			id = karlsland.606
+			days = 2
+		}
+		GAL = {
+			country_event = {
+				id = karlsland.607
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.601
+	title = karlsland.601.t
+	desc = karlsland.601.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		OST = {
+			if = {
+				limit = {
+					exists = yes
+				}
+				transfer_state = 793
+				transfer_state = 153
+				add_state_core = 793
+				add_state_core = 153
+			}
+		}
+		random_country = {
+			limit = {
+				owns_state = 160
+				owns_state = 159
+			}
+			transfer_state = 39
+			add_state_core = 39
+		}
+	}
+	
+	option = {
+		name = karlsland.601.a
+	}
+}
+
+country_event = {
+	id = karlsland.602
+	title = karlsland.602.t
+	desc = karlsland.602.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			KA5 = {
+				transfer_state = 52
+				transfer_state = 53
+				transfer_state = 54
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+				set_capital = 52
+				set_popularities = {
+					monarchism = 48
+					liberal = 30
+					socialism = 22
+				}
+				set_politics = {
+					ruling_party = monarchism
+				}
+				create_country_leader = {
+					name = "Helma Lennartz"
+					desc = "HHHH"
+					picture = "Helma_Lennartz.dds"
+					expire = "1965.1.1"
+					ideology = federal_monarchism
+					traits = {
+					}
+				}
+				set_cosmetic_tag = KA5_Bavaria
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.602.a
+		KA5 = { change_tag_from = KAR }
+	}
+	
+	option = {
+		name = karlsland.602.b
+	}
+	
+}
+
+country_event = {
+	id = karlsland.603
+	title = karlsland.603.t
+	desc = karlsland.603.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			KA4 = {
+				transfer_state = 50
+				add_state_core = 50
+				set_capital = 50
+				set_popularities = {
+					fascism = 63
+					fanatical-paganism = 12
+					liberal = 13
+					monarchism = 12
+				}
+				create_country_leader = {
+					name = "Hanna-Justina Marseille"
+					desc = "HHHH"
+					picture = "Hanna.dds"
+					expire = "1965.1.1"
+					ideology = fascist
+					traits = {
+					}
+				}
+				set_cosmetic_tag = KA4_baden
+				set_politics = {
+					ruling_party = fascism
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.603.a
+		KA4 = { change_tag_from = KAR }
+	}
+	
+	option = {
+		name = karlsland.603.b
+	}
+	
+}
+
+country_event = {
+	id = karlsland.604
+	title = karlsland.604.t
+	desc = karlsland.604.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			KA3 = {
+				transfer_state = 56
+				transfer_state = 58
+				transfer_state = 59
+				transfer_state = 61
+				add_state_core = 56
+				add_state_core = 58
+				add_state_core = 59
+				add_state_core = 61
+				set_popularities = {
+					socialism = 39
+					communism = 12
+					liberal = 34
+					monarchism = 15
+				}
+				create_country_leader = {
+					name = "Helmina Lent"
+					desc = "HHHH"
+					picture = "Helmina Lent.dds"
+					expire = "1965.1.1"
+					ideology = democratic_socialism
+					traits = {
+					}
+				}
+				set_cosmetic_tag = KA3_hamburg
+				set_politics = {
+					ruling_party = socialism
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.604.a
+		KA3 = { change_tag_from = KAR }
+	}
+	
+	option = {
+		name = karlsland.604.b
+	}
+	
+}
+
+
+country_event = {
+	id = karlsland.605
+	title = karlsland.605.t
+	desc = karlsland.605.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			KA2 = {
+				transfer_state = 65
+				transfer_state = 60
+				transfer_state = 799
+				add_state_core = 65
+				add_state_core = 60
+				add_state_core = 799
+				set_popularities = {
+					monarchism = 30
+					fascism = 24
+					liberal = 25
+					socialism = 13
+					communism = 8
+				}
+				create_country_leader = {
+					name = "Edytha Rossmann"
+					desc = "HHHH"
+					picture = "Rossmann.dds"
+					expire = "1965.1.1"
+					ideology = presidential_republicanism 
+					traits = {
+					}
+				}
+				set_cosmetic_tag = KA2_saxony
+				set_politics = {
+					ruling_party = liberal
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.605.a
+		KA2 = { change_tag_from = KAR }
+	}
+	
+	option = {
+		name = karlsland.605.b
+	}
+	
+}
+
+
+country_event = {
+	id = karlsland.606
+	title = karlsland.606.t
+	desc = karlsland.606.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			KAR = {
+				set_capital = 794
+			}
+			KA1 = {
+				transfer_state = 5
+				transfer_state = 62
+				transfer_state = 63
+				transfer_state = 64
+				transfer_state = 66
+				transfer_state = 67
+				transfer_state = 68
+				transfer_state = 85
+				transfer_state = 86
+				transfer_state = 188
+				transfer_state = 762	
+				transfer_state = 763				
+				add_state_core = 5
+				add_state_core = 62
+				add_state_core = 63
+				add_state_core = 64
+				add_state_core = 66
+				add_state_core = 67
+				add_state_core = 68
+				add_state_core = 85
+				add_state_core = 86
+				add_state_core = 188
+				add_state_core = 762
+				add_state_core = 763
+				set_capital = 64
+				set_popularities = {
+					fascism = 24
+					monarchism = 66
+					communism = 10
+				}
+				create_country_leader = {
+					name = "Heinrike Prinzessin zu Sayn-Wittgenstein"
+					desc = "HHHH"
+					picture = "Heinrike.dds"
+					expire = "1965.1.1"
+					ideology = absolute_monarchism
+					traits = {
+					}
+				}
+				set_cosmetic_tag = KA1_NOBLE
+				set_politics = {
+					ruling_party = monarchism #obviously
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.606.a
+		KA4 = { change_tag_from = KAR }
+	}
+	
+	option = {
+		name = karlsland.606.b
+	}
+	
+}
+
+
+country_event = {
+	id = karlsland.607
+	title = karlsland.607.t
+	desc = karlsland.607.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.607.a
+		ai_chance = {
+			base = 75
+		}
+		transfer_state = 28
+		add_state_core = 28
+		add_stability = 0.02
+		add_political_power = -10
+		KAR = {
+			country_event = {
+				id = karlsland.608
+				hours = 1
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.607.b
+		ai_chance = {
+			base = 25
+		}
+		add_state_claim = 28
+		add_war_support = 0.05
+		add_political_power = -15
+	}
+	
+	
+}
+
+country_event = {
+	id = karlsland.608
+	title = karlsland.608.t
+	desc = karlsland.608.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.608.a
+		declare_war_on = {
+			target = GAL
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = karlsland.608.b
+		add_stability = -0.1
 	}
 	
 	

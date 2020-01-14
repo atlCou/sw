@@ -1,0 +1,19 @@
+state={
+	id=799
+	name="STATE_799"
+	history = {
+		owner = KAR
+		add_core_of = KAR
+	}
+	provinces={
+		3522 6487 6513 9238 9375 9560 11359 11402 11468 
+	}
+	buildings = {
+		infrastructure = 6
+		arms_factory = 1
+		industrial_complex = 1
+	}
+	manpower=731485
+	buildings_max_level_factor=1.000
+	state_category = town
+}

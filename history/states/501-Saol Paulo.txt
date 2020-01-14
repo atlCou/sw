@@ -6,8 +6,8 @@ state={
 	state_category = city
 
 	history={
-		owner = KAR
-		add_core_of = KAR
+		owner = IDK
+		add_core_of = IDK
 		buildings = {
 			arms_factory = 1
 			industrial_complex = 3

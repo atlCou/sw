@@ -6,10 +6,10 @@ state={
 	}
 
 	history={
-		owner = KAR
-		add_core_of = KAR
-		add_core_of = KAR
-		add_core_of = KAR
+		owner = IDK
+		add_core_of = IDK
+		add_core_of = IDK
+		add_core_of = IDK
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -18,13 +18,13 @@ state={
 		1938.10.25 = {
 			if = {
 				limit = {
-					KAR= {
+					IDK= {
 						has_dlc = "Waking the Tiger"
 					}
 
 				}
-				KAR= {
-					transfer_state = PKAR
+				IDK= {
+					transfer_state = PIDK
 
 				}
 			}

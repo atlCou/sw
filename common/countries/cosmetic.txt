@@ -232,3 +232,34 @@ SOU_KAR_Puppet = {
 	color_ui = rgb { 120 120 120 }
 }
 
+
+
+######################
+# KAR BREAKAWAYS
+######################
+
+KA5_Bavaria = {
+	color = rgb { 0 153 213 }
+	color_ui = rgb { 255 255 255 } 
+}
+
+KA4_baden = {
+	color = rgb { 40 40 40 }
+	color_ui = rgb { 204 0 0 }
+}
+
+KA3_hamburg = {
+	color = rgb { 180 180 180 }
+	color_ui = rgb { 180 0 0 }
+}
+
+KA2_saxony = {
+	color = rgb { 91 130 97 }
+	color_ui = rgb { 91 130 97 }
+}
+
+KA1_NOBLE = {
+	color = rgb { 207 182 23 }
+	color_ui = rgb { 207 182 23 }
+}
+

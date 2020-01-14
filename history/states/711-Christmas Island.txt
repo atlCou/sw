@@ -6,7 +6,7 @@ state={
 	
 	history=
 	{
-		owner = KAR
+		owner = IDK
 		buildings = {
 			infrastructure = 3
 			13005 = {

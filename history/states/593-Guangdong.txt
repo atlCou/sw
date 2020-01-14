@@ -10,10 +10,10 @@ state= {
 	}
 
 	history= {
-		owner = KAR
-		add_core_of = KAR
-		add_core_of = KAR
-		add_core_of = KAR
+		owner = IDK
+		add_core_of = IDK
+		add_core_of = IDK
+		add_core_of = IDK
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -25,9 +25,9 @@ state= {
 		}
 
 		1938.10.25 = {		
-			remove_core_of = KAR
-			owner = KAR
-			KAR= {
+			remove_core_of = IDK
+			owner = IDK
+			IDK= {
 				set_province_controller = 1202
 				set_province_controller = 4050
 				set_province_controller = 7108

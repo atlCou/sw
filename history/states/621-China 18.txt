@@ -3,10 +3,10 @@ state={
 	name="STATE_621"
 
 	history={
-		owner = KAR
-		add_core_of = KAR
-		add_core_of = KAR
-		add_core_of = KAR
+		owner = IDK
+		add_core_of = IDK
+		add_core_of = IDK
+		add_core_of = IDK
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -18,8 +18,8 @@ state={
 				level = 1
 
 			}
-			owner = KAR
-			controller = KAR
+			owner = IDK
+			controller = IDK
 
 		}
 

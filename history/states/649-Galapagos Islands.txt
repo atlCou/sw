@@ -6,14 +6,14 @@ state=
 	manpower=11532
 	history=
 	{
-		owner = KAR
+		owner = IDK
 		buildings = {
 			infrastructure = 2
 			5023 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = KAR
+		add_core_of = IDK
 	}
 	provinces= { 5023 }
 }

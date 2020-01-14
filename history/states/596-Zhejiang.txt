@@ -6,9 +6,9 @@ state=
 	state_category = city
 	history=
 	{
-		owner = KAR
-		add_core_of = KAR
-		add_core_of = KAR
+		owner = IDK
+		add_core_of = IDK
+		add_core_of = IDK
 		
 		victory_points = { 
 			9974 1 
@@ -38,7 +38,7 @@ state=
 		}
 
 		1938.10.25 = {		
-			KAR= {
+			IDK= {
 				set_province_controller = 1055
 				set_province_controller = 1096
 				set_province_controller = 4042

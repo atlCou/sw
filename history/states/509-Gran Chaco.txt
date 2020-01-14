@@ -12,12 +12,12 @@ state={
 	}
 
 	history={
-		owner = KAR
+		owner = IDK
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = KAR
+		add_core_of = IDK
 	}
 
 	provinces={

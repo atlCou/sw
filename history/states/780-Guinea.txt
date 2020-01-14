@@ -6,7 +6,7 @@ state={
 	
 	state_category = pastoral
 	history={
-		owner = KAR		add_core_of = KAR		victory_points = {
+		owner = IDK		add_core_of = IDK		victory_points = {
 			1909 1 
 		}
 		buildings = {

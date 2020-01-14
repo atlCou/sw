@@ -15,12 +15,6 @@ state={
 
 		}
 		add_core_of = KAR
-		1938.3.12 = {
-			owner = KAR
-			controller = KAR
-			add_core_of = KAR
-
-		}
 
 	}
 

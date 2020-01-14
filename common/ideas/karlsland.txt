@@ -171,8 +171,27 @@ ideas = {
 			}
 		}
 
+		KAR_volksforschung_idea = {
 		
+			picture = KAR_pagan_prop
+			
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
 		
+		KAR_like_old_idea = {
+		
+			picture = KAR_like_old
+			
+			
+			modifier = {
+				political_power_gain = -0.1
+				political_advisor_cost_factor = -0.1
+				foreign_subversive_activites = -0.25
+			}
+		}
 		
 		
 		KAR_hurting_econ = {

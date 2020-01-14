@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = KAR
+		owner = IDK
 		buildings = {
 			infrastructure = 3
 			air_base = 1
@@ -18,7 +18,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = KAR
+		add_core_of = IDK
 		#victory_points = {
 		#	12715 3
 		#}

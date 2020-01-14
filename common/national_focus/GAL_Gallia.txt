@@ -268,11 +268,19 @@ shared_focus = {
 
 
 shared_focus = {
-	id = GAL_friendsinvenezia
+	id = GAL_friends?
 	icon = GFX_focus_prc_agrarian_socialism
-	x = 1
-	y = 3
+	x = 2
+	y = 2
 	relative_position_id = GAL_workersgallia
+	available = {
+		KAR = {
+			OR = {
+				has_government = socialism
+				has_government = communism
+			}
+		}
+	}
 	prerequisite = { focus = GAL_southernagriculture }
 	cost = 10
 	available_if_capitulated = yes
@@ -280,26 +288,37 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
+		KAR = {
+			country_event = {
+				id = gallia.1000
+			}
+		}
 	}
+	
 }
 
 
 shared_focus = {
-id = GAL_socintern
-icon = GFX_focus_prc_agrarian_socialism
-x = 1
-y = 4
-relative_position_id = GAL_workersgallia
-prerequisite = { focus = GAL_friendsinvenezia }
-prerequisite = { focus = GAL_nationalnationalization }
-cost = 10
-available_if_capitulated = yes
-ai_will_do = {
-	factor = 1
+	id = GAL_socintern
+	icon = GFX_focus_prc_agrarian_socialism
+	x = 2
+	y = 3
+	relative_position_id = GAL_workersgallia
+	prerequisite = { focus = GAL_friends? }
+	cost = 10
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+		}
+	completion_reward = {
+		create_faction = SOC-INT
+		if = {
+			limit = {
+				has_country_flag = GAL_KAR_saidyes
+			}
+			add_to_faction = KAR
+		}
 	}
-completion_reward = {
-	create_faction = SOC-INT
-}
 }
 
 

@@ -3,10 +3,10 @@ state={
 	name="STATE_604"
 
 	history={
-		owner = KAR
-		add_core_of = KAR
-		add_core_of = KAR
-		add_core_of = KAR
+		owner = IDK
+		add_core_of = IDK
+		add_core_of = IDK
+		add_core_of = IDK
 		victory_points = {
 			7940 10 
 		}
@@ -18,13 +18,13 @@ state={
 		1938.10.25 = {
 			if = {
 				limit = {
-					KAR= {
+					IDK= {
 						has_dlc = "Waking the Tiger" 
 					}
 
 				}
-				KAR= {
-					transfer_state = PKAR
+				IDK= {
+					transfer_state = PIDK
 
 				}
 

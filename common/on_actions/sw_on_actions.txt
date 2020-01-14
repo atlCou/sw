@@ -1,0 +1,10 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			KAR = {
+				country_event = { id = karlsland.597 days = 40 }
+			}
+		}	
+	}	
+}
