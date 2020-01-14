@@ -235,7 +235,15 @@
  ost.300.t:0 "[OST.GetNameDef]'s Ultimatum" 
  ost.300.d:0 "[OST.GetNameDef] has sent us an extremely short ultimatum. It says, what amounts to, "join or die.""
  ost.300.a:0 "Their name on the map is pretty big..."
- ost.300.b:0 " 
+ ost.300.b:0 "Dacia must persist!"
+ ost.301.t:0 "Dacia Submits"
+ ost.301.d:0 "The tiny nation of Dacia has agreed to our offer. They will be organized into the Dakenstaat and made an extra-autonomous province of the Danubian State."
+ ost.301.a:0 "Excellent."
+ ost.301.b:0 "The tiny nation of Dacia has spat in the face of our offer. After we crush them, they will be organized into the Dakenstaat and made an extra-autonomous province of the Danubian State."
+ 
+ ost.310.t:0 "Integrating Karlsland"
+ ost.310.d:0 "Now that Karlsland is under our control, we should focus on securing the massive nation. Though we would like to directly integrate the Karlslanders into the Danubian State, there will be resistence. To combat this, it will be temporarily broken up into extra-autonomous provinces headed by Gollob's allies. When we are ready, they will be repositioned."
+ ost.310.a:0 "With this, the Donaustaat stands unchallenged!"
  
  ost.1000.t:0 "Ostmark's Engelbert Dollfuss Goes Missing!"
  ost.1000.d:0 "In a shocking report given to the Ostmarker parliament, the executive guard has been unable to locate Engelbert Dollfuss, the conservative leader of the Grand Coalition. His charismatic figure being vacant from the building has made the announcement all the more gloomy, as politicans await for news on his finding.\nThe multi-national government has been governed by a large coalition of democratic parties since two election cycles ago, which has been criticized as resting on the stability given through the charisma of party leaders."
@@ -254,7 +262,11 @@ OST_ontotheworld:0 "Ostmark Unto the World"
 
 
 
-
+###############
+#### CANON ####
+###############
+OST_canon_start:0 "The Grand Coalition Prevails"
+OST_canon_start_desc:0 "Our democratic coalition has prevailed through the turbulent snap election. We've proved that the federation can survive, so it's time for us to make it a great place for every Ostmarker."
 
 
 
