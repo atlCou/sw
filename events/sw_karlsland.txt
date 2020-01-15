@@ -1318,7 +1318,7 @@ country_event = {
 	
 	option = {
 		name = karlsland.606.a
-		KA4 = { change_tag_from = KAR }
+		KA1 = { change_tag_from = KAR }
 	}
 	
 	option = {
