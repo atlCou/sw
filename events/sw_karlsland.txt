@@ -1318,11 +1318,13 @@ country_event = {
 	
 	option = {
 		name = karlsland.606.a
+		KAR = { set_cosmetic_tag = KAR_comm_breakaway }
 		KA1 = { change_tag_from = KAR }
 	}
 	
 	option = {
 		name = karlsland.606.b
+		KAR = { set_cosmetic_tag = KAR_comm_breakaway }
 	}
 	
 }

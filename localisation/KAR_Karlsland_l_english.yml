@@ -1,8 +1,5 @@
 ﻿l_english: 
 
-
-
-
 KAR_liberal:0 "Karlslander Empire"
 KAR_liberal_DEF:0 "The Empire of Karlsland"
 KAR_liberal_ADJ:0 "Karlslander"
@@ -22,12 +19,29 @@ KAR_socialism:0 "Karlsland"
 KAR_socialism_DEF:0 "Karlsland"
 KAR_socialism_ADJ:0 "Karlslander"
 
+
+
 KAR_republic_liberal:0 "Karlsland"
 KAR_republic_liberal_DEF:0 "The Karlslander Republic"
 KAR_republic_liberal_ADJ:0 "Karlslander"
 KAR_republic_monarchism:0 "Karlsland"
 KAR_republic_monarchism_DEF:0 "The Karlslander Republic"
 KAR_republic_monarchism_ADJ:0 "Karlslander"
+
+
+
+KAR_communism_party:0 "KPK"
+KAR_communism_party_long:0 "Kommunistische Partei Karlsland"
+KAR_socialism_party:0 "Republikanisch"
+KAR_liberal_party:0 "NLP"
+KAR_liberal_party_long:0 "Nationalliberale Partei"
+KAR_monarchism_party:0 "KkP"
+KAR_monarchism_party_long:0 "Karlkonservative Partei"
+KAR_fascism_party:0 "NSKAP"
+KAR_fascism_party_long:0 "Nationalsozialistische Karlslander Arbeiterpartei"
+KAR_fanatical-paganism_party:0 "HE"
+KAR_fanatical-paganism_party_long:0 "Heidnische Einheitsfront"
+
 
 #######################
 # BREAK AWAYS
@@ -41,13 +55,15 @@ KA5_monarchism_party:0 "Zentrum"
 
 KA4_baden_fascism:0 "Karlslander Wurtemburg"
 KA4_baden_fascism_DEF:0 "Wurtemburg"
-KA4_baden_fascism_ADJ:0 "Karlslander-Wurtemburger"
+KA4_baden_fascism_ADJ:0 "Karls-Wurtemburger"
 KA4_fascism_party:0 "KNP"
+
 
 KA3_hamburg_socialism:0 "Republic of Hannover"
 KA3_hamburg_socialism_DEF:0 "The Republic of Hannover"
 KA3_hamburg_socialism_ADJ:0 "Hannover"
 KA3_socialism_party:0 "SPD"
+
 
 KA2_saxony_liberal:0 "Magocacy of Saxony"
 KA2_saxony_liberal_DEF:0 "Saxony"
@@ -65,7 +81,8 @@ KA1_monarchism_party:0 "Noble Council"
 KAR_comm_breakaway:0 "Rheinish Commune"
 KAR_comm_breakaway_DEF:0 "The Rheinish Commune"
 KAR_comm_breakaway_ADJ:0 "Rheinish"
-    
+
+
 #########################################
 
 #########################################

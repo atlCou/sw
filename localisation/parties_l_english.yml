@@ -534,17 +534,7 @@
  # MAN_fascism_party_long:0 "Manzhōuguó Xiéhehuì"
  ################
  ###stuff
- KAR_fanatical-paganism_party:0 "HE"
- KAR_fanatical-paganism_party_long:0 "Heidnische Einheitsfront"
- KAR_communism_party:0 "KPD"
- KAR_liberal_party:0 "Republikanisch"
- KAR_monarchism_party:0 "House of Frederick"
- KAR_fascism_party:0 "NSKAP"
- KAR_fascism_party_long:0 "Nationalsozialistische Karlslander Arbeiterpartei"
- KAR_ultra-nationalism_party:0 "NSKAP (M)"
- KAR_ultra-nationalism_party_long:0 "Nationalsozialistische Karlslander Arbeiterpartei (Militärisch)"
- KAR_liberal_monarchism_party_long:0 "Karlslanderkonservative Partei"
- KAR_liberal_monarchism_party:0 "KKP"
+ 
 
  LIN_liberal_party_long:0 "People's Party"
  LIN_liberal_party:0 "Populists"
