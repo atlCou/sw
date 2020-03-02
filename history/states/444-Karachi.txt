@@ -10,11 +10,11 @@ state={
 		victory_points = {
 			8066 1
 		}
-		owner = IDK
+		owner = SAS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = IDK
+		add_core_of = SAS
 	}
 
 	provinces={

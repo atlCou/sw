@@ -1,0 +1,62 @@
+capital = 6
+
+oob = "BLG_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	tryannical_noblity
+	witch_mass_conscription
+	mercenary_based_army
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+			trench_warfare = 1
+
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.11.8"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 5
+	fascism = 5
+	communism = 12
+	neutrality = 78
+}
+set_convoys = 80
+
+create_country_leader = {
+	name = "Rosalie de Hemricourt de Grunne"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "Rosalie de Hemricourt de Grunne.dds"
+	expire = "1965.1.1"
+	ideology = neutrality
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "M.C.L. Keyaerts"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trait_mountaineer hill_fighter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Georges Timmermans"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	traits = { seawolf }
+	skill = 4
+}

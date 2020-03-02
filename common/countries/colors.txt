@@ -1,10 +1,8 @@
 #reload countrycolors
-
-#KAR = {
-#	color = rgb { 99 24 24 }
-#	color_ui = rgb { 99 24 24 }
-#}
-
+BLT = {
+	color = rgb { 135 56 56 }
+	color_ui = rgb { 135 56 56 }
+}
 KAR = {
 	color = rgb { 180 0 10 }
 	color_ui = rgb { 180 0 10 }

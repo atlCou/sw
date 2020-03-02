@@ -4,12 +4,13 @@ state={
 	provinces={
 		587 3444 3547 9522 
 	}
+	state_category = large_town
 	history = {
 	
 		owner = KAR
 		add_core_of = KAR
 		
 	}
-	manpower=0
+	manpower=400000
 	buildings_max_level_factor=1.000
 }

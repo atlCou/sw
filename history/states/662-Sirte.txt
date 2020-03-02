@@ -7,11 +7,10 @@ state={
 	
 	
 	history={
-		owner = IDK
-		buildings = {
+		owner = LIB buildings = {
 			infrastructure = 1
 		}
-		add_core_of = IDK
+		add_core_of = LIB
 	}
 	
 	provinces={

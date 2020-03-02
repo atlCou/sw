@@ -7,8 +7,7 @@ state={
 	
 	history=
 	{
-		owner = IDK
-		buildings = {
+		owner = TSP		add_core_of = TSP		buildings = {
 			infrastructure = 3
 			2188 = {
 				naval_base = 1

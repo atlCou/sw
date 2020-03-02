@@ -4,13 +4,15 @@ state={
 	provinces={
 		11564 
 	}
-
+	state_category = large_town
 	history = {
 	
 		owner = OST
 		add_core_of = OST
-		
+		victory_points = {
+			11564 1 
+		}
 	}
-	manpower=0
+	manpower=13000
 	buildings_max_level_factor=1.000
 }

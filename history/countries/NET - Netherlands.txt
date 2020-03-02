@@ -1,33 +1,14 @@
-﻿capital = 7
+﻿capital = 274
 
-oob = "NET_1936"
-
-set_research_slots = 3
-
-
+# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1
-	tech_recon = 1
-	early_fighter = 1
-	early_bomber = 1
-	early_submarine = 1
-	basic_destroyer = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	transport = 1
 }
 
+set_convoys = 15
+
 1939.1.1 = {
-	add_ideas = {
-		limited_conscription
-	}
-
-	add_political_power = 1198
-
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -38,22 +19,12 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-
-	oob = "HOL_1939"
+	
 	set_technology = {
-		gw_artillery = 1
-		tech_engineers = 1
-		motorised_infantry = 1
-		fighter1 = 1
-		tactical_bomber1 = 1
-		naval_bomber1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
+		tech_support = 1
+		tech_recon = 1
 		support_weapons = 1
-		basic_submarine = 1
-		improved_light_cruiser = 1
+		gw_artillery = 1
 
 		#doctrines
 		air_superiority = 1
@@ -74,111 +45,22 @@ set_technology = {
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
 	}
 }
 
-
-
-	set_popularities = {
-		liberal = 0
-		
-
-		fascism = 0
-					
-
-		communism = 0
-					
-
-		monarchism = 100
-		
-	}
-
-	set_politics = { ruling_party = monarchism
-	last_election = "1933.4.26"
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
-
-set_convoys = 500
-set_stability = 0.75
-
-create_country_leader = {
-	name = "Dirk Jan de Geer"
-	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
-	picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Anton Mussert"
-	desc = "POLITICS_ANTON_MUSSERT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Lou de Visser"
-	desc = "POLITICS_LOU_DE_VISSER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = communism_type
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Hendrikus Coljin"
-	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Petrus Wilhelmus Best"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { panzer_leader fortress_buster }
-	skill = 4
-}
-
-create_navy_leader = {
-	name = "Johannes Theodorus Furstner"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { blockade_runner superior_tactician }
-	skill = 4
-}
-
-
-### Ship Variants ###
-
-create_equipment_variant = {
-	name = "K-XIV Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		sub_engine_upgrade = 2
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 2
-	}
+set_popularities = {
+	democratic = 25
+	fascism = 20
+	communism = 5
+	neutrality = 50
 }

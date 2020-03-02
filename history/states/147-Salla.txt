@@ -7,13 +7,10 @@ state=
 	state_category = enclave
 	
 	history = {	
-		owner = ORU
-		buildings = {
+		owner = SOU		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = ORU
-
-		victory_points = {
+		add_core_of = SOU		victory_points = {
 			197 1
 		}
 	}

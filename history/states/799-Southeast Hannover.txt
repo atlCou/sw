@@ -4,14 +4,14 @@ state={
 	history = {
 		owner = KAR
 		add_core_of = KAR
-	}
-	provinces={
-		3522 6487 6513 9238 9375 9560 11359 11402 11468 
-	}
-	buildings = {
+		buildings = {
 		infrastructure = 6
 		arms_factory = 1
 		industrial_complex = 1
+	}
+	}
+	provinces={
+		3522 6487 6513 9238 9375 9560 11359 11402 11468 
 	}
 	manpower=731485
 	buildings_max_level_factor=1.000

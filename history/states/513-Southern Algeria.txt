@@ -7,9 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = IDK
-		add_core_of = IDK
-		victory_points = {
+		owner = ALG	add_core_of = ALG	victory_points = {
 			12034 1 
 		}
 		buildings = {

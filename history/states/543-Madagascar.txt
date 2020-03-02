@@ -7,9 +7,7 @@ state={
 	state_category = rural
 	
 	history={
-		add_core_of = IDK
-		owner = IDK
-		victory_points = {
+		add_core_of = MER		owner = MER		victory_points = {
 			5128 1
 		}
 		buildings = {

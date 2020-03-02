@@ -7,9 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = IDK
-		
-		victory_points = {
+		owner = LIB		victory_points = {
 			1149 10 
 		}
 		buildings = {
@@ -19,8 +17,7 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = IDK
-	}
+		add_core_of = LIB	}
 
 	provinces={
 		1118 1149 1189 4194 7066 7209 9980 12039 

@@ -2,7 +2,7 @@
 state={
 	id=796
 	name="STATE_796"
-
+	state_category = large_town
 	history={
 		owner = OST
 		add_core_of = OST
@@ -12,6 +12,6 @@ state={
 	provinces={
 		668 671 688 3675 6673 
 	}
-	manpower=0
+	manpower=400000
 	buildings_max_level_factor=1.000
 }

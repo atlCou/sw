@@ -7,8 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = IDK
-		
+		owner = LIB		
 		victory_points = {
 			1130 5 
 		}
@@ -19,8 +18,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = IDK
-	}
+		add_core_of = LIB	}
 
 	provinces={
 		1130 1204 4136 4151 7082 9992 10120 12094 

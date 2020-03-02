@@ -1,0 +1,24 @@
+state= {
+	id=808
+	name="STATE_808"
+	manpower = 2034114
+
+	state_category = small_island
+
+	history=
+	{
+		owner = BAL
+		buildings = {
+			infrastructure = 8
+			air_base = 6
+			6361 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = BAL
+	}
+
+	provinces= {
+	6361
+	}
+}

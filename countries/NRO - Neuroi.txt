@@ -1,0 +1,38 @@
+capital = 76
+
+OOB = "NRO_spawn"
+
+set_technology = {
+	neuroi_units = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.11.8"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 5
+	fascism = 5
+	communism = 12
+	neutrality = 78
+}
+create_country_leader = {
+	name = "Hive Mind"
+	desc = "POLITICS_HIVE_MIND_DESC"
+	picture = "neuroi15.dds"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {
+		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+	}
+}
+set_convoys = 5
+
+
+create_field_marshal = {
+	name = "NEUROI"
+	picture = "Portrait_Europe_Generic_land_3.dds"
+	skill = 1
+}

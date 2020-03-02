@@ -7,8 +7,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = IDK
-		add_core_of = IDK
+		owner = BRI		add_core_of = BRI
 		victory_points = {
 			8124 1
 		}

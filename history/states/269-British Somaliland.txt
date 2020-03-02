@@ -4,8 +4,7 @@ state=
 	name="STATE_269"
 	manpower = 344700
 	
-	state_category = enclave
-	
+	state_category = rural	
 	history= {
 		victory_points = { 
 			10833 1
@@ -13,9 +12,7 @@ state=
 		victory_points = { 
 			5068 1
 		}
-		owner = IDK
-		add_core_of = IDK
-		buildings = {
+		owner = ETH		add_core_of = ETH		buildings = {
 			infrastructure = 3
 			10833 = {
 				naval_base = 1

@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = IDK
+		owner = AIS
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 		victory_points = {
 			1652 3 
 		}
-		add_core_of = IDK
+		add_core_of = AIS
 	}
 
 	provinces={

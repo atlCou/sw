@@ -4,8 +4,7 @@ state={
 	provinces={
 		3772 6788 11891 
 	}
-	
-	
+	state_category = large_town	
 	history = {
 	
 		owner = RMA
@@ -13,6 +12,6 @@ state={
 		
 	}
 	
-	manpower=0
+	manpower=400000
 	buildings_max_level_factor=1.000
 }

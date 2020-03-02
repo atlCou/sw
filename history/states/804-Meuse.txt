@@ -1,0 +1,20 @@
+state={
+	id=804
+	name="STATE_804"
+	provinces={
+		3560 5291 
+	}
+	state_category=city
+	history={
+		owner = GAL
+		victory_points = {
+			3560 1 
+		}
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = GAL
+
+	}
+	manpower=212600
+}

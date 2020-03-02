@@ -6,7 +6,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = IDK		add_core_of = IDK		buildings = {
+		owner = KAN		add_core_of = KAN		buildings = {
 			infrastructure = 0
 		}
 	}

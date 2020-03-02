@@ -1,119 +1,66 @@
-﻿capital = 111
+﻿capital = 274
 
-oob = "SOU_1936"
-
-set_research_slots = 3
-
-add_ideas = {
-	limited_conscription
-}
-
+# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1
-	tech_support = 1
-	tech_recon = 1
-	tech_engineers = 1
-	early_submarine = 1
-	early_heavy_cruiser = 1
 }
 
-set_convoys = 5
+set_convoys = 15
 
-set_stability = 0.2
+1939.1.1 = {
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
 
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
 
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
 
-	set_popularities = {
-		liberal = 35
-		
-		
-		monarchism = 14
-					
-		
-		communism = 5
-					
-		
-		fanatical-paganism = 31
-		
-		
-		socialism = 15
-		
-		
-		
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
 	}
+}
 
-	set_politics = { ruling_party = liberal
-	last_election = "1933.7.1"
-	election_frequency = 36
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
 	elections_allowed = no
 }
-
-
-create_country_leader = {
-	name = "Eila Ilmatar Juutilainen"
-	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-	picture = "Eila Ilmatar Juutilainen.dds"
-	expire = "1965.1.1"
-	ideology = parlimentary_republicanism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Aurora E. Juutilainen"
-	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-	picture = "Aurora E Juutilainen.dds"
-	expire = "1965.1.1"
-	ideology = fanatical_paganism
-	traits = {
-		#
-	}
-}
-
-
-
-create_country_leader = {
-	name = "Elma Leivonen"
-	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-	picture = "Elma.dds"
-	expire = "1965.1.1"
-	ideology = paternalistic_conservatism
-	traits = {
-		#
-	}	
-}
-
-create_country_leader = {
-	name = "Laura Nissinen"
-	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-	picture = "Laura Nissinen.dds"
-	expire = "1965.1.1"
-	ideology = national-bolshevism
-	traits = {
-		dictator
-	}	
-}
-
-add_ideas = {
-	SOU_sisu
-	SOU_political_instability
-}
-
-give_guarantee = ORU
-
-create_corps_commander = {
-	name = "Erik Heinrichs"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { winter_specialist ranger }
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "Vilho Petter Nenonen"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { winter_specialist commando }
-	skill = 3
+set_popularities = {
+	democratic = 25
+	fascism = 20
+	communism = 5
+	neutrality = 50
 }
