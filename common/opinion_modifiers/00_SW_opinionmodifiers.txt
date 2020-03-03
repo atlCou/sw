@@ -1,0 +1,33 @@
+opinion_modifiers = {
+
+
+	kar_westmod = {
+		value = -100
+	}
+	
+	kar_southmod = {
+		value = -100
+	}
+	
+	kar_anti-romagna = {
+		value = -50
+	}
+	
+	rma_mission_bri = {
+		value = 30
+	}
+	
+	
+	gal_nationalist_victory = {
+		value = -30
+	}
+	
+	gal_revanchism_mod = {
+		value = -50
+	}
+	
+	pne_revanchism = {
+		value = -50
+	}
+	
+}

@@ -1,0 +1,341 @@
+spriteTypes = {
+
+
+
+	
+	SpriteType = {
+		name = "GFX_ostmarkdiplo"
+		texturefile = "gfx/interface/goals/ostmarkdiplo.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_entetediplo"
+		texturefile = "gfx/interface/goals/ententediplo.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_1936_gallian_elections"
+		texturefile = "gfx/interface/goals/1936_gallian_elections.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_natsynwitches"
+		texturefile = "gfx/interface/goals/natsynwitches.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_thecause"
+		texturefile = "gfx/interface/goals/thecause.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_THECAUSE_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/THECAUSE_goal_generic_major_war.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_habsburgmemes"
+		texturefile = "gfx/interface/goals/habsburgmemes.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_helma_economy"
+		texturefile = "gfx/interface/goals/helma_economy.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_trude_economy"
+		texturefile = "gfx/interface/goals/trude_economy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_kar_neighborhood"
+		texturefile = "gfx/interface/goals/karneighborhood.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_kar_economyfocus"
+		texturefile = "gfx/interface/goals/KAR_economyfocus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_socdem_econ"
+		texturefile = "gfx/interface/goals/socdem_econ.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_liberal_econ"
+		texturefile = "gfx/interface/goals/liberal_econ.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_kar_reaffirm"
+		texturefile = "gfx/interface/goals/KAR_reaffirm.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_METitaly"
+		texturefile = "gfx/interface/goals/METitaly.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_METhispania"
+		texturefile = "gfx/interface/goals/METhispania.dds"
+	}
+	SpriteType = {
+		name = "GFX_METostmark"
+		texturefile = "gfx/interface/goals/METostmark.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_pagantrihorn"
+		texturefile = "gfx/interface/goals/pagantrihorn.dds"
+	}
+	SpriteType = {
+		name = "GFX_NSKAPeagle"
+		texturefile = "gfx/interface/goals/NSKAPeagle.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_seizeecon"
+		texturefile = "gfx/interface/goals/KAR_seizeecon.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_natrevive"
+		texturefile = "gfx/interface/goals/KAR_natrevive.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_gowest"
+		texturefile = "gfx/interface/goals/KAR_gowest.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_gosouth"
+		texturefile = "gfx/interface/goals/KAR_gosouth.dds"
+	}
+	SpriteType = {
+		name = "GFX_ballot_suppression"
+		texturefile = "gfx/interface/goals/ballot_suppression.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_compromise"
+		texturefile = "gfx/interface/goals/KAR_compromise.dds"
+	}
+	SpriteType = {
+		name = "GFX_tyrol"
+		texturefile = "gfx/interface/goals/tyrol.dds"
+	}
+	SpriteType = {
+		name = "GFX_BHE_thestate"
+		texturefile = "gfx/interface/goals/BHE_thestate.dds"
+	}
+	SpriteType = {
+		name = "GFX_slovakia"
+		texturefile = "gfx/interface/goals/slovakia.dds"
+	}
+	SpriteType = {
+		name = "GFX_BHE_final"
+		texturefile = "gfx/interface/goals/BHE_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_Pagan_rod"
+		texturefile = "gfx/interface/goals/Pagan_rod.dds"
+	}
+	SpriteType = {
+		name = "GFX_MRV_purge"
+		texturefile = "gfx/interface/goals/MRV_purge.dds"
+	}
+	SpriteType = {
+		name = "GFX_MRV_recruitment"
+		texturefile = "gfx/interface/goals/MRV_recruitment.dds"
+	}
+	SpriteType = {
+		name = "GFX_moravia"
+		texturefile = "gfx/interface/goals/moravia.dds"
+	}
+	SpriteType = {
+		name = "GFX_MRV_final"
+		texturefile = "gfx/interface/goals/MRV_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Boot"
+		texturefile = "gfx/interface/goals/Star_Boot.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Politics"
+		texturefile = "gfx/interface/goals/Star_Politics.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Shield"
+		texturefile = "gfx/interface/goals/Star_Shield.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Sword"
+		texturefile = "gfx/interface/goals/Star_Sword.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Rifle"
+		texturefile = "gfx/interface/goals/Star_Rifle.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Unions"
+		texturefile = "gfx/interface/goals/Star_Unions.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_SEIZE"
+		texturefile = "gfx/interface/goals/Star_SEIZE.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Control"
+		texturefile = "gfx/interface/goals/Star_Control.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Hands"
+		texturefile = "gfx/interface/goals/Star_Hands.dds"
+	}
+	SpriteType = {
+		name = "GFX_DL-OFP_Focus"
+		texturefile = "gfx/interface/goals/DL-OFP_Focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_maria"
+		texturefile = "gfx/interface/goals/RMA_maria.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_joy"
+		texturefile = "gfx/interface/goals/GAL_joy.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_gallia"
+		texturefile = "gfx/interface/goals/GAL_gallia.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_republic"
+		texturefile = "gfx/interface/goals/GAL_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_monarchie"
+		texturefile = "gfx/interface/goals/GAL_monarchie.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_liberte"
+		texturefile = "gfx/interface/goals/GAL_liberte.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_mon_mil"
+		texturefile = "gfx/interface/goals/GAL_mon_mil.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_burn_docs"
+		texturefile = "gfx/interface/goals/GAL_burn_docs.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_crack_down"
+		texturefile = "gfx/interface/goals/GAL_crack_down.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_econ_re"
+		texturefile = "gfx/interface/goals/GAL_econ_re.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_sekrit_pol"
+		texturefile = "gfx/interface/goals/GAL_sekrit_pol.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_art"
+		texturefile = "gfx/interface/goals/GAL_art.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_new_witch"
+		texturefile = "gfx/interface/goals/GAL_new_witch.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_no_strikes"
+		texturefile = "gfx/interface/goals/GAL_no_strikes.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_mon_prop"
+		texturefile = "gfx/interface/goals/GAL_mon_prop.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_territ_prop"
+		texturefile = "gfx/interface/goals/GAL_territ_prop.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_mil_econ_right"
+		texturefile = "gfx/interface/goals/GAL_mil_econ_right.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_marechal_focus"
+		texturefile = "gfx/interface/goals/GAL_marechal_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_nous_voila_focus"
+		texturefile = "gfx/interface/goals/GAL_nous_voila_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_homeland"
+		texturefile = "gfx/interface/goals/GAL_homeland.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_church_burn"
+		texturefile = "gfx/interface/goals/KAR_pagan_church_burn.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_book_burn"
+		texturefile = "gfx/interface/goals/KAR_pagan_book_burn.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_reichstag_close"
+		texturefile = "gfx/interface/goals/KAR_reichstag_close.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_police"
+		texturefile = "gfx/interface/goals/KAR_pagan_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_purge"
+		texturefile = "gfx/interface/goals/KAR_pagan_purge.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_republic"
+		texturefile = "gfx/interface/goals/KAR_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_ukko"
+		texturefile = "gfx/interface/goals/KAR_ukko.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_bohemia_pagan"
+		texturefile = "gfx/interface/goals/KAR_bohemia_pagan.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_orussia_war"
+		texturefile = "gfx/interface/goals/GAL_orussia_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_ostmark_war"
+		texturefile = "gfx/interface/goals/GAL_ostmark_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_every_man_works"
+		texturefile = "gfx/interface/goals/OST_every_man_works.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_work_for_the_state"
+		texturefile = "gfx/interface/goals/OST_work_for_the_state.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_some_men_work"
+		texturefile = "gfx/interface/goals/OST_some_men_work.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_the_time_is_right"
+		texturefile = "gfx/interface/goals/OST_the_time_is_right.dds"
+	}
+	SpriteType = {
+		name = "GFX_OST_dacian_subversion"
+		texturefile = "gfx/interface/goals/OST_dacian_subversion.dds"
+	}
+}
+
+
+

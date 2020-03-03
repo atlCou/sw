@@ -1,0 +1,206 @@
+ideas = {
+
+	country = {
+		SOU_sisu = {
+			
+			picture = sisu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				SOU= {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = -0.05
+				attrition = -0.05
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		SOU_political_instability = {
+		
+			picture = MEX_revolutionary_army
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.35
+				stability_weekly = -0.01
+				stability_factor = -0.05
+			}
+		}
+		
+		SOU_eila_recovering = {
+		
+			picture = MEX_revolutionary_army
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.03
+				political_power_factor = -0.1
+			}
+		}
+		
+		SOU_nikka_recovering = {
+		
+			picture = MEX_revolutionary_army
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+			}
+		}
+		
+		SOU_revol_mil = {
+			
+			picture = sisu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				SOU= {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+				attrition = -0.05
+				army_core_attack_factor = 0
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		SOU_utilizing_witches_idea = {
+			
+			picture = sisu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				SOU= {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.10
+				attrition = -0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
+		
+		SOU_quality_over_quantity_idea = {
+			
+			picture = sisu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				SOU= {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.05
+					instant = yes
+				}
+			}
+		}
+		
+		SOU_seeing_the_future_idea = {
+			
+			picture = sisu
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				SOU= {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		SOU_ukko_idea = {
+			
+			
+			picture = SOU_KAR_ukko
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			
+
+		}
+		
+		SOU_ukko_idea_2 = {
+			
+			
+			picture = SOU_KAR_ukko
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			
+
+		}
+		
+		
+	}
+		
+}

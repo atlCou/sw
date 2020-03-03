@@ -1,0 +1,44 @@
+
+focus_tree = {
+	id = Gallia
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = GAL
+		}
+	}
+	default = no
+
+	shared_focus = GAL_1936elections
+	shared_focus = GAL_remember_the_neuroi_war
+	shared_focus = GAL_armoured_wheels
+
+}
+
+
+
+
+focus_tree = {
+	id = Gallia_pride
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GAL
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+	
+	shared_focus = GAL_my_pride
+	shared_focus = GAL_army_of_speed
+	shared_focus = GAL_army_of_prestige
+
+}

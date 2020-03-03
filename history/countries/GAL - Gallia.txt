@@ -53,14 +53,26 @@ set_convoys = 15
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+	democratic = 55
+	fascism = 8
+	communism = 35
+	neutrality = 2
+}
+
+
+create_country_leader = {
+	name = "Perrine Clostermann"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Perrine H Clostermann.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
 }

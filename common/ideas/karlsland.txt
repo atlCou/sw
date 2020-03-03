@@ -1,0 +1,269 @@
+ideas = {
+
+	country = {
+	
+		########## Starting #######
+	
+		KAR_stagnantkarlsland = {
+		
+			picture = generic_army_problems
+		
+			modifier = {
+			training_time_army_factor = 0.25
+			conscription = -0.01
+			}
+		}
+		
+		KAR_recoveringfromww1 = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.07
+				industrial_capacity_factory = -0.20
+				production_factory_max_efficiency_factor = -0.25
+			}
+		
+		}
+		
+		KAR_thedeathofmonarchy = {
+		
+			picture = HUN_hungarian_monarchy_democratic
+		
+			modifier = {
+				political_power_gain = -0.5
+			}
+	
+		}
+			
+		KAR_firstunits = {
+			
+			picture = GAL_airforce
+			on_add = {
+				set_variable = {
+					var = KAR.witches_manpower
+					value = 20
+				}
+			}
+		}
+		KAR_neweconomy = {
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		
+		KAR_socialprograms_idea = {
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				monthly_population = 0.1
+				political_power_gain = -0.05
+			}
+		}
+		
+		
+		
+		KAR_fosteringindustry = {
+			
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+
+		}
+		
+		KAR_markets = {
+			
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_speed_industrial_complex_factor = 0.05
+			}
+
+		}
+		
+		KAR_marketinfra = {
+			
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+			}
+
+		}
+		
+		KAR_marketinfra2 = {
+			
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+				local_resources_factor = 0.05
+			}
+
+		}
+		
+		KAR_marketboyes = {
+		
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory	= 0.15
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+			
+		}
+		
+		KAR_economicsurge = {
+		
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+			
+		}
+		
+		
+		KAR_burn_the_books_idea = {
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				research_speed_factor = -0.03
+				war_support_weekly = 0.05
+			}
+		}
+	
+		KAR_pagan_police = {
+	
+			picture = german_advisors
+	
+			modifier = {
+				political_power_gain = 0.1
+				### enemy_partisan_effect = -0.1
+			}
+	
+		}
+		
+		KAR_pagan_propa = {
+		
+			picture = KAR_pagan_prop
+			
+			
+			modifier = {
+				conscription = 0.05
+				war_support_weekly = 0.01
+				army_morale_factor = 0.1
+				army_defence_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+
+		KAR_volksforschung_idea = {
+		
+			picture = KAR_pagan_prop
+			
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		KAR_like_old_idea = {
+		
+			picture = KAR_like_old
+			
+			
+			modifier = {
+				political_power_gain = -0.1
+				political_advisor_cost_factor = -0.1
+				foreign_subversive_activites = -0.25
+			}
+		}
+		
+		
+		KAR_hurting_econ = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.2
+				production_factory_max_efficiency_factor = -0.3
+			}
+		
+		}
+		
+		KAR_really_hurting_econ = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.3
+				production_factory_max_efficiency_factor = -0.2
+			}
+		
+		}
+		
+		KAR_better_econ = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		
+		}
+		
+		
+		KAR_karlslander_identity_spirit = {
+		
+			picture = war_of_resistance
+			
+			modifier = {
+				political_power_gain = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		KAR_pagan_victory = {
+			
+			picture = war_of_resistance
+		
+			modifier = { 
+				fascism_drift = 1
+			}
+		
+		}
+		
+	}
+
+
+}
