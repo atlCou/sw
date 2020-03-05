@@ -76,3 +76,36 @@ create_country_leader = {
 		
 	}
 }
+
+create_country_leader = {
+	name = "Amelie Planchard"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Amelie Planchard.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Chris Keera"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "chris.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Georgette Lemare"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Georgette Lemare.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}

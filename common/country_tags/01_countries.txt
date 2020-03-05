@@ -1,6 +1,6 @@
 ###############
 
-
+ACH = "countries/Achaea.txt"
 AIS = "countries/Australis.txt"
 AKS = "countries/Aksum.txt"
 ASI = "countries/Asia.txt"
@@ -79,5 +79,11 @@ TSO = "countries/Socotra.txt"
 KHM = "countries/Khmer.txt"
 
 
-ACH = "countries/Achaea.txt"
+#### Breakaways
+
 BLT = "countries/Dievu Zeme.txt"
+KA1 = "countries/Kar1.txt"
+KA2 = "countries/Kar2.txt"
+KA3 = "countries/Kar3.txt"
+KA4 = "countries/Kar4.txt"
+KA5 = "countries/Kar5.txt"

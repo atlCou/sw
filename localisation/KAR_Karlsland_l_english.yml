@@ -1,46 +1,37 @@
 ﻿l_english: 
 
-KAR_liberal:0 "Karlslander Empire"
-KAR_liberal_DEF:0 "The Empire of Karlsland"
-KAR_liberal_ADJ:0 "Karlslander"
+KAR_democratic:0 "Karlslander Empire"
+KAR_democratic_DEF:0 "The Empire of Karlsland"
+KAR_democratic_ADJ:0 "Karlslander"
 KAR_communism:0 "People's Republic of Karlsland"
 KAR_communism_DEF:0 "The People's Republic of Karlsland"
 KAR_communism_ADJ:0 "Karlslander"
-KAR_fascism:0 "Karlsreich"
-KAR_fascism_DEF:0 "Karlsreich"
+KAR_neutrality:0 "Karlslander Empire"
+KAR_neutrality_DEF:0 "The Empire of Karlsland"
+KAR_neutrality_ADJ:0 "Karlslander"
+KAR_fascism:0 "Wuotanrihhi"
+KAR_fascism_DEF:0 "Wuotanrihhi"
 KAR_fascism_ADJ:0 "Karlslander"
-KAR_monarchism:0 "Karlslander Empire"
-KAR_monarchism_DEF:0 "The Empire of Karlsland"
-KAR_monarchism_ADJ:0 "Karlslander"
-KAR_fanatical-paganism:0 "Wuotanrihhi"
-KAR_fanatical-paganism_DEF:0 "Wuotanrihhi"
-KAR_fanatical-paganism_ADJ:0 "Karlslander"
-KAR_socialism:0 "Karlsland"
-KAR_socialism_DEF:0 "Karlsland"
-KAR_socialism_ADJ:0 "Karlslander"
 
 
 
-KAR_republic_liberal:0 "Karlsland"
-KAR_republic_liberal_DEF:0 "The Karlslander Republic"
-KAR_republic_liberal_ADJ:0 "Karlslander"
-KAR_republic_monarchism:0 "Karlsland"
-KAR_republic_monarchism_DEF:0 "The Karlslander Republic"
-KAR_republic_monarchism_ADJ:0 "Karlslander"
+KAR_republic_democratic:0 "Karlsland"
+KAR_republic_democratic_DEF:0 "The Karlslander Republic"
+KAR_republic_democratic_ADJ:0 "Karlslander"
+KAR_republic_neutrality:0 "Karlsland"
+KAR_republic_neutrality_DEF:0 "The Karlslander Republic"
+KAR_republic_neutrality_ADJ:0 "Karlslander"
 
 
 
 KAR_communism_party:0 "KPK"
 KAR_communism_party_long:0 "Kommunistische Partei Karlsland"
-KAR_socialism_party:0 "Republikanisch"
-KAR_liberal_party:0 "NLP"
-KAR_liberal_party_long:0 "Nationalliberale Partei"
-KAR_monarchism_party:0 "KkP"
-KAR_monarchism_party_long:0 "Karlkonservative Partei"
-KAR_fascism_party:0 "NSKAP"
-KAR_fascism_party_long:0 "Nationalsozialistische Karlslander Arbeiterpartei"
-KAR_fanatical-paganism_party:0 "HE"
-KAR_fanatical-paganism_party_long:0 "Heidnische Einheitsfront"
+KAR_democratic_party:0 "NLP"
+KAR_democratic_party_long:0 "Nationalliberale Partei"
+KAR_neutrality_party:0 "KkP"
+KAR_neutrality_party_long:0 "Karlsländischkonservative Partei"
+KAR_fascism_party:0 "MSKP"
+KAR_fascism_party_long:0 "Mystische Sozialistische Karlsländische Partei"
 
 
 #######################
@@ -55,7 +46,7 @@ KA5_monarchism_party:0 "Zentrum"
 
 KA4_baden_fascism:0 "Karlslander Wurtemburg"
 KA4_baden_fascism_DEF:0 "Wurtemburg"
-KA4_baden_fascism_ADJ:0 "Karls-Wurtemburger"
+KA4_baden_fascism_ADJ:0 "Karlsländisch-Württembergisch"
 KA4_fascism_party:0 "KNP"
 
 
@@ -71,16 +62,16 @@ KA2_saxony_liberal_ADJ:0 "Saxon"
 KA2_liberal_party:0 "Crisis Council"
 
 
-KA1_NOBLE_monarchism:0 "Karlslandes Junkersreich"
+KA1_NOBLE_monarchism:0 "Karlsländisches Junkerreich"
 KA1_NOBLE_monarchism_DEF:0 "East Karlsland"
 KA1_NOBLE_monarchism_ADJ:0 "Eastern Karlslander"
 KA1_monarchism_party_long:0 "Council of Nobles and Junkers"
 KA1_monarchism_party:0 "Noble Council"
 
 
-KAR_comm_breakaway:0 "Rheinish Commune"
-KAR_comm_breakaway_DEF:0 "The Rheinish Commune"
-KAR_comm_breakaway_ADJ:0 "Rheinish"
+KAR_comm_breakaway:0 "Rhinelandic Commune"
+KAR_comm_breakaway_DEF:0 "The Rhinelandic Commune"
+KAR_comm_breakaway_ADJ:0 "Rhinelandic"
 
 
 #########################################

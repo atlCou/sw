@@ -241,24 +241,47 @@ ideas = {
 			}
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		KAR_pagan_victory = {
 			
 			picture = war_of_resistance
 		
 			modifier = { 
 				fascism_drift = 1
+			}
+		
+		}
+		
+		KAR_distribution_idea = {
+		
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		
+		}
+		
+		
+		KAR_agrarian_traditions_idea = {
+		
+			picture = KAR_pagan_prop
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+			}
+		
+		}
+		
+		KAR_volkisch_intelligentsia_idea = {
+		
+			picture = KAR_pagan_prop
+			
+			modifier = {
+				research_speed_factor = 0.07
+				political_power_gain = 0.08
 			}
 		
 		}
