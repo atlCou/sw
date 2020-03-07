@@ -38,35 +38,35 @@ KAR_fascism_party_long:0 "Mystische Sozialistische Karlsländische Partei"
 # BREAK AWAYS
 #######################
 
-KA5_Bavaria_monarchism:0 "Kingdom of Bavaria"
-KA5_Bavaria_monarchism_DEF:0 "The Kingdom of Bavaria"
-KA5_Bavaria_monarchism_ADJ:0 "Bavarian"
-KA5_monarchism_party:0 "Zentrum"
+KA5_Bavaria_neutrality:0 "Kingdom of Bavaria"
+KA5_Bavaria_neutrality_DEF:0 "The Kingdom of Bavaria"
+KA5_Bavaria_neutrality_ADJ:0 "Bavarian"
+KA5_neutrality_party:0 "Zentrum"
 
 
-KA4_baden_fascism:0 "Karlslander Wurtemburg"
-KA4_baden_fascism_DEF:0 "Wurtemburg"
+KA4_baden_fascism:0 "Karlslander Württemberg"
+KA4_baden_fascism_DEF:0 "Württemberg"
 KA4_baden_fascism_ADJ:0 "Karlsländisch-Württembergisch"
 KA4_fascism_party:0 "KNP"
 
 
-KA3_hamburg_socialism:0 "Republic of Hannover"
-KA3_hamburg_socialism_DEF:0 "The Republic of Hannover"
-KA3_hamburg_socialism_ADJ:0 "Hannover"
-KA3_socialism_party:0 "SPD"
+KA3_hamburg_democratic:0 "Republic of Hannover"
+KA3_hamburg_democratic_DEF:0 "The Republic of Hannover"
+KA3_hamburg_democratic_ADJ:0 "Hannover"
+KA3_democratic_party:0 "SPD"
 
 
-KA2_saxony_liberal:0 "Magocacy of Saxony"
-KA2_saxony_liberal_DEF:0 "Saxony"
-KA2_saxony_liberal_ADJ:0 "Saxon"
-KA2_liberal_party:0 "Crisis Council"
+KA2_saxony_democratic:0 "Magocacy of Saxony"
+KA2_saxony_democratic_DEF:0 "Saxony"
+KA2_saxony_democratic_ADJ:0 "Saxon"
+KA2_democratic_party:0 "Crisis Council"
 
 
-KA1_NOBLE_monarchism:0 "Karlsländisches Junkerreich"
-KA1_NOBLE_monarchism_DEF:0 "East Karlsland"
-KA1_NOBLE_monarchism_ADJ:0 "Eastern Karlslander"
-KA1_monarchism_party_long:0 "Council of Nobles and Junkers"
-KA1_monarchism_party:0 "Noble Council"
+KA1_NOBLE_neutrality:0 "Karlsländisches Junkerreich"
+KA1_NOBLE_neutrality_DEF:0 "East Karlsland"
+KA1_NOBLE_neutrality_ADJ:0 "Eastern Karlslander"
+KA1_neutrality_party_long:0 "Council of Nobles and Junkers"
+KA1_neutrality_party:0 "Noble Council"
 
 
 KAR_comm_breakaway:0 "Rhinelandic Commune"

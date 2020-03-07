@@ -59,11 +59,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Erica Hartmann"
+	name = "Comrade Leader"
 	desc = "HHHH"
-	picture = "Erica Hartmann.dds"
+	picture = "COMRADE_LEADER.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = stalinism
 	traits = {
 	}
 }

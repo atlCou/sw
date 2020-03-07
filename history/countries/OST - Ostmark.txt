@@ -52,15 +52,53 @@ set_convoys = 15
 	}
 }
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+
+add_ideas = {
+	OST_multicultural
+	OST_recent_republicanization
+}
+
+set_popularities = {
+	democratic = 35	
+	communism = 9	
+	neutrality = 30	
+	fascism = 26
+}
+	
+set_politics = { 
+	ruling_party = democratic
+	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
-set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+
+set_stability = 0.7
+
+create_country_leader = {
+	name = "Waltraud Nowotny"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "Walt.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		stout_defender
+	}
+}
+
+create_country_leader = {
+	name = "Grete Gollob"
+	desc = "POLITICS_KARL_RENNER_DESC"
+	picture = "Grete.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
+}
+
+create_corps_commander = {
+	name = "Karl Eglseer"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trait_mountaineer trickster }
+	skill = 3
 }

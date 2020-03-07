@@ -52,15 +52,72 @@ set_convoys = 15
 	}
 }
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
+set_convoys = 800
+
 set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+    democratic = 56
+    fascism = 4
+    communism = 11
+    neutrality = 29
+}	
+
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no ##suspended through duration of war, which is handled via event
 }
+
+
+
+
+
+create_faction = "Commonwealth of Nations"
+add_to_faction = BRI
+add_to_faction = FAR
+add_to_faction = AIS
+add_to_faction = NZL
+add_to_faction = SAF
+
+
+create_country_leader = {
+	name = "Lynette Bishop"
+	desc = "hhhh"
+	picture = "Lynn.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wilma Bishop"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Wilma.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Cecilia Miles"
+	desc = "POLITICS_PALME_DUTT_DESC"
+	picture = "Cecilia.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+ create_country_leader = {
+	 name = "Patricia Schade"
+	 desc = "POLITICS_PALME_DUTT_DESC"
+	 picture = "Patricia.dds"
+	 expire = "1965.1.1"
+	 ideology = marxism
+	 traits = {
+	 }
+ }

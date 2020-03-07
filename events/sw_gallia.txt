@@ -1,0 +1,1359 @@
+﻿#################### temporary
+add_namespace = galw
+
+country_event = {
+	id = galw.1
+	title = galw.1.t
+	desc = galw.1.d
+	picture = GFX_generic_backpackedunits
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = galw.1.a
+
+		hidden_effect = { 
+		add_ideas = GAL_bagunits
+		}
+	}
+}
+
+country_event = {
+	id = galw.100
+	title = galw.100.t
+	desc = galw.100.d
+	picture = GFX_report_event_fighters
+
+	fire_only_once = yes
+
+	is_triggered_only = yes	
+	
+	
+	option = {
+		name = galw.100.a
+	}
+}
+
+
+
+
+########################### GALLIA ###################
+add_namespace = gallia
+
+country_event =  {
+	id = gallia.1
+	title = gallia.1.t
+	desc = gallia.1.d
+	picture = GFX_report_event_generic_parliament
+
+	fire_only_once = yes
+
+    trigger = { date > 1936.3.1 tag = GAL }
+	
+	mean_time_to_happen = { days = 1 }
+ 
+	immediate = {
+		country_event = {
+			id = gallia.11
+			days = 63
+		}
+	}
+	option = {
+		name = gallia.1.a
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = gallia.2
+				days = 1
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = gallia.2
+	title = gallia.2.t
+	desc = gallia.2.d
+	picture = GFX_report_event_worker_protests
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+    #### slight left ######
+	option = {
+		name = gallia.2.a
+			if = { 
+				limit = { 
+					is_historical_focus_on = yes
+				}
+				ai_chance = { base = 144 }
+			}
+			if = { 
+				limit = { 
+					is_historical_focus_on = no
+				}
+				ai_chance { base = 50 }
+			}
+				
+		hidden_effect = {
+			country_event = {
+				id = gallia.3
+				days = 1
+			} }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.04
+			}
+			set_variable = { GAL_prog = 1 }
+			set_variable = { GAL_soc = 1 }
+		}
+	#### right-wing #####
+		option = {
+		name = gallia.2.b
+			if = { 
+				limit = { 
+					is_historical_focus_on = yes
+				}
+				ai_chance = { base = 0 }
+			}
+			if = { 
+				limit = { 
+					is_historical_focus_on = no
+				}
+				ai_chance { base = 50 }
+			}
+		hidden_effect = {
+			country_event = {
+				id = gallia.3
+				days = 1
+			} }		
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.03
+			}
+			set_variable = { GAL_prog = 1 }
+			set_variable = { GAL_liberal = 1 }
+	}
+	#### authsoc ########
+		option = {
+		name = gallia.2.c
+		ai_chance = { base = 0 }
+		hidden_effect = {
+			country_event = {
+				id = gallia.3
+				days = 1
+			}		
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		set_variable = { GAL_authsoc = 1 }
+		set_variable = { GAL_soc = 1 }
+	}
+}
+
+country_event = {
+	id = gallia.3
+	title = gallia.3.t
+	desc = gallia.3.d
+	picture = GFX_report_event_generic_rally
+
+	fire_only_once = yes
+
+	immediate = {
+		country_event = {
+			id = gallia.4
+			days = 15
+		}
+	}
+	
+	is_triggered_only = yes
+    #### slight right ######
+	option = {
+		name = gallia.3.a
+			if = { 
+				limit = { 
+					is_historical_focus_on = yes
+				}
+				ai_chance = { base = 144 }
+			}
+			if = { 
+				limit = { 
+					is_historical_focus_on = no
+				}
+				ai_chance { base = 50 }
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.03
+			}
+		add_to_variable = { GAL_liberal = 2 }
+		add_to_variable = { GAL_prog = 1 }
+		}
+	#### left-wing #####
+		option = {
+		name = gallia.3.b
+			if = { 
+				limit = { 
+					is_historical_focus_on = yes
+				}
+				ai_chance = { base = 0 }
+			}
+			if = { 
+				limit = { 
+					is_historical_focus_on = no
+				}
+				ai_chance { base = 50 }
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+			add_to_variable = { GAL_prog = 2 }	
+			add_to_variable = { GAL_liberal = 1 }	
+	}
+	#### authsoc ########
+		option = {
+		name = gallia.3.c
+		ai_chance = { base = 0 }
+
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.06
+		}
+		add_to_variable = { GAL_prog = 1 }	
+		add_to_variable = { GAL_soc = 1 }
+		add_to_variable = { GAL_authsoc = 1 }		
+	}
+}
+
+
+country_event = {
+	id = gallia.4
+	title = gallia.4.t
+	desc = gallia.4.d 
+	picture = GFX_report_event_generic_rally2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 3 }
+
+
+    #### slight right ######
+	option = {
+		name = gallia.4.a
+			if = { 
+				limit = { 
+					is_historical_focus_on = yes
+				}
+				ai_chance = { base = 144 }
+			}
+			if = { 
+				limit = { 
+					is_historical_focus_on = no
+				}
+				ai_chance { base = 50 }
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.06
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		add_to_variable = { GAL_liberal = 2 }		
+		}
+	#### left-wing #####
+		option = {
+		name = gallia.4.b
+			if = { 
+				limit = { 
+					is_historical_focus_on = yes
+				}
+				ai_chance = { base = 0 }
+			}
+			if = { 
+				limit = { 
+					is_historical_focus_on = no
+				}
+				ai_chance { base = 50 }
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		add_to_variable = { GAL_prog = 2 }
+		add_to_variable = { GAL_soc = 1  }
+	}
+	#### authsoc ########
+		option = {
+		name = gallia.4.c
+		ai_chance = { base = 0 }
+
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+		add_to_variable = { GAL_prog = 2 }
+		add_to_variable = { GAL_soc = 1 }
+		add_to_variable = { GAL_authsoc = 1 }
+	}
+}
+
+
+country_event = {
+	id = gallia.5
+	title = gallia.5.t
+	desc = gallia.5.d
+	picture = GFX_report_event_generic_communist_congress
+
+	fire_only_once = yes
+
+	trigger = { 
+		date > 1936.4.10
+		check_variable = { GAL_soc = 3 }
+		tag = GAL
+	}
+ 
+	option = {
+		name = gallia.5.a
+		ai_chance = {
+			base = 50
+		}
+		add_to_variable = { GAL_soc = 1000 }
+	}
+	option = {
+		name = gallia.5.b
+		ai_chance = {
+			base = 50
+		}
+		add_to_variable = { GAL_authsoc = 1000 }
+		hidden_effect = { country_event = { id = gallia.6 days = 4 } }
+	}	
+}
+
+country_event = {
+	id = gallia.6
+	title = gallia.6.t
+	desc = gallia.6.d
+	picture = GFX_report_event_fascist_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.6.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.20
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.18
+		}
+		add_stability = -0.1
+	}
+}
+
+
+country_event = {
+	id = gallia.10
+	title = gallia.10.t
+	desc = gallia.10.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+
+	trigger = {
+			date > 1936.05.03
+			tag = GAL
+		}
+
+	mean_time_to_happen = {
+		days = 1
+		}
+		
+	option = {
+		name = gallia.10.a
+		country_event = {
+			id = gallia.11
+			days = 3
+		}
+		set_variable = { PS = party_popularity@progressivism }
+		add_to_variable = { PS = party_popularity@communism }
+	}
+}
+
+country_event = {
+	id = gallia.11
+	title = gallia.11.t
+	desc = gallia.11.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	option = {
+		name = gallia.11.a
+		trigger = { 
+			AND = {
+				check_variable = { GAL_liberal > GAL_prog }
+				check_variable = { GAL_liberal > GAL_soc }
+				check_variable = { GAL_liberal > GAL_authsoc }
+			} 
+		}
+		add_popularity = { ideology = democratic popularity = 0.1 }
+		add_popularity = { ideology = neutrality popularity = 0.1 }
+		add_stability = 0.05
+		set_country_flag = GAL_stayedstatusquo
+		set_country_flag = GAL_liberalswon
+		set_country_flag = GAL_1936gallianelections
+		complete_national_focus = GAL_1936elections
+	}
+	option = {
+		name = gallia.11.b
+		trigger = { 
+			AND = {
+				check_variable = { GAL_prog > GAL_soc }
+				check_variable = { GAL_prog > GAL_authsoc }
+				check_variable = { GAL_prog > GAL_liberal }
+			} 
+		}
+		add_popularity = { ideology = communism popularity = 0.15 }
+		add_stability = 0.03
+		set_country_flag = GAL_socdem
+		set_country_flag = GAL_wentsocdem
+		set_country_flag = GAL_1936gallianelections
+		complete_national_focus = GAL_1936elections
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Perrine H. Clostermann"
+			desc = "POLITICS_MAURICE_THOREZ_DESC"
+			picture = "Perrine H Clostermann.dds"
+			expire = "1965.1.1"
+			ideology = democratic_socialism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = gallia.11.c
+		trigger = { 
+			AND = {
+				check_variable = { GAL_soc > GAL_prog }
+				check_variable = { GAL_soc > GAL_authsoc }
+				check_variable = { GAL_soc > GAL_liberal }
+			} 
+		}
+		add_popularity = { ideology = communism popularity = 0.15 }
+		add_stability = -0.06
+		set_country_flag = GAL_wentsoc
+		set_country_flag = GAL_1936gallianelections
+		complete_national_focus = GAL_1936elections
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = communism
+			name = "PS"
+			long_name = "Parti socialiste"
+		}
+	}
+	option = {
+		name = gallia.11.e
+		trigger = { 
+			AND = {
+				check_variable = { GAL_authsoc > GAL_prog }
+				check_variable = { GAL_authsoc > GAL_soc }
+				check_variable = { GAL_authsoc > GAL_liberal }
+			} 
+		}
+		add_popularity = { ideology = communism popularity = 0.06 }		
+		add_popularity = { ideology = communism popularity = 0.15 }
+		add_popularity = { ideology = democratic popularity = -0.03 }
+		add_popularity = { ideology = neutrality popularity = -0.07 }
+		add_stability = -0.2
+		set_country_flag = GAL_wentauthsoc
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		hidden_effect = {
+			country_event = {
+				id = gallia.12
+				days = 7
+			}
+		}
+	}
+}
+
+
+
+
+
+country_event = {
+	id = gallia.12
+	title = gallia.12.t
+	desc = gallia.12.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.12.a
+		load_focus_tree = Gallia_pride
+		add_stability = -0.3
+	}
+	
+}
+	
+	
+	
+	
+country_event = {
+	id = gallia.100
+	title = gallia.100.t
+	desc = gallia.100.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.100.a
+		ai_chance = {
+			base = 144
+		}
+	}
+	
+	option = {
+		name = gallia.100.a
+		ai_chance = {
+			base = 0
+		}
+		create_wargoal = { 
+			type = annex_everything 
+			target = NRO
+		}
+	}
+}		
+	
+	
+	
+	
+	
+	
+country_event = {
+	id = gallia.200
+	title = gallia.200.t
+	desc = gallia.200.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.200.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}	
+	
+	
+	
+	
+	
+	
+	
+country_event = {
+	id = gallia.500
+	title = gallia.500.t
+	desc = gallia.500.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.500.a
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = -10
+		add_stability = -0.05
+	}
+}		
+	
+	
+	
+	
+####### Gallian Loyalist Events	
+	
+country_event = {
+	id = gallia.600
+	title = gallia.600.t
+	desc = gallia.600.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.600.a
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = 50
+		add_war_support = 0.05
+		set_country_flag = GAL_natvictory
+		add_opinion_modifier = {
+			target = KAR
+			modifier = gal_nationalist_victory
+		}
+		set_popularities = {
+			democratic = 19
+			communism = 21
+			neutrality = 37
+			fascism = 23
+		}
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = GAL_gallia_coup
+	}
+}
+
+
+country_event = {
+	id = gallia.601
+	title = gallia.601.t
+	desc = gallia.601.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.601.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.05
+		every_owned_state = {
+			add_manpower = -1500
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+	}
+}
+
+
+country_event = {
+	id = gallia.602
+	title = gallia.602.t
+	desc = gallia.602.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+ 
+	option = {
+		name = gallia.602.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_country_flag = GAL_republic_flag
+		set_cosmetic_tag = GAL_gallia_coup_post
+	}
+	
+	option = {
+		name = gallia.602.b
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		set_country_flag = GAL_monarch_flag
+		set_cosmetic_tag = GAL_gallia_coup_post
+	}
+}
+	
+	
+country_event = {
+	id = gallia.610
+	title = gallia.610.t
+	desc = gallia.610.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.610.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_government = neutrality
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.611
+			}
+		}
+	}
+	
+	option = {
+		name = gallia.610.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					NOT = { has_government = neutrality }
+					is_puppet = yes
+				}
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.612
+			}
+		}
+	}
+}
+ 
+country_event = {
+	id = gallia.611
+	title = gallia.611.t
+	desc = gallia.611.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.611.a
+		puppet = BLG
+		add_war_support = 0.05
+	}
+}
+
+
+country_event = {
+	id = gallia.612
+	title = gallia.612.t
+	desc = gallia.612.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.612.a
+		create_wargoal = {
+			target = BLG
+			type = puppet_wargoal_focus
+		}
+		add_war_support = 0.1
+	}
+}
+
+
+
+
+
+country_event = {
+	id = gallia.613
+	title = gallia.613.t
+	desc = gallia.613.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.613.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_government = neutrality
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.614
+			}
+		}
+	}
+	
+	option = {
+		name = gallia.613.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					NOT = { has_government = neutrality }
+					is_puppet = yes
+				}
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.615
+			}
+		}
+	}
+}
+ 
+country_event = {
+	id = gallia.614
+	title = gallia.614.t
+	desc = gallia.614.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.614.a
+		puppet = NET
+		add_war_support = 0.05
+	}
+}
+
+
+country_event = {
+	id = gallia.615
+	title = gallia.615.t
+	desc = gallia.615.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.615.a
+		create_wargoal = {
+			target = NET
+			type = puppet_wargoal_focus
+		}
+		add_war_support = 0.1
+	}
+}
+
+
+country_event = {
+	id = gallia.616 ###Invitation to Monarchist Gallia's Faction
+	title = gallia.616.t
+	desc = gallia.616.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.616.a ### Yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_government = fascism
+				add = 100
+			}
+			modifier = {
+				KAR = {
+					has_government = fanatical-paganism
+				}
+				add = 50
+			}
+			modifier = {
+				owns_state = 160
+				add = -10
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.617
+			}
+		}
+	}
+	
+	option = {
+		name = gallia.616.a  ### No
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_government = neutrality				
+				add = 10
+			}
+			modifier = {
+				NOT = {
+					KAR = {
+						has_government = fanatical-paganism
+					}
+				}
+				add = -50
+			}
+			modifier = {
+				owns_state = 160
+				add = 10
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.618
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = gallia.617
+	title = gallia.617.t
+	desc = gallia.617.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.617.a
+		GAL = { add_to_faction = RMA }
+		add_war_support = 0.05
+	}
+}
+
+
+country_event = {
+	id = gallia.618
+	title = gallia.618.t
+	desc = gallia.618.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.618.a
+		ai_chance = {
+			base = 1
+		}
+		add_war_support = -0.05
+	}
+	
+	option = {
+		name = gallia.618.b
+		ai_chance = {
+			base = 0
+		}
+		create_wargoal = {
+			target = RMA
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+country_event = {
+	id = gallia.619
+	title = gallia.619.t
+	desc = gallia.619.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.619.a
+		give_guarantee = GAL
+		GAL = {
+			give_guarantee = PREV
+		}
+	}
+	
+	option = {
+		name = gallia.619.b
+	}
+}
+
+
+country_event = {
+	id = gallia.700
+	title = gallia.700.t
+	desc = gallia.700.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.700.a
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = {
+				GAL = { has_completed_focus = GAL_geopolitical_reorganization }
+			}
+			BLG = {
+				transfer_state = 8
+				transfer_state = 28
+				transfer_state = 42
+				transfer_state = 794
+			}
+			GAL = {
+				country_event = {
+					id = gallia.701
+					days = 1
+				}
+			}
+		}
+		else = {
+			GAL = {
+				transfer_state = 8
+				transfer_state = 28
+				transfer_state = 42
+				transfer_state = 794
+				country_event = {
+					id = gallia.701
+					days = 1
+				}
+			}
+		}
+		add_political_power = -100
+		add_stability = -0.05
+	}
+	
+	option = {
+		name = gallia.700.b
+		ai_chance = {
+			base = 99
+		}
+		GAL = {
+			country_event = {
+				id = gallia.702
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gallia.701
+	title = gallia.701.t
+	desc = gallia.701.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.701.a
+		add_war_support = 0.05
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = gallia.702
+	title = gallia.702.t
+	desc = gallia.702.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.701.a
+		add_war_support = 0.05
+		create_wargoal = {
+			target = KAR
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+
+
+country_event = {
+	id = gallia.703
+	title = gallia.703.t
+	desc = gallia.703.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.703.a
+		ai_chance = {
+			base = 5
+			modifier = {
+				factor = 50
+				AND = { 
+					has_war = yes
+					NOT = { has_war_with = GAL }
+				}
+			}
+		}
+		GAL = {
+			transfer_state = 28
+			country_event = {
+				id = gallia.701
+				days = 1
+			}
+		}
+		add_political_power = -50
+		add_stability = -0.05
+	}
+	
+	option = {
+		name = gallia.703.b
+		ai_chance = {
+			base = 50
+		}
+		GAL = {
+			country_event = {
+				id = gallia.702
+				days = 1
+			}
+		}
+	}
+}
+
+
+
+
+
+####### SOCIALIST EVENTS
+
+country_event = {
+	id = gallia.1000
+	title = gallia.1000.t
+	desc = gallia.1000.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.1000.a
+		ai_chance = {
+			add = 1
+		}
+		give_guarantee = GAL
+		GAL = {
+			give_guarantee = KAR
+			country_event = {
+				id = gallia.1003
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = gallia.1000.b
+		ai_chance = {
+			add = 0
+		}
+		GAL = {
+			country_event = {
+				id = gallia.1002
+				days = 1
+			}
+		}
+	}
+		
+}
+
+
+
+
+country_event = {
+	id = gallia.1020
+	title = gallia.1020.t
+	desc = gallia.1020.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.1020.a
+		RMA = { 
+			transfer_state = 736
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 157
+			transfer_state = 159
+			transfer_state = 158
+			transfer_state = 162
+			transfer_state = 2
+			transfer_state = 117
+			transfer_state = 156
+			transfer_state = 115
+			transfer_state = 114
+
+			hidden_effect = {
+				add_state_core = 736
+				add_state_core = 160
+				add_state_core = 161
+				add_state_core = 157
+				add_state_core = 159
+				add_state_core = 158
+				add_state_core = 162
+				add_state_core = 2
+				add_state_core = 117
+				add_state_core = 156
+				add_state_core = 115
+				add_state_core = 114
+				annex_country = { 
+					target = RMA 
+					transfer_troops = yes 
+				}
+			}
+			
+			create_country_leader = {
+				name = "Fernandia Malvezzi"
+				picture = "Fernandia Malvezzi.dds"
+				expire = "1965.1.1"
+				ideology = communism_type
+				traits = {
+					#
+				}
+			}
+
+			create_country_leader = {
+				name = "Fernandia Malvezzi"
+				picture = "Fernandia Malvezzi.dds"
+				expire = "1965.1.1"
+				ideology = anarchist_socialism
+				traits = {
+					#
+				}
+			}
+
+			create_country_leader = {
+				name = "Fernandia Malvezzi"
+				picture = "Fernandia Malvezzi.dds"
+				expire = "1965.1.1"
+				ideology = liberal_socialism
+				traits = {
+					#
+				}
+			}
+
+			create_country_leader = {
+				name = "Fernandia Malvezzi"
+				picture = "Fernandia Malvezzi.dds"
+				expire = "1965.1.1"
+				ideology = social_democracy
+				traits = {
+					#
+				}
+			}
+
+			create_country_leader = {
+				name = "Fernandia Malvezzi"
+				picture = "Fernandia Malvezzi.dds"
+				expire = "1965.1.1"
+				ideology = parlimentary_republicanism
+				traits = {
+					#
+				}
+			}
+
+			create_country_leader = {
+				name = "Fernandia Malvezzi"
+				picture = "Fernandia Malvezzi.dds"
+				expire = "1965.1.1"
+				ideology = social_conservatism
+				traits = {
+					#
+				}
+			}
+		}
+		GAL = { puppet = RMA }
+		
+	}
+	
+	
+
+}

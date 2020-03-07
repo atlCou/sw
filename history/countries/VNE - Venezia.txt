@@ -52,15 +52,38 @@ set_convoys = 15
 	}
 }
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
+
+set_popularities = {
+	democratic = 47
+	fascism = 9
+	communism = 44	
+}
+
+set_politics = { 
+	ruling_party = democratic
+	last_election = "1935.5.3"
+	election_frequency = 36
 	elections_allowed = no
 }
-set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+
+set_stability = 0.6
+
+create_country_leader = {
+	name = "Josipa Bencetic"
+	picture = "Josipa Bencetic.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Lucia Martini"
+	picture = "Lucia Martini.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
 }
