@@ -26,13 +26,13 @@ country_event = {
 				has_tech = basic_light_tank
 			}
 			add_equipment_to_stockpile = {
-			type = light_tank_equipment_1
+			type = nw_tank_striker_equipment
 			amount = 250
 			}
 		}
 		else = {
 		add_equipment_to_stockpile = {
-			type = gw_tank_equipment
+			type = nw_tank_striker_equipment
 			amount = 250
 			}
 		}
@@ -85,7 +85,7 @@ option = {
 		}
 		else = {
 		add_equipment_to_stockpile = {
-			type = gw_tank_equipment
+			type = nw_tank_striker_equipment
 			amount = 250
 			}
 		}
@@ -138,7 +138,7 @@ country_event = {
 		}
 		else = {
 		add_equipment_to_stockpile = {
-			type = gw_tank_equipment
+			type = nw_tank_striker_equipment
 			amount = 250
 			}
 		}
@@ -191,7 +191,7 @@ country_event = {
 		}
 		else = {
 		add_equipment_to_stockpile = {
-			type = gw_tank_equipment
+			type = nw_tank_striker_equipment
 			amount = 250
 			}
 		}
@@ -244,7 +244,7 @@ country_event = {
 		}
 		else = {
 		add_equipment_to_stockpile = {
-			type = gw_tank_equipment
+			type = nw_tank_striker_equipment
 			amount = 250
 			}
 		}

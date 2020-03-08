@@ -11,8 +11,8 @@ state=
 	}
 
 	history={
-		add_core_of = IDK
-		owner = IDK
+		add_core_of = BRI
+		owner = BRI
 		victory_points = {
 			10201 3 
 		}
