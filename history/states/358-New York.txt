@@ -8,11 +8,11 @@ state={
 	state_category = megalopolis
 
 	history={
-		owner = IDK
+		owner = LIN
 		buildings = {
 			infrastructure = 8
-			arms_factory = 2
-			industrial_complex = 7
+			arms_factory = 1
+			industrial_complex = 2
 			dockyard = 3
 			air_base = 10
 			3878 = {
@@ -21,7 +21,7 @@ state={
 			}
 
 		}
-		add_core_of = IDK
+		add_core_of = LIN
 		victory_points = {
 			3878 30.0 
 		}

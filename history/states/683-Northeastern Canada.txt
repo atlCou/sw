@@ -9,12 +9,12 @@ state={
 	}
 
 	history={
-		owner = IDK
+		owner = FAR
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = IDK
+		add_core_of = FAR
 
 	}
 

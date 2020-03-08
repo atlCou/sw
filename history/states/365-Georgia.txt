@@ -7,16 +7,16 @@ state={
 	state_category = city
 
 	history={
-		owner = IDK
+		owner = LIN
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 3
+			infrastructure = 5
+			industrial_complex = 2
 			air_base = 2
 			11975 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = IDK
+		add_core_of = LIN
 		victory_points = {
 			12384 10 
 		}

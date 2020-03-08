@@ -1,0 +1,266 @@
+﻿add_namespace = witchescommon
+country_event = {
+	id = witchescommon.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event wc.1"}
+	title = "Witch T1" 
+	desc = "Witch T1" 
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = "Witch T1"
+		if = { 
+			limit = { has_tech = fighter1 }
+		add_equipment_to_stockpile = {
+		type = fighter_equipment_1
+		amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = BRI }
+		}
+	}
+	option = {
+		name = "Tank T1" 
+		if = { 
+			limit = {
+				has_tech = basic_light_tank
+			}
+			add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = {
+			type = gw_tank_equipment
+			amount = 250
+			}
+		}
+	}
+	option = {
+		name = "Tank Destroyer T1" 
+			add_equipment_to_stockpile = {
+			type = light_tank_destroyer_equipment_1
+			amount = 250
+			}
+	}
+	option = {
+		name = "CAS T1" 
+			add_equipment_to_stockpile = {
+			type = CAS_equipment_1
+			amount = 250
+			}
+		}
+}
+country_event = {
+	id = witchescommon.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event wc.2"}
+	title = "Witch T2" 
+	desc = "Witch T2" 
+	fire_only_once = no
+	is_triggered_only = yes
+option = {
+		name = "Witch T2"
+		if = { 
+			limit = { has_tech = fighter1 }
+		add_equipment_to_stockpile = {
+		type = fighter_equipment_1
+		amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = BRI }
+		}
+	}
+	option = {
+		name = "Tank T2" 
+		if = { 
+			limit = {
+				has_tech = basic_light_tank
+			}
+			add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = {
+			type = gw_tank_equipment
+			amount = 250
+			}
+		}
+	}
+	option = {
+		name = "Tank Destroyer T2" 
+			add_equipment_to_stockpile = {
+			type = light_tank_destroyer_equipment_1
+			amount = 250
+			}
+	}
+	option = {
+		name = "CAS T2" 
+			add_equipment_to_stockpile = {
+			type = CAS_equipment_1
+			amount = 250
+			}
+		}
+}
+country_event = {
+	id = witchescommon.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event wc.3"}
+	title = "Witch T3" 
+	desc = "Witch T3" 
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = "Witch T3"
+		if = { 
+			limit = { has_tech = fighter1 }
+		add_equipment_to_stockpile = {
+		type = fighter_equipment_1
+		amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = BRI }
+		}
+	}
+	option = {
+		name = "Tank T3" 
+		if = { 
+			limit = {
+				has_tech = basic_light_tank
+			}
+			add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = {
+			type = gw_tank_equipment
+			amount = 250
+			}
+		}
+	}
+	option = {
+		name = "Tank Destroyer T3" 
+			add_equipment_to_stockpile = {
+			type = light_tank_destroyer_equipment_1
+			amount = 250
+			}
+	}
+	option = {
+		name = "CAS T3" 
+			add_equipment_to_stockpile = {
+			type = CAS_equipment_1
+			amount = 250
+			}
+		}
+}
+country_event = {
+	id = witchescommon.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event wc.4"}
+	title = "Witch T4" 
+	desc = "Witch T4" 
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = "Witch T4"
+		if = { 
+			limit = { has_tech = fighter1 }
+		add_equipment_to_stockpile = {
+		type = fighter_equipment_1
+		amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = BRI }
+		}
+	}
+	option = {
+		name = "Tank T4" 
+		if = { 
+			limit = {
+				has_tech = basic_light_tank
+			}
+			add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = {
+			type = gw_tank_equipment
+			amount = 250
+			}
+		}
+	}
+	option = {
+		name = "Tank Destroyer T4" 
+			add_equipment_to_stockpile = {
+			type = light_tank_destroyer_equipment_1
+			amount = 250
+			}
+	}
+	option = {
+		name = "CAS T4" 
+			add_equipment_to_stockpile = {
+			type = CAS_equipment_1
+			amount = 250
+			}
+		}
+}
+country_event = {
+	id = witchescommon.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event wc.5"}
+	title = "Witch T5" 
+	desc = "Witch T5" 
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = "Witch T5"
+		if = { 
+			limit = { has_tech = fighter1 }
+		add_equipment_to_stockpile = {
+		type = fighter_equipment_1
+		amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = BRI }
+		}
+	}
+	option = {
+		name = "Tank T5"  
+		if = { 
+			limit = {
+				has_tech = basic_light_tank
+			}
+			add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 250
+			}
+		}
+		else = {
+		add_equipment_to_stockpile = {
+			type = gw_tank_equipment
+			amount = 250
+			}
+		}
+	}
+	option = {
+		name = "Tank Destroyer T5" 
+			add_equipment_to_stockpile = {
+			type = light_tank_destroyer_equipment
+			amount = 250
+			}
+	}
+	option = {
+		name = "CAS T5" 
+			add_equipment_to_stockpile = {
+			type = CAS_equipment_1
+			amount = 250
+			}
+		}
+	}

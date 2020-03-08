@@ -1,4 +1,10 @@
 ﻿l_english:
+    #Placeholder
+ CAT_democratic:0 "Ara Aragon" #If this makes it to release I will be disappointed and very happy
+ KAR_neutrality:0 "Karlsland"
+ OST_neutrality:0 "Ostmark"
+ GAL_neutrality:0 "Gallia"
+ RMA_neutrality:0 "Romanga"
 
  CYR_puppet_neutrality:0 "Romagnian Cyrenaica"
  CYR_puppet_neutrality_DEF:0 "Romagnian Cyrenaica"
@@ -24,7 +30,6 @@
  BLG_galpuppet_neutrality:0 "Gallian Duchy of Belgica"
  BLG_galpuppet_neutrality_DEF:0 "The Gallian Duchy of Belgica"
  BGL_galpuppet_neutrality_ADJ:0 "Gallian-Belgican"
- 
  
  
  SOU_KAR_Puppet_fanatical-paganism:0 "Ukonmaa"
@@ -390,8 +395,6 @@
  ORU_authoritarian-socialism_ADJ:0 "Orussian"
 
  
-
-
  SIR_neutrality:0 "Siamro"
  SIR_neutrality_DEF:0 "Siamro"
  SIR_neutrality_ADJ:0 "Siamro"
@@ -404,7 +407,6 @@
  SIR_democratic:0 "Siamro"
  SIR_democratic_DEF:0 "Siamro"
  SIR_democratic_ADJ:0 "Siamro"
-
 
  SOU_democratic:0 "Suomus"
  SOU_democratic_DEF:0 "Suomus"
@@ -538,17 +540,6 @@
  FACTION_NAME_UN_1:0 "The $CONTINENT_ADJ$ Powers"
  FACTION_NAME_UN_2:0 "Megagroup of $CONTINENT$"
  FACTION_NAME_UN_3:0 "The $LEADER_COUNTRY_ADJ$ Supergroup"
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  ############## GENERATED ###################
  

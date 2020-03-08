@@ -1,0 +1,266 @@
+﻿add_namespace = neuroi
+
+country_event = {
+	id = neuroi.999
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.999"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier3neuroi
+		has_tech = motorised_infantry
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.999.a
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 250
+		}
+	}
+}
+country_event = {
+	id = neuroi.998
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.998"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier2neuroi
+		has_tech = motorised_infantry
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.998.a
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 200
+		}	
+	}
+}
+country_event = {
+	id = neuroi.997
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.997"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier1neuroi
+		has_tech = motorised_infantry
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.997.a
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 150
+		}
+	}
+}
+country_event = {
+	id = neuroi.996
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.999"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier3neuroi
+		has_tech = infantry_weapons
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.999.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 500
+		}	
+	}
+}
+country_event = {
+	id = neuroi.995
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.998"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier2neuroi
+		has_tech = infantry_weapons
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.998.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 350
+		}	
+	}
+}
+country_event = {
+	id = neuroi.994
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.997"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier1neuroi
+		has_tech = infantry_weapons
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.997.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 200
+		}
+	}
+}
+country_event = {
+	id = neuroi.993
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.998"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier3neuroi
+		has_tech = gwtank
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.998.a
+		add_equipment_to_stockpile = {
+			type = gw_tank_equipment
+			amount = 40
+		}	
+	}
+}
+country_event = {
+	id = neuroi.992
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.997"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier2neuroi
+		has_tech = gwtank
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.997.a
+		add_equipment_to_stockpile = {
+			type = gw_tank_equipment
+			amount = 30
+		}
+	}
+}
+country_event = {
+	id = neuroi.991
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.997"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier1neuroi
+		has_tech = gwtank
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.997.a
+		add_equipment_to_stockpile = {
+			type = gw_tank_equipment
+			amount = 20
+		}
+	}
+}
+country_event = {
+	id = neuroi.990
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.998"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier3neuroi
+		has_tech = early_fighter
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.998.a
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 40
+		}	
+	}
+}
+country_event = {
+	id = neuroi.989
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.997"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier2neuroi
+		has_tech = early_fighter
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.997.a
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 30
+		}	
+	}
+}
+country_event = {
+	id = neuroi.988
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.997"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes ## not visible, no need for loc ##
+	fire_only_once = no
+	trigger = {
+		has_country_flag = tier1neuroi
+		has_tech = early_fighter
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = neuroi.997.a
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 20
+		}
+	}
+}

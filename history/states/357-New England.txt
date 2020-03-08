@@ -9,15 +9,15 @@ state={
 
 
 	history={
-		owner = IDK
+		owner = LIN
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
-			industrial_complex = 5
+			industrial_complex = 2
 			dockyard = 4
-			air_base = 10
+			air_base = 5
 			6732 = {
-				naval_base = 8
+				naval_base = 4
 
 			}
 			9832 = {
@@ -26,7 +26,7 @@ state={
 			}
 
 		}
-		add_core_of = IDK
+		add_core_of = LIN
 		victory_points = {
 			6732 20 
 		}
