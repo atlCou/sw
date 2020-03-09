@@ -16,10 +16,7 @@ country_event = {
 
 	option = {
 		name = karlsland.1.a
-	
 	}
-	
-	
 }
 
 
@@ -1212,13 +1209,31 @@ country_event = {
 					desc = "HHHH"
 					picture = "Rossmann.dds"
 					expire = "1965.1.1"
+					ideology = centrism
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Minna-Dietlinde Wilcke"
+					desc = "HHHH"
+					picture = "Minna.dds"
+					expire = "1965.1.1"
 					ideology = conservatism
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Gundula Rall"
+					desc = "HHHH"
+					picture = "Rall.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
 					traits = {
 					}
 				}
 				set_cosmetic_tag = KA2_saxony
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = neutrality
 				}
 			}
 		}
@@ -1379,6 +1394,163 @@ country_event = {
 	
 }
 
+
+
+
+
+#######
+# KA1
+#######
+
+add_namespace = noble
+
+
+country_event = {
+	id = noble.1
+	title = noble.1.t
+	desc = noble.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.1.a
+		add_political_power = 50
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = noble.2
+	title = noble.2.t
+	desc = noble.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.1.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = noble.3
+	title = noble.3.t
+	desc = noble.3.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.1.a
+		add_stability = 0.075
+	}
+}
+
+
+
+
+country_event = {
+	id = noble.100
+	title = noble.100.t
+	desc = noble.100.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.100.a
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_popularities = {
+			fascism = 50
+			neutrality = 30
+			communism = 20
+		}
+		add_stability = 0.2
+		add_political_power = -50
+		every_owned_state = {
+			if = {
+				limit = {
+					NOT = { state = 64 }
+				}
+				set_demilitarized_zone = yes
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+		}
+		64 = { set_demilitarized_zone = no }
+	}
+}
+
+
+
+######
+## Comrade Leader!
+######
+
+add_namespace = comradeleader
+
+country_event = {
+	id = comradeleader.1
+	title = comradeleader.1.t
+	desc = comradeleader.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = comradeleader.1.a
+		add_political_power = 50
+		if = {
+			limit = {
+				NOT = { has_government = communism }
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+		set_popularities = {
+			communism = 45
+			neutrality = 30
+			democratic = 15
+			fascism = 10
+		}
+		add_ideas = KAR_rev_militia_debuff
+	}
+	
+}
+
+country_event = {
+	id = comradeleader.10
+	title = comradeleader.10.t
+	desc = comradeleader.10.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = comradeleader.10.a
+		add_political_power = 100
+		add_manpower = -1
+		add_popularity = {
+			ideology = fascism
+			popularity = -1
+		}
+	}
+	
+}
+
 ############### 
 ### N E W S
 ###############
@@ -1458,4 +1630,71 @@ news_event = {
 			}
 		}
 	}
+}
+
+
+####
+## MISC
+####
+
+add_namespace = karmisc
+
+country_event = {
+	id = karmisc.1
+	title = karmisc.1.t
+	desc = karmisc.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karmisc.1.a
+		every_state = {
+			limit = {
+				is_core_of = KAR
+			}
+			add_to_array = { karstates = THIS }
+		}
+	}
+	
+}
+
+country_event = {
+	id = karmisc.2
+	title = karmisc.1.t
+	desc = karmisc.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = karmisc.1.a
+		every_state = {
+			limit = {
+				is_in_array = { karstates = THIS }
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	
+}
+
+country_event = {
+	id = karmisc.3
+	title = karmisc.1.t
+	desc = karmisc.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = karmisc.3.a
+		remove_ideas = KAR_stagnantkarlsland
+		remove_ideas = KAR_recoveringfromww1
+		remove_ideas = KAR_thedeathofmonarchy
+	}
+	
 }

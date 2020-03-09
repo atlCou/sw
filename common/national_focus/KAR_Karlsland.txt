@@ -27,7 +27,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 150
+			add = 15
 			original_tag = KAR 
 		}
 	
@@ -48,7 +48,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 10
+			add = 150
 			original_tag = KAR 
 		}
 	
@@ -57,6 +57,8 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 50 y = 2000 }
 
+	
+	shared_focus = KAR_comrade_leader	
 	
 }
 
@@ -71,6 +73,11 @@ focus_tree = {
 			add = 15
 			original_tag = KA1
 			has_government = neutrality
+		}
+		modifier = {
+			add = 15
+			original_tag = KA1
+			has_government = fascism
 		}
 	
 	} 

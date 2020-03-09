@@ -1,3 +1,77 @@
+KAR_border_wars = {
+
+	KAR_border_wars_decision = {
+		icon = infiltrate_state
+		allowed = {
+			OR = { 
+				tag = KAR
+				tag = KA1
+				tag = KA2
+				tag = KA3
+				tag = KA4
+				tag = KA5
+			}
+		}
+		available = {
+			FROM = {
+				any_neighbor_state = {
+					is_fully_controlled_by = ROOT
+					set_temp_variable = { var:attacker_state_temp = id }
+					#has_ROOT_at_least_1_div_in_current_state_scope = yes
+					hidden_trigger = { NOT = { has_state_flag = border_incident_active } }
+				}
+				NOT = { has_state_flag = border_incident_active }
+				set_temp_variable = { var:defender_state_temp = id }
+			}
+			NOT = { has_non_aggression_pact_with = FROM }
+		}
+		state_target = yes
+		target_array = KAR.core_states
+		target_trigger = {
+			FROM = {
+				AND = {
+					any_neighbor_state = {
+						is_fully_controlled_by = ROOT
+					}
+					NOT = { is_owned_by = ROOT }
+					is_capital = no
+				}
+			}
+		}
+		
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					any_neighbor_state = {
+						state = FROM
+					}
+					set_temp_variable = { var:attacker_temp = id }
+				}
+			}
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = var:attacker_temp
+					num_provinces = 4
+					on_win = japan_border_conflict.2
+					on_lose = japan_border_conflict.3
+					on_cancel = japan_border_conflict.4
+				}
+							
+				defender = {
+					state = FROM
+					num_provinces = 4
+					on_win = japan_border_conflict.3
+					on_lose = japan_border_conflict.2
+					on_cancel = japan_border_conflict.4
+				}
+			}
+		}
+	}
+
+}
+
+
 bohemian_revanchism = {
 
 	BHE_claiming_orussian_bohemia = {

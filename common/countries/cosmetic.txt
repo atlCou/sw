@@ -263,3 +263,8 @@ KA1_NOBLE = {
 	color_ui = rgb { 207 182 23 }
 }
 
+KA1_NOBLE_unified = {
+	color = rgb { 79 74 10 }
+	color_ui = rgb { 79 74 10 }
+}
+

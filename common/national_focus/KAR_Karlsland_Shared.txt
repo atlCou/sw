@@ -2005,13 +2005,16 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = 0
 	y = 0
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes 
 	ai_will_do = { 
 		factor = 1
 	} 
 
-	completion_reward = { 
+	completion_reward = {
+		country_event = {
+			id = noble.1
+		}
 	} 
 } 
 
@@ -2021,7 +2024,7 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = -2
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_The_Princess }
 	ai_will_do = { 
@@ -2029,6 +2032,9 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		country_event = {
+			id = noble.2
+		}
 	} 
 }
 
@@ -2037,7 +2043,7 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = 0
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_The_Princess }
 	ai_will_do = { 
@@ -2045,6 +2051,9 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		country_event = {
+			id = noble.3
+		}
 	} 
 }
 
@@ -2061,6 +2070,11 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		add_stability = 0.1
 	} 
 }
 
@@ -2136,6 +2150,90 @@ shared_focus = {
 }
 
 
+shared_focus = { 
+	id = KAR_knightly_traditions
+	icon = GFX_pagantrihorn
+	x = -2
+	y = 4
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_send_them_back }
+	prerequisite = { focus = KAR_noble_officers }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+	} 
+}
+
+shared_focus = { 
+	id = KAR_Geheimpolizei
+	icon = GFX_pagantrihorn
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_send_them_back }
+	prerequisite = { focus = KAR_noble_officers }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+	} 
+}
+
+shared_focus = { 
+	id = KAR_more_into_the_factories
+	icon = GFX_pagantrihorn
+	x = -2
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_knightly_traditions }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+	} 
+}
+
+
+
+shared_focus = { 
+	id = KAR_neocameralism
+	icon = GFX_pagantrihorn
+	x = 0
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_Geheimpolizei }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+	} 
+}
+
+shared_focus = { 
+	id = KAR_elite_universities
+	icon = GFX_pagantrihorn
+	x = -2
+	y = 5
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_knightly_traditions }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+	} 
+}
+
 ### Trood
 
 shared_focus = { 
@@ -2143,13 +2241,16 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = 6
 	y = 0
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes 
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = { 
+		country_event = {
+			id = noble.100
+		}
 	} 
 } 
 
@@ -2158,7 +2259,7 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = -2
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes 
 	relative_position_id = KAR_The_Officer
 	prerequisite = { focus = KAR_The_Officer }
@@ -2167,6 +2268,23 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_stability = 0.05
+		add_manpower = -500
+		62 = {
+			set_demilitarized_zone = no
+		}
+		68 = {
+			set_demilitarized_zone = no
+		}
+		66 = {
+			set_demilitarized_zone = no
+		}
+		67 = {
+			set_demilitarized_zone = no
+		}
+		762 = {
+			set_demilitarized_zone = no
+		}
 	} 
 }
 
@@ -2175,7 +2293,7 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = 0
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes 
 	relative_position_id = KAR_The_Officer
 	prerequisite = { focus = KAR_The_Officer }
@@ -2184,6 +2302,14 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_stability = 0.05
+		add_manpower = -500
+		86 = { set_demilitarized_zone = no }
+		63 = { set_demilitarized_zone = no }
+		85 = { set_demilitarized_zone = no } 
+		5 = { set_demilitarized_zone = no }
+		188 = { set_demilitarized_zone = no } 
+		763 = { set_demilitarized_zone = no }
 	} 
 }
 
@@ -2192,7 +2318,7 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = 2
 	y = 1
-	cost = 5
+	cost = 7
 	available_if_capitulated = yes 
 	relative_position_id = KAR_The_Officer
 	prerequisite = { focus = KAR_The_Officer }
@@ -2201,6 +2327,15 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		add_political_power = 100
 	} 
 }
 
@@ -2215,12 +2350,14 @@ shared_focus = {
 	prerequisite = { focus = KAR_and_over_the_fatherland }
 	prerequisite = { focus = KAR_to_prussia }
 	prerequisite = { focus = KAR_from_brandenburg }
+	available = { 763 = { is_demilitarized_zone = no } }
 	ai_will_do = { 
 		factor = 1
 	} 
 
-	completion_reward = { 
-	} 
+	completion_reward = {
+		add_ideas = KAR_rewrite_the_constitution_idea
+	} 	
 }
 
 shared_focus = { 
@@ -2234,11 +2371,13 @@ shared_focus = {
 	prerequisite = { focus = KAR_and_over_the_fatherland }
 	prerequisite = { focus = KAR_to_prussia }
 	prerequisite = { focus = KAR_from_brandenburg }
+	available = { 763 = { is_demilitarized_zone = no } }
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = { 
+		add_ideas = KAR_bribe_businessowners_idea
 	} 
 }
 
@@ -2257,6 +2396,7 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_ideas = KAR_karlslander_military_heritage_idea
 	} 
 }
 
@@ -2274,17 +2414,125 @@ shared_focus = {
 		factor = 1
 	} 
 
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_popularity = {
+			ideology = neutrality 
+			popularity = -0.1
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_karlslanders_in_uniform
+	icon = GFX_pagantrihorn
+	x = 1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_placate_the_old_nobility
+	prerequisite = { focus = KAR_karlslander_military_heritage }
+	prerequisite = { focus = KAR_placate_the_old_nobility }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		swap_ideas = {
+			add_idea = KAR_karlslanders_in_uniform_idea
+			remove_idea = KAR_karlslander_military_heritage_idea
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_enemies_on_both_sides
+	icon = GFX_pagantrihorn
+	x = -1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_placate_the_old_nobility
+	prerequisite = { focus = KAR_karlslander_military_heritage }
+	prerequisite = { focus = KAR_placate_the_old_nobility }
+	ai_will_do = { 
+		factor = 1
+	} 
+
 	completion_reward = { 
 	} 
 }
 
+shared_focus = { 
+	id = KAR_wenn_die_soldaten...
+	icon = GFX_pagantrihorn
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_placate_the_old_nobility
+	prerequisite = { focus = KAR_enemies_on_both_sides }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+	} 
+}
+
+
+
+shared_focus = { 
+	id = KAR_self_sustenance
+	icon = GFX_pagantrihorn
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_placate_the_old_nobility
+	prerequisite = { focus = KAR_karlslanders_in_uniform }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+	} 
+}
+
+shared_focus = { 
+	id = KAR_berlin_military_research_institute
+	icon = GFX_pagantrihorn
+	x = 1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_placate_the_old_nobility
+	prerequisite = { focus = KAR_self_sustenance }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		add_research_slot = 1
+	} 
+}
+
+
+#### foreign
 
 shared_focus = { 
 	id = KAR_supreme_order_restored
 	icon = GFX_pagantrihorn
 	x = -3
 	y = 3
-	cost = 5
+	cost = 7
 	available_if_capitulated = yes 
 	relative_position_id = KAR_The_Officer
 	prerequisite = { focus = KAR_rewrite_the_constitution focus = KAR_reshuffle_the_military }
@@ -2331,7 +2579,7 @@ shared_focus = {
 		if = {
 			limit = {
 				KA3 = {
-					exist = yes
+					exists = yes
 					has_cosmetic_tag = KA3_hamburg
 				}
 			}
@@ -2343,7 +2591,7 @@ shared_focus = {
 		if = {
 			limit = {
 				KAR = {
-					exist = yes
+					exists = yes
 					has_cosmetic_tag = KAR_comm_breakaway
 				}
 			}
@@ -2373,7 +2621,7 @@ shared_focus = {
 		if = {
 			limit = {
 				KA5 = {
-					exist = yes
+					exists = yes
 					OR = {
 						has_government = democratic
 						has_government = neutrality
@@ -2388,7 +2636,7 @@ shared_focus = {
 		if = {
 			limit = {
 				KA4 = {
-					exist = yes
+					exists = yes
 					has_government = fascism
 				}
 			}
@@ -2441,5 +2689,938 @@ shared_focus = {
 
 	completion_reward = {
 		#nothing rn
+	} 
+}
+
+#### Post-Unification
+
+
+shared_focus = { 
+	id = KAR_a_strong_karlsland
+	icon = GFX_pagantrihorn
+	x = 0
+	y = 5
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_supreme_order_restored
+	prerequisite = { focus = KAR_a_deal_with_the_witches focus = KAR_no_room_for_magocrats }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		set_cosmetic_tag = KA1_NOBLE_unified
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_purge_the_bourgeois
+	icon = GFX_pagantrihorn
+	x = -2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_a_strong_karlsland
+	prerequisite = { focus = KAR_a_strong_karlsland }
+	prerequisite = { focus = KAR_neocameralism }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_imposing_nobility
+	icon = GFX_pagantrihorn
+	x = -1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_purge_the_bourgeois
+	prerequisite = { focus = KAR_purge_the_bourgeois }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+
+	} 
+}
+
+shared_focus = { 
+	id = KAR_never_another_bauernkrieg
+	icon = GFX_pagantrihorn
+	x = 1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_purge_the_bourgeois
+	prerequisite = { focus = KAR_purge_the_bourgeois }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	
+	} 
+}
+
+shared_focus = { 
+	id = KAR_they_will_fear_us
+	icon = GFX_pagantrihorn
+	x = 0
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_purge_the_bourgeois
+	prerequisite = { focus = KAR_never_another_bauernkrieg focus = KAR_imposing_nobility }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_when_they_come
+	icon = GFX_pagantrihorn
+	x = 0
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_purge_the_bourgeois
+	prerequisite = { focus = KAR_they_will_fear_us }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_enemies_on_both_sides_again
+	icon = GFX_pagantrihorn
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_a_strong_karlsland
+	prerequisite = { focus = KAR_a_strong_karlsland }
+	prerequisite = { focus = KAR_wenn_die_soldaten...}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		set_cosmetic_tag = KA1_NOBLE_unified
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_soul_of_the_march
+	icon = GFX_pagantrihorn
+	x = -1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_enemies_on_both_sides_again
+	prerequisite = { focus = KAR_enemies_on_both_sides_again }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+
+	} 
+}
+
+shared_focus = { 
+	id = KAR_allies_in_paramilitants
+	icon = GFX_pagantrihorn
+	x = 1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_enemies_on_both_sides_again
+	prerequisite = { focus = KAR_enemies_on_both_sides_again }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	
+	} 
+}
+
+shared_focus = { 
+	id = KAR_karlsland_über_alles
+	icon = GFX_pagantrihorn
+	x = 0
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_enemies_on_both_sides_again
+	prerequisite = { focus = KAR_soul_of_the_march focus = KAR_allies_in_paramilitants }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_let_them_come
+	icon = GFX_pagantrihorn
+	x = 0
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_enemies_on_both_sides_again
+	prerequisite = { focus = KAR_karlsland_über_alles }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+###########
+#### COMRADE LEADER (ADELHEID)
+###########
+
+shared_focus = { 
+	id = KAR_comrade_leader
+	icon = GFX_KAR_comrade_leader_icon
+	x = 8
+	y = 0
+	cost = 5
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = comradeleader.1
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_seize_the_railways
+	icon = GFX_Star_SEIZE
+	x = -1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leader
+	prerequisite = { focus = KAR_comrade_leader }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_stability = 0.05
+		every_owned_state = {
+			limit = {
+				is_core_of = KAR
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_and_the_factories
+	icon = GFX_Star_Unions
+	x = -1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leader
+	prerequisite = { focus = KAR_seize_the_railways }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_stability = 0.1
+		42 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		794 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		51 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_From_a_Revolutionary_Milita...
+	icon = GFX_Star_Rifle
+	x = 1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leader
+	prerequisite = { focus = KAR_comrade_leader }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = KAR_rev_militia_debuff_2
+			remove_idea = KAR_rev_militia_debuff
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_to_an_army
+	icon = GFX_Star_Soldiers
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leader
+	prerequisite = { focus = KAR_From_a_Revolutionary_Milita... }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = KAR_rev_militia_debuff_3
+			remove_idea = KAR_rev_militia_debuff_2
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_comrade_leaders_spring_cleaning
+	icon = GFX_Star_Boot
+	x = 0
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leader
+	prerequisite = { focus = KAR_to_an_army }
+	prerequisite = { focus = KAR_and_the_factories }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_stability = 0.1
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_nationalize_it_all
+	icon = GFX_Star_Control
+	x = -2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_comrade_leaders_spring_cleaning }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		55 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		794 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		51 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_guns_for_the_front
+	icon = GFX_Star_Rifle
+	x = -3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_nationalize_it_all }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		42 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+			producer = KAR
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_fighting_for_leader
+	icon = GFX_KAR_fight_for_leida
+	x = -2
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_guns_for_the_front }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_fighting_for_leader_idea
+	} 
+}
+
+shared_focus = { 
+	id = KAR_comrade_leaders_vanguard
+	icon = GFX_goal_support_communism
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_comrade_leaders_spring_cleaning }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_comrade_leaders_vanguard_idea
+	} 
+}
+
+shared_focus = { 
+	id = KAR_democratic_centralism
+	icon = GFX_focus_generic_soviet_politics
+	x = -1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_comrade_leaders_vanguard }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_political_power = 50
+		swap_ideas = {
+			add_idea = KAR_comrade_leaders_vanguard_idea_2
+			remove_idea = KAR_comrade_leaders_vanguard_idea
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_industrial_democracy
+	icon = GFX_KAR_seizeecon
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_comrade_leaders_vanguard }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_industrial_democracy_idea
+	} 
+}
+
+shared_focus = { 
+	id = KAR_rampant_propaganda
+	icon = GFX_Soviet_Propaganda
+	x = 0
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_industrial_democracy }
+	prerequisite = { focus = KAR_democratic_centralism }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_war_support = 0.1
+		add_stability = 0.1
+		add_political_power = 50
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	} 
+}
+
+
+shared_focus = { 
+	id = KAR_reactionaries_everywhere
+	icon = GFX_Star_Sword
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_comrade_leaders_spring_cleaning }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_timed_idea = {
+			idea = KAR_reactionaries_everywhere_idea
+			days = 180
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_uplift_the_workers
+	icon = GFX_goal_generic_war_with_comintern
+	x = 3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_reactionaries_everywhere }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		set_country_flag = KAR_border_wars_flag
+		custom_effect_tooltip = KAR_uplift_the_workers_tooltip
+	} 
+}
+
+shared_focus = { 
+	id = KAR_more_production
+	icon = GFX_goal_generic_soviet_construction
+	x = 2
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	available = { OR = { owns_state = 56 owns_state = 59 owns_state = 799 owns_state = 60 owns_state = 54  } }
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	prerequisite = { focus = KAR_uplift_the_workers }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		if = {
+			limit = {
+				owns_state = 56
+			}
+			56 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owns_state = 59
+			}
+			59 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owns_state = 799
+			}
+			799 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owns_state = 60
+			}
+			60 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owns_state = 54
+			}
+			54 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_bringing_it_together
+	icon = GFX_focus_ger_great_red_menace
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_comrade_leaders_spring_cleaning
+	available = {
+		all_state = {
+			OR = {
+				AND = {
+					is_core_of = KAR
+					is_owned_by = ROOT
+				}
+				NOT = { is_core_of = KAR }
+				state = 153
+				state = 39
+				state = 793
+			}
+		}
+	}
+	prerequisite = { focus = KAR_more_production }
+	prerequisite = { focus = KAR_fighting_for_leader }
+	prerequisite = { focus = KAR_rampant_propaganda }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		set_cosmetic_tag = KAR_comrade_unified
+		add_stability = 0.1
+		add_political_power = 150
+	} 
+}
+
+shared_focus = { 
+	id = KAR_unfinished_business
+	icon = GFX_KAR_finish_rudel
+	x = -2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_bringing_it_together }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = comradeleader.10
+		}	
+	} 
+}
+
+shared_focus = { 
+	id = KAR_cement_the_synthesis
+	icon = GFX_focus_generic_join_comintern
+	x = -2
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_unfinished_business }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.05
+	} 
+}
+
+shared_focus = { 
+	id = KAR_seize_whats_left
+	icon = GFX_goal_generic_soviet_construction
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_bringing_it_together }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				NOT = {
+					OR = { 
+						state = 42
+						state = 55
+						state = 57
+						state = 51
+						state = 794
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				NOT = {
+					OR = { 
+						state = 42
+						state = 55
+						state = 57
+						state = 51
+						state = 794
+					
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				NOT = {
+					OR = { 
+						state = 42
+						state = 55
+						state = 57
+						state = 51
+						state = 794
+					
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_needs_and_abilities
+	icon = GFX_focus_prc_agrarian_socialism
+	x = 0
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_seize_whats_left }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_needs_and_abilities_idea
+	} 
+}
+
+shared_focus = { 
+	id = KAR_balance_education
+	icon = GFX_focus_generic_socialist_science
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_needs_and_abilities }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_balance_education_idea
+	} 
+}
+
+shared_focus = { 
+	id = KAR_leaders_universities
+	icon = GFX_leader_schools
+	x = 1
+	y = 3
+	cost = 10
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_needs_and_abilities }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_research_slot = 2
+	} 
+}
+
+shared_focus = { 
+	id = KAR_internationalism
+	icon = GFX_focus_spr_anarchism_knows_no_borders
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_bringing_it_together }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		if = { 
+			limit = {
+				GAL = { has_government = communism }
+			}
+			# do stuff
+		}
+		create_faction = "Socialist Union"
+	} 
+}
+
+shared_focus = { 
+	id = KAR_fighting_internationally
+	icon = GFX_generic_proletariat
+	x = 2
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_internationalism }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_state_distributed_paper_bags
+	icon = GFX_Star_Hands
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes 
+	relative_position_id = KAR_bringing_it_together
+	prerequisite = { focus = KAR_fighting_internationally }
+	prerequisite = { focus = KAR_balance_education focus = KAR_leaders_universities }
+	prerequisite = { focus = KAR_cement_the_synthesis }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
 	} 
 }

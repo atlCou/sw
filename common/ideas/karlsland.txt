@@ -286,6 +286,169 @@ ideas = {
 		
 		}
 		
+		
+		#### NOBLE
+		
+		
+		KAR_rewrite_the_constitution_idea = {
+			
+			picture = GAL_mon_prop
+			
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.05
+			}
+		
+		}
+		
+		
+		KAR_bribe_businessowners_idea = {
+		
+			picture = generic_industrial_concern_1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.075
+			}
+		}
+		
+		KAR_karlslander_military_heritage_idea = {
+		
+			picture = german_advisors
+			
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		
+		KAR_karlslanders_in_uniform_idea = {
+		
+			picture = german_advisors
+			
+			modifier = {
+				conscription_factor = 0.1
+				conscription = 0.05
+			}
+		}
+		
+		
+		KAR_rev_militia_debuff = {
+		
+			picture = home_of_revolution
+		
+			modifier = {
+				army_org_factor = -0.3
+				army_morale_factor = -0.2
+				training_time_army_factor = 0.25
+				army_attack_factor = 0.15
+			}
+		
+		}
+		
+		KAR_rev_militia_debuff_2 = {
+		
+			picture = home_of_revolution
+		
+			modifier = {
+				army_org_factor = -0.2
+				army_morale_factor = -0.05
+				training_time_army_factor = 0.1
+				army_attack_factor = 0.125
+			}
+		
+		}
+		
+		KAR_rev_militia_debuff_3 = {
+		
+			picture = home_of_revolution
+		
+			modifier = {
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		
+		}
+		
+		KAR_fighting_for_leader_idea = {
+		
+			picture = generic_communist_army
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_morale_factor = 0.05
+				army_defence_factor = 0.05
+			}
+			
+		}
+		
+		KAR_comrade_leader's_vanguard_idea = {
+			
+			picture = por_iberian_workers_united
+			
+			modifier = {
+				communism_drift = 0.05
+				war_support_factor = 0.05
+			}
+		
+		}
+		
+		KAR_comrade_leader's_vanguard_idea_2 = {
+			
+			picture = por_iberian_workers_united
+			
+			modifier = {
+				communism_drift = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+			}
+		
+		}
+		
+		KAR_industrial_democracy_idea = {
+			
+			picture = eng_spirit_of_the_industrial_revolution
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		
+		}
+		
+		KAR_reactionaries_everywhere_idea = {
+		
+			picture = generic_communist_army
+			
+			targeted_modifier = { tag = KA1 attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = KA2 attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = KA3 attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = KA4 attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = KA5 attack_bonus_against = 0.1 }
+			
+		}
+		
+		KAR_needs_and_abilities_idea = {
+		
+			picture = por_iberian_workers_united
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		
+		}
+		
+		KAR_balance_education_idea = {
+		
+			picture = trotskyite_plot_purged
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		
+		}
+		
+		
 	}
 
 

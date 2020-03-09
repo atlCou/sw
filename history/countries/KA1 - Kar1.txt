@@ -32,7 +32,7 @@ create_country_leader = {
 	desc = "HHHH"
 	picture = "Gertrud_Barkhorn.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = fascism_ideology
 	traits = {
 	}
 }

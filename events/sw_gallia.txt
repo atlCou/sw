@@ -1,4 +1,4 @@
-﻿#################### temporary
+#################### temporary
 add_namespace = galw
 
 country_event = {
@@ -64,7 +64,7 @@ country_event =  {
 	option = {
 		name = gallia.1.a
 		ai_chance = {
-			base = 50
+			factor = 50
 		}
 		hidden_effect = {
 			country_event = {
@@ -89,18 +89,18 @@ country_event = {
     #### slight left ######
 	option = {
 		name = gallia.2.a
-			if = { 
-				limit = { 
-					is_historical_focus_on = yes
-				}
-				ai_chance = { base = 144 }
-			}
-			if = { 
-				limit = { 
-					is_historical_focus_on = no
-				}
-				ai_chance { base = 50 }
-			}
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = yes
+				# }
+				# ai_chance = { base = 144 }
+			# }
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = no
+				# }
+				# ai_chance { base = 50 }
+			# }
 				
 		hidden_effect = {
 			country_event = {
@@ -117,18 +117,18 @@ country_event = {
 	#### right-wing #####
 		option = {
 		name = gallia.2.b
-			if = { 
-				limit = { 
-					is_historical_focus_on = yes
-				}
-				ai_chance = { base = 0 }
-			}
-			if = { 
-				limit = { 
-					is_historical_focus_on = no
-				}
-				ai_chance { base = 50 }
-			}
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = yes
+				# }
+				# ai_chance = { base = 0 }
+			# }
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = no
+				# }
+				# ai_chance { base = 50 }
+			# }
 		hidden_effect = {
 			country_event = {
 				id = gallia.3
@@ -187,18 +187,18 @@ country_event = {
     #### slight right ######
 	option = {
 		name = gallia.3.a
-			if = { 
-				limit = { 
-					is_historical_focus_on = yes
-				}
-				ai_chance = { base = 144 }
-			}
-			if = { 
-				limit = { 
-					is_historical_focus_on = no
-				}
-				ai_chance { base = 50 }
-			}
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = yes
+				# }
+				# ai_chance = { base = 144 }
+			# }
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = no
+				# }
+				# ai_chance { base = 50 }
+			# }
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -213,18 +213,18 @@ country_event = {
 	#### left-wing #####
 		option = {
 		name = gallia.3.b
-			if = { 
-				limit = { 
-					is_historical_focus_on = yes
-				}
-				ai_chance = { base = 0 }
-			}
-			if = { 
-				limit = { 
-					is_historical_focus_on = no
-				}
-				ai_chance { base = 50 }
-			}
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = yes
+				# }
+				# ai_chance = { base = 0 }
+			# }
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = no
+				# }
+				# ai_chance { base = 50 }
+			# }
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -265,25 +265,22 @@ country_event = {
 	fire_only_once = yes
 
 	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 3 }
-
 
     #### slight right ######
 	option = {
 		name = gallia.4.a
-			if = { 
-				limit = { 
-					is_historical_focus_on = yes
-				}
-				ai_chance = { base = 144 }
-			}
-			if = { 
-				limit = { 
-					is_historical_focus_on = no
-				}
-				ai_chance { base = 50 }
-			}
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = yes
+				# }
+				# ai_chance = { base = 144 }
+			# }
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = no
+				# }
+				# ai_chance { base = 50 }
+			# }
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.06
@@ -297,18 +294,18 @@ country_event = {
 	#### left-wing #####
 		option = {
 		name = gallia.4.b
-			if = { 
-				limit = { 
-					is_historical_focus_on = yes
-				}
-				ai_chance = { base = 0 }
-			}
-			if = { 
-				limit = { 
-					is_historical_focus_on = no
-				}
-				ai_chance { base = 50 }
-			}
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = yes
+				# }
+				# ai_chance = { base = 0 }
+			# }
+			# if = { 
+				# limit = { 
+					# is_historical_focus_on = no
+				# }
+				# ai_chance { base = 50 }
+			# }
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.04
@@ -419,8 +416,7 @@ country_event = {
 			id = gallia.11
 			days = 3
 		}
-		set_variable = { PS = party_popularity@progressivism }
-		add_to_variable = { PS = party_popularity@communism }
+		set_variable = { PS = party_popularity@communism }
 	}
 }
 
@@ -459,25 +455,12 @@ country_event = {
 				check_variable = { GAL_prog > GAL_liberal }
 			} 
 		}
-		add_popularity = { ideology = communism popularity = 0.15 }
+		add_popularity = { ideology = communism popularity = 0.1 }
 		add_stability = 0.03
 		set_country_flag = GAL_socdem
 		set_country_flag = GAL_wentsocdem
 		set_country_flag = GAL_1936gallianelections
 		complete_national_focus = GAL_1936elections
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-		}
-		create_country_leader = {
-			name = "Perrine H. Clostermann"
-			desc = "POLITICS_MAURICE_THOREZ_DESC"
-			picture = "Perrine H Clostermann.dds"
-			expire = "1965.1.1"
-			ideology = democratic_socialism
-			traits = {
-			}
-		}
 	}
 	option = {
 		name = gallia.11.c
@@ -939,7 +922,7 @@ country_event = {
 			}
 			modifier = {
 				KAR = {
-					has_government = fanatical-paganism
+					has_government = fascism
 				}
 				add = 50
 			}
@@ -966,7 +949,7 @@ country_event = {
 			modifier = {
 				NOT = {
 					KAR = {
-						has_government = fanatical-paganism
+						has_government = fascism
 					}
 				}
 				add = -50
@@ -1216,7 +1199,7 @@ country_event = {
 	option = {
 		name = gallia.1000.a
 		ai_chance = {
-			add = 1
+			base = 1
 		}
 		give_guarantee = GAL
 		GAL = {
@@ -1231,7 +1214,7 @@ country_event = {
 	option = {
 		name = gallia.1000.b
 		ai_chance = {
-			add = 0
+			base = 0
 		}
 		GAL = {
 			country_event = {
@@ -1294,57 +1277,7 @@ country_event = {
 				name = "Fernandia Malvezzi"
 				picture = "Fernandia Malvezzi.dds"
 				expire = "1965.1.1"
-				ideology = communism_type
-				traits = {
-					#
-				}
-			}
-
-			create_country_leader = {
-				name = "Fernandia Malvezzi"
-				picture = "Fernandia Malvezzi.dds"
-				expire = "1965.1.1"
-				ideology = anarchist_socialism
-				traits = {
-					#
-				}
-			}
-
-			create_country_leader = {
-				name = "Fernandia Malvezzi"
-				picture = "Fernandia Malvezzi.dds"
-				expire = "1965.1.1"
-				ideology = liberal_socialism
-				traits = {
-					#
-				}
-			}
-
-			create_country_leader = {
-				name = "Fernandia Malvezzi"
-				picture = "Fernandia Malvezzi.dds"
-				expire = "1965.1.1"
-				ideology = social_democracy
-				traits = {
-					#
-				}
-			}
-
-			create_country_leader = {
-				name = "Fernandia Malvezzi"
-				picture = "Fernandia Malvezzi.dds"
-				expire = "1965.1.1"
-				ideology = parlimentary_republicanism
-				traits = {
-					#
-				}
-			}
-
-			create_country_leader = {
-				name = "Fernandia Malvezzi"
-				picture = "Fernandia Malvezzi.dds"
-				expire = "1965.1.1"
-				ideology = social_conservatism
+				ideology = marxism
 				traits = {
 					#
 				}

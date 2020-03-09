@@ -48,3 +48,10 @@ battle_for_suomus = {
 		}
 	}
 }
+
+KAR_border_wars = {
+	icon = decision_category_generic
+	available = {
+		has_country_flag = KAR_border_wars_flag
+	}
+}

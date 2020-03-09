@@ -56,22 +56,43 @@ KA3_hamburg_democratic_ADJ:0 "Hannover"
 KA3_democratic_party:0 "SPD"
 
 
-KA2_saxony_democratic:0 "Magocacy of Saxony"
+KA2_saxony_democratic:0 "Magocracy of Saxony"
 KA2_saxony_democratic_DEF:0 "Saxony"
 KA2_saxony_democratic_ADJ:0 "Saxon"
-KA2_democratic_party:0 "Crisis Council"
+KA2_saxony_fascism:0 "Magocracy of Saxony"
+KA2_saxony_fascism_DEF:0 "Saxony"
+KA2_saxony_fascism_ADJ:0 "Saxon"
+KA2_saxony_neutrality:0 "Magocracy of Saxony"
+KA2_saxony_neutrality_DEF:0 "Saxony"
+KA2_saxony_neutrality_ADJ:0 "Saxon"
+KA2_neutrality_party:0 "Rossman's Circle"
+KA2_democratic_party:0 "Wilcke's Circle"
+KA2_fascism_party:0 "Rall's Circle"
+KA2_communism_party:0 "Heinrike's Happy Fun Circle of Sharing"
 
 
-KA1_NOBLE_neutrality:0 "Karlsländisches Junkerreich"
-KA1_NOBLE_neutrality_DEF:0 "East Karlsland"
+KA1_NOBLE_neutrality:0 "Karlsländische Adelsregierung"
+KA1_NOBLE_neutrality_DEF:0 "the Karlsländische Adelsregierung"
 KA1_NOBLE_neutrality_ADJ:0 "Eastern Karlslander"
 KA1_neutrality_party_long:0 "Council of Nobles and Junkers"
 KA1_neutrality_party:0 "Noble Council"
+KA1_fascism_party:0 "Militärjunta"
+KA1_fascism:0 "Karlsländische Militärregierung"
+
+KA1_NOBLE_unified_neutrality:0 "Karlsländische Fürstenbund"
+KA1_NOBLE_unified_neutrality_DEF:0 "the Karlsländische Fürstenbund"
+KA1_NOBLE_unified_fascism:0 "Karlslander Staat"
+KA1_NOBLE_unified_fascism_DEF:0 "the Karlslander Staat"
+KA1_NOBLE_unified_neutrality_ADJ:0 "Karlslander"
+KA1_NOBLE_unified_fascism_ADJ:0 "Karlslander"
 
 
 KAR_comm_breakaway:0 "Rhinelandic Commune"
 KAR_comm_breakaway_DEF:0 "The Rhinelandic Commune"
 KAR_comm_breakaway_ADJ:0 "Rhinelandic"
+KAR_comrade_unified_communism:0 "Räterepublik Karlsland"
+KAR_comrade_unified_communism_DEF:0 "the Räterepublik Karlsland"
+KAR_comrade_unified_communism_ADJ:0 "Karlslander"
 
 
 #########################################
@@ -145,7 +166,9 @@ KAR_thekarlslanddeal_desc:0 "Although we disliked them, the radicals were right 
 
 KAR_economic_recovery_act:0 "Economic Recovery Act"
 
-
+################################
+################ PAGAN TREE
+################################
 KAR_a_new_day_for_karlslanders:0 "A New Day for Karlslanders"
 KAR_burn_the_books:0 "Burn the Books!"
 KAR_burn_the_churches:0 "And Their Churches Too!"
@@ -156,10 +179,40 @@ KAR_and_propaganda:0 "§GA Concept Reborn§!"
 
 
 
+################################
+################ COMRADE LEADER TREE
+################################
 
+KAR_comrade_leader:0 "§RComrade Leader!§!"
+KAR_seize_the_railways:0 "Seize the Railways"
+KAR_and_the_factories:0 "And The Factories Too"
+KAR_From_a_Revolutionary_Milita...:0 "From a\nRevolutionary Milita..."
+KAR_to_an_army:0 "...to An Army"
+KAR_comrade_leaders_spring_cleaning:0 "Comrade Leader's\nSpring Cleaning"
+KAR_nationalize_it_all:0 "Nationalize it All"
+KAR_guns_for_the_front:0 "Guns for the Front"
+KAR_fighting_for_leader:0 "Fighting for Comrade Leader!"
+KAR_comrade_leaders_vanguard:0 "Comrade Leader's Vanguard"
+KAR_democratic_centralism:0 "Democratic Centralism"
+KAR_industrial_democracy:0 "Industrial Democracy"
+KAR_rampant_propaganda:0 "Rampant Propaganda"
+KAR_reactionaries_everywhere:0 "Reactionaries Everywhere"
+KAR_uplift_the_workers:0 "Uplift the Workers!"
+KAR_uplift_the_workers_tooltip:0 "Will unlock §Ydecisions§! to start §Yborder wars§! for Karlslander states."
+KAR_more_production:0 "More Production"
+KAR_bringing_it_together:0 "Bringing Karlsland Together"
+KAR_unfinished_business:0 "§gUnfinished Business...§!"
+KAR_unfinished_business_desc:0 "Now that Comrade Leader has control of every inch of Karlsland, an old friend won't be able to escape this time..."
+KAR_cement_the_synthesis:0 "Cementing the Synthesis"
+KAR_seize_whats_left:0 "Seize What's Left"
+KAR_needs_and_abilities:0 "'Needs and Abilities'"
+KAR_internationalism:0 "Internationalism"
+KAR_fighting_internationally:0 "Fighting Internationally"
+KAR_balance_education:0 "Balance Education"
+KAR_leaders_universities:0 "Leader's Universities"
 
-
-
+KAR_state_distributed_paper_bags:0 "State Distributed Paper Bags"
+KAR_state_distributed_paper_bags_desc:0 "Ade-...Comrade Leader's iconic paper bag has become the envy of Karlslanders from Königsberg to Stuttgart, with many factories being unable to meet the constantly increasing demand! No worry, we will direct more production towards the manufacturing of paper bags so that every Karlslander can don the iconic garment of our glorious Comrade Leader!"
 
 
 
@@ -195,6 +248,35 @@ garbage:0 "move that line down"
  karlslandnews.100.b:0 "Romagna will fall!"
  karlslandnews.100.c:0 "We'll see to it that these heretics submit."
  
+
+
+
+############ NOBLE/TROOD EVENTS
+
+ noble.1.t:0 "The Princess"
+ noble.1.d:0 "The original heart of Karlsland, Prussia, stands in the hands of the old nobility. Guided by the leadership of a noble witch, whose claims lay outside the political boundaries she's found herself in, the old nobility have used their combined political influence and military prowess to seize what executive institutions still exist.\nPrincess Heinrike has never held an affinity towards commoners. Even in service she struggled to cooperate with her comrades who came from free and personal farms, or a bourgeois private city life. There's nothing that would make her happier than seeing the masses, once serving under the traditional leadership of the nobility, turn away from liberalism and return to their estates. Even if that requires force - a lot of it."
+ noble.1.a:0 "Sounds rather depressing..."
+ noble.2.t:0 "Council of Nobles"
+ noble.2.d:0 "A large group of well dressed Karlslanders were gathered in the Reichstag. It was a largely unorganized gathering, started by Heinrike in order to decide what the goals of the new state would be. The unorganized nature of the meeting, not helped by the youthfulness of many of the nobles, gave rise to more radical discussion. In the end, the group of young nobles had decided that the old Karlslander system was not enough - they wanted to truly assert themselves as the rulers of a new Karlsland, free from any interference to their power above or below:\n\nFears of everything from liberalism, revolution, and fervent religious nationalism were spread throughout the meeting; and the new government was to inherently prevent these strains of thought from ever finding themselves in the minds of the citizenry. The nobility, and the nobility alone, were to decide the fate of their subject estates. The Princess, adressing the group with a smile, said, 'Soon, we will never again have to subjegate our own successes to those unnatural triumphs of the commoner.'"
+ noble.2.a:0 "What about the Kaiser?"
+ noble.3.t:0 "Extraditing the Kaiser"
+ noble.3.d:0 "Kaiser Frederick IV, though still a popular figure to much of the public, was apprehended by supporters of the Noble Council yesterday. Without much hesitation, Heinrike had her former leader sent on a passanger train straight to the Low Countries, where he would be held by Gallian loyalists to prevent any attempts at reasserting his throne. Of course, some Karlslanders weren't pleased with a removal of Frederick IV. Without proper leadership in east Karlsland, however, they're unlikely to pose a well organized threat."
+ noble.3.a:0 "Good."
+
+ noble.100.t:0 "The Officer"
+
+############# COMRADE LEADER events
+ 
+ comradeleader.1.t:0 "Comrade Leader!"
+ comradeleader.1.a:0 "Why is she wearing a bag on her head?"
+ comradeleader.10.t:0 "Unfinished Business"
+ comradeleader.10.a:0 "Oh."
+ 
+ 
+ 
+ ######
+ KAR_border_wars_decision:0 "Fight [From.Owner.GetNameDef] for [From.GetName]"
+ KAR_border_wars:0 "Pecking at Karlsland"
  
 ########### Baltland tree ########
 GEN_rallying:0 "Rallying the Nation"

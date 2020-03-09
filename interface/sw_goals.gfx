@@ -335,6 +335,38 @@ spriteTypes = {
 		name = "GFX_OST_dacian_subversion"
 		texturefile = "gfx/interface/goals/OST_dacian_subversion.dds"
 	}
+	SpriteType = {
+		name = "GFX_KAR_comrade_leader_icon"
+		texturefile = "gfx/interface/goals/KAR_comrade_leader_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_Star_Soldiers"
+		texturefile = "gfx/interface/goals/Star_Soldiers.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_fight_for_leida"
+		texturefile = "gfx/interface/goals/KAR_fight_for_leida.dds"
+	}
+	SpriteType = {
+		name = "GFX_Soviet_Propaganda"
+		texturefile = "gfx/interface/goals/Soviet_Propaganda.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_finish_rudel"
+		texturefile = "gfx/interface/goals/KAR_finish_rudel.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_proletariat"
+		texturefile = "gfx/interface/goals/generic_proletariat.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_schools"
+		texturefile = "gfx/interface/goals/generic_schools.dds"
+	}
+	SpriteType = {
+		name = "GFX_leader_schools"
+		texturefile = "gfx/interface/goals/leader_schools.dds"
+	}
 }
 
 
