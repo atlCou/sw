@@ -117,18 +117,6 @@ country_event = {
 	#### right-wing #####
 		option = {
 		name = gallia.2.b
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = yes
-				# }
-				# ai_chance = { base = 0 }
-			# }
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = no
-				# }
-				# ai_chance { base = 50 }
-			# }
 		hidden_effect = {
 			country_event = {
 				id = gallia.3
@@ -173,32 +161,18 @@ country_event = {
 	title = gallia.3.t
 	desc = gallia.3.d
 	picture = GFX_report_event_generic_rally
-
 	fire_only_once = yes
-
 	immediate = {
 		country_event = {
 			id = gallia.4
 			days = 15
 		}
 	}
-	
 	is_triggered_only = yes
     #### slight right ######
 	option = {
 		name = gallia.3.a
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = yes
-				# }
-				# ai_chance = { base = 144 }
-			# }
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = no
-				# }
-				# ai_chance { base = 50 }
-			# }
+
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -213,18 +187,7 @@ country_event = {
 	#### left-wing #####
 		option = {
 		name = gallia.3.b
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = yes
-				# }
-				# ai_chance = { base = 0 }
-			# }
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = no
-				# }
-				# ai_chance { base = 50 }
-			# }
+
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -240,7 +203,6 @@ country_event = {
 		option = {
 		name = gallia.3.c
 		ai_chance = { base = 0 }
-
 		add_popularity = {
 			ideology = communism
 			popularity = 0.05
@@ -261,26 +223,13 @@ country_event = {
 	title = gallia.4.t
 	desc = gallia.4.d 
 	picture = GFX_report_event_generic_rally2
-
 	fire_only_once = yes
-
 	is_triggered_only = yes
+	mean_time_to_happen = { days = 3 }
 
     #### slight right ######
 	option = {
 		name = gallia.4.a
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = yes
-				# }
-				# ai_chance = { base = 144 }
-			# }
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = no
-				# }
-				# ai_chance { base = 50 }
-			# }
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.06
@@ -294,18 +243,6 @@ country_event = {
 	#### left-wing #####
 		option = {
 		name = gallia.4.b
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = yes
-				# }
-				# ai_chance = { base = 0 }
-			# }
-			# if = { 
-				# limit = { 
-					# is_historical_focus_on = no
-				# }
-				# ai_chance { base = 50 }
-			# }
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.04
