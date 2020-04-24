@@ -258,6 +258,16 @@ KA2_saxony = {
 	color_ui = rgb { 91 130 97 }
 }
 
+KA2_KA1_Puppet = {
+	color = rgb { 207 182 23 }
+	color_ui = rgb { 207 182 23 }
+}
+
+KA2_KA1_Puppet_Unified = {
+	color = rgb { 79 74 10 }
+	color_ui = rgb { 79 74 10 }
+}
+
 KA1_NOBLE = {
 	color = rgb { 207 182 23 }
 	color_ui = rgb { 207 182 23 }

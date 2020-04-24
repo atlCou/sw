@@ -69,7 +69,18 @@ KA2_neutrality_party:0 "Rossman's Circle"
 KA2_democratic_party:0 "Wilcke's Circle"
 KA2_fascism_party:0 "Rall's Circle"
 KA2_communism_party:0 "Heinrike's Happy Fun Circle of Sharing"
-
+KA2_KA1_Puppet_fascism:0 "Magocracy of Saxony"
+KA2_KA1_Puppet_fascism_DEF:0 "Saxony"
+KA2_KA1_Puppet_fascism_ADJ:0 "Saxon"
+KA2_KA1_Puppet_neutrality:0 "Magocracy of Saxony"
+KA2_KA1_Puppet_neutrality_DEF:0 "Saxony"
+KA2_KA1_Puppet_neutrality_ADJ:0 "Saxon"
+KA2_KA1_Puppet_Unified_fascism:0 "Magocracy of Saxony"
+KA2_KA1_Puppet_Unified_fascism_DEF:0 "Saxony"
+KA2_KA1_Puppet_Unified_fascism_ADJ:0 "Saxon"
+KA2_KA1_Puppet_Unified_neutrality:0 "Magocracy of Saxony"
+KA2_KA1_Puppet_Unified_neutrality_DEF:0 "Saxony"
+KA2_KA1_Puppet_Unified_neutrality_ADJ:0 "Saxon"
 
 KA1_NOBLE_neutrality:0 "Karlsländische Adelsregierung"
 KA1_NOBLE_neutrality_DEF:0 "the Karlsländische Adelsregierung"
@@ -177,6 +188,63 @@ KAR_a_new_police:0 "Odin's Arm"
 KAR_a_purge:0 "Revolution's Blót"
 KAR_and_propaganda:0 "§GA Concept Reborn§!"
 
+KAR_clean_ranks:0 "Clean The Ranks"
+KAR_clean_ranks_desc:0 "There are still some who won’t follow Rudel. Those who saw the way she fought against the Neuroi years ago and now refuse to put on their boots and march behind the witch that saved Karlsland. Those who call the traditional Karlslander ways “heathenism”. Even those who once sat on the council now claim Rudel’s autocratic tendencies will lead only to human conflict."
+KAR_the_runes_talk:0 "The Runes Speak"
+KAR_the_runes_talk_desc:0 "It was then that she understood. Understood why she led Karlsland now, why, out of so many other possible directions and candidates and opportunities, she was the one chosen to lead. She had a duty to Karlslanders, throughout every dimension of time, to restore the greatness of their people and the knowledge that was lost."
+
+###############################
+############### NOBLE/TROOD TREE AND IDEAS
+###############################
+
+KAR_The_Princess:0 "§YThe Princess§!"
+KAR_gather_the_nobles:0 "Gather the Nobles"
+KAR_move_the_kaiser:0 "Move the Kaiser"
+KAR_clean_the_government:0 "Clean the Government"
+KAR_the_old_estates:0 "The Old Estates"
+KAR_reshuffle_the_military:0 "Reshuffle the Military"
+KAR_send_them_back:0 "Send Them Back"
+KAR_noble_officers:0 "Noble Officers"
+KAR_knightly_traditions:0 "Knightly Traditions"
+KAR_elite_universities:0 "Elite Universities"
+KAR_more_into_the_factories:0 "More Into the Factories"
+KAR_Geheimpolizei:0 "Geheimpolizei"
+KAR_neocameralism:0 "New Cameralism"
+
+KAR_The_Officer:0 "§gThe Officer§!"
+KAR_from_brandenburg:0 "From Brandenburg..."
+KAR_to_prussia:0 "...To Prussia..."
+KAR_and_over_the_fatherland:0 "...And Over The Fatherland!"
+KAR_rewrite_the_constitution:0 "Rewrite the Constitution"
+KAR_rewrite_the_constitution_desc:0 "To maintain so semblence of legality, we can rewrite the Karlslander constitution to replace both national councils with a hand selected staff of military leaders. Maybe, in time, we'll restore the original..."
+KAR_bribe_businessowners:0 "Bribe Businessowners"
+KAR_karlslander_military_heritage:0 "Karlslander Military Heritage"
+KAR_placate_the_old_nobility:0 "Placate the Old Nobility"
+KAR_karlslanders_in_uniform:0 "Karlslanders In Uniform"
+KAR_self_sustenance:0 "Self Sustenance"
+KAR_berlin_military_research_institute:0 "Berlin Military Research Institute"
+KAR_enemies_on_both_sides:0 "Enemies on Both Sides..."
+KAR_wenn_die_soldaten...:0 "Wenn die Soldaten..."
+
+KAR_supreme_order_restored:0 "Supreme Order Restored"
+KAR_supreme_order_restored_desc:0 "Finally, with the consolidation of our regime and the nation united under us, we can claim to have stabilized the original lands of a united Karlsland under the guidance of [KA1.GetLeader]. The annoying occultists are working as they should be, and the [KA1.GetRulingParty] has cemented their regime away from the grabby hands of its desenters."
+KAR_no_time_for_realpolitik:0 "No Time for Realpolitik!"
+KAR_no_time_for_realpolitik_desc:0 "There's no time for diplomacy, trickery, and alliance building. Europe is against us, and only with the united might of Karlsland, gained through blood and iron, can we become strong enough to ward the enemy off."
+KAR_disloyal_south:0 "The Disloyal South"
+KAR_smash_the_socialists:0 "Smash the Socialists"
+KAR_a_deal_with_the_witches:0 "The Magocratic Experiment"
+KAR_no_room_for_magocrats:0 "No Room For Magocrats"
+KAR_a_strong_karlsland:0 "A Strong Karlsland"
+
+
+KAR_KA1_strife:0 "Political Strife"
+KAR_KA1_strife_desc:0 "Despite the imposition of a reactionary government, not all right-wing Karlslanders are satisfied with the new regime. Fringe nationalists decry the secular militarists and old nobility, and the failure of the commonfolk to organize their own state has lead many to flee. The new regime would do well to bring in persuadable opposition as soon as it can."
+
+
+
+
+
+
 
 
 ################################
@@ -242,6 +310,18 @@ garbage:0 "move that line down"
  karlsland.500.t:0 "Ukko's Children: Suomenusko Archeologists"
  
  
+ karlsland.552.t:0 "Picking a Shaman"
+ karlsland.552.d:0 "Rudel sat at her desk, an unnatural position for her. She would have preferred to be flying, but her personal assistant had forced her - about as close as anyone could say they forced Rudel to do anything - to rest after breaking her right leg again. After thrusting herself to the top of the national council, and immediately disbanding it, Rudel had found normal governance quite boring. She found herself looking out the giant window opposite her desk, thinking that she would have much preferred to be bombing those mechanical aliens from the sky, and not directing funds to pay for the preservation of some grove on the other side of Karlsland.\n\nAnd suddenly, her eyes jumped down to the pen in her hand. She would hire someone to do that boring work for her! Writing plainly, she directed a letter to the entirety of the party staff, declaring her need for a “shaman” to help her on the more “daunting” tasks of connecting to the “spirits of her ancestors”.\n\nA week later, there were three candidates. The first was a relatively well educated man who wore a pair of glasses, which completed his notably academic appearance. His endorsers claim he has been fascinated with the old traditions of Karlsland since (probably) his formative years - and he is by far the most popular choice within the party. Additionally, it says that he would aid greatly in accelerating the national conversion process, not that that has anything to do with being a shaman, of course.\n\nThe second is a renowned occultist who had recently emigrated from Ostmark. He is the most popular among the youth in our party for his eccentric and extensive belief in the power of ice. Though his appearance is not nearly as professional as the other man, his extraordinarily long beard and his obsession with robes makes him a perfect fit for the profession in the Karlslander’s eyes. He claims to have very little administrative experience at all, not that that has anything to do with being a shaman, of course.\n\nThe last candidate is Rudel’s old war partner, Adelheid. Though suspected of going under the guise of “Comrade Leader” and attempting to start a workers uprising, Rudel is fully aware of the slanderous and false nature of this accusation. Though she is not particularly favoured by the party or the public, she undoubtedly complements Rudel well - and is the only one who could provide free milk. Additionally, she seems to have an uncanny knack for organizing groups of people, not that that has anything to do with being a shaman, of course."
+ karlsland.552.a:0 "The man with glasses."
+ karlsland.552.b:0 "The bearded occultist."
+ karlsland.552.c:0 "Adelheid."
+ karlsland.553.t:0 "Cleaning Ranks"
+ karlsland.553.d:0 "There were still some who wouldn’t follow Rudel. Those who saw the way she fought against the Neuroi years ago and refused to put on their boots and march behind the witch that saved Karlsland. Those who called the traditional Karlslander ways heathenism and hateful. Even those who once sat on the council then claimed Rudel’s autocratic tendencies would lead only to human conflict. Who was allowing them to say these things? To espouse these lies? An inactive party. The party’s forces had to be sharpened up, Rudel decided. They had to hunt out traitors on the ground the same way she hunted alien demons from the sky.\n\nAnd if they wouldn’t start shaping up, then Rudel would have to start cleaning ranks herself."
+ karlsland.553.a:0 "Good."
+ karlsland.554.t:0 "The Runes Speak"
+ karlsland.554.d:0 "After recovering from her broken leg, Rudel immediately began flying - again. Over forests and fields, she caught sight of brass music being played in a small village. She saw as a stubborn clergyman of the Romagnan Church was driven out of his home village and nearly shot in the back.\n\nRudel did occasionally listen to the spiritual drivel pour out from her shaman’s mouth, as they helped her get through the day or write another speech, but she never felt it in herself. The party was always just a way for Rudel to mold Karlsland in her image, without the annoyances of the Kaiser or competing military officials. She was attracted to the marches that inspired her to enlist as a young girl in the first place; the joyful enthusiasm for conflict that she had felt every day when she flew out, which she had thought no one shared. Maybe, she thought, she was a little attracted to the ancient myths of gifted female soldiers who, alone, could ascend to the afterlife alongside men. Or maybe it was just the propaganda.\n\nEither way, when one of those villagers missed the clergyman and hit Rudel’s striker (completely unaware it was her overhead, to be fair) and she landed in front of that stone, she had regretted not listening. The stone - it beckoned to her. It recited, in a language which sounded familiar but which was entirely unintelligible at the same time; poems. They had a pleasant, consistent scheme, which beckoned the leader even closer. Slowly reaching her arm out, crawling, walking across the forest floor; she touched the stone.\n\nAnd it was then that she understood. Understood why she led Karlsland now, why, out of so many other possibledirections, she was the one chosen to lead. It was not just to kill, not just to pursue that ecstasy she felt years ago. It was so much more. She had a duty to Karlslanders, throughout every dimension of time, to restore the greatness of their people and the knowledge that was lost."
+ karlsland.554.a:0 "Sounds kinda out there to me."
+ 
  karlslandnews.100.t:0 "Norse Dawn in Karlsland"
  karlslandnews.100.d:0 "The churches of Jupiter did not ring their bells in Karlsland today.\n\nThe Reichstag, overrun by HE members and pious members of the outlawed Norse religion, demanded a formal abdication of the monarchy. Seeing no other course of action, with his nation in full (maybe not voluntary) support of the party, the Kaiser's regent had no reasonable choice but to accept. The monarchy's abdication resulted in the immediete implementation of a supreme executive, to be elected only on death, and who would formally head the Norse religion. With power cemented, the first order of the excecutive leader, the brutal witch Hanna Rudel; was to switch the ban on Romagnan religion on its head. Europe trembles with this momentous shift, and what's to come can only be feared."
  karlslandnews.100.a:0 "Worrying."
@@ -262,6 +342,12 @@ garbage:0 "move that line down"
  noble.3.t:0 "Extraditing the Kaiser"
  noble.3.d:0 "Kaiser Frederick IV, though still a popular figure to much of the public, was apprehended by supporters of the Noble Council yesterday. Without much hesitation, Heinrike had her former leader sent on a passanger train straight to the Low Countries, where he would be held by Gallian loyalists to prevent any attempts at reasserting his throne. Of course, some Karlslanders weren't pleased with a removal of Frederick IV. Without proper leadership in east Karlsland, however, they're unlikely to pose a well organized threat."
  noble.3.a:0 "Good."
+ 
+ 
+ noble.50.t:0 "A Deal With the Magocracy"
+ noble.50.d:0 "The Magocracy in Saxony, lead by a rapidly assembled council of witches, has not had the time to develop its own sense of patriotic purpose. Many of the more conservative witches see promise in our state, but wish to be more than what they were before the collapse gave them the opportunity. Thus, the idea that we could allow these witches to continue their project in Saxony alone, under our guidance, has become fairly popular within their regime. Though fully integrating Saxony would clearly allow us to truly unify Karlsland again, [Root.GetLeader] finds themselves asking if true unification is actually a goal, or just a means to an end..."
+ noble.50.a:0 "...No, this isn't what I had in mind."
+ noble.50.b:0 "An interesting project indeed."
 
  noble.100.t:0 "The Officer"
 

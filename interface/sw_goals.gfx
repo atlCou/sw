@@ -360,12 +360,132 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_proletariat.dds"
 	}
 	SpriteType = {
-		name = "GFX_generic_schools"
+		name = "GFX_generic_schools" 
 		texturefile = "gfx/interface/goals/generic_schools.dds"
 	}
 	SpriteType = {
 		name = "GFX_leader_schools"
 		texturefile = "gfx/interface/goals/leader_schools.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_princess"
+		texturefile = "gfx/interface/goals/KAR_princess.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_officer"
+		texturefile = "gfx/interface/goals/KAR_officer.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_gather_nobles"
+		texturefile = "gfx/interface/goals/KAR_gather_nobles.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_move_kaiser"
+		texturefile = "gfx/interface/goals/KAR_move_kaiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_estates"
+		texturefile = "gfx/interface/goals/KAR_estates.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_reshuffle"
+		texturefile = "gfx/interface/goals/KAR_reshuffle.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_send_them"
+		texturefile = "gfx/interface/goals/KAR_send_them.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_noble_off"
+		texturefile = "gfx/interface/goals/KAR_noble_off.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_mili_heri"
+		texturefile = "gfx/interface/goals/KAR_mili_heri.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_prussia_hat"
+		texturefile = "gfx/interface/goals/KAR_prussia_hat.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_prussia_guns"
+		texturefile = "gfx/interface/goals/KAR_prussia_guns.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_over_the"
+		texturefile = "gfx/interface/goals/KAR_over_the.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_consti"
+		texturefile = "gfx/interface/goals/KAR_consti.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_bribe"
+		texturefile = "gfx/interface/goals/KAR_bribe.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_supreme"
+		texturefile = "gfx/interface/goals/KAR_supreme.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_attack_socialists"
+		texturefile = "gfx/interface/goals/KAR_attack_socialists.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_attack_south"
+		texturefile = "gfx/interface/goals/KAR_attack_south.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_attack_mag"
+		texturefile = "gfx/interface/goals/KAR_attack_mag.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_noblepolice"
+		texturefile = "gfx/interface/goals/KAR_noblepolice.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_more_into"
+		texturefile = "gfx/interface/goals/KAR_more_into.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_soldiers_pru"
+		texturefile = "gfx/interface/goals/KAR_soldiers_pru.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_soldiers_pagan"
+		texturefile = "gfx/interface/goals/KAR_soldiers_pagan.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_elite_uni"
+		texturefile = "gfx/interface/goals/KAR_elite_uni.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_autarky"
+		texturefile = "gfx/interface/goals/KAR_autarky.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_mag_deal"
+		texturefile = "gfx/interface/goals/KAR_mag_deal.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_karlsland"
+		texturefile = "gfx/interface/goals/KAR_karlsland.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_noble_crush"
+		texturefile = "gfx/interface/goals/KAR_noble_crush.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_mil_crush"
+		texturefile = "gfx/interface/goals/KAR_mil_crush.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_mag_unknown"
+		texturefile = "gfx/interface/goals/KAR_mag_unknown.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_runes"
+		texturefile = "gfx/interface/goals/KAR_runes.dds"
 	}
 }
 

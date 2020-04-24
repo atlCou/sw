@@ -32,6 +32,8 @@ ideas = {
 		
 			modifier = {
 				political_power_gain = -0.5
+				stability_factor = -0.05
+				stability_weekly = -0.01
 			}
 	
 		}
@@ -152,7 +154,20 @@ ideas = {
 	
 			modifier = {
 				political_power_gain = 0.1
-				### enemy_partisan_effect = -0.1
+				resistance_target = -0.1
+			}
+	
+		}
+		
+		KAR_pagan_police_rudel = {
+	
+			picture = german_advisors
+	
+			modifier = {
+				political_power_gain = 0.05
+				resistance_target = -0.15
+				political_advisor_cost_factor = -0.1
+				drift_defence_factor = 0.25
 			}
 	
 		}
@@ -286,13 +301,35 @@ ideas = {
 		
 		}
 		
+		KAR_the_runes_talk_idea = {
+		
+			picture = KAR_pagan_prop
+			
+			modifier = {
+				stability_weekly = 0.02
+			}
+		
+		}
 		
 		#### NOBLE
 		
 		
+		KAR_KA1_strife = {
+			
+			picture = ast_classify_aliens
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.5
+				MONTHLY_POPULATION = -0.5
+			}
+		
+		}
+		
+		
 		KAR_rewrite_the_constitution_idea = {
 			
-			picture = GAL_mon_prop
+			picture = mon_prop
 			
 			modifier = {
 				political_power_gain = 0.1
@@ -330,6 +367,127 @@ ideas = {
 				conscription = 0.05
 			}
 		}
+		
+		KAR_wenn_die_soldaten_idea = {
+		
+			picture = german_advisors
+			
+			modifier = {
+				conscription_factor = 0.05
+				army_org_factor = 0.1
+			}
+		
+		}
+		
+		KAR_self_sustenance_idea = {
+		
+			picture = generic_flexible_foreign_policy
+		
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+		
+		KAR_send_them_back_idea = {
+		
+			picture = generic_production_bonus
+			
+			modifier = {
+				land_reinforce_rate = -0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		
+		}
+		
+		KAR_send_them_back_idea_2 = {
+		
+			picture = generic_production_bonus
+			
+			modifier = {
+				land_reinforce_rate = -0.1
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		
+		}
+		
+		KAR_send_them_back_idea_3 = {
+		
+			picture = generic_production_bonus
+			
+			modifier = {
+				land_reinforce_rate = -0.05
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				neutrality_drift = 0.05
+			}
+		
+		}
+		
+		KAR_noble_officers_idea = {
+		
+			picture = german_advisors
+			
+			modifier = {
+				conscription_factor = -0.05
+				army_org_factor = -0.05
+				political_power_gain = 0.2
+			}
+		
+		}
+		
+		KAR_noble_officers_idea_2 = {
+		
+			picture = german_advisors
+			
+			modifier = {
+				conscription_factor = -0.05
+				political_power_gain = 0.2
+				army_org_factor = 0.025
+				army_attack_factor = 0.03
+			}
+		
+		}
+		
+		KAR_elite_universities_idea = {
+		
+			picture = jap_supremacy_of_technology
+		
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		
+		}
+		
+		KAR_Geheimpolizei_idea = {
+		
+			picture = generic_secret_police
+			
+			modifier = {
+				resistance_target = -0.1
+				political_power_factor = 0.05
+			}
+		}
+		
+		KAR_when_they_come_idea = {
+		
+			picture = generic_secret_police
+			
+			modifier = {
+				defensive_war_stability_factor = 0.1
+				army_core_defence_factor = 0.025
+				justify_war_goal_time = -0.25
+			}
+		}
+		
+		########## COMRADE LEADER
 		
 		
 		KAR_rev_militia_debuff = {
@@ -448,6 +606,63 @@ ideas = {
 		
 		}
 		
+		################
+		#### Magocracy
+		
+		KAR_new_regime = {
+		
+			picture = trotskyite_plot_purged
+			
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				political_power_factor = -0.25
+			}
+		
+		}
+		
+		KAR_new_regime_2 = {
+		
+			picture = trotskyite_plot_purged
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				political_power_factor = -0.15
+			}
+		
+		}
+		
+		KAR_legitimizing_the_magocracy_idea = {
+		
+			picture = trotskyite_plot_purged
+			
+			modifier = {
+				political_power_factor = -0.05
+			}
+		
+		}
+		
+		KAR_basic_law_idea = {
+		
+			picture = NA
+		
+			modifier = {
+				stability_factor = 0.05
+				foreign_subversive_activites = -0.5
+			}
+		
+		}
+		
+		KAR_unregulated_authority_idea = {
+		
+			picture = NA
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+		
+		}
 		
 	}
 

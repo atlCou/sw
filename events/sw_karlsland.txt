@@ -742,6 +742,96 @@ country_event = {
 	
 }
 
+country_event = {
+	id = karlsland.551
+	title = karlsland.551.t
+	desc = karlsland.551.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.551.a
+		load_focus_tree = KAR_Karlsland_paganism_rudel
+		set_country_flag = KAR_rudel_tree_loaded 
+	}
+	
+}
+
+country_event = {
+	id = karlsland.552
+	title = karlsland.552.t
+	desc = karlsland.552.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.552.a
+		random_owned_state = {
+			limit = { infrastructure < 10 }
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.552.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+	}
+	
+	option = {
+		name = karlsland.552.c
+		add_political_power = 10
+	}
+	
+}
+
+country_event = {
+	id = karlsland.553
+	title = karlsland.553.t
+	desc = karlsland.553.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.553.a
+		add_stability = 0.05
+		swap_ideas = {
+			add_idea = KAR_pagan_police_rudel
+			remove_idea = KAR_pagan_police
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.554
+	title = karlsland.554.t
+	desc = karlsland.554.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.554.a
+		add_stability = -0.1
+		add_timed_idea = {
+			idea = KAR_the_runes_talk_idea
+			days = 70
+		}
+	}
+}
 
 
 country_event = {
@@ -1199,10 +1289,9 @@ country_event = {
 				add_state_core = 60
 				add_state_core = 799
 				set_popularities = {
-					neutrality = 33
-					fascism = 24
-					democratic = 33
-					communism = 10
+					neutrality = 36
+					fascism = 28
+					democratic = 36
 				}
 				create_country_leader = {
 					name = "Edytha Rossmann"
@@ -1235,6 +1324,7 @@ country_event = {
 				set_politics = {
 					ruling_party = neutrality
 				}
+				add_ideas = KAR_new_regime
 			}
 		}
 	}
@@ -1309,6 +1399,7 @@ country_event = {
 				set_politics = {
 					ruling_party = neutrality #obviously
 				}
+				add_ideas = KAR_KA1_strife
 			}
 		}
 	}
@@ -1452,6 +1543,184 @@ country_event = {
 }
 
 
+country_event = {
+	id = noble.50
+	title = noble.50.t
+	desc = noble.50.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.50.a
+		ai_chance = {
+			base = 0
+		}
+		create_wargoal = {
+			target = KA2
+			type = annex_everything
+		}
+	}
+	
+	option = {
+		name = noble.50.b
+		ai_chance = {
+			base = 100
+		}
+		KA2 = {
+			country_event = {
+				id = noble.51
+			}
+		}
+	}
+}
+
+country_event = {
+	id = noble.51
+	title = noble.51.t
+	desc = noble.51.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.51.a
+		ai_chance = {
+			base = 0
+		}
+		KA1 = {
+			country_event = {
+				id = noble.52
+			}
+		}
+	}
+	
+	option = {
+		name = noble.51.b
+		ai_chance = {
+			base = 100
+		}
+		KA1 = {
+			country_event = {
+				id = noble.53
+			}
+		}
+	}
+}
+
+country_event = {
+	id = noble.52
+	title = noble.52.t
+	desc = noble.52.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.52.a
+		create_wargoal = {
+			target = KA2
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = noble.53
+	title = noble.53.t
+	desc = noble.53.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.53.a
+		KA1 = {
+			puppet = KA2
+			KA2 = {
+				every_owned_state = {
+					limit = {
+						NOT = { state = 65 }
+					}
+					KA1 = { transfer_state = PREV }
+				}
+			}
+		}
+		KA2 = {
+			set_cosmetic_tag = KA2_KA1_Puppet
+			if = {
+				limit = {
+					KA1 = { has_government = fascism }
+				}
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Heinrike Prinzessin zu Sayn-Wittgenstein"
+					desc = "HHHH"
+					picture = "Heinrike.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
+				}
+			}
+			if = {
+				limit = {
+					KA1 = { has_government = neutrality }
+				}
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Gertrud Barkhorn"
+					desc = "HHHH"
+					picture = "Gertrud_Barkhorn.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = noble.80
+	title = noble.80.t
+	desc = noble.80.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = noble.80.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}
+		if = { limit = { has_government = fascism }
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+		if = { limit = { has_government = neutrality }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+		add_stability = -0.1
+	}
+}
 
 
 country_event = {

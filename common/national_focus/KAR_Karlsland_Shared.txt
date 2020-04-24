@@ -1507,6 +1507,7 @@ shared_focus = {
 	available = {
 		has_country_flag = KAR_like_old_flag
 	}
+	allow_branch = { has_country_flag = KAR_rudel_tree_loaded }
 	prerequisite = { focus = KAR_establish_council }
 	ai_will_do = { 
 		factor = 1
@@ -1539,8 +1540,17 @@ shared_focus = {
 	completion_reward = {
 		add_country_leader_trait = dictator
 		add_political_power = -100
+		hidden_effect = {
+			country_event = {
+				id = karlsland.551
+				days = 7
+			}
+		}
 	}
 }
+
+
+
 
 
 shared_focus = { 
@@ -1775,6 +1785,283 @@ shared_focus = {
 
 
 
+####### WACKY RUDEL STUFF 
+###### I SHOULD PROBABLY CLARIFY THAT THE CONTENTS OF THIS MOD DO NOT REFLECT MY REAL BELIEFS OR OPINIONS
+
+shared_focus = { 
+	id = KAR_hire_a_mystic
+	icon = GFX_KAR_bohemia_pagan
+	x = -1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_rudel_alone }
+	allow_branch = { NOT = { has_country_flag = KAR_rudel_tree_loaded } }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = karlsland.552
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_clean_ranks
+	icon = GFX_KAR_soldiers_pagan
+	x = 1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_rudel_alone }
+	allow_branch = { NOT = { has_country_flag = KAR_rudel_tree_loaded } }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = karlsland.553
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_the_runes_talk
+	icon = GFX_KAR_runes
+	x = 0
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_hire_a_mystic }
+	prerequisite = { focus = KAR_clean_ranks }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = karlsland.554
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_unearthly_neuroi
+	icon = GFX_KAR_bohemia_pagan
+	x = -2
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_the_runes_talk }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = karlsland.555
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_friends_in_baltland
+	icon = GFX_KAR_bohemia_pagan
+	x = 0
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_the_runes_talk }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = karlsland.556
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_transcendental_academia
+	icon = GFX_KAR_bohemia_pagan
+	x = 2
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_the_runes_talk }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = { 
+	id = KAR_the_island_in_the_north
+	icon = GFX_KAR_bohemia_pagan
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_unearthly_neuroi }
+	prerequisite = { focus = KAR_friends_in_baltland }
+	prerequisite = { focus = KAR_transcendental_academia }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = karlsland.560
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_pilgrimage
+	icon = GFX_KAR_bohemia_pagan
+	x = -1
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_the_island_in_the_north }
+	available = { has_country_flag = KAR_the_island_in_the_north_returned }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = karlsland.563
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_finding_the_giants
+	icon = GFX_KAR_bohemia_pagan
+	x = 1
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_the_island_in_the_north }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = karlsland.566
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_guns_from_the_allfather
+	icon = GFX_KAR_bohemia_pagan
+	x = -2
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_pilgrimage }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = { 
+	id = KAR_karlslander_work_ethic
+	icon = GFX_KAR_bohemia_pagan
+	x = 0
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_pilgrimage focus = KAR_finding_the_giants  }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = { 
+	id = KAR_earning_her_name
+	icon = GFX_KAR_bohemia_pagan
+	x = 2
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_finding_the_giants }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = { 
+	id = KAR_crusade_for_uppsala
+	icon = GFX_KAR_bohemia_pagan
+	x = -1
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_guns_from_the_allfather }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+
+	}
+}
+
+shared_focus = { 
+	id = KAR_seeresses
+	icon = GFX_KAR_bohemia_pagan
+	x = 1
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_earning_her_name }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+
+	}
+}
+
 ########## military tree
 
 
@@ -2002,7 +2289,7 @@ custom_effect_tooltip = KAR_kwitches.10
 
 shared_focus = { 
 	id = KAR_The_Princess
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_princess
 	x = 0
 	y = 0
 	cost = 3
@@ -2021,7 +2308,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_gather_the_nobles
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_gather_nobles
 	x = -2
 	y = 1
 	cost = 3
@@ -2040,7 +2327,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_move_the_kaiser
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_move_kaiser
 	x = 0
 	y = 1
 	cost = 3
@@ -2059,7 +2346,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_clean_the_government
-	icon = GFX_pagantrihorn
+	icon = GFX_GAL_sekrit_pol
 	x = 2
 	y = 1
 	cost = 5
@@ -2081,7 +2368,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_the_old_estates
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_estates
 	x = -1
 	y = 2
 	cost = 5
@@ -2094,12 +2381,38 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		if = { 
+			limit = {
+				owns_state = 5
+			}
+			5 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = { 
+			limit = {
+				owns_state = 63
+			}
+			63 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_reshuffle_the_military
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_reshuffle
 	x = 1
 	y = 2
 	cost = 5
@@ -2112,12 +2425,14 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_stability = 0.05
+		add_political_power = 50
 	} 
 }
 
 shared_focus = { 
 	id = KAR_send_them_back
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_send_them
 	x = -1
 	y = 3
 	cost = 5
@@ -2129,12 +2444,13 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_ideas = KAR_send_them_back_idea
 	} 
 }
 
 shared_focus = { 
 	id = KAR_noble_officers
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_noble_off
 	x = 1
 	y = 3
 	cost = 5
@@ -2145,14 +2461,15 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 
+	completion_reward = {
+		add_ideas = KAR_noble_officers_idea
 	} 
 }
 
 
 shared_focus = { 
 	id = KAR_knightly_traditions
-	icon = GFX_pagantrihorn
+	icon = GFX_goal_generic_cavalry
 	x = -2
 	y = 4
 	cost = 5
@@ -2164,12 +2481,16 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		swap_ideas = {
+			add_idea = KAR_noble_officers_idea_2
+			remove_idea = KAR_noble_officers_idea
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_Geheimpolizei
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_noblepolice
 	x = 0
 	y = 4
 	cost = 5
@@ -2181,12 +2502,13 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_ideas = KAR_Geheimpolizei_idea
 	} 
 }
 
 shared_focus = { 
 	id = KAR_more_into_the_factories
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_more_into
 	x = -2
 	y = 6
 	cost = 5
@@ -2197,6 +2519,39 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 	} 
 }
 
@@ -2204,7 +2559,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_neocameralism
-	icon = GFX_pagantrihorn
+	icon = GFX_focus_generic_monarchy_1
 	x = 0
 	y = 6
 	cost = 5
@@ -2214,13 +2569,23 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 
+	completion_reward = {
+		every_owned_state = {
+			limit = {
+				is_core_of = KAR
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		swap_ideas = {
+			add_idea = KAR_send_them_back_idea_2
+			remove_idea = KAR_send_them_back_idea
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_elite_universities
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_elite_uni
 	x = -2
 	y = 5
 	cost = 5
@@ -2231,6 +2596,7 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_ideas = KAR_elite_universities_idea
 	} 
 }
 
@@ -2238,7 +2604,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_The_Officer
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_officer
 	x = 6
 	y = 0
 	cost = 3
@@ -2256,7 +2622,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_from_brandenburg
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_prussia_hat
 	x = -2
 	y = 1
 	cost = 3
@@ -2290,7 +2656,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_to_prussia
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_prussia_guns
 	x = 0
 	y = 1
 	cost = 3
@@ -2315,7 +2681,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_and_over_the_fatherland
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_over_the
 	x = 2
 	y = 1
 	cost = 7
@@ -2341,7 +2707,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_rewrite_the_constitution
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_consti
 	x = -1
 	y = 2
 	cost = 5
@@ -2362,7 +2728,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_bribe_businessowners
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_bribe
 	x = 1
 	y = 2
 	cost = 5
@@ -2383,7 +2749,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_karlslander_military_heritage
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_mili_heri
 	x = -1
 	y = 3
 	cost = 5
@@ -2402,7 +2768,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_placate_the_old_nobility
-	icon = GFX_pagantrihorn
+	icon = GFX_GAL_monarchie
 	x = 1
 	y = 3
 	cost = 5
@@ -2432,7 +2798,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_karlslanders_in_uniform
-	icon = GFX_pagantrihorn
+	icon = GFX_focus_generic_military_mission
 	x = 1
 	y = 1
 	cost = 5
@@ -2454,7 +2820,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_enemies_on_both_sides
-	icon = GFX_pagantrihorn
+	icon = GFX_focus_spr_class_war
 	x = -1
 	y = 1
 	cost = 5
@@ -2467,12 +2833,21 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+		add_stability = 0.05
 	} 
 }
 
 shared_focus = { 
 	id = KAR_wenn_die_soldaten...
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_soldiers_pru
 	x = -1
 	y = 3
 	cost = 5
@@ -2483,7 +2858,10 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 
+	completion_reward = {
+		add_war_support = 0.05
+		add_manpower = 150000
+		add_timed_idea = { idea = KAR_wenn_die_soldaten_idea days = 548 }
 	} 
 }
 
@@ -2491,7 +2869,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_self_sustenance
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_autarky
 	x = 1
 	y = 2
 	cost = 5
@@ -2503,12 +2881,14 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		add_ideas = closed_economy
+		add_ideas = KAR_self_sustenance_idea
 	} 
 }
 
 shared_focus = { 
 	id = KAR_berlin_military_research_institute
-	icon = GFX_pagantrihorn
+	icon = GFX_focus_research
 	x = 1
 	y = 3
 	cost = 5
@@ -2529,11 +2909,12 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_supreme_order_restored
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_supreme
 	x = -3
 	y = 3
 	cost = 7
 	available_if_capitulated = yes 
+	dynamic = yes
 	relative_position_id = KAR_The_Officer
 	prerequisite = { focus = KAR_rewrite_the_constitution focus = KAR_reshuffle_the_military }
 	ai_will_do = { 
@@ -2541,12 +2922,13 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
+		remove_ideas = KAR_KA1_strife
 	} 
 }
 
 shared_focus = { 
 	id = KAR_no_time_for_realpolitik
-	icon = GFX_pagantrihorn
+	icon = GFX_focus_secret_rearmament
 	x = 0
 	y = 1
 	cost = 5
@@ -2558,13 +2940,15 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 
+	completion_reward = {
+		add_war_support = 0.2
+		add_stability = 0.1
 	} 
 }
 
 shared_focus = { 
 	id = KAR_smash_the_socialists
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_attack_socialists
 	x = 1
 	y = 2
 	cost = 5
@@ -2606,7 +2990,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_disloyal_south
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_attack_south
 	x = -1
 	y = 2
 	cost = 5
@@ -2651,7 +3035,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_no_room_for_magocrats
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_attack_mag
 	x = 1
 	y = 3
 	cost = 5
@@ -2674,7 +3058,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_a_deal_with_the_witches
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_mag_deal
 	x = -1
 	y = 3
 	cost = 5
@@ -2688,7 +3072,9 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-		#nothing rn
+		country_event = {
+			id = noble.50
+		}
 	} 
 }
 
@@ -2697,7 +3083,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_a_strong_karlsland
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_karlsland
 	x = 0
 	y = 5
 	cost = 5
@@ -2710,13 +3096,27 @@ shared_focus = {
 
 	completion_reward = {
 		set_cosmetic_tag = KA1_NOBLE_unified
+		hidden_effect = {
+			if = {
+				limit = {
+					KA2 = { AND = { exists = yes is_puppet_of = ROOT } }
+				}
+				KA2 = {
+					set_cosmetic_tag = KA2_KA1_Puppet_Unified
+				}
+			}
+			country_event = {
+				id = noble.80
+				days = 7
+			}
+		}
 	} 
 }
 
 
 shared_focus = { 
 	id = KAR_purge_the_bourgeois
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_noble_crush
 	x = -2
 	y = 1
 	cost = 5
@@ -2729,6 +3129,16 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		add_stability = 0.05
+		add_political_power = -50
 	} 
 }
 
@@ -2746,7 +3156,12 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		add_stability = 0.15
+		add_political_power = -50
 	} 
 }
 
@@ -2764,7 +3179,16 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-	
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		add_stability = 0.05
+		add_political_power = -50
 	} 
 }
 
@@ -2782,6 +3206,15 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		swap_ideas = {
+			add_idea = KAR_send_them_back_idea_3
+			remove_idea = KAR_send_them_back_idea_2
+		}
+		add_stability = 0.05
 	} 
 }
 
@@ -2800,13 +3233,20 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-	} 
+		add_ideas = KAR_when_they_come_idea
+		if = { limit = { GAL = { AND = { exists = yes has_government = neutrality is_puppet = no } } }
+			country_event = {
+				id = noble.95
+			}
+		}
+		add_stability = 0.05
+	}
 }
 
 
 shared_focus = { 
 	id = KAR_enemies_on_both_sides_again
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_mil_crush
 	x = 2
 	y = 1
 	cost = 5
@@ -2819,7 +3259,16 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-		set_cosmetic_tag = KA1_NOBLE_unified
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+		add_stability = 0.05
+		add_political_power = -50
 	} 
 }
 
@@ -2838,7 +3287,17 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-
+		if = { limit = { OR = { has_idea = volunteer_only has_idea = limited_conscription } }
+			add_ideas = extensive_conscription
+			add_political_power = -50
+		}
+		else = {
+			add_political_power = 100
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
 	} 
 }
 
@@ -2856,7 +3315,16 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-	
+		add_stability = 0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = KA1
+		}
 	} 
 }
 
@@ -2874,6 +3342,8 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_war_support = 0.1
+		add_stability = 0.1
 	} 
 }
 
@@ -2892,6 +3362,7 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		set_country_flag = KAR_can_do_diplo_flag
 	} 
 }
 
@@ -3622,5 +4093,214 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+	} 
+}
+
+
+
+
+
+##############
+##### Magocracy Tree*S*
+##############
+
+shared_focus = { 
+	id = KAR_legitimizing_the_magocracy
+	icon = GFX_KAR_mag_unknown
+	x = -1
+	y = 0
+	cost = 5
+	available_if_capitulated = yes 
+	mutually_exclusive = { focus = KAR_authority_through_force }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = KAR_new_regime_2
+			remove_idea = KAR_new_regime
+		}
+		add_timed_idea = {
+			idea = KAR_legitimizing_the_magocracy_idea
+			days = 365
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.075
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_authority_through_force
+	icon = GFX_KAR_mag_unknown
+	x = 3
+	y = 0
+	cost = 5
+	available_if_capitulated = yes 
+	mutually_exclusive = { focus = KAR_legitimizing_the_magocracy }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = KAR_new_regime_2
+			remove_idea = KAR_new_regime
+		}
+		add_political_power = -50
+		add_manpower = -100
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_basic_law
+	icon = GFX_KAR_mag_unknown
+	x = -1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_legitimizing_the_magocracy focus = KAR_authority_through_force }
+	mutually_exclusive = { focus = KAR_unregulated_authority }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_basic_law_idea
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.03
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_unregulated_authority
+	icon = GFX_KAR_mag_unknown
+	x = 3
+	y = 1
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_legitimizing_the_magocracy focus = KAR_authority_through_force }
+	mutually_exclusive = { focus = KAR_basic_law }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_unregulated_authority_idea
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_question_of_localities
+	icon = GFX_KAR_mag_unknown
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_basic_law focus = KAR_unregulated_authority }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = magocracy.1
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_status_quo_localities
+	icon = GFX_KAR_mag_unknown
+	x = 1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_question_of_localities }
+	available = { OR = { check_variable = { party_popularity@neutrality > party_popularity@democratic } check_variable = { party_popularity@neutrality > party_popularity@fascism } } }
+	mutually_exclusive = { focus = KAR_republicanize focus = KAR_from_bottom_to_top }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	} 
+}
+
+shared_focus = { 
+	id = KAR_republicanize
+	icon = GFX_KAR_mag_unknown
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_question_of_localities }
+	available = { OR = { check_variable = { party_popularity@democratic > party_popularity@neutrality } check_variable = { party_popularity@democratic > party_popularity@fascism } } }
+	mutually_exclusive = { focus = KAR_status_quo_localities focus = KAR_from_bottom_to_top }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	} 
+}
+
+shared_focus = { 
+	id = KAR_from_bottom_to_top
+	icon = GFX_KAR_mag_unknown
+	x = 3
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_question_of_localities }
+	available = { OR = { check_variable = { party_popularity@fascism > party_popularity@neutrality } check_variable = { party_popularity@fascism > party_popularity@democratic } } }
+	mutually_exclusive = { focus = KAR_status_quo_localities focus = KAR_republicanize }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	} 
+}
+
+shared_focus = { 
+	id = KAR_organization_of_the_council
+	icon = GFX_KAR_mag_unknown
+	x = 1
+	y = 4
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_republicanize focus = KAR_from_bottom_to_top focus = KAR_status_quo_localities }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		country_event = {
+			id = magocracy.1
+		}
 	} 
 }
