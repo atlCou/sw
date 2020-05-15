@@ -230,6 +230,10 @@ country_event = {
 		add_political_power = -25
 		remove_ideas = KAR_recoveringfromww1
 		remove_ideas = KAR_hurting_econ
+		add_timed_idea = {
+			idea = KAR_much_better_econ
+			days = 365
+		}
 		
 		set_country_flag = KAR_act_passed
 	}
@@ -252,7 +256,10 @@ country_event = {
 		name = karlsland.15.c
 		trigger = { has_country_flag = KAR_can_go_pagan }
 		add_political_power = -150
-		remove_ideas = KAR_really_hurting_econ
+		swap_ideas = {
+			remove_idea = KAR_really_hurting_econ
+			add_idea = KAR_really_hurting_econ_pagan
+		}
 		
 		set_country_flag = KAR_act_failed
 	}
@@ -484,7 +491,7 @@ country_event = {
 	option = {
 		name = karlsland.501.a  ###Decry them!
 		ai_chance = {
-			base = 5
+			factor = 5
 		}
 		unlock_decision_category_tooltip = SOU_no_pagans
 		add_ideas = SOU_ukko_idea
@@ -505,7 +512,7 @@ country_event = {
 	option = {
 		name = karlsland.501.b  ###Ukko is p epic tbh
 		ai_chance = {
-			base = 0
+			factor = 0
 		}
 		add_ideas = SOU_ukko_idea_2
 		hidden_effect = {
@@ -568,7 +575,7 @@ country_event = {
 	option = {
 		name = karlsland.504.a
 		ai_chance = {
-			base = 1
+			factor = 1
 		}
 		add_popularity = {
 			ideology = fascism
@@ -581,7 +588,7 @@ country_event = {
 	option = {
 		name = karlsland.504.a
 		ai_chance = {
-			base = 0
+			factor = 0
 		}
 		add_political_power = 25
 		create_wargoal = {
@@ -604,7 +611,7 @@ country_event = {
 	option = {   #### Only one option, realistically they'd never say yes under any situation
 		name = karlsland.505.a
 		ai_chance = {
-			base = 100
+			factor = 100
 		}
 		KAR = {
 			country_event = {
@@ -648,7 +655,7 @@ country_event = {
 	option = {
 		name = karlsland.520.a
 		ai_chance = {
-			base = 10
+			factor = 10
 		}
 		BLT = {
 			add_state_core = 190
@@ -667,7 +674,7 @@ country_event = {
 	option = {
 		name = karlsland.520.b
 		ai_chance = {
-			base = 5
+			factor = 5
 		}
 		BLT = {
 			add_state_core = 190
@@ -695,7 +702,7 @@ country_event = {
 	option = {
 		name = karlsland.520.c
 		ai_chance = {
-			base = 10
+			factor = 10
 		}
 		BLT = {
 			add_state_claim = 190
@@ -833,6 +840,273 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = karlsland.555
+	title = karlsland.555.t
+	desc = karlsland.555.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.555.a
+		add_stability = -0.025
+		add_war_support = 0.025
+	}
+}
+
+country_event = {
+	id = karlsland.556
+	title = karlsland.556.t
+	desc = karlsland.556.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.556.a
+		BAL = {
+			country_event = {
+				id = karlsland.557
+			}
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.557
+	title = karlsland.557.t
+	desc = karlsland.557.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = karlsland.557.a
+		ai_chance = {
+			factor = 1
+		}
+		KAR = {
+			country_event = {
+				id = karlsland.558
+			}
+		}
+	}
+	
+	option = {
+		name = karlsland.557.b
+		ai_chance = {
+			factor = 0
+		}
+		KAR = {
+			country_event = {
+				id = karlsland.559
+			}
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.558
+	title = karlsland.558.t
+	desc = karlsland.558.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.558.a
+		BAL = { 
+			give_military_access = KAR
+			add_ai_strategy = {
+				type = alliance
+				id = KAR
+				value = 50
+			}
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = KAR
+				value = 200
+			}
+		}
+		add_war_support = 0.05
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = karlsland.559
+	title = karlsland.559.t
+	desc = karlsland.559.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.559.a
+		set_country_flag = KAR_has_to_sneak_flag
+		add_political_power = -25
+	}
+}
+
+country_event = {
+	id = karlsland.560
+	title = karlsland.560.t
+	desc = karlsland.560.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.560.a
+	}
+}
+
+country_event = {
+	id = karlsland.561
+	title = karlsland.561.t
+	desc = karlsland.561.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.561.a
+		add_manpower = -5
+	}
+}
+
+country_event = {
+	id = karlsland.562
+	title = karlsland.562.t
+	desc = karlsland.562.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.561.a
+		add_country_leader_trait = KAR_enlightened_pagan_trait
+	}
+}
+
+country_event = {
+	id = karlsland.563
+	title = karlsland.563.t
+	desc = karlsland.563.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.563.a
+	}
+}
+
+country_event = {
+	id = karlsland.564
+	title = karlsland.564.t
+	desc = karlsland.564.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.564.a
+	}
+}
+
+country_event = {
+	id = karlsland.565
+	title = karlsland.565.t
+	desc = karlsland.565.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.565.a
+		remove_country_leader_trait = KAR_enlightened_pagan_trait
+		add_country_leader_trait = KAR_enlightened_pagan_trait_2
+	}
+}
+
+country_event = {
+	id = karlsland.566
+	title = karlsland.566.t
+	desc = karlsland.566.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.566.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { has_government = neutrality }
+			}
+		}
+		KAR = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+			country_event = {
+				id = karlsland.567
+				days = 1
+			}
+		}
+		custom_effect_tooltip = GENERIC_game_end
+	}
+	
+	option = {
+		name = karlsland.566.b
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_government = neutrality
+			}
+		}
+		KAR = {
+			country_event = {
+				id = karlsland.568
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = karlsland.567
+	title = karlsland.567.t
+	desc = karlsland.567.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.567.a
+	}
+}
+
+country_event = {
+	id = karlsland.568
+	title = karlsland.568.t
+	desc = karlsland.568.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.568.a
+	}
+}
 
 country_event = {
 	id = karlsland.570 ###Invitation to Monarchist Gallia's Faction
@@ -846,7 +1120,7 @@ country_event = {
 	option = {
 		name = karlsland.570.a ### Yes
 		ai_chance = {
-			base = 50
+			factor = 50
 			modifier = {
 				has_government = fascism
 				add = 100
@@ -872,7 +1146,7 @@ country_event = {
 	option = {
 		name = karlsland.570.a  ### No
 		ai_chance = {
-			base = 50
+			factor = 50
 			modifier = {
 				has_government = neutrality				
 				add = 10
@@ -928,7 +1202,7 @@ country_event = {
 	option = {
 		name = karlsland.572.a
 		ai_chance = {
-			base = 1
+			factor = 1
 		}
 		add_war_support = -0.05
 	}
@@ -946,7 +1220,7 @@ country_event = {
 	option = {
 		name = karlsland.572.a
 		ai_chance = {
-			base = 1
+			factor = 1
 		}
 		add_offsite_building = { type = arms_factory level = 2 }
 		add_offsite_building = { type = industrial_complex level = 2 }
@@ -963,7 +1237,7 @@ country_event = {
 	option = {
 		name = karlsland.572.b
 		ai_chance = {
-			base = 1
+			factor = 1
 		}
 		KAR = {
 			country_event = {
@@ -1430,7 +1704,7 @@ country_event = {
 	option = {
 		name = karlsland.607.a
 		ai_chance = {
-			base = 75
+			factor = 75
 		}
 		transfer_state = 28
 		add_state_core = 28
@@ -1447,7 +1721,7 @@ country_event = {
 	option = {
 		name = karlsland.607.b
 		ai_chance = {
-			base = 25
+			factor = 25
 		}
 		add_state_claim = 28
 		add_war_support = 0.05
@@ -1473,7 +1747,7 @@ country_event = {
 			type = puppet_wargoal_focus
 		}
 		ai_chance = {
-			base = 0
+			factor = 0
 		}
 	}
 	
@@ -1555,7 +1829,7 @@ country_event = {
 	option = {
 		name = noble.50.a
 		ai_chance = {
-			base = 0
+			factor = 0
 		}
 		create_wargoal = {
 			target = KA2
@@ -1566,7 +1840,7 @@ country_event = {
 	option = {
 		name = noble.50.b
 		ai_chance = {
-			base = 100
+			factor = 100
 		}
 		KA2 = {
 			country_event = {
@@ -1588,7 +1862,7 @@ country_event = {
 	option = {
 		name = noble.51.a
 		ai_chance = {
-			base = 0
+			factor = 0
 		}
 		KA1 = {
 			country_event = {
@@ -1600,7 +1874,7 @@ country_event = {
 	option = {
 		name = noble.51.b
 		ai_chance = {
-			base = 100
+			factor = 100
 		}
 		KA1 = {
 			country_event = {

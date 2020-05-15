@@ -34,8 +34,20 @@ ideas = {
 				political_power_gain = -0.5
 				stability_factor = -0.05
 				stability_weekly = -0.01
+				fascism_drift = 0.01
+				communism_drift = 0.01
+				democratic_drift = 0.01
 			}
-	
+		}
+		
+		KAR_thedeathofmonarchy_2 = {
+		
+			picture = HUN_hungarian_monarchy_democratic
+		
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.05
+			}
 		}
 			
 		KAR_firstunits = {
@@ -178,10 +190,9 @@ ideas = {
 			
 			
 			modifier = {
-				conscription = 0.05
-				war_support_weekly = 0.01
-				army_morale_factor = 0.1
-				army_defence_factor = 0.1
+				conscription = 0.025
+				army_morale_factor = 0.05
+				army_defence_factor = 0.05
 				army_attack_factor = 0.05
 			}
 		}
@@ -205,6 +216,43 @@ ideas = {
 				political_power_gain = -0.1
 				political_advisor_cost_factor = -0.1
 				foreign_subversive_activites = -0.25
+			}
+		}
+		
+		KAR_finding_the_giants_idea = {
+		
+			picture = KAR_nothing_temp
+			
+			modifier = {
+				conscription = 0.03
+				war_support_weekly = 0.01
+				army_morale_factor = 0.1
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		
+		}
+		
+		KAR_karlslander_work_ethic_idea = {
+		
+			picture = KAR_nothing_temp
+		
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = -0.075
+			}
+		
+		}
+		
+		KAR_triumph_of_the_will_idea = {
+			
+			picture = KAR_nothing_temp 
+			
+			modifier = {
+				surrender_limit = 0.05
+				offensive_war_stability_factor = 0.1
+				defensive_war_stability_factor = 0.3
 			}
 		}
 		
@@ -233,14 +281,37 @@ ideas = {
 		
 		}
 		
+		KAR_really_hurting_econ_pagan = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.5
+				production_factory_max_efficiency_factor = -0.25
+			}
+		
+		}
+		
 		KAR_better_econ = {
 			
 			picture = KAR_debuffeco
 		
 			modifier = { 
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.1
 				industrial_capacity_factory = -0.05
 				production_factory_max_efficiency_factor = -0.1
+			}
+		
+		}
+		
+		KAR_much_better_econ = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
 			}
 		
 		}

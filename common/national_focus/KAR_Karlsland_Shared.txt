@@ -37,7 +37,7 @@ shared_focus = {
 				id = karlsland.19
 				days = 175
 			}
-		}
+		}	
 	}
 }
 
@@ -946,7 +946,6 @@ shared_focus = {
 			}
 			set_cosmetic_tag = KAR_pagan
 		}		
-		remove_ideas = KAR_thedeathofmonarchy
 	} 
 }  
 
@@ -1073,11 +1072,11 @@ shared_focus = {
 		add_stability = 0.10
 		add_popularity = {
 			ideology = neutrality
-			popularity = -0.2
+			popularity = -0.1
 		}
 		add_popularity = {
 			ideology = democratic
-			popularity = -0.2
+			popularity = -0.1
 		}
 		add_political_power = -100
 	} 
@@ -1113,6 +1112,9 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = KAR_and_propaganda
 	prerequisite = { focus = KAR_and_propaganda }
+	bypass = {
+		has_country_flag = KAR_did_rudel_ukkos
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1872,6 +1874,46 @@ shared_focus = {
 }
 
 shared_focus = { 
+	id = KAR_they_still_practice
+	icon = GFX_KAR_bohemia_pagan
+	x = -3
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_unearthly_neuroi }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = KAR_thedeathofmonarchy_2
+			remove_idea = KAR_thedeathofmonarchy
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_work_them_out
+	icon = GFX_KAR_bohemia_pagan
+	x = -3
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_they_still_practice }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		remove_idea = KAR_thedeathofmonarchy_2
+		
+	}
+}
+
+shared_focus = { 
 	id = KAR_friends_in_baltland
 	icon = GFX_KAR_bohemia_pagan
 	x = 0
@@ -1917,9 +1959,14 @@ shared_focus = {
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
-	prerequisite = { focus = KAR_unearthly_neuroi }
 	prerequisite = { focus = KAR_friends_in_baltland }
-	prerequisite = { focus = KAR_transcendental_academia }
+	dynamic = yes
+	available = {
+		OR = {
+			has_military_access_to = BAL
+			has_country_flag = KAR_has_to_sneak_flag
+		}
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1934,7 +1981,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_pilgrimage
 	icon = GFX_KAR_bohemia_pagan
-	x = -1
+	x = 1
 	y = 5
 	cost = 5
 	available_if_capitulated = yes
@@ -1955,7 +2002,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_finding_the_giants
 	icon = GFX_KAR_bohemia_pagan
-	x = 1
+	x = -1
 	y = 5
 	cost = 5
 	available_if_capitulated = yes
@@ -1966,8 +2013,9 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-		country_event = {
-			id = karlsland.566
+		swap_ideas = {
+			add_idea = KAR_finding_the_giants_idea
+			remove_idea = KAR_pagan_propa
 		}
 	}
 }
@@ -1975,7 +2023,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_guns_from_the_allfather
 	icon = GFX_KAR_bohemia_pagan
-	x = -2
+	x = 2
 	y = 6
 	cost = 5
 	available_if_capitulated = yes
@@ -1986,7 +2034,35 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = KAR
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -2004,14 +2080,14 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-
+		add_ideas = KAR_karlslander_work_ethic_idea
 	}
 }
 
 shared_focus = { 
 	id = KAR_earning_her_name
 	icon = GFX_KAR_bohemia_pagan
-	x = 2
+	x = -2
 	y = 6
 	cost = 5
 	available_if_capitulated = yes
@@ -2022,14 +2098,62 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-
+		add_stability = -0.05
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 
 shared_focus = { 
 	id = KAR_crusade_for_uppsala
 	icon = GFX_KAR_bohemia_pagan
-	x = -1
+	x = 4
 	y = 7
 	cost = 5
 	available_if_capitulated = yes
@@ -2040,14 +2164,81 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-
+		create_wargoal = {
+			target = BAL
+			type = puppet_wargoal_focus
+		}
 	}
 }
 
 shared_focus = { 
-	id = KAR_seeresses
+	id = KAR_scattered_family
 	icon = GFX_KAR_bohemia_pagan
-	x = 1
+	x = -2
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_guns_from_the_allfather }
+	prerequisite = { focus = KAR_guns_from_the_allfather }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_state_claim = 39
+		add_state_claim = 69
+		add_state_claim = 74
+		add_state_claim = 4
+		add_state_claim = 152
+		add_state_claim = 796
+		if = {
+			limit = {
+				OST = { has_country_flag = OST_crumbledflag is_puppet = no }
+			}
+			OST = {
+				country_event = {
+					id = karlsland.566
+				}
+			}
+		}
+		custom_effect_tooltip = KAR_scattered_family_tooltip
+	}
+}
+
+shared_focus = { 
+	id = KAR_decry_romagnanism
+	icon = GFX_KAR_bohemia_pagan
+	x = 2
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_earning_her_name }
+	prerequisite = { focus = KAR_guns_from_the_allfather }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_relation_modifier = {
+			target = RMA
+			modifier = kar_anti-romagna_2
+		}
+		RMA = {
+			add_relation_modifier = {
+				target = KAR
+				modifier = kar_anti-romagna_2
+			}
+		}
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = { 
+	id = KAR_triumph_of_the_will
+	icon = GFX_KAR_bohemia_pagan
+	x = -4
 	y = 7
 	cost = 5
 	available_if_capitulated = yes
@@ -2058,8 +2249,29 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-
+		add_ideas = KAR_triumph_of_the_will_idea #lol
 	}
+}
+
+shared_focus = { 
+	id = KAR_ukkos_children_rudel
+	icon = GFX_KAR_ukko
+	x = 0
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_karlslander_work_ethic }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		country_event = {
+			id = karlsland.500
+		}
+		set_country_flag = KAR_did_rudel_ukkos
+	} 
 }
 
 ########## military tree

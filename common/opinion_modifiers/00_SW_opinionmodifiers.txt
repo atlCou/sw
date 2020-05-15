@@ -10,7 +10,11 @@ opinion_modifiers = {
 	}
 	
 	kar_anti-romagna = {
-		value = -50
+		value = -10
+	}
+	
+	kar_anti-romagna_2 = {
+		value = -100
 	}
 	
 	rma_mission_bri = {
