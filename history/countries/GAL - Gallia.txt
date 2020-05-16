@@ -78,15 +78,16 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Amelie Planchard"
+	name = "Rosalie de La Poype"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "Amelie Planchard.dds"
+	picture = "Poype.dds"
 	expire = "1965.1.1"
-	ideology = anarchist_communism
+	ideology = marxism
 	traits = {
 		
 	}
 }
+
 
 create_country_leader = {
 	name = "Chris Keera"

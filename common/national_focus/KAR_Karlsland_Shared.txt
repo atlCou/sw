@@ -4344,10 +4344,10 @@ shared_focus = {
 			limit = {
 				AND = { check_variable = { party_popularity@neutrality > party_popularity@fascism } check_variable = { party_popularity@neutrality > party_popularity@democratic } }
 			}
-			load_focus_tree = {
-				tree = KAR_magocracy_neutrality
-				keep_completed = yes
-			}
+			#load_focus_tree = {
+			#	tree = KAR_magocracy_neutrality
+			#	keep_completed = yes
+			#}
 			add_stability = 0.2
 		}
 		else_if = {

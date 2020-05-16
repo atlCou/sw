@@ -26,9 +26,13 @@
  
  #### COSMETIC
  
- RMA_lib_socialism:0 "Romagna"
- RMA_lib_socialism_DEF:0 "Romagna"
- RMA_lib_socialism_ADJ:0 "Romagnan"
+ RMA_italia_tag_democratic:0 "Italia"
+ RMA_italia_tag_democratic_DEF:0 "Italia"
+ RMA_italia_tag_democratic_ADJ:0 "Italian"
+ 
+ VNE_RMA_croatia_puppet:0 "Dalmazia italiana"
+ VNE_RMA_croatia_puppet_DEF:0 "Italian Dalmatia"
+ VNE_RMA_croatia_puppet_ADJ:0 "Dalmatian"
  
  RMA_rome_fascism:0 "Romana"
  RMA_rome_fascism_DEF:0 "Romana"
@@ -36,7 +40,10 @@
 
  
  
+ ##### FOCUS
  
+ 
+ RMA_integrate_venezia_tooltip_available:0 "§YVenezia§! must have §Gmore§! §Ycivilian factories§! than §YRomagna§!."
  
  RMA_cultural_center:0 "Cultural Monolith"
  RMA_cultural_center_desc:0 "Romagna stands as the cultural center of nearly all of Europe. Holding Rome, the religious center of the continent, gives it tremendous importance to those devout all over. Of course, this has lead to a history of religious revolts from native populations, which threaten the cultural importance Romagna enjoys..."

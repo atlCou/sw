@@ -150,11 +150,11 @@ country_event = {
 				add_state_core = 74
 				hidden_effect = {
 					create_country_leader = {
-							name = "Vesna Mikovic"
-							desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
-							picture = "vesna_mikovic.dds"
-							expire = "1965.1.1"
-							ideology = despotism
+						name = "Vesna Mikovic"
+						desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+						picture = "vesna_mikovic.dds"
+						expire = "1965.1.1"
+						ideology = despotism
 					}
 				}
 			}

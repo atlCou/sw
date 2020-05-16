@@ -1,0 +1,101 @@
+ideas = {
+	country = {
+
+		RMA_cultural_center = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.1
+				foreign_subversive_activites = -0.5
+			}
+		}
+
+		RMA_unification = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				war_support_factor = 0.10
+			}
+		}
+		
+		
+		RMA_building_grants_idea = {
+		
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		
+		}
+		
+		RMA_trade_partners_idea = {
+		
+			picture = generic_flexible_foreign_policy
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		
+		RMA_defending_our_position_idea = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.30
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				foreign_subversive_activites = -0.25
+			}
+		}
+		
+		RMA_not_just_the_pagans_idea = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				communism_acceptance = -50
+				fascism_acceptance = -50
+			}
+		}
+		
+		RMA_opening_business_idea = {
+		
+			picture = generic_political_support
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		RMA_relax_regulations_idea = {
+		
+			picture = generic_political_support
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		
+	}
+
+}

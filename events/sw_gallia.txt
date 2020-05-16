@@ -392,12 +392,20 @@ country_event = {
 				check_variable = { GAL_prog > GAL_liberal }
 			} 
 		}
-		add_popularity = { ideology = communism popularity = 0.1 }
+		add_popularity = { ideology = communism popularity = 0.05 }
 		add_stability = 0.03
 		set_country_flag = GAL_socdem
 		set_country_flag = GAL_wentsocdem
 		set_country_flag = GAL_1936gallianelections
 		complete_national_focus = GAL_1936elections
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Amelie Planchard"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "Amelie Planchard.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+		}
 	}
 	option = {
 		name = gallia.11.c
@@ -1163,6 +1171,36 @@ country_event = {
 		
 }
 
+country_event = {
+	id = gallia.1003
+	title = gallia.1003.t
+	desc = gallia.1003.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.1003.a
+		set_country_flag = GAL_KAR_saidyes
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = gallia.1002
+	title = gallia.1002.t
+	desc = gallia.1002.d
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gallia.1002.a
+		add_war_support = 0.1
+	}
+}
 
 
 
