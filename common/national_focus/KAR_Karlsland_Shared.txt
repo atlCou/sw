@@ -1106,12 +1106,15 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_ukkos_children
 	icon = GFX_KAR_ukko
-	x = -4
+	x = 4
 	y = 1
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_and_propaganda
 	prerequisite = { focus = KAR_and_propaganda }
+	available = {
+		has_country_flag = KAR_did_rudel_ukkos
+	}
 	bypass = {
 		has_country_flag = KAR_did_rudel_ukkos
 	}
@@ -1130,7 +1133,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_fund_militants
 	icon = GFX_KAR_ukko
-	x = -4
+	x = 4
 	y = 2
 	cost = 5
 	available_if_capitulated = yes
@@ -1166,7 +1169,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_SOU_legacy_of_the_civil_war
 	icon = GFX_KAR_ukko
-	x = -3
+	x = 5
 	y = 3
 	cost = 5
 	available_if_capitulated = yes
@@ -1200,7 +1203,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_partition_baltland
 	icon = GFX_KAR_ukko
-	x = -4
+	x = 4
 	y = 4
 	cost = 5
 	available_if_capitulated = yes
@@ -1244,7 +1247,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_pushing_our_claims
 	icon = GFX_KAR_ukko
-	x = -4
+	x = 4
 	y = 5
 	cost = 5
 	available_if_capitulated = no
@@ -1277,7 +1280,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_baltic_question
 	icon = GFX_KAR_ukko
-	x = -5
+	x = 3
 	y = 3
 	cost = 5
 	available_if_capitulated = yes
@@ -1298,14 +1301,6 @@ shared_focus = {
 		}
 	} 
 }
-
-
-
-
-
-
-
-
  
 
 shared_focus = { 
@@ -1396,144 +1391,25 @@ shared_focus = {
 		}
 	} 
 }
- 
 
- 
-shared_focus = { 
-	id = KAR_establish_council
-	icon = GFX_KAR_bohemia_pagan
-	x = 6
-	y = 1
-	cost = 5
-	available_if_capitulated = yes
-	relative_position_id = KAR_and_propaganda
-	prerequisite = { focus = KAR_and_propaganda }
-	ai_will_do = { 
-		factor = 1
-	} 
 
-	completion_reward = {
-		add_stability = 0.1
-		add_political_power = 50
-		country_event = {
-			id = karlsland.550
-		}
-	}
-}
- 
-shared_focus = { 
-	id = KAR_Volksforschung
-	icon = GFX_KAR_bohemia_pagan
-	x = 2
-	y = 2
-	cost = 5
-	available_if_capitulated = yes
-	relative_position_id = KAR_establish_council
-	prerequisite = { focus = KAR_rudel_alone focus = KAR_like_old }
-	ai_will_do = { 
-		factor = 1
-	} 
+####### WACKY RUDEL STUFF 
+###### I SHOULD PROBABLY CLARIFY THAT THE CONTENTS OF THIS MOD DO NOT REFLECT MY REAL BELIEFS OR OPINIONS
 
-	completion_reward = {
-		add_ideas = KAR_volksforschung_idea
-		add_research_slot = 1
-	}
-}
- 
-shared_focus = { 
-	id = KAR_the_other_institution
-	icon = GFX_KAR_bohemia_pagan
-	x = -2
-	y = 2
-	cost = 5
-	available_if_capitulated = yes
-	relative_position_id = KAR_establish_council
-	prerequisite = { focus = KAR_rudel_alone focus = KAR_like_old }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		random_state = {
-			limit = {
-				is_core_of = KAR
-				is_owned_by = KAR
-				is_controlled_by = KAR
-			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-		random_state = {
-			limit = {
-				is_core_of = KAR
-				is_owned_by = KAR
-				is_controlled_by = KAR
-			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-		random_state = {
-			limit = {
-				is_core_of = KAR
-				is_owned_by = KAR
-				is_controlled_by = KAR
-			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
 
 
 shared_focus = { 
-	id = KAR_like_old
+	id = KAR_rudel_alone
 	icon = GFX_KAR_bohemia_pagan
 	x = -3
 	y = 1
 	cost = 8
 	available_if_capitulated = yes
-	relative_position_id = KAR_establish_council
-	mutually_exclusive = { focus = KAR_rudel_alone }
-	available = {
-		has_country_flag = KAR_like_old_flag
-	}
-	allow_branch = { has_country_flag = KAR_rudel_tree_loaded }
-	prerequisite = { focus = KAR_establish_council }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		add_stability = 0.05
-		add_ideas = KAR_like_old_idea
-	}
-}
-
-shared_focus = { 
-	id = KAR_rudel_alone
-	icon = GFX_KAR_bohemia_pagan
-	x = 3
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
 	mutually_exclusive = { focus = KAR_like_old }
-	relative_position_id = KAR_establish_council
-	prerequisite = { focus = KAR_establish_council }
+	relative_position_id = KAR_and_propaganda
+	prerequisite = { focus = KAR_and_propaganda }
 	available = {
 		has_political_power > 34
-		has_country_flag = KAR_rudel_alone_flag
 	}
 	ai_will_do = { 
 		factor = 1
@@ -1551,244 +1427,6 @@ shared_focus = {
 	}
 }
 
-
-
-
-
-shared_focus = { 
-	id = KAR_distribution
-	icon = GFX_KAR_bohemia_pagan
-	x = -1
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_for_guns }
-	relative_position_id = KAR_the_other_institution
-	prerequisite = { focus = KAR_the_other_institution }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		add_ideas = KAR_distribution_idea
-	}
-}
-
-shared_focus = { 
-	id = KAR_for_guns
-	icon = GFX_KAR_bohemia_pagan
-	x = 1
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_distribution }
-	relative_position_id = KAR_the_other_institution
-	prerequisite = { focus = KAR_the_other_institution }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		random_state = {
-			limit = {
-				is_core_of = KAR
-				is_owned_by = KAR
-				is_controlled_by = KAR
-			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-		random_state = {
-			limit = {
-				is_core_of = KAR
-				is_owned_by = KAR
-				is_controlled_by = KAR
-			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-		random_state = {
-			limit = {
-				is_core_of = KAR
-				is_owned_by = KAR
-				is_controlled_by = KAR
-			}
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
-
-shared_focus = { 
-	id = KAR_agrarian_traditions
-	icon = GFX_KAR_bohemia_pagan
-	x = -1
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_volkisch_intelligentsia }
-	relative_position_id = KAR_Volksforschung
-	prerequisite = { focus = KAR_Volksforschung }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		add_ideas = KAR_agrarian_traditions_idea
-	}
-}
-
-shared_focus = { 
-	id = KAR_volkisch_intelligentsia
-	icon = GFX_KAR_bohemia_pagan
-	x = 1
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_agrarian_traditions }
-	relative_position_id = KAR_Volksforschung
-	prerequisite = { focus = KAR_Volksforschung }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		swap_ideas = {
-			add_idea = KAR_volkisch_intelligentsia_idea
-			remove_idea = KAR_volksforschung_idea
-		}
-	}
-}
-
-shared_focus = { 
-	id = KAR_purge_the_materialist_militias
-	icon = GFX_KAR_bohemia_pagan
-	x = 0
-	y = 2
-	cost = 8
-	available_if_capitulated = yes
-	relative_position_id = KAR_Volksforschung
-	prerequisite = { focus = KAR_volkisch_intelligentsia focus = KAR_agrarian_traditions focus = KAR_for_guns focus = KAR_distribution }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-
-	}
-}
-
-shared_focus = { 
-	id = KAR_council_debates_industry
-	icon = GFX_KAR_bohemia_pagan
-	x = 0
-	y = 2
-	cost = 8
-	available_if_capitulated = yes
-	relative_position_id = KAR_the_other_institution
-	prerequisite = { focus = KAR_volkisch_intelligentsia focus = KAR_agrarian_traditions focus = KAR_for_guns focus = KAR_distribution }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-
-	}
-}
-
-shared_focus = { 
-	id = KAR_self_management
-	icon = GFX_KAR_bohemia_pagan
-	x = -1
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_the_states_lifeforce }
-	relative_position_id = KAR_council_debates_industry
-	prerequisite = { focus = KAR_council_debates_industry }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-
-	}
-}
-
-shared_focus = { 
-	id = KAR_the_states_lifeforce
-	icon = GFX_KAR_bohemia_pagan
-	x = 1
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_self_management }
-	relative_position_id = KAR_council_debates_industry
-	prerequisite = { focus = KAR_council_debates_industry }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-
-	}
-}
-
-shared_focus = { 
-	id = KAR_dissolve_the_militias
-	icon = GFX_KAR_bohemia_pagan
-	x = -1
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_odins_legion }
-	relative_position_id = KAR_purge_the_materialist_militias
-	prerequisite = { focus = KAR_purge_the_materialist_militias }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-
-	}
-}
-
-shared_focus = { 
-	id = KAR_odins_legion
-	icon = GFX_KAR_bohemia_pagan
-	x = 1
-	y = 1
-	cost = 8
-	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_dissolve_the_militias }
-	relative_position_id = KAR_purge_the_materialist_militias
-	prerequisite = { focus = KAR_purge_the_materialist_militias }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-
-	}
-}
-
-
-
-
-####### WACKY RUDEL STUFF 
-###### I SHOULD PROBABLY CLARIFY THAT THE CONTENTS OF THIS MOD DO NOT REFLECT MY REAL BELIEFS OR OPINIONS
 
 shared_focus = { 
 	id = KAR_hire_a_mystic
@@ -1908,8 +1546,7 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-		remove_idea = KAR_thedeathofmonarchy_2
-		
+		remove_ideas = KAR_thedeathofmonarchy_2
 	}
 }
 
@@ -1947,7 +1584,52 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-		
+		add_research_slot = 1
+	}
+}
+
+shared_focus = { 
+	id = KAR_alternative_cosmology
+	icon = GFX_KAR_bohemia_pagan
+	x = 3
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_transcendental_academia }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_volkisch_intelligentsia_idea
+	}
+}
+
+shared_focus = { 
+	id = KAR_quantum_nonsense
+	icon = GFX_KAR_bohemia_pagan
+	x = 3
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_rudel_alone
+	prerequisite = { focus = KAR_transcendental_academia }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		custom_effect_tooltip = KAR_quantum_nonsense_tooltip
+		add_stability = 0.075
+		hidden_effect = {
+			add_tech_bonus = {
+				name = KAR_quantum_nonsense_modifier
+				bonus = -1
+				uses = 100
+				category = nuclear
+			}
+		}
 	}
 }
 
@@ -2159,6 +1841,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
 	prerequisite = { focus = KAR_guns_from_the_allfather }
+	prerequisite = { focus = KAR_quantum_nonsense }
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -2244,6 +1927,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
 	prerequisite = { focus = KAR_earning_her_name }
+	prerequisite = { focus = KAR_work_them_out }
 	ai_will_do = { 
 		factor = 1
 	} 

@@ -19,6 +19,7 @@ focus_tree = {
 	
 }
 
+
 focus_tree = { 
 
 	id = KAR_Karlsland_paganism
@@ -27,28 +28,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 15
-			original_tag = KAR 
-		}
-	
-	} 
-	
-	default = no
-	continuous_focus_position = { x = 50 y = 2000 }
-
-	shared_focus = KAR_a_new_day_for_karlslanders
-	
-}
-
-focus_tree = { 
-
-	id = KAR_Karlsland_paganism_rudel
-	
-	country = { 
-		factor = 0 
-		
-		modifier = { 
-			add = 15
+			add = 150
 			original_tag = KAR 
 		}
 	
@@ -69,7 +49,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 150
+			add = 15
 			original_tag = KAR 
 		}
 	

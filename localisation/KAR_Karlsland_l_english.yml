@@ -203,16 +203,37 @@ KAR_a_new_police:0 "Odin's Arm"
 KAR_a_purge:0 "Revolution's Blót"
 KAR_and_propaganda:0 "§GA Concept Reborn§!"
 
+
+KAR_rudel_alone:0 "Rudel's Journey"
 KAR_clean_ranks:0 "Clean The Ranks"
 KAR_clean_ranks_desc:0 "There are still some who won’t follow Rudel. Those who saw the way she fought against the Neuroi years ago and now refuse to put on their boots and march behind the witch that saved Karlsland. Those who call the traditional Karlslander ways “heathenism”. Even those who once sat on the council now claim Rudel’s autocratic tendencies will lead only to human conflict."
+KAR_hire_a_mystic:0 "Hire a Mystic"
 KAR_the_runes_talk:0 "The Runes Speak"
 KAR_the_runes_talk_desc:0 "It was then that she understood. Understood why she led Karlsland now, why, out of so many other possible directions and candidates and opportunities, she was the one chosen to lead. She had a duty to Karlslanders, throughout every dimension of time, to restore the greatness of their people and the knowledge that was lost."
-
-
+KAR_unearthly_neuroi:0 "Unearthly Neuroi"
+KAR_friends_in_baltland:0 "Friends in Baltland"
+KAR_transcendental_academia:0 "Transcendental Academia"
+KAR_they_still_practice:0 "They Still Practice"
+KAR_they_still_practice_desc:0 "Even though we've burnt down their churches, pushed them out of their towns, strongarmed their local governments and locked up the most pious; the damn Romagnanists are still practicing!"
+KAR_the_island_in_the_north:0 "The Island in the North"
+KAR_alternative_cosmology:0 "Alternative Cosmology"
+KAR_work_them_out:0 "Work Them Out"
+KAR_finding_the_giants:0 "Finding the Giants"
+KAR_finding_the_giants_desc:0 "We went north to find the giants of an island in the far north, held by beings of extraordinary stature, immense intelligence, and extreme strength. Instead, we found those people were in front of our noses the whole time - the Karlslander people are those giants!"
+KAR_pilgrimage:0 "A Karlslander Pilgrimage"
+KAR_quantum_nonsense:0 "Quantum Nonsense"
+KAR_earning_her_name:0 "Earning Her Nickname"
+KAR_karlslander_work_ethic:0 "Karlslander Work Ethic"
+KAR_guns_from_the_allfather:0 "Guns from the Allfather"
+KAR_triumph_of_the_will:0 "Triumph of the Will"
+KAR_scattered_family:0 "Our Scattered Family"
+KAR_ukkos_children_rudel:0 "Ukko's Children"
+KAR_decry_romagnanism:0 "Decry Romagnanism Everywhere!"
+KAR_crusade_for_uppsala:0 "Crusade for Uppsala"
 
 KAR_has_to_sneak_flag:0 "§YBaltland§! refused to give §Ymilitary access§!, but Rudel can still sneak through."
-KAR_scattered_family_tooltip:0 "If §YOstmark§! has shattered, their Karlslander lands will be given an event calling for early, peaceful integration."
-
+KAR_scattered_family_tooltip:0 "If §YOstmark§! has §Rshattered§!, their Karlslander lands will be given an event calling for §Cearly, peaceful integration.§!"
+KAR_quantum_nonsense_tooltip:0 "We will §Cexpel§! all §YKarlslander§! scientists publishing §Canti-Karlslander research!§! We foresee no §Rnegative repercussions§! from this action."
 
 ###############################
 ############### NOBLE/TROOD TREE AND IDEAS
