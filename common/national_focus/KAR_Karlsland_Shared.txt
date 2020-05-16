@@ -4317,13 +4317,32 @@ shared_focus = {
 ##############
 
 shared_focus = { 
+	id = KAR_the_magocracy
+	icon = GFX_KAR_mag_unknown
+	x = 7
+	y = 0
+	cost = 5
+	available_if_capitulated = yes
+	bypass = { ROOT = { exists = yes } }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+
+shared_focus = { 
 	id = KAR_legitimizing_the_magocracy
 	icon = GFX_KAR_mag_unknown
-	x = -1
-	y = 0
+	x = -2
+	y = 1
 	cost = 5
 	available_if_capitulated = yes 
 	mutually_exclusive = { focus = KAR_authority_through_force }
+	prerequisite = { focus = KAR_the_magocracy }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -4347,11 +4366,13 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_authority_through_force
 	icon = GFX_KAR_mag_unknown
-	x = 3
-	y = 0
+	x = 2
+	y = 1
 	cost = 5
 	available_if_capitulated = yes 
 	mutually_exclusive = { focus = KAR_legitimizing_the_magocracy }
+	prerequisite = { focus = KAR_the_magocracy }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -4373,12 +4394,13 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_basic_law
 	icon = GFX_KAR_mag_unknown
-	x = -1
-	y = 1
+	x = -2
+	y = 2
 	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_legitimizing_the_magocracy focus = KAR_authority_through_force }
 	mutually_exclusive = { focus = KAR_unregulated_authority }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -4399,12 +4421,13 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_unregulated_authority
 	icon = GFX_KAR_mag_unknown
-	x = 3
-	y = 1
+	x = 2
+	y = 2
 	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_legitimizing_the_magocracy focus = KAR_authority_through_force }
 	mutually_exclusive = { focus = KAR_basic_law }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -4425,11 +4448,12 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_question_of_localities
 	icon = GFX_KAR_mag_unknown
-	x = 1
-	y = 2
+	x = 0
+	y = 3
 	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_basic_law focus = KAR_unregulated_authority }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -4444,75 +4468,886 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_status_quo_localities
 	icon = GFX_KAR_mag_unknown
-	x = 1
-	y = 3
+	x = 0
+	y = 4
 	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_question_of_localities }
 	available = { OR = { check_variable = { party_popularity@neutrality > party_popularity@democratic } check_variable = { party_popularity@neutrality > party_popularity@fascism } } }
 	mutually_exclusive = { focus = KAR_republicanize focus = KAR_from_bottom_to_top }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
-		
+		add_ideas = KAR_status_quo_localities_idea
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.025
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_republicanize
 	icon = GFX_KAR_mag_unknown
-	x = -1
-	y = 3
+	x = -2
+	y = 4
 	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_question_of_localities }
 	available = { OR = { check_variable = { party_popularity@democratic > party_popularity@neutrality } check_variable = { party_popularity@democratic > party_popularity@fascism } } }
 	mutually_exclusive = { focus = KAR_status_quo_localities focus = KAR_from_bottom_to_top }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
-		
+		add_ideas = KAR_republicanized_localities
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.025
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_from_bottom_to_top
 	icon = GFX_KAR_mag_unknown
-	x = 3
-	y = 3
+	x = 2
+	y = 4
 	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_question_of_localities }
 	available = { OR = { check_variable = { party_popularity@fascism > party_popularity@neutrality } check_variable = { party_popularity@fascism > party_popularity@democratic } } }
 	mutually_exclusive = { focus = KAR_status_quo_localities focus = KAR_republicanize }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
-		
+		add_ideas = KAR_hierarchical_localities
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.025
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_organization_of_the_council
 	icon = GFX_KAR_mag_unknown
-	x = 1
-	y = 4
+	x = 0
+	y = 5
 	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = KAR_republicanize focus = KAR_from_bottom_to_top focus = KAR_status_quo_localities }
+	relative_position_id = KAR_the_magocracy
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
 		country_event = {
-			id = magocracy.1
+			id = magocracy.2
 		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_the_electorate
+	icon = GFX_KAR_mag_unknown
+	x = -2
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_organization_of_the_council }
+	available = { OR = { check_variable = { party_popularity@democratic > party_popularity@neutrality } check_variable = { party_popularity@democratic > party_popularity@fascism } } }
+	mutually_exclusive = { focus = KAR_oligarchical_selection focus = KAR_needs_of_the_leader }
+	relative_position_id = KAR_the_magocracy
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		custom_effect_tooltip = KAR_the_electorate_tooltip #will allow leader to change every couple years (and at the end of this mini-tree through a recurring event
+		set_country_flag = KAR_magocracy_has_elections
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.025
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_oligarchical_selection
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_organization_of_the_council }
+	available = { OR = { check_variable = { party_popularity@neutrality > party_popularity@democratic } check_variable = { party_popularity@neutrality > party_popularity@fascism } } }
+	mutually_exclusive = { focus = KAR_the_electorate focus = KAR_needs_of_the_leader }
+	relative_position_id = KAR_the_magocracy
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		custom_effect_tooltip = KAR_oligarchical_selection_tooltip #can pick leader through decisions, costs political power and stability
+		set_country_flag = KAR_magocracy_has_olig_elections
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.025
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_needs_of_the_leader
+	icon = GFX_KAR_mag_unknown
+	x = 2
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_organization_of_the_council }
+	available = { OR = { check_variable = { party_popularity@fascism > party_popularity@neutrality } check_variable = { party_popularity@fascism > party_popularity@democratic } } }
+	mutually_exclusive = { focus = KAR_oligarchical_selection focus = KAR_the_electorate }
+	relative_position_id = KAR_the_magocracy
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_political_power = 50
+		set_country_flag = KAR_needs_of_the_leader_flag
+		add_popularity = {
+			ideology = fascism	
+			popularity = 0.025
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_council_in_session
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 7
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = KAR_needs_of_the_leader focus = KAR_oligarchical_selection focus = KAR_the_electorate }
+	relative_position_id = KAR_the_magocracy
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		if = {
+			limit = {
+				AND = { check_variable = { party_popularity@fascism > party_popularity@neutrality } check_variable = { party_popularity@fascism > party_popularity@democratic } }
+			}
+			load_focus_tree = {
+				tree = KAR_magocracy_fascist
+				keep_completed = yes
+			}
+			add_stability = 0.05
+		}
+		else_if = {
+			limit = {
+				AND = { check_variable = { party_popularity@neutrality > party_popularity@fascism } check_variable = { party_popularity@neutrality > party_popularity@democratic } }
+			}
+			load_focus_tree = {
+				tree = KAR_magocracy_neutrality
+				keep_completed = yes
+			}
+			add_stability = 0.2
+		}
+		else_if = {
+			limit = { 
+				AND = { check_variable = { party_popularity@democratic > party_popularity@fascism } check_variable = { party_popularity@democratic > party_popularity@neutrality } }				
+			}
+			load_focus_tree = {
+				tree = KAR_magocracy_democratic
+				keep_completed = yes
+			}
+			add_stability = 0.5
+		}
+	}
+}
+		#### Fascist Magocracy
+shared_focus = { 
+	id = KAR_on_top_at_last
+	icon = GFX_KAR_mag_unknown
+	x = 7
+	y = 0
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_shuffle_the_ranks
+	icon = GFX_KAR_mag_unknown
+	x = -3
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_on_top_at_last }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_witches_with_an_army
+	icon = GFX_KAR_mag_unknown
+	x = -2
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_shuffle_the_ranks }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_prop_up_witch_schools
+	icon = GFX_KAR_mag_unknown
+	x = -4
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_shuffle_the_ranks }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_carry_karlslands_legacy
+	icon = GFX_KAR_mag_unknown
+	x = 3
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_on_top_at_last }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_these_factories_seem_empty
+	icon = GFX_KAR_mag_unknown
+	x = 2
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_carry_karlslands_legacy }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_mastering_our_battlespace
+	icon = GFX_KAR_mag_unknown
+	x = 4
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_carry_karlslands_legacy }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_the_other_two
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_on_top_at_last	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_loyal_to_the_council
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_the_other_two }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_that_army_with_a_state
+	icon = GFX_KAR_mag_unknown
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_witches_with_an_army }
+	prerequisite = { focus = KAR_loyal_to_the_council }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_the_future_of_statecraft
+	icon = GFX_KAR_mag_unknown
+	x = 1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_these_factories_seem_empty }
+	prerequisite = { focus = KAR_loyal_to_the_council }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_marching_north
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_that_army_with_a_state }
+	prerequisite = { focus = KAR_the_future_of_statecraft }
+	bypass = {
+		KA3 = { exists = no }
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KA3
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_flying_south
+	icon = GFX_KAR_mag_unknown
+	x = -2
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_marching_north }
+	bypass = {
+		AND = { 
+			KA4 = { exists = no }
+			KA5 = { exists = no }
+		}
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KA4
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = KA5
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_the_decrepit_east
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_marching_north }
+	bypass = {
+		KA1 = { exists = no }
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KA1
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_unmask_the_west
+	icon = GFX_KAR_mag_unknown
+	x = 2
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_marching_north }
+	bypass = {
+		KAR = { exists = no }
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KAR
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_a_witchs_karlsland
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_on_top_at_last
+	prerequisite = { focus = KAR_flying_south }
+	prerequisite = { focus = KAR_the_decrepit_east }
+	prerequisite = { focus = KAR_unmask_the_west }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		set_cosmetic_tag = KA2_magocracy_unified
+	} 
+}
+
+	#### Democratic Magocracy
+	
+shared_focus = { 
+	id = KAR_rebuild_karlsland
+	icon = GFX_KAR_mag_unknown
+	x = 11
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_denounce_radicalism
+	icon = GFX_KAR_mag_unknown
+	x = 1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_rebuild_karlsland }
+	relative_position_id = KAR_rebuild_karlsland
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_domestic_volunteer_program
+	icon = GFX_KAR_mag_unknown
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_denounce_radicalism }
+	relative_position_id = KAR_rebuild_karlsland
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_friendship_with_republicans
+	icon = GFX_KAR_mag_unknown
+	x = -1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_rebuild_karlsland }
+	prerequisite = { focus = KAR_and_unity }
+	relative_position_id = KAR_rebuild_karlsland
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_topple_the_misguided
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_friendship_with_republicans }
+	prerequisite = { focus = KAR_domestic_volunteer_program }
+	bypass = {
+		AND = { 
+			KA4 = { exists = no }
+			KA5 = { exists = no }
+		}
+	}
+	relative_position_id = KAR_rebuild_karlsland
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KA4
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = KA5
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_squash_the_revolutionaries
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_topple_the_misguided }
+	relative_position_id = KAR_rebuild_karlsland
+	bypass = {
+		KAR = { exists = no }
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KAR
+		}
+	} 
+}
+	
+shared_focus = { 
+	id = KAR_the_lessons_of_a_witch
+	icon = GFX_KAR_mag_unknown
+	x = 7
+	y = 0
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_order
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_the_lessons_of_a_witch }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_but_with_compassion
+	icon = GFX_KAR_mag_unknown
+	x = -2
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_order }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_factory_subsidies
+	icon = GFX_KAR_mag_unknown
+	x = -3
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_but_with_compassion }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_sponsor_construction_projects
+	icon = GFX_KAR_mag_unknown
+	x = -2
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_factory_subsidies }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_comradery
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_order }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_and_unity
+	icon = GFX_KAR_mag_unknown
+	x = 2
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_order }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_necessary_gatekeeping
+	icon = GFX_KAR_mag_unknown
+	x = 1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_and_unity }
+	prerequisite = { focus = KAR_comradery }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_reconcile_with_conservatives
+	icon = GFX_KAR_mag_unknown
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_but_with_compassion }
+	prerequisite = { focus = KAR_comradery }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_a_democratic_experiment
+	icon = GFX_KAR_mag_unknown
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_reconcile_with_conservatives }
+	prerequisite = { focus = KAR_necessary_gatekeeping }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_invite_the_republicans
+	icon = GFX_KAR_mag_unknown
+	x = 2
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_necessary_gatekeeping }
+	prerequisite = { focus = KAR_friendship_with_republicans }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	bypass = {
+		KA3 = { exists = no }
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+	} 
+}
+
+shared_focus = { 
+	id = KAR_the_last_unification_war
+	icon = GFX_KAR_mag_unknown
+	x = 3
+	y = 6
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_invite_the_republicans }
+	prerequisite = { focus = KAR_squash_the_revolutionaries }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	bypass = {
+		KA1 = { exists = no }
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = KA1
+		}
+	} 
+}
+
+shared_focus = { 
+	id = KAR_the_new_democracy
+	icon = GFX_KAR_mag_unknown
+	x = 1
+	y = 7
+	cost = 5
+	available_if_capitulated = yes
+	prerequisite = { focus = KAR_the_last_unification_war }
+	prerequisite = { focus = KAR_a_democratic_experiment }
+	relative_position_id = KAR_the_lessons_of_a_witch
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
 	} 
 }

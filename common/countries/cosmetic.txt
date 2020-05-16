@@ -263,6 +263,11 @@ KA2_KA1_Puppet = {
 	color_ui = rgb { 207 182 23 }
 }
 
+KA2_magocracy_unified = {
+	color = rgb { 142 48 48 }
+	color_ui = rgb { 142 48 48 }
+}
+
 KA2_KA1_Puppet_Unified = {
 	color = rgb { 79 74 10 }
 	color_ui = rgb { 79 74 10 }

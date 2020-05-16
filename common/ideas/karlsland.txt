@@ -610,7 +610,7 @@ ideas = {
 			
 		}
 		
-		KAR_comrade_leader's_vanguard_idea = {
+		KAR_comrade_leaders_vanguard_idea = {
 			
 			picture = por_iberian_workers_united
 			
@@ -621,7 +621,7 @@ ideas = {
 		
 		}
 		
-		KAR_comrade_leader's_vanguard_idea_2 = {
+		KAR_comrade_leaders_vanguard_idea_2 = {
 			
 			picture = por_iberian_workers_united
 			
@@ -733,6 +733,37 @@ ideas = {
 				political_power_factor = 0.1
 			}
 		
+		}
+		
+		KAR_republicanized_localities = {
+		
+			picture = NA
+			
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = 0.075
+			}
+
+		}
+		
+		KAR_status_quo_localities_idea = {
+		
+			picture = NA
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+
+		}
+		
+		KAR_hierarchical_localities = {
+		
+			picture = NA
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+
 		}
 		
 	}

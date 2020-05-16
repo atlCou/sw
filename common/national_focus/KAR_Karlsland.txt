@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 150
+			add = 15
 			original_tag = KAR 
 		}
 	
@@ -69,7 +69,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 15
+			add = 150
 			original_tag = KAR 
 		}
 	
@@ -111,7 +111,7 @@ focus_tree = {
 }
 
 focus_tree = { 
-	id = KAR_Junkerreich
+	id = KAR_Magocracy
 	
 	country = { 
 		factor = 0 
@@ -136,7 +136,67 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 50 y = 3000 }
 
-	shared_focus = KAR_authority_through_force
-	shared_focus = KAR_legitimizing_the_magocracy
+	shared_focus = KAR_the_magocracy
+	
+}
+
+focus_tree = { 
+	id = KAR_magocracy_fascist
+	
+	country = { 
+		factor = 0 
+		
+		modifier = { 
+			add = 15
+			original_tag = KA2
+			has_government = neutrality
+		}
+		modifier = { 
+			add = 15
+			original_tag = KA2
+			has_government = fascism
+		}
+		modifier = { 
+			add = 15
+			original_tag = KA2
+			has_government = democratic
+		}
+	
+	} 
+	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	shared_focus = KAR_on_top_at_last
+	
+}
+
+focus_tree = { 
+	id = KAR_magocracy_democratic
+	
+	country = { 
+		factor = 0 
+		
+		modifier = { 
+			add = 15
+			original_tag = KA2
+			has_government = neutrality
+		}
+		modifier = { 
+			add = 15
+			original_tag = KA2
+			has_government = fascism
+		}
+		modifier = { 
+			add = 20
+			original_tag = KA2
+			has_government = democratic
+		}
+	
+	} 
+	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	shared_focus = KAR_the_lessons_of_a_witch
+	shared_focus = KAR_rebuild_karlsland
 	
 }
