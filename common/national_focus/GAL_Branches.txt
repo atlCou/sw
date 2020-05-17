@@ -21,14 +21,14 @@ focus_tree = {
 
 
 
-focus_tree = {
+focus_tree = {	
 	id = Gallia_pride
 	
 	country = {
 		factor = 0
 		
 		modifier = {
-			add = 1
+			add = 10
 			tag = GAL
 		}
 	}

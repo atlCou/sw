@@ -5,10 +5,10 @@ focus_tree = {
 		modifier = { 
 			add = 10 
 			original_tag = RMA
-			default = no
 		} 
 	} 
 	continuous_focus_position = { x = 50 y = 3000 }
+	default = no
 
 	focus = { 
 		id = RMA_the_party_leader
@@ -17,7 +17,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes 
-		immediate = {
+		select_effect = {
 			country_event = {
 				id = RMAflav.1
 				days = 10
@@ -517,7 +517,7 @@ focus_tree = {
 				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 				picture = "maria.dds"
 				expire = "1965.1.1"
-				ideology = federal_monarchism
+				ideology = centrism
 				traits = {
 					
 				}
@@ -688,7 +688,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_defending_our_position }
-		mutually_exclusive = { focus = RMA_not_just_the_pagans }
+		mutually_exclusive = { focus = RMA_venezian_degeneracy }
 		completion_reward = {
 			swap_ideas = {
 				add_idea = RMA_not_just_the_pagans_idea
@@ -823,23 +823,418 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = RMA_reach_out_to_pnf
+		icon = GFX_focus_usa_voter_registration_act
+		x = -1	
+		y = 1
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_old_glories }
+		completion_reward = { 
+			add_stability = -0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
 	
+	focus = {
+		id = RMA_ensure_our_support
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 2
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_reach_out_to_pnf }
+		completion_reward = { 
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			2 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					instant_build = yes
+					type = arms_factory
+					level = 2
+				}
+			}
+			random_owned_state = {
+				limit = { infrastructure < 10 }
+				add_building_construction = {
+					instant_build = yes
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = { infrastructure < 10 }
+				add_building_construction = {
+					instant_build = yes
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
 	
+	focus = {
+		id = RMA_breads_and_circuses
+		icon = GFX_focus_usa_voter_registration_act
+		x = -2
+		y = 2
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_reach_out_to_pnf }
+		completion_reward = { 
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			158 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					instant_build = yes
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_state = {
+				limit = { infrastructure < 10 }
+				add_building_construction = {
+					instant_build = yes
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = { infrastructure < 10 }
+				add_building_construction = {
+					instant_build = yes
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
 	
+	focus = {
+		id = RMA_narrow_the_umbrella
+		icon = GFX_focus_usa_voter_registration_act
+		x = 2	
+		y = 1
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_old_glories }
+		completion_reward = { 
+			add_political_power = 50
+			add_stability = -0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+		}
+	}
 	
+	focus = {
+		id = RMA_tighten_the_reins
+		icon = GFX_focus_usa_voter_registration_act
+		x = 2	
+		y = 2
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_narrow_the_umbrella }
+		completion_reward = { 
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
 	
+	focus = {
+		id = RMA_a_crisis_in_rome
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 3
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_breads_and_circuses }
+		prerequisite = { focus = RMA_ensure_our_support }
+		prerequisite = { focus = RMA_tighten_the_reins }
+		completion_reward = { 
+			country_event = {
+				id = romagna.50
+			}
+		}
+	}
 	
+	focus = {
+		id = RMA_disband_parliament
+		icon = GFX_focus_usa_voter_registration_act
+		x = -2
+		y = 4
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_a_crisis_in_rome }
+		completion_reward = { 
+
+		}
+	}
 	
+	focus = {
+		id = RMA_national_economic_council
+		icon = GFX_focus_usa_voter_registration_act
+		x = -3
+		y = 5
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_disband_parliament }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_form_the_SdP
+		icon = GFX_focus_usa_voter_registration_act
+		x = -1
+		y = 5
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_disband_parliament }
+		mutually_exclusive = { focus = RMA_sponor_greenshirts }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_sponor_greenshirts
+		icon = GFX_focus_usa_voter_registration_act
+		x = 1
+		y = 5
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_rogue_republic }
+		mutually_exclusive = { focus = RMA_form_the_SdP } 
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_naval_expansion_scheme
+		icon = GFX_focus_usa_voter_registration_act
+		x = 3
+		y = 5
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_rogue_republic }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_make_the_trains_run_on_time
+		icon = GFX_focus_usa_voter_registration_act
+		x = -4
+		y = 6
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_national_economic_council }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_purge_the_heathens
+		icon = GFX_focus_usa_voter_registration_act
+		x = -2
+		y = 6
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_form_the_SdP focus = RMA_sponor_greenshirts }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_legionarii_on_the_streets
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 6
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_form_the_SdP focus = RMA_sponor_greenshirts }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_for_a_united_italia
+		icon = GFX_focus_usa_voter_registration_act
+		x = 2
+		y = 6
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_form_the_SdP focus = RMA_sponor_greenshirts }
+		prerequisite = { focus = RMA_naval_expansion_scheme }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_nationalize_aristocratic_holdings
+		icon = GFX_focus_usa_voter_registration_act
+		x = -5
+		y = 7
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		available = { owns_state = 160 }
+		prerequisite = { focus = RMA_make_the_trains_run_on_time }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_jupitonian_mysticism
+		icon = GFX_focus_usa_voter_registration_act
+		x = -3
+		y = 7
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes
+		available = { has_completed_focus = RMA_form_the_SdP }
+		mutually_exclusive = { focus = RMA_elevating_the_clergy } 
+		prerequisite = { focus = RMA_purge_the_heathens }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_elevating_the_clergy
+		icon = GFX_focus_usa_voter_registration_act
+		x = -1
+		y = 7
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes
+		available = { has_completed_focus = RMA_sponor_greenshirts }
+		mutually_exclusive = { focus = RMA_jupitonian_mysticism } 
+		prerequisite = { focus = RMA_purge_the_heathens }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_marching_through_numidia
+		icon = GFX_focus_usa_voter_registration_act
+		x = 1
+		y = 7
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RMA_for_a_united_italia }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_boats_at_tunis
+		icon = GFX_focus_usa_voter_registration_act
+		x = 3
+		y = 7
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RMA_for_a_united_italia }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_the_king_in_the_west
+		icon = GFX_focus_usa_voter_registration_act
+		x = 2
+		y = 8
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RMA_marching_through_numidia }
+		prerequisite = { focus = RMA_boats_at_tunis }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_romagnans_worldwide
+		icon = GFX_focus_usa_voter_registration_act
+		x = -2
+		y = 8
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RMA_jupitonian_mysticism focus = RMA_elevating_the_clergy }
+		completion_reward = { 
+
+		}
+	}
+	
+	focus = {
+		id = RMA_rogue_republic
+		icon = GFX_focus_usa_voter_registration_act
+		x = 2
+		y = 4
+		relative_position_id = RMA_old_glories
+		cost = 10
+		available_if_capitulated = yes 
+		prerequisite = { focus = RMA_a_crisis_in_rome }
+		completion_reward = { 
+
+		}
+	}
 	
 	focus = { 
 		id = RMA_a_rome_for_now
 		icon = GFX_focus_usa_voter_registration_act
 		x = 0	
-		y = 10
+		y = 9
 		relative_position_id = RMA_old_glories
 		cost = 10
 		available_if_capitulated = yes 
-		prerequisite = { focus = RMA_old_glories }
+		prerequisite = { focus = RMA_the_king_in_the_west }
+		prerequisite = { focus = RMA_romagnans_worldwide }
 		available = { 
 		CYR = { is_subject_of = RMA }
 		MOR = {is_subject_of = RMA }

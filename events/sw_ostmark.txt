@@ -1605,7 +1605,7 @@ country_event = {
 				desc = "POLITICS_KARL_RENNER_DESC"
 				picture = "Grete.dds"
 				expire = "1965.1.1"
-				ideology = national-bolshevism
+				ideology = stalinism
 				traits = {
 					dictator
 				}

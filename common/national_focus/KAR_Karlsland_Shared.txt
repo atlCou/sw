@@ -1405,7 +1405,6 @@ shared_focus = {
 	y = 1
 	cost = 8
 	available_if_capitulated = yes
-	mutually_exclusive = { focus = KAR_like_old }
 	relative_position_id = KAR_and_propaganda
 	prerequisite = { focus = KAR_and_propaganda }
 	available = {
@@ -3225,7 +3224,7 @@ shared_focus = {
 }
 
 shared_focus = { 
-	id = KAR_karlsland_über_alles
+	id = KAR_karlsland_uber_alles
 	icon = GFX_pagantrihorn
 	x = 0
 	y = 2
@@ -3252,7 +3251,7 @@ shared_focus = {
 	cost = 5
 	available_if_capitulated = yes 
 	relative_position_id = KAR_enemies_on_both_sides_again
-	prerequisite = { focus = KAR_karlsland_über_alles }
+	prerequisite = { focus = KAR_karlsland_uber_alles }
 	ai_will_do = { 
 		factor = 1
 	} 

@@ -28,9 +28,9 @@
  BGL_galpuppet_neutrality_ADJ:0 "Gallian-Belgican"
  
  
- SOU_KAR_Puppet_fanatical-paganism:0 "Ukonmaa"
- SOU_KAR_Puppet_fanatical-paganism_DEF:0 "Ukonmaa"
- SOU_KAR_Puppet_fanatical-paganism_ADJ:0 "Uralic"
+ SOU_KAR_Puppet_fascism:0 "Ukonmaa"
+ SOU_KAR_Puppet_fascism_DEF:0 "Ukonmaa"
+ SOU_KAR_Puppet_fascism_ADJ:0 "Uralic"
  
  AIS_democratic:0 "Australis"
  AIS_democratic_DEF:0 "The Commonwealth of Australis"

@@ -177,11 +177,10 @@ focus_tree = {
 					PNE = { check_variable = { auth < 1 } }
 				}
 				set_politics = {
-					ruling_party = socialism            }
-
+					ruling_party = democratic            
+				}
                 set_popularities = {
-                    socialism = 44
-                    liberal = 31
+                    democratic = 75
                     communism = 25
                 }
 			}
@@ -195,12 +194,11 @@ focus_tree = {
 					}
 				}
 				set_politics = {
-					ruling_party = socialism            }
-
+					ruling_party = communism        
+				}
                 set_popularities = {
-                    socialism = 48
-                    liberal = 15
-                    communism = 37
+                    democratic = 39
+                    communism = 61
                 }
 			}
 			else_if = {
@@ -216,9 +214,8 @@ focus_tree = {
 					ruling_party = communism            
 				}
                 set_popularities = {
-                    socialism = 35
-                    liberal = 14
-                    communism = 51
+                    democratic = 32
+                    communism = 68
                 }
 			}
 			else_if = {
@@ -231,12 +228,12 @@ focus_tree = {
 					}
 				}
 				set_politics = {
-					ruling_party = communism            }
+					ruling_party = communism            
+				}
 
                 set_popularities = {
-                    socialism = 32
-                    liberal = 5
-                    communism = 63
+                    democratic = 5
+                    communism = 95
                 }
 			}
 		}
