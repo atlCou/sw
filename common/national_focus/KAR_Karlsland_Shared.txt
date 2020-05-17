@@ -4002,7 +4002,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_the_magocracy
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_on_top
 	x = 7
 	y = 0
 	cost = 5
@@ -4019,7 +4019,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_legitimizing_the_magocracy
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_megaphone_witch
 	x = -2
 	y = 1
 	cost = 5
@@ -4049,7 +4049,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_authority_through_force
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_council_loyal
 	x = 2
 	y = 1
 	cost = 5
@@ -4243,7 +4243,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_the_electorate
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_witch_ballot
 	x = -2
 	y = 6
 	cost = 5
@@ -4268,7 +4268,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_oligarchical_selection
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_future_state
 	x = 0
 	y = 6
 	cost = 5
@@ -4293,7 +4293,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_needs_of_the_leader
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_hand_selected
 	x = 2
 	y = 6
 	cost = 5
@@ -4339,6 +4339,9 @@ shared_focus = {
 				keep_completed = yes
 			}
 			add_stability = 0.05
+			set_politics = {
+				ruling_party = democratic
+			}
 		}
 		else_if = {
 			limit = {
@@ -4358,6 +4361,9 @@ shared_focus = {
 				tree = KAR_magocracy_democratic
 				keep_completed = yes
 			}
+			set_politics = {
+				ruling_party = fascism
+			}
 			add_stability = 0.5
 		}
 	}
@@ -4365,7 +4371,7 @@ shared_focus = {
 		#### Fascist Magocracy
 shared_focus = { 
 	id = KAR_on_top_at_last
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_on_top
 	x = 7
 	y = 0
 	cost = 5
@@ -4373,14 +4379,18 @@ shared_focus = {
 	ai_will_do = { 
 		factor = 1
 	} 
+	bypass = {
+		exists = yes
+	}
 
 	completion_reward = {
+		
 	} 
 }
 
 shared_focus = { 
 	id = KAR_shuffle_the_ranks
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_ranks_witch
 	x = -3
 	y = 1
 	cost = 5
@@ -4392,12 +4402,26 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		create_corps_commander = {
+			name = "Huberta von Bonin"
+			picture = "Huberta von Bonin.dds"
+			traits = { career_officer brilliant_strategist adaptable }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_witches_with_an_army
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_witch_army
 	x = -2
 	y = 2
 	cost = 5
@@ -4409,12 +4433,23 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_political_power = 50
+		create_corps_commander = {
+			name = "Charlotte Lueder"
+			picture = "Lueder.dds"
+			traits = { panzer_leader desert_fox }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_prop_up_witch_schools
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_witch_schools
 	x = -4
 	y = 2
 	cost = 5
@@ -4426,12 +4461,13 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_research_slot = 1
 	} 
 }
 
 shared_focus = { 
 	id = KAR_carry_karlslands_legacy
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_legacy
 	x = 3
 	y = 1
 	cost = 5
@@ -4443,12 +4479,20 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		hidden_effect = {
+			load_oob = KA2_Fascist_OOB
+		}
+		custom_effect_tooltip = KAR_carry_karlslands_legacy_tooltip
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_these_factories_seem_empty
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_empty_factories
 	x = 2
 	y = 2
 	cost = 5
@@ -4460,12 +4504,29 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_manpower = -1000
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			} 		
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			} 		
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_mastering_our_battlespace
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_master_battlespace
 	x = 4
 	y = 2
 	cost = 5
@@ -4477,12 +4538,37 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 400
+			producer = KA2
+		}
+		random_owned_state = {
+			limit = {
+				air_base < 9
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			} 		
+		}
+		random_owned_state = {
+			limit = {
+				air_base < 9
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			} 		
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_the_other_two
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_convince
 	x = 0
 	y = 1
 	cost = 5
@@ -4494,12 +4580,40 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		create_corps_commander = {
+			name = "Minna-Dietlinde Wilcke"
+			picture = "Minna.dds"
+			traits = { skilled_staffer war_hero }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		create_corps_commander = {
+			name = "Edytha Rossmann"
+			picture = "Rossmann.dds"
+			traits = { old_guard brilliant_strategist }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
 	} 
 }
 
 shared_focus = { 
 	id = KAR_loyal_to_the_council
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_council_loyal
 	x = 0
 	y = 2
 	cost = 5
@@ -4511,12 +4625,14 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_stability = 0.05
+		remove_ideas = KAR_new_regime_2
 	} 
 }
 
 shared_focus = { 
 	id = KAR_that_army_with_a_state
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_witch_state
 	x = -1
 	y = 3
 	cost = 5
@@ -4529,12 +4645,13 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_ideas = KAR_that_army_with_a_state_idea
 	} 
 }
 
 shared_focus = { 
 	id = KAR_the_future_of_statecraft
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_future_state
 	x = 1
 	y = 3
 	cost = 5
@@ -4547,12 +4664,13 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_ideas = KAR_the_future_of_statecraft_idea
 	} 
 }
 
 shared_focus = { 
 	id = KAR_marching_north
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_march_north
 	x = 0
 	y = 4
 	cost = 5
@@ -4577,7 +4695,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_flying_south
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_attack_south_witch
 	x = -2
 	y = 5
 	cost = 5
@@ -4608,7 +4726,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_the_decrepit_east
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_attack_east
 	x = 0
 	y = 5
 	cost = 5
@@ -4632,7 +4750,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_unmask_the_west
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_attack_west
 	x = 2
 	y = 5
 	cost = 5
@@ -4656,7 +4774,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_a_witchs_karlsland
-	icon = GFX_KAR_mag_unknown
+	icon = GFX_KAR_fascist_final_mago
 	x = 0
 	y = 6
 	cost = 5

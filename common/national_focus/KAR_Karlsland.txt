@@ -132,7 +132,7 @@ focus_tree = {
 			has_government = neutrality
 		}
 		modifier = { 
-			add = 15
+			add = 20
 			original_tag = KA2
 			has_government = fascism
 		}

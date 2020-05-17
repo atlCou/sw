@@ -487,6 +487,82 @@ spriteTypes = {
 		name = "GFX_KAR_runes"
 		texturefile = "gfx/interface/goals/KAR_runes.dds"
 	}
+	SpriteType = {
+		name = "GFX_KAR_on_top"
+		texturefile = "gfx/interface/goals/KAR_on_top.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_empty_factories"
+		texturefile = "gfx/interface/goals/KAR_empty_factories.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_march_north"
+		texturefile = "gfx/interface/goals/KAR_march_north.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_convince"
+		texturefile = "gfx/interface/goals/KAR_convince.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_ranks_witch"
+		texturefile = "gfx/interface/goals/KAR_ranks_witch.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_witch_army"
+		texturefile = "gfx/interface/goals/KAR_witch_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_council_loyal"
+		texturefile = "gfx/interface/goals/KAR_council_loyal.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_attack_south_witch"
+		texturefile = "gfx/interface/goals/KAR_attack_south_witch.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_attack_east"
+		texturefile = "gfx/interface/goals/KAR_attack_east.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_attack_west"
+		texturefile = "gfx/interface/goals/KAR_attack_west.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_witch_state"
+		texturefile = "gfx/interface/goals/KAR_witch_state.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_future_state"
+		texturefile = "gfx/interface/goals/KAR_future_state.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_witch_schools"
+		texturefile = "gfx/interface/goals/KAR_witch_schools.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_legacy"
+		texturefile = "gfx/interface/goals/KAR_legacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_master_battlespace"
+		texturefile = "gfx/interface/goals/KAR_master_battlespace.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_fascist_final_mago"
+		texturefile = "gfx/interface/goals/KAR_fascist_final_mago.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_witch_ballot"
+		texturefile = "gfx/interface/goals/KAR_witch_ballot.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_hand_selected"
+		texturefile = "gfx/interface/goals/KAR_hand_selected.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_megaphone_witch"
+		texturefile = "gfx/interface/goals/KAR_megaphone_witch.dds"
+	}
 }
 
 

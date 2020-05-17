@@ -283,10 +283,75 @@ KAR_KA1_strife:0 "Political Strife"
 KAR_KA1_strife_desc:0 "Despite the imposition of a reactionary government, not all right-wing Karlslanders are satisfied with the new regime. Fringe nationalists decry the secular militarists and old nobility, and the failure of the commonfolk to organize their own state has lead many to flee. The new regime would do well to bring in persuadable opposition as soon as it can."
 
 
+################################
+################ Magocracy Tree/Ideas
+################################
+
+KAR_the_magocracy:0 "The Magocracy"
+KAR_legitimizing_the_magocracy:0 "Legitimize the Regime"
+KAR_authority_through_force:0 "Legitimacy Through Force"
+KAR_basic_law:0 "Basic Magocratic Civil Law"
+KAR_unregulated_authority:0 "An Unregulated Authority"
+KAR_question_of_localities:0 "The Question of Localities"
+KAR_republicanize:0 "Republicanize Local Governments"
+KAR_status_quo_localities:0 "Keep the Localities"
+KAR_from_bottom_to_top:0 "Witches From Bottom to Top"
+KAR_organization_of_the_council:0 "Picking the Council"
+KAR_the_electorate:0 "A Democratic Magocracy"
+KAR_the_electorate_tooltip:0 "Every §Y2 years§!, you will have the option to §Cpick a new leader§! with certain §Yleader modifiers§!."
+KAR_oligarchical_selection:0 "An Eternal Junta"
+KAR_oligarchical_selection_tooltip:0 "§YDecisions§! will be available to §Cchoose a new leader§! at §Gany time§!, costing §Rpolitical power§! and §Rstability§!."
+KAR_needs_of_the_leader:0 "A Hand Selected Council"
+KAR_council_in_session:0 "The Council in Session"
+
+KAR_on_top_at_last:0 "§COn Top at Last§!"
+KAR_shuffle_the_ranks:0 "Shuffle the Ranks"
+KAR_the_other_two:0 "Convince the Other Two"
+KAR_carry_karlslands_legacy:0 "Carry Karlsland's Legacy"
+KAR_carry_karlslands_legacy_tooltip:0 "Loads §Y2 Witch Infantry Divisions§!."
+KAR_prop_up_witch_schools:0 "Prop Up Witch Schools"
+KAR_witches_with_an_army:0 "Witches With an Army"
+KAR_loyal_to_the_council:0 "Loyal to the Council"
+KAR_these_factories_seem_empty:0 "These Factories Seem Empty..."
+KAR_mastering_our_battlespace:0 "Mastering Our Battlespace"
+KAR_that_army_with_a_state:0 "That Army With a State"
+KAR_the_future_of_statecraft:0 "The Future of Statecraft"
+KAR_marching_north:0 "Marching North"
+KAR_flying_south:0 "Flying South"
+KAR_the_decrepit_east:0 "The Decrepit East"
+KAR_unmask_the_west:0 "Unmask The West"
+KAR_a_witchs_karlsland:0 "A Witch's Karlsland"
+
+KAR_the_lessons_of_a_witch:0 "The Lessons of a Witch:"
+KAR_order:0 "Order"
+KAR_but_with_compassion:0 "But With Compassion..."
+KAR_comradery:0 "...Comradery..."
+KAR_and_unity:0 "...and Unity"
+KAR_rebuild_karlsland:0 "Reuniting Karlsland"
+KAR_denounce_radicalism:0 "Denounce Radicalism"
+KAR_factory_subsidies:0 "Factory Subsidies"
+KAR_reconcile_with_conservatives:0 "Reconcile With Consveratives"
+KAR_necessary_gatekeeping:0 "Necessary Gatekeeping"
+KAR_friendship_with_republicans:0 "Friendship with the Republicans"
+KAR_domestic_volunteer_program:0 "Domestic Volunteer Program"
+KAR_sponsor_construction_projects:0 "Sponsor Construction Projects"
+KAR_a_democratic_experiment:0 "A Democratic Experiment"
+KAR_topple_the_misguided:0 "Topple the Misguided"
+KAR_invite_the_republicans:0 "Invite the Republicans"
+KAR_squash_the_revolutionaries:0 "Squash the Revolutionaries"
+KAR_the_last_unification_war:0 "The Last Unification War"
+KAR_the_new_democracy:0 "A New Democracy in Karlsland"
 
 
 
-
+KAR_new_regime:0 "The New Regime"
+KAR_new_regime_2:0 "The New Regime"
+KAR_legitimizing_the_magocracy_idea:0 "Legitimizing the Regime"
+KAR_basic_law_idea:0 "Horizontal Checks"
+KAR_unregulated_authority_idea:0 "The Supreme Magocracy"
+KAR_republicanized_localities:0 "Republicanized Localities"
+KAR_status_quo_localities_idea:0 "Kept Local Governments In Place"
+KAR_hierarchical_localities:0 "Hierarchical Witch Localities"
 
 
 ################################

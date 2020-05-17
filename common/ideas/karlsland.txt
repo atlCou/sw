@@ -766,6 +766,29 @@ ideas = {
 
 		}
 		
+		###### Fascist Mago.
+		
+		KAR_that_army_with_a_state_idea = {
+		
+			picture = NA
+			
+			modifier = {
+				army_morale_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+		
+		KAR_the_future_of_statecraft_idea = {
+		
+			picture = NA
+			
+			modifier = {
+				experience_gain_army = 0.025
+				political_power_gain = 0.1
+			}
+		}
+		
 	}
 
 
