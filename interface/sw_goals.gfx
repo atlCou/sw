@@ -22,16 +22,6 @@ spriteTypes = {
 		name = "GFX_natsynwitches"
 		texturefile = "gfx/interface/goals/natsynwitches.dds"
 	}
-	
-	SpriteType = {
-		name = "GFX_thecause"
-		texturefile = "gfx/interface/goals/thecause.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_THECAUSE_goal_generic_major_war"
-		texturefile = "gfx/interface/goals/THECAUSE_goal_generic_major_war.dds"
-	}
 
 	SpriteType = {
 		name = "GFX_habsburgmemes"
@@ -562,6 +552,70 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_KAR_megaphone_witch"
 		texturefile = "gfx/interface/goals/KAR_megaphone_witch.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_civil_law"
+		texturefile = "gfx/interface/goals/KAR_civil_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_unregulated_authority"
+		texturefile = "gfx/interface/goals/KAR_unregulated_authority.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_republican_mago"
+		texturefile = "gfx/interface/goals/KAR_republican_mago.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_status_quo_local"
+		texturefile = "gfx/interface/goals/KAR_status_quo_local.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_bottom_to_top"
+		texturefile = "gfx/interface/goals/KAR_bottom_to_top.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_council_mago"
+		texturefile = "gfx/interface/goals/KAR_council_mago.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_soc_torch"
+		texturefile = "gfx/interface/goals/RMA_soc_torch.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_romsoc"
+		texturefile = "gfx/interface/goals/RMA_romsoc.dds"
+	}
+	SpriteType = {
+		name = "GFX_conservative_shake"
+		texturefile = "gfx/interface/goals/conservative_shake.dds"
+	}
+	SpriteType = {
+		name = "GFX_europe_church"
+		texturefile = "gfx/interface/goals/europe_church.dds"
+	}
+	SpriteType = {
+		name = "GFX_soc_church"
+		texturefile = "gfx/interface/goals/soc_church.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_north"
+		texturefile = "gfx/interface/goals/RMA_north.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_south"
+		texturefile = "gfx/interface/goals/RMA_south.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_republic"
+		texturefile = "gfx/interface/goals/RMA_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_cultural_mon"
+		texturefile = "gfx/interface/goals/RMA_cultural_mon.dds"
+	}
+	SpriteType = {
+		name = "GFX_union_deal_break"
+		texturefile = "gfx/interface/goals/union_deal_break.dds"
 	}
 }
 

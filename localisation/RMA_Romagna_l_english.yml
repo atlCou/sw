@@ -42,6 +42,19 @@
  
  ##### FOCUS
  
+ RMA_future_glories:0 "Future Glories"
+ RMA_conservative_compromise:0 "Compromise with Conservatives"
+ RMA_jupitonian_socialism:0 "Compromise with Jupitonian Socialists"
+ RMA_relax_regulations:0 "Relax Regulations"
+ RMA_democratic_reforms:0 "Further Democratic Reforms"
+ RMA_save_failing_businesses:0 "Save Failing Businesses"
+ RMA_reaffirm_the_church:0 "Reaffrim the Romagnan Church"
+ RMA_reform_the_church:0 "Reform the Church"
+ RMA_northern_expansion:0 "Northern Expansion"
+ RMA_southern_development:0 "Southern Development"
+ RMA_the_duchess:0 "Crown the Duchess!"
+ RMA_republicanization:0 "Pursue the Republic!"
+ RMA_shake_hands_with_venezia:0 "Shaking Hands with Venezia"
  
  RMA_integrate_venezia_tooltip_available:0 "§YVenezia§! must have §Gmore§! §Ycivilian factories§! than §YRomagna§!."
  
