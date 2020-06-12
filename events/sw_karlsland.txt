@@ -2094,6 +2094,100 @@ country_event = {
 	
 }
 
+#####
+# Magocracy
+#####
+
+add_namespace = magocracy
+
+country_event = {
+	id = magocracy.50
+	title = magocracy.50.t
+	desc = magocracy.50.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = magocracy.50.a
+		ai_chance = {
+			factor = 50
+		}
+		diplomatic_relation = {
+			country = KA2
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = KA2
+			relation = guarantee
+			active = yes
+		}
+		diplomatic_relation = {
+			country = KA2
+			relation = military_access
+			active = yes
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = KA2
+			value = 200
+		}
+		KA2 = {
+			diplomatic_relation = {
+				country = KA3
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = KA3
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = {
+				country = KA3
+				relation = military_access
+				active = yes
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = KA3
+				value = 200
+			}
+			set_country_flag = KA2_Repubs_Rejected
+		}
+	}
+	
+	option = {
+		name = magocracy.50.b
+		ai_chance = {
+			factor = 50
+		}
+		KA2 = {
+			country_event = {
+				id = magocracy.51
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = magocracy.51
+	title = magocracy.51.t
+	desc = magocracy.51.d
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = magocracy.51.a
+	}
+}
+
+
 ############### 
 ### N E W S
 ###############

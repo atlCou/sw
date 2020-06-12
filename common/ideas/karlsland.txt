@@ -766,6 +766,59 @@ ideas = {
 
 		}
 		
+		KAR_but_with_compassion_idea = {
+		
+			picture = NA
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				resistance_target = -0.05
+			}
+		}
+		
+		KAR_factory_subsidies_idea = {
+			
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.075
+			}
+		
+		}
+		
+		KAR_comradery_idea = {
+			
+			picture = NA
+			
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		
+		KAR_a_democratic_experiment_idea = {
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				democratic_drift = 0.05
+				research_speed_factor = 0.05
+				monthly_population = 0.025
+			}
+		
+		}
+		
+		KAR_domestic_volunteer_program_idea = {
+		
+			picture = NA
+			
+			modifier = {
+				conscription = 0.035
+				war_support_factor = 0.1
+			}
+		
+		}
+		
 		###### Fascist Mago.
 		
 		KAR_that_army_with_a_state_idea = {

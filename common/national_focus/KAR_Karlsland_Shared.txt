@@ -4807,6 +4807,22 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2500
+			producer = ROOT
+		}
+		create_corps_commander = {
+			name = "Charlotte Lueder"
+			picture = "Lueder.dds"
+			traits = { panzer_leader desert_fox }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		add_war_support = 0.1
 	} 
 }
 
@@ -4824,6 +4840,11 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_war_support = 0.1
 	} 
 }
 
@@ -4841,6 +4862,8 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_ideas = KAR_domestic_volunteer_program_idea
+		add_manpower = 10000
 	} 
 }
 
@@ -4854,11 +4877,26 @@ shared_focus = {
 	prerequisite = { focus = KAR_rebuild_karlsland }
 	prerequisite = { focus = KAR_and_unity }
 	relative_position_id = KAR_rebuild_karlsland
+	bypass = {
+		KA3 = { 
+			OR = { 
+				exists = no 
+				NOT = { has_government = democratic }
+				is_puppet = yes
+				has_war_with = ROOT
+			}
+		}
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
+		KA3 = {
+			country_event = {
+				id = magocracy.50
+			}
+		}
 	} 
 }
 
@@ -4925,11 +4963,18 @@ shared_focus = {
 	y = 0
 	cost = 5
 	available_if_capitulated = yes
+	bypass = {
+		has_government = democratic
+	}
+	available = {
+		has_government = democratic
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
+		
 	} 
 }
 
@@ -4947,6 +4992,18 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		swap_ideas = {
+			add_idea = KAR_new_regime_2
+			remove_idea = KAR_new_regime
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
 	} 
 }
 
@@ -4964,6 +5021,8 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_political_power = 50
+		add_ideas = KAR_but_with_compassion_idea
 	} 
 }
 
@@ -4981,6 +5040,7 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_ideas = KAR_factory_subsidies_idea
 	} 
 }
 
@@ -4998,6 +5058,39 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			} 
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			} 
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			} 
+		}
 	} 
 }
 
@@ -5015,6 +5108,11 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		add_ideas = KAR_comradery_idea
 	} 
 }
 
@@ -5032,6 +5130,11 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+		remove_ideas = KAR_new_regime_2
 	} 
 }
 
@@ -5050,6 +5153,9 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_war_support = 0.1
+		add_stability = 0.05
+		add_political_power = 35
 	} 
 }
 
@@ -5068,6 +5174,9 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.05
+		add_political_power = 35
 	} 
 }
 
@@ -5086,6 +5195,8 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+		add_ideas = KAR_a_democratic_experiment_idea
+		add_manpower = 50000
 	} 
 }
 
@@ -5100,13 +5211,20 @@ shared_focus = {
 	prerequisite = { focus = KAR_friendship_with_republicans }
 	relative_position_id = KAR_the_lessons_of_a_witch
 	bypass = {
-		KA3 = { exists = no }
+		OR = {
+			KA3 = { exists = no }
+			has_country_flag = KA2_Repubs_Rejected
+		}
 	}
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
+		create_wargoal = {
+			target = KA3
+			type = annex_everything
+		}
 	} 
 }
 
@@ -5145,10 +5263,30 @@ shared_focus = {
 	prerequisite = { focus = KAR_the_last_unification_war }
 	prerequisite = { focus = KAR_a_democratic_experiment }
 	relative_position_id = KAR_the_lessons_of_a_witch
+	available = {
+		KA1 = {
+			exists = no
+		}
+		KA3 = {
+			exists = no
+		}
+		KA4 = {
+			exists = no
+		}
+		KA5 = {
+			exists = no
+		}
+		KAR = {
+			exists = no
+		}
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		set_cosmetic_tag = KA2_magocracy_unified
 	} 
 }

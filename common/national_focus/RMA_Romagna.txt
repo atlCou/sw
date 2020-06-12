@@ -1446,7 +1446,7 @@ focus_tree = {
 		completion_reward = { 
 			every_other_country = {
 				limit = {
-					NOT = { has_government = fanatical-paganism }
+					NOT = { has_country_flag = GLOBAL_is_pagan }
 					any_owned_state = {
 						is_capital = yes
 						is_on_continent = europe

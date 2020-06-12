@@ -225,7 +225,6 @@ country_event = {
 	picture = GFX_report_event_generic_rally2
 	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 3 }
 
     #### slight right ######
 	option = {
@@ -378,7 +377,6 @@ country_event = {
 		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_popularity = { ideology = neutrality popularity = 0.1 }
 		add_stability = 0.05
-		set_country_flag = GAL_stayedstatusquo
 		set_country_flag = GAL_liberalswon
 		set_country_flag = GAL_1936gallianelections
 		complete_national_focus = GAL_1936elections
@@ -394,8 +392,7 @@ country_event = {
 		}
 		add_popularity = { ideology = communism popularity = 0.05 }
 		add_stability = 0.03
-		set_country_flag = GAL_socdem
-		set_country_flag = GAL_wentsocdem
+		set_country_flag = GAL_socdemswon
 		set_country_flag = GAL_1936gallianelections
 		complete_national_focus = GAL_1936elections
 		retire_country_leader = yes
@@ -405,6 +402,11 @@ country_event = {
 			picture = "Amelie Planchard.dds"
 			expire = "1965.1.1"
 			ideology = socialism
+		}
+		set_party_name = {
+			ideology = democratic
+			name = "RS"
+			long_name = "Radical-socialiste Parti"
 		}
 	}
 	option = {
@@ -418,7 +420,7 @@ country_event = {
 		}
 		add_popularity = { ideology = communism popularity = 0.15 }
 		add_stability = -0.06
-		set_country_flag = GAL_wentsoc
+		set_country_flag = GAL_socwon
 		set_country_flag = GAL_1936gallianelections
 		complete_national_focus = GAL_1936elections
 		set_politics = {

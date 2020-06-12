@@ -19,13 +19,13 @@ shared_focus = {
 
 
 shared_focus = {
-id = GAL_workersgallia
+id = GAL_PS_victory
 	icon = GFX_focus_prc_agrarian_socialism
 	x = 4
 	y = 1
 	relative_position_id = GAL_1936elections
-	mutually_exclusive = { focus = GAL_statusquo }
-	mutually_exclusive = { focus = GAL_socdem_victory }
+	mutually_exclusive = { focus = GAL_PR_victory }
+	mutually_exclusive = { focus = GAL_RS_victory }
 	prerequisite = { focus = GAL_1936elections }
 	cost = 10
 	available_if_capitulated = yes
@@ -38,536 +38,32 @@ id = GAL_workersgallia
 }
 
 shared_focus = {
-	id = GAL_empoweringlaborunions
-	icon = GFX_focus_prc_agrarian_socialism
-	x = -2
-	y = 1
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_workersgallia focus = GAL_socdem_victory }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-	}
-}
-
-
-
-shared_focus = {
-	id = GAL_southernagriculture
-	icon = GFX_focus_prc_agrarian_socialism
-	x = 1
-	y = 1
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_workersgallia focus = GAL_socdem_victory }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-		add_ideas = GAL_socialistcountrysides
-	}
-}
-
-shared_focus = {
-	id = GAL_thegeneralstrike
-	icon = GFX_focus_prc_agrarian_socialism
+	id = GAL_RS_victory
+	icon = GFX_socdem_econ
 	x = 0
-	y = 2
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_empoweringlaborunions }
-	prerequisite = { focus = GAL_southernagriculture }
-	mutually_exclusive = { focus = GAL_consolidatingparliament }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-		add_popularity = {
-			ideology = communism
-			popularity = 0.3
-		}
-		add_popularity = {
-			ideology = democratic
-			popularity = -0.1
-		}
-		add_stability = -0.1
-		custom_effect_tooltip = GAL_thegeneralstrike_tooltip
-	}
-}
-
-shared_focus = {
-	id = GAL_consolidatingparliament
-	icon = GFX_focus_prc_agrarian_socialism
-	x = -2
-	y = 2
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_empoweringlaborunions }
-	prerequisite = { focus = GAL_southernagriculture }
-	mutually_exclusive = { focus = GAL_thegeneralstrike }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-		add_political_power = 50
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.01
-		}
-	}
-}
-
-
-shared_focus = {
-	id = GAL_extensive_nationalization
-	icon = GFX_focus_prc_agrarian_socialism
-	x = -1
-	y = 3
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_thegeneralstrike }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-		16 = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-			add_extra_state_shared_building_slots = 2
-		}
-		29 = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-			add_extra_state_shared_building_slots = 2
-		}
-		22 = {
-			add_extra_state_shared_building_slots = 2
-		}
-		add_stability = 0.05
-	}
-}
-
-shared_focus = {
-	id = GAL_nationalservices
-	icon = GFX_focus_prc_agrarian_socialism
-	x = -3
-	y = 3
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_consolidatingparliament }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-		16 = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-			add_extra_state_shared_building_slots = 2
-		}
-		add_ideas = GAL_nationalservices
-	}
-}
-
-shared_focus = {
-	id = GAL_isolateddefense
-	icon = GFX_focus_prc_agrarian_socialism
-	x = -2
-	y = 4
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_nationalservices }
+	y = 1
+	relative_position_id = GAL_1936elections
+	mutually_exclusive = { focus = GAL_PS_victory }
+	mutually_exclusive = { focus = GAL_PR_victory }
+	prerequisite = { focus = GAL_1936elections }
 	cost = 10
+	available = { has_country_flag = GAL_wentsocdem }
 	available_if_capitulated = yes
 	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		735 = {
-			add_building_construction = {
-				type = bunker
-				level = 4
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border = yes
-				}
-			}
-		}
-		18 = {
-			add_building_construction = {
-				type = bunker
-				level = 3
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border = yes
-				}
-			}
-		}
-		29 = {
-			add_building_construction = {
-				type = bunker
-				level = 3
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border = yes
-				}
-			}
-		}
-	}
-}
-
-
-shared_focus = {
-	id = GAL_friends?
-	icon = GFX_focus_prc_agrarian_socialism
-	x = 2
-	y = 2
-	relative_position_id = GAL_workersgallia
-	available = {
-		KAR = {
-			OR = {
-				has_government = communism
-			}
-		}
-	}
-	prerequisite = { focus = GAL_southernagriculture }
-	cost = 10
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		KAR = {
-			country_event = {
-				id = gallia.1000
-			}
-		}
-	}
-	
-}
-
-
-shared_focus = {
-	id = GAL_socintern
-	icon = GFX_focus_prc_agrarian_socialism
-	x = 1
-	y = 3
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_friends? }
-	prerequisite = { focus = GAL_thegeneralstrike }
-	available = {
-		OR = {
-			is_in_faction_with = KAR
-			date > 1938.01.01
-		}
-	}
-	cost = 10
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
+		factor = 100
 		}
 	completion_reward = {
-		create_faction = SOC-INT
-		if = {
-			limit = {
-				has_country_flag = GAL_KAR_saidyes
-			}
-			add_to_faction = KAR
-		}
-	}
-}
-
-
-
-
-shared_focus = {
-	id = GAL_romagnianfascists
-	icon = GFX_focus_prc_agrarian_socialism
-	x = 0
-	y = 4
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_socintern }
-	cost = 10
-	available_if_capitulated = yes
-	will_lead_to_war_with = RMA
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = RMA
-		}	
 	}
 }
 
 shared_focus = {
-id = GAL_consolidationofitaly
-icon = GFX_focus_prc_agrarian_socialism
-x = 1
-y = 6
-relative_position_id = GAL_workersgallia
-	available = {
-		custom_trigger_tooltip = {
-			tooltip = GAL_consolidationofitaly_tooltip_effect
-			AND = {
-				158 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				159 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				162 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				2 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				117 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				156 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				115 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				114 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				161 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				157 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				160 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				736 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				103 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				163 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				104 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				105 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-				44 = {
-					OR = { 
-						is_owned_by = GAL
-						AND = {
-							any_country = {
-								is_puppet_of = GAL
-								owns_state = PREV
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-prerequisite = { focus = GAL_romagnianfascists }
-cost = 10
-available_if_capitulated = yes
-ai_will_do = {
-	factor = 1
-}
-	completion_reward = {
-		country_event = {
-			id = gallia.1020
-		}
-		add_stability = 0.05
-		add_popularity = {
-			ideology = communism
-			popularity = 0.1
-		}
-	}
-}
-
-
-shared_focus = {
-	id = GAL_witchesoftheworker
-	icon = GFX_focus_prc_agrarian_socialism
-	x = 5
-	y = 5
-	relative_position_id = GAL_workersgallia
-	prerequisite = { focus = GAL_socintern }
-	cost = 10
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 1
-		}
-	completion_reward = {
-		
-	}
-}
-
-
-################ NORMIE DEMO ################
-
-
-
-shared_focus = {
-	id = GAL_statusquo
+	id = GAL_PR_victory
 	icon = GFX_liberal_econ
 	x = -4
 	y = 1
 	relative_position_id = GAL_1936elections
-	mutually_exclusive = { focus = GAL_workersgallia }
-	mutually_exclusive = { focus = GAL_socdem_victory }
+	mutually_exclusive = { focus = GAL_PS_victory }
+	mutually_exclusive = { focus = GAL_RS_victory }
 	prerequisite = { focus = GAL_1936elections }
 	bypass = { has_country_flag = GAL_stayedstatusquo }
 	cost = 10
@@ -580,141 +76,303 @@ shared_focus = {
 	}
 }
 
-shared_focus = {
-	id = GAL_union_concesc
-	icon = GFX_focus_eng_concessions_to_the_trade_unions
-	x = -1
-	y = 1
-	relative_position_id = GAL_statusquo
-	prerequisite = { focus = GAL_statusquo }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 50
-		}
-	completion_reward = {
-	}
-}
-
-shared_focus = {
-	id = GAL_campaign_promises
-	icon = GFX_focus_eng_concessions_to_the_trade_unions
-	x = 2
-	y = 1
-	relative_position_id = GAL_statusquo
-	prerequisite = { focus = GAL_statusquo focus = GAL_socdem_victory }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 50
-		}
-	completion_reward = {
-		add_political_power = 120
-	}
-}
 
 
 
 
 
-shared_focus = {
-	id = GAL_socdem_victory
-	icon = GFX_socdem_econ
-	x = 0
-	y = 1
-	relative_position_id = GAL_1936elections
-	mutually_exclusive = { focus = GAL_workersgallia }
-	mutually_exclusive = { focus = GAL_statusquo }
-	prerequisite = { focus = GAL_1936elections }
-	cost = 10
-	available = { has_country_flag = GAL_wentsocdem }
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 100
-		}
-	completion_reward = {
-	}
-}
-
-
-shared_focus = {
-	id = GAL_welfare_programs
-	icon = GFX_focus_eng_concessions_to_the_trade_unions
-	x = 0
-	y = 1
-	relative_position_id = GAL_socdem_victory
-	prerequisite = { focus = GAL_socdem_victory }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 50
-		}
-	completion_reward = {
-		add_ideas = GAL_welfare_programs_idea
-	}
-}
 
 
 
-shared_focus = {
-	id = GAL_capitalizing_our_successes
-	icon = GFX_focus_eng_concessions_to_the_trade_unions
-	x = 0
-	y = 2
-	relative_position_id = GAL_socdem_victory
-	prerequisite = { focus = GAL_welfare_programs }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 50
-		}
-	completion_reward = {
-		add_stability = 0.1
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.05
-		}
-		add_political_power = 25
-	}
-}
 
-shared_focus = {
-	id = GAL_stomping_monopolies
-	icon = GFX_focus_eng_concessions_to_the_trade_unions
-	x = 0
-	y = 4
-	relative_position_id = GAL_socdem_victory
-	prerequisite = { focus = GAL_capitalizing_our_successes focus = GAL_nationalservices }
-	cost = 5
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 50
-		}
-	completion_reward = {
-		16 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-		21 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = gallia.500
-				days = 2
-			}
-		}
-	}
-}
+
+	
+
+# shared_focus = {
+	# id = GAL_friends?
+	# icon = GFX_focus_prc_agrarian_socialism
+	# x = 2
+	# y = 2
+	# relative_position_id = GAL_workersgallia
+	# available = {
+		# KAR = {
+			# OR = {
+				# has_government = communism
+			# }
+		# }
+	# }
+	# prerequisite = { focus = GAL_southernagriculture }
+	# cost = 10
+	# available_if_capitulated = yes
+	# ai_will_do = {
+		# factor = 1
+	# }
+	# completion_reward = {
+		# KAR = {
+			# country_event = {
+				# id = gallia.1000
+			# }
+		# }
+	# }
+	
+# }
+
+
+# shared_focus = {
+	# id = GAL_socintern
+	# icon = GFX_focus_prc_agrarian_socialism
+	# x = 1
+	# y = 3
+	# relative_position_id = GAL_workersgallia
+	# prerequisite = { focus = GAL_friends? }
+	# prerequisite = { focus = GAL_thegeneralstrike }
+	# available = {
+		# OR = {
+			# is_in_faction_with = KAR
+			# date > 1938.01.01
+		# }
+	# }
+	# cost = 10
+	# available_if_capitulated = yes
+	# ai_will_do = {
+		# factor = 1
+		# }
+	# completion_reward = {
+		# create_faction = SOC-INT
+		# if = {
+			# limit = {
+				# has_country_flag = GAL_KAR_saidyes
+			# }
+			# add_to_faction = KAR
+		# }
+	# }
+# }
+
+
+
+
+# shared_focus = {
+# id = GAL_consolidationofitaly
+# icon = GFX_focus_prc_agrarian_socialism
+# x = 1
+# y = 6
+# relative_position_id = GAL_workersgallia
+	# available = {
+		# custom_trigger_tooltip = {
+			# tooltip = GAL_consolidationofitaly_tooltip_effect
+			# AND = {
+				# 158 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 159 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 162 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 2 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 117 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 156 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 115 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 114 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 161 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 157 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 160 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 736 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 103 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 163 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 104 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 105 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+				# 44 = {
+					# OR = { 
+						# is_owned_by = GAL
+						# AND = {
+							# any_country = {
+								# is_puppet_of = GAL
+								# owns_state = PREV
+							# }
+						# }
+					# }
+				# }
+			# }
+		# }
+	# }
+# prerequisite = { focus = GAL_romagnianfascists }
+# cost = 10
+# available_if_capitulated = yes
+# ai_will_do = {
+	# factor = 1
+# }
+	# completion_reward = {
+		# country_event = {
+			# id = gallia.1020
+		# }
+		# add_stability = 0.05
+		# add_popularity = {
+			# ideology = communism
+			# popularity = 0.1
+		# }
+	# }
+# }
+
+
+#####################
+###### Keera's Coup Tree
+####################
 
 shared_focus = {
 	id = GAL_my_pride

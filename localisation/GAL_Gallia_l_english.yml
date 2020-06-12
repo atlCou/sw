@@ -5,8 +5,8 @@
  GAL_fascism_party:0 "PPG"
  GAL_communism_party_long:0 "Parti Communiste Gallia"
  GAL_communism_party:0 "PCG"
- GAL_democratic_party_long:0 "Parti radical"
- GAL_democratic_party:0 "Parti radical"
+ GAL_democratic_party_long:0 "Parti républicain"
+ GAL_democratic_party:0 "PR"
  GAL_neutrality_party_long:0 "Gallian Loyalists"
  GAL_neutrality_party:0 "Loyalistes galliens"
  
@@ -77,16 +77,13 @@
 
  
  
-############# TEMP GAL ############
+############# Standard Tree ############
 
 GAL_1936elections:0 "1936 Elections"
-GAL_1936elections_desc:0 "Gallian elections are held every four years, and have generally remain split between left wing and moderate right wing parties. 1936 is rumored to be a potentially special year for Gallia, with socialist parties and factions having a stronger edge than ever before, even within the broad left-wing Parti socialiste."
-GAL_workersgallia:0 "Worker's Gallia"
-GAL_workersgallia_desc:0 "The Third Gallian Republic has been an excellent step for the people of both Gallia and the world, but in order to progress into the future we must leave behind one of the most important fascets of our century old ideals - that of capitalistic markets. A more democratic economic system, one in which economic structures are socially owned, will put Gallia again at the head of social progress."
-GAL_statusquo:0 "Radical Victory"
-GAL_statusquo_desc:0 "The Third Gallian Republic has been an excellent step for the people of both Gallia and the world, and we see little need to change that. The socialist reformists fail to see the capability of our current structure to solve their economic concerns, but we believe genuinely that the democratic and a regulated market-based system is unlike any other in the past or future."
-GAL_socdem_victory:0 "Socialist Victory"
-GAL_socdem_victory_desc:0 "The Third Gallian Republic has been an excellent rallying point for democratic ideals throughout its history, and this election proved no different. The moderates in the leading center-left Gallian party have won the majority of the French vote, surpassing the right in the vote and the socialists in the public opinion."
+GAL_1936elections_desc:0 "Gallian elections are held every four years, and have generally remain split anywhere between left wing and moderate right wing parties. 1936 is set to be an especially dangerous year for Gallia, with radical socialist parties having a stronger edge than ever before. The Intelligence Services are rumoured plagued with radicals of some sort, but the civil government has been unable to properly root them out."
+GAL_PS_victory:0 "§RPS Victory§!"
+GAL_RS_victory:0 "RS Victory"
+GAL_PR_victory:0 "§YPR Victory§!"
 
 
 
@@ -269,10 +266,10 @@ GAL_marechal_trait:0 "Le Jeune Maréchal"
  
  gallia.11.t:0 "1936 Gallian Election Results"
  gallia.11.d:0 "As the polls close, the winner of the Gallian elections appear to be..."
- gallia.11.a:0 "Parti radical!"
- gallia.11.b:0 "SGIO!"
- gallia.11.c:0 "PS!"
- gallia.11.e:0 "PCG!"
+ gallia.11.a:0 "The Right Liberals!"
+ gallia.11.b:0 "The Radical-Socialists!"
+ gallia.11.c:0 "The Socialist Party!"
+ gallia.11.e:0 "The Communist Party of Gallia!"
  
  
  

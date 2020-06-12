@@ -334,7 +334,7 @@ KAR_unmask_the_west:0 "Unmask The West"
 KAR_a_witchs_karlsland:0 "A Witch's Karlsland"
 
 KAR_the_lessons_of_a_witch:0 "The Lessons of a Witch:"
-KAR_order:0 "Order"
+KAR_order:0 "Order..."
 KAR_but_with_compassion:0 "But With Compassion..."
 KAR_comradery:0 "...Comradery..."
 KAR_and_unity:0 "...and Unity"
@@ -348,11 +348,12 @@ KAR_domestic_volunteer_program:0 "Domestic Volunteer Program"
 KAR_sponsor_construction_projects:0 "Sponsor Construction Projects"
 KAR_a_democratic_experiment:0 "A Democratic Experiment"
 KAR_topple_the_misguided:0 "Topple the Misguided"
-KAR_invite_the_republicans:0 "Invite the Republicans"
+KAR_invite_the_republicans:0 "Invade the Republicans"
 KAR_squash_the_revolutionaries:0 "Squash the Revolutionaries"
 KAR_the_last_unification_war:0 "The Last Unification War"
 KAR_the_new_democracy:0 "A New Democracy in Karlsland"
 
+KA2_Repubs_Rejected:0 " The §YHannover Republicans§! §Gaccepted§! our friendship."
 
 
 KAR_new_regime:0 "The New Regime"
@@ -473,65 +474,75 @@ garbage:0 "move that line down"
 
  noble.100.t:0 "The Officer"
 
-############# COMRADE LEADER events
+############# COMRADE LEADER Events
  
  comradeleader.1.t:0 "Comrade Leader!"
  comradeleader.1.a:0 "Why is she wearing a bag on her head?"
  comradeleader.10.t:0 "Unfinished Business"
  comradeleader.10.a:0 "Oh."
  
- 
- 
+
  ######
  KAR_border_wars_decision:0 "Fight [From.Owner.GetNameDef] for [From.GetName]"
  KAR_border_wars:0 "Pecking at Karlsland"
  
+ 
+ 
+############ Magocracy Events
+
+ magocracy.50.t:0 "[KA2.GetNameDef] Proposes A Temporary Alliance"
+ magocracy.50.d:0 "[KA2.GetNameDef] has approached our nation with the proposal that, as Karlsland descends into violence, our two states remain peaceful and open to eachother. They have taken a similarly democratic approach to their state, and thus see us as natural allies and companions against the autocratic and radical states on our flanks. However, as we wish to see all of Karlsland placed back into the hands of democracy, we will eventually have to deal with this relationship in a more permanent manner; so it may not be worth it to give them such an advantage."
+ magocracy.50.a:0 "We admire the witches' idealism!"
+ magocracy.50.b:0 "We will only prevail if we remain focused on the democratic ideal!"
+  
+ 
+
 ########### Baltland tree ########
-GEN_rallying:0 "Rallying the Nation"
-GEN_socdem_econ:0 "Social Programs"
-GEN_demo_research:0 "International Researchers"
+# GEN_rallying:0 "Rallying the Nation"
+# GEN_socdem_econ:0 "Social Programs"
+# GEN_demo_research:0 "International Researchers"
 
-GEN_findingourbrothers:0 "§WIf your §gIdeology§W is the same as any §YFaction Leader's§W, their desire for your alliance will be vastly increased.\n\nThis means joining a §YFaction§W should be easier."
+# GEN_findingourbrothers:0 "§WIf your §gIdeology§W is the same as any §YFaction Leader's§W, their desire for your alliance will be vastly increased.\n\nThis means joining a §YFaction§W should be easier."
 
 
-BAL_politics:0 "September Elections"
-BAL_politics_desc:0 "Every four years, the northern nation of Baltland holds parliamentary elections like so many other nations across the globe. Baltland's two largest parties are the center-right Venstre party and the social democrats of the BAP, both of which seem neck and neck in the coming election."
-BAL_BAPcrisis:0 "BAP Crisis"
-BAL_BAPcrisis_desc:0 "The victory of the BAP has set our internal politics on a rocky course, with the army-supported National Unity Movement questioning the legitimacy of the BAP's victory at such a slim margin."
-BAL_venstrecrisis:0 "Venstre Crisis"
-BAL_venstrecrisis_desc:0 "The victory of Venstre has set our internal politics on a rocky course, with the revolutionary Worker's Party questioning the legitimacy of Venstre's victory at such a slim margin."
+# BAL_politics:0 "September Elections"
+# BAL_politics_desc:0 "Every four years, the northern nation of Baltland holds parliamentary elections like so many other nations across the globe. Baltland's two largest parties are the center-right Venstre party and the social democrats of the BAP, both of which seem neck and neck in the coming election."
+# BAL_BAPcrisis:0 "BAP Crisis"
+# BAL_BAPcrisis_desc:0 "The victory of the BAP has set our internal politics on a rocky course, with the army-supported National Unity Movement questioning the legitimacy of the BAP's victory at such a slim margin."
+# BAL_venstrecrisis:0 "Venstre Crisis"
+# BAL_venstrecrisis_desc:0 "The victory of Venstre has set our internal politics on a rocky course, with the revolutionary Worker's Party questioning the legitimacy of Venstre's victory at such a slim margin."
 
-BAL_unitymovementcoup:0 "Nordic Unity Movement Coup"
-BAL_unitymovementcoup_desc:0 "The Nordic Unity Movement lead a military coup against the popular government of Baltland in name of national restoration and against the forces of the old Baltlande elites."
-BAL_integratingparamilitants:0 "Integrating Paramilitants"
-BAL_integratingparamilitants_desc:0 "The parliaments we were using for violent activism can now be integrated into our actual military as a political and militant force."
-BAL_rallyingthenation:0 "Rallying the Nation"
-BAL_rallyingthenation_desc:0 "If Baltland is going to live up to its ambitions, the people of Baltland must be united in this goal."
-BAL_dillutingtheidentities:0 "Dilluting Identities"
-BAL_dillutingtheidentities_desc:0 "The peoples of Noreg, Sviar, and Dani (among others) all claim equal responsibility in the existence of the Baltland state. This division weakens us on a level deeper than we previously thought, so we must take action to remove it however we can."
+# BAL_unitymovementcoup:0 "Nordic Unity Movement Coup"
+# BAL_unitymovementcoup_desc:0 "The Nordic Unity Movement lead a military coup against the popular government of Baltland in name of national restoration and against the forces of the old Baltlande elites."
+# BAL_integratingparamilitants:0 "Integrating Paramilitants"
+# BAL_integratingparamilitants_desc:0 "The parliaments we were using for violent activism can now be integrated into our actual military as a political and militant force."
+# BAL_rallyingthenation:0 "Rallying the Nation"
+# BAL_rallyingthenation_desc:0 "If Baltland is going to live up to its ambitions, the people of Baltland must be united in this goal."
+# BAL_dillutingtheidentities:0 "Dilluting Identities"
+# BAL_dillutingtheidentities_desc:0 "The peoples of Noreg, Sviar, and Dani (among others) all claim equal responsibility in the existence of the Baltland state. This division weakens us on a level deeper than we previously thought, so we must take action to remove it however we can."
 
-BAL_BAPsurvives:0 "BAP Survives"
-BAL_BAPsurvives_desc:0 "The National Unity Movement has failed to gain a foothold with the public, and their humiliating lack of support with low level officers and the general public has caused them to fall into obscurity within weeks. The great democracy of Baltland continues on!"
-BAL_defense:0 "Defense"
-BAL_defense_desc:0 "The greatest threat to Baltland now is external. Let's make sure no one - Neuroi or human - can take this land."
-BAL_socialprograms:0 "Baltland's Welfare"
-BAL_socialprograms_desc:0 "The basis of our platform is major economic and social liberalisation. Let's begin the manifestation of our platform."
-BAL_schools:0 "International Universities"
-BAL_schools_desc:0 "A foundational part of any popular government should be the education of their citizens, and a wide improvement of our high level institutions will simultaneously support our lower classes and improve our technological development."
+# BAL_BAPsurvives:0 "BAP Survives"
+# BAL_BAPsurvives_desc:0 "The National Unity Movement has failed to gain a foothold with the public, and their humiliating lack of support with low level officers and the general public has caused them to fall into obscurity within weeks. The great democracy of Baltland continues on!"
+# BAL_defense:0 "Defense"
+# BAL_defense_desc:0 "The greatest threat to Baltland now is external. Let's make sure no one - Neuroi or human - can take this land."
+# BAL_socialprograms:0 "Baltland's Welfare"
+# BAL_socialprograms_desc:0 "The basis of our platform is major economic and social liberalisation. Let's begin the manifestation of our platform."
+# BAL_schools:0 "International Universities"
+# BAL_schools_desc:0 "A foundational part of any popular government should be the education of their citizens, and a wide improvement of our high level institutions will simultaneously support our lower classes and improve our technological development."
 
-BAL_NAPRevolution:0 "Worker's Party Revolution"
-BAL_securingtherevolution:0 "Securing the Revolution"
-BAL_Defendingtherevolution:0 "Defending the Revolution"
-BAL_exportingtherevolution:0 "Exporting the Revolution"
-BAL_Venstre_survives:0 "Venstre Survives"
-BAL_supportingdemocracy:0 "Supporting Democracy"
-BAL_baltlandicbusiness:0 "Baltlandic Business"
-BAL_privateuniversities:0 "Private Universities"
+# BAL_NAPRevolution:0 "Worker's Party Revolution"
+# BAL_securingtherevolution:0 "Securing the Revolution"
+# BAL_Defendingtherevolution:0 "Defending the Revolution"
+# BAL_exportingtherevolution:0 "Exporting the Revolution"
+# BAL_Venstre_survives:0 "Venstre Survives"
+# BAL_supportingdemocracy:0 "Supporting Democracy"
+# BAL_baltlandicbusiness:0 "Baltlandic Business"
+# BAL_privateuniversities:0 "Private Universities"
 
-BAL_joiningbritannia:0 "Joining Britannia"
-BAL_findingourbrothers:0 "Finding Our Brothers"
+# BAL_joiningbritannia:0 "Joining Britannia"
+# BAL_findingourbrothers:0 "Finding Our Brothers"
 
-BAL_militants:0 "§MThe completion of this focus means a large change in the political makeup of Baltland...§W"
+# BAL_militants:0 "§MThe completion of this focus means a large change in the political makeup of Baltland...§W"
 
 
 
