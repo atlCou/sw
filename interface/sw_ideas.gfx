@@ -41,4 +41,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/OST_youth.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_GAL_corrupt_intel"
+		texturefile = "gfx/interface/ideas/GAL_corrupt_intel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Global_Regulations"
+		texturefile = "gfx/interface/ideas/Global_Regulations.dds"
+	}
+	
 }

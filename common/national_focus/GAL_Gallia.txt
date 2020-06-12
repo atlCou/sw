@@ -18,6 +18,479 @@ shared_focus = {
 ################ SOC ################
 
 
+
+#### Liberal Victory
+shared_focus = {
+	id = GAL_PR_victory
+	icon = GFX_liberal_econ
+	x = -4
+	y = 1
+	relative_position_id = GAL_1936elections
+	mutually_exclusive = { focus = GAL_PS_victory }
+	mutually_exclusive = { focus = GAL_RS_victory }
+	prerequisite = { focus = GAL_1936elections }
+	bypass = { has_country_flag = GAL_liberalswon }
+	cost = 10
+	available = { has_country_flag = GAL_liberalswon }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_the_crisis_act
+	icon = GFX_KAR_bribe
+	x = -1
+	y = 1
+	relative_position_id = GAL_PR_victory
+	prerequisite = { focus = GAL_PR_victory }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_reverse_the_prog_tax
+	icon = GFX_union_deal_break
+	x = -2
+	y = 2
+	relative_position_id = GAL_PR_victory
+	prerequisite = { focus = GAL_the_crisis_act }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_wrangling_the_crisis_act
+	icon = GFX_liberal_econ
+	x = 0
+	y = 2
+	relative_position_id = GAL_PR_victory
+	prerequisite = { focus = GAL_the_crisis_act }
+	mutually_exclusive = { focus = GAL_placate_intel_serv }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_the_mil_if_we_have_to
+	icon = GFX_liberal_econ
+	x = 1
+	y = 3
+	relative_position_id = GAL_PR_victory
+	prerequisite = { focus = GAL_wrangling_the_crisis_act }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_uniting_our_wing
+	icon = GFX_liberal_econ
+	x = -1
+	y = 3
+	relative_position_id = GAL_PR_victory
+	prerequisite = { focus = GAL_wrangling_the_crisis_act }
+	prerequisite = { focus = GAL_reverse_the_prog_tax }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_the_paternal_state
+	icon = GFX_liberal_econ
+	x = 0
+	y = 4
+	relative_position_id = GAL_PR_victory
+	prerequisite = { focus = GAL_uniting_our_wing }
+	prerequisite = { focus = GAL_the_mil_if_we_have_to }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+	}
+}
+
+#### Radical-Socialist victory
+shared_focus = {
+	id = GAL_RS_victory
+	icon = GFX_socdem_econ
+	x = 0
+	y = 1
+	relative_position_id = GAL_1936elections
+	mutually_exclusive = { focus = GAL_PS_victory }
+	mutually_exclusive = { focus = GAL_PR_victory }
+	prerequisite = { focus = GAL_1936elections }
+	cost = 10
+	available = { has_country_flag = GAL_socdemswon }
+	bypass = { has_country_flag = GAL_socdemswon }
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_unity_as_a_priority
+	icon = GFX_goal_generic_improve_relations
+	x = -2
+	y = 1
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_PR_victory focus = GAL_RS_victory }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.075
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_placate_intel_serv
+	icon = GFX_GAL_sekrit_pol
+	x = -2
+	y = 2
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_unity_as_a_priority }
+	mutually_exclusive = { focus = GAL_wrangling_the_crisis_act }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = GAL_corrupt_intelligence_services_placated
+			remove_idea = GAL_corrupt_intelligence_services
+		}
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = GAL_rein_in_the_splinters
+	icon = GFX_GAL_rein_in
+	x = -1
+	y = 3
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_placate_intel_serv }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_a_wobbly_government
+	icon = GFX_GAL_burning
+	x = 0
+	y = 1
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_RS_victory focus = GAL_PR_victory focus = GAL_PS_victory }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = GAL_RW_concessions
+	icon = GFX_conservative_shake
+	x = 0
+	y = 2
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_a_wobbly_government }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		add_political_power = -25
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_promote_workplace_democracy
+	icon = GFX_workplace_democracy
+	x = 2
+	y = 1
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_PS_victory focus = GAL_RS_victory }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		add_stability = 0.075
+		add_ideas = GAL_workplace_democracy_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_further_industrial_regulations
+	icon = GFX_RMA_soc_torch
+	x = 2
+	y = 2
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_promote_workplace_democracy }
+	mutually_exclusive = { focus = GAL_a_sanctioned_general_strike }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		add_political_power = -25
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		swap_ideas = {
+			add_idea = GAL_further_industrial_regulations_idea
+			remove_idea = GAL_workplace_democracy_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_living_up_to_our_platform
+	icon = GFX_liberal_econ
+	x = 1
+	y = 3
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_further_industrial_regulations }
+	cost = 5
+	dynamic = yes
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = industrial_complex
+				level = 1
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_loyal_to_the_republic
+	icon = GFX_GAL_dove
+	x = 0
+	y = 4
+	relative_position_id = GAL_RS_victory
+	prerequisite = { focus = GAL_living_up_to_our_platform focus = GAL_rein_in_the_splinters }
+	prerequisite = { focus = GAL_RW_concessions }
+	available = {
+		has_idea = GAL_unstable_politics_4
+	}
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		remove_ideas = GAL_unstable_politics_4
+		country_event = {
+			id = gallia.20
+		}
+	}
+}
+
+### Socialist Victory
 shared_focus = {
 id = GAL_PS_victory
 	icon = GFX_focus_prc_agrarian_socialism
@@ -29,7 +502,8 @@ id = GAL_PS_victory
 	prerequisite = { focus = GAL_1936elections }
 	cost = 10
 	available_if_capitulated = yes
-	available = { has_country_flag = GAL_wentsoc }
+	available = { has_country_flag = GAL_socwon }
+	bypass = { has_country_flag = GAL_socwon }
 	ai_will_do = {
 		factor = 100
 		}
@@ -38,36 +512,30 @@ id = GAL_PS_victory
 }
 
 shared_focus = {
-	id = GAL_RS_victory
-	icon = GFX_socdem_econ
-	x = 0
-	y = 1
-	relative_position_id = GAL_1936elections
-	mutually_exclusive = { focus = GAL_PS_victory }
-	mutually_exclusive = { focus = GAL_PR_victory }
-	prerequisite = { focus = GAL_1936elections }
-	cost = 10
-	available = { has_country_flag = GAL_wentsocdem }
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 100
-		}
-	completion_reward = {
-	}
-}
-
-shared_focus = {
-	id = GAL_PR_victory
+	id = GAL_a_new_com_of_pub_safety
 	icon = GFX_liberal_econ
-	x = -4
+	x = 1
 	y = 1
-	relative_position_id = GAL_1936elections
-	mutually_exclusive = { focus = GAL_PS_victory }
-	mutually_exclusive = { focus = GAL_RS_victory }
-	prerequisite = { focus = GAL_1936elections }
-	bypass = { has_country_flag = GAL_stayedstatusquo }
-	cost = 10
-	available = { has_country_flag = GAL_stayedstatusquo }
+	relative_position_id = GAL_PS_victory
+	prerequisite = { focus = GAL_PS_victory }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_a_sanctioned_general_strike
+	icon = GFX_liberal_econ
+	x = 0
+	y = 2
+	relative_position_id = GAL_PS_victory
+	prerequisite = { focus = GAL_a_new_com_of_pub_safety }
+	mutually_exclusive = { focus = GAL_further_industrial_regulations } 
+	cost = 5
 	available_if_capitulated = yes
 	ai_will_do = {
 		factor = 100
@@ -77,16 +545,71 @@ shared_focus = {
 }
 
 
+shared_focus = {
+	id = GAL_root_out_the_traitors
+	icon = GFX_liberal_econ
+	x = 2
+	y = 2
+	relative_position_id = GAL_PS_victory
+	prerequisite = { focus = GAL_a_new_com_of_pub_safety }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+	}
+}
 
+shared_focus = {
+	id = GAL_absorb_RS
+	icon = GFX_liberal_econ
+	x = 1
+	y = 3
+	relative_position_id = GAL_PS_victory
+	prerequisite = { focus = GAL_root_out_the_traitors }
+	prerequisite = { focus = GAL_a_sanctioned_general_strike }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+	}
+}
 
+shared_focus = {
+	id = GAL_mass_nationalization
+	icon = GFX_Star_SEIZE
+	x = -1
+	y = 3
+	relative_position_id = GAL_PS_victory
+	prerequisite = { focus = GAL_a_sanctioned_general_strike }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+	}
+}
 
-
-
-
-
-
-
-	
+shared_focus = {
+	id = GAL_a_new_gallia
+	icon = GFX_liberal_econ
+	x = 0
+	y = 4
+	relative_position_id = GAL_PS_victory
+	prerequisite = { focus = GAL_mass_nationalization }
+	prerequisite = { focus = GAL_absorb_RS } 
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+	}
+}
 
 # shared_focus = {
 	# id = GAL_friends?

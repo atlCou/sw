@@ -617,6 +617,22 @@ spriteTypes = {
 		name = "GFX_union_deal_break"
 		texturefile = "gfx/interface/goals/union_deal_break.dds"
 	}
+	SpriteType = {
+		name = "GFX_GAL_burning"
+		texturefile = "gfx/interface/goals/GAL_burning.dds"
+	}
+	SpriteType = {
+		name = "GFX_workplace_democracy"
+		texturefile = "gfx/interface/goals/workplace_democracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_rein_in"
+		texturefile = "gfx/interface/goals/GAL_rein_in.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_dove"
+		texturefile = "gfx/interface/goals/GAL_dove.dds"
+	}
 }
 
 

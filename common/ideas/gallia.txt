@@ -2,89 +2,96 @@ ideas = {
 
 	country = {
 
-		GAL_bagunits = {
+		GAL_unstable_politics = {
+			picture = FRA_scw_intervention_republicans_focus
 			
-			picture = GAL_airforce
-			on_add = {
-				set_variable = {
-					var = witches_manpower
-					value = 10
-				}
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.75
+				foreign_subversive_activites = 0.1
+				resistance_target = 0.1
+				economy_cost_factor = 0.25	
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
 			}
 		}
 		
-		GAL_departmentofsolidaritypop = {
-			picture = generic_reserve_divisions
-			modifier = { 
-				communism_drift = 0.1 
-				stability_weekly = 0.005 
+		GAL_unstable_politics_2 = {
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.5
+				economy_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
 			}
 		}
 		
+		GAL_unstable_politics_3 = {
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.2
+				economy_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+			}
+		}
+		
+		GAL_unstable_politics_4 = {
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
 
-		GAL_departmentoftheworker1 = {
-			picture = generic_central_management
-			modifier = { 
-				production_speed_arms_factory_factor = 0.1 
-				production_speed_industrial_complex_factor = 0.1
-				stability_weekly = 0.005 
-			}
-		}
+		GAL_corrupt_intelligence_services = {
 		
-		GAL_DOSmilitary = {
-			modifier = { conscription = 0.015 }
-		}
-		
-		GAL_DOSeconomy = {
-			
-			
-			modifier = { 
-				consumer_goods_factor = -0.02
-				production_speed_industrial_complex_factor = -0.1
-				industrial_capacity_factory = 0.1
-			}
-		}
-		
-		GAL_emergencyconstruction = {
-			
-			picture = man_five_year_plan_industry
+			picture = GAL_corrupt_intel
 			
 			modifier = {
-				consumer_goods_factor = 0.2
+				intel_network_gain_factor = -0.1
+				decryption_factor = -0.1
 			}
 		}
 		
-		GAL_socialistcountrysides = {
-			
-			picture = GAL_socialismstar
+		GAL_corrupt_intelligence_services_placated = {
+		
+			picture = GAL_corrupt_intel
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				intel_network_gain_factor = -0.05
+				democratic_drift = 0.01
 			}
 		}
 		
-		GAL_nationalservices = {
-			
-			picture = man_five_year_plan_industry
+		GAL_workplace_democracy_idea = {
+		
+			picture = Global_Regulations
 			
 			modifier = {
-				consumer_goods_factor = -0.03
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = -0.05
 			}
+		
 		}
+
+		GAL_further_industrial_regulations_idea = {
 		
-		
-		GAL_welfare_programs_idea = {
-			
-			picture = generic_goods_red_bonus
+			picture = Global_Regulations
 			
 			modifier = {
-				political_power_gain = 0.2
-				MONTHLY_POPULATION = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
 			}
-		}
 		
+		}
+
+
+		#### KEERA COUP IDEAS
+
 		GAL_monarchie_idea = {
 			picture = ROM_king_carol_ii_hedonist
 			

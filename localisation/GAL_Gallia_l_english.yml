@@ -85,22 +85,23 @@ GAL_PS_victory:0 "§RPS Victory§!"
 GAL_RS_victory:0 "RS Victory"
 GAL_PR_victory:0 "§YPR Victory§!"
 
+GAL_unity_as_a_priority:0 "Unity as a Priority"
+GAL_a_wobbly_government:0 "A Wobbly Government"
+GAL_promote_workplace_democracy:0 "Promote Workplace Democracy"
+GAL_placate_intel_serv:0 "Placate the Intelligence Services"
+GAL_RW_concessions:0 "Right-Wing Concessions"
+GAL_further_industrial_regulations:0 "Further Industrial Regulations"
+GAL_rein_in_the_splinters:0 "Rein in the Splinters"
+GAL_living_up_to_our_platform:0 "Living up to [GAL.GetRulingParty]'s Platform"
+GAL_loyal_to_the_republic:0 "Loyal to the Republic"
+
 
 
 GAL_1936gallianelections:0 " The 1936 Gallian elections have occurred."
-GAL_wentauthsoc:0 " The Gallian National-Syndicalists won the 1936 elections."
-GAL_stayedstatusquo:0 " The Democrats won the 1936 elections."
-GAL_wentsocdem:0 " The left-wing moderates won the 1936 elections."
-GAL_wentsoc:0 " The Gallian Socialists won the 1936 elections."
-
-GAL_departmentofsolidaritypop:0 "Department of Individuality"
-GAL_departmentoftheworker1:0 "Department of the Worker"
-GAL_bagunits:0 "Gallian Bag Units"
-GAL_DOSmilitary:0 "Department of Individuality: Recruitment"
-GAL_emergencyconstruction:0 "Emergency Construction"
-
-GAL_socialistcountrysides:0 "Socialist Countrysides"
-
+GAL_wentauthsoc:0 " You shouldn't be seeing this country flag"
+GAL_liberalswon:0 " PR Victory in the 1936 elections."
+GAL_socdemswon:0 " RS Victory in the 1936 elections."
+GAL_socwon:0 " PS Victory in the 1936 elections."
 
 
 GAL_italianrevolution_tooltip:0 "§WPuppets §Ythe Venezian Socialist Republic§W, gains a §Ywargoal§W against §YVenezia§W. If the revolution §Gsuceeds§W, you will also gain a §Ywargoal§W against §YRomagna§W."
