@@ -233,6 +233,10 @@ SOU_KAR_Puppet = {
 }
 
 
+GAL_communist_color = {
+	color = rgb { 19 44 100 }
+	color_ui = rgb { 19 44 100 }
+}
 
 ######################
 # KAR BREAKAWAYS
@@ -282,4 +286,3 @@ KA1_NOBLE_unified = {
 	color = rgb { 79 74 10 }
 	color_ui = rgb { 79 74 10 }
 }
-

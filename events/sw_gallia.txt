@@ -1,45 +1,3 @@
-#################### temporary
-add_namespace = galw
-
-country_event = {
-	id = galw.1
-	title = galw.1.t
-	desc = galw.1.d
-	picture = GFX_generic_backpackedunits
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	
-	option = {
-		name = galw.1.a
-
-		hidden_effect = { 
-		add_ideas = GAL_bagunits
-		}
-	}
-}
-
-country_event = {
-	id = galw.100
-	title = galw.100.t
-	desc = galw.100.d
-	picture = GFX_report_event_fighters
-
-	fire_only_once = yes
-
-	is_triggered_only = yes	
-	
-	
-	option = {
-		name = galw.100.a
-	}
-}
-
-
-
-
 ########################### GALLIA ###################
 add_namespace = gallia
 
@@ -482,10 +440,100 @@ country_event = {
 	}
 	
 }
+
+
+############ Normal Democratic Events
+country_event = {
+	id = gallia.20
+	title = gallia.20.t
+	desc = gallia.20.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.20.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		add_stability = 0.05
+	}
 	
+}
 	
+############ "Paternal Democracy" Events	
+
+country_event = {
+	id = gallia.30
+	title = gallia.30.t
+	desc = gallia.30.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.30.a
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_popularities = {
+			neutrality = 55
+			democratic = 30
+			fascism = 15
+		}
+		set_party_name = {
+			ideology = neutrality
+			name = "PR"
+			long_name = "Parti républicain"
+		}
+		create_country_leader = {
+			name = "Perrine Clostermann"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "Perrine H Clostermann.dds"
+			expire = "1965.1.1"
+			ideology = centrism
+		}
+		set_cosmetic_tag = GAL_paternal
+		add_stability = 0.05
+	}
 	
+}
+
+########### Socialist Gallia Path
+
+country_event = {
+	id = gallia.40
+	title = gallia.40.t
+	desc = gallia.40.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.40.a
+		set_politics = {
+			ruling_party = communism
+		}
+		set_popularities = {
+			communism = 75
+			democratic = 25
+		}
+		create_country_leader = {
+			name = "Rosalie de La Poype"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "Poype_but_green.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+		}
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = GAL_communist_color
+		add_stability = 0.05
+	}
 	
+}
+
+
 country_event = {
 	id = gallia.100
 	title = gallia.100.t

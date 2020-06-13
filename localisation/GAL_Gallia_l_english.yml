@@ -13,8 +13,8 @@
  GAL_democratic:0 "Gallia"
  GAL_democratic_DEF:0 "Gallia"
  GAL_democratic_ADJ:0 "Gallian"
- GAL_communism:0 "Gallia"
- GAL_communism_DEF:0 "Gallia"
+ GAL_communism:0 "SR Gallia"
+ GAL_communism_DEF:0 "The Socialist Republic of Gallia"
  GAL_communism_ADJ:0 "Gallian"
  GAL_fascism:0 "Gallian State"
  GAL_fascism_DEF:0 "The Gallian State"
@@ -31,6 +31,10 @@
  GAL_gallia_coup_fascism:0 "Gallian State"
  GAL_gallia_coup_fascism_ADJ:0 "Gallian"
  GAL_gallia_coup_fascism_DEF:0 "The Gallian State"
+ 
+ GAL_paternal_neutrality:0 "Gallia"
+ GAL_paternal_neutrality_DEF:0 "Gallia"
+ GAL_paternal_neutrality_ADJ:0 "Gallia"
 
 
  neuroi.1:0 "Neuroi Resurgance in Hispania!"
@@ -312,6 +316,14 @@ GAL_marechal_trait:0 "Le Jeune Maréchal"
  
  
  
+ gallia.20.t:0 "The Gallian Republic"
+ gallia.20.d:0 "The last year was extraordinarily stressful. As workers striked, and failed terrorist plot after failed terrorist plot were uncovered by half of the Gallian intelligence services, it seems that the government finally pulled through. Without excessive violence, and without extremism, the democratic Gallian Republic has narrowly avoided a collapse.\n\nNewspapers have started to flood out reports that monarchists in the intelligence services have been arrested, and that prominent communist figures have been outed as monarchists looking to incite a reactionary revolution. Nationalistic parties have been tanking in public support as Gallians no longer worry about revolution. It seems like Gallia has finally found its footing again."
+ gallia.20.a:0 "Liberté, égalité, fraternité!"
+ 
+ gallia.30.t:0 "The Paternal Democracy"
+ gallia.30.d:0 "To say that many Gallians predicted that they would lose their freedoms to a liberal government would be a lie. However, since the 1936 election, Gallians have started to feel like the walls are closing in. All parties considered left of the Radical-Socialists have been outlawed, strikes are often met with rolling tanks and platoons, and the disproportionate amount of municipalities held by right-wing parties have concerned many. But it’s too late to care.\n\nBusiness leaders can be seen entering and exiting capitol buildings at almost any time of the day, and a large amount of the budget seems to be flowing into the intelligence services uninterrupted. Vocal members of the Radical-Socialist Party are routinely seen on trial, even though their party has not been banned. Members of Parti républicain have begun to take on an oddly detached and technocratic tone, as massive subsidies are passed for industrial conglomerates that probably don’t need them. Welfare programs are passed that provide no real benefit but bring in immense amounts of revenue.\n\nBefore entering a courtroom for an unusually speedy trial, a relatively prominent Socialist Party politician remarked that, for a liberal government, this all seemed rather illiberal."
+ gallia.30.a:0 "Personally, I see nothing wrong with it."
+
  
  
  gallia.200.t:0 "Gallia Leaves Our Sphere"
