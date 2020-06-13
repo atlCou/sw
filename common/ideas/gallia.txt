@@ -67,6 +67,17 @@ ideas = {
 			}
 		}
 		
+		GAL_corrupt_intelligence_services_rooting_out = {
+		
+			picture = GAL_corrupt_intel
+			
+			modifier = {
+				intel_network_gain_factor = -0.2
+				decryption_factor = -0.3
+				communism_drift = 0.1
+			}
+		}
+		
 		GAL_workplace_democracy_idea = {
 		
 			picture = Global_Regulations
@@ -85,6 +96,54 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_start_efficiency_factor = 0.05
+			}
+		
+		}
+		
+		GAL_the_crisis_act_idea = {
+			
+			picture = generic_intel_bonus
+		
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				neutrality_drift = 0.02
+			}
+		
+		}
+		
+		GAL_reverse_the_prog_tax_idea = {
+		
+			picture = generic_intel_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.03
+				neutrality_drift = 0.02
+			}
+		
+		}
+		
+		
+		GAL_a_new_com_of_pub_safety_idea = {
+		
+			picture = GAL_com_safe
+			
+			modifier = {
+				stability_weekly = 0.003
+				political_power_factor = 0.05
+			}
+		
+		}
+		
+		GAL_general_strike = {
+		
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				industrial_capacity_factory = -0.8
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.5
 			}
 		
 		}

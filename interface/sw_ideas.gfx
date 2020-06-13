@@ -51,4 +51,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Global_Regulations.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_GAL_com_safe"
+		texturefile = "gfx/interface/ideas/GAL_com_safe"
+	}
+	
 }

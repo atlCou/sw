@@ -17,11 +17,6 @@ spriteTypes = {
 		name = "GFX_1936_gallian_elections"
 		texturefile = "gfx/interface/goals/1936_gallian_elections.dds"
 	}
-	
-	SpriteType = {
-		name = "GFX_natsynwitches"
-		texturefile = "gfx/interface/goals/natsynwitches.dds"
-	}
 
 	SpriteType = {
 		name = "GFX_habsburgmemes"
@@ -350,10 +345,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_proletariat.dds"
 	}
 	SpriteType = {
-		name = "GFX_generic_schools" 
-		texturefile = "gfx/interface/goals/generic_schools.dds"
-	}
-	SpriteType = {
 		name = "GFX_leader_schools"
 		texturefile = "gfx/interface/goals/leader_schools.dds"
 	}
@@ -632,6 +623,38 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GAL_dove"
 		texturefile = "gfx/interface/goals/GAL_dove.dds"
+	}
+	SpriteType = {
+		name = "GFX_capitol_industry"
+		texturefile = "gfx/interface/goals/capitol_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_sword_socdems"
+		texturefile = "gfx/interface/goals/sword_socdems.dds"
+	}
+	SpriteType = {
+		name = "GFX_right-wing"
+		texturefile = "gfx/interface/goals/right-wing.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_pat_demo"
+		texturefile = "gfx/interface/goals/GAL_pat_demo.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_com_safety"
+		texturefile = "gfx/interface/goals/GAL_com_safety.dds"
+	}
+	SpriteType = {
+		name = "GFX_absorb_socdems"
+		texturefile = "gfx/interface/goals/absorb_socdems.dds"
+	}
+	SpriteType = {
+		name = "GFX_nationalization"
+		texturefile = "gfx/interface/goals/nationalization.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_new_gallia"
+		texturefile = "gfx/interface/goals/GAL_new_gallia.dds"
 	}
 }
 

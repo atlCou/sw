@@ -53,6 +53,35 @@ shared_focus = {
 		factor = 100
 		}
 	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		add_stability = -0.05
+		add_ideas = GAL_the_crisis_act_idea
 	}
 }
 
@@ -69,12 +98,16 @@ shared_focus = {
 		factor = 100
 	}
 	completion_reward = {
+		swap_ideas = {
+			remove_idea = GAL_the_crisis_act_idea
+			add_idea = GAL_reverse_the_prog_tax_idea
+		}
 	}
 }
 
 shared_focus = {
 	id = GAL_wrangling_the_crisis_act
-	icon = GFX_liberal_econ
+	icon = GFX_sword_socdems
 	x = 0
 	y = 2
 	relative_position_id = GAL_PR_victory
@@ -86,12 +119,22 @@ shared_focus = {
 		factor = 100
 	}
 	completion_reward = {
+		add_political_power = 75
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		custom_effect_tooltip = GAL_wrangling_the_crisis_act_tooltip
 	}
 }
 
 shared_focus = {
 	id = GAL_the_mil_if_we_have_to
-	icon = GFX_liberal_econ
+	icon = GFX_GAL_joy
 	x = 1
 	y = 3
 	relative_position_id = GAL_PR_victory
@@ -102,12 +145,48 @@ shared_focus = {
 		factor = 100
 	}
 	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+		add_manpower = -2000
 	}
 }
 
 shared_focus = {
 	id = GAL_uniting_our_wing
-	icon = GFX_liberal_econ
+	icon = GFX_right-wing
 	x = -1
 	y = 3
 	relative_position_id = GAL_PR_victory
@@ -119,23 +198,66 @@ shared_focus = {
 		factor = 100
 	}
 	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		add_political_power = 50
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
 
 shared_focus = {
 	id = GAL_the_paternal_state
-	icon = GFX_liberal_econ
+	icon = GFX_GAL_pat_demo
 	x = 0
 	y = 4
 	relative_position_id = GAL_PR_victory
 	prerequisite = { focus = GAL_uniting_our_wing }
 	prerequisite = { focus = GAL_the_mil_if_we_have_to }
+	available = {
+		has_idea = GAL_unstable_politics_4
+	}
 	cost = 5
 	available_if_capitulated = yes
 	ai_will_do = {
 		factor = 100
 	}
 	completion_reward = {
+		remove_ideas = GAL_unstable_politics_4
+		country_event = {
+			id = gallia.30
+		}
 	}
 }
 
@@ -429,7 +551,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_living_up_to_our_platform
-	icon = GFX_liberal_econ
+	icon = GFX_capitol_industry
 	x = 1
 	y = 3
 	relative_position_id = GAL_RS_victory
@@ -441,6 +563,17 @@ shared_focus = {
 		factor = 100
 	}
 	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = industrial_complex
+				level = 1
+			}
+		}
 		random_owned_state = {
 			limit = {
 				is_core_of = ROOT
@@ -513,7 +646,7 @@ id = GAL_PS_victory
 
 shared_focus = {
 	id = GAL_a_new_com_of_pub_safety
-	icon = GFX_liberal_econ
+	icon = GFX_GAL_com_safety
 	x = 1
 	y = 1
 	relative_position_id = GAL_PS_victory
@@ -524,12 +657,41 @@ shared_focus = {
 		factor = 100
 		}
 	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		add_stability = -0.1
+		add_ideas = GAL_a_new_com_of_pub_safety_idea
 	}
 }
 
 shared_focus = {
 	id = GAL_a_sanctioned_general_strike
-	icon = GFX_liberal_econ
+	icon = GFX_Star_SEIZE
 	x = 0
 	y = 2
 	relative_position_id = GAL_PS_victory
@@ -537,17 +699,54 @@ shared_focus = {
 	mutually_exclusive = { focus = GAL_further_industrial_regulations } 
 	cost = 5
 	available_if_capitulated = yes
+	select_effect = {
+		add_ideas = GAL_general_strike
+	}
 	ai_will_do = {
 		factor = 100
-		}
+	}
 	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		custom_effect_tooltip = GAL_a_sanctioned_general_strike_tooltip
+		effect_tooltip = {
+			add_ideas = GAL_general_strike
+		}
+		hidden_effect = {
+			remove_ideas = GAL_general_strike
+		}
 	}
 }
 
 
 shared_focus = {
 	id = GAL_root_out_the_traitors
-	icon = GFX_liberal_econ
+	icon = GFX_Star_Boot
 	x = 2
 	y = 2
 	relative_position_id = GAL_PS_victory
@@ -558,12 +757,17 @@ shared_focus = {
 		factor = 100
 		}
 	completion_reward = {
+		remove_ideas = GAL_corrupt_intelligence_services
+		add_timed_idea = {
+			idea = GAL_corrupt_intelligence_services_rooting_out
+			days = 180
+		}
 	}
 }
 
 shared_focus = {
 	id = GAL_absorb_RS
-	icon = GFX_liberal_econ
+	icon = GFX_absorb_socdems
 	x = 1
 	y = 3
 	relative_position_id = GAL_PS_victory
@@ -575,12 +779,45 @@ shared_focus = {
 		factor = 100
 		}
 	completion_reward = {
+		if = { 
+			limit = {
+				has_idea = GAL_unstable_politics
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_2
+				remove_idea = GAL_unstable_politics
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_2
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = GAL_unstable_politics_3
+			}
+			swap_ideas = {
+				add_idea = GAL_unstable_politics_3
+				remove_idea = GAL_unstable_politics_4
+			}
+		}
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
 	}
 }
 
 shared_focus = {
 	id = GAL_mass_nationalization
-	icon = GFX_Star_SEIZE
+	icon = GFX_nationalization
 	x = -1
 	y = 3
 	relative_position_id = GAL_PS_victory
@@ -591,23 +828,53 @@ shared_focus = {
 		factor = 100
 		}
 	completion_reward = {
+		add_political_power = -35
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				instant_build = yes
+				type = industrial_complex
+				level = 2
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				instant_build = yes
+				type = arms_factory
+				level = 2
+			}
+		}
 	}
 }
 
 shared_focus = {
 	id = GAL_a_new_gallia
-	icon = GFX_liberal_econ
+	icon = GFX_GAL_new_gallia
 	x = 0
 	y = 4
 	relative_position_id = GAL_PS_victory
 	prerequisite = { focus = GAL_mass_nationalization }
 	prerequisite = { focus = GAL_absorb_RS } 
+	available = {
+		has_idea = GAL_unstable_politics_4
+	}
 	cost = 5
 	available_if_capitulated = yes
 	ai_will_do = {
 		factor = 100
 		}
 	completion_reward = {
+		remove_ideas = GAL_unstable_politics_4
+		country_event = {
+			id = gallia.40
+		}
 	}
 }
 
