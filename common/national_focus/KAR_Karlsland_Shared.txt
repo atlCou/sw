@@ -1400,7 +1400,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_rudel_alone
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_rudel_journey
 	x = -3
 	y = 1
 	cost = 8
@@ -1429,7 +1429,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_hire_a_mystic
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_mystic
 	x = -1
 	y = 1
 	cost = 5
@@ -1492,7 +1492,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_unearthly_neuroi
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_neuroi_pagan
 	x = -2
 	y = 3
 	cost = 5
@@ -1512,8 +1512,8 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_they_still_practice
-	icon = GFX_KAR_bohemia_pagan
-	x = -3
+	icon = GFX_KAR_burn
+	x = -2
 	y = 4
 	cost = 5
 	available_if_capitulated = yes
@@ -1533,7 +1533,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_work_them_out
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_work_pagan
 	x = -3
 	y = 5
 	cost = 5
@@ -1551,7 +1551,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_friends_in_baltland
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_baltland
 	x = 0
 	y = 3
 	cost = 5
@@ -1571,7 +1571,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_transcendental_academia
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_tran_acad
 	x = 2
 	y = 3
 	cost = 5
@@ -1589,8 +1589,8 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_alternative_cosmology
-	icon = GFX_KAR_bohemia_pagan
-	x = 3
+	icon = GFX_KAR_ICE
+	x = 2
 	y = 4
 	cost = 5
 	available_if_capitulated = yes
@@ -1607,13 +1607,13 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_quantum_nonsense
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_quantum
 	x = 3
 	y = 5
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
-	prerequisite = { focus = KAR_transcendental_academia }
+	prerequisite = { focus = KAR_alternative_cosmology }
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1634,7 +1634,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_the_island_in_the_north
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_island
 	x = 0
 	y = 4
 	cost = 5
@@ -1661,7 +1661,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_pilgrimage
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_pilg
 	x = 1
 	y = 5
 	cost = 5
@@ -1682,7 +1682,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_finding_the_giants
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_giants
 	x = -1
 	y = 5
 	cost = 5
@@ -1703,7 +1703,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_guns_from_the_allfather
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_GAL_homeland
 	x = 2
 	y = 6
 	cost = 5
@@ -1749,7 +1749,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_karlslander_work_ethic
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_saluting_pagan
 	x = 0
 	y = 6
 	cost = 5
@@ -1767,7 +1767,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_earning_her_name
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_pagan_industry
 	x = -2
 	y = 6
 	cost = 5
@@ -1833,7 +1833,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_crusade_for_uppsala
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_uppsala_crusade
 	x = 4
 	y = 7
 	cost = 5
@@ -1855,14 +1855,14 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_scattered_family
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_family
 	x = -2
 	y = 7
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
 	prerequisite = { focus = KAR_guns_from_the_allfather }
-	prerequisite = { focus = KAR_guns_from_the_allfather }
+	prerequisite = { focus = KAR_earning_her_name }
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1890,7 +1890,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_decry_romagnanism
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_decry_RMA
 	x = 2
 	y = 7
 	cost = 5
@@ -1919,7 +1919,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_triumph_of_the_will
-	icon = GFX_KAR_bohemia_pagan
+	icon = GFX_KAR_wide_pagan
 	x = -4
 	y = 7
 	cost = 5
@@ -4810,7 +4810,7 @@ shared_focus = {
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = 2500
-			producer = ROOT
+			producer = KA2
 		}
 		create_corps_commander = {
 			name = "Charlotte Lueder"

@@ -810,7 +810,7 @@ focus_tree = {
 	
 	focus = { 
 		id = RMA_old_glories
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_old
 		x = 10	
 		y = 1
 		relative_position_id = RMA_the_party_leader
@@ -825,7 +825,7 @@ focus_tree = {
 	
 	focus = {
 		id = RMA_reach_out_to_pnf
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_fascist_partnership
 		x = -1	
 		y = 1
 		relative_position_id = RMA_old_glories
@@ -843,7 +843,7 @@ focus_tree = {
 	
 	focus = {
 		id = RMA_ensure_our_support
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_goal_generic_propaganda
 		x = 0
 		y = 2
 		relative_position_id = RMA_old_glories
@@ -884,7 +884,7 @@ focus_tree = {
 	
 	focus = {
 		id = RMA_breads_and_circuses
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_goal_generic_consumer_goods
 		x = -2
 		y = 2
 		relative_position_id = RMA_old_glories
@@ -925,7 +925,7 @@ focus_tree = {
 	
 	focus = {
 		id = RMA_narrow_the_umbrella
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_tighten
 		x = 2	
 		y = 1
 		relative_position_id = RMA_old_glories
@@ -944,7 +944,7 @@ focus_tree = {
 	
 	focus = {
 		id = RMA_tighten_the_reins
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_capitol_knives
 		x = 2	
 		y = 2
 		relative_position_id = RMA_old_glories
@@ -962,7 +962,7 @@ focus_tree = {
 	
 	focus = {
 		id = RMA_a_crisis_in_rome
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_coup
 		x = 0
 		y = 3
 		relative_position_id = RMA_old_glories
@@ -980,7 +980,7 @@ focus_tree = {
 	
 	focus = {
 		id = RMA_disband_parliament
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_ballot_suppression
 		x = -2
 		y = 4
 		relative_position_id = RMA_old_glories
@@ -988,13 +988,26 @@ focus_tree = {
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_a_crisis_in_rome }
 		completion_reward = { 
-
+			add_ideas = RMA_disband_parliament_idea
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
 		}
 	}
 	
 	focus = {
 		id = RMA_national_economic_council
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_corporatism
 		x = -3
 		y = 5
 		relative_position_id = RMA_old_glories
@@ -1002,13 +1015,13 @@ focus_tree = {
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_disband_parliament }
 		completion_reward = { 
-
+			add_ideas = RMA_national_economic_council_idea
 		}
 	}
 	
 	focus = {
 		id = RMA_form_the_SdP
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_sdp_goal
 		x = -1
 		y = 5
 		relative_position_id = RMA_old_glories
@@ -1017,13 +1030,14 @@ focus_tree = {
 		prerequisite = { focus = RMA_disband_parliament }
 		mutually_exclusive = { focus = RMA_sponor_greenshirts }
 		completion_reward = { 
-
+			add_stability = 0.05
+			add_ideas = RMA_the_SdP
 		}
 	}
 	
 	focus = {
 		id = RMA_sponor_greenshirts
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_greenshirts_goal
 		x = 1
 		y = 5
 		relative_position_id = RMA_old_glories
@@ -1032,13 +1046,14 @@ focus_tree = {
 		prerequisite = { focus = RMA_rogue_republic }
 		mutually_exclusive = { focus = RMA_form_the_SdP } 
 		completion_reward = { 
-
+			add_stability = 0.05
+			add_ideas = RMA_greenshirts_idea
 		}
 	}
 	
 	focus = {
 		id = RMA_naval_expansion_scheme
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_submarine_production
 		x = 3
 		y = 5
 		relative_position_id = RMA_old_glories
@@ -1046,13 +1061,63 @@ focus_tree = {
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_rogue_republic }
 		completion_reward = { 
-
+			navy_experience = 50
+			156 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					instant_build = yes
+					type = dockyard
+					level = 2
+				}
+			}
+			117 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					instant_build = yes
+					type = dockyard
+					level = 2
+				}
+			}
+			if = {
+				limit = { 
+					AND = {
+						NOT = { has_dlc = "Man the Guns" } 
+						NOT = { has_tech = basic_submarine }
+					}
+				}
+				add_tech_bonus = {
+					name = "Naval Expansion Bonus"
+					bonus = 3.0
+					uses = 1
+					category = ss_tech
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+						NOT = { has_tech = basic_ship_hull_submarine }
+					}
+					set_technology = {
+						basic_ship_hull_submarine = 1
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+						NOT = { has_tech = basic_torpedo }
+					}
+					set_technology = {
+						basic_torpedo = 1
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = RMA_make_the_trains_run_on_time
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_trains
 		x = -4
 		y = 6
 		relative_position_id = RMA_old_glories
@@ -1060,27 +1125,33 @@ focus_tree = {
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_national_economic_council }
 		completion_reward = { 
-
+			add_ideas = RMA_make_the_trains_run_on_time_idea
 		}
 	}
 	
 	focus = {
 		id = RMA_purge_the_heathens
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_cultural_mon
 		x = -2
 		y = 6
 		relative_position_id = RMA_old_glories
 		cost = 10
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_form_the_SdP focus = RMA_sponor_greenshirts }
-		completion_reward = { 
-
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.15
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}
 		}
 	}
 	
 	focus = {
 		id = RMA_legionarii_on_the_streets
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_KAR_pagan_police
 		x = 0
 		y = 6
 		relative_position_id = RMA_old_glories
@@ -1088,13 +1159,16 @@ focus_tree = {
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_form_the_SdP focus = RMA_sponor_greenshirts }
 		completion_reward = { 
-
+			swap_ideas = {
+				remove_idea = RMA_disband_parliament_idea
+				add_idea = RMA_legionarii_on_the_streets_idea
+			}
 		}
 	}
 	
 	focus = {
 		id = RMA_for_a_united_italia
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_Italia
 		x = 2
 		y = 6
 		relative_position_id = RMA_old_glories
@@ -1102,14 +1176,19 @@ focus_tree = {
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_form_the_SdP focus = RMA_sponor_greenshirts }
 		prerequisite = { focus = RMA_naval_expansion_scheme }
+		will_lead_to_war_with = VNE
 		completion_reward = { 
-
+			create_wargoal = {
+				target = VNE
+				type = annex_everything
+			}
+			custom_effect_tooltip = RMA_for_a_united_italia_tooltip
 		}
 	}
 	
 	focus = {
 		id = RMA_nationalize_aristocratic_holdings
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_GAL_art
 		x = -4
 		y = 8
 		relative_position_id = RMA_old_glories
@@ -1118,13 +1197,45 @@ focus_tree = {
 		available = { owns_state = 160 }
 		prerequisite = { focus = RMA_make_the_trains_run_on_time }
 		completion_reward = { 
-
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					instant_build = yes
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					instant_build = yes
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					instant_build = yes
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = RMA_jupitonian_mysticism
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_sdp_myst
 		x = -3
 		y = 7
 		relative_position_id = RMA_old_glories
@@ -1134,13 +1245,13 @@ focus_tree = {
 		mutually_exclusive = { focus = RMA_elevating_the_clergy } 
 		prerequisite = { focus = RMA_purge_the_heathens }
 		completion_reward = { 
-
+			add_ideas = RMA_jupitonian_mysticism_idea
 		}
 	}
 	
 	focus = {
 		id = RMA_elevating_the_clergy
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_clergy
 		x = -1
 		y = 7
 		relative_position_id = RMA_old_glories
@@ -1150,7 +1261,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RMA_jupitonian_mysticism } 
 		prerequisite = { focus = RMA_purge_the_heathens }
 		completion_reward = { 
-
+			add_ideas = RMA_elevating_the_clergy_idea
 		}
 	}
 	
@@ -1160,11 +1271,30 @@ focus_tree = {
 		x = 1
 		y = 7
 		relative_position_id = RMA_old_glories
+		dynamic = yes
+		available = {
+			OR = { 
+				any_owned_state = {
+					any_neighbor_state = { is_owned_by = NUM }
+				}
+				any_country = {
+					limit = {
+						is_puppet_of = ROOT
+					}
+					any_owned_state = {
+						any_neighbor_state = { is_owned_by = NUM }
+					}
+				}
+			}
+		}
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RMA_for_a_united_italia }
 		completion_reward = { 
-
+			create_wargoal = {
+				type = annex_everything
+				target = NUM
+			}
 		}
 	}
 	
@@ -1174,11 +1304,29 @@ focus_tree = {
 		x = 3
 		y = 7
 		relative_position_id = RMA_old_glories
+		available = {
+			OR = { 
+				any_owned_state = {
+					any_neighbor_state = { is_owned_by = TUN }
+				}
+				any_country = {
+					limit = {
+						is_puppet_of = ROOT
+					}
+					any_owned_state = {
+						any_neighbor_state = { is_owned_by = TUN }
+					}
+				}
+			}
+		}
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RMA_for_a_united_italia }
 		completion_reward = { 
-
+			create_wargoal = {
+				type = annex_everything
+				target = NUM
+			}
 		}
 	}
 	
@@ -1190,16 +1338,38 @@ focus_tree = {
 		relative_position_id = RMA_old_glories
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			AND = { 
+				OR = { 
+					any_owned_state = {
+						any_neighbor_state = { is_owned_by = NUM }
+					}
+					any_country = {
+						limit = {
+							is_puppet_of = ROOT
+						}
+						any_owned_state = {
+							any_neighbor_state = { is_owned_by = NUM }
+						}
+					}
+				}
+				NUM = { OR = { exists = no is_puppet_of = ROOT } }
+				TUN = { OR = { exists = no is_puppet_of = ROOT } }
+			}
+		}
 		prerequisite = { focus = RMA_marching_through_numidia }
 		prerequisite = { focus = RMA_boats_at_tunis }
 		completion_reward = { 
-
+			create_wargoal = {
+				type = annex_everything
+				target = MOR
+			}
 		}
 	}
 	
 	focus = {
 		id = RMA_romagnans_worldwide
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_europe_church
 		x = -2
 		y = 8
 		relative_position_id = RMA_old_glories
@@ -1207,13 +1377,45 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = RMA_jupitonian_mysticism focus = RMA_elevating_the_clergy }
 		completion_reward = { 
-
+			hidden_effect = {
+				every_country = {
+					limit = {
+						NOT = { OR = { has_government = fascism has_government = neutrality } }
+						NOT = { has_country_flag = GLOBAL_is_pagan }
+						any_owned_state = {
+							is_on_continent = europe
+							is_core_of = PREV
+						}
+					}
+					add_stability = -0.03
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.05
+					}
+				}
+			}
+			custom_effect_tooltip = RMA_romagnans_worldwide_tooltip
+			effect_tooltip = {
+				add_stability = -0.03
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = RMA_rogue_republic
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_venezia_shield
 		x = 2
 		y = 4
 		relative_position_id = RMA_old_glories
@@ -1221,13 +1423,21 @@ focus_tree = {
 		available_if_capitulated = yes 
 		prerequisite = { focus = RMA_a_crisis_in_rome }
 		completion_reward = { 
-
+			VNE = {
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_claim_by = RMA
+				}
+			}
+			add_war_support = 0.05
 		}
 	}
 	
 	focus = { 
 		id = RMA_a_rome_for_now
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_RMA_rome_final
 		x = 0	
 		y = 9
 		relative_position_id = RMA_old_glories
@@ -1243,8 +1453,18 @@ focus_tree = {
 		}
 		completion_reward = { 
 			set_cosmetic_tag = RMA_rome
-			add_stability = -0.1
-			add_war_support = 0.1
+			set_war_support = 1
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = MOR
+						is_core_of = NUM
+						is_core_of = TUN
+					}
+				}
+				add_core_of = CYR
+				CYR = { transfer_state = PREV }
+			}
 			CYR = {
 				annex_country = {
 					target = MOR
@@ -1257,18 +1477,6 @@ focus_tree = {
 				annex_country = {
 					target = NUM
 					transfer_troops = yes
-				}
-				every_state = {
-					if = {
-						limit = {
-							OR = {
-								is_core_of = MOR
-								is_core_of = NUM
-								is_core_of = TUN
-							}
-						}
-						add_core_of = CYR
-					}
 				}
 				drop_cosmetic_tag = yes
 				set_cosmetic_tag = CYR_africa
@@ -1288,7 +1496,7 @@ focus_tree = {
 	
 	
 	
-	### democratic/Socialist
+	### Democratic/Socialist
 
 	focus = { 
 		id = RMA_future_glories
@@ -1371,23 +1579,33 @@ focus_tree = {
 		prerequisite = { focus = RMA_democratic_reforms }
 		available = { }
 		completion_reward = { 
-			every_other_country = {
-				limit = {
-					NOT = { has_country_flag = GLOBAL_is_pagan }
-					any_owned_state = {
-						is_capital = yes
-						is_on_continent = europe
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						NOT = { has_country_flag = GLOBAL_is_pagan }
+						any_owned_state = {
+							is_capital = yes
+							is_on_continent = europe
+						}
 					}
+					add_popularity = {
+						ideology = democratic 
+						popularity = 0.02
+					}
+					add_stability = 0.05
 				}
-				add_popularity = {
-					ideology = democratic 
-					popularity = 0.02
-				}
-				add_stability = 0.05
 			}
 			add_popularity = {
 				ideology = democratic 
 				popularity = 0.1
+			}
+			custom_effect_tooltip = RMA_reaffirm_the_church_tooltip
+			effect_tooltip = {
+				add_stability = 0.05
+				add_popularity = {
+					ideology = democratic 
+					popularity = 0.02
+				}
 			}
 		}
 	}
@@ -1443,21 +1661,28 @@ focus_tree = {
 		prerequisite = { focus = RMA_relax_regulations }
 		prerequisite = { focus = RMA_democratic_reforms }
 		available = { }
-		completion_reward = { 
-			every_other_country = {
-				limit = {
-					NOT = { has_country_flag = GLOBAL_is_pagan }
-					any_owned_state = {
-						is_capital = yes
-						is_on_continent = europe
+		completion_reward = {
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						NOT = { has_country_flag = GLOBAL_is_pagan }
+						any_owned_state = {
+							is_capital = yes
+							is_on_continent = europe
+						}
 					}
+					add_stability = 0.05
+					add_political_power = 10
 				}
-				add_stability = 0.05
-				add_political_power = 10
 			}
 			add_popularity = {
 				ideology = democratic 
 				popularity = 0.1
+			}
+			custom_effect_tooltip = RMA_reaffirm_the_church_tooltip
+			effect_tooltip = {
+				add_stability = 0.05
+				add_political_power = 10
 			}
 		}
 	}

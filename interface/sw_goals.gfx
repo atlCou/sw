@@ -656,6 +656,138 @@ spriteTypes = {
 		name = "GFX_GAL_new_gallia"
 		texturefile = "gfx/interface/goals/GAL_new_gallia.dds"
 	}
+	SpriteType = {
+		name = "GFX_RMA_sdp_goal"
+		texturefile = "gfx/interface/goals/RMA_sdp_goal.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_old"
+		texturefile = "gfx/interface/goals/RMA_old.dds"
+	}
+	SpriteType = {
+		name = "GFX_fascist_partnership"
+		texturefile = "gfx/interface/goals/fascist_partnership.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_tighten"
+		texturefile = "gfx/interface/goals/RMA_tighten.dds"
+	}
+	SpriteType = {
+		name = "GFX_capitol_knives"
+		texturefile = "gfx/interface/goals/capitol_knives.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_coup"
+		texturefile = "gfx/interface/goals/RMA_coup.dds"
+	}
+	SpriteType = {
+		name = "GFX_corporatism"
+		texturefile = "gfx/interface/goals/corporatism.dds"
+	}
+	SpriteType = {
+		name = "GFX_venezia_shield"
+		texturefile = "gfx/interface/goals/venezia_shield.dds"
+	}
+	SpriteType = {
+		name = "GFX_submarine_production"
+		texturefile = "gfx/interface/goals/submarine_production.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_greenshirts_goal"
+		texturefile = "gfx/interface/goals/RMA_greenshirts_goal.dds"
+	}
+	SpriteType = {
+		name = "GFX_Italia"
+		texturefile = "gfx/interface/goals/Italia.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_trains"
+		texturefile = "gfx/interface/goals/RMA_trains.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_sdp_myst"
+		texturefile = "gfx/interface/goals/RMA_sdp_myst.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_clergy"
+		texturefile = "gfx/interface/goals/RMA_clergy.dds"
+	}
+	SpriteType = {
+		name = "GFX_RMA_rome_final"
+		texturefile = "gfx/interface/goals/RMA_rome_final.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_rudel_journey"
+		texturefile = "gfx/interface/goals/KAR_rudel_journey.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_mystic"
+		texturefile = "gfx/interface/goals/KAR_mystic.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_baltland"
+		texturefile = "gfx/interface/goals/KAR_baltland.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_island"
+		texturefile = "gfx/interface/goals/KAR_island.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_giants"
+		texturefile = "gfx/interface/goals/KAR_giants.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pilg"
+		texturefile = "gfx/interface/goals/KAR_pilg.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_neuroi_pagan"
+		texturefile = "gfx/interface/goals/KAR_neuroi_pagan.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_tran_acad"
+		texturefile = "gfx/interface/goals/KAR_tran_acad.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_ICE"
+		texturefile = "gfx/interface/goals/KAR_ICE.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_quantum"
+		texturefile = "gfx/interface/goals/KAR_quantum.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_burn"
+		texturefile = "gfx/interface/goals/KAR_burn.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_work_pagan"
+		texturefile = "gfx/interface/goals/KAR_work_pagan.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_industry"
+		texturefile = "gfx/interface/goals/KAR_pagan_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_family"
+		texturefile = "gfx/interface/goals/KAR_family.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_saluting_pagan"
+		texturefile = "gfx/interface/goals/KAR_saluting_pagan.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_decry_RMA"
+		texturefile = "gfx/interface/goals/KAR_decry_RMA.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_wide_pagan"
+		texturefile = "gfx/interface/goals/KAR_wide_pagan.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_uppsala_crusade"
+		texturefile = "gfx/interface/goals/KAR_uppsala_crusade.dds"
+	}
 }
 
 

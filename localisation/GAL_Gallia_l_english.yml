@@ -81,7 +81,18 @@
 
  
  
-############# Standard Tree ############
+############# Standard Tree and Ideas ############
+
+GAL_unstable_politics:0 "Unstable Politics"
+GAL_unstable_politics_desc:0 "The Gallian political landscape seems to be at a tipping point. Politically backed strikes are common, and the newspapers keep publishing reports of thwarted terrorist attacks. The 1936 election, if not handeled with care, may be the last in the Third Republic's history..."
+GAL_unstable_politics_2:0 "Unstable Politics"
+GAL_unstable_politics_3:0 "Unstable Politics"
+GAL_unstable_politics_4:0 "Unstable Politics"
+GAL_corrupt_intelligence_services:0 "Corrupt Intelligence Services"
+GAL_corrupt_intelligence_services_desc:0 "Gallian intelligence agencies are notoriously corrupt and full of political extremists. Given their very close nature to the government, properly fixing this issue will be a difficult task."
+GAL_corrupt_intelligence_services_placated:0 "Placated Intelligence Service"
+GAL_corrupt_intelligence_services_rooting_out:0 "Intelligence Service Purge"
+
 
 GAL_1936elections:0 "1936 Elections"
 GAL_1936elections_desc:0 "Gallian elections are held every four years, and have generally remain split anywhere between left wing and moderate right wing parties. 1936 is set to be an especially dangerous year for Gallia, with radical socialist parties having a stronger edge than ever before. The Intelligence Services are rumoured plagued with radicals of some sort, but the civil government has been unable to properly root them out."
@@ -98,12 +109,14 @@ GAL_a_wobbly_government:0 "A Wobbly Government"
 GAL_a_wobbly_government_desc:0 "The Gallian government, once again, is in a state of disarry. We must ensure that it does not fall, so that the rights afforded by the Gallian government are not taken away from the Gallian people."
 GAL_promote_workplace_democracy:0 "Promote Workplace Democracy"
 GAL_promote_workplace_democracy_desc:0 "A core value of our socialist party is the belief that workers should receive the value they deserve from their work. Even without socialism, we can ensure that workers have the legal backing to negotiate with their managers."
+GAL_workplace_democracy_idea:0 "Workplace Democracy"
 GAL_placate_intel_serv:0 "Placate the Intelligence Services"
 GAL_placate_intel_serv_desc:0 "The intelligence services are disgustingly corrupt and plagued with political extremists. Although counter-intuitive, it may do us well to readjust funding so that the definitively neutral parts of the service can remain loyal to the republic, and hope that the extremists drop out back into the shadows."
 GAL_RW_concessions:0 "Right-Wing Concessions"
 GAL_RW_concessions_desc:0 "The Right-Wing parties may not have stood a chance to win the last election, but they still make up a significant part of the legislature. As a display of our willingness to compromise, we can give up ground on less important social issues to stabalize conservative agitators."
 GAL_further_industrial_regulations:0 "Further Industrial Regulations"
 GAL_further_industrial_regulations_desc:0 "Socialism need not be acheived through revolution, but through gradual and electoral means. By squeezing industrial conglomerates, we can improve the lives of workers and get a little bit closer to a democratic economy."
+GAL_further_industrial_regulations_idea:0 "Progressive Labor Legislation"
 GAL_rein_in_the_splinters:0 "Rein in the Splinters"
 GAL_rein_in_the_splinters_desc:0 "Many vocal individuals have been splitting off from large parties to form their own. Although this displays an admirable dedication towards their personal values, it destabilizes the government unnecessarily. Let's get them back in the main party."
 GAL_living_up_to_our_platform:0 "Living up to [GAL.GetRulingParty]'s Platform"
@@ -113,8 +126,10 @@ GAL_loyal_to_the_republic_desc:0 "The Gallian Republic is an international hallm
 
 GAL_the_crisis_act:0 "The Crisis Act"
 GAL_the_crisis_act_desc:0 "Extreme danger calls for extreme measures. Socialistic strikes have been plagueing Gallia for years, and causing economic and political instability. To save Gallian institutions and freedoms, we must ban all striking - temporarily, of course."
+GAL_the_crisis_act_idea:0 "Crisis Act"
 GAL_reverse_the_prog_tax: "Reverse the Progressive Tax"
 GAL_reverse_the_prog_tax_desc:0 "The steep progressive tax levied by the RS government 6 years ago has been a pain on our back since the 1932 election. With even more legitimacy, we can finally repeal it in favor of a flatter, and more fair, tax."
+GAL_reverse_the_prog_tax_idea:0 "National Flat Tax"
 GAL_wrangling_the_crisis_act:0 "Wrangling the Crisis Act"
 GAL_wrangling_the_crisis_act_tooltip:0 "§YGallia§! will §Gcommit§! to §Cprotecting the bourgeois§!."
 GAL_wrangling_the_crisis_act_desc:0 "This has gone too far. Members of the legal Socialist Party are still striking, and members in government are openly calling for nationalization and complete socialism. Enough! These extremely radical revolutionaries should not be allowed to destabilize the Gallian government - it was insane that we ever did at all."
@@ -127,9 +142,11 @@ GAL_the_paternal_state_desc:0 "Finally, the Gallian Republic can be molded into 
 
 GAL_a_new_com_of_pub_safety:0 "A New Committee of Public Safety!"
 GAL_a_new_com_of_pub_safety_desc:0 "Our legal election has blessed us with an opportunity to go back to the Jacobin ideal! Let the legislature act as a new Committee of Public Safety, which will overhear crimes of economic injustice and raise up the Gallian worker with revolutionary zeal."
+GAL_a_new_com_of_pub_safety_idea:0 "Committee of Public Safety and Solidarity"
 GAL_a_sanctioned_general_strike:0 "A Sanctioned General Strike"
 GAL_a_sanctioned_general_strike_tooltip:0 "Allows §YGallia§! to §Gcommit§! to its §Crevoluionary ideal§!.\n§RWhile the focus is active§!:"
 GAL_a_sanctioned_general_strike_desc:0 "Workers all accross Gallia are striking and negotating for proper compensation. Instead of mediating it, we should be encouraging it! Let the workers rise up in droves, let them take what is their's!"
+GAL_general_strike:0 "General Strike!"
 GAL_root_out_the_traitors:0 "Root Out the Tratiors"
 GAL_root_out_the_traitors_desc:0 "Word has it that the intelligence services are ridden with political extremists who wish to see a restoration of the old monarchy. Insane. Unthinkable. Why do we allow these subversives to control the intelligence services of our country?! Root them out!"
 GAL_mass_nationalization:0 "Mass Nationalization"

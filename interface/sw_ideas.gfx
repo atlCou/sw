@@ -53,7 +53,17 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_idea_GAL_com_safe"
-		texturefile = "gfx/interface/ideas/GAL_com_safe"
+		texturefile = "gfx/interface/ideas/GAL_com_safe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_RMA_SdP"
+		texturefile = "gfx/interface/ideas/RMA_SdP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_RMA_greenshirts"
+		texturefile = "gfx/interface/ideas/RMA_greenshirts.dds"
 	}
 	
 }

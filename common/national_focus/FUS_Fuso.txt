@@ -1,0 +1,16 @@
+focus_tree = { 
+	id = KAR_Karlsland
+	
+	country = { 
+		factor = 0 
+		
+		modifier = { 
+			add = 15
+			original_tag = FUS
+		}
+	
+	} 
+	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
+
+}

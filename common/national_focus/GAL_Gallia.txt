@@ -1564,7 +1564,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_a_corporatist_state
-	icon = GFX_GAL_republic
+	icon = GFX_corporatism
 	x = -2
 	y = 3
 	cost = 8
