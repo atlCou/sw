@@ -788,6 +788,86 @@ spriteTypes = {
 		name = "GFX_KAR_uppsala_crusade"
 		texturefile = "gfx/interface/goals/KAR_uppsala_crusade.dds"
 	}
+	SpriteType = {
+		name = "GFX_GAL_tax_haven"
+		texturefile = "gfx/interface/goals/GAL_tax_haven.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_defense"
+		texturefile = "gfx/interface/goals/generic_defense.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_neutrality"
+		texturefile = "gfx/interface/goals/generic_neutrality.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_investment"
+		texturefile = "gfx/interface/goals/generic_investment.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_welfare"
+		texturefile = "gfx/interface/goals/generic_welfare.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_pact"
+		texturefile = "gfx/interface/goals/GAL_pact.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_Hausmann"
+		texturefile = "gfx/interface/goals/GAL_Hausmann.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_land_redistribution"
+		texturefile = "gfx/interface/goals/generic_land_redistribution.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_industrial_base"
+		texturefile = "gfx/interface/goals/GAL_industrial_base.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_strengthen_gov"
+		texturefile = "gfx/interface/goals/GAL_strengthen_gov.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_socialist_prop"
+		texturefile = "gfx/interface/goals/generic_socialist_prop.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_1940_election_icon"
+		texturefile = "gfx/interface/goals/GAL_1940_election_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_neuroi_war"
+		texturefile = "gfx/interface/goals/generic_neuroi_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_relief"
+		texturefile = "gfx/interface/goals/GAL_relief.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_arms_factories"
+		texturefile = "gfx/interface/goals/generic_arms_factories.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_pat_war"
+		texturefile = "gfx/interface/goals/GAL_pat_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_1944_election_icon"
+		texturefile = "gfx/interface/goals/GAL_1944_election_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_countrysides"
+		texturefile = "gfx/interface/goals/GAL_countrysides.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_veteran"
+		texturefile = "gfx/interface/goals/generic_veteran.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_socialism_salute"
+		texturefile = "gfx/interface/goals/generic_socialism_salute.dds"
+	}
 }
 
 

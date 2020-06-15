@@ -1,4 +1,5 @@
-﻿ FUS_democratic:0 "Fuso"
+﻿l_english:
+ FUS_democratic:0 "Fuso"
  FUS_democratic_DEF:0 "Fuso"
  FUS_democratic_ADJ:0 "Fuso"
  FUS_fascism:0 "Fuso"
@@ -10,8 +11,3 @@
  FUS_neutrality:0 "Fuso"
  FUS_neutrality_DEF:0 "Fuso"
  FUS_neutrality_ADJ:0 "Fuso"
- 
- 
- 
- 
- 

@@ -76,8 +76,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		add_stability = -0.05
@@ -168,8 +168,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		add_popularity = {
@@ -221,8 +221,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		add_political_power = 50
@@ -318,8 +318,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		add_popularity = {
@@ -412,8 +412,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		add_stability = 0.05
@@ -456,8 +456,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		add_political_power = -25
@@ -538,8 +538,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		swap_ideas = {
@@ -680,8 +680,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		add_stability = -0.1
@@ -729,8 +729,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		custom_effect_tooltip = GAL_a_sanctioned_general_strike_tooltip
@@ -802,8 +802,8 @@ shared_focus = {
 				has_idea = GAL_unstable_politics_3
 			}
 			swap_ideas = {
-				add_idea = GAL_unstable_politics_3
-				remove_idea = GAL_unstable_politics_4
+				remove_idea = GAL_unstable_politics_3
+				add_idea = GAL_unstable_politics_4
 			}
 		}
 		add_political_power = 50
@@ -1159,6 +1159,765 @@ shared_focus = {
 	# }
 # }
 
+
+shared_focus = {
+	id = GAL_disband_intelligence_services
+	icon = GFX_capitol_knives
+	x = -2
+	y = 1
+	relative_position_id = GAL_the_paternal_state
+	prerequisite = { focus = GAL_the_paternal_state }
+	cost = 5
+	available_if_capitulated = yes
+	available = {
+		has_political_power > 50
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		remove_ideas = GAL_corrupt_intelligence_services
+		add_political_power = -70
+	}
+}
+
+shared_focus = {
+	id = GAL_conscription_expansion
+	icon = GFX_focus_generic_little_entente
+	x = 0
+	y = 1
+	relative_position_id = GAL_the_paternal_state
+	prerequisite = { focus = GAL_the_paternal_state }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_ideas = GAL_national_service_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_diplomatic_neutrality
+	icon = GFX_generic_neutrality
+	x = -2
+	y = 2
+	relative_position_id = GAL_the_paternal_state
+	prerequisite = { focus = GAL_disband_intelligence_services }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		set_country_flag = GLOBAL_no_diplo
+		custom_effect_tooltip = GLOBAL_no_diplo_tooltip
+	}
+}
+
+shared_focus = {
+	id = GAL_europes_tax_haven
+	icon = GFX_GAL_tax_haven
+	x = 0
+	y = 3
+	relative_position_id = GAL_the_paternal_state
+	prerequisite = { focus = GAL_diplomatic_neutrality }
+	prerequisite = { focus = GAL_conscription_expansion }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = GAL_europes_tax_haven_idea
+			remove_idea = GAL_reverse_the_prog_tax_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_the_impen_hexagon
+	icon = GFX_generic_defense
+	x = 1
+	y = 4
+	relative_position_id = GAL_the_paternal_state
+	prerequisite = { focus = GAL_europes_tax_haven }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		every_owned_state = {
+			limit = {
+				is_core_of = GAL
+				any_neighbor_state = { NOT = { is_owned_by = ROOT } }
+			}
+			add_building_construction = {
+				type = bunker
+				level = 3
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_invite_investors
+	icon = GFX_generic_investment
+	x = 2
+	y = 1
+	relative_position_id = GAL_the_paternal_state
+	prerequisite = { focus = GAL_the_paternal_state focus = GAL_loyal_to_the_republic }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_ideas = GAL_invite_investors_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_construction_contracts
+	icon = GFX_goal_generic_construction
+	x = 1
+	y = 2
+	relative_position_id = GAL_the_paternal_state
+	prerequisite = { focus = GAL_invite_investors }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	available = { has_political_power > 25 }
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 3 }
+		add_political_power = -25
+	}
+}
+
+shared_focus = {
+	id = GAL_strengthen_the_government
+	icon = GFX_GAL_strengthen_gov
+	x = 0
+	y = 1
+	relative_position_id = GAL_loyal_to_the_republic
+	prerequisite = { focus = GAL_loyal_to_the_republic }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		if = {
+			limit = { has_government = democratic }
+			add_ideas = GAL_strengthen_the_government_idea
+		}
+		else_if = {
+			limit = { has_government = communism }
+			add_ideas = GAL_strengthen_the_government_idea_PS
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_expand_welfare_programs
+	icon = GFX_generic_welfare
+	x = -1
+	y = 2
+	relative_position_id = GAL_loyal_to_the_republic
+	prerequisite = { focus = GAL_strengthen_the_government }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_ideas = GAL_expand_welfare_programs_idea
+	}
+}
+
+shared_focus = {
+	id = GAL_break_up_monopolies
+	icon = GFX_corporatism
+	x = 1
+	y = 2
+	relative_position_id = GAL_loyal_to_the_republic
+	prerequisite = { focus = GAL_strengthen_the_government }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = arms_factory
+				level = 1
+			}
+		}
+		add_stability = 0.05
+		add_political_power = 25
+	}
+}
+
+shared_focus = {
+	id = GAL_further_our_industrial_base
+	icon = GFX_GAL_industrial_base
+	x = -2
+	y = 1
+	relative_position_id = GAL_a_new_gallia
+	prerequisite = { focus = GAL_a_new_gallia focus = GAL_loyal_to_the_republic }
+	cost = 5
+	available_if_capitulated = yes
+	available = {
+		has_political_power > 25
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_state = {
+			limit = { is_core_of = ROOT }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				instant_build = yes
+				type = arms_factory
+				level = 1
+			}
+		}
+		add_political_power = -25
+	}
+}
+
+shared_focus = {
+	id = GAL_redistribute_farmland
+	icon = GFX_generic_land_redistribution
+	x = -1
+	y = 2
+	relative_position_id = GAL_a_new_gallia
+	prerequisite = { focus = GAL_further_our_industrial_base }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		every_owned_state = {
+			limit = { is_core_of = ROOT }
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_reapproach_our_allies
+	icon = GFX_entetediplo
+	x = 0
+	y = 3
+	relative_position_id = GAL_loyal_to_the_republic
+	prerequisite = { focus = GAL_construction_contracts focus = GAL_expand_welfare_programs focus = GAL_break_up_monopolies focus = GAL_redistribute_farmland }
+	cost = 5
+	available = {
+		OR = {
+			AND = { has_completed_focus = GAL_construction_contracts has_completed_focus = GAL_expand_welfare_programs } 
+			AND = { has_completed_focus = GAL_expand_welfare_programs has_completed_focus = GAL_break_up_monopolies }
+			AND = { has_completed_focus = GAL_break_up_monopolies has_completed_focus = GAL_redistribute_farmland }
+		}
+	}
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		every_country = {
+			limit = {
+				AND = {
+					OR = {
+						original_tag = KAR
+						original_tag = BRI
+						original_tag = RMA
+						original_tag = BLG
+						has_country_flag = GLOBAL_IS_KARLSLAND
+					}
+					OR = { has_government = democratic NOT = { has_country_flag = GLOBAL_NON_CANON } }
+				}
+			}
+			country_event = {
+				id = gallia.21
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_mutual_defense_pact
+	icon = GFX_GAL_pact
+	x = 0
+	y = 4
+	relative_position_id = GAL_loyal_to_the_republic
+	prerequisite = { focus = GAL_reapproach_our_allies }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		if = {
+			limit = { NOT = { has_completed_focus = GAL_reapproach_our_allies } }
+			custom_effect_tooltip = GAL_mutual_defense_pact_tooltip
+		}
+		every_country = {
+			limit = {
+				has_country_flag = GAL_said_yes_to_mutual_defense
+			}
+			country_event = {
+				id = gallia.24
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_socialists_worldwide
+	icon = GFX_Star_Hands
+	x = 0
+	y = 1
+	relative_position_id = GAL_a_new_gallia
+	prerequisite = { focus = GAL_a_new_gallia }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		create_faction = "SOC-INT"
+		custom_effect_tooltip = GAL_socialists_worldwide_tooltip
+		set_country_flag = GAL_founded_socialist_international
+	}
+}
+
+shared_focus = {
+	id = GAL_the_trailing_terror
+	icon = GFX_Star_Boot
+	x = 2
+	y = 1
+	relative_position_id = GAL_a_new_gallia
+	prerequisite = { focus = GAL_a_new_gallia }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_timed_idea = {
+			idea = GAL_terror_idea
+			days = 70
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_hausmanns_legacy
+	icon = GFX_GAL_Hausmann
+	x = 2
+	y = 2
+	relative_position_id = GAL_a_new_gallia
+	prerequisite = { focus = GAL_the_trailing_terror }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		16 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		}
+		set_country_flag = GAL_hausmanns_legacy_flag
+		custom_effect_tooltip = GAL_hausmanns_legacy_tooltip
+	}
+}
+
+shared_focus = {
+	id = GAL_a_mural_to_the_workers
+	icon = GFX_generic_socialist_prop
+	x = 0
+	y = 3
+	relative_position_id = GAL_a_new_gallia
+	prerequisite = { focus = GAL_hausmanns_legacy }
+	prerequisite = { focus = GAL_socialists_worldwide }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		set_popularities = {
+			communism = 100
+		}
+		add_war_support = 0.1
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = GAL_claim_the_rhine_com
+	icon = GFX_goal_generic_war_with_comintern
+	x = -1
+	y = 4
+	relative_position_id = GAL_a_new_gallia
+	prerequisite = { focus = GAL_a_mural_to_the_workers }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_state_core = 28
+		add_state_claim = 794
+		add_state_claim = 42
+		add_state_claim = 8
+	}
+}
+
+
+#### Mini 1940 and 1944 "Sub-Trees"
+
+shared_focus = {
+	id = GAL_1940_elections
+	icon = GFX_GAL_1940_election_icon
+	x = 0
+	y = 5
+	relative_position_id = GAL_loyal_to_the_republic
+	available = { date > 1940.1.1 }
+	prerequisite = { focus = GAL_mutual_defense_pact focus = GAL_the_impen_hexagon focus = GAL_claim_the_rhine_com }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		country_event = {
+			id = gallia.60
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_total_war
+	icon = GFX_generic_neuroi_war
+	x = -5
+	y = 1
+	relative_position_id = GAL_1940_elections
+	available = { has_country_flag = GAL_1940_fascist has_political_power > 75 }
+	prerequisite = { focus = GAL_1940_elections }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_political_power = -75
+		add_ideas = GAL_total_war_idea
+		add_ideas = tot_economic_mobilisation
+	}
+}
+
+shared_focus = {
+	id = GAL_levy_mil-indus
+	icon = GFX_goal_generic_construct_mil_factory
+	x = -3
+	y = 1
+	relative_position_id = GAL_1940_elections
+	available = { OR = { has_country_flag = GAL_1940_fascist has_country_flag = GAL_1940_liberal } }
+	prerequisite = { focus = GAL_1940_elections }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_timed_idea = {
+			idea = GAL_levy_mil-indus_idea
+			days = 365
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 5000
+			producer = GAL
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_wartime_relief
+	icon = GFX_GAL_relief
+	x = -1
+	y = 1
+	relative_position_id = GAL_1940_elections
+	available = { OR = { has_country_flag = GAL_1940_socdem has_country_flag = GAL_1940_liberal } }
+	prerequisite = { focus = GAL_1940_elections }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_timed_idea = {
+			idea = GAL_wartime_relief
+			days = 730
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_arms_buildup
+	icon = GFX_generic_arms_factories
+	x = 1
+	y = 1
+	relative_position_id = GAL_1940_elections
+	available = { OR = { has_country_flag = GAL_1940_socdem has_country_flag = GAL_1940_socialist } }
+	prerequisite = { focus = GAL_1940_elections }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_offsite_building = { type = arms_factory level = 5 } 
+	}
+}
+
+shared_focus = {
+	id = GAL_further_quotas
+	icon = GFX_KAR_seizeecon
+	x = 3
+	y = 1
+	relative_position_id = GAL_1940_elections
+	available = { OR = { has_country_flag = GAL_1940_com has_country_flag = GAL_1940_socialist } }
+	prerequisite = { focus = GAL_1940_elections }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		add_timed_idea = {
+			idea = GAL_further_quotas_idea
+			days = 365
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 3000
+			producer = GAL
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_2
+			amount = 1500
+			producer = GAL
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_great_human_pat_war
+	icon = GFX_GAL_pat_war
+	x = 5
+	y = 1
+	relative_position_id = GAL_1940_elections
+	available = { has_country_flag = GAL_1940_com }
+	prerequisite = { focus = GAL_1940_elections }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		set_war_support = 1
+		add_timed_idea = {
+			idea = GAL_patriotic_war_idea
+			days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_1944_elections
+	icon = GFX_GAL_1944_election_icon
+	x = 0
+	y = 2
+	relative_position_id = GAL_1940_elections
+	available = { date > 1944.1.1 }
+	bypass = {
+		AND = {
+			date > 1944.1.1
+			OR = {
+				has_country_flag = GAL_1940_com
+				has_country_flag = GAL_1940_fascist
+			}
+		}
+	}
+	prerequisite = { focus = GAL_total_war focus = GAL_levy_mil-indus focus = GAL_wartime_relief focus = GAL_arms_buildup focus = GAL_further_quotas focus = GAL_great_human_pat_war }
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+		}
+	completion_reward = {
+		country_event = {
+			id = gallia.61
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_the_eternal_workers_republic
+	icon = GFX_generic_socialism_salute
+	x = 3
+	y = 3
+	relative_position_id = GAL_1940_elections
+	prerequisite = { focus = GAL_1944_elections }
+	available = {
+		has_country_flag = GAL_socialist_flag
+	}
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		set_stability = 1
+	}
+}
+
+shared_focus = {
+	id = GAL_veteran_relief_packages
+	icon = GFX_generic_veteran
+	x = 1
+	y = 3
+	relative_position_id = GAL_1940_elections
+	prerequisite = { focus = GAL_1944_elections }
+	available = {
+		OR = {
+			has_country_flag = GAL_1944_socdem
+			has_country_flag = GAL_1944_socialist
+		}
+	}
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = GAL_veteran_relief_packages_idea
+			days = 730
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_rebuild_countrysides
+	icon = GFX_GAL_countrysides
+	x = -1
+	y = 3
+	relative_position_id = GAL_1940_elections
+	prerequisite = { focus = GAL_1944_elections }
+	available = {
+		OR = {
+			has_country_flag = GAL_1944_liberal
+			has_country_flag = GAL_1944_socdem
+		}
+	}
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = GAL_rebuild_countrysides_idea
+			days = 730
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_richest_of_the_richest
+	icon = GFX_GAL_art
+	x = -3
+	y = 3
+	relative_position_id = GAL_1940_elections
+	prerequisite = { focus = GAL_1944_elections }
+	available = {
+		has_country_flag = GAL_paternal_flag
+	}
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = GAL_richest_of_the_richest
+			days = 730
+		}
+	}
+}
 
 #####################
 ###### Keera's Coup Tree

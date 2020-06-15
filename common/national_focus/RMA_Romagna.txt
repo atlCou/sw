@@ -1278,11 +1278,13 @@ focus_tree = {
 					any_neighbor_state = { is_owned_by = NUM }
 				}
 				any_country = {
-					limit = {
-						is_puppet_of = ROOT
-					}
-					any_owned_state = {
-						any_neighbor_state = { is_owned_by = NUM }
+					if = {
+						limit = {
+							is_puppet_of = ROOT
+						}
+						any_owned_state = {
+							any_neighbor_state = { is_owned_by = NUM }
+						}
 					}
 				}
 			}
@@ -1310,11 +1312,13 @@ focus_tree = {
 					any_neighbor_state = { is_owned_by = TUN }
 				}
 				any_country = {
-					limit = {
-						is_puppet_of = ROOT
-					}
-					any_owned_state = {
-						any_neighbor_state = { is_owned_by = TUN }
+					if = {
+						limit = {
+							is_puppet_of = ROOT
+						}
+						any_owned_state = {
+							any_neighbor_state = { is_owned_by = NUM }
+						}
 					}
 				}
 			}
@@ -1345,11 +1349,13 @@ focus_tree = {
 						any_neighbor_state = { is_owned_by = NUM }
 					}
 					any_country = {
-						limit = {
-							is_puppet_of = ROOT
-						}
-						any_owned_state = {
-							any_neighbor_state = { is_owned_by = NUM }
+						if = {
+							limit = {
+								is_puppet_of = ROOT
+							}
+							any_owned_state = {
+								any_neighbor_state = { is_owned_by = NUM }
+							}
 						}
 					}
 				}

@@ -3,5 +3,5 @@ tags={
 	"Alternative History"
 }
 name="Strike Witches Try Two"
-supported_version="1.9.1 beta"
+supported_version="1.9.*"
 replace_path="history/states"

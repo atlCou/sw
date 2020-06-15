@@ -380,6 +380,7 @@ country_event = {
 		add_stability = -0.06
 		set_country_flag = GAL_socwon
 		set_country_flag = GAL_1936gallianelections
+		set_cosmetic_tag = GAL_elected_communism
 		complete_national_focus = GAL_1936elections
 		set_politics = {
 			ruling_party = communism
@@ -419,10 +420,6 @@ country_event = {
 	}
 }
 
-
-
-
-
 country_event = {
 	id = gallia.12
 	title = gallia.12.t
@@ -440,6 +437,7 @@ country_event = {
 	}
 	
 }
+
 
 
 ############ Normal Democratic Events
@@ -460,6 +458,165 @@ country_event = {
 		add_stability = 0.05
 	}
 	
+}
+
+country_event = {
+	id = gallia.21
+	title = gallia.21.t
+	desc = gallia.21.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.21.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				NOT = { OR = { has_government = democratic NOT = { has_country_flag = GLOBAL_NON_CANON } } }
+				factor = 0
+			}
+		}
+		diplomatic_relation = {
+			country = GAL
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = GAL
+			value = 25
+		}
+		set_country_flag = GAL_said_yes_to_mutual_defense
+		GAL = {
+			country_event = {
+				id = gallia.22
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = gallia.21.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				OR = { has_government = democratic NOT = { has_country_flag = GLOBAL_NON_CANON } }
+				factor = 0
+			}
+		}
+		GAL = {
+			country_event = {
+				id = gallia.23
+				days = 1
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = gallia.22
+	title = gallia.22.t
+	desc = gallia.22.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.22.a
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = FROM
+			value = 25
+		}
+	}
+}
+
+country_event = {
+	id = gallia.23
+	title = gallia.23.t
+	desc = gallia.23.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.23.a
+	}
+}
+
+
+country_event = {
+	id = gallia.24
+	title = gallia.24.t
+	desc = gallia.24.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.24.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				NOT = { OR = { has_government = democratic NOT = { has_country_flag = GLOBAL_NON_CANON } } }
+				factor = 0
+			}
+		}
+		GAL = {
+			add_to_faction = PREV
+			country_event = {
+				id = gallia.25
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = gallia.24.b
+		ai_chance = {
+			factor = 0
+		}
+		GAL = {
+			country_event = {
+				id = gallia.23
+				days = 1
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = gallia.25
+	title = gallia.25.t
+	desc = gallia.25.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.25.a
+	}
+}
+
+country_event = {
+	id = gallia.26
+	title = gallia.26.t
+	desc = gallia.26.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.26.a
+	}
 }
 	
 ############ "Paternal Democracy" Events	
@@ -495,6 +652,7 @@ country_event = {
 			ideology = centrism
 		}
 		set_cosmetic_tag = GAL_paternal
+		set_country_flag = GAL_paternal_flag
 		add_stability = 0.05
 	}
 	
@@ -528,10 +686,219 @@ country_event = {
 		}
 		drop_cosmetic_tag = yes
 		set_cosmetic_tag = GAL_communist_color
+		set_country_flag = GAL_socialist_flag
 		add_stability = 0.05
 	}
 	
 }
+
+###### 1940 and 1944 Election Events
+country_event = {
+	id = gallia.60
+	title = gallia.60.t
+	desc = gallia.60.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.60.a #### Fascist
+		trigger = {
+			has_country_flag = GAL_paternal_flag
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = fascism
+			name = "PSG"
+			long_name = "Parti Social Gallienne"
+		}
+		set_country_flag = GAL_1940_fascist
+	}
+	
+	option = {
+		name = gallia.60.b #### Liberal
+		trigger = {
+			NOT = { has_country_flag = GAL_socialist_flag }
+		}
+		if = {
+			limit = { has_government = communism }
+			set_politics = { ruling_party = democratic }
+		}
+		set_party_name = {
+			ideology = democratic
+			name = "PR"
+			long_name = "Parti républicain"
+		}
+		set_country_flag = GAL_1940_liberal
+	}
+	
+	option = {
+		name = gallia.60.c #### SocDem
+		trigger = {
+			NOT = { 
+				OR = {
+					has_country_flag = GAL_socialist_flag 
+					has_country_flag = GAL_paternal_flag
+				}
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			set_politics = { ruling_party = democratic }
+		}
+		set_party_name = {
+			ideology = democratic
+			name = "RS"
+			long_name = "Parti radical-socialiste"
+		}
+		set_country_flag = GAL_1940_socdem
+	}
+	
+	option = {
+		name = gallia.60.e #### Socialist
+		trigger = {
+			NOT = { has_country_flag = GAL_paternal_flag }
+		}
+		if = {
+			limit = { has_government = democratic }
+			set_politics = { ruling_party = communism }
+			set_cosmetic_tag = GAL_elected_communism
+		}
+		set_party_name = {
+			ideology = communism
+			name = "PS"
+			long_name = "Parti socialiste"
+		}
+		set_country_flag = GAL_1940_socialist
+	}
+	
+	option = {
+		name = gallia.60.f #### Communist
+		trigger = {
+			has_country_flag = GAL_socialist_flag
+		}
+		set_party_name = {
+			ideology = communism
+			name = "PTG"
+			long_name = "Parti travailliste de Gallia"
+		}
+		set_country_flag = GAL_1940_com
+	}
+	
+}
+	
+	
+	
+country_event = {
+	id = gallia.61
+	title = gallia.61.t
+	desc = gallia.61.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = gallia.61.a #### Fascist
+		trigger = {
+			has_country_flag = GAL_paternal_flag
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.4
+		}
+		set_party_name = {
+			ideology = fascism
+			name = "PSG"
+			long_name = "Parti Social Gallienne"
+		}
+		set_country_flag = GAL_1944_fascist
+	}
+	
+	option = {
+		name = gallia.61.b #### Liberal
+		trigger = {
+			NOT = { has_country_flag = GAL_socialist_flag }
+		}
+		if = {
+			limit = { has_government = communism }
+			set_politics = { ruling_party = democratic }
+		}
+		set_party_name = {
+			ideology = democratic
+			name = "PR"
+			long_name = "Parti républicain"
+		}
+		set_country_flag = GAL_1944_liberal
+	}
+	
+	option = {
+		name = gallia.61.c #### SocDem
+		trigger = {
+			NOT = { 
+				OR = {
+					has_country_flag = GAL_socialist_flag 
+					has_country_flag = GAL_paternal_flag
+				}
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			set_politics = { ruling_party = democratic }
+		}
+		set_party_name = {
+			ideology = democratic
+			name = "RS"
+			long_name = "Parti radical-socialiste"
+		}
+		set_country_flag = GAL_1944_socdem
+	}
+	
+	option = {
+		name = gallia.61.e #### Socialist
+		trigger = {
+			NOT = { has_country_flag = GAL_paternal_flag }
+		}
+		if = {
+			limit = { has_government = democratic }
+			set_politics = { ruling_party = communism }
+			set_cosmetic_tag = GAL_elected_communism
+		}
+		set_party_name = {
+			ideology = communism
+			name = "PS"
+			long_name = "Parti socialiste"
+		}
+		set_country_flag = GAL_1944_socialist
+	}
+	
+	option = {
+		name = gallia.61.f #### Communist
+		trigger = {
+			has_country_flag = GAL_socialist_flag
+		}
+		set_party_name = {
+			ideology = communism
+			name = "PTG"
+			long_name = "Parti travailliste de Gallia"
+		}
+		set_country_flag = GAL_1944_com
+	}
+	
+}
+
+
+
+
+
 
 
 country_event = {

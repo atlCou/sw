@@ -66,4 +66,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/RMA_greenshirts.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_investors_idea"
+		texturefile = "gfx/interface/ideas/investors_idea.dds"
+	}
+	
 }
