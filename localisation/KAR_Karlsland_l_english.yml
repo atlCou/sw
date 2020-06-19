@@ -37,27 +37,21 @@ KAR_fascism_party_long:0 "Mystische Sozialistische Karlsländische Partei"
 GENERIC_game_end:0 "§RThe game will end for you!"
 
 #######################
-# BREAK AWAYS
+# BREAK AWAYS AND MISC. COSMETICS
 #######################
 
 KA5_Bavaria_neutrality:0 "Kingdom of Bavaria"
 KA5_Bavaria_neutrality_DEF:0 "The Kingdom of Bavaria"
 KA5_Bavaria_neutrality_ADJ:0 "Bavarian"
 KA5_neutrality_party:0 "Zentrum"
-
-
 KA4_baden_fascism:0 "Karlslander Württemberg"
 KA4_baden_fascism_DEF:0 "Württemberg"
 KA4_baden_fascism_ADJ:0 "Karlsländisch-Württembergisch"
 KA4_fascism_party:0 "KNP"
-
-
 KA3_hamburg_democratic:0 "Republic of Hannover"
 KA3_hamburg_democratic_DEF:0 "The Republic of Hannover"
 KA3_hamburg_democratic_ADJ:0 "Hannover"
 KA3_democratic_party:0 "SPD"
-
-
 KA2_saxony_democratic:0 "Magocracy of Saxony"
 KA2_saxony_democratic_DEF:0 "Saxony"
 KA2_saxony_democratic_ADJ:0 "Saxon"
@@ -96,7 +90,6 @@ KA2_magocracy_unified_communism:0 "Karlsländische Magokratie"
 KA2_magocracy_unified_communism_DEF:0 "the Magocracy of Karlsland"
 KA2_magocracy_unified_communism_ADJ:0 "Karlslander"
 
-
 KA1_NOBLE_neutrality:0 "Karlsländische Adelsregierung"
 KA1_NOBLE_neutrality_DEF:0 "the Karlsländische Adelsregierung"
 KA1_NOBLE_neutrality_ADJ:0 "Eastern Karlslander"
@@ -112,7 +105,6 @@ KA1_NOBLE_unified_fascism_DEF:0 "the Karlslander Staat"
 KA1_NOBLE_unified_neutrality_ADJ:0 "Karlslander"
 KA1_NOBLE_unified_fascism_ADJ:0 "Karlslander"
 
-
 KAR_comm_breakaway:0 "Rhinelandic Commune"
 KAR_comm_breakaway_DEF:0 "The Rhinelandic Commune"
 KAR_comm_breakaway_ADJ:0 "Rhinelandic"
@@ -120,6 +112,15 @@ KAR_comrade_unified_communism:0 "Räterepublik Karlsland"
 KAR_comrade_unified_communism_DEF:0 "the Räterepublik Karlsland"
 KAR_comrade_unified_communism_ADJ:0 "Karlslander"
 
+MRV_KAR_fiefdom_fascism:0 "Tuistoordensstaat"
+MRV_KAR_fiefdom_fascism_ADJ:0 "West-Slavic"
+MRV_KAR_fiefdom_fascism_DEF:0 "The Tuistoordensstaat"
+SER_KAR_fiefdom_fascism:0 "Magniordensstaat u. Mothiordensstaat"
+SER_KAR_fiefdom_fascism_ADJ:0 "South-Slavic"
+SER_KAR_fiefdom_fascism_DEF:0 "The Magniordensstaat and The Mothiordensstaat"
+PNE_KAR_fiefdom_fascism:0 "Yggdrasilordensstaat"
+PNE_KAR_fiefdom_fascism_ADJ:0 "Pannonian"
+PNE_KAR_fiefdom_fascism_DEF:0 "The Yggdrasilordensstaat"
 
 #########################################
 

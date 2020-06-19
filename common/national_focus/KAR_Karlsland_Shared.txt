@@ -917,7 +917,9 @@ shared_focus = {
 
 
   
-############################## FASCIST TREE ##########################
+ 
+####### WACKY RUDEL STUFF 
+###### I SHOULD PROBABLY CLARIFY THAT THE CONTENTS OF THIS MOD DO NOT REFLECT MY REAL BELIEFS OR OPINIONS
 
 shared_focus = { 
 	id = KAR_a_new_day_for_karlslanders
@@ -1061,9 +1063,6 @@ shared_focus = {
 	relative_position_id = KAR_a_new_day_for_karlslanders	
 	prerequisite = { focus = KAR_a_new_police }
 	prerequisite = { focus = KAR_burn_the_churches }
-	available = {
-		has_political_power > 100
-	}
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1097,319 +1096,17 @@ shared_focus = {
 	} 
 
 	completion_reward = { 
-		add_ideas = KAR_pagan_propa
+		load_focus_tree = KAR_Karlsland_paganism_rudel
 	} 
 }
- 
-
- 
-shared_focus = { 
-	id = KAR_ukkos_children
-	icon = GFX_KAR_ukko
-	x = 4
-	y = 1
-	cost = 5
-	available_if_capitulated = yes
-	relative_position_id = KAR_and_propaganda
-	prerequisite = { focus = KAR_and_propaganda }
-	available = {
-		has_country_flag = KAR_did_rudel_ukkos
-	}
-	bypass = {
-		has_country_flag = KAR_did_rudel_ukkos
-	}
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = { 
-		country_event = {
-			id = karlsland.500
-		}
-	} 
-}
-
-
-shared_focus = { 
-	id = KAR_fund_militants
-	icon = GFX_KAR_ukko
-	x = 4
-	y = 2
-	cost = 5
-	available_if_capitulated = yes
-	relative_position_id = KAR_and_propaganda
-	prerequisite = { focus = KAR_ukkos_children }
-	ai_will_do = { 
-		factor = 1
-	}
-	available = {
-		SOU = {
-			OR = {
-				has_idea = SOU_ukko_idea
-				has_idea = SOU_ukko_idea_2
-			}
-		}
-	}
-
-	completion_reward = { 
-		SOU = {
-			add_political_power = -20
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-			add_stability = -0.1
-			country_event = {
-				id = karlsland.504
-			}
-		}
-	} 
-}
-
-shared_focus = { 
-	id = KAR_SOU_legacy_of_the_civil_war
-	icon = GFX_KAR_ukko
-	x = 5
-	y = 3
-	cost = 5
-	available_if_capitulated = yes
-	relative_position_id = KAR_and_propaganda
-	prerequisite = { focus = KAR_fund_militants }
-	ai_will_do = { 
-		factor = 1
-	}
-	will_lead_to_war_with = SOU
-	available = {
-		SOU = {
-			OR = {
-				has_idea = SOU_ukko_idea
-				has_idea = SOU_ukko_idea_2
-			}
-			fascism > 0.5
-		}
-	}
-
-	completion_reward = { 
-		KAR = {
-			puppet = SOU
-			SOU = {
-				set_cosmetic_tag = SOU_KAR_Puppet
-			}
-		}
-	} 
-}
-
-
-shared_focus = { 
-	id = KAR_partition_baltland
-	icon = GFX_KAR_ukko
-	x = 4
-	y = 4
-	cost = 5
-	available_if_capitulated = yes
-	relative_position_id = KAR_and_propaganda
-	prerequisite = { focus = KAR_SOU_legacy_of_the_civil_war }
-	ai_will_do = { 
-		factor = 1
-	}
-	available = {
-		BAL = {
-			exists = yes
-		}
-		SOU = {
-			is_puppet_of = KAR
-		}
-	}
-	completion_reward = { 
-		BAL = {
-			every_owned_state = {
-				limit = {
-					NOT = {
-						state = 666
-						state = 144
-					}
-				}
-				add_claim_by = KAR
-			}
-			every_owned_state = {
-				limit = {
-					OR = { 
-						state = 666
-						state = 144
-					}
-				}
-				add_claim_by = SOU
-			}
-		}
-	} 
-}
-
-shared_focus = { 
-	id = KAR_pushing_our_claims
-	icon = GFX_KAR_ukko
-	x = 4
-	y = 5
-	cost = 5
-	available_if_capitulated = no
-	relative_position_id = KAR_and_propaganda
-	prerequisite = { focus = KAR_partition_baltland }
-	ai_will_do = { 
-		factor = 1
-	}
-	will_lead_to_war_with = BAL
-	available = {
-		BAL = {
-			exists = yes
-		}
-		SOU = {
-			is_puppet_of = KAR
-		}
-	}
-
-	completion_reward = { 
-		BAL = {
-			country_event = {
-				id = karlsland.505
-			}
-		}
-	} 
-}
-
-
-
-shared_focus = { 
-	id = KAR_baltic_question
-	icon = GFX_KAR_ukko
-	x = 3
-	y = 3
-	cost = 5
-	available_if_capitulated = yes
-	relative_position_id = KAR_and_propaganda
-	prerequisite = { focus = KAR_fund_militants }
-	ai_will_do = { 
-		factor = 1
-	}
-	available = {
-		KAR = {
-			is_puppet = no
-			has_government = fascism
-		}
-	}
-	completion_reward = { 
-		country_event = {
-			id = karlsland.520
-		}
-	} 
-}
- 
-
-shared_focus = { 
-	id = KAR_slavic_brothers
-	icon = GFX_Pagan_rod
-	x = 2
-	y = 1
-	cost = 5
-	available = {
-		MRV = { 
-			exists = yes 
-			has_government = fascism
-			is_puppet = no
-		}
-	}
-	available_if_capitulated = yes
-	relative_position_id = KAR_ukkos_children
-	prerequisite = { focus = KAR_ukkos_children }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		MRV = { 
-			country_event = {
-				id = karlsland.571
-			}
-		}
-	} 
-}
-
-
-shared_focus = { 
-	id = KAR_polish_plebiscite
-	icon = GFX_Pagan_rod
-	x = 2
-	y = 3
-	cost = 5
-	available = {
-		ORU = {
-			is_puppet = no
-		}
-	}
-	available_if_capitulated = yes
-	relative_position_id = KAR_ukkos_children
-	prerequisite = { focus = KAR_slavic_brothers }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		
-	} 
-}
-
-
-
-
-shared_focus = { 
-	id = KAR_demand_bohemia
-	icon = GFX_KAR_bohemia_pagan
-	x = 3
-	y = 2
-	cost = 5
-	available = {
-		MRV = { 
-			is_in_faction_with = PREV
-			owns_state = 69
-			owns_state = 9
-			owns_state = 74
-			all_owned_state = {
-				is_controlled_by = MRV
-			}
-		}
-	}
-	available_if_capitulated = yes
-	relative_position_id = KAR_ukkos_children
-	prerequisite = { focus = KAR_slavic_brothers }
-	ai_will_do = { 
-		factor = 1
-	} 
-
-	completion_reward = {
-		MRV = { 
-			country_event = {
-				id = karlsland.573
-			}
-		}
-	} 
-}
-
-
-####### WACKY RUDEL STUFF 
-###### I SHOULD PROBABLY CLARIFY THAT THE CONTENTS OF THIS MOD DO NOT REFLECT MY REAL BELIEFS OR OPINIONS
-
-
 
 shared_focus = { 
 	id = KAR_rudel_alone
 	icon = GFX_KAR_rudel_journey
-	x = -3
-	y = 1
+	x = 0
+	y = 0
 	cost = 8
 	available_if_capitulated = yes
-	relative_position_id = KAR_and_propaganda
-	prerequisite = { focus = KAR_and_propaganda }
-	available = {
-		has_political_power > 34
-	}
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1436,7 +1133,6 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
 	prerequisite = { focus = KAR_rudel_alone }
-	allow_branch = { NOT = { has_country_flag = KAR_rudel_tree_loaded } }
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1457,7 +1153,6 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
 	prerequisite = { focus = KAR_rudel_alone }
-	allow_branch = { NOT = { has_country_flag = KAR_rudel_tree_loaded } }
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1773,7 +1468,7 @@ shared_focus = {
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
-	prerequisite = { focus = KAR_finding_the_giants }
+	prerequisite = { focus = KAR_finding_the_giants focus = KAR_work_them_out }
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1834,13 +1529,12 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_crusade_for_uppsala
 	icon = GFX_KAR_uppsala_crusade
-	x = 4
+	x = 0
 	y = 7
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
-	prerequisite = { focus = KAR_guns_from_the_allfather }
-	prerequisite = { focus = KAR_quantum_nonsense }
+	prerequisite = { focus = KAR_karlslander_work_ethic }
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1861,7 +1555,6 @@ shared_focus = {
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
-	prerequisite = { focus = KAR_guns_from_the_allfather }
 	prerequisite = { focus = KAR_earning_her_name }
 	ai_will_do = { 
 		factor = 1
@@ -1896,7 +1589,6 @@ shared_focus = {
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
-	prerequisite = { focus = KAR_earning_her_name }
 	prerequisite = { focus = KAR_guns_from_the_allfather }
 	ai_will_do = { 
 		factor = 1
@@ -1920,13 +1612,13 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_triumph_of_the_will
 	icon = GFX_KAR_wide_pagan
-	x = -4
-	y = 7
+	x = 0
+	y = 8
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
-	prerequisite = { focus = KAR_earning_her_name }
-	prerequisite = { focus = KAR_work_them_out }
+	prerequisite = { focus = KAR_scattered_family focus = KAR_decry_romagnanism }
+	prerequisite = { focus = KAR_crusade_for_uppsala }
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -1936,26 +1628,593 @@ shared_focus = {
 	}
 }
 
+
+
+	##### "Foreign Policy" Tree
+
 shared_focus = { 
-	id = KAR_ukkos_children_rudel
-	icon = GFX_KAR_ukko
-	x = 0
-	y = 7
+	id = KAR_an_old_map
+	icon = GFX_KAR_saluting_pagan
+	x = 8
+	y = 0
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_rudel_alone
-	prerequisite = { focus = KAR_karlslander_work_ethic }
+	available = {
+		has_completed_focus = KAR_triumph_of_the_will
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
 
-	completion_reward = { 
-		country_event = {
-			id = karlsland.500
-		}
-		set_country_flag = KAR_did_rudel_ukkos
-	} 
+	completion_reward = {
+		add_state_claim = 36
+		add_state_claim = 35
+		add_state_claim = 7
+		add_state_claim = 795
+		add_state_claim = 6
+		add_state_claim = 8
+		add_war_support = 0.1
+	}
 }
+
+shared_focus = { 
+	id = KAR_into_the_low_countries
+	icon = GFX_KAR_saluting_pagan
+	x = -2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_an_old_map
+	prerequisite = { focus = KAR_an_old_map }
+	will_lead_to_war_with = NET
+	will_lead_to_war_with = BLG
+	available = {
+		OR = {
+			NOT = {
+				has_completed_focus = KAR_crush_the_false_state
+			}
+			OR = {
+				has_completed_focus = KAR_empire_in_the_east
+				has_completed_focus = KAR_a_border_with_romagna
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 1
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	} 
+
+	completion_reward = {
+		if = {
+			limit = { 
+				GAL = {
+					has_guaranteed = BLG
+					has_guaranteed = NET
+				}
+			}
+			# country_event = {
+				# id = gallia.
+			# }
+		}
+		else = {
+			custom_effect_tooltip = KAR_into_the_low_countries_tooltip
+		}
+		create_wargoal = {
+			target = NET
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = BLG
+			type = annex_everything
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_break_the_dams
+	icon = GFX_KAR_saluting_pagan
+	x = -3
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	available = {
+		NET = { exists = no }
+		ROOT = {
+			has_full_control_of_state = 7
+			has_full_control_of_state = 36
+			has_full_control_of_state = 35
+			has_full_control_of_state = 795
+		}
+	}
+	relative_position_id = KAR_an_old_map
+	prerequisite = { focus = KAR_into_the_low_countries }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+		7 = {
+			add_province_modifier = {
+				static_modifiers = { flooded }
+				province = {
+					id = 391
+				}
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		795 = {
+			add_province_modifier = {
+				static_modifiers = { flooded }
+				province = {
+					id = 9498
+				}
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		35 = {
+			add_province_modifier = {
+				static_modifiers = { flooded }
+				province = {
+					id = 11456
+				}
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 2
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		36 = {
+			add_province_modifier = {
+				static_modifiers = { flooded }
+				province = {
+					id = 6241
+				}
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_rip_apart_capital
+	icon = GFX_KAR_saluting_pagan
+	x = -3
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_an_old_map
+	prerequisite = { focus = KAR_break_the_dams }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_timed_idea = {
+			idea = KAR_rip_apart_capital_idea
+			days = 730
+		}
+		hidden_effect = {
+			country_event = { #### Turns out stuff you loot goes away eventually, and that value can't be exploited anymore
+				id = karlsland.500
+				days = 730
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_deprive_the_nobility
+	icon = GFX_KAR_saluting_pagan
+	x = -1
+	y = 2
+	cost = 5
+	available = {
+		BLG = {
+			exists = no
+		}
+		has_full_control_of_state = 6
+		has_full_control_of_state = 8
+		has_full_control_of_state = 34
+	}
+	available_if_capitulated = yes
+	relative_position_id = KAR_an_old_map
+	prerequisite = { focus = KAR_into_the_low_countries }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		every_owned_state = {
+			limit = {
+				is_core_of = BLG
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		set_global_flag = KAR_deprived_belgican_nobility
+	}
+}
+
+shared_focus = { 
+	id = KAR_gaulish_issue
+	icon = GFX_KAR_saluting_pagan
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_an_old_map
+	prerequisite = { focus = KAR_deprive_the_nobility}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		34 = {
+			add_manpower = -400
+		}
+		#remove_ideas = KAR_gaulish_issue_idea
+	}
+}
+
+shared_focus = { 
+	id = KAR_liberate_gallia_from_the_romagnan_boot
+	icon = GFX_KAR_saluting_pagan
+	x = -2
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_an_old_map
+	prerequisite = { focus = KAR_rip_apart_capital }
+	prerequisite = { focus = KAR_gaulish_issue }
+	will_lead_to_war_with = GAL
+	ai_will_do = { 
+		factor = 1
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			target = GAL
+			type = puppet_wargoal_focus
+		}
+
+	}
+}
+
+shared_focus = { 
+	id = KAR_crush_the_false_state
+	icon = GFX_KAR_saluting_pagan
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_an_old_map
+	prerequisite = { focus = KAR_an_old_map }
+	will_lead_to_war_with = OST
+	available = {
+		OR = {
+			NOT = {
+				has_completed_focus = KAR_into_the_low_countries
+			}
+			has_completed_focus = KAR_liberate_gallia_from_the_romagnan_boot
+		}
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		create_wargoal = {
+			target = OST
+			type = annex_everything
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_slavic_feifdoms
+	icon = GFX_KAR_saluting_pagan
+	x = -1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_crush_the_false_state
+	prerequisite = { focus = KAR_crush_the_false_state }
+	available = { 
+		OST = {
+			OR = {
+				is_puppet_of = KAR
+				exists = no
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				AND = {
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					OR = { 
+						state = 70
+						state = 71
+						state = 72
+						state = 73
+						state = 89
+						state = 88
+						state = 80
+						state = 664
+					}
+				}
+			}
+			MRV = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				AND = { 
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					OR = { 
+						state = 109
+						state = 108
+						state = 107
+					}
+				}
+			}
+			SER = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		puppet = SER
+		puppet = MRV
+		SER = {
+			set_cosmetic_tag = SER_KAR_fiefdom
+			create_country_leader = {
+				name = "Hochmeister Mikovic"
+				desc = "HHHH"
+				picture = "vesna_mikovic.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+			}
+		}
+		MRV = {
+			set_cosmetic_tag = MRV_KAR_fiefdom
+			create_country_leader = {
+				name = "Hochmeister Urbanowicz"
+				desc = "HHHH"
+				picture = "urbanowicz_pagan.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_the_baltic_lands
+	icon = GFX_KAR_saluting_pagan
+	x = -1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_crush_the_false_state
+	prerequisite = { focus = KAR_slavic_feifdoms }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = { 
+	id = KAR_empire_in_the_east
+	icon = GFX_KAR_saluting_pagan
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_crush_the_false_state
+	prerequisite = { focus = KAR_the_baltic_lands }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = { 
+	id = KAR_carving_out_pannonia
+	icon = GFX_KAR_saluting_pagan
+	x = 1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_crush_the_false_state
+	prerequisite = { focus = KAR_crush_the_false_state }
+	available = { 
+		OST = {
+			OR = {
+				is_puppet_of = KAR
+				exists = no
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				AND = { 
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					OR = { 
+						state = 155
+						state = 43
+						state = 154
+						state = 45
+					}
+				}
+			}
+			PNE = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		puppet = PNE
+		PNE = {
+			set_cosmetic_tag = PNE_KAR_fiefdom
+		}
+		DAC = {
+			country_event = {
+				id = karlsland.510
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_the_degen_trade_repub
+	icon = GFX_KAR_saluting_pagan
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_crush_the_false_state
+	prerequisite = { focus = KAR_carving_out_pannonia }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		SER = {
+			add_state_claim = 103
+			add_state_claim = 104
+			add_state_claim = 105
+			add_state_claim = 163
+			add_state_claim = 44
+		}
+		create_wargoal = {
+			target = VNE
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_a_border_with_romagna
+	icon = GFX_KAR_saluting_pagan
+	x = 1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_crush_the_false_state
+	prerequisite = { focus = KAR_the_degen_trade_repub }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = { 
+	id = KAR_pannonian_award
+	icon = GFX_KAR_saluting_pagan
+	x = 3
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_crush_the_false_state
+	prerequisite = { focus = KAR_the_degen_trade_repub }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	}
+}
+
 
 ########## military tree
 
@@ -2189,6 +2448,9 @@ shared_focus = {
 	y = 0
 	cost = 3
 	available_if_capitulated = yes 
+	available = {
+		NOT = { has_completed_focus = KAR_The_Officer }
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -2504,6 +2766,9 @@ shared_focus = {
 	y = 0
 	cost = 3
 	available_if_capitulated = yes 
+	available = {
+		NOT = { has_completed_focus = KAR_The_Princess }
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
@@ -2850,9 +3115,29 @@ shared_focus = {
 	available_if_capitulated = yes 
 	relative_position_id = KAR_supreme_order_restored
 	prerequisite = { focus = KAR_no_time_for_realpolitik }
+	will_lead_to_war_with = KA3
+	will_lead_to_war_with = KAR
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				AND = {
+					NOT = { has_completed_focus = KAR_more_into_the_factories has_completed_focus = KAR_neocameralism }
+					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten }	
+				}
+				AND = {
+					NOT = { 
+						is_neighbor_of = KAR
+					}
+					NOT = { 
+						is_neighbor_of = KA3
+					}
+				}
+				has_war = yes
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		if = {
@@ -2892,8 +3177,28 @@ shared_focus = {
 	available_if_capitulated = yes 
 	relative_position_id = KAR_supreme_order_restored
 	prerequisite = { focus = KAR_no_time_for_realpolitik }
+	will_lead_to_war_with = KA5
+	will_lead_to_war_with = KA4
 	ai_will_do = { 
-		factor = 1
+		factor = 100
+		modifier = {
+			OR = {
+				AND = {
+					NOT = { has_completed_focus = KAR_more_into_the_factories has_completed_focus = KAR_neocameralism }
+					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten }	
+				}
+				AND = {
+					NOT = { 
+						is_neighbor_of = KA4
+					}
+					NOT = { 
+						is_neighbor_of = KA5
+					}
+				}
+				has_war = yes
+			}
+			factor = 0
+		}
 	} 
 
 	completion_reward = {
@@ -2939,9 +3244,21 @@ shared_focus = {
 	prerequisite = { focus = KAR_disloyal_south }
 	prerequisite = { focus = KAR_smash_the_socialists }
 	mutually_exclusive = { focus = KAR_a_deal_with_the_witches }
+	will_lead_to_war_with = KA2
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				AND = {
+					NOT = { has_completed_focus = KAR_more_into_the_factories has_completed_focus = KAR_neocameralism }
+					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten }	
+				}
+				NOT = { is_neighbor_of = KA2 }
+				has_war = yes
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		create_wargoal = {
@@ -2963,8 +3280,18 @@ shared_focus = {
 	prerequisite = { focus = KAR_smash_the_socialists }
 	mutually_exclusive = { focus = KAR_no_room_for_magocrats }
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				AND = {
+					NOT = { has_completed_focus = KAR_more_into_the_factories has_completed_focus = KAR_neocameralism }
+					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten }	
+				}
+				has_war = yes
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		country_event = {
@@ -2985,12 +3312,48 @@ shared_focus = {
 	available_if_capitulated = yes 
 	relative_position_id = KAR_supreme_order_restored
 	prerequisite = { focus = KAR_a_deal_with_the_witches focus = KAR_no_room_for_magocrats }
+	available = {
+		KAR = { 
+			OR = {
+				exists = no 
+				is_puppet_of = ROOT
+			}
+		}
+		KA2 = { 
+			OR = {
+				exists = no 
+				is_puppet_of = ROOT
+			}
+		}
+		KA3 = { 
+			OR = {
+				exists = no 
+				is_puppet_of = ROOT
+			}
+		}
+		KA4 = { 
+			OR = {
+				exists = no 
+				is_puppet_of = ROOT
+			}
+		}
+		KA5 = { 
+			OR = {
+				exists = no 
+				is_puppet_of = ROOT
+			}
+		}
+	}
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
 		set_cosmetic_tag = KA1_NOBLE_unified
+		every_owned_state = {
+			limit = { has_state_flag = KAR_civil_war_state }
+			add_core_of = PREV
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -3735,17 +4098,20 @@ shared_focus = {
 	available_if_capitulated = yes 
 	relative_position_id = KAR_comrade_leaders_spring_cleaning
 	available = {
-		all_state = {
-			OR = {
-				AND = {
-					is_core_of = KAR
-					is_owned_by = ROOT
-				}
-				NOT = { is_core_of = KAR }
-				state = 153
-				state = 39
-				state = 793
-			}
+		KA1 = {
+			exists = no
+		}
+		KA3 = {
+			exists = no
+		}
+		KA4 = {
+			exists = no
+		}
+		KA5 = {
+			exists = no
+		}
+		KAR = {
+			exists = no
 		}
 	}
 	prerequisite = { focus = KAR_more_production }
@@ -4339,7 +4705,7 @@ shared_focus = {
 			}
 			add_stability = 0.05
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = fascism
 			}
 		}
 		else_if = {
@@ -4361,13 +4727,13 @@ shared_focus = {
 				keep_completed = yes
 			}
 			set_politics = {
-				ruling_party = fascism
+				ruling_party = democratic
 			}
 			add_stability = 0.5
 		}
 	}
 }
-		#### Fascist Magocracy
+#### Fascist Magocracy
 shared_focus = { 
 	id = KAR_on_top_at_last
 	icon = GFX_KAR_on_top
@@ -4677,12 +5043,19 @@ shared_focus = {
 	relative_position_id = KAR_on_top_at_last
 	prerequisite = { focus = KAR_that_army_with_a_state }
 	prerequisite = { focus = KAR_the_future_of_statecraft }
+	will_lead_to_war_with = KA3
 	bypass = {
 		KA3 = { exists = no }
 	}
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				has_war = yes
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		create_wargoal = {
@@ -4701,6 +5074,8 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = KAR_on_top_at_last
 	prerequisite = { focus = KAR_marching_north }
+	will_lead_to_war_with = KA4
+	will_lead_to_war_with = KA5
 	bypass = {
 		AND = { 
 			KA4 = { exists = no }
@@ -4708,8 +5083,14 @@ shared_focus = {
 		}
 	}
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				has_war = yes
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		create_wargoal = {
@@ -4732,12 +5113,19 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = KAR_on_top_at_last
 	prerequisite = { focus = KAR_marching_north }
+	will_lead_to_war_with = KA1
 	bypass = {
 		KA1 = { exists = no }
 	}
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				has_war = yes
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		create_wargoal = {
@@ -4756,12 +5144,19 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = KAR_on_top_at_last
 	prerequisite = { focus = KAR_marching_north }
+	will_lead_to_war_with = KAR
 	bypass = {
 		KAR = { exists = no }
 	}
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				has_war = yes
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		create_wargoal = {
@@ -4784,11 +5179,32 @@ shared_focus = {
 	prerequisite = { focus = KAR_unmask_the_west }
 	ai_will_do = { 
 		factor = 1
-	} 
+	}
+	available = {
+		KA1 = {
+			exists = no
+		}
+		KA3 = {
+			exists = no
+		}
+		KA4 = {
+			exists = no
+		}
+		KA5 = {
+			exists = no
+		}
+		KAR = {
+			exists = no
+		}
+	}
 
 	completion_reward = {
 		add_stability = 0.1
 		add_war_support = 0.1
+		every_state = {
+			limit = { has_state_flag = KAR_civil_war_state }
+			add_core_of = ROOT
+		}
 		set_cosmetic_tag = KA2_magocracy_unified
 	} 
 }
@@ -4909,6 +5325,8 @@ shared_focus = {
 	available_if_capitulated = yes
 	prerequisite = { focus = KAR_friendship_with_republicans }
 	prerequisite = { focus = KAR_domestic_volunteer_program }
+	will_lead_to_war_with = KA4
+	will_lead_to_war_with = KA5
 	bypass = {
 		AND = { 
 			KA4 = { exists = no }
@@ -4917,8 +5335,15 @@ shared_focus = {
 	}
 	relative_position_id = KAR_rebuild_karlsland
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				has_war = yes
+				NOT = { has_completed_focus = KAR_sponsor_construction_projects }
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		create_wargoal = {
@@ -4941,11 +5366,19 @@ shared_focus = {
 	available_if_capitulated = yes
 	prerequisite = { focus = KAR_topple_the_misguided }
 	relative_position_id = KAR_rebuild_karlsland
+	will_lead_to_war_with = KAR
 	bypass = {
 		KAR = { exists = no }
 	}
 	ai_will_do = { 
-		factor = 1
+		factor = 100
+		modifier = {
+			OR = {
+				has_war = yes
+				NOT = { has_completed_focus = KAR_sponsor_construction_projects }
+			}
+			factor = 0
+		}
 	} 
 
 	completion_reward = {
@@ -5210,6 +5643,7 @@ shared_focus = {
 	prerequisite = { focus = KAR_necessary_gatekeeping }
 	prerequisite = { focus = KAR_friendship_with_republicans }
 	relative_position_id = KAR_the_lessons_of_a_witch
+	will_lead_to_war_with = KA3
 	bypass = {
 		OR = {
 			KA3 = { exists = no }
@@ -5217,8 +5651,15 @@ shared_focus = {
 		}
 	}
 	ai_will_do = { 
-		factor = 1
-	} 
+		factor = 100
+		modifier = {
+			OR = {
+				has_war = yes
+				NOT = { has_completed_focus = KAR_sponsor_construction_projects }
+			}
+			factor = 0
+		}
+	}
 
 	completion_reward = {
 		create_wargoal = {
@@ -5241,8 +5682,16 @@ shared_focus = {
 	bypass = {
 		KA1 = { exists = no }
 	}
+	will_lead_to_war_with = KA1
 	ai_will_do = { 
-		factor = 1
+		factor = 100
+		modifier = {
+			OR = {
+				has_war = yes
+				NOT = { has_completed_focus = KAR_sponsor_construction_projects }
+			}
+			factor = 0
+		}
 	} 
 
 	completion_reward = {
@@ -5283,10 +5732,22 @@ shared_focus = {
 	ai_will_do = { 
 		factor = 1
 	} 
+	available = {
+		every_state = {
+			limit = {
+				has_state_flag = KAR_civil_war_state
+			}
+			is_owned_by = ROOT
+		}
+	}
 
 	completion_reward = {
 		add_stability = 0.1
 		add_war_support = 0.1
+		every_state = {
+			limit = { has_state_flag = KAR_civil_war_state }
+			add_core_of = ROOT
+		}
 		set_cosmetic_tag = KA2_magocracy_unified
 	} 
 }

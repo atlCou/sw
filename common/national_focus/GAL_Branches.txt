@@ -15,8 +15,8 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 2000 }
 
 	shared_focus = GAL_1936elections
-	shared_focus = GAL_remember_the_neuroi_war
-	shared_focus = GAL_armoured_wheels
+	shared_focus = GAL_army_of_speed
+	shared_focus = GAL_an_impenetrable_defense
 
 }
 
@@ -41,6 +41,6 @@ focus_tree = {
 	
 	shared_focus = GAL_my_pride
 	shared_focus = GAL_army_of_speed
-	shared_focus = GAL_army_of_prestige
+	shared_focus = GAL_an_impenetrable_defense
 
 }

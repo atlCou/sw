@@ -181,11 +181,6 @@ CHI_power_struggle_defeated = {
 	color_ui = rgb { 198 169 248 }
 }
 
-KAR_pagan = {
-	color = rgb { 41 66 39 }
-	color_ui = rgb { 184 216 182 }
-}
-
 GAL_gallia_coup = {
 	color = rgb { 19 44 100 }
 	color_ui = rgb { 19 44 100 }
@@ -239,7 +234,7 @@ GAL_communist_color = {
 }
 
 ######################
-# KAR BREAKAWAYS
+# KAR BREAKAWAYS AND PAGANS
 ######################
 
 KA5_Bavaria = {
@@ -285,4 +280,24 @@ KA1_NOBLE = {
 KA1_NOBLE_unified = {
 	color = rgb { 79 74 10 }
 	color_ui = rgb { 79 74 10 }
+}
+
+KAR_pagan = {
+	color = rgb { 41 66 39 }
+	color_ui = rgb { 110 110 110 }
+}
+
+MRV_KAR_fiefdom = {
+	color = rgb { 66 39 39 }
+	color_ui = rgb { 66 39 39 }
+}
+
+SER_KAR_fiefdom = {
+	color = rgb { 39 50 66 }
+	color_ui = rgb { 39 50 66 }
+}
+
+PNE_KAR_fiefdom = {
+	color = rgb { 66 58 39 }
+	color_ui = rgb { 66 58 39 }
 }

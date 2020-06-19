@@ -1,5 +1,8 @@
 ﻿l_english:
 
+
+ Generic_Cheaper_Tanks:0 ""
+ Generic_Harder_Trucks:0 ""
  GLOBAL_no_diplo_tooltip:0 "§Y[ROOT.GetNameDef]§! will §Rnot be able to engage in diplomatic alliances§!!"
 
  GAL_fascism_party_long:0 "Parti Populaire Gallia"
@@ -218,20 +221,43 @@ GAL_veteran_relief_packages:0 "Veteran Relief Packages"
 GAL_veteran_relief_packages_desc:0 "Veterans; soldiers, officers, witches, medics, and all the rest have all faced the worst of the worst. As many of them start to come home, we should remind them that a beautiful, open, and free Gallia is waiting for them with open arms so they can live the normal life they once dreamed of living."
 GAL_the_eternal_workers_republic:0 "The Eternal Workers Republic!"
 GAL_the_eternal_workers_republic_desc:0 "Even through the struggle of the unearthly, the eldritch destruction which the Neuroi have wrought over our country, the republic has survived! The Gallian's republic is truly eternal, and forever dedicated to the equality of the working class! May it last until the ultimate end of humanity itself!"
-
+### ideas
+GAL_national_service_idea:0 "National Service"
+GAL_invite_investors_idea:0 "Invited Investors"
+GAL_strengthen_the_government_idea:0 "Strengthened Government"
+GAL_terror_idea:0 "The 'Terror'"
+GAL_expand_welfare_programs_idea:0 "Welfare Programs"
+GAL_europes_tax_haven_idea:0 "Europe's Tax Haven"
+GAL_total_war_idea:0 "Guerre totale !"
+GAL_levy_mil-indus_idea:0 "The Military-Industrial Complex"
+GAL_further_quotas_idea:0 "Intense Production Quotas"
+GAL_patriotic_war_idea:0 "The Great Human Patriotic War"
+GAL_rebuild_countrysides_idea:0 "Rebuilding the Countrysides"
+GAL_veteran_relief_packages_idea:0 "Relief for Veterans"
+### decisions
+GAL_hausmanns_legacy_category:0 "Parisian Architectural Revolution"
+GAL_prepare_foundations:0 "Prepare the Foundations and Draft Plans"
+GAL_reorganize_streets:0 "Reorganizing Parisian Streets"
+GAL_replace_government_buildings:0 "Replace Government Buildings"
+GAL_great_statues:0 "Massive Statues"
+GAL_tower_to_socialism:0 "A Great Tower to Socialism!"
+GAL_beautiful_factories:0 "Build Beautiful Factories"
+### flags
 GAL_1936gallianelections:0 " The 1936 Gallian elections have occurred."
 GAL_wentauthsoc:0 " You shouldn't be seeing this country flag"
 GAL_liberalswon:0 " PR Victory in the 1936 elections."
 GAL_socdemswon:0 " RS Victory in the 1936 elections."
 GAL_socwon:0 " PS Victory in the 1936 elections."
-
-
-GAL_italianrevolution_tooltip:0 "§WPuppets §Ythe Venezian Socialist Republic§W, gains a §Ywargoal§W against §YVenezia§W. If the revolution §Gsuceeds§W, you will also gain a §Ywargoal§W against §YRomagna§W."
-
-GAL_consolidationofitaly_tooltip_effect:0 " §WOwns all Italian states owned by §YRomagna§W and §YVenezia§W, and/or your puppets own them. Hasn't taken §YRomagnian Overextension§W or §YVenezian Overextension§W."
-
-
-GAL_noalliaces:0 " Gallia has rejected all witch related alliances."
+GAL_1940_fascist:0 "Gallian Social Party victory in 1940."
+GAL_1940_liberal:0 "Republican Party victory in 1940."
+GAL_1940_socdem:0 "Radical-Socialist Party victory in 1940."
+GAL_1940_socialist:0 "Socialist Party Victory in 1940."
+GAL_1940_com:0 "Gallian Worker's Party Victory in 1940."
+GAL_paternal_flag:0 "Is a Paternal Democracy."
+GAL_1944_liberal:0 "Republican Party victory in 1944."
+GAL_1944_socdem:0 "Radical-Socialist Party victory in 1944."
+GAL_1944_socialist:0 "Socialist Party victory in 1944."
+GAL_socialist_flag:0 "Is the Socialist Republic of Gallia."
 
 ####################
 ##### REACTIONARY FOCUSES
@@ -347,8 +373,70 @@ GAL_mon_econ_2:0 "Monarchist Market Economy"
 
 GAL_marechal_trait:0 "Le Jeune Maréchal"
 
-
-
+ ############ Military Tree ##########
+ 
+ GAL_army_of_speed:0 "Army of Speed"
+ GAL_army_of_speed_desc:0 "We should work to build the Gallian army around a philosophy of speed, as the development of practical armoured vehicles has shown great future promise."
+ GAL_elite_units:0 "Elite Armoured Units"
+ GAL_elite_units_desc:0 "Our armoured vehicles should be kept within specialized divisions which will allow them to be used like tips on the head of an arrow, as opposed to dispersing them throughout our army."
+ GAL_a_wave_of_steel:0 "Wave of Steel"
+ GAL_a_wave_of_steel_desc:0 "Our armoured vehicles should be produced in vast quantities to receive the full benefit of an armoured military. Instead of specializing on breaking frontlines in specific areas, we can make it difficult for the enemy to break us anywhere."
+ GAL_emphasize_movement:0 "Emphasize Movement"
+ GAL_emphasize_movement_desc:0 "As vehicles become faster, more reliable, and easier to produce, speed will continue to become more and more important for any army. Thus, we should focus on keeping the upper edge and try to make sure our's is as fast as we can reasonably get it."
+ GAL_hit_harder:0 "Hit Harder"
+ GAL_hit_harder_desc:0 "It's not just enough for us to be able to be faster than the enemy; we need to be able to hit them quickly, too. All the benefits of speed are lost if we waste too much time waiting and preparing before each attack."
+ GAL_agile_boyes:0 "Armoured Trucks"
+ GAL_agile_boyes_desc:0 "It's obviously unrealistic for us to expect Gallian engineeers to develop heavily armoured, quick trucks while they are still trying to work out the development of tanks themselves. Regardless, we can encourage the inclusion of additional armour wherever possible."
+ GAL_an_armoured_mainstay:0 "An Armoured Mainstay"
+ GAL_an_armoured_mainstay_desc:0 "A balance between a small, agile, but lightly armoured vehicle; and a slow, heavily armoured behemoth has been requested by officers and soldiers alike. As vehicle technology progresses, we may finally be ready to roll such a tank out."
+ GAL_invest_in_radio_tech:0 "Invest in Radio Technology"
+ GAL_invest_in_radio_tech_desc:0 "Radio technology is nothing new at this point, but it still has far to go. Better and more advanced communication systems will allow us to get men on the frontlines faster when they're needed; which is our name of the game."
+ GAL_streamline_command_hierarchy:0 "Streamline the Command Hierarchy"
+ GAL_streamline_command_hierarchy_desc:0 "With speed as a priority, a byzantine command structure makes no sense. We can clean up our command hierarchies to get the strategic to the tactical faster than before." 
+ GAL_the_backbone:0 "The Backbone"
+ GAL_the_backbone_desc:0 "The backbone of any military is the infantry. We need to make sure that our soldiers are able to use the most up-to-date equipment possible to ensure success and strength in the event of war."
+ GAL_military_games:0 "Military Games"
+ GAL_military_games_desc:0 "We can simulate military situations with various units in order to better understand the capabilities of our equipment, and predict where to dedicate time improving our strategy and technology."
+ GAL_expand_our_production_base:0 "Expanding our Arms Production Capacity"
+ GAL_expand_our_production_base_desc:0 "We can't rely on the good will of our allies to support ourselves in war, especially when we're a significant power in Europe ourselves. We need to make sure that we can support our military with our own production lines, so that our war effort isn't distracted by balancing diplomatic affairs."
+ GAL_expand_our_knowledge_base:0 "Expanding our Knowledge Base"
+ GAL_expand_our_knowledge_base_desc:0 "It's important that we can remain on-par with the world in science and technology, for both utilitarian and patriotic purposes. To help aid in this endeavor, we can redirect some wasteful military spending to fund military research facilities instead."
+ GAL_wielding_our_elite_recruits:0 "Wielding our Elite Recruits"
+ GAL_wielding_our_elite_recruits_desc:0 "Gallia's army has a long tradition of receiving enthusiastic volunteers, which can be of even greater use as we find more and more roles which require more extensively trained soldiers."
+ GAL_an_impenetrable_defense:0 "An Impenetrable Defense"
+ GAL_an_impenetrable_defense_desc:0 "First and foremost, Gallia must be able to properly defend itself against any threaet. Our quarells with the world pale in comparison to the threats we may face, and if the last Neuroi War taught us anything it's that complete loss is more devastating than any failed attack."
+ GAL_from_the_skies:0 "From the Skies"
+ GAL_from_the_skies_desc:0 "Advancements in airplanes have allowed us to develop vehicles which can directly aid our ground soldiers. Though this will be great to ward of threats which ill-equipped units may not be able to hold on their own, they will also prove beneficial when it's time to start a strategic counter-attack."
+ GAL_from_afar:0 "From Afar"
+ GAL_from_afar_desc:0 "Though brutal, the last Neuroi War taught us the importance of being able to strike enemies from where they cannot easily fire back. Artillery has advanced even more in the last two decades, and we should embrace those benefits in our army."
+ GAL_expand_officer_outreach:0 "Expand Officer Outreach"
+ GAL_expand_officer_outreach_desc:0 "It's important that our army has the most skilled and well trained officers possible, so that orders are given and planned as well as possible. We should expand our officer schools and promotion searches to make sure we have the best of the best."
+ GAL_experts_in_holding_the_line:0 "Experts in Holding the Line"
+ GAL_experts_in_holding_the_line_desc:0 "We'll put great effort into making the Gallian Army famous for its ability to hold a frontline, so that foreign threats are warded off before they even try. And, if the Neuroi come again, we'll put in as much effort as possible to make sure they go through hell to destroy Gallia again."
+ GAL_modernize_our_infantry:0 "Modernize our Infantry"
+ GAL_modernize_our_infantry_desc:0 "A core part of holding any frontline is the masses of infantry. Thus, it's vital that our infantry equipment is up to snuff, and, ideally, much better than our enemy's."
+ GAL_advancements_in_support_bat:0 "Advancements in Support Battalions"
+ GAL_advancements_in_support_bat_desc:0 "Support battalions leave a lot of room for improvement and expansion, which can greatly aid the effectiveness of the very core of our army. Thus, we should greatly consider investing into them."
+ GAL_army_glory:0 "A Well Trained Core"
+ GAL_army_glory_desc:0 "Our army should be focused on a well trained core, as opposed to wielding large numbers of men. It will prove more effective in keeping our production balanced with our need for reinforcements, and will mean less families have to suffer the loss of family members."
+ GAL_army_size:0 "Deepen Recruitment Methods"
+ GAL_army_size_desc:0 "It's important that we are able to wield a large enough army to raise a significant defense against invaders. It won't matter how well trained our army is if we are significantly outnumbered and unable to match the enemy on the frontlines. Thus, we should put an emphasis on expanding the literal size of our army."
+ GAL_rebirth_of_the_gallian_army:0 "Rebirth of the Gallian Army!"
+ GAL_rebirth_of_the_gallian_army_desc:0 "Our military reforms have paid off! The Gallian Army is permiated with a sense of rebirth, and feels prepared to take on any threat!\nAux armes, citoyens, formez vos bataillons, marchons, marchons !"
+ ### Ideas
+ GAL_elite_units_idea:0 "Elite Armoured Units"
+ GAL_wave_of_steel_idea:0 "Mass Tank Production"
+ GAL_emphasize_speed_idea:0 "Emphasize Movement"
+ GAL_hit_harder_idea:0 "Hitting Harder"
+ GAL_harder_trucks_idea:0 "Hardened Trucks"
+ GAL_streamline_command_hierarchy_idea:0 "Streamlined Command Hierarchy"
+ GAL_wielding_our_elite_recruits_idea:0 "Elite Division Expansion"
+ GAL_army_glory_idea:0 "Intense Unit Training"
+ GAL_army_size_idea:0 "Expanded Recruitment Programs"
+ GAL_from_the_skies_idea:0 "From the Skies"
+ GAL_expand_officer_outreach_idea:0 "Expanded Officer Outreach Programs"
+ GAL_experts_in_holding_the_line_idea:0 "Intense Defense Focused Army"
+ GAL_rebirth_of_the_gallian_army_idea:0 "Gallian Army Rebirth"
 
  ############ EVENTS ############
  
@@ -404,10 +492,8 @@ GAL_marechal_trait:0 "Le Jeune Maréchal"
  gallia.30.d:0 "To say that many Gallians predicted that they would lose their freedoms to a liberal government would be a lie. However, since the 1936 election, Gallians have started to feel like the walls are closing in. All parties considered left of the Radical-Socialists have been outlawed, strikes are often met with rolling tanks and platoons, and the disproportionate amount of municipalities held by right-wing parties have concerned many. But it’s too late to care.\n\nBusiness leaders can be seen entering and exiting capitol buildings at almost any time of the day, and a large amount of the budget seems to be flowing into the intelligence services uninterrupted. Vocal members of the Radical-Socialist Party are routinely seen on trial, even though their party has not been banned. Members of Parti républicain have begun to take on an oddly detached and technocratic tone, as massive subsidies are passed for industrial conglomerates that probably don’t need them. Welfare programs are passed that provide no real benefit but bring in immense amounts of revenue.\n\nBefore entering a courtroom for an unusually speedy trial, a relatively prominent Socialist Party politician remarked that, for a liberal government, this all seemed rather illiberal."
  gallia.30.a:0 "Personally, I see nothing wrong with it."
 
- 
- 
- gallia.200.t:0 "Gallia Leaves Our Sphere"
- gallia.200.d:0 "After Gallia's descent into a bizarre and totalitarian regime, it seemed inevitable that the country would soon wish to leave our faction. It now appears that that time has come, and we stand without a major ally on the European mainland. Hopefully, in the case of a greater war, we will find allies in Gallia or other nations again."
- gallia.200.a:0 "A sad day for our sphere."
+ gallia.40.t:0 "The Socialist Republic of Gallia"
+ gallia.40.d:0 "Blah blah blah some lore stuff i'm going to write later, make sure i actually do"
+ gallia.40.a:0 "Ok"
  
  

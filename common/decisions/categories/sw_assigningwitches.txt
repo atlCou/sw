@@ -55,3 +55,10 @@ KAR_border_wars = {
 		has_country_flag = KAR_border_wars_flag
 	}
 }
+
+GAL_hausmanns_legacy_category = {
+	icon = generic_propaganda
+	available = {
+		has_country_flag = GAL_hausmanns_legacy_flag
+	}
+}

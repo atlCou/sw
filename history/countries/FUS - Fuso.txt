@@ -1,17 +1,5 @@
-﻿﻿capital = 282
+﻿capital = 282
 
-oob = "FUS_1936"
-
-set_stability = 0.65
-
-set_research_slots = 4
-
-add_ideas = {
-	state_shintoism
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -50,6 +38,19 @@ set_technology = {
 	synth_oil_experiments = 1
 }
 
+
+oob = "FUS_1936"
+
+set_stability = 0.65
+
+set_research_slots = 4
+
+add_ideas = {
+	state_shintoism
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+}
 
 set_convoys = 400
 

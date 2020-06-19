@@ -47,6 +47,9 @@ country_event = {
     #### slight left ######
 	option = {
 		name = gallia.2.a
+		ai_chance = {
+			base = 50
+		}
 			# if = { 
 				# limit = { 
 					# is_historical_focus_on = yes
@@ -75,6 +78,9 @@ country_event = {
 	#### right-wing #####
 		option = {
 		name = gallia.2.b
+		ai_chance = {
+			base = 50
+		}
 		hidden_effect = {
 			country_event = {
 				id = gallia.3
@@ -94,7 +100,9 @@ country_event = {
 	#### authsoc ########
 		option = {
 		name = gallia.2.c
-		ai_chance = { base = 0 }
+		ai_chance = {
+			base = 50
+		}
 		hidden_effect = {
 			country_event = {
 				id = gallia.3
@@ -130,7 +138,9 @@ country_event = {
     #### slight right ######
 	option = {
 		name = gallia.3.a
-
+		ai_chance = {
+			base = 50
+		}
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -145,7 +155,9 @@ country_event = {
 	#### left-wing #####
 		option = {
 		name = gallia.3.b
-
+		ai_chance = {
+			base = 50
+		}
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -160,7 +172,9 @@ country_event = {
 	#### authsoc ########
 		option = {
 		name = gallia.3.c
-		ai_chance = { base = 0 }
+		ai_chance = {
+			base = 50
+		}
 		add_popularity = {
 			ideology = communism
 			popularity = 0.05
@@ -187,6 +201,9 @@ country_event = {
     #### slight right ######
 	option = {
 		name = gallia.4.a
+		ai_chance = {
+			base = 50
+		}
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.06
@@ -200,6 +217,9 @@ country_event = {
 	#### left-wing #####
 		option = {
 		name = gallia.4.b
+		ai_chance = {
+			base = 50
+		}
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.04
@@ -214,8 +234,9 @@ country_event = {
 	#### authsoc ########
 		option = {
 		name = gallia.4.c
-		ai_chance = { base = 0 }
-
+		ai_chance = {
+			base = 50
+		}
 		add_popularity = {
 			ideology = communism
 			popularity = 0.03
@@ -1617,68 +1638,4 @@ country_event = {
 		name = gallia.1002.a
 		add_war_support = 0.1
 	}
-}
-
-
-
-country_event = {
-	id = gallia.1020
-	title = gallia.1020.t
-	desc = gallia.1020.d
-
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = gallia.1020.a
-		RMA = { 
-			transfer_state = 736
-			transfer_state = 160
-			transfer_state = 161
-			transfer_state = 157
-			transfer_state = 159
-			transfer_state = 158
-			transfer_state = 162
-			transfer_state = 2
-			transfer_state = 117
-			transfer_state = 156
-			transfer_state = 115
-			transfer_state = 114
-
-			hidden_effect = {
-				add_state_core = 736
-				add_state_core = 160
-				add_state_core = 161
-				add_state_core = 157
-				add_state_core = 159
-				add_state_core = 158
-				add_state_core = 162
-				add_state_core = 2
-				add_state_core = 117
-				add_state_core = 156
-				add_state_core = 115
-				add_state_core = 114
-				annex_country = { 
-					target = RMA 
-					transfer_troops = yes 
-				}
-			}
-			
-			create_country_leader = {
-				name = "Fernandia Malvezzi"
-				picture = "Fernandia Malvezzi.dds"
-				expire = "1965.1.1"
-				ideology = marxism
-				traits = {
-					#
-				}
-			}
-		}
-		GAL = { puppet = RMA }
-		
-	}
-	
-	
-
 }

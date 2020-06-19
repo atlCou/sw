@@ -2,6 +2,7 @@ KAR_border_wars = {
 
 	KAR_border_wars_decision = {
 		icon = infiltrate_state
+		cost = 10
 		allowed = {
 			OR = { 
 				tag = KAR
@@ -57,13 +58,24 @@ KAR_border_wars = {
 					on_lose = japan_border_conflict.3
 					on_cancel = japan_border_conflict.4
 				}
-							
 				defender = {
 					state = FROM
 					num_provinces = 4
 					on_win = japan_border_conflict.3
 					on_lose = japan_border_conflict.2
 					on_cancel = japan_border_conflict.4
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				has_border_war = yes
+				factor = 0
+			}
+			modifier = {
+				NOT = {
+					has_completed_focus = KAR_bringing_it_together
 				}
 			}
 		}
@@ -917,6 +929,185 @@ SOU_no_pagans = {
 	}
 }
 
+GAL_hausmanns_legacy_category = {
+	GAL_prepare_foundations = {
+		icon = generic_construction
+		cost = 50
 
+		available = {
+			controls_state = 16 
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		days_remove = 180
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			set_country_flag = GAL_prepare_foundations_flag
+			add_stability = -0.025
+		}
+	}
+	GAL_reorganize_streets = {
+		icon = generic_construction
+		cost = 50
+
+		available = {
+			controls_state = 16
+			has_country_flag = GAL_prepare_foundations_flag
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		days_remove = 180
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			set_country_flag = GAL_reorganize_streets_flag
+			16 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+	}
+	GAL_replace_government_buildings = {
+		icon = generic_construction
+		cost = 50
+
+		available = {
+			has_country_flag = GAL_reorganize_streets_flag
+			controls_state = 16
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		days_remove = 75
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+	GAL_great_statues = {
+		icon = generic_construction
+		cost = 40
+
+		available = {
+			has_country_flag = GAL_reorganize_streets_flag
+			controls_state = 16
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		days_remove = 180
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			add_war_support = 0.05
+			add_political_power = 100
+		}
+	}
+	GAL_tower_to_socialism = {
+		icon = generic_construction
+		cost = 50
+
+		available = {
+			has_country_flag = GAL_reorganize_streets_flag
+			controls_state = 16
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		days_remove = 360
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			add_war_support = 0.05
+			add_political_power = 150
+		}
+	}
+	GAL_beautiful_factories = {
+		icon = generic_construction
+		cost = 50
+
+		available = {
+			has_country_flag = GAL_reorganize_streets_flag
+			controls_state = 16
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		days_remove = 360
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		remove_effect = {
+			16 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
 
 

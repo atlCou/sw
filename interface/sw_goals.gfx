@@ -868,6 +868,18 @@ spriteTypes = {
 		name = "GFX_generic_socialism_salute"
 		texturefile = "gfx/interface/goals/generic_socialism_salute.dds"
 	}
+	SpriteType = {
+		name = "GFX_generic_tanks"
+		texturefile = "gfx/interface/goals/generic_tanks.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_charge"
+		texturefile = "gfx/interface/goals/generic_charge.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_trucks"
+		texturefile = "gfx/interface/goals/generic_trucks.dds"
+	}
 }
 
 

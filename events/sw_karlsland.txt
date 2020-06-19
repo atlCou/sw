@@ -457,273 +457,278 @@ country_event = {
 ###########
 ######################
 
-country_event = {
-	id = karlsland.500   ###Archeologists practicing in Suomus
+country_event = { ##### Rip Apart Capital - 2 years after event
+	id = karlsland.500
 	title = karlsland.500.t
 	desc = karlsland.500.d
 	
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	
 	option = {
 		name = karlsland.500.a
-		SOU = {
+		add_timed_idea = {
+			idea = KAR_rip_apart_capital_730_idea
+			days = 365
+		}
+	}	
+}
+
+country_event = { ##### Transylvania for an Alliance
+	id = karlsland.510
+	title = karlsland.510.t
+	desc = karlsland.510.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.510.a
+		ai_chance = {
+			factor = 3
+		}
+		KAR = { 
 			country_event = {
-				id = karlsland.501
+				id = karlsland.511
 				days = 1
 			}
 		}
-	}
-
-}
-
-
-country_event = {
-	id = karlsland.501
-	title = karlsland.501.t
-	desc = karlsland.501.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-
-	option = {
-		name = karlsland.501.a  ###Decry them!
-		ai_chance = {
-			factor = 5
-		}
-		unlock_decision_category_tooltip = SOU_no_pagans
-		add_ideas = SOU_ukko_idea
-		hidden_effect = {
-			KAR = {
-				country_event = {
-					id = karlsland.502
-					days = 1
-				}
-			}
-		}
-		add_popularity = {
-			ideology = fascism
-			popularity = -0.1
-		}
-	}
+	}	
 	
 	option = {
-		name = karlsland.501.b  ###Ukko is p epic tbh
-		ai_chance = {
-			factor = 0
-		}
-		add_ideas = SOU_ukko_idea_2
-		hidden_effect = {
-			KAR = {
-				country_event = {
-					id = karlsland.503
-					days = 1
-				}
-			}
-		}
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.1
-		}
-	}
-
-}
-
-
-country_event = {
-	id = karlsland.502
-	title = karlsland.502.t
-	desc = karlsland.502.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	
-	option = {
-		name = karlsland.502.a
-	}
-	
-}
-
-country_event = {
-	id = karlsland.503
-	title = karlsland.503.t
-	desc = karlsland.503.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	
-	option = {
-		name = karlsland.503.a
-	}
-	
-}
-
-
-country_event = {
-	id = karlsland.504
-	title = karlsland.504.t
-	desc = karlsland.504.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	
-	option = {
-		name = karlsland.504.a
+		name = karlsland.510.b
 		ai_chance = {
 			factor = 1
 		}
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.4
+		KAR = { 
+			country_event = {
+				id = karlsland.512
+				days = 1
+			}
 		}
-		add_stability = -0.05
-		add_political_power = 25
-	}
-	
-	option = {
-		name = karlsland.504.a
-		ai_chance = {
-			factor = 0
-		}
-		add_political_power = 25
-		create_wargoal = {
-			target = KAR
-			type = puppet_wargoal_focus
-		}
-	}
-	
-	
+	}	
 }
 
-country_event = {
-	id = karlsland.505
-	title = karlsland.505.t
-	desc = karlsland.505.d
+country_event = { ##### Gib transylvania
+	id = karlsland.511
+	title = karlsland.511.t
+	desc = karlsland.511.d
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	option = {   #### Only one option, realistically they'd never say yes under any situation
-		name = karlsland.505.a
-		ai_chance = {
-			factor = 100
+	option = {
+		name = karlsland.511.a
+		every_state = {
+			limit = {
+				AND = {
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					OR = {
+						state = 764
+						state = 82
+						state = 83
+						state = 84
+						state = 76
+					}
+				}
+			}
+			DAC = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
 		}
-		KAR = {
-			country_event = {
-				id = karlsland.506
-				days = 1
+		DAC = {
+			diplomatic_relation = {
+				country = KAR
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = KAR
+				relation = guarantee
+				active = yes
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = KAR
+				value = 100
+			}
+		}
+		diplomatic_relation = {
+			country = DAC
+			relation = non_aggression_pact
+			active = yes
+		}
+		diplomatic_relation = {
+			country = DAC
+			relation = guarantee
+			active = yes
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = DAC
+			value = 100
+		}
+	}
+}
+
+country_event = { ##### No gib transylvania, go away weird racist pagans
+	id = karlsland.512
+	title = karlsland.512.t
+	desc = karlsland.512.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = karlsland.512.a
+		every_state = {
+			limit = {
+				AND = {
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					OR = {
+						state = 764
+						state = 82
+						state = 83
+						state = 84
+						state = 76
+					}
+				}
+			}
+			PNE = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+	}
+}
+
+country_event = { ##### No gib transylvania, go away weird racist pagans
+	id = karlsland.513
+	title = karlsland.513.t
+	desc = karlsland.513.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KAR
+		OR = {
+			160 = {
+				is_owned_by = KAR
+				owner = { is_puppet_of = KAR }
 			}
 		}
 	}
 	
-}
-
-country_event = {
-	id = karlsland.506
-	title = karlsland.506.t
-	desc = karlsland.506.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
 	option = {
-		name = karlsland.506
-		create_wargoal = {
-			target = BAL
-			type = annex_everything
-		}
-	}
-	
-}
-
-
-
-
-country_event = {
-	id = karlsland.520
-	title = karlsland.520.t
-	desc = karlsland.520.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = karlsland.520.a
-		ai_chance = {
-			factor = 10
-		}
-		BLT = {
-			add_state_core = 190
-			add_state_core = 189
-			add_state_core = 11
-			add_state_core = 12
-		}
-		ORU = {
-			country_event = {
-				id = karlsland.521
-				days = 1
+		name = karlsland.512.a
+		every_state = {
+			limit = {
+				AND = {
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					OR = {
+						state = 764
+						state = 82
+						state = 83
+						state = 84
+						state = 76
+					}
+				}
+			}
+			PNE = {
+				transfer_state = PREV
+				add_state_core = PREV
 			}
 		}
 	}
+}
+
+
+# country_event = {
+	# id = karlsland.520
+	# title = karlsland.520.t
+	# desc = karlsland.520.d
 	
-	option = {
-		name = karlsland.520.b
-		ai_chance = {
-			factor = 5
-		}
-		BLT = {
-			add_state_core = 190
-			add_state_core = 189
-			add_state_core = 11
-			add_state_core = 12
+	# fire_only_once = yes
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = karlsland.520.a
+		# ai_chance = {
+			# factor = 10
+		# }
+		# BLT = {
+			# add_state_core = 190
+			# add_state_core = 189
+			# add_state_core = 11
+			# add_state_core = 12
+		# }
+		# ORU = {
+			# country_event = {
+				# id = karlsland.521
+				# days = 1
+			# }
+		# }
+	# }
+	
+	# option = {
+		# name = karlsland.520.b
+		# ai_chance = {
+			# factor = 5
+		# }
+		# BLT = {
+			# add_state_core = 190
+			# add_state_core = 189
+			# add_state_core = 11
+			# add_state_core = 12
 			
-			transfer_state = 5
-			transfer_state = 188
-			transfer_state = 763
-			add_state_core = 5
-			add_state_core = 188
-			add_state_core = 763
-		}
-		puppet = BLT
-		add_offsite_building = { type = industrial_complex level = 4 }
-		ORU = {
-			country_event = {
-				id = karlsland.521
-				days = 1
-			}
-		}
-	}
+			# transfer_state = 5
+			# transfer_state = 188
+			# transfer_state = 763
+			# add_state_core = 5
+			# add_state_core = 188
+			# add_state_core = 763
+		# }
+		# puppet = BLT
+		# add_offsite_building = { type = industrial_complex level = 4 }
+		# ORU = {
+			# country_event = {
+				# id = karlsland.521
+				# days = 1
+			# }
+		# }
+	# }
 	
-	option = {
-		name = karlsland.520.c
-		ai_chance = {
-			factor = 10
-		}
-		BLT = {
-			add_state_claim = 190
-			add_state_claim = 189
-			add_state_claim = 11
-			add_state_claim = 12
-		}
-		add_threat = -5
-		add_stability = 0.05
-		ORU = {
-			country_event = {
-				id = karlsland.521
-				days = 1
-			}
-		}
-	}
-	
-	
-	
-	
-}
+	# option = {
+		# name = karlsland.520.c
+		# ai_chance = {
+			# factor = 10
+		# }
+		# BLT = {
+			# add_state_claim = 190
+			# add_state_claim = 189
+			# add_state_claim = 11
+			# add_state_claim = 12
+		# }
+		# add_threat = -5
+		# add_stability = 0.05
+		# ORU = {
+			# country_event = {
+				# id = karlsland.521
+				# days = 1
+			# }
+		# }
+	# }
+# }
 
 
 
@@ -760,8 +765,6 @@ country_event = {
 	
 	option = {
 		name = karlsland.551.a
-		load_focus_tree = KAR_Karlsland_paganism_rudel
-		set_country_flag = KAR_rudel_tree_loaded 
 	}
 	
 }
@@ -1402,12 +1405,30 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			KA5 = {
-				transfer_state = 52
-				transfer_state = 53
-				transfer_state = 54
-				add_state_core = 52
-				add_state_core = 53
-				add_state_core = 54
+				inherit_technology = KAR
+				every_state = {
+					limit = {
+						is_owned_by = KAR
+						OR = {
+							state = 52
+							state = 53
+							state = 54
+						}
+					}
+					PREV = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+					set_state_flag = KAR_civil_war_state
+				}
+				every_state = {
+					limit = { 
+						is_core_of = KAR
+					}
+					PREV = {
+						add_state_claim = PREV
+					}
+				}
 				set_capital = 52
 				set_popularities = {
 					neutrality = 48
@@ -1427,6 +1448,20 @@ country_event = {
 					}
 				}
 				set_cosmetic_tag = KA5_Bavaria
+				add_offsite_building = {
+					type = arms_factory
+					level = 3
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 3
+				}
+				KAR = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.08
+					}
+				}
 			}
 		}
 	}
@@ -1454,8 +1489,28 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			KA4 = {
-				transfer_state = 50
-				add_state_core = 50
+				inherit_technology = KAR
+				every_state = {
+					limit = {
+						is_owned_by = KAR
+						OR = {
+							state = 50
+						}
+					}
+					PREV = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+					set_state_flag = KAR_civil_war_state
+				}
+				every_state = {
+					limit = { 
+						is_core_of = KAR
+					}
+					PREV = {
+						add_state_claim = PREV
+					}
+				}
 				set_capital = 50
 				set_popularities = {
 					fascism = 67
@@ -1474,6 +1529,20 @@ country_event = {
 				set_cosmetic_tag = KA4_baden
 				set_politics = {
 					ruling_party = fascism
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 3
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 3
+				}
+				KAR = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.1
+					}
 				}
 			}
 		}
@@ -1502,14 +1571,30 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			KA3 = {
-				transfer_state = 56
-				transfer_state = 58
-				transfer_state = 59
-				transfer_state = 61
-				add_state_core = 56
-				add_state_core = 58
-				add_state_core = 59
-				add_state_core = 61
+				inherit_technology = KAR
+				every_state = {
+					limit = {
+						is_owned_by = KAR
+						OR = {
+							state = 56
+							state = 58
+							state = 59
+							state = 61
+						}
+					}
+					PREV = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+				}
+				every_state = {
+					limit = { 
+						is_core_of = KAR
+					}
+					PREV = {
+						add_state_claim = PREV
+					}
+				}
 				set_popularities = {
 					communism = 38
 					democratic = 47
@@ -1527,6 +1612,12 @@ country_event = {
 				set_cosmetic_tag = KA3_hamburg
 				set_politics = {
 					ruling_party = democratic
+				}
+				KAR = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.25
+					}
 				}
 			}
 		}
@@ -1556,12 +1647,30 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			KA2 = {
-				transfer_state = 65
-				transfer_state = 60
-				transfer_state = 799
-				add_state_core = 65
-				add_state_core = 60
-				add_state_core = 799
+				inherit_technology = KAR
+				every_state = {
+					limit = {
+						is_owned_by = KAR
+						OR = {
+							state = 65
+							state = 60
+							state = 799
+						}
+					}
+					PREV = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+					set_state_flag = KAR_civil_war_state
+				}
+				every_state = {
+					limit = { 
+						is_core_of = KAR
+					}
+					PREV = {
+						add_state_claim = PREV
+					}
+				}
 				set_popularities = {
 					neutrality = 36
 					fascism = 28
@@ -1599,6 +1708,21 @@ country_event = {
 					ruling_party = neutrality
 				}
 				add_ideas = KAR_new_regime
+				load_focus_tree = KAR_Magocracy
+				add_offsite_building = {
+					type = arms_factory
+					level = 3
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 3
+				}
+				KAR = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.33
+					}
+				}
 			}
 		}
 	}
@@ -1628,32 +1752,42 @@ country_event = {
 		hidden_effect = {
 			KAR = {
 				set_capital = 794
+				load_focus_tree = KAR_Karlsland_rhine_com
 			}
 			KA1 = {
-				transfer_state = 5
-				transfer_state = 62
-				transfer_state = 63
-				transfer_state = 64
-				transfer_state = 66
-				transfer_state = 67
-				transfer_state = 68
-				transfer_state = 85
-				transfer_state = 86
-				transfer_state = 188
-				transfer_state = 762	
-				transfer_state = 763				
-				add_state_core = 5
-				add_state_core = 62
-				add_state_core = 63
-				add_state_core = 64
-				add_state_core = 66
-				add_state_core = 67
-				add_state_core = 68
-				add_state_core = 85
-				add_state_core = 86
-				add_state_core = 188
-				add_state_core = 762
-				add_state_core = 763
+				inherit_technology = KAR
+				every_state = {
+					limit = {
+						is_owned_by = KAR
+						OR = {
+							state = 5
+							state = 62
+							state = 63
+							state = 64
+							state = 66
+							state = 67
+							state = 68
+							state = 85
+							state = 86
+							state = 188
+							state = 762	
+							state = 763
+						}
+					}
+					PREV = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+					set_state_flag = KAR_civil_war_state
+				}
+				every_state = {
+					limit = { 
+						is_core_of = KAR
+					}
+					PREV = {
+						add_state_claim = PREV
+					}
+				}
 				set_capital = 64
 				set_popularities = {
 					fascism = 24
@@ -1674,6 +1808,13 @@ country_event = {
 					ruling_party = neutrality #obviously
 				}
 				add_ideas = KAR_KA1_strife
+				load_focus_tree = KAR_Junkerreich
+				KAR = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.5
+					}
+				}
 			}
 		}
 	}
@@ -1715,6 +1856,11 @@ country_event = {
 				id = karlsland.608
 				hours = 1
 			}
+			hidden_effect = {
+				every_owned_state = {
+					set_state_flag = KAR_civil_war_state
+				}
+			}
 		}
 	}
 	
@@ -1726,6 +1872,13 @@ country_event = {
 		add_state_claim = 28
 		add_war_support = 0.05
 		add_political_power = -15
+		hidden_effect = {
+			KAR = {
+				every_owned_state = {
+					set_state_flag = KAR_civil_war_state
+				}
+			}
+		}
 	}
 	
 	

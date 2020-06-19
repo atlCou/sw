@@ -382,6 +382,28 @@ ideas = {
 		
 		}
 		
+		KAR_rip_apart_capital_idea = {
+		
+			picture = SPR_seize_the_gold_reserves
+			
+			modifier = {
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.05
+			}
+		
+		}
+		
+		KAR_rip_apart_capital_730_idea = {
+		
+			picture = SPR_seize_the_gold_reserves
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.075
+			}
+		
+		}
+		
 		#### NOBLE
 		
 		
