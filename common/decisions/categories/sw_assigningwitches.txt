@@ -1,64 +1,75 @@
-assigning_witches = {
-	icon = decision_category_generic
-	available = {
-		check_variable = { witches_manpower > 0 }
-	}
-}
-
-bohemian_revanchism = {
-	icon = generic_propaganda
-	available = {
-		has_country_flag = BHE_revanchism_decisions
-	}
-}
-
-gollob_reign = {
-	icon = generic_propaganda
-	available = {
-		has_country_flag = OST_gollob_reign_begins
-		NOT = {
-			has_country_flag = OST_crumbledflag
-		}
-	}
-}
-
 GAL_funding_art_decisions = {
 	icon = generic_propaganda
-	available = {
+	visible = {
 		has_country_flag = GAL_funding_art_decisions_flag
-	}
-}
-	
-	
-SOU_no_pagans = {
-	icon = eng_move_to_secure_the_dominions
-	available = {
-		has_idea = SOU_ukko_idea
-	}
-
-}
-
-battle_for_suomus = {
-	icon = generic_propaganda
-	available = {
-		has_global_flag = KAR_battle_for_suomus
-		OR = {
-			tag = SOU
-			tag = KAR
-		}
-	}
-}
-
-KAR_border_wars = {
-	icon = decision_category_generic
-	available = {
-		has_country_flag = KAR_border_wars_flag
 	}
 }
 
 GAL_hausmanns_legacy_category = {
 	icon = generic_propaganda
-	available = {
+	visible = {
 		has_country_flag = GAL_hausmanns_legacy_flag
 	}
 }
+
+KAR_border_wars = {
+	icon = decision_category_generic
+	priority = {
+		base = 10
+	}
+	visible = {
+		has_country_flag = KAR_border_wars_flag
+	}
+}
+
+KAR_pagan_wars = {
+	icon = generic_propaganda
+	priority = {
+		base = 10
+	}
+}
+
+# assigning_witches = {
+	# icon = decision_category_generic
+	# visible = {
+		# check_variable = { witches_manpower > 0 }
+	# }
+# }
+
+# bohemian_revanchism = {
+	# icon = generic_propaganda
+	# visible = {
+		# has_country_flag = BHE_revanchism_decisions
+	# }
+# }
+
+# gollob_reign = {
+	# icon = generic_propaganda
+	# visible = {
+		# has_country_flag = OST_gollob_reign_begins
+		# NOT = {
+			# has_country_flag = OST_crumbledflag
+		# }
+	# }
+# }
+
+# battle_for_suomus = {
+	# icon = generic_propaganda
+	# visible = {
+		# has_global_flag = KAR_battle_for_suomus
+		# OR = {
+			# tag = SOU
+			# tag = KAR
+		# }
+	# }
+# }
+
+# SOU_no_pagans = {
+	# icon = eng_move_to_secure_the_dominions
+	# visible = {
+		# has_idea = SOU_ukko_idea
+	# }
+
+# }
+
+

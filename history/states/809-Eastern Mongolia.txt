@@ -1,0 +1,18 @@
+state={
+	id=809
+	name="STATE_809"
+	provinces={
+		1743 4792 4873 10578 10647 10708 12557 12629 12665 
+	}
+	manpower=65234
+	buildings_max_level_factor=1.000
+	history={
+		owner = FUS
+		add_core_of = FUS
+		buildings = {
+			infrastructure = 4
+		}
+
+	}
+	state_category=rural
+}

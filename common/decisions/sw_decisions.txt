@@ -84,445 +84,667 @@ KAR_border_wars = {
 }
 
 
-bohemian_revanchism = {
+KAR_pagan_wars = {
 
-	BHE_claiming_orussian_bohemia = {
-		icon = eng_propaganda_campaigns
-
-
+	KAR_split_baltland = {
+		icon = infiltrate_state
+		cost = 10
+		allowed = { tag = KAR }
 		available = {
-			NOT = { 
-				BHE = {
+			141 = {
+				OR = {
+					owner = { is_puppet_of = KAR }
+					is_owned_by = KAR
+				}
+			} 
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
 					AND = {
-						has_full_control_of_state = 762
-						has_full_control_of_state = 90
-						has_full_control_of_state = 10
-						has_full_control_of_state = 98
-						has_full_control_of_state = 97
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						AND = {
+							is_core_of = BAL
+							NOT = {
+								OR = {
+									state = 138
+									state = 37
+									state = 99
+									state = 808
+								}
+							}
+						}
+						NOT = {
+							is_owned_by = BAL
+						}
+					}
+				}
+				BAL = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							state = 138
+							state = 37
+							state = 99
+							state = 808
+						}
+					}
+				}
+				KAR = {
+					transfer_state = PREV
+					add_state_claim = PREV
+				}
+			}
+			puppet = BAL
+			BAL = {
+				set_cosmetic_tag = BAL_KAR_pagan
+				create_country_leader = {
+					name = "Svenja Lindholm"
+					desc = "HHHH"
+					picture = "Svenja Lindholm.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_party_name = {
+					ideology = fascism 
+					long_name = "Protectionist Order of the Midgard Snake" 
+					name = "Order of Midgard's Snake"
+				}
+			}
+		}
+	}
+	
+	KAR_transfer_south_slav = {
+		icon = infiltrate_state
+		cost = 10
+		allowed = { tag = KAR }
+		available = {
+			any_state = {
+				AND = { 
+					OR = {
+						is_core_of = SER
+						is_claimed_by = SER
+					}
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					NOT = {
+						is_owned_by = SER
+					}
+				}
+				
+			}
+		}
+		visible = {
+			KAR = {
+				has_completed_focus = KAR_slavic_fiefdoms
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							is_core_of = SER
+							is_claimed_by = SER
+						}
+					}
+				}
+				SER = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+		
+		}
+	}
+	
+	KAR_transfer_west_slav = {
+		icon = infiltrate_state
+		cost = 10
+		allowed = { tag = KAR }
+		available = {
+			any_state = {
+				AND = { 
+					OR = {
+						is_core_of = MRV
+						is_claimed_by = MRV
+					}
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					NOT = {
+						is_owned_by = MRV
+					}
+				}
+				
+			}
+		}
+		visible = {
+			KAR = {
+				has_completed_focus = KAR_slavic_fiefdoms
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							is_core_of = MRV
+							is_claimed_by = MRV
+						}
+					}
+				}
+				MRV = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+		
+		}
+	}
+	
+	KAR_transfer_pannonia = {
+		icon = infiltrate_state
+		cost = 10
+		allowed = { tag = KAR }
+		available = {
+			any_state = {
+				AND = { 
+					OR = {
+						is_core_of = PNE
+						is_claimed_by = PNE
+					}
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					NOT = {
+						is_owned_by = PNE
+					}
+				}
+				
+			}
+		}
+		visible = {
+			KAR = {
+				has_completed_focus = KAR_carving_out_pannonia
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							is_core_of = PNE
+							is_claimed_by = PNE
+						}
+					}
+				}
+				PNE = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+		
+		}
+	}
+	
+	KAR_form_misc = {
+		icon = infiltrate_state
+		cost = 30
+		allowed = { tag = KAR }
+		available = {
+			any_state = {
+				AND = {
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					OR = {
+						##### Central Asia
+						state = 402
+						state = 404
+						state = 405
+						state = 406
+						state = 407
+						state = 590
+						state = 588
+						state = 589
+						state = 587
+						state = 586
+						state = 585
+						state = 583
+						state = 732
+						#### Caucuses
+						state = 233
+						state = 232
+						state = 231
+						state = 230
+						state = 229 ### glad those go in order
 					}
 				}
 			}
-			BHE = { is_puppet = no }
 		}
-
-		cost = 50
-
-		fire_only_once = yes
-
 		visible = {
-			tag = BHE
-			has_country_flag = BHE_revanchism_decisions
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			add_state_claim = 762
-			add_state_claim = 90
-			add_state_claim = 10
-			add_state_claim = 98
-			add_state_claim = 97
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	
-	BHE_integrating_orussian_bohemia = {
-		icon = oppression
-
-		available = {
-			BHE = {
-				AND = {
-					has_full_control_of_state = 762
-					has_full_control_of_state = 90
-					has_full_control_of_state = 10
-					has_full_control_of_state = 98
-					has_full_control_of_state = 97
-					
+			KAR = {
+				has_completed_focus = KAR_empire_in_the_east
+			}
+			ORU = {
+				OR = {
+					exists = no 
+					is_puppet_of = KAR
 				}
-				is_puppet = no
 			}
 		}
-
-		cost = 50
-
-		fire_only_once = yes
-
-		visible = {
-			tag = BHE
-			has_country_flag = BHE_revanchism_decisions
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			add_state_core = 762
-			add_state_core = 90
-			add_state_core = 10
-			add_state_core = 98
-			add_state_core = 97
-		}
-
 		ai_will_do = {
-			factor = 0
+			base = 100
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							#### Caucuses
+							state = 233
+							state = 232
+							state = 231
+							state = 230
+							state = 229
+						}
+					}
+				}
+				CAU = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							##### Central Asia
+							state = 402
+							state = 404
+							state = 405
+							state = 406
+							state = 407
+							state = 590
+							state = 588
+							state = 589
+							state = 587
+							state = 586
+							state = 585
+							state = 583
+							state = 732
+						}
+					}
+				}
+				CTA = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			puppet = CAU
+			puppet = CTA
+			CAU = {
+				set_cosmetic_tag = CAU_KAR_pagan
+				
+			}
+			CTA = {
+				set_cosmetic_tag = CTA_KAR_pagan
+				
+			}
 		}
 	}
 	
-	BHE_claiming_karlslander_bohemia = {
-		icon = eng_propaganda_campaigns
-
-
-
+	KAR_form_balts = {
+		icon = infiltrate_state
+		cost = 30
+		allowed = { tag = KAR }
 		available = {
-			NOT = { 
-				BHE = {
-					AND = {
-						has_full_control_of_state = 66
-						has_full_control_of_state = 67
-						has_full_control_of_state = 87
-						has_full_control_of_state = 86
-						has_full_control_of_state = 85
-						has_full_control_of_state = 5
-						has_full_control_of_state = 763
-						has_full_control_of_state = 188
+			any_state = {
+				AND = {
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					OR = {
+						state = 189
+						state = 11
+						state = 190
+						state = 12
+						state = 13
+						state = 191
+						state = 784
 					}
 				}
 			}
-			BHE = { is_puppet = no }
 		}
-
-		cost = 50
-
-		fire_only_once = yes
-
 		visible = {
-			tag = BHE
-			has_country_flag = BHE_revanchism_decisions
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			add_state_claim = 66
-			add_state_claim = 67
-			add_state_claim = 87
-			add_state_claim = 86
-			add_state_claim = 85
-			add_state_claim = 5
-			add_state_claim = 763
-			add_state_claim = 188
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	
-	BHE_integrating_karlslander_bohemia = {
-		icon = oppression
-
-
-
-		available = {
-			BHE = {
-				AND = {
-					has_full_control_of_state = 762
-					has_full_control_of_state = 66
-					has_full_control_of_state = 67
-					has_full_control_of_state = 87
-					has_full_control_of_state = 86
+			KAR = {
+				has_completed_focus = KAR_empire_in_the_east
+			}
+			ORU = {
+				OR = {
+					exists = no 
+					is_puppet_of = KAR
 				}
-				is_puppet = no
 			}
 		}
-
-		cost = 50
-
-		fire_only_once = yes
-
-		visible = {
-			tag = BHE
-			has_country_flag = BHE_revanchism_decisions
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			add_state_core = 762
-			add_state_core = 66
-			add_state_core = 67
-			add_state_core = 87
-			add_state_core = 86
-		}
-
 		ai_will_do = {
-			factor = 0
+			base = 100
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							state = 189
+							state = 11
+							state = 190
+							state = 12
+							state = 13
+							state = 191
+							state = 784
+						}
+					}
+				}
+				BLT = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			puppet = BLT
+			BLT = {
+				set_cosmetic_tag = BLT_KAR_pagan
+				create_country_leader = {
+					name = "Pan-Baltic Oversight Council"
+					desc = "HHHH"
+					picture = "council.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = "" 
+					name = ""
+				}
+			}
 		}
 	}
-
-
-
+	
+	KAR_form_east_slavs = {
+		icon = infiltrate_state
+		cost = 30
+		allowed = { tag = KAR }
+		available = {
+			any_state = {
+				AND = { 
+					OR = {
+						is_core_of = ORU
+						is_claimed_by = ORU
+					}
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					NOT = {
+						is_owned_by = ORU
+					}
+				}
+			}
+		}
+		visible = {
+			KAR = {
+				has_completed_focus = KAR_empire_in_the_east
+			}
+			ORU = {
+				OR = {
+					exists = no 
+					is_puppet_of = KAR
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							state = 654
+							state = 40
+							state = 570
+							state = 571
+							state = 403
+							state = 572
+							state = 653
+							state = 580
+							state = 329
+							state = 568
+							state = 569
+							state = 570
+							state = 578
+							state = 576
+							state = 577
+							state = 580
+							state = 516
+							state = 579
+							state = 581
+							state = 573
+							state = 582
+						}
+						# NOT = {
+							# OR = {
+								#### Central Asia
+								# state = 402
+								# state = 404
+								# state = 405
+								# state = 406
+								# state = 407
+								# state = 590
+								# state = 588
+								# state = 589
+								# state = 587
+								# state = 586
+								# state = 585
+								# state = 583
+								# state = 732
+								### Caucuses
+								# state = 233
+								# state = 232
+								# state = 231
+								# state = 230
+								# state = 229 ### glad those go in order
+							# }
+						# }
+					}
+				}
+				ERU = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						is_core_of = ORU
+						NOT = {
+							is_core_of = KAR
+							OR = {
+								### Central Asia
+								state = 402
+								state = 404
+								state = 405
+								state = 406
+								state = 407
+								state = 590
+								state = 588
+								state = 589
+								state = 587
+								state = 586
+								state = 585
+								state = 583
+								state = 732
+								## Caucuses
+								state = 233
+								state = 232
+								state = 231
+								state = 230
+								state = 229 ### glad those go in order
+								## East Russia
+								state = 654
+								state = 40
+								state = 570
+								state = 571
+								state = 403
+								state = 572
+								state = 653
+								state = 580
+								state = 329
+								state = 568
+								state = 569
+								state = 570
+								state = 578
+								state = 576
+								state = 577
+								state = 580
+								state = 516
+								state = 579
+								state = 581
+								state = 573
+								state = 582
+								## Polen
+								state = 97
+								state = 92
+								state = 90
+								state = 10
+								state = 98
+								state = 87
+								## Balts
+								state = 189
+								state = 11
+								state = 190
+								state = 12
+								state = 13
+								state = 191
+								state = 784
+							}
+						}
+					}
+				}
+				ORU = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			puppet = ERU
+			puppet = ORU
+			ERU = {
+				set_cosmetic_tag = ERU_KAR_pagan
+				create_country_leader = {
+					name = "Reichskommissar Lyudmila"
+					desc = "HHHH"
+					picture = "Lyudmila Pagan.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = "Mystische Sozialistische Karlsländische Partei [Orussia]" 
+					name = "MSKP [O]"
+				}
+			}
+			ORU = {
+				set_cosmetic_tag = ORU_KAR_pagan
+				create_country_leader = {
+					name = "Oberster Hochmeister Gollob"
+					desc = "HHHH"
+					picture = "Gollob Pagan.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = "Blessed Order of Wuotan" 
+					name = "Order of Wuotan"
+				}
+			}
+		}
+	}
+	
 }
 
-gollob_reign = {
-
-
-	OST_seize_the_nation = {
-		icon = oppression
-		
-
-		
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 0
-				check_variable = {
-					var = Gollob_suppression
-					value = 8
-					compare = less_than
-				}
-			}
-		}
-		
-		cost = 250
-		
-		fire_only_once = yes
-		
-		visible = {
-			tag = OST
-			has_country_flag = OST_gollob_reign_begins
-			NOT = {
-				has_country_flag = OST_crumbledflag
-			}
-		}
-		
-		days_remove = 70
-		
-		cancel_if_not_visible = yes
-		
-		complete_effect = {
-			hidden_effect = {
-				if = {
-					limit = { check_variable = { Gollob_suppression < 7 } }
-					country_event = {
-						id = ostmark.8
-						days = 15
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = { 
-						OST = {
-							check_variable = {
-								var = Gollob_suppression
-								value = 9
-								compare = greater_than
-							}
-						}
-					}
-					country_event = { id = ostmark.7 }
-				}
-			}
-			custom_effect_tooltip = OST_seizing_tooltip
-		}
-		
-		remove_effect = {
-			set_cosmetic_tag = OST_Gollob
-			set_country_flag = OST_Gollob_Success
-			remove_ideas = { OST_recent_republicanization }
-		}
-	}
-	
-	
-
-	OST_seize_the_industry = {
-		icon = oppression
-		
-	
-		
-		ai_will_do = {
-			factor = 33
-		}
-		
-		cost = 75
-		
-		fire_only_once = yes
-		
-		visible = {
-			tag = OST
-			has_country_flag = OST_gollob_reign_begins
-			NOT = {
-				has_country_flag = OST_crumbledflag
-			}
-		}
-		
-		days_remove = 35
-		
-		cancel_if_not_visible = yes
-		
-		complete_effect = {
-			hidden_effect = {
-				if = {
-					limit = { 
-						OST = {
-							check_variable = {
-								var = Gollob_suppression
-								value = 7
-								compare = greater_than
-							}
-						}
-					}
-					country_event = { id = ostmark.7 days = 10 }
-				}
-			}
-			add_to_variable = {
-				var = Gollob_suppression
-				value = 2
-			}
-			custom_effect_tooltip = OST_tyranny_increase_moderate
-		}
-		
-		remove_effect = {
-			4 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			107 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			43 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		
-		}
-		
-	}
-	
-	OST_secret_police = {
-		icon = oppression
-	
-		ai_will_do = {
-			factor = 55
-		}
-		
-		cost = 50
-		
-		fire_only_once = yes
-		
-		visible = {
-			tag = OST
-			has_country_flag = OST_gollob_reign_begins
-			NOT = {
-				has_country_flag = OST_crumbledflag
-			}
-		}
-		
-		days_remove = 35
-		
-		cancel_if_not_visible = yes
-		
-		complete_effect = {
-			hidden_effect = {
-				if = {
-					limit = { 
-						OST = {
-							check_variable = {
-								var = Gollob_suppression
-								value = 7
-								compare = greater_than
-							}
-						}
-					}
-					country_event = { id = ostmark.7 days = 8 }
-				}
-			}
-			add_to_variable = {
-				var = Gollob_suppression
-				value = 2
-			}
-			custom_effect_tooltip = OST_tyranny_increase_moderate
-		}
-		
-		remove_effect = {
-			add_stability = 0.05
-		}
-	}
-	
-	OST_propaganda_institutions = {
-		icon = oppression
-		
-
-		ai_will_do = {
-			factor = 55
-		}
-		
-		cost = 50
-		
-		fire_only_once = yes
-		
-		visible = {
-			tag = OST
-			has_country_flag = OST_gollob_reign_begins
-			NOT = {
-				has_country_flag = OST_crumbledflag
-			}
-		}
-		
-		days_remove = 35
-		
-		cancel_if_not_visible = yes
-		
-		complete_effect = {
-			hidden_effect = {
-				if = {
-					limit = { 
-						OST = {
-							check_variable = {
-								var = Gollob_suppression
-								value = 8
-								compare = greater_than
-							}
-						}
-					}
-					country_event = { id = ostmark.7 days = 10 }
-				}
-			}		
-			add_to_variable = {
-				var = Gollob_suppression
-				value = 1
-			}
-			custom_effect_tooltip = OST_tyranny_increase
-		}
-		
-		remove_effect = {
-			add_stability = -0.05
-			add_timed_idea = {
-				idea = OST_propaganda_institutions_idea
-				days = 175
-			}
-		}
-	}
-	
-
-
-
-}
 
 
 GAL_funding_art_decisions = {
@@ -530,404 +752,6 @@ GAL_funding_art_decisions = {
 
 }
 
-
-
-SOU_no_pagans = {
-
-	SOU_start_the_hunt = {
-		icon = infiltrate_state
-		visible = {
-			owns_state = 111
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		days_remove = 7
-		fire_only_once = yes
-		modifier = {
-			stability_factor = -0.05
-		}
-		remove_effect = {
-			set_country_flag = SOU_start_the_hunt_flag
-			set_variable = {
-				var = SOU_remove_pagans_var
-				value = 0
-			}
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-
-
-
-	SOU_clear_helsinki = {
-		icon = infiltrate_state
-		visible = {
-			owns_state = 111
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 111 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Helsinki!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	SOU_clear_pohnjanmaa = {
-		icon = infiltrate_state
-		visible = {
-			owns_state = 149
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 149 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Pohjanmaa!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	SOU_clear_karjala = {
-		icon = infiltrate_state
-		visible = {
-			owns_state = 146
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 146 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Karjala!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	SOU_clear_savo = {
-		icon = infiltrate_state
-		visible = {
-			owns_state = 150
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 150 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Savo!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	SOU_clear_lappi = {
-		icon = infiltrate_state
-		visible = {
-			owns_state = 148
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 148 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Lappi!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	
-	#### States the player may or may not own
-	
-	
-	SOU_clear_petsamo = {
-		icon = infiltrate_state
-		visible = {
-			owns_state = 722
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 722 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Petsamo!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	SOU_clear_salla = {
-		icon = infiltrate_state
-		visible = {
-			owns_state = 147
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 147 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Salla!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	SOU_clear_murmansk = {   ###eila would be happy
-		icon = infiltrate_state
-		visible = {
-			owns_state = 213
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 213 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Murmansk!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	SOU_clear_olonets = {   ###eila would be happy
-		icon = infiltrate_state
-		visible = {
-			owns_state = 216
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 216 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Olonets!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	SOU_clear_onega = {   ###eila would be happy
-		icon = infiltrate_state
-		visible = {
-			owns_state = 215
-			has_country_flag = SOU_start_the_hunt_flag
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		highlight_states = { state = 215 }
-		days_remove = 30
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = SOU_remove_pagans_var
-				value = 1
-			}
-			custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Onega!"
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				date > 1939.01.01
-				add = 100
-			}
-		}
-	}
-	
-	
-	SOU_stomp_them_out = {
-		icon = infiltrate_state
-		visible = {
-			check_variable = {
-				var = SOU_remove_pagans_var
-				value = 5
-				compare = greater_than_or_equals
-			}
-		}
-		available = {
-			NOT = { is_puppet_of = KAR }
-			NOT = { has_government = fascism }
-		}
-		days_remove = 7
-		fire_only_once = yes
-		modifier = {
-			political_power_gain = -0.50
-			stability_factor = -0.10
-		}
-		remove_effect = {
-			remove_ideas = SOU_ukko_idea
-		}
-		ai_will_do = {
-			base = 100000
-		}
-	}
-}
 
 GAL_hausmanns_legacy_category = {
 	GAL_prepare_foundations = {
@@ -1111,3 +935,841 @@ GAL_hausmanns_legacy_category = {
 }
 
 
+
+
+# bohemian_revanchism = {
+
+	# BHE_claiming_orussian_bohemia = {
+		# icon = eng_propaganda_campaigns
+
+
+		# available = {
+			# NOT = { 
+				# BHE = {
+					# AND = {
+						# has_full_control_of_state = 762
+						# has_full_control_of_state = 90
+						# has_full_control_of_state = 10
+						# has_full_control_of_state = 98
+						# has_full_control_of_state = 97
+					# }
+				# }
+			# }
+			# BHE = { is_puppet = no }
+		# }
+
+		# cost = 50
+
+		# fire_only_once = yes
+
+		# visible = {
+			# tag = BHE
+			# has_country_flag = BHE_revanchism_decisions
+		# }
+
+		# cancel_if_not_visible = yes
+
+		# complete_effect = {
+			# add_state_claim = 762
+			# add_state_claim = 90
+			# add_state_claim = 10
+			# add_state_claim = 98
+			# add_state_claim = 97
+		# }
+
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
+	
+	
+	# BHE_integrating_orussian_bohemia = {
+		# icon = oppression
+
+		# available = {
+			# BHE = {
+				# AND = {
+					# has_full_control_of_state = 762
+					# has_full_control_of_state = 90
+					# has_full_control_of_state = 10
+					# has_full_control_of_state = 98
+					# has_full_control_of_state = 97
+					
+				# }
+				# is_puppet = no
+			# }
+		# }
+
+		# cost = 50
+
+		# fire_only_once = yes
+
+		# visible = {
+			# tag = BHE
+			# has_country_flag = BHE_revanchism_decisions
+		# }
+
+		# cancel_if_not_visible = yes
+
+		# complete_effect = {
+			# add_state_core = 762
+			# add_state_core = 90
+			# add_state_core = 10
+			# add_state_core = 98
+			# add_state_core = 97
+		# }
+
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
+	
+	# BHE_claiming_karlslander_bohemia = {
+		# icon = eng_propaganda_campaigns
+
+
+
+		# available = {
+			# NOT = { 
+				# BHE = {
+					# AND = {
+						# has_full_control_of_state = 66
+						# has_full_control_of_state = 67
+						# has_full_control_of_state = 87
+						# has_full_control_of_state = 86
+						# has_full_control_of_state = 85
+						# has_full_control_of_state = 5
+						# has_full_control_of_state = 763
+						# has_full_control_of_state = 188
+					# }
+				# }
+			# }
+			# BHE = { is_puppet = no }
+		# }
+
+		# cost = 50
+
+		# fire_only_once = yes
+
+		# visible = {
+			# tag = BHE
+			# has_country_flag = BHE_revanchism_decisions
+		# }
+
+		# cancel_if_not_visible = yes
+
+		# complete_effect = {
+			# add_state_claim = 66
+			# add_state_claim = 67
+			# add_state_claim = 87
+			# add_state_claim = 86
+			# add_state_claim = 85
+			# add_state_claim = 5
+			# add_state_claim = 763
+			# add_state_claim = 188
+		# }
+
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
+	
+	
+	# BHE_integrating_karlslander_bohemia = {
+		# icon = oppression
+
+
+
+		# available = {
+			# BHE = {
+				# AND = {
+					# has_full_control_of_state = 762
+					# has_full_control_of_state = 66
+					# has_full_control_of_state = 67
+					# has_full_control_of_state = 87
+					# has_full_control_of_state = 86
+				# }
+				# is_puppet = no
+			# }
+		# }
+
+		# cost = 50
+
+		# fire_only_once = yes
+
+		# visible = {
+			# tag = BHE
+			# has_country_flag = BHE_revanchism_decisions
+		# }
+
+		# cancel_if_not_visible = yes
+
+		# complete_effect = {
+			# add_state_core = 762
+			# add_state_core = 66
+			# add_state_core = 67
+			# add_state_core = 87
+			# add_state_core = 86
+		# }
+
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
+
+
+
+# }
+
+# gollob_reign = {
+
+
+	# OST_seize_the_nation = {
+		# icon = oppression
+		
+
+		
+		# ai_will_do = {
+			# factor = 100
+			# modifier = {
+				# factor = 0
+				# check_variable = {
+					# var = Gollob_suppression
+					# value = 8
+					# compare = less_than
+				# }
+			# }
+		# }
+		
+		# cost = 250
+		
+		# fire_only_once = yes
+		
+		# visible = {
+			# tag = OST
+			# has_country_flag = OST_gollob_reign_begins
+			# NOT = {
+				# has_country_flag = OST_crumbledflag
+			# }
+		# }
+		
+		# days_remove = 70
+		
+		# cancel_if_not_visible = yes
+		
+		# complete_effect = {
+			# hidden_effect = {
+				# if = {
+					# limit = { check_variable = { Gollob_suppression < 7 } }
+					# country_event = {
+						# id = ostmark.8
+						# days = 15
+					# }
+				# }
+			# }
+			# hidden_effect = {
+				# if = {
+					# limit = { 
+						# OST = {
+							# check_variable = {
+								# var = Gollob_suppression
+								# value = 9
+								# compare = greater_than
+							# }
+						# }
+					# }
+					# country_event = { id = ostmark.7 }
+				# }
+			# }
+			# custom_effect_tooltip = OST_seizing_tooltip
+		# }
+		
+		# remove_effect = {
+			# set_cosmetic_tag = OST_Gollob
+			# set_country_flag = OST_Gollob_Success
+			# remove_ideas = { OST_recent_republicanization }
+		# }
+	# }
+	
+	
+
+	# OST_seize_the_industry = {
+		# icon = oppression
+		
+	
+		
+		# ai_will_do = {
+			# factor = 33
+		# }
+		
+		# cost = 75
+		
+		# fire_only_once = yes
+		
+		# visible = {
+			# tag = OST
+			# has_country_flag = OST_gollob_reign_begins
+			# NOT = {
+				# has_country_flag = OST_crumbledflag
+			# }
+		# }
+		
+		# days_remove = 35
+		
+		# cancel_if_not_visible = yes
+		
+		# complete_effect = {
+			# hidden_effect = {
+				# if = {
+					# limit = { 
+						# OST = {
+							# check_variable = {
+								# var = Gollob_suppression
+								# value = 7
+								# compare = greater_than
+							# }
+						# }
+					# }
+					# country_event = { id = ostmark.7 days = 10 }
+				# }
+			# }
+			# add_to_variable = {
+				# var = Gollob_suppression
+				# value = 2
+			# }
+			# custom_effect_tooltip = OST_tyranny_increase_moderate
+		# }
+		
+		# remove_effect = {
+			# 4 = {
+				# add_building_construction = {
+					# type = industrial_complex
+					# level = 2
+					# instant_build = yes
+				# }
+			# }
+			# 107 = {
+				# add_building_construction = {
+					# type = arms_factory
+					# level = 3
+					# instant_build = yes
+				# }
+			# }
+			# 43 = {
+				# add_building_construction = {
+					# type = industrial_complex
+					# level = 1
+					# instant_build = yes
+				# }
+			# }
+		
+		# }
+		
+	# }
+	
+	# OST_secret_police = {
+		# icon = oppression
+	
+		# ai_will_do = {
+			# factor = 55
+		# }
+		
+		# cost = 50
+		
+		# fire_only_once = yes
+		
+		# visible = {
+			# tag = OST
+			# has_country_flag = OST_gollob_reign_begins
+			# NOT = {
+				# has_country_flag = OST_crumbledflag
+			# }
+		# }
+		
+		# days_remove = 35
+		
+		# cancel_if_not_visible = yes
+		
+		# complete_effect = {
+			# hidden_effect = {
+				# if = {
+					# limit = { 
+						# OST = {
+							# check_variable = {
+								# var = Gollob_suppression
+								# value = 7
+								# compare = greater_than
+							# }
+						# }
+					# }
+					# country_event = { id = ostmark.7 days = 8 }
+				# }
+			# }
+			# add_to_variable = {
+				# var = Gollob_suppression
+				# value = 2
+			# }
+			# custom_effect_tooltip = OST_tyranny_increase_moderate
+		# }
+		
+		# remove_effect = {
+			# add_stability = 0.05
+		# }
+	# }
+	
+	# OST_propaganda_institutions = {
+		# icon = oppression
+		
+
+		# ai_will_do = {
+			# factor = 55
+		# }
+		
+		# cost = 50
+		
+		# fire_only_once = yes
+		
+		# visible = {
+			# tag = OST
+			# has_country_flag = OST_gollob_reign_begins
+			# NOT = {
+				# has_country_flag = OST_crumbledflag
+			# }
+		# }
+		
+		# days_remove = 35
+		
+		# cancel_if_not_visible = yes
+		
+		# complete_effect = {
+			# hidden_effect = {
+				# if = {
+					# limit = { 
+						# OST = {
+							# check_variable = {
+								# var = Gollob_suppression
+								# value = 8
+								# compare = greater_than
+							# }
+						# }
+					# }
+					# country_event = { id = ostmark.7 days = 10 }
+				# }
+			# }		
+			# add_to_variable = {
+				# var = Gollob_suppression
+				# value = 1
+			# }
+			# custom_effect_tooltip = OST_tyranny_increase
+		# }
+		
+		# remove_effect = {
+			# add_stability = -0.05
+			# add_timed_idea = {
+				# idea = OST_propaganda_institutions_idea
+				# days = 175
+			# }
+		# }
+	# }
+	
+
+
+
+# }
+
+# SOU_no_pagans = {
+
+	# SOU_start_the_hunt = {
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 111
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# days_remove = 7
+		# fire_only_once = yes
+		# modifier = {
+			# stability_factor = -0.05
+		# }
+		# remove_effect = {
+			# set_country_flag = SOU_start_the_hunt_flag
+			# set_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 0
+			# }
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+
+
+
+	# SOU_clear_helsinki = {
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 111
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 111 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Helsinki!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	# SOU_clear_pohnjanmaa = {
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 149
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 149 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Pohjanmaa!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	# SOU_clear_karjala = {
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 146
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 146 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Karjala!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	# SOU_clear_savo = {
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 150
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 150 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Savo!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	# SOU_clear_lappi = {
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 148
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 148 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Lappi!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	
+	### States the player may or may not own
+	
+	
+	# SOU_clear_petsamo = {
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 722
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 722 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Petsamo!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	# SOU_clear_salla = {
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 147
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 147 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Salla!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	# SOU_clear_murmansk = {   ###eila would be happy
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 213
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 213 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Murmansk!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	# SOU_clear_olonets = {   ###eila would be happy
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 216
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 216 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Olonets!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	# SOU_clear_onega = {   ###eila would be happy
+		# icon = infiltrate_state
+		# visible = {
+			# owns_state = 215
+			# has_country_flag = SOU_start_the_hunt_flag
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# highlight_states = { state = 215 }
+		# days_remove = 30
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# add_to_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 1
+			# }
+			# custom_effect_tooltip = "Remove the psuedo-archeologists prowling through Onega!"
+		# }
+		# ai_will_do = {
+			# base = 0
+			# modifier = {
+				# date > 1939.01.01
+				# add = 100
+			# }
+		# }
+	# }
+	
+	
+	# SOU_stomp_them_out = {
+		# icon = infiltrate_state
+		# visible = {
+			# check_variable = {
+				# var = SOU_remove_pagans_var
+				# value = 5
+				# compare = greater_than_or_equals
+			# }
+		# }
+		# available = {
+			# NOT = { is_puppet_of = KAR }
+			# NOT = { has_government = fascism }
+		# }
+		# days_remove = 7
+		# fire_only_once = yes
+		# modifier = {
+			# political_power_gain = -0.50
+			# stability_factor = -0.10
+		# }
+		# remove_effect = {
+			# remove_ideas = SOU_ukko_idea
+		# }
+		# ai_will_do = {
+			# base = 100000
+		# }
+	# }
+# }

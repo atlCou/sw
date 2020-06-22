@@ -323,8 +323,11 @@ D15 = {
 	color = rgb { 194 140 86 }
 	color_ui = rgb { 252 182 112 }
 }
-
 ACH = {
-color = rgb { 189 224 244 }
-color_ui = rgb { 189 224 244 }
+	color = rgb { 189 224 244 }
+	color_ui = rgb { 189 224 244 }
+}
+ERU = {
+	color = rgb { 34 92 49 }
+	color_ui = rgb { 34 92 49 }
 }

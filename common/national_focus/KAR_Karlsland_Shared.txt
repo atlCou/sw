@@ -1654,7 +1654,7 @@ shared_focus = {
 		add_state_claim = 795
 		add_state_claim = 6
 		add_state_claim = 8
-		add_war_support = 0.1
+		unlock_decision_category_tooltip = KAR_pagan_wars
 	}
 }
 
@@ -1967,7 +1967,7 @@ shared_focus = {
 }
 
 shared_focus = { 
-	id = KAR_slavic_feifdoms
+	id = KAR_slavic_fiefdoms
 	icon = GFX_KAR_saluting_pagan
 	x = -1
 	y = 1
@@ -2068,13 +2068,22 @@ shared_focus = {
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = KAR_crush_the_false_state
-	prerequisite = { focus = KAR_slavic_feifdoms }
+	prerequisite = { focus = KAR_slavic_fiefdoms }
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
-		
+		BLT = {
+			add_state_claim = 189
+			add_state_claim = 11
+			add_state_claim = 190
+			add_state_claim = 12
+			add_state_claim = 13
+			add_state_claim = 191
+			add_state_claim = 784
+		}
+		add_threat = 10
 	}
 }
 
@@ -2092,7 +2101,18 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-		
+		MRV = {
+			add_state_claim = 97
+			add_state_claim = 92
+			add_state_claim = 90
+			add_state_claim = 10
+			add_state_claim = 98
+			add_state_claim = 87
+		}
+		create_wargoal = {
+			target = ORU
+			type = puppet_wargoal_focus
+		}
 	}
 }
 
@@ -2141,6 +2161,15 @@ shared_focus = {
 		puppet = PNE
 		PNE = {
 			set_cosmetic_tag = PNE_KAR_fiefdom
+			create_country_leader = {
+				name = "Hochmeister Toth"
+				desc = "HHHH"
+				picture = "Toth_Pagan.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+			}
 		}
 		DAC = {
 			country_event = {
@@ -2193,7 +2222,37 @@ shared_focus = {
 	} 
 
 	completion_reward = {
-		
+		every_state = {
+			limit = {
+				AND = { 
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					is_core_of = VNE
+				}
+			}
+			VNE = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = RMA
+			}
+			VNE = {
+				add_state_claim = PREV
+			}
+		}
+		puppet = VNE
+		VNE = {
+			set_cosmetic_tag = VNE_KAR_pagan
+		}
+		create_wargoal = {
+			target = RMA
+			type = annex_everything
+		}
 	}
 }
 
@@ -3123,7 +3182,7 @@ shared_focus = {
 			OR = {
 				AND = {
 					NOT = { has_completed_focus = KAR_more_into_the_factories has_completed_focus = KAR_neocameralism }
-					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten }	
+					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten... }	
 				}
 				AND = {
 					NOT = { 
@@ -3185,7 +3244,7 @@ shared_focus = {
 			OR = {
 				AND = {
 					NOT = { has_completed_focus = KAR_more_into_the_factories has_completed_focus = KAR_neocameralism }
-					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten }	
+					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten... }	
 				}
 				AND = {
 					NOT = { 
@@ -3251,7 +3310,7 @@ shared_focus = {
 			OR = {
 				AND = {
 					NOT = { has_completed_focus = KAR_more_into_the_factories has_completed_focus = KAR_neocameralism }
-					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten }	
+					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten... }	
 				}
 				NOT = { is_neighbor_of = KA2 }
 				has_war = yes
@@ -3285,7 +3344,7 @@ shared_focus = {
 			OR = {
 				AND = {
 					NOT = { has_completed_focus = KAR_more_into_the_factories has_completed_focus = KAR_neocameralism }
-					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten }	
+					NOT = { has_completed_focus = KAR_berlin_military_research_institute has_completed_focus = KAR_wenn_die_soldaten... }	
 				}
 				has_war = yes
 			}
@@ -5731,14 +5790,6 @@ shared_focus = {
 	}
 	ai_will_do = { 
 		factor = 1
-	} 
-	available = {
-		every_state = {
-			limit = {
-				has_state_flag = KAR_civil_war_state
-			}
-			is_owned_by = ROOT
-		}
 	}
 
 	completion_reward = {

@@ -301,3 +301,38 @@ PNE_KAR_fiefdom = {
 	color = rgb { 66 58 39 }
 	color_ui = rgb { 66 58 39 }
 }
+
+CAU_KAR_pagan = {
+	color = rgb { 41 66 39 }
+	color_ui = rgb { 110 110 110 }
+}
+
+ERU_KAR_pagan = {
+	color = rgb { 41 66 39 }
+	color_ui = rgb { 110 110 110 }
+}
+
+CTA_KAR_pagan = {
+	color = rgb { 66 39 39 }
+	color_ui = rgb { 66 39 39 }
+}
+
+ORU_KAR_pagan = {
+	color = rgb { 39 50 66 }
+	color_ui = rgb { 39 50 66 }
+}
+
+BLT_KAR_pagan = {
+	color = rgb { 66 58 39 }
+	color_ui = rgb { 66 58 39 }
+}
+
+BAL_KAR_pagan = {
+	color = rgb { 127 145 153 }
+	color_ui = rgb { 127 145 153 }
+}
+
+VNE_KAR_pagan = {
+	color = rgb { 46 87 46 }
+	color_ui = rgb { 46 87 46 }
+}

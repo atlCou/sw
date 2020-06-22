@@ -1,4 +1,4 @@
-﻿capital = 274
+﻿capital = 141
 
 # Starting tech
 set_technology = {
@@ -53,14 +53,54 @@ set_convoys = 15
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+	democratic = 55
+	fascism = 5
+	communism = 15
+	neutrality = 25
+}
+
+create_country_leader = {
+	name = "Carla von Rosen"
+	desc = "HHHH"
+	picture = "Carla von Rosen.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Svenja Lindholm"
+	desc = "HHHH"
+	picture = "Svenja Lindholm.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Nilsa Flyg"
+	desc = "HHHH"
+	picture = "Nilsa Flyg.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Elise Kristersson"
+	desc = "HHHH"
+	picture = "elise von dietrich.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
 }
