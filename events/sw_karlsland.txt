@@ -474,6 +474,32 @@ country_event = { ##### Rip Apart Capital - 2 years after event
 	}	
 }
 
+country_event = { ##### Post-Annex Wallonia issues
+	id = karlsland.501
+	title = karlsland.501.t
+	desc = karlsland.501.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KAR
+		owns_state = 34
+		NOT = { has_completed_focus = KAR_gaulish_issue }
+		has_completed_focus = KAR_into_the_low_countries
+	}
+	
+	option = {
+		name = karlsland.501.a
+		34 = {
+			add_state_modifier = {
+				modifier = {
+					resistance_target = 0.15
+				}
+			}
+		}
+	}	
+}
+
 country_event = { ##### Transylvania for an Alliance
 	id = karlsland.510
 	title = karlsland.510.t

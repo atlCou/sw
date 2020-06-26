@@ -170,6 +170,85 @@ KAR_pagan_wars = {
 		}
 	}
 	
+	KAR_form_dutch = {
+		icon = infiltrate_state
+		cost = 30
+		allowed = { tag = KAR }
+		available = {
+			any_state = {
+				AND = {
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					NOT = { owner = { tag = NET } }
+					OR = {
+						state = 7
+						state = 36
+						state = 35
+						state = 795
+						state = 6
+					}
+				}
+			}
+		}
+		visible = {
+			KAR = {
+				has_completed_focus = KAR_into_the_low_countries
+			}
+			NET = {
+				OR = {
+					exists = no 
+					is_puppet_of = KAR
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							state = 7
+							state = 36
+							state = 35
+							state = 795
+							state = 6
+						}
+					}
+				}
+				NET = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			puppet = NET
+			NET = {
+				set_cosmetic_tag = NET_KAR_pagan
+				create_country_leader = {
+					name = "Niederlands Intergration Committee"
+					desc = "HHHH"
+					picture = "council.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = "" 
+					name = ""
+				}
+			}
+		}
+	}
+	
 	KAR_transfer_south_slav = {
 		icon = infiltrate_state
 		cost = 10
@@ -189,7 +268,6 @@ KAR_pagan_wars = {
 						is_owned_by = SER
 					}
 				}
-				
 			}
 		}
 		visible = {
@@ -337,33 +415,51 @@ KAR_pagan_wars = {
 		cost = 30
 		allowed = { tag = KAR }
 		available = {
-			any_state = {
-				AND = {
-					OR = {
-						is_owned_by = ROOT
-						owner = { is_puppet_of = ROOT }
+			OR = {
+				any_state = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						NOT = {
+							is_owned_by = CTA
+						}
+						OR = {
+							##### Central Asia
+							state = 402
+							state = 404
+							state = 405
+							state = 406
+							state = 407
+							state = 590
+							state = 588
+							state = 589
+							state = 587
+							state = 586
+							state = 585
+							state = 583
+							state = 732
+						}
 					}
-					OR = {
-						##### Central Asia
-						state = 402
-						state = 404
-						state = 405
-						state = 406
-						state = 407
-						state = 590
-						state = 588
-						state = 589
-						state = 587
-						state = 586
-						state = 585
-						state = 583
-						state = 732
-						#### Caucuses
-						state = 233
-						state = 232
-						state = 231
-						state = 230
-						state = 229 ### glad those go in order
+				}
+				any_state = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						NOT = {
+							is_owned_by = CAU
+						}
+						OR = {
+							#### Caucuses
+							state = 233
+							state = 232
+							state = 231
+							state = 230
+							state = 229 ### glad those go in order
+						}
 					}
 				}
 			}
@@ -459,6 +555,7 @@ KAR_pagan_wars = {
 						is_owned_by = ROOT
 						owner = { is_puppet_of = ROOT }
 					}
+					NOT = { is_owned_by = BLT }
 					OR = {
 						state = 189
 						state = 11
@@ -536,7 +633,7 @@ KAR_pagan_wars = {
 		allowed = { tag = KAR }
 		available = {
 			any_state = {
-				AND = { 
+				AND = {
 					OR = {
 						is_core_of = ORU
 						is_claimed_by = ORU
@@ -547,6 +644,65 @@ KAR_pagan_wars = {
 					}
 					NOT = {
 						is_owned_by = ORU
+					}
+					NOT = {
+						OR = {
+							state = 654
+							state = 40
+							state = 570
+							state = 571
+							state = 403
+							state = 572
+							state = 653
+							state = 580
+							state = 329
+							state = 568
+							state = 569
+							state = 570
+							state = 578
+							state = 576
+							state = 577
+							state = 580
+							state = 516
+							state = 579
+							state = 581
+							state = 573
+							state = 582
+						}
+					}
+				}
+			}
+			any_state = {
+				AND = {
+					OR = {
+						state = 654
+						state = 40
+						state = 570
+						state = 571
+						state = 403
+						state = 572
+						state = 653
+						state = 580
+						state = 329
+						state = 568
+						state = 569
+						state = 570
+						state = 578
+						state = 576
+						state = 577
+						state = 580
+						state = 516
+						state = 579
+						state = 581
+						state = 573
+						state = 582
+					}
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					NOT = {
+						is_owned_by = ERU
 					}
 				}
 			}

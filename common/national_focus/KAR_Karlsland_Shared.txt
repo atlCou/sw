@@ -1904,7 +1904,13 @@ shared_focus = {
 		34 = {
 			add_manpower = -400
 		}
-		#remove_ideas = KAR_gaulish_issue_idea
+		34 = {
+			add_state_modifier = {
+				modifier = {
+					resistance_target = -0.15
+				}
+			}
+		}
 	}
 }
 
