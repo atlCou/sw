@@ -880,6 +880,86 @@ spriteTypes = {
 		name = "GFX_generic_trucks"
 		texturefile = "gfx/interface/goals/generic_trucks.dds"
 	}
+	SpriteType = {
+		name = "GFX_KAR_old_map"
+		texturefile = "gfx/interface/goals/KAR_old_map.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_war"
+		texturefile = "gfx/interface/goals/KAR_pagan_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_dam"
+		texturefile = "gfx/interface/goals/KAR_dam.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_generic"
+		texturefile = "gfx/interface/goals/KAR_pagan_generic.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_baltic"
+		texturefile = "gfx/interface/goals/KAR_baltic.dds"
+	}
+	SpriteType = {
+		name = "GFX_venezia_shield_pagan"
+		texturefile = "gfx/interface/goals/venezia_shield_pagan.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_orussia"
+		texturefile = "gfx/interface/goals/KAR_pagan_orussia.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_gallia"
+		texturefile = "gfx/interface/goals/KAR_pagan_gallia.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_grab_mone"
+		texturefile = "gfx/interface/goals/KAR_grab_mone.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_crush"
+		texturefile = "gfx/interface/goals/KAR_pagan_crush.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_helvetia"
+		texturefile = "gfx/interface/goals/KAR_pagan_helvetia.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_socialist_war"
+		texturefile = "gfx/interface/goals/generic_socialist_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_keep_peace"
+		texturefile = "gfx/interface/goals/GAL_keep_peace.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_karlsland_shake"
+		texturefile = "gfx/interface/goals/generic_karlsland_shake.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_karlsland_hostile"
+		texturefile = "gfx/interface/goals/generic_karlsland_hostile.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_free_belgica"
+		texturefile = "gfx/interface/goals/GAL_free_belgica.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_orussia_shake"
+		texturefile = "gfx/interface/goals/generic_orussia_shake.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_mankinds_bulwark"
+		texturefile = "gfx/interface/goals/GAL_mankinds_bulwark.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_successful_rev"
+		texturefile = "gfx/interface/goals/GAL_successful_rev.dds"
+	}
+	SpriteType = {
+		name = "GFX_GAL_net_war"
+		texturefile = "gfx/interface/goals/GAL_net_war.dds"
+	}
 }
 
 

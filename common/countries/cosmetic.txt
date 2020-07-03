@@ -336,3 +336,13 @@ VNE_KAR_pagan = {
 	color = rgb { 46 87 46 }
 	color_ui = rgb { 46 87 46 }
 }
+
+NET_KAR_pagan = {
+	color = rgb { 41 66 39 }
+	color_ui = rgb { 41 66 39 }
+}
+
+GAL_KAR_pagan = {
+	color = rgb { 39 50 66 }
+	color_ui = rgb { 39 50 66 }
+}

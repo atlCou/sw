@@ -1481,11 +1481,9 @@ shared_focus = {
 			limit = {
 				AND = {
 					OR = {
-						original_tag = KAR
+						original_tag = OST
 						original_tag = BRI
-						original_tag = RMA
-						original_tag = BLG
-						has_country_flag = GLOBAL_IS_KARLSLAND
+						original_tag = VNE
 					}
 					OR = { has_government = democratic NOT = { has_country_flag = GLOBAL_NON_CANON } }
 				}
@@ -3840,8 +3838,527 @@ shared_focus = {
 }
 
 
+################ Democratic Foreign
+
+shared_focus = {
+	id = GAL_keeping_the_peace
+	icon = GFX_GAL_keep_peace
+	x = 23
+	y = 7
+	cost = 3
+	available_if_capitulated = yes
+	mutually_exclusive = { focus = GAL_spread_the_revolution }
+	ai_will_do = {
+		base = 0
+	}
+	available = {
+		has_completed_focus = GAL_mutual_defense_pact
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = GAL_guar_low_countries
+	icon = GFX_focus_generic_support_the_left_right
+	x = -1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_keeping_the_peace }
+	relative_position_id = GAL_keeping_the_peace
+	ai_will_do = {
+		base = 0
+	}
+	bypass = {
+		AND = {
+			BLG = {
+				OR = { 
+					exists = no
+					is_puppet = yes
+					has_war = yes
+				}
+			}
+			NET = {
+				OR = { 
+					exists = no
+					is_puppet = yes
+					has_war = yes
+				}
+			}
+		}
+	}
+	completion_reward = {
+		if = {	
+			limit = {
+				BLG = {
+					exists = yes
+					is_puppet = no
+					has_war = no
+				}
+			}
+			give_guarantee = BLG	
+		}
+		if = {	
+			limit = {
+				NET = {
+					exists = yes
+					is_puppet = no
+					has_war = no
+				}
+			}
+			give_guarantee = NET	
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_make_up_with_karlsland
+	icon = GFX_generic_karlsland_shake
+	x = 1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		OR = {
+			AND = {
+				has_completed_focus = GAL_keeping_the_peace
+				any_country = {
+					OR = {
+						has_country_flag = GLOBAL_IS_KARLSLAND
+						tag = KAR
+					}
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+					NOT = { 
+						tag = KA1
+					}
+					is_puppet = no
+				}
+			}
+			AND = {
+				has_completed_focus = GAL_spread_the_revolution
+				any_country = {
+					OR = {
+						has_country_flag = GLOBAL_IS_KARLSLAND
+						tag = KAR
+					}
+					has_government = communism
+					is_puppet = no
+				}
+			}
+		}
+	}
+	bypass = {
+		any_country = {
+			OR = {
+				has_country_flag = GLOBAL_IS_KARLSLAND
+				tag = KAR
+			}
+			is_puppet = yes
+		}
+	}
+	prerequisite = { focus = GAL_keeping_the_peace focus = GAL_spread_the_revolution }
+	relative_position_id = GAL_keeping_the_peace
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_an_old_rivalry
+	icon = GFX_generic_karlsland_hostile
+	x = 3
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		OR = {
+			has_completed_focus = GAL_keeping_the_peace
+			AND = {
+				has_completed_focus = GAL_spread_the_revolution
+				any_country = {
+					OR = {
+						has_country_flag = GLOBAL_IS_KARLSLAND
+						tag = KAR
+					}
+					NOT = {
+						has_government = communism
+					}
+				}
+			}
+		} ### why did this take me longer than a minute to write
+	} ### why are my comments so useless
+	prerequisite = { focus = GAL_keeping_the_peace focus = GAL_spread_the_revolution }
+	relative_position_id = GAL_keeping_the_peace
+	bypass = {
+		any_country = {
+			OR = {
+				has_country_flag = GLOBAL_IS_KARLSLAND
+				tag = KAR
+			}
+			is_puppet = yes
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GAL_invite_karlsland
+	icon = GFX_entetediplo
+	x = -2
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_make_up_with_karlsland }
+	relative_position_id = GAL_spread_the_revolution
+	available = {
+		NOT = { 
+			any_country = {
+				OR = {
+					has_country_flag = GLOBAL_IS_KARLSLAND
+					tag = KAR
+				}
+				is_in_faction = yes
+			}
+		}
+	}
+	bypass = {
+		any_country = {
+			OR = {
+				has_country_flag = GLOBAL_IS_KARLSLAND
+				tag = KAR
+			}
+			is_in_faction = yes
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		country_event = {
+			id = gallia.24
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_claim_alsace
+	icon = GFX_goal_generic_territory_or_war
+	x = 0
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_an_old_rivalry }
+	relative_position_id = GAL_keeping_the_peace
+	available = { has_completed_focus = GAL_keeping_the_peace }
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		add_state_core = 28
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = GAL_spread_the_revolution
+	icon = GFX_generic_socialist_war
+	x = 27
+	y = 7
+	cost = 3
+	available_if_capitulated = yes
+	mutually_exclusive = { focus = GAL_keeping_the_peace }
+	ai_will_do = {
+		base = 0
+	}
+	available = {
+		has_completed_focus = GAL_claim_the_rhine_com
+	}
+	completion_reward = {
+		add_political_power = 75
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = GAL_invite_romagna
+	icon = GFX_Italia
+	x = -2
+	y = 3
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_keeping_the_peace }
+	relative_position_id = GAL_keeping_the_peace
+	available = {
+		RMA = {
+			is_in_faction = no
+			is_puppet = no
+		}
+	}
+	bypass = {
+		RMA = {
+			OR = {
+				is_in_faction = no
+				is_puppet = no
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		country_event = {
+			id = gallia.24
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_invite_orussia
+	icon = GFX_generic_orussia_shake
+	x = 1
+	y = 3
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_claim_alsace focus = GAL_invite_karlsland }
+	relative_position_id = GAL_keeping_the_peace
+	available = {
+		ORU = {
+			is_in_faction = no
+			is_puppet = no
+		}
+	}
+	bypass = {
+		ORU = {
+			OR = {
+				is_in_faction = no
+				is_puppet = no
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		ORU = { 
+			country_event = {
+				id = gallia.24
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GAL_mankinds_bulwark
+	icon = GFX_GAL_mankinds_bulwark
+	x = 1
+	y = 4
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_invite_orussia }
+	prerequisite = { focus = GAL_invite_romagna }
+	relative_position_id = GAL_keeping_the_peace
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GAL_free_the_belgicans
+	icon = GFX_GAL_free_belgica
+	x = 1
+	y = 1
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		BLG = {
+			exists = yes
+			NOT = { has_government = communism }
+		}
+	}
+	prerequisite = { focus = GAL_spread_the_revolution }
+	relative_position_id = GAL_spread_the_revolution
+	bypass = {
+		BLG = {
+			OR = {
+				exists = no
+				has_government = communism
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		create_wargoal = {
+			target = BLG
+			type = puppet_wargoal_focus
+		}
+		custom_effect_tooltip = GAL_free_the_belgicans_tooltip #when u puppet it will change color :O
+	}
+}
+
+shared_focus = {
+	id = GAL_push_out_dutch_cap
+	icon = GFX_GAL_net_war
+	x = 2
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		NET = {
+			exists = yes
+			NOT = { has_government = communism }
+		}
+	}
+	prerequisite = { focus = GAL_free_the_belgicans }
+	relative_position_id = GAL_spread_the_revolution
+	bypass = {
+		NET = {
+			OR = {
+				exists = no
+				has_government = communism
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		create_wargoal = {
+			target = NET
+			type = puppet_wargoal_focus
+		}
+		custom_effect_tooltip = GAL_free_the_belgicans_tooltip #when u puppet it will change color :O
+	}
+}
 
 
+shared_focus = {
+	id = GAL_preparations_for_the_karlslander_revolution
+	icon = GFX_goal_generic_construct_military
+	x = 0
+	y = 2
+	cost = 8
+	available_if_capitulated = yes
+	prerequisite = { focus = GAL_an_old_rivalry }
+	prerequisite = { focus = GAL_free_the_belgicans }
+	relative_position_id = GAL_spread_the_revolution
+	bypass = {
+		NOT = {
+			any_owned_state = {
+				any_neighbor_state = {
+					OR = { 
+						is_owned_by = KAR
+						owner = { has_country_flag = GLOBAL_IS_KARLSLAND }
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		every_owned_state = {
+			limit = { 
+				any_neighbor_state = { 
+					OR = { 
+						is_owned_by = KAR
+						owner = { has_country_flag = GLOBAL_IS_KARLSLAND }
+					}
+				}
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+	}
+}
 
 
+shared_focus = {
+	id = GAL_to_the_rhine
+	icon = GFX_focus_focus_fra_border
+	x = 0
+	y = 3
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		KAR = {
+			exists = yes
+			NOT = { has_government = communism }
+		}
+	}
+	prerequisite = { focus = GAL_preparations_for_the_karlslander_revolution }
+	prerequisite = { focus = GAL_push_out_dutch_cap }
+	relative_position_id = GAL_spread_the_revolution
+	bypass = {
+		KAR = {
+			OR = {
+				exists = no
+				has_government = communism
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		create_wargoal = {
+			target = KAR
+			type = puppet_wargoal_focus
+		}
+	}
+}
 
+shared_focus = {
+	id = GAL_a_revolution_secured
+	icon = GFX_GAL_successful_rev
+	x = 0
+	y = 4
+	cost = 8
+	available_if_capitulated = yes
+	available = {
+		KAR = {
+			OR = {
+				AND = {
+					exists = yes
+					has_government = communism
+				}
+				exists = no
+			}
+		}
+	}
+	prerequisite = { focus = GAL_to_the_rhine }
+	relative_position_id = GAL_spread_the_revolution
+	ai_will_do = {
+		base = 0
+	}
+	completion_reward = {
+		#something
+	}
+}

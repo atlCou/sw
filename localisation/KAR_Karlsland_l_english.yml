@@ -142,6 +142,12 @@ BLT_KAR_pagan_fascism_ADJ:0 "Baltic"
 VNE_KAR_pagan_fascism:0 "Kommissariat Apennin"
 VNE_KAR_pagan_fascism_DEF:0 "The Kommissariat Apennin"
 VNE_KAR_pagan_fascism_ADJ:0 "Italian"
+NET_KAR_pagan_fascism:0 "Generalgouvernement Niederlande"
+NET_KAR_pagan_fascism_DEF:0 "The Generalgouvernement Niederlande"
+NET_KAR_pagan_fascism_ADJ:0 "Dutch-Karlslander"
+GAL_KAR_pagan_fascism:0 "Gallien"
+GAL_KAR_pagan_fascism_DEF:0 "Gallien"
+GAL_KAR_pagan_fascism_ADJ:0 "Gallian"
 
 #########################################
 
@@ -257,10 +263,101 @@ KAR_scattered_family:0 "Our Scattered Family"
 KAR_ukkos_children_rudel:0 "Ukko's Children"
 KAR_decry_romagnanism:0 "Decry Romagnanism Everywhere!"
 KAR_crusade_for_uppsala:0 "Crusade for Uppsala"
+KAR_an_old_map:0 "An Old Map..."
+KAR_an_old_map_desc:0 "An old map shows the dominance of Karlslandic culture has been drastically understated. We used to spread from the north of Italia to far into Orussia and Gallia. Romagna took this from us. The regimes which spread over Europe in every almanac and every modern map descend from this long war against our people. It is time for us to right the wrongs."
+KAR_into_the_low_countries:0 "Into the Low Countries"
+KAR_into_the_low_countries_desc:0 "The Low Countries exist only as a historical anomaly. The Dutch dialect is subversively referred to as a language by its scholars, and Belgica rules in an expoloitation of its unnatural and inorganic borders. Being set in long precedent, these two great political errors can only be resolved through conflict."
+KAR_into_the_low_countries_tooltip:0 "If §Y[GAL.GetNameDef]§! has §Yguaranteed§! or §Ypuppeted§! the §YLow Countries§!, they will be given an event to §Cpotentially relinquish that guarantee§! if it feels it's §Runable or unwilling§! to defend them."
+KAR_break_the_dams:0 "Flood the Dams"
+KAR_break_the_dams_desc:0 "The dams which help form the Netherlands are a testament to their artificiality and falsity as a legitimate nation. The dams will be flooded, and the misdirected Karlslanders will be forced to return; tails between their legs."
+KAR_deprive_the_nobility:0 "Deprive the Nobility"
+KAR_deprive_the_nobility_desc:0 "The debauchery of the Belgican nobility must be condemed in the greatest manner possible. Their land hogging, their cruelty to the lost Karlslanders which resided there, and false regime must be swiftly and totally punished; so that the old Beligcan nobility never sees an easy life again."
+KAR_rip_apart_capital:0 "Rip Apart Their Capital!"
+KAR_rip_apart_capital_desc:0 "The Western Karlslanders were not able to resist temptation. Infamously so, they were the creators of modern capital. For this, it must be seized from them, so that those who deserve that wealth can put it to proper use."
+KAR_gaulish_issue:0 "Solve the Gallian Issue"
+KAR_gaulish_issue_desc:0 "A large number of Gallians resided in southern Belgica, a visible and painful testament to the falsity of the late Belgican state. It's time we banned the use of Gallian within these territories, and shifted the Gallian speaking politicians back to their proper homeland."
+KAR_liberate_gallia_from_the_romagnan_boot:0 "Free Gallia from the \nRomagnan Boot!"
+KAR_liberate_gallia_from_the_romagnan_boot_desc:0 "Despite our historical rivarly, Gallia was ultimately one of the first victims of old Romagnan aggression. Their subsequent states, as with the rest of Europe, have all been slaves to Romagnan hegemony; continously cemented as attempts by the faithful Celts were crushed by despotic Romagnan monarchs and republicans. It's time we freed our Celtic neighbors."
+KAR_crush_the_false_state:0 "Crush the False State"
+KAR_crush_the_false_state_desc:0 "Ostmark is a disgusting and pathetic attempt at bringing out a utopic, functioning state from the unnatural borders of an empire formed from marriage and exploitation of the slavs. The experiment must be crushed, its Karlslanders brought to their home country, and its minorities reminded that 'cooperation' ultimately leads only to subjegation."
+KAR_slavic_fiefdoms:0 "The Slavic Orders"
+KAR_slavic_fiefdoms_desc:0 "Certain groups within the MSKP, including slavic volunteers which have realized that strength resides most within us (and not their liberal state), are deserving of great spoils from the destruction of Ostmark. We will give them two states as prizes for their efforts."
+KAR_carving_out_pannonia:0 "The Pannonian Spoils"
+KAR_carving_out_pannonia_desc:0 "For centuries, the Pannonians collaborated with southern Karlslanders and accepted steppe peoples with open arms. Perhaps no people in late Ostmark require a lesson in strength more than them, so we will force it upon them. Loyal MSKP members will govern its core territories, and we may able to keep Dacia quiet by giving them Transylvania to really send the message."
+KAR_the_baltic_lands:0 "Our Forest Brothers"
+KAR_the_baltic_lands_desc:0 "When Karlsland was most poisoned by Romagnan doctrine, we subjugated and persecuted the Baltic peoples for their native beliefs. A mistake it may have been, but they were still ultimately unable to defend themselves. Their subjegation under the Orussians is a disgusting result of centuries of conflict and our disinterest in taking ownership of that land. It's time we claimed our extended family again."
+KAR_the_degen_trade_repub:0 "The Degenerate\n'Trade Republic'"
+KAR_the_degen_trade_repub_desc:0 "Venezia occupies half of Italia, and controls much of the southern slavs through a long history of exerting strength through their trade routes and participating in true conquest. A valiant struggle indeed; but one which was inspired by a lust for excesses and degeneracy. Ultimately, Europe cannot be fixed while all of Italia remains so backwards."
+KAR_empire_in_the_east:0 "The Dying Empire"
+KAR_empire_in_the_east_desc:0 "Orussia is a dying empire. Despite its attempts to ward off the worst revolutionaries through reform and compromise, its humilating defeat against Fuso demonstrates that the empire has lost its place in the sun. Its lands must be seized by those who deserve it, who will treat the land and its history with reverence and respect."
+KAR_a_border_with_romagna:0 "Our Border with the Romagnans"
+KAR_a_border_with_romagna_desc:0 "It is inevitable that the nation which represents the religion that has subjugated European peoples long past its political roots would come into conflict with us. It is a conflict which screams for a resolution - and with our strength, that will be their defeat."
+KAR_squash_helvetia:0 "Squash the \nMountain Republic"
+KAR_squash_helvetia_desc:0 "Helvetia jumped out of Karlsland's grasp when it was freed in a treaty three-hundered years ago. Though they may hold a distinct taste for neutrality, they are not ultimately that different from the nations which surround them. It's time for Helvetia to come back home."
 
+
+### Flags
 KAR_has_to_sneak_flag:0 "§YBaltland§! refused to give §Ymilitary access§!, but Rudel can still sneak through."
 KAR_scattered_family_tooltip:0 "If §YOstmark§! has §Rshattered§!, their Karlslander lands will be given an event calling for §Cearly, peaceful integration.§!"
 KAR_quantum_nonsense_tooltip:0 "We will §Cexpel§! all §YKarlslander§! scientists publishing §Canti-Karlslander research!§! We foresee no §Rnegative repercussions§! from this action."
+
+### Ideas
+KAR_rip_apart_capital_idea:0 "Seized Dutch Capital"
+KAR_rip_apart_capital_730_idea:0 "Empty Dutch Coffers!"
+
+### Decisions
+KAR_pagan_wars:0 "Managing our New Order"   
+KAR_split_baltland:0 "Form or transfer: [BAL.GetFlag] The Midgardschlange Ordensstaat"
+KAR_form_dutch:0 "Form or transfer: [NET.GetFlag] Generalgouvernement Niederlande"
+KAR_transfer_west_slav:0 "Transfer: [MRV.GetFlag] The Tuistoordensstaat's Claimed Land"
+KAR_transfer_pannonia:0 "Transfer: [PNE.GetFlag] The Yggdrasilordensstaat's Claimed Land"
+KAR_form_misc:0 "Form or transfer: \n[CAU.GetFlag] The Kawkasisch Erbstaat & [CTA.GetFlag] Tengristischeland"
+KAR_form_balts:0 "Form or transfer: [BLT.GetFlag] Generalgouvernement Ostland"
+KAR_form_east_slavs:0 "Form or transfer: \n[ORU.GetFlag] Wuotanordensstaat & [ERU.GetFlag] K. Orussland"
+KAR_transfer_south_slav:0 "Transfer: [SER.GetFlag] The M.u.M.-Ordensstaat's  Claimed Land"
+KAR_form_gallia:0 "Form or transfer: [GAL.GetFlag] Celtic Gallien"
+KAR_transfer_italia:0 "Transfer: [VNE.GetFlag] K. Apennin"
+
+ 
+#############Pagan Events
+karlsland.500.t:0 "Ukko's Children: Suomenusko Archeologists"
+
+
+karlsland.552.t:0 "Picking a Shaman"
+karlsland.552.d:0 "Rudel sat at her desk, an unnatural position for her. She would have preferred to be flying, but her personal assistant had forced her - about as close as anyone could say they forced Rudel to do anything - to rest after breaking her right leg again. After thrusting herself to the top of the national council, and immediately disbanding it, Rudel had found normal governance quite boring. She found herself looking out the giant window opposite her desk, thinking that she would have much preferred to be bombing those mechanical aliens from the sky, and not directing funds to pay for the preservation of some grove on the other side of Karlsland.\n\nAnd suddenly, her eyes jumped down to the pen in her hand. She would hire someone to do that boring work for her! Writing plainly, she directed a letter to the entirety of the party staff, declaring her need for a “shaman” to help her on the more “daunting” tasks of connecting to the “spirits of her ancestors”.\n\nA week later, there were three candidates. The first was a relatively well educated man who wore a pair of glasses, which completed his notably academic appearance. His endorsers claim he has been fascinated with the old traditions of Karlsland since (probably) his formative years - and he is by far the most popular choice within the party. Additionally, it says that he would aid greatly in accelerating the national conversion process, not that that has anything to do with being a shaman, of course.\n\nThe second is a renowned occultist who had recently emigrated from Ostmark. He is the most popular among the youth in our party for his eccentric and extensive belief in the power of ice. Though his appearance is not nearly as professional as the other man, his extraordinarily long beard and his obsession with robes makes him a perfect fit for the profession in the Karlslander’s eyes. He claims to have very little administrative experience at all, not that that has anything to do with being a shaman, of course.\n\nThe last candidate is Rudel’s old war partner, Adelheid. Though suspected of going under the guise of “Comrade Leader” and attempting to start a workers uprising, Rudel is fully aware of the slanderous and false nature of this accusation. Though she is not particularly favoured by the party or the public, she undoubtedly complements Rudel well - and is the only one who could provide free milk. Additionally, she seems to have an uncanny knack for organizing groups of people, not that that has anything to do with being a shaman, of course."
+karlsland.552.a:0 "The man with glasses."
+karlsland.552.b:0 "The bearded occultist."
+karlsland.552.c:0 "Adelheid."
+karlsland.553.t:0 "Cleaning Ranks"
+karlsland.553.d:0 "There were still some who wouldn’t follow Rudel. Those who saw the way she fought against the Neuroi years ago and refused to put on their boots and march behind the witch that saved Karlsland. Those who called the traditional Karlslander ways heathenism and hateful. Even those who once sat on the council then claimed Rudel’s autocratic tendencies would lead only to human conflict. Who was allowing them to say these things? To espouse these lies? An inactive party. The party’s forces had to be sharpened up, Rudel decided. They had to hunt out traitors on the ground the same way she hunted alien demons from the sky.\n\nAnd if they wouldn’t start shaping up, then Rudel would have to start cleaning ranks herself."
+karlsland.553.a:0 "Good."
+karlsland.554.t:0 "The Runes Speak"
+karlsland.554.d:0 "After recovering from her broken leg, Rudel immediately began flying - again. Over forests and fields, she caught sight of brass music being played in a small village. She saw as a stubborn clergyman of the Romagnan Church was driven out of his home village and nearly shot in the back.\n\nRudel did occasionally listen to the spiritual drivel pour out from her shaman’s mouth, as they helped her get through the day or write another speech, but she never felt it in herself. The party was always just a way for Rudel to mold Karlsland in her image, without the annoyances of the Kaiser or competing military officials. She was attracted to the marches that inspired her to enlist as a young girl in the first place; the joyful enthusiasm for conflict that she had felt every day when she flew out, which she had thought no one shared. Maybe, she thought, she was a little attracted to the ancient myths of gifted female soldiers who, alone, could ascend to the afterlife alongside men. Or maybe it was just the propaganda.\n\nEither way, when one of those villagers missed the clergyman and hit Rudel’s striker (completely unaware it was her overhead, to be fair) and she landed in front of that stone, she had regretted not listening. The stone - it beckoned to her. It recited, in a language which sounded familiar but which was entirely unintelligible at the same time; poems. They had a pleasant, consistent scheme, which beckoned the leader even closer. Slowly reaching her arm out, crawling, walking across the forest floor; she touched the stone.\n\nAnd it was then that she understood. Understood why she led Karlsland now, why, out of so many other possibledirections, she was the one chosen to lead. It was not just to kill, not just to pursue that ecstasy she felt years ago. It was so much more. She had a duty to Karlslanders, throughout every dimension of time, to restore the greatness of their people and the knowledge that was lost.\n\nAfter dusting herself off, Rudel took a bit of the stone that had broken off for herself."
+karlsland.554.a:0 "Sounds kinda out there to me."
+karlsland.555.t:0 "Neuroi"
+karlsland.555.d:0 "Rudel was sitting on a chair, in a large, empty dining room. An empty plate sat in front of her, but she was staring at a burning fireplace. She didn’t take breaks often, and this one in particular was largely unintentional. She simply sat there, staring.\n\nNo one knew where they came from, but they’d always been there. Terrorising civilizations, evolving to just barely overcome the technological advances of humanity, slaughtering and burning without any purpose or direction at seemingly random intervals throughout history. The Rätsel were implicated in the oldest human myths as monsters and demons; as serpents that encircle the earth or lanky figures that could clear a human village in an hour. But there was never an explanation or a reason. The girl from Fuso learned nothing in making contact with them, negotiations had infamously failed from every attempt in early history to contemporary modernity.\n\nThis had not bothered Rudel. Rudel only cared about the thrill of the fight, of the joy which (literally) shocked her bones as she dove towards the bizarre machines and blew them to pieces. But the runes had a profound effect on her. Why were these unbiological, unearthly things so intent on conquering lands which held seemingly no use or purpose to them?\n\nUnfortunately, Rudel found no answers in herself. A disappointing conclusion indeed, but one which the ancestors appeared to have reached as well, as even her chunk of the runestone fell silent when she went to question it."
+karlsland.555.a:0 "Interesting."
+
+
+karlsland.510.t:0 "[KAR.GetNameDef] Offers Us Transylvania"
+karlsland.510.d:0 "[KAR.GetNameDef] has offered us their conquered Transylvania territory in exchange for a non-aggression pact. Doing so would hopefully prevent them from looking to us as a target, and finally allow us to see our dream of a nation-state lived. However, this could also lower our guard against them in case they decide to bring their warmongering to us."
+karlsland.510.a:0 "We would love to have Transylvania and peace!"
+karlsland.510.b:0 "Those lunatics cannot be trusted."
+karlsland.511.t:0 "[DAC.GetNameDef] Accepts our Offer"
+karlsland.511.d:0 "[DAC.GetNameDef] has accepted our offer, and we have signed a pact of non-aggression with eachother. Instead of going to The Yggdrasilordensstaat, Transylvania will go to Dacia."
+karlsland.511.a:0 "Good."
+karlsland.512.t:0 "[DAC.GetNameDef] Rejects our Offer"
+karlsland.512.d:0 "[DAC.GetNameDef] has rejected our offer, saying we can't be trusted and they would rather acquire Transylvania through their own means. The land will go to The Yggdrasilordensstaat as planned."
+karlsland.512.a:0 "Fine."
+
+
+karlslandnews.100.t:0 "Norse Dawn in Karlsland"
+karlslandnews.100.d:0 "The churches of Jupiter did not ring their bells in Karlsland today.\n\nThe Reichstag, overrun by HE members and pious members of the outlawed Norse religion, demanded a formal abdication of the monarchy. Seeing no other course of action, with his nation in full (maybe not voluntary) support of the party, the Kaiser's regent had no reasonable choice but to accept. The monarchy's abdication resulted in the immediete implementation of a supreme executive, to be elected only on death, and who would formally head the Norse religion. With power cemented, the first order of the excecutive leader, the brutal witch Hanna Rudel; was to switch the ban on Romagnan religion on its head. Europe trembles with this momentous shift, and what's to come can only be feared."
+karlslandnews.100.a:0 "Worrying."
+karlslandnews.100.b:0 "Romagna will fall!"
+karlslandnews.100.c:0 "We'll see to it that these heretics submit."
+ 
+
 
 ###############################
 ############### NOBLE/TROOD TREE AND IDEAS
@@ -451,33 +548,7 @@ garbage:0 "move that line down"
  karlsland.19.t:0 "Federal Elections!"
  karlsland.20.t:0 "Death of the Kaiser"
  
- 
- #############Pagan Events
- karlsland.500.t:0 "Ukko's Children: Suomenusko Archeologists"
- 
- 
- karlsland.552.t:0 "Picking a Shaman"
- karlsland.552.d:0 "Rudel sat at her desk, an unnatural position for her. She would have preferred to be flying, but her personal assistant had forced her - about as close as anyone could say they forced Rudel to do anything - to rest after breaking her right leg again. After thrusting herself to the top of the national council, and immediately disbanding it, Rudel had found normal governance quite boring. She found herself looking out the giant window opposite her desk, thinking that she would have much preferred to be bombing those mechanical aliens from the sky, and not directing funds to pay for the preservation of some grove on the other side of Karlsland.\n\nAnd suddenly, her eyes jumped down to the pen in her hand. She would hire someone to do that boring work for her! Writing plainly, she directed a letter to the entirety of the party staff, declaring her need for a “shaman” to help her on the more “daunting” tasks of connecting to the “spirits of her ancestors”.\n\nA week later, there were three candidates. The first was a relatively well educated man who wore a pair of glasses, which completed his notably academic appearance. His endorsers claim he has been fascinated with the old traditions of Karlsland since (probably) his formative years - and he is by far the most popular choice within the party. Additionally, it says that he would aid greatly in accelerating the national conversion process, not that that has anything to do with being a shaman, of course.\n\nThe second is a renowned occultist who had recently emigrated from Ostmark. He is the most popular among the youth in our party for his eccentric and extensive belief in the power of ice. Though his appearance is not nearly as professional as the other man, his extraordinarily long beard and his obsession with robes makes him a perfect fit for the profession in the Karlslander’s eyes. He claims to have very little administrative experience at all, not that that has anything to do with being a shaman, of course.\n\nThe last candidate is Rudel’s old war partner, Adelheid. Though suspected of going under the guise of “Comrade Leader” and attempting to start a workers uprising, Rudel is fully aware of the slanderous and false nature of this accusation. Though she is not particularly favoured by the party or the public, she undoubtedly complements Rudel well - and is the only one who could provide free milk. Additionally, she seems to have an uncanny knack for organizing groups of people, not that that has anything to do with being a shaman, of course."
- karlsland.552.a:0 "The man with glasses."
- karlsland.552.b:0 "The bearded occultist."
- karlsland.552.c:0 "Adelheid."
- karlsland.553.t:0 "Cleaning Ranks"
- karlsland.553.d:0 "There were still some who wouldn’t follow Rudel. Those who saw the way she fought against the Neuroi years ago and refused to put on their boots and march behind the witch that saved Karlsland. Those who called the traditional Karlslander ways heathenism and hateful. Even those who once sat on the council then claimed Rudel’s autocratic tendencies would lead only to human conflict. Who was allowing them to say these things? To espouse these lies? An inactive party. The party’s forces had to be sharpened up, Rudel decided. They had to hunt out traitors on the ground the same way she hunted alien demons from the sky.\n\nAnd if they wouldn’t start shaping up, then Rudel would have to start cleaning ranks herself."
- karlsland.553.a:0 "Good."
- karlsland.554.t:0 "The Runes Speak"
- karlsland.554.d:0 "After recovering from her broken leg, Rudel immediately began flying - again. Over forests and fields, she caught sight of brass music being played in a small village. She saw as a stubborn clergyman of the Romagnan Church was driven out of his home village and nearly shot in the back.\n\nRudel did occasionally listen to the spiritual drivel pour out from her shaman’s mouth, as they helped her get through the day or write another speech, but she never felt it in herself. The party was always just a way for Rudel to mold Karlsland in her image, without the annoyances of the Kaiser or competing military officials. She was attracted to the marches that inspired her to enlist as a young girl in the first place; the joyful enthusiasm for conflict that she had felt every day when she flew out, which she had thought no one shared. Maybe, she thought, she was a little attracted to the ancient myths of gifted female soldiers who, alone, could ascend to the afterlife alongside men. Or maybe it was just the propaganda.\n\nEither way, when one of those villagers missed the clergyman and hit Rudel’s striker (completely unaware it was her overhead, to be fair) and she landed in front of that stone, she had regretted not listening. The stone - it beckoned to her. It recited, in a language which sounded familiar but which was entirely unintelligible at the same time; poems. They had a pleasant, consistent scheme, which beckoned the leader even closer. Slowly reaching her arm out, crawling, walking across the forest floor; she touched the stone.\n\nAnd it was then that she understood. Understood why she led Karlsland now, why, out of so many other possibledirections, she was the one chosen to lead. It was not just to kill, not just to pursue that ecstasy she felt years ago. It was so much more. She had a duty to Karlslanders, throughout every dimension of time, to restore the greatness of their people and the knowledge that was lost.\n\nAfter dusting herself off, Rudel took a bit of the stone that had broken off for herself."
- karlsland.554.a:0 "Sounds kinda out there to me."
- karlsland.555.t:0 "Neuroi"
- karlsland.555.d:0 "Rudel was sitting on a chair, in a large, empty dining room. An empty plate sat in front of her, but she was staring at a burning fireplace. She didn’t take breaks often, and this one in particular was largely unintentional. She simply sat there, staring.\n\nNo one knew where they came from, but they’d always been there. Terrorising civilizations, evolving to just barely overcome the technological advances of humanity, slaughtering and burning without any purpose or direction at seemingly random intervals throughout history. The Rätsel were implicated in the oldest human myths as monsters and demons; as serpents that encircle the earth or lanky figures that could clear a human village in an hour. But there was never an explanation or a reason. The girl from Fuso learned nothing in making contact with them, negotiations had infamously failed from every attempt in early history to contemporary modernity.\n\nThis had not bothered Rudel. Rudel only cared about the thrill of the fight, of the joy which (literally) shocked her bones as she dove towards the bizarre machines and blew them to pieces. But the runes had a profound effect on her. Why were these unbiological, unearthly things so intent on conquering lands which held seemingly no use or purpose to them?\n\nUnfortunately, Rudel found no answers in herself. A disappointing conclusion indeed, but one which the ancestors appeared to have reached as well, as even her chunk of the runestone fell silent when she went to question it."
- karlsland.555.a:0 "Interesting."
- 
- 
- karlslandnews.100.t:0 "Norse Dawn in Karlsland"
- karlslandnews.100.d:0 "The churches of Jupiter did not ring their bells in Karlsland today.\n\nThe Reichstag, overrun by HE members and pious members of the outlawed Norse religion, demanded a formal abdication of the monarchy. Seeing no other course of action, with his nation in full (maybe not voluntary) support of the party, the Kaiser's regent had no reasonable choice but to accept. The monarchy's abdication resulted in the immediete implementation of a supreme executive, to be elected only on death, and who would formally head the Norse religion. With power cemented, the first order of the excecutive leader, the brutal witch Hanna Rudel; was to switch the ban on Romagnan religion on its head. Europe trembles with this momentous shift, and what's to come can only be feared."
- karlslandnews.100.a:0 "Worrying."
- karlslandnews.100.b:0 "Romagna will fall!"
- karlslandnews.100.c:0 "We'll see to it that these heretics submit."
- 
+
 
 
 

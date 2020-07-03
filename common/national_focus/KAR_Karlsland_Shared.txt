@@ -1634,7 +1634,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_an_old_map
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_old_map
 	x = 8
 	y = 0
 	cost = 5
@@ -1660,7 +1660,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_into_the_low_countries
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_pagan_war
 	x = -2
 	y = 1
 	cost = 5
@@ -1716,7 +1716,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_break_the_dams
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_dam
 	x = -3
 	y = 2
 	cost = 5
@@ -1830,7 +1830,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_rip_apart_capital
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_noble_crush
 	x = -3
 	y = 3
 	cost = 5
@@ -1857,7 +1857,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_deprive_the_nobility
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_grab_mone
 	x = -1
 	y = 2
 	cost = 5
@@ -1889,7 +1889,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_gaulish_issue
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_capitol_knives
 	x = -1
 	y = 3
 	cost = 5
@@ -1916,7 +1916,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_liberate_gallia_from_the_romagnan_boot
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_pagan_gallia
 	x = -2
 	y = 4
 	cost = 5
@@ -1944,7 +1944,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_crush_the_false_state
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_pagan_crush
 	x = 2
 	y = 1
 	cost = 5
@@ -1974,7 +1974,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_slavic_fiefdoms
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_pagan_generic
 	x = -1
 	y = 1
 	cost = 5
@@ -2068,7 +2068,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_the_baltic_lands
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_baltic
 	x = -1
 	y = 2
 	cost = 5
@@ -2095,7 +2095,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_empire_in_the_east
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_KAR_pagan_orussia
 	x = -1
 	y = 3
 	cost = 5
@@ -2124,7 +2124,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_carving_out_pannonia
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_RMA_greenshirts_goal
 	x = 1
 	y = 1
 	cost = 5
@@ -2188,7 +2188,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_the_degen_trade_repub
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_venezia_shield_pagan
 	x = 1
 	y = 2
 	cost = 5
@@ -2216,7 +2216,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_a_border_with_romagna
-	icon = GFX_KAR_saluting_pagan
+	icon = GFX_Italia
 	x = 1
 	y = 3
 	cost = 5
@@ -2254,6 +2254,20 @@ shared_focus = {
 		puppet = VNE
 		VNE = {
 			set_cosmetic_tag = VNE_KAR_pagan
+			create_country_leader = {
+				name = "Kommissar Cenni" ###Temporary, will change after update c;
+				desc = "HHHH"
+				picture = "Giuseppina Cenni.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+			}
+			set_party_name = { 
+				ideology = fascism 
+				long_name = "Appenine Oversight Committee"
+				name = "OCA"
+			}
 		}
 		create_wargoal = {
 			target = RMA
@@ -2263,20 +2277,29 @@ shared_focus = {
 }
 
 shared_focus = { 
-	id = KAR_pannonian_award
-	icon = GFX_KAR_saluting_pagan
-	x = 3
-	y = 3
+	id = KAR_squash_helvetia
+	icon = GFX_KAR_pagan_helvetia
+	x = 0
+	y = 5
 	cost = 5
 	available_if_capitulated = yes
-	relative_position_id = KAR_crush_the_false_state
-	prerequisite = { focus = KAR_the_degen_trade_repub }
+	relative_position_id = KAR_an_old_map
+	prerequisite = { focus = KAR_liberate_gallia_from_the_romagnan_boot }
+	prerequisite = { focus = KAR_empire_in_the_east }
+	prerequisite = { focus = KAR_a_border_with_romagna }
 	ai_will_do = { 
 		factor = 1
 	} 
 
 	completion_reward = {
-		
+		create_wargoal = {
+			target = HEL
+			type = annex_everything
+		}
+		every_state = {
+			limit = { is_core_of = HEL }
+			add_core_of = KAR
+		}
 	}
 }
 

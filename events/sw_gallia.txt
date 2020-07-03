@@ -606,7 +606,7 @@ country_event = {
 		}
 		GAL = {
 			country_event = {
-				id = gallia.23
+				id = gallia.26
 				days = 1
 			}
 		}

@@ -635,52 +635,6 @@ country_event = { ##### No gib transylvania, go away weird racist pagans
 	}
 }
 
-country_event = { ##### Hidden gib puppet yugoslavia if AI doesn't do it because it's stupid
-	id = karlsland.513
-	title = karlsland.513.t
-	desc = karlsland.513.d
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = KAR
-		KAR = {
-			has_completed_focus = KAR_slavic_fiefdoms
-			is_ai = yes 
-		}
-		OR = {
-			160 = {
-				is_owned_by = KAR
-				owner = { is_puppet_of = KAR }
-			}
-		}
-	}
-	
-	option = {
-		name = karlsland.513.a
-		every_state = {
-			limit = {
-				AND = {
-					OR = {
-						is_owned_by = ROOT
-						owner = { is_puppet_of = ROOT }
-					}
-					OR = {
-						state = 103
-						state = 163
-						state = 104
-						state = 105
-						state = 44
-					}
-				}
-			}
-			SER = {
-				transfer_state = PREV
-				add_state_core = PREV
-			}
-		}
-	}
-}
 
 
 # country_event = {

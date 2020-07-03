@@ -27,6 +27,10 @@ KAR_pagan_wars = {
 	priority = {
 		base = 10
 	}
+	visible = {
+		tag = KAR
+		has_completed_focus = KAR_an_old_map
+	}
 }
 
 # assigning_witches = {

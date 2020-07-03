@@ -91,12 +91,20 @@ KAR_pagan_wars = {
 		cost = 10
 		allowed = { tag = KAR }
 		available = {
-			141 = {
-				OR = {
-					owner = { is_puppet_of = KAR }
-					is_owned_by = KAR
+			OR = {
+				141 = {
+					OR = {
+						owner = { is_puppet_of = KAR }
+						is_owned_by = KAR
+					}
+					NOT = {
+						owner = { tag = BAL }
+					}
 				}
-			} 
+				BAL = {
+					NOT = { has_cosmetic_tag = BAL_KAR_pagan }
+				}
+			}
 		}
 		ai_will_do = {
 			base = 100
@@ -172,7 +180,7 @@ KAR_pagan_wars = {
 	
 	KAR_form_dutch = {
 		icon = infiltrate_state
-		cost = 30
+		cost = 20
 		allowed = { tag = KAR }
 		available = {
 			any_state = {
@@ -242,8 +250,92 @@ KAR_pagan_wars = {
 				}
 				set_party_name = { 
 					ideology = fascism 
-					long_name = "" 
-					name = ""
+					long_name = "Niederlands Intergration Committee"
+					name = "Niederlands Intergration Committee"
+				}
+			}
+		}
+	}
+	
+	KAR_form_gallia = {
+		icon = infiltrate_state
+		cost = 40
+		allowed = { tag = KAR }
+		available = {
+			any_state = {
+				AND = {
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					NOT = { owner = { tag = GAL } }
+					NOT = {
+						OR = {
+							state = 797
+							state = 804
+							is_core_of = KAR
+							is_claimed_by = KAR
+						}
+					}
+					is_core_of = GAL
+				}
+			}
+		}
+		visible = {
+			KAR = {
+				has_completed_focus = KAR_liberate_gallia_from_the_romagnan_boot
+			}
+			GAL = {
+				OR = {
+					exists = no 
+					is_puppet_of = KAR
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						NOT = { owner = { tag = GAL } }
+						NOT = {
+							OR = {
+								state = 797
+								state = 804
+								is_core_of = KAR
+								is_claimed_by = KAR
+							}
+						}
+						is_core_of = GAL
+					}
+				}
+				GAL = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			puppet = GAL
+			GAL = {
+				set_cosmetic_tag = GAL_KAR_pagan
+				create_country_leader = {
+					name = "Kommissar Hoche" ####OK LOOK I KNOW SHE ISN'T CANON BUT I ONLY HAVE SO MANY GALLIANS
+					desc = "HHHH"
+					picture = "Louis Hoche.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = "Parti celtique anti-romagnain"
+					name = "PCA-r"
 				}
 			}
 		}
@@ -410,6 +502,68 @@ KAR_pagan_wars = {
 		}
 	}
 	
+	KAR_transfer_italia = {
+		icon = infiltrate_state
+		cost = 10
+		allowed = { tag = KAR }
+		available = {
+			any_state = {
+				AND = { 
+					OR = {
+						is_core_of = VNE
+						is_claimed_by = VNE
+					}
+					OR = {
+						is_owned_by = ROOT
+						owner = { is_puppet_of = ROOT }
+					}
+					NOT = {
+						is_owned_by = VNE
+					}
+					NOT = {
+						is_owned_by = SER
+					}
+				}
+			}
+		}
+		visible = {
+			KAR = {
+				has_completed_focus = KAR_slavic_fiefdoms
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							is_owned_by = ROOT
+							owner = { is_puppet_of = ROOT }
+						}
+						OR = {
+							is_core_of = VNE
+							is_claimed_by = VNE
+						}
+						NOT = {
+							OR = {
+								is_owned_by = SER
+								is_claimed_by = SER
+								is_core_of = SER
+							}
+						}
+					}
+				}
+				VNE = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+		}
+	}
+	
 	KAR_form_misc = {
 		icon = infiltrate_state
 		cost = 30
@@ -535,11 +689,37 @@ KAR_pagan_wars = {
 			puppet = CTA
 			CAU = {
 				set_cosmetic_tag = CAU_KAR_pagan
-				
+				create_country_leader = {
+					name = "Indo-European Research Council"
+					desc = "HHHH"
+					picture = "school.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = "Indo-European Research Council" 
+					name = "Indo-European Research Council"
+				}
 			}
 			CTA = {
 				set_cosmetic_tag = CTA_KAR_pagan
-				
+				create_country_leader = {
+					name = "Committee for Tengri Reimplementation"
+					desc = "HHHH"
+					picture = "school.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = "Committee for Tengri Reimplementation" 
+					name = "Committee for Tengri Reimplementation"
+				}
 			}
 		}
 	}
@@ -620,8 +800,8 @@ KAR_pagan_wars = {
 				}
 				set_party_name = { 
 					ideology = fascism 
-					long_name = "" 
-					name = ""
+					long_name = "Pan-Baltic Oversight Council" 
+					name = "Pan-Baltic Oversight Council"
 				}
 			}
 		}
@@ -865,7 +1045,7 @@ KAR_pagan_wars = {
 			ERU = {
 				set_cosmetic_tag = ERU_KAR_pagan
 				create_country_leader = {
-					name = "Reichskommissar Lyudmila"
+					name = "Kommissar Lyudmila"
 					desc = "HHHH"
 					picture = "Lyudmila Pagan.dds"
 					expire = "1965.1.1"

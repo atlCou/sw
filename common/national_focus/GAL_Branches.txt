@@ -17,6 +17,8 @@ focus_tree = {
 	shared_focus = GAL_1936elections
 	shared_focus = GAL_army_of_speed
 	shared_focus = GAL_an_impenetrable_defense
+	shared_focus = GAL_keeping_the_peace
+	shared_focus = GAL_spread_the_revolution
 
 }
 
