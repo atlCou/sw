@@ -1,62 +1,62 @@
-Witch_Schools_category = {
-	picture = GFX_decision_cat_picture_naval_treaties
-	allowed = {
+# Witch_Schools_category = {
+	# picture = GFX_decision_cat_picture_naval_treaties
+	# allowed = {
+			# not = {
+				# has_country_flag =  tier3neuroi
+				# or ={ has_country_flag =  tier2neuroi }
+				# or ={ has_country_flag =  tier1neuroi }
+			# }
+		# }
+	# visible = {
 			not = {
 				has_country_flag =  tier3neuroi
 				or ={ has_country_flag =  tier2neuroi }
 				or ={ has_country_flag =  tier1neuroi }
 			}
-		}
-	visible = {
-			#not = {
-			#	has_country_flag =  tier3neuroi
-			#	or ={ has_country_flag =  tier2neuroi }
-			#	or ={ has_country_flag =  tier1neuroi }
-			#}
-		}
-	}
-Tier1_Schools = {
-	picture = GFX_decision_cat_picture_naval_treaties
-	allowed = {
+		# }
+	# }
+# Tier1_Schools = {
+	# picture = GFX_decision_cat_picture_naval_treaties
+	# allowed = {
+		# has_country_flag =  witchtier1
+	# }
+	# visible = {
 		has_country_flag =  witchtier1
-	}
-	visible = {
-		#has_country_flag =  witchtier1
-	}
-}
-Tier2_Schools = {
-	picture = GFX_decision_cat_picture_naval_treaties
-	allowed = {
+	# }
+# }
+# Tier2_Schools = {
+	# picture = GFX_decision_cat_picture_naval_treaties
+	# allowed = {
+		# has_country_flag =  witchtier2
+	# }
+	# visible = {
 		has_country_flag =  witchtier2
-	}
-	visible = {
-		#has_country_flag =  witchtier2
-	}
-}
-Tier3_Schools = {
-	picture = GFX_decision_cat_picture_naval_treaties
-	allowed = {
-		#has_country_flag =  witchtier3
-	}
-	visible = {
-		#has_country_flag =  witchtier3
-	}
-}
-Tier4_Schools = {
-	picture = GFX_decision_cat_picture_naval_treaties
-	allowed = {
+	# }
+# }
+# Tier3_Schools = {
+	# picture = GFX_decision_cat_picture_naval_treaties
+	# allowed = {
+		has_country_flag =  witchtier3
+	# }
+	# visible = {
+		has_country_flag =  witchtier3
+	# }
+# }
+# Tier4_Schools = {
+	# picture = GFX_decision_cat_picture_naval_treaties
+	# allowed = {
+		# has_country_flag =  witchtier4
+	# }
+	# visible = {
 		has_country_flag =  witchtier4
-	}
-	visible = {
-		#has_country_flag =  witchtier4
-	}
-}
-Tier5_Schools = {
-	picture = GFX_decision_cat_picture_naval_treaties
-	allowed = {
+	# }
+# }
+# Tier5_Schools = {
+	# picture = GFX_decision_cat_picture_naval_treaties
+	# allowed = {
+		# has_country_flag =  witchtier5
+	# }
+	# visible = {
 		has_country_flag =  witchtier5
-	}
-	visible = {
-		#has_country_flag =  witchtier5
-	}
-}
+	# }
+# }

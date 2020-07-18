@@ -70,5 +70,24 @@ spriteTypes = {
 		name = "GFX_idea_investors_idea"
 		texturefile = "gfx/interface/ideas/investors_idea.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_NRO_no_men"
+		texturefile = "gfx/interface/ideas/NRO_no_men.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NRO_no_production"
+		texturefile = "gfx/interface/ideas/NRO_no_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NRO_1_men"
+		texturefile = "gfx/interface/ideas/NRO_1_men.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NRO_1_production"
+		texturefile = "gfx/interface/ideas/NRO_1_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NRO_gone_wo_trace"
+		texturefile = "gfx/interface/ideas/NRO_gone_wo_trace.dds"
+	}
 }

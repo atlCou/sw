@@ -1,0 +1,215 @@
+focus_tree = { 
+	id = Neuroi
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			original_tag = NRO
+		} 
+	} 
+	continuous_focus_position = { x = 50 y = 3000 }
+	default = no
+
+	focus = { 
+		id = NRO_collecting_ourselves
+		icon = GFX_empty
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			add_manpower = 10000
+			army_experience = 15
+			add_political_power = 35
+		}
+	}
+	
+	focus = { 
+		id = NRO_another_scout_mission
+		icon = GFX_empty
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_collecting_ourselves }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			country_event = {
+				id = neuroi.1
+			}
+		}
+	}
+	
+	focus = { 
+		id = NRO_technology_progresses
+		icon = GFX_empty
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_another_scout_mission }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	focus = { 
+		id = NRO_and_so_do_we
+		icon = GFX_empty
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_technology_progresses }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			#### Will start giving you neuroi equipment
+			set_variable = {
+				var = NRO_tech_level
+				value = 1936
+			}
+			custom_effect_tooltip = NRO_and_so_do_we_tooltip
+		}
+	}
+	
+	focus = { 
+		id = NRO_gone_without_a_trace
+		icon = GFX_empty
+		x = -3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_collecting_ourselves }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			set_country_flag = GLOBAL_no_diplo
+			add_ideas = NRO_gone_without_a_trace_idea
+			custom_effect_tooltip = NRO_gone_without_a_trace_tooltip
+		}
+	}
+	
+	focus = { 
+		id = NRO_industrial_phen
+		icon = GFX_empty
+		x = -4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_gone_without_a_trace }
+		prerequisite = { focus = NRO_another_scout_mission }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			810 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = NRO_starting_consumer
+				add_idea = NRO_1_consumer
+			}
+		}
+	}
+	
+	focus = { 
+		id = NRO_restart_production
+		icon = GFX_empty
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_collecting_ourselves }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NRO_starting_manpower
+				add_idea = NRO_1_manpower
+			}
+		}
+	}
+	
+	focus = { 
+		id = NRO_more_bodies
+		icon = GFX_empty
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_another_scout_mission }
+		prerequisite = { focus = NRO_restart_production }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NRO_1_manpower
+				add_idea = NRO_2_manpower
+			}
+		}
+	}
+	
+	focus = { 
+		id = NRO_newer_maps
+		icon = GFX_empty
+		x = -1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_and_so_do_we }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			country_event = {
+				id = neuroi.2
+			}
+		}
+	}
+	focus = { 
+		id = NRO_steps_to_seaworthiness
+		icon = GFX_empty
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_and_so_do_we }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	
+}

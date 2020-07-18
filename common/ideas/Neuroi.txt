@@ -1,52 +1,101 @@
 ideas = {
 	country = {
-		neuroi_tier_3 = {
-			picture = ger_revive_the_kaiserreich
-			allowed = {
-				original_tag = NUV
-				original_tag = NUB
-				original_tag = NOS
-			}
-			removal_cost = -1	
+		# neuroi_tier_3 = {
+			# picture = ger_revive_the_kaiserreich
+			# allowed = {
+				# original_tag = NUV
+				# original_tag = NUB
+				# original_tag = NOS
+			# }
+			# removal_cost = -1	
+			# modifier = {
+				# weekly_manpower = 30000
+			# }
+		# }
+		# neuroi_tier_2 = {
+			# picture = ger_revive_the_kaiserreich
+			# allowed = {
+				# original_tag = NUW
+				# original_tag = NUN
+				# original_tag = NMA
+				# original_tag = NMO
+				# original_tag = NUS
+				# original_tag = NUU
+				# original_tag = NBZ				
+			# }
+			# removal_cost = -1	
+			# modifier = {
+				# weekly_manpower = 20000
+			# }
+		# }
+		# neuroi_tier_1 = {
+			# picture = ger_revive_the_kaiserreich
+			# allowed = {
+				# original_tag = NBO
+				# original_tag = NUA
+				# original_tag = NUD
+				# original_tag = NUK
+				# original_tag = NUP
+				# original_tag = NUO
+				# original_tag = NUT				
+			# }
+			# removal_cost = -1
+			# modifier = {
+				# weekly_manpower = 10000
+			# }
+		# }
+		
+		NRO_starting_manpower = {
+			picture = NRO_no_men
 			modifier = {
-				weekly_manpower = 30000
+				weekly_manpower = 10
 			}
 		}
-	}
-		country = {
-		neuroi_tier_2 = {
-			picture = ger_revive_the_kaiserreich
-			allowed = {
-				original_tag = NUW
-				original_tag = NUN
-				original_tag = NMA
-				original_tag = NMO
-				original_tag = NUS
-				original_tag = NUU
-				original_tag = NBZ				
-			}
-			removal_cost = -1	
+		
+		NRO_1_manpower = {
+			picture = NRO_1_men
 			modifier = {
-				weekly_manpower = 20000
+				weekly_manpower = 200
 			}
 		}
-	}
-	country = {
-		neuroi_tier_1 = {
-			picture = ger_revive_the_kaiserreich
-			allowed = {
-				original_tag = NBO
-				original_tag = NUA
-				original_tag = NUD
-				original_tag = NUK
-				original_tag = NUP
-				original_tag = NUO
-				original_tag = NUT				
-			}
-			removal_cost = -1
+		
+		NRO_2_manpower = {
+			picture = NRO_no_men
 			modifier = {
-				weekly_manpower = 10000
+				weekly_manpower = 1000
 			}
 		}
+		
+		NRO_starting_consumer = {
+			picture = NRO_no_production
+			modifier = {
+				consumer_goods_factor = 1
+				industrial_capacity_factory	= -1
+				industrial_capacity_dockyard = -1
+			}
+		}
+		
+		NRO_1_consumer = {
+			picture = NRO_1_production
+			modifier = {
+				consumer_goods_factor = 0.5
+				industrial_capacity_factory	= -0.8
+				industrial_capacity_dockyard = -0.8
+			}
+		}
+		
+		NRO_gone_without_a_trace_idea = {
+		
+			picture = NRO_gone_wo_trace
+			
+			modifier = {
+				intelligence_agency_defense = 10
+				civilian_intel_to_others = -100
+				army_intel_to_others = -100
+				navy_intel_to_others = -100
+				airforce_intel_to_others = -100
+			}
+		}
+		
 	}	
 }

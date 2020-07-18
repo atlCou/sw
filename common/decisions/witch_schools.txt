@@ -1,128 +1,128 @@
-Witch_Schools_category = {
+# Witch_Schools_category = {
 
-	Tier1_Schools = {
-		allowed = { always = yes }
-		icon = ger_mefo_bills
-		available = {
-			has_country_flag = witchtier1
-			hidden_trigger = { always = no } }
-		days_mission_timeout = 3
-		is_good = yes
-		fire_only_once = yes
-		cancel_trigger = { 
-			has_country_flag = cancelled_witch_schools
-			or = { 
-				not = { 
-				has_country_flag = witchtier1
-				}}}
-		remove_effect = {}
-		complete_effect = {}
-		timeout_effect = {
-				country_event = { id = witchescommon.1  days = 1 }
-				hidden_effect = {
-					activate_mission = Tier1_Schools
-				}}
-		ai_will_do = {
-		factor = 200
-		}}
-	Tier2_Schools = {
-		allowed = { always = yes }
-		icon = ger_mefo_bills
-		available = {
-			has_country_flag = witchtier2
-			hidden_trigger = { always = no } }
-		days_mission_timeout = 3
-		is_good = yes
-		fire_only_once = yes
-		cancel_trigger = { 
-			has_country_flag = cancelled_witch_schools
-			or = { 
-				not = { 
-				has_country_flag = witchtier2
-				}}}
-		remove_effect = {}
-		complete_effect = {}
-		timeout_effect = {
-				country_event = { id = witchescommon.2  days = 1 }
-				hidden_effect = {
-					activate_mission = Tier2_Schools
-				}}
-		ai_will_do = {
-		factor = 200
-		}}
-	Tier3_Schools = {
-		allowed = { always = yes }
-		icon = ger_mefo_bills
-		available = {
-			has_country_flag = witchtier3
-			hidden_trigger = { always = no } }
-		days_mission_timeout = 3
-		is_good = yes
-		fire_only_once = yes
-		cancel_trigger = { 
-			has_country_flag = cancelled_witch_schools
-			or = { 
-				not = { 
-				has_country_flag = witchtier3
-				}}}
-		remove_effect = {}
-		complete_effect = {}
-		timeout_effect = {
-				country_event = { id = witchescommon.3  days = 1 }
-				hidden_effect = {
-					activate_mission = Tier3_Schools
-				}}
-		ai_will_do = {
-		factor = 200
-		}}
-	Tier4_Schools = {
-		allowed = { always = yes }
-		icon = ger_mefo_bills
-		available = {
-			has_country_flag = witchtier4
-			hidden_trigger = { always = no } }
-		days_mission_timeout = 3
-		is_good = yes
-		fire_only_once = yes
-		cancel_trigger = { 
-			has_country_flag = cancelled_witch_schools
-			or = { 
-				not = { 
-				has_country_flag = witchtier4
-				}}}
-		remove_effect = {}
-		complete_effect = {}
-		timeout_effect = {
-				country_event = { id = witchescommon.4  days = 1 }
-				hidden_effect = {
-					activate_mission = Tier4_Schools
-				}}
-		ai_will_do = {
-		factor = 200
-		}}
-	Tier5_Schools = {
-		allowed = { always = yes }
-		icon = ger_mefo_bills
-		available = {
-			has_country_flag = witchtier5
-			hidden_trigger = { always = no } }
-		days_mission_timeout = 3
-		is_good = yes
-		fire_only_once = yes
-		cancel_trigger = { 
-			has_country_flag = cancelled_witch_schools
-			or = { 
-				not = { 
-				has_country_flag = witchtier5
-				}}}
-		remove_effect = {}
-		complete_effect = {}
-		timeout_effect = {
-				country_event = { id = witchescommon.5  days = 1 }
-				hidden_effect = {
-					activate_mission = Tier5_Schools
-				}}
-		ai_will_do = {
-		factor = 200
-		}}
-}
+	# Tier1_Schools = {
+		# allowed = { always = yes }
+		# icon = ger_mefo_bills
+		# available = {
+			# has_country_flag = witchtier1
+			# hidden_trigger = { always = no } }
+		# days_mission_timeout = 3
+		# is_good = yes
+		# fire_only_once = yes
+		# cancel_trigger = { 
+			# has_country_flag = cancelled_witch_schools
+			# or = { 
+				# not = { 
+				# has_country_flag = witchtier1
+				# }}}
+		# remove_effect = {}
+		# complete_effect = {}
+		# timeout_effect = {
+				# country_event = { id = witchescommon.1  days = 1 }
+				# hidden_effect = {
+					# activate_mission = Tier1_Schools
+				# }}
+		# ai_will_do = {
+		# factor = 200
+		# }}
+	# Tier2_Schools = {
+		# allowed = { always = yes }
+		# icon = ger_mefo_bills
+		# available = {
+			# has_country_flag = witchtier2
+			# hidden_trigger = { always = no } }
+		# days_mission_timeout = 3
+		# is_good = yes
+		# fire_only_once = yes
+		# cancel_trigger = { 
+			# has_country_flag = cancelled_witch_schools
+			# or = { 
+				# not = { 
+				# has_country_flag = witchtier2
+				# }}}
+		# remove_effect = {}
+		# complete_effect = {}
+		# timeout_effect = {
+				# country_event = { id = witchescommon.2  days = 1 }
+				# hidden_effect = {
+					# activate_mission = Tier2_Schools
+				# }}
+		# ai_will_do = {
+		# factor = 200
+		# }}
+	# Tier3_Schools = {
+		# allowed = { always = yes }
+		# icon = ger_mefo_bills
+		# available = {
+			# has_country_flag = witchtier3
+			# hidden_trigger = { always = no } }
+		# days_mission_timeout = 3
+		# is_good = yes
+		# fire_only_once = yes
+		# cancel_trigger = { 
+			# has_country_flag = cancelled_witch_schools
+			# or = { 
+				# not = { 
+				# has_country_flag = witchtier3
+				# }}}
+		# remove_effect = {}
+		# complete_effect = {}
+		# timeout_effect = {
+				# country_event = { id = witchescommon.3  days = 1 }
+				# hidden_effect = {
+					# activate_mission = Tier3_Schools
+				# }}
+		# ai_will_do = {
+		# factor = 200
+		# }}
+	# Tier4_Schools = {
+		# allowed = { always = yes }
+		# icon = ger_mefo_bills
+		# available = {
+			# has_country_flag = witchtier4
+			# hidden_trigger = { always = no } }
+		# days_mission_timeout = 3
+		# is_good = yes
+		# fire_only_once = yes
+		# cancel_trigger = { 
+			# has_country_flag = cancelled_witch_schools
+			# or = { 
+				# not = { 
+				# has_country_flag = witchtier4
+				# }}}
+		# remove_effect = {}
+		# complete_effect = {}
+		# timeout_effect = {
+				# country_event = { id = witchescommon.4  days = 1 }
+				# hidden_effect = {
+					# activate_mission = Tier4_Schools
+				# }}
+		# ai_will_do = {
+		# factor = 200
+		# }}
+	# Tier5_Schools = {
+		# allowed = { always = yes }
+		# icon = ger_mefo_bills
+		# available = {
+			# has_country_flag = witchtier5
+			# hidden_trigger = { always = no } }
+		# days_mission_timeout = 3
+		# is_good = yes
+		# fire_only_once = yes
+		# cancel_trigger = { 
+			# has_country_flag = cancelled_witch_schools
+			# or = { 
+				# not = { 
+				# has_country_flag = witchtier5
+				# }}}
+		# remove_effect = {}
+		# complete_effect = {}
+		# timeout_effect = {
+				# country_event = { id = witchescommon.5  days = 1 }
+				# hidden_effect = {
+					# activate_mission = Tier5_Schools
+				# }}
+		# ai_will_do = {
+		# factor = 200
+		# }}
+# }

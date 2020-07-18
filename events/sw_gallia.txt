@@ -453,7 +453,7 @@ country_event = {
  
 	option = {
 		name = gallia.12.a
-		load_focus_tree = Gallia_pride
+		load_focus_tree = { tree = Gallia_pride keep_completed = yes }
 		add_stability = -0.3
 	}
 	
@@ -1095,6 +1095,7 @@ country_event = {
 		set_politics = {
 			ruling_party = fascism
 		}
+		remove_ideas = GAL_unstable_politics
 		set_country_flag = GAL_republic_flag
 		set_cosmetic_tag = GAL_gallia_coup_post
 	}
@@ -1104,6 +1105,7 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
+		remove_ideas = GAL_unstable_politics
 		add_stability = -0.1
 		add_popularity = {
 			ideology = neutrality

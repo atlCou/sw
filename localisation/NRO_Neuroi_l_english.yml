@@ -1,0 +1,49 @@
+﻿l_english:
+#### Main Neuroi Nation
+NRO_fascism:0 "Neuroi"
+NRO_fascism_ADJ:0 "Neuroi"
+NRO_fascism_DEF:0 "The Neuroi"
+
+NRO_fascism_party:0 "???"
+NRO_neutrality_party:0 "???"
+NRO_democratic_party:0 "???"
+NRO_communism_party:0 "???"
+
+NRO_1936_BOOKMARK:0 "Humanity has been aware of the Neuroi for a long time. Although under many names, many peoples shared in the experience of the destruction and violence they brought. However, it was not until twenty-two years ago that they would pose a genuine threat to strong civilizations. The [Great] Neuroi War saw a war more devastating than had ever been seen before.\nNineteen years later, the great remnants of humanity remain clueless. They squabble amongst each other as they had for millennia beforehand. As the Neuroi lay outside of humanity’s sights, the ancient beasts may find it is prime time to stand back up again."
+Decentralized_Consciousness_desc:0 "The Neuroi have no leader. They are believed to act almost entirely decentrally, destroying whatever is in its path without any single nucleus. Obvious cooperation is apparent on the tactical level, but any attempt to point to a single source of action is left fruitless."
+
+
+
+
+
+
+
+### Focus Tree
+NRO_collecting_ourselves:0 "Collecting Ourselves"
+NRO_gone_without_a_trace:0 "Gone Without a Trace"
+NRO_another_scout_mission:0 "Another Quiet Scout Mission"
+NRO_restart_production:0 "Restart Production...\n...Again"
+NRO_technology_progresses:0 "Technology Progresses"
+NRO_industrial_phen:0 "The 'Industrial' Phenomenon"
+NRO_and_so_do_we:0 "And So Do We"
+NRO_more_bodies:0 "More Bodies"
+NRO_newer_maps:0 "Drawing Newer Maps"
+NRO_steps_to_seaworthiness:0 "Our Steps to Seaworthiness"
+
+NRO_and_so_do_we_tooltip:0 "Will begin to give you §YNeuroi Armor§! in proportion to your §Yweekly manpower gain§!."
+NRO_gone_without_a_trace_tooltip:0 "§RWill block all diplomacy§! §Yto§! or §Yfrom§! your country, until later focuses."
+
+NRO_starting_consumer:0 "Dead Industry"
+NRO_starting_manpower:0 "Dead Hives"
+NRO_1_consumer:0 "Slow Miscellaneous Industry"
+NRO_1_manpower:0 "Slow Hives"
+NRO_2_manpower:0 "Recovering Hives"
+NRO_gone_without_a_trace_idea:0 "Invisible Entity"
+NRO_gone_without_a_trace_idea_desc:0 "The Neuroi have no notable presence on Earth at the moment, and since it's impossible for any human nation to gather intel on something that may as well not exist, it is impossible to gather intel on the Neuroi."
+
+
+### Events
+neuroi.1.t:0 "1936 Scout Mission"
+neuroi.1.d:0 "Through only a couple more decades, we've become aware of how much the world continues to change. Fuso exerts itself in the East, as monarchies die and the other human nations return to normalcy. As the engine, both magical and purely mechanical, is used more and more, we feel only stronger and stronger.\n\nOur scouts have been reporting for years that a development seen at the end of our great campaign a couple decades ago has been put to widespread use: manmade armor. This is no worry for us, it simply means we will take another great step forward before our next great campaign. Humanity will come to fear us again, as the rightful inheritors of this giant rock."
+neuroi.2.t:0 "Newer Maps"
+neuroi.2.d:0 "Though we have no need for maps in the 'traditional' sense, our knowledge of the political sphere can't be derived from detached observation. Through the combined experiences of our scouts, we note that Fuso still controls a vast amount of territory. Hispania continues to face economic decline, and may be a good feeling ground for our return.\n\nIn less pressing relevancy, Karlsland and Gallia both face radical political divisions. The nations around the Black Sea continue to lag behind their neighbors to the west, but Liberion's strength has grown exponentially. All of this will be considered when we begin our campaign."

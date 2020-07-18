@@ -5,6 +5,8 @@
  Generic_Harder_Trucks:0 ""
  GLOBAL_no_diplo_tooltip:0 "§Y[ROOT.GetNameDef]§! will §Rnot be able to engage in diplomatic alliances§!!"
 
+ GAL_1936_BOOKMARK:0 "Gallia is a nation renown for its beautiful vineyards and its deep political legacy. Although great for attracting academics and tourists, neither contribute to the stability of its state. Not only is it plagued by political radicals in public, but staunch reactionaries infamously permeate its intelligence services. The still-growing urban population grows poorer as the vast aristocracy - indeed, populated with nobility too - tries to grant what they can. With threats unknown in the future, the Gallian government must tread a tight path if it wishes to survive threats both external and internal."
+
  GAL_fascism_party_long:0 "Parti Populaire Gallia"
  GAL_fascism_party:0 "PPG"
  GAL_communism_party_long:0 "Parti Communiste Gallia"
@@ -39,49 +41,6 @@
  GAL_paternal_neutrality:0 "Gallia"
  GAL_paternal_neutrality_DEF:0 "Gallia"
  GAL_paternal_neutrality_ADJ:0 "Gallia"
-
-
- neuroi.1:0 "Neuroi Resurgance in Hispania!"
- neuroi.1.d:0 "Neuroi Resurgance in Hispania!"
- neuroi.1.a:0 "Somebody is going to help us... Right?"
-
-
-
-
-
-
-
-
-
-
-
- news.237.t:0 "Neuroi are back"
- news.237.d:0 "..."
- news.237.a:0 "We shall watch these developments carefully"
-
- generic.20.t:0 "National Reform"
- 
- 
- galw.1.t:0 "Gallian Researchers Finish Experimental Designs"
- galw.1.d:0 "Gallian researchers have spent the years since the last neuroi war designing and testing new concepts for a weapon developed specifically for witches. As a final culmination of their research, they have produced multiple backpack styled designs which allow witches to fly much in the style of our airplanes. They're new and rudimentary, but at least now we have a specialized defense mechanism for when they inevitably attack again.\n\nAlthough we have a small number of witches already in our air force who can be assigned these units, we have just barely a reasonable amount of witches within Gallia available for military purposes. Perhaps improving our numbers should be the next step in preparing our neuroi defense."
- galw.1.a:0 "Excellent!"
- 
- galw.100.t:0 "Department of the Witch"
- galw.100.d:0 "As the third department of the Gallian Socialists, the Department of the Witch will be specifically focused for developing technology and promoting the equality of Gallian witches. The department has already seen handfulls of witches direclty apply - and a couple have already been accepted for enlistment."
- galw.100.a:0 "Great!"
- 
- 
- gallia.600.t:0 "Our Pride"
- gallia.600.d:0 "The regime knew what was coming. With Gallian intelligence agents standing at the gates of every single national institution in Paris, and a royalist flag hanging from the legislatures, the police-less collectivist regime was left with no choice. In only a few weeks, Gallian reactionaries and nationalists seized peaceful control of the nation.\n\nHow peaceful it will be, however, appears to be another issue."
- gallia.600.a:0 "My Pride and Joy!"
- gallia.601.t:0 "'My Joy'"
- gallia.601.d:0 ""It is my greatest joy, to announce to my fellow lovers of the Old Gallia, that today the decadent liberal, non-noble institutions of Gallia will be shaken to their cores with the sheer might of our wills",\nChris Keera announced to an audience of Gallian reactionaries. Paris was a lot quieter those next few weeks."
- gallia.601.a:0 "Now we can get started!"
- gallia.602.t:0 "Gallia's Fate"
- gallia.602.d:0 "It seems the unorganized group of Gallian reactionaries has come to a standstill. Members of the Croix de Feu, who technically were not a part of the coup but who had acted as a public police force since its occurance, are claiming ownership of the coup. Though their desires for a nationalistic, traditionalistic, and illiberal republic are not what Chriss Keera and her large cabal had in mind; they undoubtly hold more support with the general public.\nHowever, the Gallian Loyalists have proven to be fully dedicated to their cause.\n\nOnly one group would walk out victorious."
- gallia.602.a:0 "The Croix de Feu"
- gallia.602.b:0 "The Loyalists"
- 
 
  
  
@@ -380,7 +339,8 @@ GAL_karlslander_actually_desc:0 "Karlsland may have given us what we desired, bu
 GAL_free_the_east:0 "Free The East"
 GAL_free_the_east_desc:0 "We've beaten the Karlslanders and Ostmarkers, but to the east lays the worst offender of them all. The Orussian regime was founded on nothing but lust for power, and its peoples have suffered under that backwards noble rule for too long. We will do what the liberal Gallian emperor of a century ago couldn't do, and cement our Gallia in the permanent stream of human history!"
 
-
+GAL_republic_flag:0 " Cross of Fire Victory"
+GAL_monarch_flag:0 " Loyalist Victory"
 
 
 
@@ -506,8 +466,6 @@ GAL_marechal_trait:0 "Le Jeune Maréchal"
  gallia.11.c:0 "The Socialist Party!"
  gallia.11.e:0 "The Communist Party of Gallia!"
  
- 
- 
  gallia.20.t:0 "The Gallian Republic"
  gallia.20.d:0 "The last year was extraordinarily stressful. As workers striked, and failed terrorist plot after failed terrorist plot were uncovered by half of the Gallian intelligence services, it seems that the government finally pulled through. Without excessive violence, and without extremism, the democratic Gallian Republic has narrowly avoided a collapse.\n\nNewspapers have started to flood out reports that monarchists in the intelligence services have been arrested, and that prominent communist figures have been outed as monarchists looking to incite a reactionary revolution. Nationalistic parties have been tanking in public support as Gallians no longer worry about revolution. It seems like Gallia has finally found its footing again."
  gallia.20.a:0 "Liberté, égalité, fraternité!"
@@ -520,4 +478,34 @@ GAL_marechal_trait:0 "Le Jeune Maréchal"
  gallia.40.d:0 "Blah blah blah some lore stuff i'm going to write later, make sure i actually do"
  gallia.40.a:0 "Ok"
  
+ gallia.600.t:0 "Our Pride"
+ gallia.600.d:0 "The regime knew what was coming. With Gallian intelligence agents standing at the gates of every single national institution in Paris, and a royalist flag hanging from the legislatures, the police-less collectivist regime was left with no choice. In only a few weeks, Gallian reactionaries and nationalists seized peaceful control of the nation.\n\nHow peaceful it will be, however, appears to be another issue."
+ gallia.600.a:0 "My Pride and Joy!"
+ gallia.601.t:0 "'My Joy'"
+ gallia.601.d:0 ""It is my greatest joy, to announce to my fellow lovers of the Old Gallia, that today the decadent liberal, non-noble institutions of Gallia will be shaken to their cores with the sheer might of our wills",\nChris Keera announced to an audience of Gallian reactionaries. Paris was a lot quieter those next few weeks."
+ gallia.601.a:0 "Now we can get started!"
+ gallia.602.t:0 "Gallia's Fate"
+ gallia.602.d:0 "It seems the unorganized group of Gallian reactionaries has come to a standstill. Members of the Croix de Feu, who technically were not a part of the coup but who had acted as a public police force since its occurance, are claiming ownership of the coup. Though their desires for a nationalistic, traditionalistic, and illiberal republic are not what Chris Keera and her large cabal had in mind; they undoubtly hold more support with the general public.\nHowever, the Gallian Loyalists have proven to be fully dedicated to their cause.\n\nOnly one group would walk out victorious."
+ gallia.602.a:0 "The Croix de Feu"
+ gallia.602.b:0 "The Loyalists"
+ 
+ 
+ news.237.t:0 "Neuroi are back"
+ news.237.d:0 "..."
+ news.237.a:0 "We shall watch these developments carefully"
+
+ generic.20.t:0 "National Reform"
+ 
+ 
+ galw.1.t:0 "Gallian Researchers Finish Experimental Designs"
+ galw.1.d:0 "Gallian researchers have spent the years since the last neuroi war designing and testing new concepts for a weapon developed specifically for witches. As a final culmination of their research, they have produced multiple backpack styled designs which allow witches to fly much in the style of our airplanes. They're new and rudimentary, but at least now we have a specialized defense mechanism for when they inevitably attack again.\n\nAlthough we have a small number of witches already in our air force who can be assigned these units, we have just barely a reasonable amount of witches within Gallia available for military purposes. Perhaps improving our numbers should be the next step in preparing our neuroi defense."
+ galw.1.a:0 "Excellent!"
+ 
+ galw.100.t:0 "Department of the Witch"
+ galw.100.d:0 "As the third department of the Gallian Socialists, the Department of the Witch will be specifically focused for developing technology and promoting the equality of Gallian witches. The department has already seen handfulls of witches direclty apply - and a couple have already been accepted for enlistment."
+ galw.100.a:0 "Great!"
+ 
+ 
+
+
  

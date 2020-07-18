@@ -30,6 +30,10 @@ opinion_modifiers = {
 		value = -50
 	}
 	
+	gal_rival_mod = {
+		value = -30
+	}
+	
 	pne_revanchism = {
 		value = -50
 	}

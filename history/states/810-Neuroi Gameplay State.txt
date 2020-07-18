@@ -1,0 +1,19 @@
+state={
+	id=810
+	name="Neuroi Gameplay State"
+	provinces={
+		13234
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	history={
+		owner = NRO
+		add_core_of = NRO
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 10
+		}
+		add_extra_state_shared_building_slots = 13
+	}
+	state_category=megalopolis
+}

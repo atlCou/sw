@@ -1924,7 +1924,7 @@ shared_focus = {
 shared_focus = {
 	id = GAL_my_pride
 	icon = GFX_ballot_suppression
-	x = 16
+	x = 14
 	y = 0
 	cost = 2
 	available_if_capitulated = yes
@@ -2281,7 +2281,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_aux_armes
-	icon = GFX_GAL_republic
+	icon = GFX_generic_charge
 	x = -2
 	y = 1
 	cost = 8
@@ -2303,7 +2303,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_reorganize_the_unions
-	icon = GFX_GAL_republic
+	icon = GFX_fascist_partnership
 	x = -2
 	y = 2
 	cost = 8
@@ -2360,7 +2360,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_no_socialists
-	icon = GFX_GAL_republic
+	icon = GFX_union_deal_break
 	x = 2
 	y = 1
 	cost = 8
@@ -2382,7 +2382,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_no_liberals
-	icon = GFX_GAL_republic
+	icon = GFX_RMA_tighten
 	x = 2
 	y = 2
 	cost = 8
@@ -2404,7 +2404,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_no_monarchists
-	icon = GFX_GAL_republic
+	icon = GFX_KAR_mil_crush
 	x = 2
 	y = 3
 	cost = 8
@@ -2794,7 +2794,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_nationalist_league
-	icon = GFX_GAL_territ_prop
+	icon = GFX_kar_neighborhood
 	x = 2
 	y = 1
 	cost = 8
@@ -2833,7 +2833,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_formalizing_the_alliance
-	icon = GFX_GAL_territ_prop
+	icon = GFX_generic_defense
 	x = 1
 	y = 2
 	cost = 8
@@ -2863,7 +2863,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_secure_low_countries
-	icon = GFX_GAL_territ_prop
+	icon = GFX_GAL_net_war
 	x = 3
 	y = 2
 	cost = 8
@@ -2897,7 +2897,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_claim_the_rhine
-	icon = GFX_GAL_territ_prop
+	icon = GFX_goal_generic_territory_or_war
 	x = 3
 	y = 3
 	cost = 8
@@ -2920,7 +2920,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GAL_final_preparations
-	icon = GFX_GAL_territ_prop
+	icon = GFX_generic_arms_factories
 	x = 1
 	y = 3
 	cost = 8
@@ -3025,6 +3025,14 @@ shared_focus = {
 			has_wargoal_against = KAR
 		}
 		is_puppet = no
+	}
+	bypass = {
+		KAR = {
+			OR = {
+				is_puppet_of = GAL
+				exists = no
+			}
+		}
 	}
 	ai_will_do = {
 		base = 0
@@ -3919,7 +3927,7 @@ shared_focus = {
 	icon = GFX_generic_karlsland_shake
 	x = 1
 	y = 1
-	cost = 8
+	cost = 2
 	available_if_capitulated = yes
 	available = {
 		OR = {
@@ -3968,6 +3976,22 @@ shared_focus = {
 		base = 0
 	}
 	completion_reward = {
+		every_state = {
+			limit = {
+				owner = {
+					OR = {
+						has_country_flag = GLOBAL_IS_KARLSLAND
+						tag = KAR
+					}
+				}
+				OR = {
+					is_core_of = GAL
+					is_claimed_by = GAL
+				}
+			}
+			remove_claim_by = GAL
+			remove_core_of = GAL
+		}
 	}
 }
 
@@ -3976,7 +4000,7 @@ shared_focus = {
 	icon = GFX_generic_karlsland_hostile
 	x = 3
 	y = 1
-	cost = 8
+	cost = 2
 	available_if_capitulated = yes
 	available = {
 		OR = {
@@ -4010,6 +4034,24 @@ shared_focus = {
 		base = 0
 	}
 	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					has_country_flag = GLOBAL_IS_KARLSLAND
+					tag = KAR
+				}
+			}
+			GAL = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = gal_rival_mod
+				}
+			}
+			add_opinion_modifier = {
+				target = GAL
+				modifier = gal_rival_mod
+			}
+		}
 	}
 }
 
@@ -4176,7 +4218,10 @@ shared_focus = {
 		base = 0
 	}
 	completion_reward = {
-		
+		add_timed_idea = {
+			idea = GAL_mankinds_bulwark_idea
+			days = 365
+		}
 	}
 }
 
@@ -4359,6 +4404,9 @@ shared_focus = {
 		base = 0
 	}
 	completion_reward = {
-		#something
+		add_timed_idea = {
+			idea = GAL_rev_secured_idea
+			days = 365
+		}
 	}
 }

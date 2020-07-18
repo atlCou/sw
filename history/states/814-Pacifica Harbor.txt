@@ -1,0 +1,23 @@
+state={
+	id=814
+	name="STATE_814"
+	provinces={
+		13254 13261 13263 13268 13273 13274 13278 13281 13284 13285 13292 13293 13295 13301 13304 13305 13307 13310 
+	}
+	history={
+		owner = FUS
+		buildings = {
+			infrastructure = 6
+		}
+		victory_points = {
+			13254 5
+		}
+		victory_points = {
+			13273 10
+		}
+		add_core_of = FUS
+	}
+	manpower=4823412
+	state_category=city
+	buildings_max_level_factor=1.2
+}
