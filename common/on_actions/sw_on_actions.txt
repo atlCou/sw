@@ -1,0 +1,89 @@
+on_actions = {
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						ROOT = {
+							OR = {
+								tag = NRO
+								tag = NUW
+							}
+						}
+						AND = { FROM = { tag = HIS } has_global_flag = HIS_neuroi_happened }
+						NOT = {
+							OR = {
+								FROM = { has_country_flag = bypass_on_peaceconference_ended }
+								ROOT = { has_country_flag = bypass_on_peaceconference_ended }
+							}
+						}
+					}
+				}
+				clr_global_flag = HIS_neuroi_happened
+				every_state = {
+					limit = {
+						is_owned_by = NUW
+					}
+					NRO = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = HIS
+					}
+					NUW = {
+						transfer_state = PREV
+					}
+				}
+				NUW = {
+					set_cosmetic_tag = NUW_wasteland
+					set_country_flag = GLOBAL_no_diplo
+					every_owned_state = {
+						add_extra_state_shared_building_slots = -25
+						remove_building = {
+							type = infrastructure
+							level = 10
+						}
+					}
+					NRO = { end_puppet = PREV }
+				}
+			}
+		}
+	}
+	
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						ROOT = {
+							OR = {
+								tag = NUW
+							}
+						}
+						AND = { FROM = { tag = HIS } has_global_flag = HIS_neuroi_happened }
+					}
+				}
+				clr_global_flag = HIS_neuroi_happened
+				every_state = {
+					limit = {
+						is_core_of = HIS
+						OR = {
+							is_owned_by = NRO
+							is_owned_by = NUW
+						}
+					}
+					HIS = {
+						transfer_state = PREV
+					}
+				}
+				HIS = { 
+					white_peace = NRO
+					set_country_flag = { flag = bypass_on_peaceconference_ended hours = 1 value = 1 }
+				}
+			}
+		}
+	}
+	
+}

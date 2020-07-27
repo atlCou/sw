@@ -10,12 +10,18 @@ NRO_democratic_party:0 "???"
 NRO_communism_party:0 "???"
 
 NRO_1936_BOOKMARK:0 "Humanity has been aware of the Neuroi for a long time. Although under many names, many peoples shared in the experience of the destruction and violence they brought. However, it was not until twenty-two years ago that they would pose a genuine threat to strong civilizations. The [Great] Neuroi War saw a war more devastating than had ever been seen before.\nNineteen years later, the great remnants of humanity remain clueless. They squabble amongst each other as they had for millennia beforehand. As the Neuroi lay outside of humanity’s sights, the ancient beasts may find it is prime time to stand back up again."
-Decentralized_Consciousness_desc:0 "The Neuroi have no leader. They are believed to act almost entirely decentrally, destroying whatever is in its path without any single nucleus. Obvious cooperation is apparent on the tactical level, but any attempt to point to a single source of action is left fruitless."
+Decentralized_Consciousness_desc:0 "The Neuroi have no leader. They are believed to act almost entirely decentrally, destroying whatever is in its path without any single nucleus. Obvious cooperation is apparent on the tactical level, but any attempt to point to a single source of action is left fruitless.\n\nSince the Neuroi are not natural beings, they find very little use in Earth's resources or man's creations. Thus, their conquests are definitively total, and they leave behind only wasteland."
+NRO_no_profit_from_war_tooltip:0 "§RVictory in Neuroi wars result in the destruction of the enemy. Human capital and resources can't be used by Neuroi, so a victory results in a useless wasteland.§!"
 
-
-
-
-
+NUW_fascism:0 "§WA new Neuroi Hive§!"
+NUW_wasteland_fascism:0 "Hispanian Wasteland"
+NUW_Hispania:0 "Hispanian Neuroi"
+NUW_Hispania_ADJ: "Neuroi"
+NUW_Hispania_DEF:0 "The Neuroi"
+NUW_fascism_party:0 "???"
+NUW_neutrality_party:0 "???"
+NUW_democratic_party:0 "???"
+NUW_communism_party:0 "???"
 
 
 ### Focus Tree

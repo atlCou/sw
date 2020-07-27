@@ -15,7 +15,7 @@ focus_tree = {
 		icon = GFX_empty
 		x = 8
 		y = 0
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = { 
 			factor = 100
@@ -32,7 +32,7 @@ focus_tree = {
 		icon = GFX_empty
 		x = 0
 		y = 1
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_collecting_ourselves }
@@ -51,7 +51,7 @@ focus_tree = {
 		icon = GFX_empty
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_another_scout_mission }
@@ -72,7 +72,7 @@ focus_tree = {
 		icon = GFX_empty
 		x = 0
 		y = 3
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_technology_progresses }
@@ -94,7 +94,7 @@ focus_tree = {
 		icon = GFX_empty
 		x = -3
 		y = 1
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_collecting_ourselves }
@@ -112,8 +112,8 @@ focus_tree = {
 		id = NRO_industrial_phen
 		icon = GFX_empty
 		x = -4
-		y = 3
-		cost = 10
+		y = 4
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_gone_without_a_trace }
@@ -141,7 +141,7 @@ focus_tree = {
 		icon = GFX_empty
 		x = 3
 		y = 1
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_collecting_ourselves }
@@ -160,8 +160,8 @@ focus_tree = {
 		id = NRO_more_bodies
 		icon = GFX_empty
 		x = 4
-		y = 3
-		cost = 10
+		y = 4
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_another_scout_mission }
@@ -182,7 +182,7 @@ focus_tree = {
 		icon = GFX_empty
 		x = -1
 		y = 4
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_and_so_do_we }
@@ -195,12 +195,13 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = { 
 		id = NRO_steps_to_seaworthiness
 		icon = GFX_empty
 		x = 1
 		y = 4
-		cost = 10
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_and_so_do_we }
@@ -209,6 +210,66 @@ focus_tree = {
 		} 
 		completion_reward = {
 			navy_experience = 50
+		}
+	}
+	
+	focus = { 
+		id = NRO_Hispanian_campaign
+		icon = GFX_empty
+		x = 0
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		relative_position_id = NRO_collecting_ourselves
+		prerequisite = { focus = NRO_newer_maps }
+		prerequisite= { focus = NRO_steps_to_seaworthiness }
+		prerequisite = { focus = NRO_industrial_phen focus = NRO_more_bodies }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+			load_oob = NRO_Hispania_OOB
+			hidden_effect = {
+				declare_war_on = {
+					target = HIS
+					type = annex_everything
+				}
+			}
+			NUW = {
+				ROOT = { puppet = PREV }
+				hidden_effect = { 
+					set_popularities = { fascism = 100 } 
+					transfer_state = 168 
+					set_province_controller = 4098
+					set_cosmetic_tag = NUW_Hispania
+					declare_war_on = {
+						target = HIS
+						type = annex_everything
+					}
+					NRO_transfer_current_neuroi_ideas = yes
+					add_ideas = NRO_puppet_hive
+					capital = 168
+				}
+				add_state_core = 168
+			}
+			hidden_effect = {
+				HIS = {
+					set_province_controller = 11812
+					set_province_controller = 832
+					set_province_controller = 3835
+					set_province_controller = 11807
+					set_province_controller = 9903
+					set_province_controller = 11884
+					set_province_controller = 4195
+					set_province_controller = 7111
+					set_province_controller = 1093
+					set_province_controller = 10109
+				}
+			}
+			set_global_flag = HIS_neuroi_happened
+			set_country_flag = NRO_has_a_puppet_war
+			add_ideas = NRO_puppet_war
+			custom_effect_tooltip = NRO_no_profit_from_war_tooltip
 		}
 	}
 	

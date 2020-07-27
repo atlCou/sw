@@ -27,7 +27,136 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = neuroi.3
+	title = neuroi.3.t
+	desc = neuroi.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = neuroi.3
+		every_state = {
+			limit = {
+				is_owned_by = NUW
+			}
+			NRO = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = HIS
+			}
+			NUW = {
+				transfer_state = PREV
+			}
+		}
+		NUW = {
+			set_cosmetic_tag = NUW_wasteland
+			every_owned_state = {
+				add_extra_state_shared_building_slots = -25
+				remove_building = {
+					type = infrastructure
+					level = 10
+				}
+				remove_building = {
+					type = arms_factory
+					level = 10
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 10
+				}
+				remove_building = {
+					type = dockyard
+					level = 10
+				}
+			}
+			NRO = { end_puppet = PREV }
+		}
+	}
+}
 
+
+########## Neuroi hidden gameplay events
+country_event = { ####I am aware these two events are potentially very performance heavy. If there's a better way to do it, please tell me. I also plan on never writing something like these again
+	id = neuroi.1000
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.999"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes
+	fire_only_once = no
+	trigger = {
+		AND = {
+			OR = {
+				tag = NRO
+				tag = NUW
+				### Add more as more are added
+			}
+			any_controlled_state = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = neuroi.1000.a
+		every_controlled_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+			}
+			ROOT = {
+				add_state_core = PREV
+			}
+		}
+	}
+}
+country_event = {
+	id = neuroi.1001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.999"}
+	title = you_should_not_be_seeing_this
+	desc = you_should_not_be_seeing_this 
+	hidden = yes
+	fire_only_once = no
+	trigger = {
+		AND = {
+			OR = {
+				tag = NRO
+				tag = NUW
+				### Add more as more are added
+			}
+			any_state = { ### especially this lol
+				AND = {
+					is_core_of = ROOT
+					NOT = {
+						OR = {
+							is_owned_by = ROOT
+							is_controlled_by = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = neuroi.1001.a
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+				NOT = {
+					OR = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			ROOT = {
+				remove_state_core = PREV
+			}
+		}
+	}
+}
 country_event = {
 	id = neuroi.999
 	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.999"}
