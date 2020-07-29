@@ -37,7 +37,7 @@
 
 
 focus_tree = {
-	id = generic_focus_europe
+	id = generic_focus_belgica
 	
 	country = {
 		factor = 0
@@ -52,5 +52,6 @@ focus_tree = {
 	shared_focus = Europe_naval_effort
 	shared_focus = Europe_aviation_effort
 	shared_focus = Europe_industrial_effort
+	shared_focus = BLG_noblemans_country
 
 }

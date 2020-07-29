@@ -1,0 +1,33 @@
+add_namespace = belgica
+
+country_event = {
+	id = belgica.1
+	title = belgica.1.t
+	desc = belgica.1.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BLG
+		has_country_flag = BLG_revoked_labor_laws
+	}
+	
+	mean_time_to_happen = {
+		days = 35
+	}
+
+	option = {
+		name = belgica.1.a
+		add_stability = -0.15
+		add_political_power = -150
+		add_popularity = {
+			ideology = communism
+			popularity = 0.08
+		}
+		add_timed_idea = {
+			idea = strikes_1
+			days = 21
+		}
+		set_country_flag = BLG_big_strike
+	}
+}
