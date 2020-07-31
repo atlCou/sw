@@ -18,7 +18,7 @@ country_event = {
 
 	option = {
 		name = belgica.1.a
-		add_stability = -0.15
+		add_stability = -0.25
 		add_political_power = -150
 		add_popularity = {
 			ideology = communism
@@ -29,5 +29,6 @@ country_event = {
 			days = 21
 		}
 		set_country_flag = BLG_big_strike
+		clr_country_flag = BLG_revoked_labor_laws
 	}
 }

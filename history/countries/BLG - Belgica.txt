@@ -35,7 +35,18 @@ create_country_leader = {
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
 	picture = "Rosalie de Hemricourt de Grunne.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Belgican Worker's Council"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "Council.dds"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 		#
 	}

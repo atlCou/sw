@@ -1888,7 +1888,7 @@ shared_focus = {
 		set_politics = {
 			ruling_party = communism
 		}
-		hidden_effects = {
+		hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = -0.25
@@ -1898,7 +1898,7 @@ shared_focus = {
 			idea = BLG_the_flame_of_revolution_idea
 			days = 140	
 		}
-		add_stability = 0.15
+		add_stability = 0.25
 		custom_effect_tooltip = BLG_the_flame_of_revolution_tooltip
 	}
 }
@@ -1927,6 +1927,7 @@ shared_focus = {
 			idea = BLG_redistributed_wealth
 			days = 140
 		}
+		remove_ideas = BLG_total_nobility
 	}
 }
 
@@ -1990,7 +1991,7 @@ shared_focus = {
 
 	completion_reward = {
 		add_ideas = BLG_communism_idea
-		custom_effect_tooltip = GLOBAL_can_join_relevant_faction
+		add_stability = 0.1
 	}
 }
 
@@ -2017,7 +2018,7 @@ shared_focus = {
 		}
 		add_manpower = -50
 		add_political_power = -20
-		add_stability = 0.1
+		add_stability = 0.2
 	}
 }
 
@@ -2060,8 +2061,8 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		add_idea = BLG_beef_up_intel_serv_idea
-		add_stability = 0.025
+		add_ideas = BLG_beef_up_intel_serv_idea
+		add_stability = 0.1
 	}
 }
 
@@ -2107,11 +2108,11 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		add_stability = 0.1
 		add_ideas = { 
 			closed_economy
 		}
 		add_ideas = BLG_closed_borders
 		set_country_flag = GLOBAL_closed_trade
-		custom_effect_tooltip = GLOBAL_closed_trade_tooltip
 	}
 }
