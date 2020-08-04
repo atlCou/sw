@@ -1,0 +1,101 @@
+ideas = {
+	country = {
+		ORU_strange_attitude_towards_witches = {
+			picture = chi_incompetent_officers
+			available = {
+				original_tag = ORU
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		
+		ORU_memories_of_the_war_idea = {
+			picture = prc_the_long_march2
+			available = {
+				original_tag = ORU
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.15
+				experience_gain_army_factor = -0.5
+			}
+		}
+		
+		ORU_extended_regional_autonomy = {
+			picture = generic_local_self_management
+			available = {
+				original_tag = ORU
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				conscription_factor = 0.05
+			}
+		}
+		
+		ORU_extended_regional_autonomy_2 = {
+			picture = generic_local_self_management
+			available = {
+				original_tag = ORU
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				subjects_autonomy_gain = -1
+				conscription_factor = 0.05
+			}
+		}
+	
+		ORU_promote_mech_idea = {
+			picture = generic_build_infrastructure
+			available = {
+				original_tag = ORU
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.02
+				political_power_gain = 0.1
+				MONTHLY_POPULATION = 0.1
+			}
+		}
+		
+		ORU_subsidize_industry_idea = {
+			picture = investors_idea
+			available = {
+				original_tag = ORU
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		ORU_kd_idea = {
+			picture = generic_democratic_drift_bonus
+			available = {
+				original_tag = ORU
+			}
+			removal_cost = -1
+			modifier = {
+				industry_free_repair_factor = 1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		ORU_republicanization = {
+			picture = GAL_com_safe
+			available = {
+				original_tag = ORU
+				has_government = communism
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.1
+			}
+		}
+		
+	}
+}

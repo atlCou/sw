@@ -1635,7 +1635,7 @@ shared_focus = {
 shared_focus = { 
 	id = KAR_an_old_map
 	icon = GFX_KAR_old_map
-	x = 8
+	x = 14
 	y = 0
 	cost = 5
 	available_if_capitulated = yes
@@ -2303,6 +2303,312 @@ shared_focus = {
 	}
 }
 
+#### Pagan Industry/Resource Tree
+
+shared_focus = { 
+	id = KAR_a_materialists_realm
+	icon = GFX_KAR_pagan_helvetia
+	x = 7
+	y = 0
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = { 
+		factor = 1
+	}
+	available = {
+		has_completed_focus = KAR_triumph_of_the_will
+	}
+
+	completion_reward = {
+		every_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+				infrastructure < 7
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_not_one_out_of_line
+	icon = GFX_KAR_pagan_helvetia
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_materialists_realm
+	prerequisite = { focus = KAR_a_materialists_realm }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = { 
+		if = {
+			limit = { has_full_control_of_state = 64 }
+			64 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = { has_full_control_of_state = 794 }
+			794 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = { has_full_control_of_state = 65 }
+			65 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = { has_full_control_of_state = 52 }
+			52 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_pursuing_self_sustenance ## I have too many focuses that start with KAR, I swear
+	icon = GFX_KAR_pagan_helvetia
+	x = -2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_materialists_realm
+	prerequisite = { focus = KAR_a_materialists_realm }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_ideas = KAR_pursuing_self_sustenance_idea
+	}
+}
+
+shared_focus = { 
+	id = KAR_schmieden_in_modernity
+	icon = GFX_KAR_pagan_helvetia
+	x = 2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_materialists_realm
+	prerequisite = { focus = KAR_a_materialists_realm }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		if = {
+			limit = { has_full_control_of_state = 58 }
+			58 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = { has_full_control_of_state = 57 }
+			57 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = { has_full_control_of_state = 85 }
+			85 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_clear_magic
+	icon = GFX_KAR_pagan_helvetia
+	x = -1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_materialists_realm
+	prerequisite = { focus = KAR_pursuing_self_sustenance focus = KAR_not_one_out_of_line }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = synth_resources
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_the_lines_need_more
+	icon = GFX_KAR_pagan_helvetia
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_materialists_realm
+	prerequisite = { focus = KAR_schmieden_in_modernity focus = KAR_not_one_out_of_line }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT ###doing this as a precaution
+				is_core_of = KAR
+				OR = {
+					has_resources_amount = {
+						resource = steel
+						amount > 1
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 1
+					}
+				}
+			}
+			add_state_modifier = {
+				modifier = {
+					local_resources = 0.15
+				}
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_headfirst_into_alchemy
+	icon = GFX_KAR_pagan_helvetia
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_materialists_realm
+	prerequisite = { focus = KAR_clear_magic }
+	mutually_exclusive = { focus = KAR_digging_deeper }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = synth_resources
+		}
+		add_ideas = KAR_synth_boost
+	}
+}
+
+shared_focus = { 
+	id = KAR_digging_deeper #why would anyone take this? this is just awful, i just wanted the industry tree to have some decision :c
+	icon = GFX_KAR_pagan_helvetia
+	x = 1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_materialists_realm
+	prerequisite = { focus = KAR_the_lines_need_more }
+	mutually_exclusive = { focus = KAR_headfirst_into_alchemy }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT ###doing this as a precaution
+				is_core_of = KAR
+				OR = {
+					has_resources_amount = {
+						resource = oil
+						amount > 1
+					}
+					has_resources_amount = {
+						resource = rubber
+						amount > 1
+					}
+				}
+			}
+			add_state_modifier = {
+				modifier = {
+					local_resources = 2
+				}
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = KAR_to_put_a_smile_on_wiolants_face
+	icon = GFX_KAR_pagan_helvetia
+	x = 0
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_a_materialists_realm
+	prerequisite = { focus = KAR_digging_deeper focus = KAR_headfirst_into_alchemy }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 8000
+			producer = KAR
+		}
+		add_war_support = 0.075
+	}
+}
 
 ########## military tree
 

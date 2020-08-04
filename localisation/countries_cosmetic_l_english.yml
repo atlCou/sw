@@ -341,23 +341,6 @@
  NUM_democratic:0 "Numidia"
  NUM_democratic_DEF:0 "Numidia"
  NUM_democratic_ADJ:0 "Numidia"
-
- ORU_democratic:0 "Federation of Orussia"
- ORU_democratic_DEF:0 "Federation of Orussia"
- ORU_democratic_ADJ:0 "Orussian"
- ORU_neutrality:0 "Orussia"
- ORU_neutrality_DEF:0 "Empire of Orussia"
- ORU_neutrality_ADJ:0 "Orussian"
- ORU_fascism:0 "Orussian Domain"
- ORU_fascism_DEF:0 "Orussian Domain"
- ORU_fascism_ADJ:0 "Orussian"
- ORU_communism:0 "Bolshevik Union"
- ORU_communism_DEF:0 "Bolshevik Union"
- ORU_communism_ADJ:0 "Orussian"
- ORU_authoritarian-socialism_DEF:0 "Orussian People's United Bolshevik Front"
- ORU_authoritarian-socialism:0 "Orussian Bolshevik Front"
- ORU_authoritarian-socialism_ADJ:0 "Orussian"
-
  
  SIR_neutrality:0 "Siamro"
  SIR_neutrality_DEF:0 "Siamro"

@@ -960,6 +960,14 @@ spriteTypes = {
 		name = "GFX_GAL_net_war"
 		texturefile = "gfx/interface/goals/GAL_net_war.dds"
 	}
+	SpriteType = {
+		name = "GFX_generic_socdem"
+		texturefile = "gfx/interface/goals/generic_socdem.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_conservative"
+		texturefile = "gfx/interface/goals/generic_conservative.dds"
+	}
 }
 
 

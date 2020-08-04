@@ -1,0 +1,116 @@
+add_namespace = orussia
+
+country_event = {
+	id = orussia.1 ### ROOT is Gallia, FROM should be Orussia but I don't care to test it because ORU works and I can adapt this later
+	title = orussia.1.t
+	desc = orussia.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = orussia.1.a
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				is_in_faction = yes
+			}
+			add_to_faction = ORU
+			ORU = {
+				country_event = {
+					id = orussia.2
+					days = 2
+				}
+			}
+		}
+		else = {
+			set_country_flag = ORU_add_to_faction_later
+			ORU = {
+				country_event = {
+					id = orussia.3
+					days = 2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = orussia.1.b
+		ai_chance = {
+			factor = 0
+		}
+		ORU = {
+			country_event = {
+				id = orussia.4
+				days = 2
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = orussia.2  ### confirmation
+	title = orussia.2.t
+	desc = orussia.2.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = orussia.2.a
+	}
+}
+
+country_event = {
+	id = orussia.3  ### later, when Gallia has a faction
+	title = orussia.3.t
+	desc = orussia.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = orussia.3.a
+		give_guarantee = FROM
+		FROM = { give_guarantee = PREV } #lazy
+	}
+}
+
+country_event = {
+	id = orussia.4 ### no, retar
+	title = orussia.4.t
+	desc = orussia.4.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = orussia.4.a
+		add_political_power = -1
+	}
+}
+
+country_event = {
+	id = orussia.5
+	
+	hidden = yes ###no loc
+	
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		tag = GAL
+		has_country_flag = ORU_add_to_faction_later
+		is_in_faction = yes
+	}
+	
+	option = {
+		name = orussia.4.a
+		add_to_faction = ORU
+	}
+}

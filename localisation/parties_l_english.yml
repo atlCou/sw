@@ -37,14 +37,6 @@
  LIN_neutrality_:0 "HLP"
  ASI_anarchy:0 "Feudal States"
 
- ORU_neutrality_party:0 "House of Romanov"
- ORU_communism_party_long:0 "Nacionalʹnaja Bolʹševistskaja Koalicija"
- ORU_communism_party:0 "NacBol Co."
- ORU_democratic_neutrality_party:0 "Romanov Royalists"
- ORU_fascism_party:0 "Fascist Party of Orussia"
- ORU_ultra-nationalism_party:0 "Expansionist Party of Orussia"
- ORU_fanatical-paganism_party:0 "Norse Orussia"
- 
  FUS_communism_party_long:0 "Nihon Kyousan-tou"
  FUS_communism_party:0 "JCP"
  FUS_fascism_party:0 "Touhoukai"

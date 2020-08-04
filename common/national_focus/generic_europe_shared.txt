@@ -2116,3 +2116,398 @@ shared_focus = {
 		set_country_flag = GLOBAL_closed_trade
 	}
 }
+
+#### Orussia
+
+shared_focus = {
+	id = ORU_our_vast_expanse
+	icon = GFX_GAL_homeland
+	x = 17
+	y = 0
+	cost = 8
+	mutually_exclusive = { focus = ORU_catching_up }
+	
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ORU_promote_mech
+	icon = GFX_GAL_countrysides
+	x = 0
+	y = 1
+	cost = 8
+	relative_position_id = ORU_our_vast_expanse
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_our_vast_expanse }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_stability = 0.075
+		add_ideas = ORU_promote_mech_idea
+	}
+}
+
+shared_focus = {
+	id = ORU_expand_national_railways
+	icon = GFX_RMA_trains
+	x = 0
+	y = 3
+	cost = 10
+	relative_position_id = ORU_our_vast_expanse
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_extend_regional_autonomy }
+	prerequisite ={ focus = ORU_promote_mech }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = -25
+		every_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				OR = {
+					is_on_continent = europe
+					is_on_continent = asia
+				}
+				infrastructure < 5
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = ORU_memories_of_the_war
+	icon = GFX_generic_neuroi_war
+	x = 2
+	y = 1
+	cost = 8
+	relative_position_id = ORU_our_vast_expanse
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_catching_up focus = ORU_our_vast_expanse }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_war_support = 0.1
+		remove_ideas = ORU_memories_of_the_war_idea
+	}
+}
+
+shared_focus = {
+	id = ORU_extend_regional_autonomy
+	icon = GFX_focus_generic_self_management
+	x = 2
+	y = 2
+	cost = 8
+	relative_position_id = ORU_our_vast_expanse
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_memories_of_the_war }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_stability = 0.075
+		add_ideas = ORU_extended_regional_autonomy
+	}
+}
+
+shared_focus = {
+	id = ORU_modernize_local_political_structures
+	icon = GFX_GAL_strengthen_gov
+	x = 2
+	y = 3
+	cost = 8
+	relative_position_id = ORU_our_vast_expanse
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_extend_regional_autonomy }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = ORU_extended_regional_autonomy_2
+			remove_idea = ORU_extended_regional_autonomy
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = ORU_catching_up
+	icon = GFX_GAL_industrial_base
+	x = 21
+	y = 0
+	cost = 8
+	
+	mutually_exclusive = { focus = ORU_our_vast_expanse }
+	
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_stability = -0.02
+		add_political_power = -15
+	}
+}
+
+shared_focus = {
+	id = ORU_subsidize_industry
+	icon = GFX_generic_investment
+	x = 0
+	y = 1
+	cost = 8
+	relative_position_id = ORU_catching_up
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_catching_up }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = ORU_subsidize_industry_idea
+	}
+}
+
+shared_focus = {
+	id = ORU_invest_over_urals
+	icon = GFX_focus_generic_industry_2
+	x = 0
+	y = 3
+	cost = 10
+	relative_position_id = ORU_catching_up
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_extend_regional_autonomy }
+	prerequisite ={ focus = ORU_subsidize_industry }
+	available_if_capitulated = yes
+
+	completion_reward = {	
+		add_political_power = -75
+		570 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		40 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		653 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		572 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = ORU_sr_legislative_victory
+	icon = GFX_generic_socdem
+	x = -1
+	y = 1
+	cost = 8
+	relative_position_id = ORU_modernize_local_political_structures
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_modernize_local_political_structures }
+	mutually_exclusive = { focus = ORU_kd_legislative_victory }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		set_politics = {
+			ruling_party = communism
+		}
+		hidden_effect = {
+			set_popularities = {
+				communism = 38
+				democratic = 32
+				neutrality = 17
+				fascism = 13
+			}
+			set_cosmetic_tag = ORU_temp1
+		}
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ORU_steps_to_repub
+	icon = GFX_Star_Politics
+	x = -2
+	y = 2
+	cost = 8
+	relative_position_id = ORU_modernize_local_political_structures
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_sr_legislative_victory }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_timed_idea = {
+			idea = ORU_republicanization
+			days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = ORU_kd_legislative_victory
+	icon = GFX_generic_conservative
+	x = 1
+	y = 1
+	cost = 8
+	relative_position_id = ORU_modernize_local_political_structures
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_modernize_local_political_structures }
+	mutually_exclusive = { focus = ORU_sr_legislative_victory }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		set_politics = {
+			ruling_party = democratic
+		}
+		hidden_effect = {
+			set_popularities = {
+				communism = 32
+				democratic = 38
+				neutrality = 13
+				fascism = 17
+			}
+		}
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ORU_an_oru_miracle
+	icon = GFX_goal_support_democracy
+	x = 2
+	y = 2
+	cost = 8
+	relative_position_id = ORU_modernize_local_political_structures
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_kd_legislative_victory }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = ORU_kd_idea
+	}
+}
+
+shared_focus = {
+	id = ORU_back_on_track
+	icon = GFX_focus_research2
+	x = 0
+	y = 2
+	cost = 8
+	relative_position_id = ORU_modernize_local_political_structures
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_kd_legislative_victory focus = ORU_sr_legislative_victory }
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_war_support = 0.1
+		add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id = ORU_into_the_future
+	icon = GFX_focus_generic_support_the_left_right
+	x = 0
+	y = 3
+	cost = 8
+	relative_position_id = ORU_modernize_local_political_structures
+	ai_will_do = {
+		factor = 10 ### should do some of these early on\
+	}
+	prerequisite = { focus = ORU_steps_to_repub focus = ORU_an_oru_miracle }
+	prerequisite = { focus = ORU_back_on_track }
+	available_if_capitulated = yes
+	available = {
+		NOT = { has_idea = ORU_republicanization }
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_completed_focus = ORU_sr_legislative_victory
+			}
+			set_cosmetic_tag = ORU_temp2
+		}
+		set_stability = 1
+		if = { 
+			limit = {
+				GAL = {
+					has_government = democratic
+					NOT = {
+						OR = {
+							has_completed_focus = GAL_invite_orussia
+							has_completed_focus = GAL_the_paternal_state
+							has_completed_focus = GAL_my_pride
+						}
+					}
+				}
+			}
+			GAL = {
+				country_event = {
+					id = orussia.1
+				}
+			}
+		}
+	}
+}

@@ -149,6 +149,7 @@ ideas = {
 			
 		}
 		
+		###### Pagans
 		
 		KAR_burn_the_books_idea = {
 			
@@ -255,6 +256,9 @@ ideas = {
 				defensive_war_stability_factor = 0.3
 			}
 		}
+		
+		
+		######
 		
 		
 		KAR_hurting_econ = {
@@ -401,7 +405,25 @@ ideas = {
 				consumer_goods_factor = 0.05
 				production_speed_buildings_factor = -0.075
 			}
+		}
 		
+		KAR_pursuing_self_sustenance_idea = {
+		
+			picture = SPR_seize_the_gold_reserves
+			
+			modifier = {
+				local_resources_factor = 0.10
+				min_export = -0.20
+			}
+		}
+		
+		KAR_synth_boost = {
+		
+			picture = idk
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+			}
 		}
 		
 		#### NOBLE
