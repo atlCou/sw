@@ -8,9 +8,8 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = TIB
+		add_core_of = TIB
 		victory_points = {
 			4999 1
 		}
@@ -18,14 +17,5 @@ state={
 			infrastructure = 1
 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-				infrastructure = 2
-
-			}
-
-		}
-
 	}
 }

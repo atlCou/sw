@@ -7,16 +7,12 @@ state={
 	state_category = town
 
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = KOR
+		add_core_of = KOR
 		buildings = {
 			infrastructure = 4
 		}
 
-		1938.10.25 = {
-			controller = IDK
-		}
 	}
 
 	provinces={

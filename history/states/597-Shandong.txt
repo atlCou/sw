@@ -8,9 +8,8 @@ state=
 	
 	history=
 	{
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = KOR
+		add_core_of = KOR
 		victory_points = {
 			1069 3 
 		}
@@ -23,10 +22,6 @@ state=
 				coastal_bunker = 1
 				bunker = 1
 			}
-		}
-
-		1938.10.25 = {
-			controller = IDK
 		}
 	}
 	provinces={

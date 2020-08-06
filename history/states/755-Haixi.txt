@@ -8,31 +8,12 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = MON
+		add_core_of = MON
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					IDK= {
-						has_dlc = "Waking the Tiger"
-					}
-
-				}
-				IDK= {
-					transfer_state = PIDK
-
-				}
-
-			}
-
-		}
-
 	}
 }

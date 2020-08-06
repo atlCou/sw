@@ -8,30 +8,13 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=town
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = KOR
+		add_core_of = KOR
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {
 			12019 1
 		}
-		
-		1938.10.25 = {
-			controller = IDK
-			IDK= {
-				set_province_controller = 1125
-				set_province_controller = 7104
-				set_province_controller = 12019
-
-			}
-			buildings = {
-				infrastructure = 6
-				air_base = 1
-			}
-
-		}
-
 	}
 }

@@ -3,10 +3,8 @@ state={
 	name="STATE_604"
 
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = TIB
+		add_core_of = TIB
 		victory_points = {
 			7940 10 
 		}
@@ -15,23 +13,6 @@ state={
 			industrial_complex = 2
 
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					IDK= {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				IDK= {
-					transfer_state = PIDK
-
-				}
-
-			}
-
-		}
-
 	}
 
 	provinces={

@@ -8,9 +8,8 @@ state=
 	
 	history=
 	{
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = KAR
+		add_core_of = KAR
 		victory_points = {
 			10000 5 
 		}
@@ -25,9 +24,6 @@ state=
 			}
 		}
 
-		1938.10.25 = {
-			controller = IDK
-		}
 	}
 	provinces={
 		10000

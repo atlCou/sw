@@ -8,11 +8,11 @@ state={
 	
 	
 	history = {
-		owner = EGY		buildings = {
+		owner = OSO		buildings = {
 			infrastructure = 2
 		}
 
-		add_core_of = EGY
+		add_core_of = OSO
 	}
 
 	provinces={

@@ -6,7 +6,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = IDK
+		owner = LIN
 		victory_points = {
 			7617 5 
 		}
@@ -17,7 +17,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = IDK
+		add_core_of = LIN
 	}
 	
 	provinces={ 7617 }

@@ -5,10 +5,8 @@ state={
 	state_category = town
 
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = YUN
+		add_core_of = YUN
 		
 		victory_points = {
 			1070 1 
@@ -21,17 +19,6 @@ state={
 				naval_base = 2
 			}
 
-		}
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					IDK= { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = IDK
-				IDK= { transfer_state = PIDK}
-			}
-			controller = IDK
 		}
 	}
 

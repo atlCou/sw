@@ -8,30 +8,14 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = KOR
+		add_core_of = KOR
 		victory_points = {
 			2045 1 
 		}
 		buildings = {
 			infrastructure = 3
 
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					IDK= {
-						has_dlc = "Waking the Tiger"
-					}
-
-				}
-				IDK= {
-					transfer_state = PIDK
-
-				}
-			}
 		}
 	}
 }

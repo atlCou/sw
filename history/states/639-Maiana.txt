@@ -4,8 +4,8 @@ state={
 	name="STATE_639"
 
 	history={
-		owner = IDK
-		add_core_of = IDK
+		owner = FUS
+		add_core_of = FUS
 		buildings = {
 			infrastructure = 3
 			13021 = {

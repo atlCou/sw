@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = FUS
+		owner = ORU
 		victory_points = {
 			4797 3 
 		}
@@ -19,7 +19,7 @@ state={
 			air_base = 1
 
 		}
-		add_core_of = FUS
+		add_core_of = ORU
 
 	}
 

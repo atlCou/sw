@@ -11,31 +11,14 @@ state={
 	}
 
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = YUN
+		add_core_of = YUN
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
 		victory_points = { 
 			7137 10 
-		}
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					IDK= { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = IDK
-				IDK= { transfer_state = PIDK}
-			}
-			IDK= {
-				set_province_controller = 1018
-				set_province_controller = 4023
-				set_province_controller = 10004
-			} 			
 		}
 	}
 

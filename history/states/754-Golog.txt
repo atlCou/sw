@@ -8,10 +8,8 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = MON
+		add_core_of = MON
 		victory_points = {
 			12732 3 
 		}
@@ -20,20 +18,6 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					IDK= {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				IDK= {
-					transfer_state = PIDK
-
-				}
-			}
 		}
 	}
 }

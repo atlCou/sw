@@ -1,37 +1,19 @@
+
 state={
 	id=616
 	name="STATE_616"
 
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = MON
+		add_core_of = MON
 		buildings = {
 			infrastructure = 2
 
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					IDK= {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				IDK= {
-					transfer_state = PIDK
-
-				}
-
-			}
-
-		}
-
 	}
 
 	provinces={
-		3742 5031 5057 5100 7511 8055 8081 8127 10724 12327 12750 12776 
+		1630 5031 5057 5100 7511 8055 8127 10724 12327 12750 12776 
 	}
 	manpower=2077600
 	buildings_max_level_factor=1.000

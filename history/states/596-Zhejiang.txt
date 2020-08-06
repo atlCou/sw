@@ -6,9 +6,8 @@ state=
 	state_category = city
 	history=
 	{
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = KOR
+		add_core_of = KOR
 		
 		victory_points = { 
 			9974 1 
@@ -35,20 +34,6 @@ state=
 				coastal_bunker = 1
 				bunker = 1
 			}
-		}
-
-		1938.10.25 = {		
-			IDK= {
-				set_province_controller = 1055
-				set_province_controller = 1096
-				set_province_controller = 4042
-				set_province_controller = 7058
-				set_province_controller = 7191
-				set_province_controller = 9974
-				set_province_controller = 10014
-				set_province_controller = 10101
-				set_province_controller = 11991
-			} 			
 		}
 	}
 	provinces={

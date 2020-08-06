@@ -9,24 +9,11 @@ state={
 	
 	history=
 	{
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = KOR
+		add_core_of = KOR
 		
 		buildings = {
 			infrastructure = 2
-		}
-
-		1938.10.25 = {
-			controller = IDK
-		}
-		
-		1939.1.1 = {
-			
-			owner = IDK
-			controller = IDK
-
 		}
 	}
 	manpower=500000

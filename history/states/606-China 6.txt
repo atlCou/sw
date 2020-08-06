@@ -6,9 +6,8 @@ state={
 	}
 
 	history={
-		owner = IDK
-		add_core_of = IDK
-		add_core_of = IDK
+		owner = KOR
+		add_core_of = KOR
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -17,18 +16,6 @@ state={
 		victory_points = {
 			7222 1 
 		}
-		1938.10.25 = {
-			controller = IDK
-			buildings = {
-				industrial_complex = 3
-				infrastructure = 6
-				air_base = 1
-				arms_factory = 1
-
-			}
-
-		}
-
 	}
 
 	provinces={

@@ -12,8 +12,8 @@ state={
 	}
 
 	history={
-		owner = IDK
-		add_core_of = IDK
+		owner = MON
+		add_core_of = MON
 		add_core_of = IDK
 		add_core_of = IDK
 		buildings = {

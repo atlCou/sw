@@ -8,12 +8,12 @@ state={
 	}
 
 	history={
-		owner = FUS
+		owner = ORU
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = FUS
+		add_core_of = ORU
 
 	}
 
