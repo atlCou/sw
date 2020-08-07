@@ -2502,7 +2502,7 @@ shared_focus = {
 	completion_reward = {
 		every_state = {
 			limit = {
-				is_fully_controlled_by = ROOT ###doing this as a precaution
+				is_fully_controlled_by = ROOT
 				is_core_of = KAR
 				OR = {
 					has_resources_amount = {
@@ -2565,7 +2565,7 @@ shared_focus = {
 	completion_reward = {
 		every_state = {
 			limit = {
-				is_fully_controlled_by = ROOT ###doing this as a precaution
+				is_fully_controlled_by = ROOT ###just incase 
 				is_core_of = KAR
 				OR = {
 					has_resources_amount = {
@@ -2610,225 +2610,210 @@ shared_focus = {
 	}
 }
 
-########## military tree
+
+###########################################
+########## Shared Military Trees ##########
+###########################################
 
 
 shared_focus = { 
-	id = KAR_karlsland_military_tradition
-	icon = GFX_goal_tfv_generic_tech_sharing
-	x = 25
+	id = KAR_die_luftwaffe
+	icon = GFX_KAR_pagan_helvetia
+	x = 22
 	y = 0
-	cost = 3
-	available_if_capitulated = yes 
+	cost = 5
+	available_if_capitulated = yes
 	ai_will_do = { 
 		factor = 1
-		modifier = {
-			factor = 100
-			date > 1937.6.1
-		}
-	}
+	} 
 
-	completion_reward = { 
-		army_experience = 25
-		navy_experience = 25
-		air_experience = 25
+	completion_reward = {
+		
 	}
 }
 
-
-
 shared_focus = { 
-	id = KAR_karlslander_heer
-	icon = GFX_goal_tfv_generic_tech_sharing
-	x = -3
+	id = KAR_adopting_miyafuji_theory
+	icon = GFX_KAR_pagan_helvetia
+	x = 0
 	y = 1
-	cost = 1
-	available_if_capitulated = yes 
-	prerequisite = {
-		focus = KAR_karlsland_military_tradition
-	}
-	relative_position_id = KAR_karlsland_military_tradition
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_die_luftwaffe }
 	ai_will_do = { 
-		factor = 10
-		modifier = {
-			factor = 100
-			date > 1938.1.1
-		}
-	}
+		factor = 1
+	} 
 
-	completion_reward = { 
-		army_experience = 25
-		air_experience = 50
+	completion_reward = {
+		
 	}
 }
 
+shared_focus = { 
+	id = KAR_modernize_our_fighters
+	icon = GFX_KAR_pagan_helvetia
+	x = -2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_die_luftwaffe }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	}
+}
 
 shared_focus = { 
-	id = KAR_the_new_domain
-	icon = GFX_goal_tfv_generic_tech_sharing
+	id = KAR_death_from_above
+	icon = GFX_KAR_pagan_helvetia
+	x = -2
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_modernize_our_fighters }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = { 
+	id = KAR_heavy_aircraft
+	icon = GFX_KAR_pagan_helvetia
 	x = 2
 	y = 1
-	cost = 1
-	available_if_capitulated = yes 
-	prerequisite = {
-		focus = KAR_karlslander_heer
-	}
-	relative_position_id = KAR_karlslander_heer
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_die_luftwaffe }
 	ai_will_do = { 
-		factor = 25
-	}
+		factor = 1
+	} 
 
-	completion_reward = { 
+	completion_reward = {
+		
 	}
 }
 
-
-
-
 shared_focus = { 
-	id = KAR_kaiserliche_marine
-	icon = GFX_goal_tfv_generic_tech_sharing
-	x = 3
-	y = 1
-	cost = 1
-	available_if_capitulated = yes 
-	prerequisite = {
-		focus = KAR_karlsland_military_tradition
-	}
-	relative_position_id = KAR_karlsland_military_tradition
+	id = KAR_strategic_destruction
+	icon = GFX_KAR_pagan_helvetia
+	x = 2
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_heavy_aircraft }
 	ai_will_do = { 
-		factor = 10
-		modifier = {
-			factor = 100
-			date > 1938.1.1
-		}
-	}
+		factor = 1
+	} 
 
-	completion_reward = { 
-		navy_experience = 25
+	completion_reward = {
+		
 	}
 }
 
- 
- 
-################### WITCHES sub TREE ###################
- 
-#Focus for Witches Research
 shared_focus = { 
-id = KAR_strikeunitresearch
-icon = GFX_goal_tfv_generic_tech_sharing
-x = 0
-y = 2
-cost = 5
-available_if_capitulated = yes 
-available = { date > 1938.1.1 }
-relative_position_id = KAR_the_new_domain
-prerequisite = { focus = KAR_the_new_domain }
-ai_will_do = { 
- factor = 100
- } 
+	id = KAR_doctrinal_supremacy
+	icon = GFX_KAR_pagan_helvetia
+	x = 1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_strategic_destruction focus = KAR_adopting_miyafuji_theory }
+	ai_will_do = { 
+		factor = 1
+	} 
 
-completion_reward = { 
-
-country_event = {
-days = 1 
-id = kwitches.1 
-}
-}
+	completion_reward = {
+		
+	}
 }
 
-
-#Focus for Normalize Witches
 shared_focus = { 
-id = KAR_normalizewitches
-icon = GFX_goal_generic_propaganda
-x = 0
-y = 1
-cost = 5
-available_if_capitulated = yes 
-prerequisite = { focus = KAR_strikeunitresearch }
-relative_position_id = KAR_strikeunitresearch
-ai_will_do = { 
- factor = 1
- } 
+	id = KAR_transfer_our_dive_bombers
+	icon = GFX_KAR_pagan_helvetia
+	x = -1
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_adopting_miyafuji_theory }
+	prerequisite = { focus = KAR_death_from_above }
+	ai_will_do = { 
+		factor = 1
+	} 
 
-completion_reward = { 
-
-country_event = {
-days = 1 
-id = kwitches.30
-}
-}
+	completion_reward = {
+		
+	}
 }
 
-#Focus for Witches Schools
 shared_focus = { 
-id = KAR_witchesschools
-icon = GFX_focus_generic_military_academy
-x = 2
-y = 1
-cost = 5
-relative_position_id = KAR_strikeunitresearch
-prerequisite = { focus = KAR_strikeunitresearch }
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 100
- } 
+	id = KAR_another_new_engine
+	icon = GFX_KAR_pagan_helvetia
+	x = -1
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_transfer_our_dive_bombers }
+	ai_will_do = { 
+		factor = 1
+	} 
 
-completion_reward = { 
-
-add_manpower = -1000
+	completion_reward = {
+		
+	}
 }
-}
 
-#Focus for Research the Neuroi
 shared_focus = { 
-id = KAR_researchthehispanianeuroi
-icon = GFX_goal_generic_army_doctrines
-x = -2
-y = 1
-cost = 5
-relative_position_id = KAR_strikeunitresearch
-prerequisite = { focus = KAR_strikeunitresearch }
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 100
- } 
+	id = KAR_expand_witch_reqruitment
+	icon = GFX_KAR_pagan_helvetia
+	x = 1
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_doctrinal_supremacy }
+	available = { has_completed_focus = KAR_adopting_miyafuji_theory }
+	ai_will_do = { 
+		factor = 1
+	} 
 
-completion_reward = { 
-add_tech_bonus = {
-    bonus = 0.5
-    uses = 1
-    category = land_doctrine
-}
-army_experience = 25
-}
+	completion_reward = {
+		
+	}
 }
 
-#Focus for Begin Training
 shared_focus = { 
-id = KAR_witchesenrollment
-icon = GFX_focus_generic_military_academy
-x = 2
-y = 2
-cost = 5
-relative_position_id = KAR_strikeunitresearch
-prerequisite = { focus = KAR_witchesschools }
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 100
- } 
+	id = KAR_jet_strikers
+	icon = GFX_helma_economy
+	x = 0
+	y = 5
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = KAR_die_luftwaffe
+	prerequisite = { focus = KAR_expand_witch_reqruitment }
+	prerequisite = { focus = KAR_another_new_engine }
+	ai_will_do = { 
+		factor = 1
+	} 
 
-completion_reward = { 
-
-country_event = {
-days = 1 
-id = kwitches.10
+	completion_reward = {
+		
+	}
 }
-custom_effect_tooltip = KAR_kwitches.10
-}
-}
-
 
 
 ###############

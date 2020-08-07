@@ -14,7 +14,6 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 3000 }
 
 	shared_focus = KAR_theeconomy
-	shared_focus = KAR_karlsland_military_tradition
 	
 	
 }
@@ -49,7 +48,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 15
+			add = 150
 			original_tag = KAR 
 		}
 	
@@ -61,6 +60,7 @@ focus_tree = {
 	shared_focus = KAR_rudel_alone
 	shared_focus = KAR_an_old_map
 	shared_focus = KAR_a_materialists_realm
+	shared_focus = KAR_die_luftwaffe
 	
 }
 
