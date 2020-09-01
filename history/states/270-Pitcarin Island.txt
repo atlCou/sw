@@ -7,7 +7,7 @@ state=
 	
 	history=
 	{
-		owner = IDK
+		owner = PRU
 		buildings = {
 			infrastructure = 1
 			1280 = {

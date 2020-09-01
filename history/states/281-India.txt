@@ -7,8 +7,8 @@ state={
 	state_category = enclave
 
 	history={
-		owner = IDK
-		add_core_of = IDK
+		owner = GAL
+		add_core_of = GAL
 		buildings = {
 			infrastructure = 3
 			4967 = {

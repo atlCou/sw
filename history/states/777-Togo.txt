@@ -3,7 +3,7 @@ state={
 	name="STATE_777"
 
 	history={
-		owner = IDK		add_core_of = IDK		victory_points = {
+		owner = BRI			victory_points = {
 			1951 1
 		}
 		buildings = {

@@ -3,8 +3,8 @@ state={
 	name="STATE_274"
 
 	history={
-		owner = IDK
-		add_core_of = IDK
+		owner = BRI
+		add_core_of = BRI
 		victory_points = {
 			10862 1 
 		}

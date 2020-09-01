@@ -92,8 +92,12 @@ BAL = {
 	color_ui = rgb { 36 32 147 }
 }
 EGY = {
-	color = rgb { 260 20 20 }
-	color_ui = rgb { 260 20 20 }
+	color = rgb { 20 60 20 }
+	color_ui = rgb { 20 60 20 }
+}
+VIN = {
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 60 60 60 }
 }
 GAL = {
 	color = rgb { 28 68 150 }
