@@ -13,7 +13,9 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 50 y = 3000 }
 
-	shared_focus = KAR_theeconomy
+    shared_focus = KAR_put_down_the_strikes
+    shared_focus = KAR_die_luftwaffe
+    shared_focus = KAR_die_kriegsmarine	
 	
 	
 }
@@ -48,7 +50,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 150
+			add = 15
 			original_tag = KAR 
 		}
 	
@@ -61,6 +63,8 @@ focus_tree = {
 	shared_focus = KAR_an_old_map
 	shared_focus = KAR_a_materialists_realm
 	shared_focus = KAR_die_luftwaffe
+    shared_focus = KAR_die_kriegsmarine
+    shared_focus = KAR_new_land_forces
 	
 }
 
@@ -79,10 +83,12 @@ focus_tree = {
 	} 
 	
 	default = no
-	continuous_focus_position = { x = 50 y = 2000 }
+	continuous_focus_position = { x = 2120 y = 960 }
 
 	
-	shared_focus = KAR_comrade_leader	
+	shared_focus = KAR_comrade_leader
+    shared_focus = KAR_die_luftwaffe
+    shared_focus = KAR_die_kriegsmarine	
 	
 }
 
@@ -110,6 +116,8 @@ focus_tree = {
 
 	shared_focus = KAR_The_Princess
 	shared_focus = KAR_The_Officer
+    shared_focus = KAR_die_luftwaffe
+    shared_focus = KAR_die_kriegsmarine	
 	
 }
 
@@ -170,6 +178,8 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 3000 }
 
 	shared_focus = KAR_on_top_at_last
+    shared_focus = KAR_die_luftwaffe
+    shared_focus = KAR_die_kriegsmarine	
 	
 }
 
@@ -201,5 +211,7 @@ focus_tree = {
 
 	shared_focus = KAR_the_lessons_of_a_witch
 	shared_focus = KAR_rebuild_karlsland
+    shared_focus = KAR_die_luftwaffe
+    shared_focus = KAR_die_kriegsmarine	
 	
 }

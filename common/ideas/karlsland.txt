@@ -226,10 +226,7 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.03
-				war_support_weekly = 0.01
 				army_morale_factor = 0.1
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
 			}
 		
 		}
@@ -256,83 +253,8 @@ ideas = {
 				defensive_war_stability_factor = 0.3
 			}
 		}
-		
-		
-		######
-		
-		
-		KAR_hurting_econ = {
-			
-			picture = KAR_debuffeco
-		
-			modifier = { 
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.2
-				production_factory_max_efficiency_factor = -0.3
-			}
-		
-		}
-		
-		KAR_really_hurting_econ = {
-			
-			picture = KAR_debuffeco
-		
-			modifier = { 
-				consumer_goods_factor = 0.2
-				industrial_capacity_factory = -0.3
-				production_factory_max_efficiency_factor = -0.2
-			}
-		
-		}
-		
-		KAR_really_hurting_econ_pagan = {
-			
-			picture = KAR_debuffeco
-		
-			modifier = { 
-				consumer_goods_factor = 0.15
-				industrial_capacity_factory = -0.5
-				production_factory_max_efficiency_factor = -0.25
-			}
-		
-		}
-		
-		KAR_better_econ = {
-			
-			picture = KAR_debuffeco
-		
-			modifier = { 
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.05
-				production_factory_max_efficiency_factor = -0.1
-			}
-		
-		}
-		
-		KAR_much_better_econ = {
-			
-			picture = KAR_debuffeco
-		
-			modifier = { 
-				consumer_goods_factor = 0.1
-				production_factory_max_efficiency_factor = -0.05
-			}
-		
-		}
-		
-		
-		KAR_karlslander_identity_spirit = {
-		
-			picture = war_of_resistance
-			
-			modifier = {
-				political_power_gain = 0.1
-				army_morale_factor = 0.1
-			}
-		}
-		
-
-		KAR_pagan_victory = {
+        
+        KAR_pagan_victory = {
 			
 			picture = war_of_resistance
 		
@@ -423,6 +345,163 @@ ideas = {
 			
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+        
+        KAR_purged_heer = {
+        
+            picture = idk
+            
+            modifier = {
+                army_org_factor = -0.5
+                army_morale_factor = -0.2
+                training_time_factor = 0.1
+                max_planning = -0.5
+            }
+        
+        }
+        
+        KAR_religious_retraining = {
+        
+            picture = idk
+            
+            modifier = {
+                training_time_army_factor = 0.05
+                army_core_defence_factor = 0.05
+                army_morale_factor = 0.05
+            }
+        
+        }
+        
+        KAR_integrated_orders_idea = {
+        
+            picture = idk
+            
+            modifier = {
+                conscription_factor = 0.05
+                political_power_gain = 0.05
+            }
+        
+        }
+		
+        KAR_new_officers = {
+        
+            picture = idk
+            
+            modifier = {
+                army_org_factor = -0.25
+                army_morale_factor = -0.1
+                max_planning = -0.25
+            }
+        
+        }
+        
+        KAR_tighten_recruitment_reqs_idea = {
+        
+            picture = idk
+            
+            modifier = {
+                conscription_factor = -0.1
+                army_attack_factor = 0.02
+                army_defence_factor = 0.02
+                army_morale_factor = 0.05
+            }
+        
+        }
+        
+        KAR_to_serve_the_highest_principle_idea_2 = {
+            
+            picture = idk
+            
+            modifier = {
+                army_core_defence_factor = 0.08
+                army_core_attack_factor = 0.03
+                army_leader_start_level = 2
+                resistance_target = -0.05
+                political_power_gain = -0.15
+            }
+        
+        }
+        
+        KAR_going_wiking_idea = {
+            picture = idk
+            
+            modifier = {
+                invasion_preparation = -0.25
+                amphibious_invasion = 0.1
+            }
+        }
+		
+		######
+		
+		
+		KAR_hurting_econ = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.2
+				production_factory_max_efficiency_factor = -0.3
+			}
+		
+		}
+		
+		KAR_really_hurting_econ = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.3
+				production_factory_max_efficiency_factor = -0.2
+			}
+		
+		}
+		
+		KAR_really_hurting_econ_pagan = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.5
+				production_factory_max_efficiency_factor = -0.25
+			}
+		
+		}
+		
+		KAR_better_econ = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		
+		}
+		
+		KAR_much_better_econ = {
+			
+			picture = KAR_debuffeco
+		
+			modifier = { 
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+			}
+		
+		}
+		
+		
+		KAR_karlslander_identity_spirit = {
+		
+			picture = war_of_resistance
+			
+			modifier = {
+				political_power_gain = 0.1
+				army_morale_factor = 0.1
 			}
 		}
 		
@@ -885,6 +964,31 @@ ideas = {
 				political_power_gain = 0.1
 			}
 		}
+        
+        #### Navy and Air
+        
+        KAR_master_of_the_baltic_idea = {
+        
+            picture = generic_sea_focused_navy
+            
+            modifier = {
+                naval_coordination = 0.05
+                naval_speed_factor = 0.1
+                navy_max_range_factor = -0.05
+            }
+        
+        }
+        
+        KAR_western_ports_idea = {
+        
+            picture = generic_sea_focused_navy
+            
+            modifier = {
+                navy_max_range_factor = 0.15
+                naval_coordination = -0.05
+            }
+        
+        }
 		
 	}
 

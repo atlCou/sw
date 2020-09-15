@@ -9,11 +9,11 @@ opinion_modifiers = {
 		value = -100
 	}
 	
-	kar_anti-romagna = {
+	kar_romagna = {
 		value = -10
 	}
 	
-	kar_anti-romagna_2 = {
+	kar_romagna_2 = {
 		value = -100
 	}
 	
