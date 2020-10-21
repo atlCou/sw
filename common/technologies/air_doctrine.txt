@@ -449,11 +449,11 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = ENG
+				tag = BRI
 				factor = 1.5
 			}
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 0.5
 			}
 		}
@@ -507,11 +507,11 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = ENG
+				tag = BRI
 				factor = 0.5
 			}
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 1.5
 			}
 		}
@@ -791,10 +791,10 @@ technologies = {
 			
 			modifier = {
 				factor = 0
-				tag = USA
+				tag = LIN
 			}
 			modifier = {
-				tag = SOV
+				tag = ORU
 				factor = 4
 			}
 			modifier = {
@@ -854,7 +854,7 @@ technologies = {
 			}
 
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 0.5
 			}
 		}
@@ -909,7 +909,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 0.5
 			}
 		}
@@ -964,7 +964,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 0.5
 			}
 		}
@@ -1018,7 +1018,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 0.5
 			}
 		}
@@ -1067,7 +1067,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 0.5
 			}
 		}
@@ -1130,7 +1130,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 0.5
 			}
 		}
@@ -1444,7 +1444,7 @@ technologies = {
 			
 			modifier = {
 				factor = 0
-				tag = USA
+				tag = LIN
 			}
 			modifier = {
 				ai_land_doctrine_tier_1_trigger = yes

@@ -74,7 +74,7 @@ technologies = {
 				
 				OR = {
 					date > "1937.1.1"
-					JAP = { is_ai = no }
+					FUS = { is_ai = no }
 				}
 			}
 			
@@ -185,7 +185,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				tag = SOV
+				tag = ORU
 				OR = {
 					date < "1944.1.1" # stock up on lots of rifles, we got the manpower
 					AND = {
@@ -361,7 +361,7 @@ technologies = {
 			
 			
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 2.5
 			}
 			modifier = {
@@ -466,17 +466,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 	}
@@ -509,17 +509,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 	}
@@ -547,17 +547,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 	}
@@ -601,12 +601,12 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 3
-				tag = JAP
+				tag = FUS
 			}
 		}
 	}
@@ -639,12 +639,12 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 3
-				tag = JAP
+				tag = FUS
 			}
 		}
 	}
@@ -671,12 +671,12 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 3
-				tag = JAP
+				tag = FUS
 			}
 		}
 	}	
@@ -1561,7 +1561,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -1801,7 +1801,7 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 2
 			}
 		}
@@ -1843,7 +1843,7 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 2
 			}
 		}
@@ -1934,7 +1934,7 @@ technologies = {
 		}
 	}
 	
-	######### FROM JAPANESE FOCUS ##########
+	######### FROM FUSANESE FOCUS ##########
 	bicycle_infantry = {
 		
 		allow = {

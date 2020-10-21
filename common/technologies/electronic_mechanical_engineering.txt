@@ -108,7 +108,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 4
 			}
 		}
@@ -142,8 +142,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
 				factor = 5
 			}
@@ -193,8 +193,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
 				factor = 5
 			}
@@ -241,8 +241,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
 				factor = 4
 			}
@@ -287,8 +287,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
 				factor = 4
 			}
@@ -330,8 +330,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
 				factor = 5
 			}
@@ -472,7 +472,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 		}
 		
@@ -556,12 +556,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = KAR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -599,12 +599,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = KAR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -642,12 +642,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = KAR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -681,12 +681,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = KAR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -720,12 +720,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = KAR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -759,12 +759,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = KAR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -795,9 +795,9 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = BRI
+					tag = LIN
+					tag = FUS
 				}
 				factor = 3
 			}
@@ -836,9 +836,9 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = BRI
+					tag = LIN
+					tag = FUS
 				}
 				factor = 3
 			}
@@ -878,9 +878,9 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = BRI
+					tag = LIN
+					tag = FUS
 				}
 				factor = 3
 			}
@@ -1080,10 +1080,10 @@ technologies = {
 			position = { x = 2 y = 11 }
 		}
 		
-		desc = "JET_ENGINES_SPECIAL"
+		desc = "JET_BRIINES_SPECIAL"
 
 		on_research_complete = {
-			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+			custom_effect_tooltip = JET_BRIINES_RESEARCHED
 		}
 		
 		ai_will_do = {
@@ -1133,7 +1133,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 		}
 		
@@ -1164,7 +1164,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 2
 			}
 		}

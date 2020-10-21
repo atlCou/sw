@@ -50,11 +50,13 @@ shared_focus = {
 	cost = 5
 	available_if_capitulated = yes 
     available = { has_country_flag = KAR_put_down_the_strikes_flag }
+    bypass = { has_country_flag = KAR_put_down_the_strikes_flag }
 	ai_will_do = { 
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        
 	} 
 }
 
@@ -71,7 +73,17 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        add_political_power = 50 # political power focuses are ok this early on into the tree
+        add_stability = 0.05
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.03
+        }
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.02
+        }
 	} 
 } 
 
@@ -88,7 +100,14 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        add_political_power = 25
+        add_stability = 0.075
+        add_war_support = 0.075
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.03
+        }
 	} 
 } 
 
@@ -105,7 +124,16 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        add_stability = 0.1
+        add_popularity = {
+            ideology = communism
+            popularity = -0.05
+        }
+        add_popularity = {
+            ideology = democratic
+            popularity = -0.025
+        }
 	} 
 }
 
@@ -122,7 +150,15 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        swap_ideas = {
+            add_idea = KAR_thedeathofmonarchy_2
+            remove_idea = KAR_thedeathofmonarchy
+        }
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.025
+        }
 	} 
 } 
 
@@ -139,7 +175,15 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        64 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+        }
 	} 
 }
 
@@ -151,13 +195,18 @@ shared_focus = {
 	cost = 5
 	available_if_capitulated = yes 
     prerequisite = { focus = KAR_play_off_national_unity }
-    prerequisite = { focus = KAR_liberalize_the_reichstag }
+    prerequisite = { focus = KAR_liberalize_the_reichstag focus = KAR_karlslander_pride }
     relative_position_id = KAR_put_down_the_strikes
 	ai_will_do = { 
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        add_stability = 0.05
+        add_timed_idea = {
+            idea = KAR_reinsure_investors_idea
+            days = 365
+        }
 	} 
 }
 
@@ -174,7 +223,13 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        add_stability = 0.05
+        add_political_power = 50
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.05
+        }
 	} 
 } 
 
@@ -191,7 +246,13 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        add_political_power = 25
+        add_stability = 0.1
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.08
+        }
 	} 
 } 
 
@@ -200,7 +261,7 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = 5
 	y = 2
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes 
     prerequisite = { focus = KAR_expand_worker_protections }
     relative_position_id = KAR_put_down_the_strikes
@@ -208,7 +269,13 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        add_ideas = KAR_weakened_bundesrat
+        add_stability = 0.075
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.1
+        }
 	} 
 } 
 
@@ -217,7 +284,7 @@ shared_focus = {
 	icon = GFX_pagantrihorn
 	x = 4
 	y = 3
-	cost = 5
+	cost = 2 # short, doesn't do much
 	available_if_capitulated = yes 
     prerequisite = { focus = KAR_weaken_the_bundesrat }
     prerequisite = { focus = KAR_liberalize_the_reichstag }
@@ -226,7 +293,16 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        add_stability = 0.075
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = communism
+            popularity = 0.025
+        }
 	} 
 } 
 
@@ -244,7 +320,27 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        every_owned_state = {
+            limit = {
+                OR = {
+                    state = 5
+                    state = 62
+                    state = 63
+                    state = 64
+                    state = 66
+                    state = 67
+                    state = 68
+                    state = 85
+                    state = 86
+                    state = 188
+                    state = 762	
+                    state = 763
+                }
+            }
+            add_extra_state_shared_building_slots = 1
+        }
+        add_stability = 0.075
 	} 
 } 
 
@@ -262,7 +358,22 @@ shared_focus = {
 		factor = 1
 	} 
 
-	completion_reward = { 		
+	completion_reward = {
+        every_owned_state = {
+            limit = {
+                OR = {
+                    state = 52
+                    state = 53
+                    state = 54
+                }
+            }
+            add_extra_state_shared_building_slots = 1
+        }
+        add_stability = 0.05
+        add_popularity = {
+            ideology = neutrality
+            popularity = -0.05
+        }
 	} 
 }
 

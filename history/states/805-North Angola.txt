@@ -2,7 +2,7 @@ state={
 	id=805
 	name="STATE_805"
 	history={
-		owner = ANG
+		owner = IDK
 		buildings = {
 			infrastructure = 1
 			2115 = {
@@ -12,7 +12,6 @@ state={
 		victory_points = {
 			2115 1 
 		}
-		add_core_of = ANG
 	}
 	provinces={
 		2115 

@@ -1,7 +1,7 @@
 ﻿##### Division Templates #####
 division_template = {
 	name = "Division d'Infanterie"		
-	division_names_group = GAL_INF_01
+	#division_names_group = GAL_INF_01
 	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
 	# Difference is their equipment
 	regiments = {
@@ -22,7 +22,7 @@ division_template = {
 }
 division_template = {
 	name = "Division Coloniale"		
-	division_names_group = GAL_COL_01
+	#division_names_group = GAL_COL_01
 	# Represents: Div. d'Inf. Coloniale, Div. d'Inf. Nord-Africaine
 	# Difference from DI is their equipment
 	regiments = {
@@ -42,7 +42,7 @@ division_template = {
 }
 division_template = {
 	name = "Division d'Infanterie Motorisée"	# Division d'Infanterie Motorisée
-	division_names_group = GAL_MOT_01
+	#division_names_group = GAL_MOT_01
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -63,7 +63,7 @@ division_template = {
 }
 division_template = {
 	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
-	division_names_group = GAL_MNT_01
+	#division_names_group = GAL_MNT_01
 	# Note: trimmed to 3x Rgts w/ arty bn added, 1939
 
 	regiments = {
@@ -83,7 +83,7 @@ division_template = {
 }
 division_template = {
 	name = "Division de Cavalerie" 	# Division de Cavalerie
-	division_names_group = GAL_CAV_01
+	#division_names_group = GAL_CAV_01
 	# Note: Transformed to DLC, DLM divisions, 1936-39 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -97,7 +97,7 @@ division_template = {
 }
 division_template = {
 	name = "Division Légère Mécanique" 		# Division Légère Mécanique
-	division_names_group = GAL_MEC_01
+	#division_names_group = GAL_MEC_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
@@ -114,7 +114,7 @@ division_template = {
 }
 division_template = {
 	name = "Brigade de Chars de Combat" 	# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
-	division_names_group = GAL_ARM_01
+	#division_names_group = GAL_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -124,7 +124,7 @@ division_template = {
 }
 division_template = {
 	name = "Brigade Coloniale"			# Represents: 2xRgt colonial forces and , usually with old equipment
-	division_names_group = GAL_COL_01
+	#division_names_group = GAL_COL_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }

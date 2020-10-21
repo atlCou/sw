@@ -402,7 +402,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -445,7 +445,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -488,7 +488,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -527,7 +527,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = ORU
 			}
 		}
 		
@@ -634,14 +634,14 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = FUS
+					tag = BRI
+					tag = LIN
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = FUS
+					has_war_with = LIN
+					has_war_with = BRI
 				}
 				factor = 5
 			}
@@ -682,14 +682,14 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = FUS
+					tag = BRI
+					tag = LIN
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = FUS
+					has_war_with = LIN
+					has_war_with = BRI
 				}
 				factor = 5
 			}
@@ -732,14 +732,14 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = FUS
+					tag = BRI
+					tag = LIN
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = FUS
+					has_war_with = LIN
+					has_war_with = BRI
 				}
 				factor = 5
 			}
@@ -782,14 +782,14 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = FUS
+					tag = BRI
+					tag = LIN
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = FUS
+					has_war_with = LIN
+					has_war_with = BRI
 				}
 				factor = 5
 			}
@@ -825,14 +825,14 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = FUS
+					tag = BRI
+					tag = LIN
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = FUS
+					has_war_with = LIN
+					has_war_with = BRI
 				}
 				factor = 5
 			}
@@ -880,11 +880,11 @@ technologies = {
 				}
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_War_with = ORU
+						has_war_with = LIN
 					}
 				}
 				factor = 0.5
@@ -965,11 +965,11 @@ technologies = {
 				}
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_War_with = ORU
+						has_war_with = LIN
 					}
 				}
 				factor = 0.5
@@ -1028,11 +1028,11 @@ technologies = {
 				date > "1939.1.9"
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_War_with = ORU
+						has_war_with = LIN
 					}
 				}
 				factor = 0.5
@@ -1042,7 +1042,7 @@ technologies = {
 				date > "1940.1.1"
 			}
 			modifier = {
-				tag = USA
+				tag = LIN
 				has_War = no
 				factor = 0.5 #this tank nonsense will never catch on
 			}
@@ -1106,11 +1106,11 @@ technologies = {
 				date > "1941.1.6"
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_War_with = ORU
+						has_war_with = LIN
 					}
 				}
 				factor = 0.5
@@ -1180,11 +1180,11 @@ technologies = {
 				date > "1942.1.6"
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_War_with = ORU
+						has_war_with = LIN
 					}
 				}
 				factor = 0.5
@@ -1244,11 +1244,11 @@ technologies = {
 				date > "1942.1.9"
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_War_with = ORU
+						has_war_with = LIN
 					}
 				}
 				factor = 0.5

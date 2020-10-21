@@ -1,0 +1,190 @@
+ideas = {
+	country = {
+
+		RMA_cultural_center = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.1
+				foreign_subversive_activites = -0.5
+			}
+		}
+
+		RMA_unification = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				war_support_factor = 0.10
+			}
+		}
+		
+		
+		RMA_building_grants_idea = {
+		
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		
+		}
+		
+		RMA_trade_partners_idea = {
+		
+			picture = generic_flexible_foreign_policy
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		
+		RMA_defending_our_position_idea = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.30
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				foreign_subversive_activites = -0.25
+			}
+		}
+		
+		RMA_not_just_the_pagans_idea = {
+
+			picture = vittoria_mutilata
+		
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				communism_acceptance = -50
+				fascism_acceptance = -50
+			}
+		}
+		
+		RMA_opening_business_idea = {
+		
+			picture = generic_political_support
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		RMA_relax_regulations_idea = {
+		
+			picture = generic_political_support
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		RMA_disband_parliament_idea = {
+		
+			picture = vittoria_mutilata
+			
+			modifier = {
+				political_power_factor = 0.1
+				fascism_drift = 0.02
+			}
+			
+		}
+		
+		RMA_legionarii_on_the_streets_idea = {
+		
+			picture = vittoria_mutilata
+			
+			modifier = {
+				political_power_factor = 0.13
+				stability_factor = 0.1
+				fascism_drift = 0.05
+			}
+			
+		}
+		
+		RMA_national_economic_council_idea = {
+		
+			picture = NA
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		RMA_the_SdP = {
+		
+			picture = RMA_SdP
+			
+			modifier = {
+				resistance_target = -0.13
+				army_morale_factor = 0.05
+				defence = 0.03
+				offence = 0.03
+			}
+		}
+		
+		RMA_greenshirts_idea = {
+		
+			picture = RMA_greenshirts
+			
+			modifier = {
+				political_power_factor = 0.03
+				high_command_cost_factor = -0.25
+				conscription_factor = 0.1
+			}
+		}
+		
+		RMA_make_the_trains_run_on_time_idea = {
+		
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				attrition = -0.05
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		
+		RMA_jupitonian_mysticism_idea = {
+		
+			picture = generic_fascism_drift_2
+			
+			modifier = {
+				political_power_factor = -0.1
+				compliance_gain = -0.02
+				surrender_limit = 0.15
+				max_command_power = 30
+			}
+		}
+		
+		RMA_elevating_the_clergy_idea = {
+		
+			picture = generic_fascism_drift_2
+			
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.1
+				political_advisor_cost_factor = -0.25
+				stability_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		
+	}
+
+}

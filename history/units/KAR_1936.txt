@@ -145,7 +145,7 @@ units = {
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = KAR} }
 	}
 	division= {	
 		division_name = {
@@ -155,7 +155,7 @@ units = {
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = KAR} }
 	}
 	division= {	
 		division_name = {
@@ -165,7 +165,7 @@ units = {
 		location = 6521
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = KAR} }
 	}
 
 	division= {	
@@ -392,8 +392,8 @@ air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
 	763 = { 
 		# Jagdgeschwader 232 	
-		fighter_equipment_0 =  {		# He 51
-			owner = "GER" 
+		fighter_equipment_0 = {		# He 51
+			owner = KAR
 			amount = 40
 		}
 		name = "Jagdgeschwader 232"
@@ -403,7 +403,7 @@ air_wings = {
 	64 = { 
 		# Jagdgeschwader 132 'Richtofen'		
 		fighter_equipment_0 =  {		# Ar 68
-			owner = "GER" 
+			owner = KAR
 			amount = 80
 		}
 		name = "Jagdgeschwader 132"
@@ -416,18 +416,18 @@ air_wings = {
 		}
 		# Kampfgeschwader 153		
 		tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER" 
+			owner = KAR
 			amount = 80
 		}
 		tac_bomber_equipment_0 = {		# Ju 86
-			owner = "GER" 
+			owner = KAR
 			amount = 40
 			version_name = "Ju 86"
 		}
 		name = "Kampfgeschwader 153"
 		# TODO: REMOVE THIS LATER ???
 		transport_plane_equipment_1 = {
-			owner = "GER" 
+			owner = KAR
 			amount = 4
 		}
 	}
@@ -436,13 +436,13 @@ air_wings = {
 	66 = { 
 		# Kampfgeschwader 253 'General Wever'		
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
-			owner = "GER" 
+			owner = KAR
 			amount = 120
 		}
 		name = "Kampfgeschwader 253"
 		# Sturzkampfgeschwader 162		
 		CAS_equipment_1 =  {			# Hs 123
-			owner = "GER" 
+			owner = KAR
 			amount = 80
 		}
 		name = "Sturzkampfgeschwader 162"	
@@ -452,19 +452,19 @@ air_wings = {
 	57 = { 
 		# Jagdgeschwader 134 'Horst Wessel'		
 		fighter_equipment_0 =  {		# He 51 # Ar 68
-			owner = "GER" 
+			owner = KAR
 			amount = 120
 		}
 		name = "Jagdgeschwader 134"
 		# Kampfgeschwader 152 'Hindenburg'	
 		tac_bomber_equipment_1 = {		# Do 23
-			owner = "GER" 
+			owner = KAR
 			amount = 80
 		}
 		name = "Kampfgeschwader 152"
 		# Kampfgeschwader 155	
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ? (light bomber)
-			owner = "GER" 
+			owner = KAR
 			amount = 80
 		}
 		name = "Kampfgeschwader 155"
@@ -474,13 +474,13 @@ air_wings = {
 	52 = { 
 		# Jagdgeschwader 136		
 		fighter_equipment_0 =  {		# He 51
-			owner = "GER" 
+			owner = KAR
 			amount = 40
 		}
 		name = "Jagdgeschwader 136"
 		# Kampfgeschwader 154	
 		tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER" 
+			owner = KAR
 			amount = 80
 		}
 		name = "Kampfgeschwader 154"
@@ -490,7 +490,7 @@ air_wings = {
 	58 = { 
 		# Küstenfliegergruppe 106		
 		nav_bomber_equipment_1 =  {		# He 59, Do 18
-			owner = "GER" 
+			owner = KAR
 			amount = 72
 		}
 		name = "Küstenfliegergruppe 106"
@@ -507,7 +507,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "GER"
+			creator = KAR
 		}
 		requested_factories = 10
 		progress = 0.1
@@ -517,7 +517,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "GER" 
+			creator = KAR 
 		}
 		requested_factories = 2
 		progress = 0.3
@@ -527,7 +527,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "GER" 
+			creator = KAR 
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -537,7 +537,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_2
-			creator = "GER" 
+			creator = KAR 
 		}
 		requested_factories = 2
 		progress = 0.4
@@ -547,7 +547,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "GER" 
+			creator = KAR 
 		}
 		requested_factories = 2
 		progress = 0.4
@@ -557,7 +557,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1
-			creator = "GER" 
+			creator = KAR 
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -567,7 +567,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = CAS_equipment_1
-			creator = "GER" 
+			creator = KAR 
 		}
 		requested_factories = 1
 		progress = 0.2
@@ -577,7 +577,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = tac_bomber_equipment_1
-			creator = "GER" 
+			creator = KAR 
 		}
 		requested_factories = 1
 		progress = 0.1

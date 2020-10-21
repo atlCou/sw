@@ -25,7 +25,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -61,7 +61,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -96,7 +96,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -126,7 +126,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -166,12 +166,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -211,12 +211,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -255,12 +255,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -295,12 +295,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -716,17 +716,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -765,46 +765,32 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 
-			modifier = {
-				factor = 50
-				tag = JAP
-				OR = {
-					has_war_with = USA
-					CHI = {  
-						OR = { 
-							has_capitulated = yes 
-							exists = no
-		                    is_subject_of = JAP
-						}
-					}
-				}
-			}
 			
 			modifier = {
 				factor = 5
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
-				has_war_with = GER
+				has_war_with = KAR
 			}
 
 			modifier = {
 				factor = 10
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
+				has_war_with = KAR
+				KAR = { has_war_with = ORU }
 			}
 		}
 		
@@ -837,17 +823,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -882,12 +868,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -921,12 +907,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -961,12 +947,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -997,12 +983,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -1037,7 +1023,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KAR
 			}
 		}
 		
@@ -1071,7 +1057,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KAR
 			}
 		}
 		
@@ -1106,7 +1092,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KAR
 			}
 		}
 		
@@ -1136,7 +1122,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KAR
 			}
 		}
 		
@@ -1148,7 +1134,7 @@ technologies = {
 
 	
 
-	######## JAPAN FOCUS TREE UNLOCK ########
+	######## FUSAN FOCUS TREE UNLOCK ########
 	torpedo_cruiser = {
 
 		enable_equipments = { 

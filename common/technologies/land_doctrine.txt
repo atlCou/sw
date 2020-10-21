@@ -235,7 +235,7 @@ technologies = {
 			}
 
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 2
 			}
 		}
@@ -836,7 +836,7 @@ technologies = {
 				factor = 0.5
 			}
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 3
 			}
 		}
@@ -1877,7 +1877,7 @@ technologies = {
 			
 			modifier = {
 				factor = 0.25
-				has_idea = FRA_victors_of_wwi
+				has_idea = GAL_victors_of_wwi
 			}
 		}
 		
@@ -2833,7 +2833,7 @@ technologies = {
 				factor = 0.8
 			}
 			modifier = {
-				tag = SOV
+				tag = ORU
 				factor = 2
 			}
 

@@ -53,7 +53,7 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -91,8 +91,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
+					tag = BRI
+					tag = FUS
 				}
 			}
 			modifier = {
@@ -136,9 +136,9 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -173,9 +173,9 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -204,7 +204,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -253,7 +253,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				has_war_with = GER
+				has_war_with = KAR
 			}
 			modifier = {
 				factor = 2
@@ -297,7 +297,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				has_war_with = GER
+				has_war_with = KAR
 			}
 			modifier = {
 				factor = 2
@@ -340,7 +340,7 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				has_war_with = GER
+				has_war_with = KAR
 			}
 			modifier = {
 				factor = 2
@@ -380,7 +380,7 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				has_war_with = GER
+				has_war_with = KAR
 			}
 			modifier = {
 				factor = 2
@@ -419,7 +419,7 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				has_war_with = GER
+				has_war_with = KAR
 			}
 			modifier = {
 				factor = 2
@@ -455,7 +455,7 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				has_war_with = GER
+				has_war_with = KAR
 			}
 			modifier = {
 				factor = 2
@@ -515,9 +515,9 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -563,9 +563,9 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -604,9 +604,9 @@ technologies = {
 			
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 				factor = 4
 			}
@@ -642,8 +642,8 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
 			}
 		}
@@ -681,9 +681,9 @@ technologies = {
 			modifier = {
 				factor = 3.5
 				OR = {
-					tag = GER
-					tag = JAP
-					tag = USA
+					tag = KAR
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -729,9 +729,9 @@ technologies = {
 			modifier = {
 				factor = 3
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -777,9 +777,9 @@ technologies = {
 			modifier = {
 				factor = 3
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -819,9 +819,9 @@ technologies = {
 			modifier = {
 				factor = 3
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -877,9 +877,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 			modifier = {
@@ -930,9 +930,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 			modifier = {
@@ -970,7 +970,7 @@ technologies = {
 			
 			modifier = {
 				factor = 25
-				tag = JAP
+				tag = FUS
 			}
 		}
 		
@@ -1008,7 +1008,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 			modifier = {
 				is_major = no
@@ -1045,7 +1045,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 
 			}
 			modifier = {
@@ -1095,9 +1095,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -1139,8 +1139,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
 			}
 			modifier = {
@@ -1195,9 +1195,9 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -1236,9 +1236,9 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -1277,9 +1277,9 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -1313,9 +1313,9 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = BRI
+					tag = FUS
+					tag = LIN
 				}
 			}
 		}
@@ -1370,9 +1370,9 @@ early_ship_hull_carrier = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = FUS
+					tag = LIN
+					tag = KAR
 				}
 				factor = 5
 			}
@@ -1430,9 +1430,9 @@ early_ship_hull_carrier = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = FUS
+					tag = LIN
+					tag = KAR
 				}
 				factor = 5
 			}
@@ -1441,7 +1441,7 @@ early_ship_hull_carrier = {
 				factor = 3
 			}
 			modifier = {
-				tag = JAP #Japan wants torpedoes EXTRA HARD
+				tag = FUS #Japan wants torpedoes EXTRA HARD
 				factor = 2
 			}
 		}
@@ -1480,9 +1480,9 @@ early_ship_hull_carrier = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = FUS
+					tag = LIN
+					tag = KAR
 				}
 				factor = 5
 			}
@@ -1519,9 +1519,9 @@ early_ship_hull_carrier = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = FUS
+					tag = LIN
+					tag = KAR
 				}
 				factor = 5
 			}
@@ -1560,7 +1560,7 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = JAP
+				tag = FUS
 				factor = 5
 			}
 		}
@@ -1598,7 +1598,7 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = JAP
+				tag = FUS
 				factor = 5
 			}
 		}
@@ -1630,7 +1630,7 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = JAP
+				tag = FUS
 				factor = 5
 			}
 		}
@@ -1671,8 +1671,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
+					tag = KAR
+					tag = LIN
 				}
 			}
 		}
@@ -1716,8 +1716,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
+					tag = KAR
+					tag = LIN
 				}
 			}
 		}
@@ -1763,8 +1763,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
+					tag = KAR
+					tag = LIN
 				}
 			}
 		}
@@ -1800,8 +1800,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
+					tag = KAR
+					tag = LIN
 				}
 			}
 		}
@@ -1839,14 +1839,14 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
+					tag = KAR
 					tag = HOL
 				}
 			}
 			modifier = {
 				not = {
-					has_war_with = ENG
-					has_War_with = USA
+					has_war_with = BRI
+					has_War_with = LIN
 				}
 				factor = 0.5
 			}
@@ -1890,7 +1890,7 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
+					tag = KAR
 					tag = HOL
 				}
 			}
@@ -2413,8 +2413,8 @@ early_ship_hull_carrier = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = KAR
+					tag = FUS
 				}
 				factor = 2
 			}
@@ -2456,8 +2456,8 @@ early_ship_hull_carrier = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = KAR
+					tag = FUS
 				}
 				factor = 2
 			}
@@ -2494,8 +2494,8 @@ early_ship_hull_carrier = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = KAR
+					tag = FUS
 				}
 				factor = 2
 			}
@@ -2687,9 +2687,9 @@ early_ship_hull_carrier = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = BRI
+					tag = LIN
+					tag = FUS
 				}
 				factor = 20
 			}
@@ -2728,11 +2728,11 @@ early_ship_hull_carrier = {
 			factor = 3
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = FUS
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 3
 			}
 			modifier = {
@@ -2767,11 +2767,11 @@ early_ship_hull_carrier = {
 			factor = 3
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = FUS
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 3
 			}
 			modifier = {
@@ -2802,11 +2802,11 @@ early_ship_hull_carrier = {
 			factor = 3
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = FUS
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 3
 			}
 			modifier = {
@@ -2826,7 +2826,7 @@ early_ship_hull_carrier = {
 #    #  #  # #       #  # #  # #  #  #  #  # #  # #       #   # #    #  #  # #  # #  #   # 
 #   ### #  # ###      ##   ##  #  #  #  #  #  ##  ###     #   # ###  #  #  #  ##  ###  ##  
 
-#NOTE: FIRE CONTROL SYSTEMS ARE IN ELECTROMECHANICAL ENGINEERING FOLDER!
+#NOTE: FIRE CONTROL SYSTEMS ARE IN ELECTROMECHANICAL BRIINEERING FOLDER!
 
 	fire_control_methods_1 = {
 		
@@ -2858,7 +2858,7 @@ early_ship_hull_carrier = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				factor = 5
 			}
 		}
@@ -2902,7 +2902,7 @@ early_ship_hull_carrier = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				factor = 5
 			}
 		}
@@ -2950,7 +2950,7 @@ early_ship_hull_carrier = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = FUS
 				factor = 5
 			}
 		}
@@ -3000,10 +3000,10 @@ early_ship_hull_carrier = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = KAR
+					tag = LIN
+					tag = BRI
+					tag = ORU
 				}
 				factor = 6
 			}
@@ -3048,10 +3048,10 @@ early_ship_hull_carrier = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = KAR
+					tag = LIN
+					tag = BRI
+					tag = ORU
 				}
 				factor = 6
 			}
@@ -3083,10 +3083,10 @@ early_ship_hull_carrier = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = KAR
+					tag = LIN
+					tag = BRI
+					tag = ORU
 				}
 				factor = 6
 			}
@@ -3127,10 +3127,10 @@ early_ship_hull_carrier = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = KAR
+					tag = LIN
+					tag = BRI
+					tag = ORU
 				}
 				factor = 6
 			}
@@ -3168,10 +3168,10 @@ early_ship_hull_carrier = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = KAR
+					tag = LIN
+					tag = BRI
+					tag = ORU
 				}
 				factor = 5
 			}
@@ -3210,8 +3210,8 @@ early_ship_hull_carrier = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = USA
-					tag = ENG
+					tag = LIN
+					tag = BRI
 				}
 				factor = 5
 			}
@@ -3249,9 +3249,9 @@ early_ship_hull_carrier = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
+					tag = KAR
+					tag = LIN
+					tag = BRI
 				}
 				factor = 7
 			}
@@ -3284,7 +3284,7 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 3
 			}
 		}
@@ -3354,21 +3354,21 @@ early_ship_hull_carrier = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			modifier = {
-				has_war_with = JAP
+				has_war_with = FUS
 				factor = 2
 			}
 			
 			modifier = {
 				factor = 3
-				tag = JAP
+				tag = FUS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		
@@ -3407,40 +3407,26 @@ early_ship_hull_carrier = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			modifier = {
-				has_war_with = JAP
+				has_war_with = FUS
 				factor = 2
-			}
-			modifier = {
-				factor = 50
-				tag = JAP
-				OR = {
-					has_war_with = USA
-					CHI = {  
-						OR = { 
-							has_capitulated = yes 
-							exists = no
-		                    is_subject_of = JAP
-						}
-					}
-				}
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 
 			modifier = {
 				factor = 10
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = BRI
+					tag = LIN
 				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
+				has_war_with = KAR
+				KAR = { has_war_with = ORU }
 			}
 		}
 		
@@ -3473,20 +3459,20 @@ early_ship_hull_carrier = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			modifier = {
 				factor = 2
-				has_war_with = JAP
+				has_war_with = FUS
 			}
 			modifier = {
 				factor = 3
-				tag = JAP
+				tag = FUS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 		}
 		

@@ -3,7 +3,7 @@
 
 
 
-country_event = {
+country_event = {  ## Strikes in the Rhineland escalate
 	id = karlsland.1
 	title = karlsland.1.t
 	desc = karlsland.1.d
@@ -16,418 +16,162 @@ country_event = {
 
 	option = {
 		name = karlsland.1.a
+        add_ideas = KAR_better_econ
+        add_stability = -0.1
+        hidden_effect = {
+            id = karlsland.2
+            days = 14
+        }
 	}
 }
 
-
-
-
-
-country_event = {
-	id = karlsland.10
-	title = karlsland.10.t
-	desc = karlsland.10.d
+country_event = {  ## Councils in Rhlnd. acting more militantly, local states unable to keep peace in some areas
+	id = karlsland.2
+	title = karlsland.2.t
+	desc = karlsland.2.d
 	
 	fire_only_once = yes
 	
-	is_triggered_only = yes
-	
+    is_triggered_only = yes
+
 	option = {
-		name = karlsland.10.a
-		set_country_flag = KAR_socialprograms
-	}
-	
-	option = {
-		name = karlsland.10.a
-		set_country_flag = KAR_businessstimulation
+		name = karlsland.2.a
+        swap_ideas = {
+            add_idea = KAR_hurting_econ
+            remove_idea = KAR_better_econ
+        }
+        add_stability = -0.15
+        hidden_effect = {
+            id = karlsland.3
+            days = 14
+        }
 	}
 }
 
 country_event = {
-	id = karlsland.11
-	title = karlsland.11.t
-	desc = karlsland.11.d
+	id = karlsland.3 ## Councils restate revolutionary intent, spread outside the west
+	title = karlsland.3.t
+	desc = karlsland.3.d
 	
 	fire_only_once = yes
 	
-	is_triggered_only = yes
-	
+    is_triggered_only = yes
+
 	option = {
-		name = karlsland.11.a
-		
-		if = {
-			limit = {
-				has_idea = KAR_recoveringfromww1
-			}
-			swap_ideas = {
-				add_idea = KAR_hurting_econ
-				remove_idea = KAR_recoveringfromww1
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = KAR_hurting_econ
-			}
-			swap_ideas = {
-				add_idea = KAR_hurting_econ
-				remove_idea = KAR_really_hurting_econ
-			}
-		}
+        ## Put down the strikes
+		name = karlsland.3.a
+        add_stability = -0.05
+        ai_chance = {
+            base = 1
+            modifier = {
+                NOT = { is_historical_focus_on = yes }
+                factor = 1
+            }
+        }
+        swap_ideas = {
+            add_idea = KAR_really_hurting_econ
+            remove_idea = KAR_hurting_econ
+        }
+        hidden_effect = {
+            id = karlsland.4
+            days = 3
+        }
 	}
-	
-	option = {
-		name = karlsland.11.b
-		
-		trigger = { has_political_power > 34 }
-		add_political_power = -35
+    
+    option = {
+        ## We can't put them down already!
+		name = karlsland.3.b
+        add_stability = -0.05
+        ai_chance = {
+            base = 1
+            modifier = {
+                is_historical_focus_on = yes
+                factor = 0
+            }
+        }
+        swap_ideas = {
+            add_idea = KAR_really_hurting_econ
+            remove_idea = KAR_hurting_econ
+        }
+        hidden_effect = {
+            id = karlsland.5
+            days = 3
+        }
 	}
-	
 }
 
 country_event = {
-	id = karlsland.12
-	title = karlsland.12.t
-	desc = karlsland.12.d
+	id = karlsland.4  ## Military disuades collectivists outside of the Rhineland
+	title = karlsland.4.t
+	desc = karlsland.4.d
 	
 	fire_only_once = yes
 	
-	is_triggered_only = yes
-	
+    is_triggered_only = yes
+
 	option = {
-		name = karlsland.12.a
-		
-		if = {
-			limit = {
-				has_idea = KAR_recoveringfromww1
-			}
-			swap_ideas = {
-				add_idea = KAR_hurting_econ
-				remove_idea = KAR_recoveringfromww1
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = KAR_hurting_econ
-			}
-			swap_ideas = {
-				add_idea = KAR_really_hurting_econ
-				remove_idea = KAR_hurting_econ
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = KAR_really_hurting_econ
-			}
-			add_political_power = -100
-		}
+		name = karlsland.4.a
+        swap_ideas = {
+            remove_idea = KAR_really_hurting_econ
+            add_idea = KAR_hurting_econ
+        }
+        set_country_flag = KAR_put_down_the_strikes_flag
+        add_stability = 0.05
 	}
-	
-	option = {
-		name = karlsland.12.b
-		
-		trigger = { has_political_power > 34 }
-		add_political_power = -35
-	}
-	
 }
 
 country_event = {
-	id = karlsland.13
-	title = karlsland.13.t
-	desc = karlsland.13.d
+	id = karlsland.5  ## Sudden activity in Berlin, order lost!
+	title = karlsland.5.t
+	desc = karlsland.5.d
 	
 	fire_only_once = yes
 	
-	is_triggered_only = yes
-	
-	option = {
-		name = karlsland.13.a
-		
-		if = {
-			limit = {
-				has_idea = KAR_recoveringfromww1
-			}
-			swap_ideas = {
-				add_idea = KAR_hurting_econ
-				remove_idea = KAR_recoveringfromww1
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = KAR_hurting_econ
-			}
-			swap_ideas = {
-				add_idea = KAR_hurting_econ
-				remove_idea = KAR_really_hurting_econ
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = KAR_really_hurting_econ
-			}
-			add_political_power = -100
-		}
-	}
-	
-	option = {
-		name = karlsland.13.b
-		
-		trigger = { has_political_power > 34 }
-		add_political_power = -35
-	}
-	
-}
-
-
-country_event = {
-	id = karlsland.14
-	title = karlsland.14.t
-	desc = karlsland.14.d
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = karlsland.14.a
-		trigger = { NOT = { has_idea = KAR_really_hurting_econ } }
-		if = {
-			limit = {
-				has_idea = KAR_recoveringfromww1
-			}
-			add_political_power = -25
-		}
-		else_if = {
-			limit = {
-				has_idea = KAR_hurting_econ
-			}
-			add_political_power = -50
-		}
-	}
-	
+    is_triggered_only = yes
 
 	option = {
-		name = karlsland.14.b
-		
-		trigger = { has_idea = KAR_really_hurting_econ }
-		add_political_power = -100
-		set_country_flag = KAR_can_go_pagan
+        ## The council succeeds! Collapse soon
+		name = karlsland.5.a
+        add_stability = -0.15
+        set_cosmetic_tag = KAR_republic
+        set_politics = { ruling_party = communism }
+        hidden_effect = {
+            id = karlsland.600
+            days = 7
+        }
 	}
-}
-
-
-country_event = {
-	id = karlsland.15
-	title = karlsland.15.t
-	desc = karlsland.15.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = karlsland.15.a
-		trigger = { NOT = { has_idea = KAR_really_hurting_econ } }
-		add_political_power = -25
-		remove_ideas = KAR_recoveringfromww1
-		remove_ideas = KAR_hurting_econ
-		add_timed_idea = {
-			idea = KAR_much_better_econ
-			days = 365
-		}
-		
-		set_country_flag = KAR_act_passed
+    
+    option = {
+        ## Counter-paramilitants take Berlin from the councils! Pagans
+		name = karlsland.5.a 
+        add_stability = -0.5
+        hidden_effect = {
+            id = karlsland.7
+            days = 7
+        }
 	}
-	
-	option = {
-		name = karlsland.15.b
-		add_political_power = 100
-		remove_ideas = KAR_recoveringfromww1
-		remove_ideas = KAR_hurting_econ
-		remove_ideas = KAR_really_hurting_econ
-		add_timed_idea = {
-			idea = KAR_better_econ
-			days = 365
-		}
-		
-		set_country_flag = KAR_act_compromise
-	}
-
-	option = {
-		name = karlsland.15.c
-		trigger = { has_country_flag = KAR_can_go_pagan }
-		add_political_power = -150
-		swap_ideas = {
-			remove_idea = KAR_really_hurting_econ
-			add_idea = KAR_really_hurting_econ_pagan
-		}
-		
-		set_country_flag = KAR_act_failed
-	}
-
 }
 
 country_event = {
-	id = karlsland.19
-	title = karlsland.19.t
-	desc = karlsland.19.d
+	id = karlsland.7
+	title = karlsland.7.t
+	desc = karlsland.7.d
 	
 	fire_only_once = yes
-	is_triggered_only = yes
 	
-	option = {
-		name = karlsland.19.a
-		trigger = { NOT = { has_country_flag = KAR_can_go_pagan } }
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.1
-		}
-		add_popularity = {
-			ideology = neutrality			
-			popularity = -0.1
-		}
-		hidden_effect = {
-			add_popularity = {
-				ideology = fascism			
-				popularity = -0.1
-			}
+    is_triggered_only = yes
 
-		}
-		set_politics = {
-			ruling_party = democratic
-		}
-		add_stability = 0.05
-	}
-	
 	option = {
-		name = karlsland.19.b
-		trigger = { NOT = { has_country_flag = KAR_can_go_pagan } }
-		add_popularity = {
-			ideology = neutrality
-			popularity = 0.05
-		}
-		hidden_effect = {
-			add_popularity = {
-				ideology = fascism			
-				popularity = -0.1
-			}
-		}
-		add_stability = 0.07
+		name = karlsland.7.a
+        swap_ideas = {
+            add_idea = KAR_really_hurting_econ
+            remove_idea = KAR_hurting_econ
+        }
+        add_stability = 0.05
+        add_political_power = -75
+        load_focus_tree = KAR_Karlsland_paganism
 	}
-	
-	option = {
-		name = karlsland.19.c
-		trigger = { has_country_flag = KAR_can_go_pagan }
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.2
-		}
-		add_popularity = {
-			ideology = neutrality			
-			popularity = -0.1
-		}
-		add_popularity = {
-			ideology = democratic			
-			popularity = -0.1
-		}
-		retire_country_leader = yes
-		create_country_leader = {
-			name = "Hanna Rudel"
-			desc = "HHHH"
-			picture = "Hanna_Rudel.dds"
-			expire = "1965.1.1"
-			ideology = despotism
-			traits = {
-			}
-		}
-		add_timed_idea = {
-			idea = KAR_pagan_victory
-			days = 10
-		}
-	}
-	
 }
-
-
-
-country_event = {
-	id = karlsland.20
-	title = karlsland.20.t
-	desc = karlsland.20.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	
-	option = {
-		name = karlsland.20.a
-		trigger = { NOT = { has_country_flag = KAR_can_go_pagan } }
-		add_stability = -0.05
-		set_country_flag = KAR_the_kaiser_has_died
-		hidden_effect = {
-			news_event = {
-				id = karlslandnews.90
-				days = 1
-			}
-		}
-	}
-	
-	option = {
-		name = karlsland.20.b
-		trigger = { has_country_flag = KAR_can_go_pagan }
-		add_stability = -0.2
-		load_focus_tree = KAR_Karlsland_paganism
-		hidden_effect = {
-			news_event = {
-				id = karlslandnews.90
-				days = 1
-			}
-		}
-	}
-	
-	
-}
-
-
-
-
-country_event = {
-	id = karlsland.100
-	title = karlsland.100.t
-	desc = karlsland.100.d
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	
-	option = {
-		name = karlsland.100.a
-		add_stability = 0.05
-		set_country_flag = KAR_compromise
-		remove_ideas = KAR_thedeathofmonarchy
-		add_popularity = {
-			ideology = fascism
-			popularity = -1
-		}
-		add_popularity = {
-			ideology = communism
-			popularity = 0.1
-		}
-	}
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

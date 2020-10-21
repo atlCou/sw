@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		witchtier5 = {
+			picture = ger_revive_the_kaiserreich
+			removal_cost = -1	
+			modifier = {
+			}			
+	}
+		witchtier4 = {
+			picture = ger_revive_the_kaiserreich
+			removal_cost = -1
+			modifier = {
+			}			
+	}
+		witchtier3 = {
+			picture = ger_revive_the_kaiserreich
+			removal_cost = -1
+			modifier = {
+			}			
+	}			
+		witchtier2 = {
+			picture = ger_revive_the_kaiserreich
+			removal_cost = -1
+			modifier = {
+			}			
+	}			
+		witchtier1 = {
+			picture = ger_revive_the_kaiserreich
+			removal_cost = -1
+			modifier = {
+			}			
+	}
+}
+}

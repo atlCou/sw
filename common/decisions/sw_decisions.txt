@@ -54,16 +54,16 @@ KAR_border_wars = {
 				attacker = {
 					state = var:attacker_temp
 					num_provinces = 4
-					on_win = japan_border_conflict.2
-					on_lose = japan_border_conflict.3
-					on_cancel = japan_border_conflict.4
+					# on_win = japan_border_conflict.2
+					# on_lose = japan_border_conflict.3
+					# on_cancel = japan_border_conflict.4
 				}
 				defender = {
 					state = FROM
 					num_provinces = 4
-					on_win = japan_border_conflict.3
-					on_lose = japan_border_conflict.2
-					on_cancel = japan_border_conflict.4
+					# on_win = japan_border_conflict.3
+					# on_lose = japan_border_conflict.2
+					# on_cancel = japan_border_conflict.4
 				}
 			}
 		}

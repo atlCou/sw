@@ -309,22 +309,22 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				NOT = { tag = GER }
+				NOT = { tag = KAR }
 			}
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = BRI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 
 			modifier = {
@@ -537,22 +537,22 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 			
 			modifier = {
 				factor = 0.25
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 0.25
-				tag = ENG
+				tag = BRI
 			}
 			
 			modifier = {
 				factor = 0.25
-				tag = JAP
+				tag = FUS
 			}
 
 			modifier = {
@@ -863,7 +863,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 0.5
 			}
 			modifier = {
@@ -928,7 +928,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 0.5
 			}	
 			modifier = {
@@ -984,7 +984,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 0.5
 			}	
 			modifier = {
@@ -1031,7 +1031,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 0.5
 			}	
 			modifier = {
@@ -1074,7 +1074,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = LIN
 				factor = 0.5
 			}
 			modifier = {
@@ -1129,9 +1129,8 @@ technologies = {
 			factor = 5
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
+					tag = KAR
+					tag = FUS
 				}
 				has_war = yes
 				factor = 5
@@ -1182,9 +1181,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
+					tag = KAR
+					tag = FUS
 				}
 				has_war = yes
 				factor = 25
@@ -1236,9 +1234,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
+					tag = KAR
+					tag = FUS
 				}
 				has_war = yes
 				factor = 25
@@ -1256,7 +1253,7 @@ technologies = {
 				oil > 30
 			}	
 			modifier = {
-				original_tag = GER			
+				original_tag = KAR			
 				has_war = yes
 				factor = 3
 			}		
@@ -1295,9 +1292,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
+					tag = KAR
+					tag = FUS
 				}
 				has_war = yes
 				factor = 25
@@ -1396,8 +1392,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
+					tag = KAR
 				}
 				has_war = yes
 				factor = 15
@@ -1455,8 +1450,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
+					tag = KAR
 				}
 				has_war = yes
 				factor = 15
@@ -1514,8 +1508,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
+					tag = KAR
 				}
 				has_war = yes
 				factor = 15

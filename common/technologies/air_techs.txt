@@ -158,12 +158,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 
 			modifier = {
@@ -228,7 +228,7 @@ technologies = {
 
 			modifier = {
 				factor = -2
-				original_tag = GER
+				original_tag = KAR
 			}
 
 			modifier = {
@@ -272,19 +272,19 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2.5
-				tag = JAP
+				tag = FUS
 			}
 
 			modifier = {
 				factor = 10
 				AND = {
 					is_historical_focus_on = yes
-					tag = JAP
+					tag = FUS
 				}
 			}
 			modifier = {
@@ -388,12 +388,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = FUS
 			}
 			modifier = {
 				factor = 1.5
@@ -445,7 +445,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = GER
+				tag = KAR
 				factor = 2
 			}
 		}
@@ -510,16 +510,16 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 			
 			modifier = {
 				factor = 100
-				tag = SOV
+				tag = ORU
 			}
 			modifier = {
-				has_war_with = GER
-				tag = SOV
+				has_war_with = KAR
+				tag = ORU
 				factor = 2
 			}
 
@@ -552,15 +552,15 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = LIN
+					tag = FUS
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = LIN
+					has_war_with = FUS
 				}
 			}
 			modifier = {
@@ -608,7 +608,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -621,14 +621,14 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					has_war_with = GER
-					has_war_with = SOV
+					has_war_with = KAR
+					has_war_with = ORU
 				}
 			}
 			
 			modifier = {
 				factor = 3
-				tag = SOV
+				tag = ORU
 			}
 		}
 	}
@@ -659,15 +659,15 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = LIN
+					tag = FUS
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = LIN
+					has_war_with = FUS
 				}
 			}
 			modifier = {
@@ -714,7 +714,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -726,13 +726,13 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					has_war_with = GER
-					has_war_with = SOV
+					has_war_with = KAR
+					has_war_with = ORU
 				}
 			}
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = ORU
 			}
 		}
 	}
@@ -756,15 +756,15 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = LIN
+					tag = FUS
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = LIN
+					has_war_with = FUS
 				}
 			}
 			modifier = {
@@ -810,20 +810,20 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = BRI
+					has_war_with = LIN
+					has_war_with = FUS
 				}
 				factor = 3
 			}
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = FUS
 			}
 		}
 	}
@@ -855,15 +855,15 @@ technologies = {
 			modifier = {
 				factor = 2.5
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = LIN
+					tag = FUS
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = LIN
+					has_war_with = FUS
 				}
 			}
 			modifier = {
@@ -909,9 +909,9 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = BRI
+					has_war_with = LIN
+					has_war_with = FUS
 				}
 				factor = 3
 			}
@@ -924,12 +924,12 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = FUS
 			}
 		}
 	}
@@ -961,16 +961,16 @@ technologies = {
 			modifier = {
 				factor = 2.5
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = LIN
+					tag = FUS
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-					has_war_with = ENG
+					has_war_with = LIN
+					has_war_with = FUS
+					has_war_with = BRI
 				}
 			}
 			modifier = {
@@ -1016,9 +1016,9 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = BRI
+					has_war_with = LIN
+					has_war_with = FUS
 				}
 				factor = 3
 			}
@@ -1031,12 +1031,12 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = FUS
 			}
 		}
 	}
@@ -1060,15 +1060,15 @@ technologies = {
 			modifier = {
 				factor = 2.5
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = LIN
+					tag = FUS
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = LIN
+					has_war_with = FUS
 				}
 			}
 			modifier = {
@@ -1249,7 +1249,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 4
-				original_tag = GER
+				original_tag = KAR
 			}
 		}
 	}
@@ -1538,12 +1538,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = BRI
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 		}
 	}
@@ -1577,12 +1577,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = BRI
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 		}
 	}
@@ -1616,12 +1616,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = BRI
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = LIN
 			}
 		}
 	}

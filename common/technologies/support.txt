@@ -476,35 +476,22 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KAR
 			}
 
-			modifier = {
-				factor = 10
-				tag = GER
-
-				POL = { has_capitulated = yes }
-				GER = { has_war = yes }
-			}
-			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = FUS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ITA
+				tag = BRI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 2
-				tag = USA
+				tag = LIN
 			}
 			
 			modifier = {
@@ -1050,7 +1037,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KAR
 			}
 		}
 	}
