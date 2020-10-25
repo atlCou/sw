@@ -1,3 +1,10 @@
+NRO_puppet_war_decisions = {
+    icon = eng_move_to_secure_the_dominions
+    visible = {
+        has_country_flag = NRO_has_a_puppet_war
+    }
+}
+
 GAL_funding_art_decisions = {
 	icon = generic_propaganda
 	visible = {

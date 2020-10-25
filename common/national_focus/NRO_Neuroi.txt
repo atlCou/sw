@@ -228,7 +228,6 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
-			load_oob = NRO_Hispania_OOB
 			hidden_effect = {
 				declare_war_on = {
 					target = HIS
@@ -248,7 +247,7 @@ focus_tree = {
 					}
 					NRO_transfer_current_neuroi_ideas = yes
 					add_ideas = NRO_puppet_hive
-					capital = 168
+					set_capital = 168
 				}
 				add_state_core = 168
 			}
@@ -265,11 +264,19 @@ focus_tree = {
 					set_province_controller = 1093
 					set_province_controller = 10109
 				}
+                add_to_array = {
+                    array = NRO_controlled_states
+                    value = 168
+                }
+                country_event = {
+                    id = neuroi.1002
+                }
 			}
 			set_global_flag = HIS_neuroi_happened
 			set_country_flag = NRO_has_a_puppet_war
 			add_ideas = NRO_puppet_war
 			custom_effect_tooltip = NRO_no_profit_from_war_tooltip
+			load_oob = NRO_Hispania_OOB
 		}
 	}
 	

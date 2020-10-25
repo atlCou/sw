@@ -1,0 +1,59 @@
+NRO_puppet_war_decisions = {
+
+	NRO_change_capital = {
+		icon = infiltrate_state
+		cost = 0
+		allowed = {
+			tag = NRO
+		}
+        state_target = yes
+		target_array = NRO_controlled_states
+        target_trigger = {
+            OR = {
+                NRO = {
+                    has_full_control_of_state = FROM
+                }
+                any_country = {
+                    is_puppet_of = NRO
+                    has_full_control_of_state = FROM
+                }
+            }
+        }
+		
+		complete_effect = {
+            if = {
+                limit = { 
+                    NRO = {
+                        has_full_control_of_state = NRO_last_state
+                        any_country = {
+                            check_variable = { NRO.NRO_last_state_controller = THIS }
+                            NOT = { tag = NRO }
+                            exists = yes
+                        }
+                    }
+                    always = yes
+                }
+                every_country = {
+                    limit = {
+                        check_variable = { NRO.NRO_last_state_controller = THIS }
+                    }
+                    set_state_controller = NRO.NRO_last_state
+                }
+            }
+            set_variable = { NRO_last_state_controller = FROM.controller }
+			set_capital = FROM
+            set_state_controller = FROM
+            set_variable = { NRO_last_state = FROM }
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				810 = {
+                    is_capital = yes
+                }
+				factor = 0
+			}
+		}
+	}
+
+}

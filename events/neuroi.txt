@@ -157,6 +157,52 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+    id = neuroi.1002
+    title = stop
+    desc = why
+    hidden = yes 
+    fire_only_once = no
+    is_triggered_only = yes # manually loops, doing this with missions is ugly and ugly is bad
+
+    option = {
+        name = neuroi.1002.a
+        clear_array = NRO_controlled_states
+        for_each_scope_loop = {
+            array = NRO.controlled_states
+            ROOT = {
+                add_to_array = {
+                    array = NRO_controlled_states
+                    value = PREV
+                }
+            }
+        }
+        for_each_scope_loop = {
+            array = NRO.subjects
+            for_each_scope_loop = {
+                array = THIS.controlled_states
+                NRO = {
+                    add_to_array = {
+                        array = NRO_controlled_states
+                        value = PREV
+                    }
+                }
+            }
+        }
+        if = { # mom i wrote a while loop
+            limit = {
+                has_country_flag = NRO_has_a_puppet_war
+            }
+            country_event = {
+                id = neuroi.1002
+                days = 7
+            }
+        }
+    }
+}
+
+
 country_event = {
 	id = neuroi.999
 	immediate = {log = "[GetDateText]: [Root.GetName]: event neuroi.999"}
