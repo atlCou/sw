@@ -112,6 +112,73 @@ ideas = {
             }
         
         }
+        
+        KAR_expand_industrial_grants_idea = {
+            
+            picture = Global_Regulations
+            
+            modifier = {
+                consumer_goods_factor = -0.03
+                line_change_production_efficiency_factor = 0.1
+            }
+        
+        }
+        
+        KAR_improve_the_general_welfare_idea = {
+            
+            picture = ast_all_in
+            
+            modifier = {
+                monthly_population = 0.15
+                industrial_capacity_factory = 0.05
+            }
+        
+        }
+        
+        KAR_pragmatic_economics_idea = {
+        
+            picture = generic_economic_increase
+            
+            modifier = {
+                consumer_goods_factor = 0.02
+                production_speed_buildings_factor = 0.1
+                local_resources_factor = 0.075
+            }
+        
+        }
+        
+        KAR_new_karlslander_institutes_idea = {
+        
+            picture = generic_research_bonus
+        
+            modifier = {
+                research_speed_factor = 0.02
+            }
+        
+        }
+        
+        KAR_embrace_the_middle_class_idea = {
+        
+            picture = YUG_federal_defense_council
+            
+            modifier = {
+                political_power_factor = 0.05
+                monthly_population = 0.05
+                production_speed_infrastructure_factor = 0.1
+            }
+        
+        }
+        
+        KAR_modern_geheimpolizei_idea = {
+        
+            picture = generic_secret_police
+            
+            modifier = {
+                encryption_factor = 0.05
+                compliance_gain = 0.1
+            }
+        
+        }
 		
 		###### Pagans
 		

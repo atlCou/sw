@@ -591,6 +591,24 @@ shared_focus = {
 }
 
 shared_focus = { 
+	id = KAR_modern_geheimpolizei
+	icon = GFX_pagantrihorn
+	x = 2
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+    prerequisite = { focus = KAR_stomp_out_socialism }
+    relative_position_id = KAR_and_outwards_to_the_kaiser
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+        add_ideas = KAR_modern_geheimpolizei_idea
+	} 
+}
+
+shared_focus = { 
 	id = KAR_true_centrism
 	icon = GFX_pagantrihorn
 	x = 1
@@ -636,6 +654,32 @@ shared_focus = {
             idea = KAR_true_centrism_idea
             days = 720
         }
+	} 
+}
+
+shared_focus = { 
+	id = KAR_break_up_paramilitants
+	icon = GFX_pagantrihorn
+	x = 3
+	y = 3
+	cost = 5
+	available_if_capitulated = yes 
+    prerequisite = { focus = KAR_cracking_down_on_radicals }
+    dynamic = yes
+    relative_position_id = KAR_true_centrism
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+        set_temp_variable = { fasc_pop =  party_popularity@fascism }
+        divide_temp_variable = { fasc_pop = -1.5 }
+        add_political_power = -5
+        add_popularity = {
+            ideology = fascism
+            popularity = fasc_pop
+        }
+        add_stability = 0.05
 	} 
 }
 
@@ -763,6 +807,116 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        remove_ideas = KAR_better_econ
+	} 
+}
+
+# quick mini-tree, ok?
+
+shared_focus = { 
+	id = KAR_a_popular_referendum
+	icon = GFX_pagantrihorn
+	x = 3
+	y = 4
+	cost = 5
+	available_if_capitulated = yes 
+    prerequisite = { focus = KAR_inject_wealth }
+    available = {
+        democratic > 0.65
+    }
+    relative_position_id = KAR_working_towards_republicanization
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+        add_political_power = 150
+        add_stability = 0.05
+	} 
+}
+
+shared_focus = { 
+	id = KAR_federal_reelections
+	icon = GFX_pagantrihorn
+	x = 3
+	y = 5
+	cost = 5
+	available_if_capitulated = yes 
+    prerequisite = { focus = KAR_a_popular_referendum }
+    relative_position_id = KAR_working_towards_republicanization
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+        set_temp_variable = { lib_pop = party_popularity@democratic }
+        add_temp_variable = { lib_pop = party_popularity@communism }
+        divide_temp_variable = { lib_pop = 8 }
+        add_stability = lib_pop
+        divide_temp_variable = { lib_pop = 2 }
+        add_popularity = {
+            ideology = democratic
+            popularity = lib_pop
+        }
+        custom_effect_tooltip = KAR_federal_reelections_tooltip
+	} 
+}
+
+shared_focus = { 
+	id = KAR_a_great_figurehead
+	icon = GFX_pagantrihorn
+	x = 5
+	y = 5
+	cost = 5
+	available_if_capitulated = yes 
+    prerequisite = { focus = KAR_a_popular_referendum }
+    relative_position_id = KAR_working_towards_republicanization
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+        add_political_power = -50
+        add_stability = 0.05 # are you tired of stability yet
+        every_country = {
+            limit = {
+                any_owned_state = {
+                    is_capital = yes
+                    is_on_continent = europe
+                }
+            }
+            add_opinion_modifier = {
+                target = KAR
+                modifier = kar_democratic_outreach
+            }
+            PREV = {
+                add_opinion_modifier = {
+                    target = PREV
+                    modifier = kar_democratic_outreach
+                }
+            }
+        }
+	} 
+}
+
+shared_focus = { 
+	id = KAR_a_republic_in_all_but_name
+	icon = GFX_pagantrihorn
+	x = 4
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+    prerequisite = { focus = KAR_a_great_figurehead }
+    prerequisite = { focus = KAR_federal_reelections }
+    relative_position_id = KAR_working_towards_republicanization
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+        country_event = {
+            id = karlsland.100
+        }
 	} 
 }
 
@@ -780,6 +934,7 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        remove_ideas = KAR_better_econ
 	} 
 }
 
@@ -797,6 +952,7 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        remove_ideas = KAR_better_econ
 	} 
 }
 
@@ -816,6 +972,7 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        add_ideas = KAR_expand_industrial_grants_idea
 	} 
 }
 
@@ -833,6 +990,7 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        add_ideas = KAR_improve_the_general_welfare_idea
 	} 
 }
 
@@ -851,6 +1009,28 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+            }
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+        }
+        random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+            }
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+        }
 	} 
 }
 
@@ -869,6 +1049,28 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+            }
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+        }
+        random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+            }
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+        }
 	} 
 }
 
@@ -887,6 +1089,41 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                infrastructure < 9
+            }
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+        }
+        random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                infrastructure < 9
+            }
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+        }
+        random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+                infrastructure < 10
+            }
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+        }
 	} 
 }
 
@@ -904,6 +1141,21 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = synth_resources
+		}
+        random_owned_state = {
+            limit = {
+                is_core_of = ROOT
+            }
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+        }
 	} 
 }
 
@@ -921,6 +1173,11 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = electronics
+		}
 	} 
 }
 
@@ -938,6 +1195,7 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        add_ideas = KAR_pragmatic_economics_idea
 	} 
 }
 
@@ -956,6 +1214,8 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        add_research_slot = 1
+        add_ideas = KAR_new_karlslander_institutes_idea
 	} 
 }
 
@@ -974,6 +1234,16 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        add_stability = 0.1
+        add_political_power = 150
+        add_popularity = {
+            ideology = communism
+            popularity = -0.1
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
 	} 
 }
 
@@ -992,6 +1262,58 @@ shared_focus = {
 	} 
 
 	completion_reward = {
+        add_ideas = KAR_true_centrism_idea
+	} 
+}
+
+shared_focus = { 
+	id = KAR_a_karlsland_of_old_for_future 
+	icon = GFX_pagantrihorn
+	x = 5
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+    prerequisite = { focus = KAR_re-fund_conservative_parties }
+    relative_position_id = KAR_power_of_debt
+    available = {
+        has_stability > 0.8
+    }
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+        set_stability = 1
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.1
+        }
+	} 
+}
+ 
+shared_focus = {
+	id = KAR_embrace_the_middle_class
+	icon = GFX_pagantrihorn
+	x = 3
+	y = 6
+	cost = 5
+	available_if_capitulated = yes 
+    prerequisite = { focus = KAR_necessary_modernizations }
+    relative_position_id = KAR_power_of_debt
+	ai_will_do = { 
+		factor = 1
+	} 
+
+	completion_reward = {
+        add_ideas = KAR_embrace_the_middle_class_idea
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.02
+        }
 	} 
 }
  

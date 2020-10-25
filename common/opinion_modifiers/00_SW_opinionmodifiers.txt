@@ -16,6 +16,10 @@ opinion_modifiers = {
 	kar_romagna_2 = {
 		value = -100
 	}
+    
+    kar_democratic_outreach = {
+        value = 50
+    }
 	
 	rma_mission_bri = {
 		value = 30

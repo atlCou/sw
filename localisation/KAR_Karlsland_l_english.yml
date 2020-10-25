@@ -164,8 +164,8 @@
 
 
  KAR_begin_military_reinvestments_tooltip:0 "Will allow you take §YMilitary Focii§! §G(earlier than other branches)§!."
-
-
+ KAR_federal_reelections_tooltip:0 "Will add §Gstability§! and §YLiberal popularity§! based on the §Ccombined popularity§! of §RCollectivist§! and §BLiberal§! ideologies."
+ kar_democratic_outreach:0 "Democratic Outreach"
 
  ################################
  ################ PAGAN TREE
