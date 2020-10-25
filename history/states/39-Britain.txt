@@ -10,15 +10,19 @@ state={
 		victory_points = {
 			11598 1 
 		}
-		owner = VNE		buildings = {
+		owner = KAR
+		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
 
 		}
-		add_core_of = VNE		}
+		add_core_of = KAR
+
+	}
 
 	provinces={
-		656 6631 9598 11598 }
+		6631 6675 11587 13338 13339 
+	}
 	manpower=641650
 	buildings_max_level_factor=1.000
 	state_category=town

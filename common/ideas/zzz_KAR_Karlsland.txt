@@ -69,6 +69,49 @@ ideas = {
             }
         
         }
+        
+        KAR_co-opted_wandervogel = {
+        
+            picture = KAR_pagan_prop
+            
+            modifier = {
+                army_morale_factor = 0.05
+                mobilization_speed = 0.1
+                drift_defence_factor = 0.25
+            }
+        }
+        
+        KAR_rec_programs = {
+        
+            picture = generic_pp_unity_bonus
+            
+            modifier = {
+                political_power_factor = 0.05
+            }
+        
+        }
+        
+        KAR_true_centrism_idea = {
+            
+            picture = mon_prop
+        
+            modifier = {
+                neutrality_drift = 0.01
+                war_support_weekly = 0.001
+            }
+        
+        }
+        
+        KAR_support_youth_groups_idea = {
+        
+            picture = generic_democratic_drift_bonus
+            
+            modifier = {
+                political_power_gain = 0.08
+                research_speed_factor = 0.03
+            }
+        
+        }
 		
 		###### Pagans
 		

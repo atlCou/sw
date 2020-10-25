@@ -1,19 +1,18 @@
+
 state={
 	id=790
 	name="STATE_790"
+
+	history={
+		owner = VNE
+		add_core_of = VNE
+
+	}
+
 	provinces={
-		3773 3976 6985 
+		3976 6985 
 	}
-	
-	state_category = rural	
-	
-	history = {
-	
-		owner = RMA
-		add_core_of = RMA
-		
-	}
-	
 	manpower=12000
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

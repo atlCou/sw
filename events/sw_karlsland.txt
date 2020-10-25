@@ -113,7 +113,7 @@ country_event = {
 		name = karlsland.4.a
         swap_ideas = {
             remove_idea = KAR_really_hurting_econ
-            add_idea = KAR_hurting_econ
+            add_idea = KAR_better_econ
         }
         set_country_flag = KAR_put_down_the_strikes_flag
         add_stability = 0.05
