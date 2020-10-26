@@ -1,0 +1,22 @@
+state={
+	id=818
+	name="STATE_818"
+	provinces={
+		9412 13205 
+	}
+    history={
+        victory_points = {
+			9427 20 
+		}
+		owner = KAR
+		buildings = {
+			infrastructure = 7
+            industrial_complex = 2
+		}
+		add_core_of = KAR
+        add_core_of = OST
+	}
+	manpower=252342
+    state_category = city
+	buildings_max_level_factor=1.000
+}

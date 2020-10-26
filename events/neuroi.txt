@@ -77,6 +77,19 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = neuroi.5  # We can't keep up occupation, leave it for scraps
+	title = neuroi.5.t
+	desc = neuroi.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = neuroi.5.a
+		end_puppet = NUW
+        set_country_flag = NRO_hispanian_waste
+	}
+}
+
 
 ########## Neuroi hidden gameplay events
 country_event = { ####I am aware these two events are potentially very performance heavy. If there's a better way to do it, please tell me. I also plan on never writing something like these again
@@ -194,9 +207,16 @@ country_event = {
             limit = {
                 has_country_flag = NRO_has_a_puppet_war
             }
-            country_event = {
-                id = neuroi.1002
-                days = 7
+            if = {
+                limit = { has_war = no }
+                clr_country_flag = NRO_has_a_puppet_war
+                remove_ideas = NRO_puppet_war
+            }
+            else = {
+                country_event = {
+                    id = neuroi.1002
+                    days = 7
+                }
             }
         }
     }

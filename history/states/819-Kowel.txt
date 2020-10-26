@@ -1,0 +1,17 @@
+state={
+	id=819
+	name="STATE_819"
+	provinces={
+		422 11441 
+	}
+    history={
+		owner = OST
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = OST
+	}
+    state_category = town
+	manpower=132321
+	buildings_max_level_factor=1.000
+}

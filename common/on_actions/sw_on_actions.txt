@@ -36,6 +36,12 @@ on_actions = {
 						transfer_state = PREV
 					}
 				}
+                NRO = {
+                    country_event = {
+                        id = neuroi.5
+                        days = 28
+                    }
+                }
 				NUW = {
 					set_cosmetic_tag = NUW_wasteland
 					set_country_flag = GLOBAL_no_diplo
@@ -46,7 +52,6 @@ on_actions = {
 							level = 10
 						}
 					}
-					NRO = { end_puppet = PREV }
 				}
 			}
 		}
