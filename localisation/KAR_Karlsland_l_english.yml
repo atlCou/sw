@@ -153,15 +153,72 @@
  GAL_KAR_pagan_fascism_ADJ:0 "Gallian"
 
  #########################################
-
+ ################# MAIN TREE
  #########################################
+
+ KAR_put_down_the_strikes:0 "Put Down the Strikes"
+ KAR_looking_to_the_mskp:0 "Looking to the Mskp"
+ KAR_karlslander_pride:0 "Karlslander Pride"
+ KAR_looking_inwards:0 "Looking Inwards"
+ KAR_play_off_national_unity:0 "Play Off National Unity"
+ KAR_mercedes_and_a_volkswagen:0 "Mercedes and a Volkswagen"
+ KAR_reinsure_investors:0 "Reinsure Investors"
+ KAR_expand_worker_protections:0 "Expand Worker Protections"
+ KAR_liberalize_the_reichstag:0 "Liberalize the Reichstag"
+ KAR_weaken_the_bundesrat:0 "Weaken the Bundesrat"
+ KAR_bicameralism_in_name_only:0 "Bicameralism in Name Only"
+ KAR_seize_junker_properties:0 "Seize Junker Properties"
+ KAR_bavarian_farmland:0 "Bavarian Farmland"
+ KAR_equalize_the_rhineland:0 "Equalize the Rhineland"
+ KAR_and_outwards_to_the_kaiser:0 "And Outwards, to the Kaiser!"
+ KAR_a_militant_society:0 "A Militant Society"
+ KAR_teach_our_glorious_history:0 "Teach Our Glorious History"
+ KAR_co-opt_the_wandervogel:0 "Co-opt the Wandervogel"
+ KAR_government_recreation_programs:0 "Government Recreation Programs"
+ KAR_for_karlsland:0 "For Karlsland!"
+ KAR_tighten_up_localities:0 "Tighten Up Localities"
+ KAR_stomp_out_socialism:0 "Stomp Out Socialism"
+ KAR_modern_geheimpolizei:0 "Modern Geheimpolizei"
+ KAR_true_centrism:0 "True Centrism"
+ KAR_back_conservative_movements:0 "Back Conservative Movements"
+ KAR_break_up_paramilitants:0 "Break Up Paramilitants"
+ KAR_cracking_down_on_radicals:0 "Cracking Down On Radicals"
+ KAR_begin_military_reinvestments:0 "Begin Military Reinvestments"
+ KAR_working_towards_republicanization:0 "Working Towards Republicanization"
+ KAR_define_subimperial_laws:0 "Define Subimperial Laws"
+ KAR_support_youth_groups:0 "Support Youth Groups"
+ KAR_inject_wealth:0 "Inject Wealth"
+ KAR_a_popular_referendum:0 "A Popular Referendum"
+ KAR_federal_reelections:0 "Federal Reelections"
+ KAR_a_great_figurehead:0 "A Great Figurehead"
+ KAR_a_republic_in_all_but_name:0 "A Republic in All But Name"
+ KAR_economic_incentives:0 "Economic Incentives"
+ KAR_power_of_debt:0 "Power of Debt"
+ KAR_expand_industrial_grants:0 "Expand Industrial Grants"
+ KAR_improve_the_general_welfare:0 "Improve the General Welfare"
+ KAR_factories_of_arms:0 "Factories of Arms"
+ KAR_leverage_our_industries:0 "Leverage Our Industries"
+ KAR_lasting_infrastructures:0 "Lasting Infrastructures"
+ KAR_ig_farben:0 "IG Farben"
+ KAR_siemens:0 "Siemens"
+ KAR_pragmatic_economics:0 "Pragmatic Economics"
+ KAR_new_karlslander_institutes:0 "New Karlslander Institutes"
+ KAR_necessary_modernizations:0 "Necessary Modernizations"
+ KAR_re-fund_conservative_parties:0 "Re-fund Conservative Parties"
+ KAR_a_karlsland_of_old_for_future:0 "A Karlsland of Old For Future"
+ KAR_embrace_the_middle_class:0 "Embrace the Middle Class"
+
+
+
+
+
 
  KAR_stagnantkarlsland:0 "Stagnant Karlsland"	
  KAR_recoveringfromww1:0 "Recovering from the Neuroi War"		
  KAR_thedeathofmonarchy:0 "Unpopular Monarchy"
  KAR_thedeathofmonarchy_2:0 "Unstable Politics"
  
-
+ 
 
  KAR_begin_military_reinvestments_tooltip:0 "Will allow you take §YMilitary Focii§! §G(earlier than other branches)§!."
  KAR_federal_reelections_tooltip:0 "Will add §Gstability§! and §YLiberal popularity§! based on the §Ccombined popularity§! of §RCollectivist§! and §BLiberal§! ideologies."

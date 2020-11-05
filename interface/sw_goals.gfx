@@ -968,6 +968,14 @@ spriteTypes = {
 		name = "GFX_generic_conservative"
 		texturefile = "gfx/interface/goals/generic_conservative.dds"
 	}
+	SpriteType = {
+		name = "GFX_KAR_saluting"
+		texturefile = "gfx/interface/goals/KAR_saluting.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_brandenburg_gate"
+		texturefile = "gfx/interface/goals/KAR_brandenburg_gate.dds"
+	}
 }
 
 

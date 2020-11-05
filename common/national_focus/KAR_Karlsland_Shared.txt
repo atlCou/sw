@@ -5001,7 +5001,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_imposing_nobility
-	icon = GFX_pagantrihorn
+	icon = GFX_kar_neighborhood
 	x = -1
 	y = 1
 	cost = 5
@@ -5024,7 +5024,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_never_another_bauernkrieg
-	icon = GFX_pagantrihorn
+	icon = GFX_union_deal_break
 	x = 1
 	y = 1
 	cost = 5
@@ -5051,7 +5051,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_they_will_fear_us
-	icon = GFX_pagantrihorn
+	icon = GFX_GAL_pat_demo
 	x = 0
 	y = 2
 	cost = 5
@@ -5078,7 +5078,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_when_they_come
-	icon = GFX_pagantrihorn
+	icon = GFX_generic_neutrality
 	x = 0
 	y = 3
 	cost = 5
@@ -5132,7 +5132,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_soul_of_the_march
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_saluting
 	x = -1
 	y = 1
 	cost = 5
@@ -5160,7 +5160,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_allies_in_paramilitants
-	icon = GFX_pagantrihorn
+	icon = GFX_goal_generic_secret_weapon
 	x = 1
 	y = 1
 	cost = 5
@@ -5187,7 +5187,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_karlsland_uber_alles
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_brandenburg_gate
 	x = 0
 	y = 2
 	cost = 5
@@ -5207,7 +5207,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_let_them_come
-	icon = GFX_pagantrihorn
+	icon = GFX_generic_charge
 	x = 0
 	y = 3
 	cost = 5
