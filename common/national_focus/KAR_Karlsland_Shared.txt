@@ -4421,6 +4421,7 @@ shared_focus = {
 	cost = 3
 	available_if_capitulated = yes 
 	relative_position_id = KAR_The_Officer
+    available = { has_completed_focus = KAR_from_brandenburg }
 	prerequisite = { focus = KAR_The_Officer }
 	ai_will_do = { 
 		factor = 1
@@ -4446,6 +4447,7 @@ shared_focus = {
 	cost = 7
 	available_if_capitulated = yes 
 	relative_position_id = KAR_The_Officer
+    available = { has_completed_focus = KAR_to_prussia }
 	prerequisite = { focus = KAR_The_Officer }
 	ai_will_do = { 
 		factor = 1

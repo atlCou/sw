@@ -1488,6 +1488,7 @@ country_event = {
 							state = 188
 							state = 762	
 							state = 763
+                            state = 818
 						}
 					}
 					PREV = {
