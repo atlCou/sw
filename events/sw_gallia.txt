@@ -1434,7 +1434,7 @@ country_event = {
 	option = {
 		name = gallia.700.a
 		ai_chance = {
-			base = 1
+			factor = 1
 		}
 		if = {
 			limit = {
@@ -1472,7 +1472,7 @@ country_event = {
 	option = {
 		name = gallia.700.b
 		ai_chance = {
-			base = 99
+			factor = 99
 		}
 		GAL = {
 			country_event = {

@@ -1,0 +1,12 @@
+technology_categories = {
+	neuroi_tech
+}
+
+technology_folders = {
+	neuroi_folder = {
+		available = {
+			original_tag = NRO
+		}
+		ledger = civilian
+	}
+}

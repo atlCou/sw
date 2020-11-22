@@ -976,6 +976,150 @@ spriteTypes = {
 		name = "GFX_KAR_brandenburg_gate"
 		texturefile = "gfx/interface/goals/KAR_brandenburg_gate.dds"
 	}
+	SpriteType = {
+		name = "GFX_KAR_strikes"
+		texturefile = "gfx/interface/goals/KAR_strikes.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_automobile"
+		texturefile = "gfx/interface/goals/generic_automobile.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_generic_democracy"
+		texturefile = "gfx/interface/goals/KAR_generic_democracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_the_emperor"
+		texturefile = "gfx/interface/goals/KAR_the_emperor.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_army"
+		texturefile = "gfx/interface/goals/KAR_pagan_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_eagle"
+		texturefile = "gfx/interface/goals/KAR_pagan_eagle.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_purge_mil"
+		texturefile = "gfx/interface/goals/KAR_pagan_purge_mil.dds"
+	}
+	SpriteType = {
+		name = "GFX_Generic_witches"
+		texturefile = "gfx/interface/goals/Generic_witches.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_witches"
+		texturefile = "gfx/interface/goals/KAR_pagan_witches.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_airforce"
+		texturefile = "gfx/interface/goals/KAR_airforce.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_navy"
+		texturefile = "gfx/interface/goals/KAR_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAR_pagan_blacksmith"
+		texturefile = "gfx/interface/goals/KAR_pagan_blacksmith.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_naval_witches"
+		texturefile = "gfx/interface/goals/generic_naval_witches.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_generic"
+		texturefile = "gfx/interface/goals/NRO_generic.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_book"
+		texturefile = "gfx/interface/goals/NRO_book.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_classified"
+		texturefile = "gfx/interface/goals/NRO_classified.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_core"
+		texturefile = "gfx/interface/goals/NRO_core.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_cog_fire"
+		texturefile = "gfx/interface/goals/NRO_cog_fire.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_cog_cubes"
+		texturefile = "gfx/interface/goals/NRO_cog_cubes.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_vial_wrench"
+		texturefile = "gfx/interface/goals/NRO_vial_wrench.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_bomber_fire"
+		texturefile = "gfx/interface/goals/NRO_bomber_fire.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_maps"
+		texturefile = "gfx/interface/goals/NRO_maps.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_question_anchor"
+		texturefile = "gfx/interface/goals/NRO_question_anchor.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_attack_his"
+		texturefile = "gfx/interface/goals/NRO_attack_his.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_blacksmith"
+		texturefile = "gfx/interface/goals/NRO_blacksmith.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_first_air"
+		texturefile = "gfx/interface/goals/NRO_first_air.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_lasers"
+		texturefile = "gfx/interface/goals/NRO_lasers.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_generic_hive"
+		texturefile = "gfx/interface/goals/NRO_generic_hive.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_streamline"
+		texturefile = "gfx/interface/goals/NRO_streamline.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_propa"
+		texturefile = "gfx/interface/goals/NRO_propa.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_hive_control"
+		texturefile = "gfx/interface/goals/NRO_hive_control.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_rage"
+		texturefile = "gfx/interface/goals/NRO_rage.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_ancients"
+		texturefile = "gfx/interface/goals/NRO_ancients.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_men"
+		texturefile = "gfx/interface/goals/NRO_men.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_chess"
+		texturefile = "gfx/interface/goals/NRO_chess.dds"
+	}
+	SpriteType = {
+		name = "GFX_NRO_fuso_sea"
+		texturefile = "gfx/interface/goals/NRO_fuso_sea.dds"
+	}
 }
 
 

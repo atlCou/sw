@@ -50,7 +50,7 @@ focus_tree = {
 		factor = 0 
 		
 		modifier = { 
-			add = 15
+			add = 150
 			original_tag = KAR 
 		}
 	
@@ -97,7 +97,7 @@ focus_tree = {
 	id = KAR_Junkerreich
 	
 	country = { 
-		factor = 0 
+		factor = 0
 		
 		modifier = { 
 			add = 15

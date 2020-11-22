@@ -1,0 +1,38 @@
+NRO_transfer_current_neuroi_ideas = {
+
+	if = {
+		limit = {
+			PREV = { has_idea = NRO_starting_manpower }
+		}
+		add_ideas = NRO_starting_manpower
+	}
+	
+	if = {
+		limit = {
+			PREV = { has_idea = NRO_1_manpower }
+		}
+		add_ideas = NRO_1_manpower
+	}
+	
+	if = {
+		limit = {
+			PREV = { has_idea = NRO_2_manpower }
+		}
+		add_ideas = NRO_2_manpower
+	}
+
+	if = {
+		limit = {
+			PREV = { has_idea = NRO_starting_consumer }
+		}
+		add_ideas = NRO_starting_consumer
+	}
+	
+	if = {
+		limit = {
+			PREV = { has_idea = NRO_1_consumer }
+		}
+		add_ideas = NRO_1_consumer
+	}
+
+}

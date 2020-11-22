@@ -44,7 +44,7 @@
 
 shared_focus = { 
 	id = KAR_put_down_the_strikes
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_strikes
 	x = 9
 	y = 0
 	cost = 5
@@ -62,12 +62,13 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_looking_to_the_mskp
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_saluting_pagan
 	x = -2
 	y = 1
 	cost = 5
 	available_if_capitulated = yes 
     prerequisite = { focus = KAR_put_down_the_strikes }
+    mutually_exclusive = { focus = KAR_expand_worker_protections }
     relative_position_id = KAR_put_down_the_strikes
 	ai_will_do = { 
 		factor = 1
@@ -89,7 +90,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_karlslander_pride
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_brandenburg_gate
 	x = -2
 	y = 2
 	cost = 5
@@ -114,7 +115,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_looking_inwards
-	icon = GFX_pagantrihorn
+	icon = GFX_right-wing
 	x = -4
 	y = 3
 	cost = 5
@@ -140,7 +141,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_play_off_national_unity
-	icon = GFX_pagantrihorn
+	icon = GFX_generic_karlsland_shake
 	x = 0
 	y = 2
 	cost = 5
@@ -166,7 +167,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_mercedes_and_a_volkswagen
-	icon = GFX_pagantrihorn
+	icon = GFX_generic_automobile
 	x = -1
 	y = 3
 	cost = 5
@@ -191,7 +192,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_reinsure_investors
-	icon = GFX_pagantrihorn
+	icon = GFX_kar_economyfocus
 	x = 2
 	y = 3
 	cost = 5
@@ -214,12 +215,13 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_expand_worker_protections
-	icon = GFX_pagantrihorn
+	icon = GFX_generic_socialist_prop
 	x = 3
 	y = 1
 	cost = 5
 	available_if_capitulated = yes 
     prerequisite = { focus = KAR_put_down_the_strikes }
+    mutually_exclusive = { focus = KAR_looking_to_the_mskp }
     relative_position_id = KAR_put_down_the_strikes
 	ai_will_do = { 
 		factor = 1
@@ -237,7 +239,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_liberalize_the_reichstag
-	icon = GFX_pagantrihorn
+	icon = GFX_generic_socdem
 	x = 3
 	y = 2
 	cost = 5
@@ -260,7 +262,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_weaken_the_bundesrat
-	icon = GFX_pagantrihorn
+	icon = GFX_GAL_strengthen_gov
 	x = 5
 	y = 2
 	cost = 3
@@ -283,7 +285,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_bicameralism_in_name_only
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_generic_democracy
 	x = 4
 	y = 3
 	cost = 2 # short, doesn't do much
@@ -318,7 +320,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_seize_junker_properties
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_estates
 	x = 7
 	y = 2
 	cost = 5
@@ -356,7 +358,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_bavarian_farmland
-	icon = GFX_pagantrihorn
+	icon = GFX_generic_land_redistribution
 	x = 6
 	y = 3
 	cost = 5
@@ -389,7 +391,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_equalize_the_rhineland
-	icon = GFX_pagantrihorn
+	icon = GFX_Star_Control
 	x = 8
 	y = 3
 	cost = 5
@@ -409,7 +411,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_and_outwards_to_the_kaiser
-	icon = GFX_pagantrihorn
+	icon = GFX_KAR_the_emperor
 	x = -2
 	y = 4
 	cost = 5
@@ -437,7 +439,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_a_militant_society
-	icon = GFX_pagantrihorn
+	icon = GFX_generic_tanks
 	x = 0
 	y = 1
 	cost = 5
@@ -457,7 +459,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_teach_our_glorious_history
-	icon = GFX_pagantrihorn
+	icon = GFX_kar_neighborhood
 	x = -2
 	y = 1
 	cost = 5
@@ -610,7 +612,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_true_centrism
-	icon = GFX_pagantrihorn
+	icon = GFX_GAL_mon_prop
 	x = 1
 	y = 4
 	cost = 5
@@ -728,7 +730,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_working_towards_republicanization
-	icon = GFX_pagantrihorn
+	icon = GFX_kar_reaffirm
 	x = 5
 	y = 4
 	cost = 5
@@ -2029,11 +2031,11 @@ shared_focus = {
 }
 
 
-##### Military Tree!
+##### Military Tree! # Kill me
 
 shared_focus = { 
 	id = KAR_new_land_forces
-	icon = GFX_KAR_old_map
+	icon = GFX_KAR_pagan_army
 	x = 10
 	y = 6
 	cost = 5
@@ -2053,7 +2055,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_invest_in_our_seeresses
-	icon = GFX_KAR_old_map
+	icon = GFX_Generic_witches
 	x = 0
 	y = 2
 	cost = 5
@@ -2072,7 +2074,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_armored_chariots
-	icon = GFX_KAR_old_map
+	icon = GFX_goal_generic_army_tanks
 	x = -2
 	y = 1
 	cost = 5
@@ -2095,7 +2097,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_legacy_of_the_hittites
-	icon = GFX_KAR_old_map
+	icon = GFX_goal_generic_cavalry
 	x = 2
 	y = 1
 	cost = 5
@@ -2117,7 +2119,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_an_amazing_compromise
-	icon = GFX_KAR_old_map
+	icon = GFX_focus_generic_army_tanks2
 	x = 0
 	y = 2
 	cost = 5
@@ -2140,7 +2142,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_purge_the_heer
-	icon = GFX_KAR_old_map
+	icon = GFX_KAR_pagan_purge_mil
 	x = -4
 	y = 1
 	cost = 5
@@ -2182,7 +2184,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_frontline_supremacy
-	icon = GFX_KAR_old_map
+	icon = GFX_generic_charge
 	x = -1
 	y = 3
 	cost = 5
@@ -2204,7 +2206,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_new_hochmeisters
-	icon = GFX_KAR_old_map
+	icon = GFX_KAR_pagan_generic
 	x = 1
 	y = 3
 	cost = 5
@@ -2233,7 +2235,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_unmatchable_speed
-	icon = GFX_KAR_old_map
+	icon = GFX_generic_trucks
 	x = 0
 	y = 4
 	cost = 5
@@ -2255,7 +2257,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_magic_through_air
-	icon = GFX_KAR_old_map
+	icon = GFX_goal_generic_radar
 	x = 2
 	y = 4
 	cost = 5
@@ -2277,7 +2279,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_a_great_order
-	icon = GFX_KAR_old_map
+	icon = GFX_KAR_pagan_eagle
 	x = 4
 	y = 1
 	cost = 5
@@ -2410,7 +2412,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_tighten_recruitment_reqs
-	icon = GFX_KAR_old_map
+	icon = GFX_generic_tanks
 	x = 0
 	y = 2
 	cost = 5
@@ -2428,7 +2430,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_to_serve_the_highest_principle
-	icon = GFX_KAR_old_map
+	icon = GFX_GAL_homeland
 	x = -1
 	y = 3
 	cost = 5
@@ -2446,7 +2448,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_replacing_the_feldgendarmerie
-	icon = GFX_KAR_old_map
+	icon = GFX_KAR_pagan_police
 	x = 1
 	y = 3
 	cost = 5
@@ -2470,7 +2472,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_supremacy_of_the_orders
-	icon = GFX_KAR_old_map
+	icon = GFX_goal_generic_territory_or_war
 	x = 0
 	y = 4
 	cost = 5
@@ -2491,7 +2493,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_going_wiking
-	icon = GFX_KAR_old_map
+	icon = GFX_goal_generic_navy_doctrines_tactics
 	x = -2
 	y = 4
 	cost = 5
@@ -2509,7 +2511,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_a_karlslander_valkyrja
-	icon = GFX_KAR_old_map
+	icon = GFX_KAR_pagan_witches
 	x = 0
 	y = 5
 	cost = 5
@@ -2528,7 +2530,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_reward_the_orders
-	icon = GFX_KAR_old_map
+	icon = GFX_KAR_pagan_church_burn
 	x = 0
 	y = 6
 	cost = 5
@@ -2959,6 +2961,10 @@ shared_focus = {
 						state = 88
 						state = 80
 						state = 664
+                        state = 90
+                        state = 92
+                        state = 819
+                        state = 91
 					}
 				}
 			}
@@ -3256,7 +3262,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_a_materialists_realm
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_GAL_industrial_base
 	x = 7
 	y = 0
 	cost = 5
@@ -3286,7 +3292,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_not_one_out_of_line
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_corporatism
 	x = 0
 	y = 1
 	cost = 5
@@ -3347,7 +3353,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_pursuing_self_sustenance ## I have too many focuses that start with KAR, I swear
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_KAR_autarky
 	x = -2
 	y = 1
 	cost = 5
@@ -3365,7 +3371,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_schmieden_in_modernity
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_generic_arms_factories
 	x = 2
 	y = 1
 	cost = 5
@@ -3415,7 +3421,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_clear_magic
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_oil_refinery
 	x = -1
 	y = 2
 	cost = 5
@@ -3437,7 +3443,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_the_lines_need_more
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_construction2
 	x = 1
 	y = 2
 	cost = 5
@@ -3475,7 +3481,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_headfirst_into_alchemy
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_KAR_elite_uni
 	x = -1
 	y = 3
 	cost = 5
@@ -3499,7 +3505,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_digging_deeper #why would anyone take this? this is just awful, i just wanted the industry tree to have some decision :c
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_construction
 	x = 1
 	y = 3
 	cost = 5
@@ -3538,7 +3544,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_to_put_a_smile_on_wiolants_face
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_KAR_pagan_blacksmith
 	x = 0
 	y = 4
 	cost = 5
@@ -3567,7 +3573,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_die_luftwaffe
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_KAR_airforce
 	x = 22
 	y = 0
 	cost = 5
@@ -3583,7 +3589,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_adopting_miyafuji_theory
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_Generic_witches
 	x = 0
 	y = 1
 	cost = 5
@@ -3605,7 +3611,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_modernize_our_fighters
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_air_fighter2
 	x = -2
 	y = 1
 	cost = 5
@@ -3627,7 +3633,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_death_from_above
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_CAS
 	x = -2
 	y = 2
 	cost = 5
@@ -3649,7 +3655,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_heavy_aircraft
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_air_bomber
 	x = 2
 	y = 1
 	cost = 5
@@ -3671,7 +3677,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_strategic_destruction
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_poland_goal
 	x = 2
 	y = 2
 	cost = 5
@@ -3694,7 +3700,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_doctrinal_supremacy
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_air_doctrine
 	x = 1
 	y = 3
 	cost = 5
@@ -3717,7 +3723,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_transfer_our_dive_bombers
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_air_production
 	x = -1
 	y = 3
 	cost = 5
@@ -3736,7 +3742,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_another_new_engine
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_focus_rocketry
 	x = -1
 	y = 4
 	cost = 5
@@ -3767,7 +3773,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_expand_witch_reqruitment
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_focus_generic_military_academy
 	x = 1
 	y = 4
 	cost = 5
@@ -3809,7 +3815,7 @@ shared_focus = {
 #######
 shared_focus = { 
 	id = KAR_die_kriegsmarine
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_KAR_navy
 	x = 28
 	y = 0
 	cost = 5
@@ -3825,7 +3831,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_improving_destroyer_hulls
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_focus_generic_destroyer
 	x = 0
 	y = 2
 	cost = 5
@@ -3847,7 +3853,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_master_of_the_baltic
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_navy_submarine
 	x = -1
 	y = 1
 	cost = 5
@@ -3866,7 +3872,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_swamp_of_uboats
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_navy_anti_submarine
 	x = -2
 	y = 2
 	cost = 5
@@ -3888,7 +3894,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_improving_our_escorts
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_navy_cruiser
 	x = -1
 	y = 3
 	cost = 5
@@ -3911,7 +3917,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_pioneer_of_the_doctrine
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_navy_doctrines_tactics
 	x = -1
 	y = 4
 	cost = 5
@@ -3934,7 +3940,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_our_western_ports
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_focus_generic_navy_battleship2
 	x = 1
 	y = 1
 	cost = 5
@@ -3953,7 +3959,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_naval_aviation
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_focus_generic_air_defense
 	x = 2
 	y = 2
 	cost = 5
@@ -3975,7 +3981,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_our_arm_in_north_sea
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_goal_generic_navy_carrier
 	x = 1
 	y = 3
 	cost = 5
@@ -3997,7 +4003,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_strategic_invasions
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_focus_usa_focus_on_europe
 	x = 1
 	y = 4
 	cost = 5
@@ -4019,7 +4025,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_witches_in_the_navy
-	icon = GFX_KAR_pagan_helvetia
+	icon = GFX_generic_naval_witches
 	x = 0
 	y = 5
 	cost = 5

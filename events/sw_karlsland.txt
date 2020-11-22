@@ -314,6 +314,7 @@ country_event = { ##### Gib transylvania
 						state = 83
 						state = 84
 						state = 76
+                        state = 817
 					}
 				}
 			}
@@ -380,6 +381,7 @@ country_event = { ##### No gib transylvania, go away weird racist pagans
 						state = 83
 						state = 84
 						state = 76
+                        state = 817
 					}
 				}
 			}

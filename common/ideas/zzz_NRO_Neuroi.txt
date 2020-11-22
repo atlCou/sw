@@ -65,6 +65,13 @@ ideas = {
 				weekly_manpower = 1000
 			}
 		}
+        
+        NRO_3_manpower = {
+			picture = NRO_no_men
+			modifier = {
+				weekly_manpower = 5000
+			}
+		}
 		
 		NRO_starting_consumer = {
 			picture = NRO_no_production
@@ -81,6 +88,15 @@ ideas = {
 				consumer_goods_factor = 0.5
 				industrial_capacity_factory	= -0.8
 				industrial_capacity_dockyard = -0.8
+			}
+		}
+        
+        NRO_2_consumer = {
+			picture = NRO_1_production
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory	= -0.4
+				industrial_capacity_dockyard = -0.4
 			}
 		}
 		
@@ -113,6 +129,7 @@ ideas = {
 			
 			available = {
 				has_country_flag = NRO_has_a_puppet_war
+                has_war = yes
 			}
 			
 			modifier = {
@@ -120,6 +137,28 @@ ideas = {
                 supply_consumption_factor = -1
 			}
 		}
-		
+        
+        
+        NRO_streamlined_production = {
+        
+            picture = NRO_temp
+            
+            modifier = {
+                industrial_capacity_factory = 0.075
+                industrial_capacity_dockyard = 0.075
+            }
+        
+        }
+        
+        NRO_hive_hierarchy_idea = {
+        
+            picture = NRO_temp
+            
+            modifier = {
+                political_power_factor = -0.05
+                resistance_target = -0.1
+            }
+        
+        }
 	}	
 }

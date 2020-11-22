@@ -594,6 +594,7 @@ KAR_pagan_wars = {
 							state = 585
 							state = 583
 							state = 732
+                            state = 584
 						}
 					}
 				}
@@ -677,6 +678,7 @@ KAR_pagan_wars = {
 							state = 585
 							state = 583
 							state = 732
+                            state = 584
 						}
 					}
 				}
