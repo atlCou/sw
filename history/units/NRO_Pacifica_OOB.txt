@@ -1,0 +1,29 @@
+units = {
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13243
+		division_template = "Temporary Division Name"
+		start_experience_factor = 0.3
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13248
+		division_template = "Temporary Division Name"
+		start_experience_factor = 0.3
+	}
+    division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13240
+		division_template = "Temporary Division Name"
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,11 @@
+
+
+
+# Neuroi
+is_neuroi = {
+	OR = {
+        tag = NRO
+        tag = NUP
+        tag = NUW
+    }
+}

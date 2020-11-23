@@ -285,7 +285,7 @@ focus_tree = {
 		icon = GFX_NRO_blacksmith
 		x = -3
 		y = 6
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_Hispanian_campaign }
@@ -312,7 +312,7 @@ focus_tree = {
 		icon = GFX_NRO_vial_wrench
 		x = -3
 		y = 7
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_forges_of_basalt }
@@ -334,7 +334,7 @@ focus_tree = {
 		icon = GFX_NRO_first_air
 		x = 0
 		y = 6
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_Hispanian_campaign }
@@ -355,7 +355,7 @@ focus_tree = {
 		icon = GFX_NRO_lasers
 		x = 0
 		y = 7
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_above_the_cities_of_man }
@@ -377,7 +377,7 @@ focus_tree = {
 		icon = GFX_NRO_generic_hive
 		x = 3
 		y = 6
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_Hispanian_campaign }
@@ -397,7 +397,7 @@ focus_tree = {
 		icon = GFX_NRO_streamline
 		x = 3
 		y = 7
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_wombs_of_modernity }
@@ -414,7 +414,7 @@ focus_tree = {
 		icon = GFX_NRO_propa
 		x = 5
 		y = 6
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_Hispanian_campaign }
@@ -432,7 +432,7 @@ focus_tree = {
 		icon = GFX_NRO_hive_control
 		x = 5
 		y = 7
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_preperation_for_total_conquest }
@@ -451,7 +451,7 @@ focus_tree = {
 		icon = GFX_NRO_rage
 		x = -4
 		y = 8
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_from_matter_to_machine }
@@ -473,7 +473,7 @@ focus_tree = {
 		icon = GFX_NRO_ancients
 		x = -1
 		y = 8
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_crystals_and_lasers }
@@ -495,7 +495,7 @@ focus_tree = {
 		icon = GFX_NRO_men
 		x = 1
 		y = 8
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_crystals_and_lasers }
@@ -514,7 +514,7 @@ focus_tree = {
 		icon = GFX_NRO_chess
 		x = 4
 		y = 8
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_hive_hierarchy }
@@ -532,8 +532,11 @@ focus_tree = {
 		icon = GFX_NRO_fuso_sea
 		x = 0
 		y = 9
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
+        available = {
+            has_war = no
+        }
 		relative_position_id = NRO_collecting_ourselves
 		prerequisite = { focus = NRO_the_failures_of_ancients }
         prerequisite = { focus = NRO_the_successes_of_men }
@@ -542,6 +545,52 @@ focus_tree = {
 		} 
 		completion_reward = {
             custom_effect_tooltip = NRO_fuso_sea_incident_focus_tooltip
+            hidden_effect = {
+				declare_war_on = {
+					target = FUS
+					type = annex_everything
+				}
+                add_ideas = NRO_puppet_war
+			}
+			NUP = {
+				ROOT = { puppet = PREV }
+				hidden_effect = { 
+					set_popularities = { fascism = 100 } 
+					transfer_state = 816
+					set_cosmetic_tag = NUP_Hispania
+					declare_war_on = {
+						target = FUS
+						type = annex_everything
+					}
+					NRO_transfer_current_neuroi_ideas = yes
+					add_ideas = NRO_puppet_hive
+					set_capital = 816
+				}
+				add_state_core = 816
+			}
+			hidden_effect = {
+				FUS = {
+					set_province_controller = 13250
+                    set_province_controller = 13253
+                    set_province_controller = 13251
+                    set_province_controller = 13242
+                    set_province_controller = 13245
+                    set_province_controller = 13239
+                    set_province_controller = 13246
+                    set_province_controller = 13256
+                    set_province_controller = 13260
+                    set_province_controller = 13244
+                    set_province_controller = 13252
+				}
+                add_to_array = {
+                    array = NRO_controlled_states
+                    value = 816
+                }
+                load_oob = NRO_Pacifica_OOB
+			}
+			set_global_flag = FUS_sea_incident_started
+			set_country_flag = NRO_has_a_puppet_war
+			custom_effect_tooltip = NRO_no_profit_from_war_tooltip
         }
 	}
     

@@ -1,5 +1,4 @@
 NRO_puppet_war_decisions = {
-
 	NRO_change_capital = {
 		icon = infiltrate_state
 		cost = 0
@@ -55,5 +54,4 @@ NRO_puppet_war_decisions = {
 			}
 		}
 	}
-
 }

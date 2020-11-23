@@ -1,3 +1,334 @@
 technologies = {
+
+    @1916 = -2
+    @1936 = 2
+    @1938 = 6
+    @1940 = 10
+    @1942 = 14
+    @1946 = 18
+
+    neuroi_body = {
+
+		enable_equipments = {
+			neuroi_body_0
+		}
+		
+		enable_subunits = {
+			large_land_neuroi
+		}
+		
+		path = {
+			leads_to_tech = neuroi_body1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1916
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = @1916 }
+		}
+		
+		categories = {
+			land_neuroi
+            neuroi_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    neuroi_body1 = {
+
+		enable_equipments = {
+			neuroi_body_1
+		}
+		
+		path = {
+			leads_to_tech = neuroi_body2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			land_neuroi
+            neuroi_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    neuroi_body2 = {
+
+		enable_equipments = {
+			neuroi_body_2
+		}
+		
+		path = {
+			leads_to_tech = neuroi_body3
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = @1938 }
+		}
+		
+		categories = {
+			land_neuroi
+            neuroi_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    neuroi_body3 = {
+
+		enable_equipments = {
+			neuroi_body_3
+		}
+		
+		path = {
+			leads_to_tech = neuroi_body4
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			land_neuroi
+            neuroi_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
+    neuroi_body4 = {
+
+		enable_equipments = {
+			neuroi_body_4
+		}
+		
+		path = {
+			leads_to_tech = neuroi_body5
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			land_neuroi
+            neuroi_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    # Air
+    
+    neuroi_air_body = {
+
+		enable_equipments = {
+			neuroi_airplane_0
+		}
+		
+		path = {
+			leads_to_tech = neuroi_fighter_body1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1916
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+            neuroi_tech
+			air_neuroi
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    neuroi_fighter_body1 = {
+
+		enable_equipments = {
+			neuroi_fighter_1
+		}
+        
+		path = {
+			leads_to_tech = neuroi_fighter_body2
+			research_cost_coeff = 1
+		}
+
+        path = {
+			leads_to_tech = neuroi_cas_body2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+            neuroi_tech
+			air_neuroi
+            fighter_neuroi
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    neuroi_fighter_body2 = {
+
+		enable_equipments = {
+			neuroi_cas_2
+		}
+
+        path = {
+			leads_to_tech = neuroi_fighter_body3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+            neuroi_tech
+			air_neuroi
+            fighter_neuroi
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    neuroi_fighter_body3 = {
+
+		enable_equipments = {
+			neuroi_cas_3
+		}
+
+        path = {
+			leads_to_tech = neuroi_fighter_body4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = neuroi_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+            neuroi_tech
+			air_neuroi
+            fighter_neuroi
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    neuroi_cas_body2 = {
+
+		enable_equipments = {
+			neuroi_cas_2
+		}
+
+        path = {
+			leads_to_tech = neuroi_cas_body3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = neuroi_folder
+			position = { x = -4 y = 4 }
+		}
+		
+		categories = {
+            neuroi_tech
+			air_neuroi
+            cas_neuroi
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    neuroi_cas_body3 = {
+
+		enable_equipments = {
+			neuroi_cas_3
+		}
+
+        path = {
+			leads_to_tech = neuroi_cas_body4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = neuroi_folder
+			position = { x = -4 y = 6 }
+		}
+		
+		categories = {
+			neuroi_tech
+			air_neuroi
+            cas_neuroi
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
 }

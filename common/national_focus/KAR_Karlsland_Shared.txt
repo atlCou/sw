@@ -636,7 +636,7 @@ shared_focus = {
 
 shared_focus = { 
 	id = KAR_back_conservative_movements
-	icon = GFX_pagantrihorn
+	icon = GFX_goal_generic_defence
 	x = 0
 	y = 1
 	cost = 5

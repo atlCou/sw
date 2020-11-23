@@ -23,6 +23,16 @@
  NUW_democratic_party:0 "???"
  NUW_communism_party:0 "???"
 
+ NUP_fascism:0 "§WA new Neuroi Hive§!"
+ NUP_wasteland_fascism:0 "Pacific Wasteland"
+ NUP_Hispania:0 "Fusoan Neuroi"
+ NUP_Hispania_ADJ: "Neuroi"
+ NUP_Hispania_DEF:0 "The Neuroi"
+ NUP_fascism_party:0 "???"
+ NUP_neutrality_party:0 "???"
+ NUP_democratic_party:0 "???"
+ NUP_communism_party:0 "???"
+
 
  ### Focus Tree
  NRO_collecting_ourselves:0 "Collecting Ourselves"

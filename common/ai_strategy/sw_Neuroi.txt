@@ -1,0 +1,20 @@
+
+trust_master = {
+    enable = {
+        is_neuroi = yes
+    }
+
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = NRO
+        target = ask_for_state_control
+        value = 9999
+    }
+    
+    ai_strategy = {
+        type = diplo_action_acceptance
+        id = NRO
+        target = give_state_control
+        value = 9999
+    }
+}

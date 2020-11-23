@@ -1,5 +1,9 @@
 technology_categories = {
 	neuroi_tech
+    land_neuroi
+    air_neuroi
+    cas_neuroi
+    fighter_neuroi
 }
 
 technology_folders = {
