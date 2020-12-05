@@ -1178,6 +1178,7 @@ country_event = {
 	option = {
 		name = gallia.611.a
 		puppet = BLG
+        BLG = { set_cosmetic_tag = GAL_coup_puppet }
 		add_war_support = 0.05
 	}
 }
@@ -1263,6 +1264,7 @@ country_event = {
 	option = {
 		name = gallia.614.a
 		puppet = NET
+        NET = { set_cosmetic_tag = GAL_coup_puppet }
 		add_war_support = 0.05
 	}
 }

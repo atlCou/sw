@@ -32,7 +32,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 11
+			add = 1
 			tag = GAL
 		}
 	}

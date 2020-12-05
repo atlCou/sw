@@ -556,7 +556,7 @@ focus_tree = {
 				ROOT = { puppet = PREV }
 				hidden_effect = { 
 					set_popularities = { fascism = 100 } 
-					transfer_state = 816
+					transfer_state = 525
 					set_cosmetic_tag = NUP_Hispania
 					declare_war_on = {
 						target = FUS
@@ -564,29 +564,20 @@ focus_tree = {
 					}
 					NRO_transfer_current_neuroi_ideas = yes
 					add_ideas = NRO_puppet_hive
-					set_capital = 816
+					set_capital = 525
 				}
-				add_state_core = 816
+				add_state_core = 525
 			}
 			hidden_effect = {
-				FUS = {
-					set_province_controller = 13250
-                    set_province_controller = 13253
-                    set_province_controller = 13251
-                    set_province_controller = 13242
-                    set_province_controller = 13245
-                    set_province_controller = 13239
-                    set_province_controller = 13246
-                    set_province_controller = 13256
-                    set_province_controller = 13260
-                    set_province_controller = 13244
-                    set_province_controller = 13252
-				}
                 add_to_array = {
                     array = NRO_controlled_states
-                    value = 816
+                    value = 525
                 }
-                load_oob = NRO_Pacifica_OOB
+                add_to_array = {
+                    array = NRO_controlled_states
+                    value = 527
+                }
+                transfer_state = 527
 			}
 			set_global_flag = FUS_sea_incident_started
 			set_country_flag = NRO_has_a_puppet_war

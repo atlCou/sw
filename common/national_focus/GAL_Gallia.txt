@@ -2823,6 +2823,7 @@ shared_focus = {
 					is_capital = yes
 					is_on_continent = europe
 				}
+                is_neuroi = no
 			}
 			country_event = {
 				id = gallia.619
