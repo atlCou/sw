@@ -100,6 +100,10 @@ ideas = {
 			}
 		}
 		
+        
+        
+        
+        
 		NRO_gone_without_a_trace_idea = {
 		
 			picture = NRO_gone_wo_trace

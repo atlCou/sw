@@ -1120,6 +1120,10 @@ spriteTypes = {
 		name = "GFX_NRO_fuso_sea"
 		texturefile = "gfx/interface/goals/NRO_fuso_sea.dds"
 	}
+	SpriteType = {
+		name = "GFX_NRO_dacia_attack"
+		texturefile = "gfx/interface/goals/NRO_dacia_attack.dds"
+	}
 }
 
 

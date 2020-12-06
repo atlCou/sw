@@ -585,4 +585,315 @@ focus_tree = {
         }
 	}
     
+    focus = { 
+		id = NRO_the_striker_problem
+		icon = GFX_NRO_chess
+		x = -4
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_fuso_is_vulnerable }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+            custom_effect_tooltip = NRO_the_superhive_tooltip
+        }
+	}
+    
+    focus = { 
+		id = NRO_over_seas
+		icon = GFX_NRO_chess
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_fuso_is_vulnerable }
+        mutually_exclusive = { focus = NRO_land_supremacy }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_a_warning_of_our_might
+		icon = GFX_NRO_chess
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_over_seas }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_land_supremacy
+		icon = GFX_NRO_chess
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_fuso_is_vulnerable }
+        mutually_exclusive = { focus = NRO_over_seas }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_teasing_the_fusoans
+		icon = GFX_NRO_chess
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_land_supremacy }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_overwhelming_force
+		icon = GFX_NRO_chess
+		x = 3
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_fuso_is_vulnerable }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_strategic_advancement
+		icon = GFX_NRO_chess
+		x = 6
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_fuso_is_vulnerable }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_anticipating_the_ground_war
+		icon = GFX_NRO_chess
+		x = 8
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_fuso_is_vulnerable }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_from_the_skies
+		icon = GFX_NRO_chess
+		x = 7
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_strategic_advancement }
+        prerequisite = { focus = NRO_anticipating_the_ground_war }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_suffer_no_coastline
+		icon = GFX_NRO_chess
+		x = 3
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_overwhelming_force }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_magic_again
+		icon = GFX_NRO_chess
+		x = -4
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_the_striker_problem }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_the_struggle_continues
+		icon = GFX_NRO_chess
+		x = -4
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_magic_again }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_final_offenssive
+		icon = GFX_NRO_chess
+		x = 0
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_a_warning_of_our_might focus = NRO_teasing_the_fusoans }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_letting_fuso_brew
+		icon = GFX_NRO_chess
+		x = 0
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_final_offenssive }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_conquest_industry
+		icon = GFX_NRO_chess
+		x = 4
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_suffer_no_coastline focus = NRO_from_the_skies }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_pull_cores_from_zhonggou
+		icon = GFX_NRO_chess
+		x = 6
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_from_the_skies }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_metallic_overdrive
+		icon = GFX_NRO_chess
+		x = 4
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_conquest_industry }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_flood_the_skies
+		icon = GFX_NRO_chess
+		x = 6
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_pull_cores_from_zhonggou }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
+    focus = { 
+		id = NRO_strike_dacia
+		icon = GFX_NRO_dacia_attack
+		x = 0
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = NRO_fuso_is_vulnerable
+		prerequisite = { focus = NRO_letting_fuso_brew }
+        prerequisite = { focus = NRO_the_struggle_continues }
+        prerequisite = { focus = NRO_metallic_overdrive }
+        prerequisite = { focus = NRO_flood_the_skies }
+		ai_will_do = { 
+			factor = 100
+		} 
+		completion_reward = {
+        }
+	}
+    
 }
