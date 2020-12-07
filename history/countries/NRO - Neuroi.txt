@@ -2,7 +2,8 @@
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	neuroi_body = 1
+    infantry_weapons = 0
 }
 
 add_ideas = {
