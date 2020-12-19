@@ -1,11 +1,11 @@
 technologies = {
 
-    @1916 = -2
-    @1936 = 2
-    @1938 = 6
-    @1940 = 10
-    @1942 = 14
-    @1946 = 18
+    @1916 = 0
+    @1936 = 4
+    @1938 = 8
+    @1940 = 12
+    @1942 = 16
+    @1946 = 20
 
     neuroi_body = {
 
@@ -135,7 +135,7 @@ technologies = {
 		}		
 
 		research_cost = 1.5
-		start_year = 1940
+		start_year = 1942
 		folder = {
 			name = neuroi_folder
 			position = { x = 0 y = @1942 }
@@ -218,7 +218,7 @@ technologies = {
     neuroi_fighter_body2 = {
 
 		enable_equipments = {
-			neuroi_cas_2
+			neuroi_fighter_2
 		}
 
         path = {
@@ -227,7 +227,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = neuroi_folder
 			position = { x = 0 y = 4 }
@@ -247,7 +247,7 @@ technologies = {
     neuroi_fighter_body3 = {
 
 		enable_equipments = {
-			neuroi_cas_3
+			neuroi_fighter_3
 		}
 
         path = {
@@ -256,7 +256,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = neuroi_folder
 			position = { x = 0 y = 6 }
@@ -285,7 +285,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = neuroi_folder
 			position = { x = -4 y = 4 }
@@ -314,7 +314,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = neuroi_folder
 			position = { x = -4 y = 6 }
@@ -330,5 +330,8 @@ technologies = {
 			factor = 1
 		}
 	}
+    
+    # One-offs
+    # Super-tanks, insanely agile planes, etc.
     
 }

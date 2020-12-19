@@ -34,6 +34,33 @@
  NUP_communism_party:0 "???"
 
 
+
+ # Technologies
+ 
+ neuroi_body_0:0 "1916 Standard Body"
+ neuroi_body_0_desc:0 "The backbone of the Neuroi 'army' are their basic armored bodies. Somewhere between a tank and a mechanical infantry, it would be feasible to achieve victory with these alone - if only the fleshthings didn't rush towards innovation at every turn."
+ neuroi_body_1:0 "1936 Standard Body"
+ neuroi_body_1_desc:0 "More competent designs can be incorporated, with better and thicker metallic shells and greater agility. We'll also be able to hit harder, though this will all come at the price of them taking longer to produce."
+ neuroi_body_2:0 "1938 Standard Body"
+ neuroi_body_2_desc:0 "We can continue to improve the armor and attack capabilities of our basic bodies to improve the backbone of our conquest."
+ neuroi_body_3:0 "1940 Standard Body"
+ neuroi_body_3_desc:0 "As our struggle against the empires of flesh continue, we will need to adapt to their new shell-piercing weaponry and advanced equipment. More improvements are necessary."
+ neuroi_body_4:0 "1944 Standard Body"
+ neuroi_body_4_desc:0 "No matter our situation, improvements to our standard shells will be a necessity if we are to achieve final victory. Improving our resiliance to the fleshthings' armour piercing shells, and improving our general attack capabilities will both be necessary."
+ 
+ neuroi_airplane_0:0 "1916 Air Body"
+ neuroi_airplane_0_desc:0 "Our forces in the air will no longer fight nearly unchallenged next time we attack, so we must be ready. Again, the driving innovation of the fleshthings' race deprive us from the conquest to which we are entitled, so we ourselves must evolve."
+ neuroi_fighter_1:0 "1936 Air Body"
+ neuroi_fighter_1_desc:0 "Though we can continue improving our airborne bodies further, it may be worth looking into specialization. It will require us to coordinate more than we have before, and to divide our resources, but it's undoubtful that the fleshthings' airforces will be a match for us in no time at all."
+ neuroi_fighter_2:0 "1940 Air Body"
+ neuroi_fighter_2_desc:0 "We continue to vastly outpace the fleshthings' fighters, but their 'witches' can still outpace our agility, and when they do, corner us into defeat."
+ neuroi_fighter_3:0 "1944 Air Body"
+ neuroi_fighter_3_desc:0 "Our air forces may be more diverse than ever now, but we cannot ignore what makes up the backbone of our air superiority efforts. We must take what we have learned and improve them in every aspect!"
+ neuroi_cas_2:0 "1940 Support Body"
+ neuroi_cas_3:0 "1944 Support Body"
+
+
+
  ### Focus Tree
  NRO_collecting_ourselves:0 "Collecting Ourselves"
  NRO_collecting_ourselves_desc:0 "We must finally recollect ourselves after our defeat by the machined apes. Our defeat is but a temporary setback to our total conquest, our complete annihilation of those fleshy animals and our ascent to dominance."
