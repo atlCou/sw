@@ -598,7 +598,7 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
-            custom_effect_tooltip = NRO_the_superhive_tooltip
+            
         }
 	}
     
