@@ -72,6 +72,13 @@ ideas = {
 				weekly_manpower = 5000
 			}
 		}
+        
+        NRO_4_manpower = {
+			picture = NRO_no_men
+			modifier = {
+				weekly_manpower = 7500
+			}
+		}
 		
 		NRO_starting_consumer = {
 			picture = NRO_no_production
@@ -99,26 +106,23 @@ ideas = {
 				industrial_capacity_dockyard = -0.4
 			}
 		}
-		
         
-        
-        
-        
-		NRO_gone_without_a_trace_idea = {
-		
-			picture = NRO_gone_wo_trace
-			
+        NRO_3_consumer = {
+			picture = NRO_1_production
 			modifier = {
-				intelligence_agency_defense = 10
-				civilian_intel_to_others = -100
-				army_intel_to_others = -100
-				navy_intel_to_others = -100
-				airforce_intel_to_others = -100
+				industrial_capacity_factory	= -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+        
+        NRO_4_consumer = {
+			picture = NRO_1_production
+			modifier = {
+                consumer_goods_factor = -0.05
 			}
 		}
 		
-		
-		
+        
 		NRO_puppet_hive = {
 			picture = NRO_no_men
 			
@@ -143,6 +147,10 @@ ideas = {
 		}
         
         
+        
+        
+        # Main Focus/Event Ideas
+        
         NRO_streamlined_production = {
         
             picture = NRO_temp
@@ -164,5 +172,72 @@ ideas = {
             }
         
         }
+        
+        NRO_gone_without_a_trace_idea = {
+		
+			picture = NRO_gone_wo_trace
+			
+			modifier = {
+				intelligence_agency_defense = 10
+				civilian_intel_to_others = -100
+				army_intel_to_others = -100
+				navy_intel_to_others = -100
+				airforce_intel_to_others = -100
+			}
+		}
+        
+        NRO_over_seas_idea = {
+        
+            picture = NRO_temp
+			
+			modifier = {
+				air_range_factor = 0.2
+                experience_gain_air = 0.02
+			}
+        
+        }
+        
+        NRO_land_supremacy_idea = {
+        
+            picture = NRO_temp
+			
+			modifier = {
+				air_cas_present_factor = 0.075
+                air_paradrop_attack_factor = 0.1
+                air_paradrop_defence_factor = 0.1
+                experience_gain_army = 0.02
+			}
+        }
+        
+        NRO_teasing_the_fusoans_idea = {
+        
+            picture = NRO_temp
+            targeted_modifier = {
+                tag = FUS
+                attack_bonus_against = 0.075
+                defense_bonus_against = 0.1
+            }
+        }
+        
+        NRO_suffer_no_coastline = {
+        
+            picture = NRO_temp
+            modifier = {
+                air_paradrop_attack_factor = 0.15
+            }
+        }
+        
+        NRO_final_offensive_idea = {
+        
+            picture = NRO_temp
+            targeted_modifier = {
+                tag = FUS
+                attack_bonus_against = 0.025
+            }
+            modifier = {
+                army_org_factor = 0.05
+            }
+        }
+        
 	}	
 }

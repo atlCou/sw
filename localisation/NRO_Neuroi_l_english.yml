@@ -3,6 +3,7 @@
  NRO_fascism:0 "Neuroi"
  NRO_fascism_ADJ:0 "Neuroi"
  NRO_fascism_DEF:0 "The Neuroi"
+ neuroi_desc:0 "The Neuroi have no ideology, at least for what we know. Their only drive seems to be conquest and cooperation towards that goal, without any notable leader or incentive for doing so."
 
  NRO_fascism_party:0 "???"
  NRO_neutrality_party:0 "???"
@@ -36,6 +37,10 @@
 
 
  # Technologies
+ neuroi_tech:0 "General Neuroi Technology"
+ land_neuroi:0 "Standard Neuroi Bodies"
+ air_neuroi:0 "Standard Air Bodies"
+ 
  
  neuroi_body_0:0 "1916 Standard Body"
  neuroi_body_0_desc:0 "The backbone of the Neuroi 'army' are their basic armored bodies. Somewhere between a tank and a mechanical infantry, it would be feasible to achieve victory with these alone - if only the fleshthings didn't rush towards innovation at every turn."
@@ -57,7 +62,7 @@
  neuroi_fighter_3:0 "1944 Air Body"
  neuroi_fighter_3_desc:0 "Our air forces may be more diverse than ever now, but we cannot ignore what makes up the backbone of our air superiority efforts. We must take what we have learned and improve them in every aspect!"
  neuroi_cas_2:0 "1940 Support Body"
- neuroi_cas_2:0 ""
+ neuroi_cas_2_desc:0 ""
  neuroi_cas_3:0 "1944 Support Body"
 
 
@@ -112,8 +117,45 @@
  NRO_fuso_is_vulnerable:0 "Fuso Is Vulnerable"
  NRO_fuso_is_vulnerable_desc:0 "The 'mighty nation' of Fuso sits decadentally unaware and uncaring of our activity in Hispania. Their strength is unparalled in Asia, and ridding of them will be necessary.\nWith our attack on Fuso, our great reclamation of the Earth inhabitated by machined manthings will begin.\nLet their cities burn, their crops perish, and their militaries crumble."
 
-
+ NRO_the_striker_problem:0 "The Striker Problem"
+ NRO_the_striker_problem_desc:0 "The cursed fleshthings have found a way to counter our agility in the air. By placing... young females in machines which wrap around their lower limbs, they can act as infantry in the sky against our own sky infantry. We can no longer rely solely on our vastly superior air agility, and we must prepare for this."
+ NRO_over_seas:0 "Over Seas"
+ NRO_over_seas_desc:0 "We may not be able to swim, but we can definitely fly. Our superiority in the domain of the air will bring our conquest to victory, and we should invest in that the most."
+ NRO_a_warning_of_our_might:0 "A Warning of Our Might"
+ NRO_a_warning_of_our_might_desc:0 "The Fusoans have no idea what they could be up against. We should show them - even the most basic of us can blast every one of their flying machines out of the sky with ease. And though our knowledge advances alongside their own, we can let our strength in the air drive us to even greater advancements."
+ NRO_land_supremacy:0 "Land Supremacy"
+ NRO_land_supremacy_desc:0 "The battle for this planet will ultimately occur on the ground which the fleshthings tread on. The air may bring us victory in battle, but if we cannot maintain what we have conquered, then a purposeful conquest it is not."
+ NRO_teasing_the_fusoans:0 "Teasing the Fusoans"
+ NRO_teasing_the_fusoans_desc:0 "We can slowly rub against the Fusoan military as long as we want, but if the fleshthings are not terrified of us, then we are not at our full potential."
+ NRO_overwhelming_force:0 "Overwhelming Force"
+ NRO_overwhelming_force_desc:0 "We shall be an overwhelming force in number and in strength, able to overcome the fleshthings' militaries as a flood of metal and rock. No human nation shall stop us in our conquest for this planet, no matter their industrial capacity or the strength of their 'wills'."
+ NRO_strategic_advancement:0 "Strategic Advancement"
+ NRO_strategic_advancement_desc:0 "War changes as the fleshthings change, and thus we must adapt as well. We must make sure we always know how to counter what humanity throws at us, so we can throw it twice as hard back."
+ NRO_anticipating_the_ground_war:0 "Anticipating the Ground War"
+ NRO_anticipating_the_ground_war_desc:0 "The ground war in Fuso will be inevitable. We must anticipate this, and make sure our land forces are up to snuff for the oncoming conquest."
+ NRO_from_the_skies:0 "From the Skies"
+ NRO_from_the_skies_desc:0 "Remember, we attack from the skies. We must be able to secure the land which we want to conquer, even if it lays over seas, and for this we must be able to defeat whatever forces already exist in the land which we find ourselves on - without exception."
+ NRO_suffer_no_coastline:0 "Suffer No Coastline"
+ NRO_suffer_no_coastline_desc:0 "We shall suffer no coastlines in our conquest. We may still not be seaworthy, but we will eventually, and until that point we must be positive our alternatives are just as viable for attacking fleshy island nations."
+ NRO_magic_again:0 "Magic, Again"
+ NRO_magic_again_desc:0 "We thought we were done with these endowed fleshthings, but here they are again, blocking our attacks and destroying us in the air. Our conquest will not fail because of children in stilts, and we will show the fleshthings that we are worse than any conquest they have waged against eachother."
+ NRO_the_struggle_continues:0 "The Struggle Continues"
+ NRO_the_struggle_continues_desc:0 "As the struggle continues, we must be sure we can flood the skies to the absolute despair of the Fusoan air force. It is a necessity towards our strategy, and will deliver us glorious retribution against the flying adolescents each time we blast one into the ocean below."
+ NRO_final_offensive:0 "Final Offensive"
+ NRO_final_offensive_desc:0 "It's becoming clear that our efforts in Fuso cannot be our only angle of attack against humanity. Our consciousness shall direct us into the most enthused struggle against the Fusoans we have yet gone through, but if it fails, we will have to look elsewhere before wiping them off the map."
+ NRO_letting_fuso_brew:0 "Letting Fuso Brew"
+ NRO_letting_fuso_brew_desc:0 "It's clear Fuso is a lost cause on its own. We must look elsewhere - our old brothers in Zhonggou will surely let us back when it comes time to return again."
+ NRO_letting_fuso_brew_tooltip:0 "If we take this focus, we will §Rforfeit our territories in Zhongguo§! to focus our attacks on §YEurope§! in §C60 days§!!"
+ NRO_conquest_industry:0 "Conquest Industry"
+ NRO_conquest_industry_desc:0 "Our 'industry' is built for conquest and conquest alone. The earth is ours, every other goal or ideal cannot even be visualized. When the ash settles, the earth shall lay in the hands of our metal, our rock, and our might - not the fleshy hands of humankind."
+ NRO_pull_cores_from_zhonggou:0 "Pull Cores From Zhonggou!"
+ NRO_pull_cores_from_zhonggou_desc:0 "What are they even doing in Zhonggou?! They should be helping us! That nation is long dead, and they clearly have no intention to expand - they must give some of their occupational cores to us, to aid in conquest which will actually elevate us to dominance."
+ NRO_metallic_overdrive:0 "Metallic Overdrive"
+ NRO_metallic_overdrive_desc:0 "We don't have to stop there, we can push the production of our bodies even further. With this effort, we will begin to reach heights of efficiency and mass production never seen before; from the ancients to our late friends."
+ NRO_flood_the_skies:0 "Flood the Skies"
+ NRO_flood_the_skies_desc:0 "Let the sky turn black in a flood of metal and stone, to literally block out the light of the sun and the blue of the sky during our conquest struggles against the fleshthings. We require a greater pool of cores, and expanding that is the greatest necessity."
  NRO_strike_dacia:0 "§RStrike Dacia§!"
+ NRO_strike_dacia_desc:0 "Humanity will definitely come to Dacia's aid, but our conquest was always meant to be a struggle against them all, was it not?\nHowever, we should know that, soon, the strongest empires the fleshthings rule will be against us.\n\nWe will show them that the future belongs to us, and us alone."
 
  NRO_and_so_do_we_tooltip:0 "Will begin to give you §YNeuroi Armor§! in proportion to your §Yweekly manpower gain§!."
  NRO_gone_without_a_trace_tooltip:0 "§RWill block all diplomacy§! §Yto§! or §Yfrom§! your country, until later focuses."

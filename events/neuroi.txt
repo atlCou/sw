@@ -114,6 +114,42 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = neuroi.10  # Leaving Fuso event
+	title = neuroi.10.t
+	desc = neuroi.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = neuroi.10.a
+		if = {
+            limit = {
+                525 = {
+                    any_country = {
+                        limit = {
+                            is_neuroi = yes
+                        }
+                        has_full_control_of_state = PREV 
+                    }
+                }
+                527 = {
+                    any_country = {
+                        limit = {
+                            is_neuroi = yes
+                        }
+                        has_full_control_of_state = PREV 
+                    }
+                }
+            }
+            # UPDATE WHEN I ADD STUFF TO ASIA!
+            KOR = {
+                transfer_state = 525
+                transfer_state = 527
+            }
+        }
+	}
+}
+
 
 ########## Neuroi hidden gameplay events
 country_event = { ####I am aware these two events are potentially very performance heavy. If there's a better way to do it, please tell me. I also plan on never writing something like these again

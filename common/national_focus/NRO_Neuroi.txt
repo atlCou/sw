@@ -123,6 +123,7 @@ focus_tree = {
 		} 
 		completion_reward = {
 			810 = {
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -294,6 +295,7 @@ focus_tree = {
 		} 
 		completion_reward = {
             810 = {
+                add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
 					level = 3
@@ -594,11 +596,47 @@ focus_tree = {
 		available_if_capitulated = yes
 		relative_position_id = NRO_fuso_is_vulnerable
 		prerequisite = { focus = NRO_fuso_is_vulnerable }
+        available = {
+            525 = {
+                owner = {
+                    OR = {
+                        tag = ROOT
+                        is_puppet_of = ROOT
+                    }
+                }
+                NOT = { air_base = 10 }
+            }
+        }
+        bypass = {
+            525 = { air_base = 10 }
+        }
 		ai_will_do = { 
 			factor = 100
 		} 
 		completion_reward = {
-            
+            525 = {
+                if = {
+                    limit = {
+                        air_base > 5
+                    }
+                    set_temp_variable = { current = building_level@air_base }
+                    set_temp_variable = { to_add = 5 }
+                    subtract_from_temp_variable = { to_add = current }
+                    add_building_construction = {
+                        type = air_base
+                        level = to_add
+                        instant_build = yes
+                    }
+                }
+                else = {
+                    add_building_construction = {
+                        type = air_base
+                        level = 5
+                        instant_build = yes
+                    }
+                }
+            }
+            air_experience = 15
         }
 	}
     
@@ -616,6 +654,7 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_ideas = NRO_over_seas_idea
         }
 	}
     
@@ -632,6 +671,12 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                ahead_reduction = 0.5
+                category = air_neuroi
+            }
         }
 	}
     
@@ -649,6 +694,7 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_ideas = NRO_land_supremacy_idea
         }
 	}
     
@@ -665,6 +711,10 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_timed_idea = {
+                idea = NRO_teasing_the_fusoans_idea
+                days = 365
+            }
         }
 	}
     
@@ -681,6 +731,15 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_manpower = 10000
+            810 = {
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
         }
 	}
     
@@ -697,6 +756,12 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = land_doctrine
+            }
+            army_experience = 25
         }
 	}
     
@@ -713,6 +778,11 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = land_neuroi
+            }
         }
 	}
     
@@ -730,6 +800,11 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_tech_bonus = {
+                bonus = 1.5
+                uses = 1
+                category = paratrooper_neuroi
+            }
         }
 	}
     
@@ -746,6 +821,12 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_ideas = NRO_suffer_no_coastline
+            add_tech_bonus = {
+                bonus = 1.5
+                uses = 1
+                category = marine_neuroi
+            }
         }
 	}
     
@@ -762,6 +843,11 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = neuroi_special_tech
+            }
         }
 	}
     
@@ -777,12 +863,35 @@ focus_tree = {
 		ai_will_do = { 
 			factor = 100
 		} 
+		available = {
+            527 = {
+                owner = {
+                    OR = {
+                        tag = ROOT
+                        is_puppet_of = ROOT
+                    }
+                }
+            }
+        }
+		ai_will_do = { 
+			factor = 100
+		} 
 		completion_reward = {
+            527 = {
+                set_temp_variable = { current = building_level@air_base }
+                set_temp_variable = { to_add = 10 }
+                subtract_from_temp_variable = { to_add = current }
+                add_building_construction = {
+					type = air_base
+					level = to_add
+					instant_build = yes
+				}
+            }
         }
 	}
     
     focus = { 
-		id = NRO_final_offenssive
+		id = NRO_final_offensive
 		icon = GFX_NRO_chess
 		x = 0
 		y = 3
@@ -794,6 +903,11 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_war_support = 0.1
+            add_timed_idea = {
+                idea = NRO_final_offensive_idea
+                days = 180
+            }
         }
 	}
     
@@ -805,11 +919,27 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = NRO_fuso_is_vulnerable
-		prerequisite = { focus = NRO_final_offenssive }
+		prerequisite = { focus = NRO_final_offensive }
+        available = {
+            FUS = { exists = yes has_war_with = PREV }
+            OR = {
+                has_completed_focus = NRO_metallic_overdrive
+                has_completed_focus = NRO_flood_the_skies
+                has_completed_focus = NRO_the_struggle_continues
+            }
+        }
+        bypass = {
+            FUS = { OR = { NOT = { has_war_with = PREV exists = yes } } }
+        }
 		ai_will_do = { 
 			factor = 100
 		} 
 		completion_reward = {
+            custom_effect_tooltip = NRO_letting_fuso_brew_tooltip
+            country_event = {
+                id = neuroi.10
+                days = 60
+            }
         }
 	}
     
@@ -826,6 +956,10 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            swap_ideas = {
+                add_idea = NRO_3_consumer
+                remove_idea = NRO_2_consumer
+            }
         }
 	}
     
@@ -842,6 +976,7 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            add_manpower = 50000
         }
 	}
     
@@ -858,6 +993,10 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            swap_ideas = {
+                add_idea = NRO_4_consumer
+                remove_idea = NRO_3_consumer
+            }
         }
 	}
     
@@ -874,6 +1013,10 @@ focus_tree = {
 			factor = 100
 		} 
 		completion_reward = {
+            swap_ideas = {
+                add_idea = NRO_4_manpower
+                remove_idea = NRO_3_manpower
+            }
         }
 	}
     
